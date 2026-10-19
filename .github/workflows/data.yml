@@ -75,4 +75,9 @@ jobs:
           git add data/films.json data/people.json data/balance.md game/src/data/films.json pipeline/curation/films.resolved.csv || true
           if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
           git commit -m "data: atualiza films.json e people.json via pipeline"
-          git push
+          # o main pode ter avançado durante o job: rebase antes de empurrar, até 3 tentativas
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
