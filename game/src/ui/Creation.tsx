@@ -15,12 +15,23 @@ function defaultAttrs(origem: OriginId): Attributes {
   return a;
 }
 
-const NAMES_F = ["Dakota Vance", "Marisol Reyes", "June Calloway", "Priya Sandoval", "Nova Lindqvist", "Camila Duarte"];
-const NAMES_M = ["Rhett Calloway", "Theo Marchetti", "Dev Anand Price", "Lucas Ferreira", "Jalen Brooks", "Mateo Salinas"];
+// Nomes artísticos: primeiro nome de uma estrela, sobrenome de outra. "Scarlett Pitt", "Denzel Streep".
+const FIRST_F = ["Scarlett", "Meryl", "Julia", "Viola", "Cate", "Nicole", "Zendaya", "Greta", "Florence", "Saoirse", "Margot", "Michelle", "Halle", "Winona", "Jodie", "Sigourney", "Uma", "Salma", "Penélope", "Lupita", "Emma", "Natalie", "Reese", "Sandra", "Whoopi", "Glenn", "Sharon", "Demi", "Angela", "Tilda"];
+const FIRST_M = ["Denzel", "Leonardo", "Keanu", "Brad", "Joaquin", "Idris", "Timothée", "Pedro", "Javier", "Mahershala", "Oscar", "Jake", "Ryan", "Adam", "Paul", "Daniel", "Cillian", "Benedict", "Chadwick", "Austin", "Willem", "Jeff", "Harrison", "Samuel", "Forest", "Morgan", "Christoph", "Rami", "Ke Huy", "Brendan"];
+const LAST = ["Pitt", "Streep", "Washington", "Blanchett", "Phoenix", "Chalamet", "Kidman", "Reeves", "Robbie", "Portman", "Pfeiffer", "Bardem", "Nyong'o", "Theron", "Gosling", "Driver", "Day-Lewis", "Murphy", "Cumberbatch", "Boseman", "Dafoe", "Goldblum", "Ford", "Jackson", "Whitaker", "Freeman", "Waltz", "Malek", "Fraser", "Stone", "Lawrence", "Pugh", "Ronan", "Ryder", "Foster", "Weaver", "Thurman", "Hayek", "Cruz", "Witherspoon", "Bullock", "Goldberg", "Close", "Moore", "Bassett", "Swinton", "Yeoh", "Quan", "Butler", "Elba"];
+
+function randomName(g: Gender): string {
+  const first = g === "f" ? FIRST_F : FIRST_M;
+  const pick = (a: string[]) => a[Math.floor(Math.random() * a.length)];
+  const f = pick(first);
+  let l = pick(LAST);
+  while (l === "Streep" && f === "Meryl" || l === "Pitt" && f === "Brad" || `${f} ${l}`.length > 22) l = pick(LAST);
+  return `${f} ${l}`;
+}
 
 export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lang: Lang; setLang: (l: Lang) => void; initialSeed: string | null; prefill: CreationInput | null; onStart: (i: CreationInput) => void }) {
   const [genero, setGenero] = useState<Gender>(prefill?.genero ?? "f");
-  const [nome, setNome] = useState((prefill?.genero ?? "f") === "f" ? NAMES_F[0] : NAMES_M[0]);
+  const [nome, setNome] = useState(randomName(prefill?.genero ?? "f"));
   const [ano, setAno] = useState(prefill?.anoEstreia ?? 1995);
   const [origem, setOrigem] = useState<OriginId>(prefill?.origem ?? "garcom");
   const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? defaultAttrs(prefill?.origem ?? "garcom"));
@@ -33,7 +44,6 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const input: CreationInput = { nome, genero, anoEstreia: ano, origem, atributos: attrs, opcoes: { hollywoodRealista, longa, idioma: lang }, seed };
   const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, hollywoodRealista, longa, seed, lang]);
   const bump = (k: keyof Attributes, d: number) => setAttrs((a) => ({ ...a, [k]: Math.min(5, Math.max(1, a[k] + d)) }));
-  const names = genero === "f" ? NAMES_F : NAMES_M;
   const bonus = originById(origem).bonus;
   const talentoMax = originById(origem).talentoMax;
 
@@ -56,12 +66,12 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
           <label htmlFor="nome">{t("name", lang)}</label>
           <div className="row" style={{ gap: 6 }}>
             <input id="nome" value={nome} onChange={(e) => setNome(e.target.value)} style={{ flex: 1, minWidth: 0 }} />
-            <button type="button" onClick={() => setNome(names[Math.floor(Math.random() * names.length)])} aria-label="random name">🎲</button>
+            <button type="button" onClick={() => setNome(randomName(genero))} aria-label="random name">🎲</button>
           </div>
         </div>
         <div className="field">
           <label htmlFor="genero">{t("gender", lang)}</label>
-          <select id="genero" value={genero} onChange={(e) => { const g = e.target.value as Gender; setGenero(g); setNome((g === "f" ? NAMES_F : NAMES_M)[0]); }}>
+          <select id="genero" value={genero} onChange={(e) => { const g = e.target.value as Gender; setGenero(g); setNome(randomName(g)); }}>
             <option value="f">{t("f", lang)}</option>
             <option value="m">{t("m", lang)}</option>
           </select>
