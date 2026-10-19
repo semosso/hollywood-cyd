@@ -84,7 +84,7 @@ Filmes de `data/films.json` com:
 - pelo menos um `role` com `gender == genero` (ou `gender == null`) e `order ≤ 5`;
 - não usado nesta run (nem aceito nem recusado);
 - se flag `sotaque`: `order ≥ 2`; se flag `pigeonhole_comedia` e Prestígio < 30: só gêneros Comedy/Family/Romance.
-- **Hollywood realista** (`hollywoodRealista` ligado, `genero == f`, `idade ≥ 40`): só filmes em que o papel tem `oscar != none` **ou** `derived.p_prize ≥ 0.4`, **ou** Fama ≥ 70. Se o pool esvaziar, entram ofertas de fallback (4.5). O jogo mostra uma linha explicando: *"Hollywood realista: a partir dos 40, só o excepcional chega até você."*
+- **Hollywood realista** (`hollywoodRealista` ligado, `genero == f`, `idade ≥ 45`): só filmes em que o papel tem `oscar != none` **ou** `derived.p_prize ≥ 0.4`, **ou** Fama ≥ 70. Se o pool esvaziar, entram ofertas de fallback (4.5). O jogo mostra uma linha explicando: *"Hollywood realista: a partir dos 45, só o excepcional chega até você."*
 
 Papel escolhido no filme: o `role` elegível de menor `order`.
 
@@ -297,7 +297,7 @@ Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` r
 4. Ruído fica em [−0.15, +0.15] e é estável por (seed, filme, ícone).
 5. Resolução: papel com `oscar: won` e Talento 5 nunca dá `razzie` sem caos; Talento 1 em `demand 5` nunca dá `ganhou` sem caos.
 6. Decaimento nunca viola limites dos medidores.
-7. Hollywood realista: mulher aos 40 com Fama 30 só recebe papéis excepcionais ou fallback.
+7. Hollywood realista: mulher aos 45 com Fama 30 só recebe papéis excepcionais ou fallback.
 8. Sempre há um final elegível.
 9. Link de compartilhamento reproduz a filmografia.
 10. Guinada: com boost dourado ativo, as ofertas do próximo card de projeto são de diretores "foda"; com queda ativa, só ofertas ruins; a frequência de guinadas por evento pessoal fica entre 1% e 12%.

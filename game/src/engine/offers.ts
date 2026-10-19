@@ -1,4 +1,4 @@
-import { NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN } from "./constants";
+import { HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN } from "./constants";
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
@@ -49,7 +49,7 @@ export function pool(films: Film[], state: State): { film: Film; roleIndex: numb
     const ri = eligibleRole(f, state);
     if (ri < 0) continue;
     if (state.flags.includes("pigeonhole_comedia") && state.meters.prestigio < 30 && !f.genres.some((g) => comedy.has(g))) continue;
-    if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= 40 && state.meters.fama < 70 && !isExceptional(f, ri)) continue;
+    if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= HOLLYWOOD_REALISTA_IDADE && state.meters.fama < 70 && !isExceptional(f, ri)) continue;
     out.push({ film: f, roleIndex: ri });
   }
   return out;
@@ -156,8 +156,8 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   let hint: string | null = null;
   if (modo === "dourado") hint = lang === "en" ? "He asked for you personally." : "Ele pediu você pessoalmente.";
   if (modo === "queda") hint = lang === "en" ? "This is what's left." : "É o que sobrou.";
-  if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= 40 && state.meters.fama < 70) {
-    hint = lang === "en" ? "Realistic Hollywood: past 40, only the exceptional reaches you." : "Hollywood realista: a partir dos 40, só o excepcional chega até você.";
+  if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= HOLLYWOOD_REALISTA_IDADE && state.meters.fama < 70) {
+    hint = lang === "en" ? "Realistic Hollywood: past 45, only the exceptional reaches you." : "Hollywood realista: a partir dos 45, só o excepcional chega até você.";
   }
   return { kind: "projeto", offers, third, hint, modo };
 }

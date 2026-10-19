@@ -598,7 +598,7 @@ opcoes:
 | **Idiomas** | PT-BR e EN | Seletor de idioma visível; o jogador escolhe. |
 | **Stack** | React + Vite + TypeScript, estático | |
 | **Duração** | ~25 cards | |
-| **Gênero** | Toggle "Hollywood realista" | Explicar o que o toggle faz: com ele ligado, uma atriz a partir dos 40 precisa ser **muito excepcional** para continuar recebendo ofertas. |
+| **Gênero** | Toggle "Hollywood realista" | Explicar o que o toggle faz: com ele ligado, uma atriz a partir dos **45** (ajustado depois do questionário) precisa ser **muito excepcional** para continuar recebendo ofertas. |
 | **Tom** | Ácido com tudo: OD e suicídio existem como finais, texto seco, linha de apoio discreta no card | |
 | **Nomes caricatos** | Misto, caso a caso | Trocadilho quando a pessoa é o ponto; "cheiro de época" quando o ambiente é o ponto. |
 | **Features da v1** | Card final · "O que você recusou" · Seed compartilhável · Trívia "quem recusou" · Revisão histórica | Ficam para depois: desafio diário, conquistas, grade de emojis, estatísticas globais, modo cenário. |

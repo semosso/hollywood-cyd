@@ -69,9 +69,9 @@ describe("ofertas", () => {
       expect(noisyIcon("s", i, "prize", 0.5)).toBe(v);
     }
   });
-  it("Hollywood realista: mulher aos 40 com Fama 30 só vê papéis excepcionais", () => {
+  it("Hollywood realista: mulher aos 46 com Fama 30 só vê papéis excepcionais", () => {
     const s = createState({ ...base, opcoes: { ...base.opcoes, hollywoodRealista: true } });
-    s.idade = 41; s.ano = 2001; s.meters.fama = 30;
+    s.idade = 46; s.ano = 2001; s.meters.fama = 30;
     for (const c of pool(content.films, s)) expect(c.film.roles[c.roleIndex].oscar !== "none" || c.film.derived.p_prize >= 0.4).toBe(true);
   });
 });

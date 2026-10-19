@@ -14,7 +14,7 @@ const S = {
   pointsLeft: { pt: "pontos para distribuir", en: "points left" },
   options: { pt: "Opções", en: "Options" },
   hollywood: { pt: "Hollywood realista", en: "Realistic Hollywood" },
-  hollywoodHelp: { pt: "Com isso ligado, uma atriz a partir dos 40 só recebe ofertas se for muito excepcional, como na vida real. Atores não sentem diferença. Também como na vida real.", en: "With this on, an actress past 40 only gets offers if she is truly exceptional, as in real life. Actors feel no difference. Also as in real life." },
+  hollywoodHelp: { pt: "Com isso ligado, uma atriz a partir dos 45 só recebe ofertas se for muito excepcional, como na vida real. Atores não sentem diferença. Também como na vida real.", en: "With this on, an actress past 45 only gets offers if she is truly exceptional, as in real life. Actors feel no difference. Also as in real life." },
   seed: { pt: "Seed", en: "Seed" },
   seedHelp: { pt: "Mesma seed, mesmas ofertas. Compartilhe para desafiar alguém a viver a mesma vida.", en: "Same seed, same offers. Share it to challenge someone to live the same life." },
   accept: { pt: "Aceitar", en: "Take" },

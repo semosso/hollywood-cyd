@@ -13,6 +13,7 @@ import { Creation } from "./Creation";
 import { FinalView } from "./FinalView";
 import { ResolutionView } from "./ResolutionView";
 import { About } from "./About";
+import { track } from "./track";
 import { METER_LABEL } from "./format";
 
 function readLS(k: string): string | null { try { return localStorage.getItem(k); } catch { return null; } }
@@ -39,8 +40,14 @@ export function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const onStart = (input: CreationInput) => setState(startRun(createState(input), content));
-  const act = (a: Action) => setState((s) => (s ? step(s, a, content) : s));
+  const onStart = (input: CreationInput) => { track("run/start", `start ${input.anoEstreia} ${input.genero} ${input.origem}`); setState(startRun(createState(input), content)); };
+  const act = (a: Action) => setState((s) => {
+    if (!s) return s;
+    const n = step(s, a, content);
+    if (n.endingId && !s.endingId) track(`run/final/${n.endingId}`, `final ${n.endingId}`);
+    if (n.fim?.tipo === "morte" && s.fim?.tipo !== "morte") track(`run/morte/${n.fim.causa}`, "morte");
+    return n;
+  });
 
   if (about) return <div className="wrap"><About lang={lang} onClose={() => setAbout(false)} /></div>;
   if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;

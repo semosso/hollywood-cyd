@@ -32,6 +32,7 @@ export function About({ lang, onClose }: { lang: Lang; onClose: () => void }) {
           {" "}{pt ? "Crítica: " : "Reviews: "}<a href="https://www.omdbapi.com" target="_blank" rel="noreferrer">OMDb API</a>.
           {" "}{pt ? "Prêmios: " : "Awards: "}<a href="https://www.wikidata.org" target="_blank" rel="noreferrer">Wikidata</a>.
           {" "}{pt ? "Pôsteres e imagens pertencem aos respectivos estúdios." : "Posters and images belong to their studios."}
+          {" "}{pt ? "Visitas contadas com " : "Visits counted with "}<a href="https://www.goatcounter.com" target="_blank" rel="noreferrer">GoatCounter</a>{pt ? ", sem cookies e sem identificar ninguém." : ", without cookies and without identifying anyone."}
         </p>
         <div className="mono muted" style={{ marginTop: 8 }}>[ logo TMDB aqui ]</div>
       </div>

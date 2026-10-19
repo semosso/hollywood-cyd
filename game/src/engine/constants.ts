@@ -9,6 +9,7 @@ export const YEAR_MIN = 1975;
 export const YEAR_MAX_DEBUT = 2020;
 export const DATA_YEAR_MAX = 2025;
 export const NOISE = 0.15;
+export const HOLLYWOOD_REALISTA_IDADE = 45;
 export const CHAOS = 0.1;
 export const ATTRS: AttrKey[] = ["beleza", "talento", "contatos", "carisma", "juizo"];
 
