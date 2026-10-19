@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: data
@@ -77,7 +78,13 @@ jobs:
           git commit -m "data: atualiza films.json e people.json via pipeline"
           # o main pode ter avançado durante o job: rebase antes de empurrar, até 3 tentativas
           for i in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase origin main && git push && break
+            [ "$i" = 3 ] && exit 1
             sleep 5
           done
-          exit 1
+      - name: Redeploy do site com os dados novos
+        # pushes feitos com GITHUB_TOKEN não disparam o workflow de push; o dispatch explícito dispara
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main || echo "::warning::não consegui disparar o deploy; rode-o manualmente"
