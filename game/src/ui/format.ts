@@ -1,3 +1,4 @@
+import { createElement, type ReactNode } from "react";
 import type { Lang } from "../engine/types";
 
 export function money(n: number, lang: Lang): string {
@@ -106,3 +107,8 @@ export const METER_LABEL: Record<string, { pt: string; en: string }> = {
   fama: { pt: "Fama", en: "Fame" }, prestigio: { pt: "Prestígio", en: "Prestige" }, dinheiro: { pt: "Dinheiro", en: "Money" },
   heat: { pt: "Heat", en: "Heat" }, estabilidade: { pt: "Estabilidade", en: "Stability" }, vicio: { pt: "Vício", en: "Addiction" }, reputacao: { pt: "Reputação", en: "Reputation" },
 };
+
+/** Texto com `crases` vira <code class="attr"> (nomes de atributo nas explicações). */
+export function inline(text: string): ReactNode[] {
+  return text.split("`").map((piece, i) => (i % 2 ? createElement("code", { className: "attr", key: i }, piece) : piece));
+}

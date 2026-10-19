@@ -152,6 +152,7 @@ export function regretLine(film: Film, recusado: Film | null, lang: Lang, genero
 }
 
 /** Uma frase explicando o resultado pelos atributos (RULES 6.2), para o jogador sentir o que pesou. */
+/** Nomes de atributo vêm entre crases; a UI os destaca. */
 export function whyLine(r: { resultado: PersonalResult; fatores: { talento: number; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean } }, lang: Lang): string {
   const f = r.fatores;
   const parts: string[] = [];
@@ -163,13 +164,13 @@ export function whyLine(r: { resultado: PersonalResult; fatores: { talento: numb
     else if (gap === 0) parts.push(pt ? `Talento ${f.talento} para um papel nível ${f.demand}: no limite` : `Talent ${f.talento} for a level ${f.demand} role: just enough`);
     else parts.push(pt ? `Talento ${f.talento} para um papel nível ${f.demand}: faltou` : `Talent ${f.talento} for a level ${f.demand} role: not enough`);
     if (f.penalidade < 0) parts.push(pt ? "o filme afundou e levou gente junto" : "the film sank and took people with it");
-    if (f.estabilidade <= 3) parts.push(pt ? "você chegou ao set destruído(a)" : "you arrived on set in pieces");
-    if (f.sorte === 3) parts.push(pt ? "e a Sorte estava do seu lado" : "and Luck was on your side");
-    if (f.sorte === 1 && gap <= 0) parts.push(pt ? "e a Sorte, como sempre, não ajudou" : "and Luck, as always, didn't help");
-    if (r.resultado === "ganhou" && f.prestigioBonus >= 0.3) parts.push(pt ? "o Prestígio acumulado fechou a conta" : "accumulated Prestige closed the deal");
+    if (f.estabilidade <= 3) parts.push(pt ? "a `Estabilidade` lá embaixo: você chegou ao set destruído(a)" : "`Stability` at rock bottom: you arrived on set in pieces");
+    if (f.sorte === 3) parts.push(pt ? "e a `Sorte` estava do seu lado" : "and `Luck` was on your side");
+    if (f.sorte === 1 && gap <= 0) parts.push(pt ? "e a `Sorte`, como sempre, não ajudou" : "and `Luck`, as always, didn't help");
+    if (r.resultado === "ganhou" && f.prestigioBonus >= 0.3) parts.push(pt ? "o `Prestígio` acumulado fechou a conta" : "accumulated `Prestige` closed the deal");
     if (f.bisPenalty > 0 && (r.resultado === "indicado" || r.resultado === "fez_o_trabalho")) parts.push(pt ? "a Academia não dá bis" : "the Academy doesn't do encores");
   }
-  if (f.belezaFator >= 1.2) parts.push(pt ? "e a Beleza rendeu fama extra" : "and Looks brought extra fame");
-  if (f.belezaFator <= 0.9) parts.push(pt ? "e a Beleza já não rende o que rendia" : "and Looks don't pay what they used to");
+  if (f.belezaFator >= 1.2) parts.push(pt ? "e a `Beleza` rendeu fama extra" : "and `Looks` brought extra fame");
+  if (f.belezaFator <= 0.9) parts.push(pt ? "e a `Beleza` já não rende o que rendia" : "and `Looks` don't pay what they used to");
   return parts.join("; ") + ".";
 }
