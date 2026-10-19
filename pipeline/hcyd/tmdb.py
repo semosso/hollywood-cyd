@@ -108,12 +108,18 @@ def person_credits(tmdb_id: int, language: str = "en-US") -> dict:
 
 
 def pt_br_overview(m: dict) -> str | None:
+    """Sinopse em português: pt-BR primeiro, pt-PT como segunda opção. Nunca devolve inglês."""
+    best = None
     for t in (m.get("translations") or {}).get("translations", []):
-        if t.get("iso_3166_1") == "BR" and t.get("iso_639_1") == "pt":
-            ov = (t.get("data") or {}).get("overview")
-            if ov:
-                return ov
-    return None
+        if t.get("iso_639_1") != "pt":
+            continue
+        ov = (t.get("data") or {}).get("overview")
+        if not ov:
+            continue
+        if t.get("iso_3166_1") == "BR":
+            return ov
+        best = best or ov
+    return best
 
 
 def keywords(m: dict) -> list[str]:

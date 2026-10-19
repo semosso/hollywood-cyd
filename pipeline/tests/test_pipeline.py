@@ -117,3 +117,14 @@ def test_role_age_from_birth_year():
     by = {r["actor"]: r for r in rec["roles"]}
     assert by["Jesse Eisenberg"]["age"] == 27
     assert by["Justin Timberlake"]["age"] is None
+
+
+def test_pt_overview_never_falls_back_to_english():
+    m = {"overview": "An English synopsis.", "translations": {"translations": [
+        {"iso_639_1": "pt", "iso_3166_1": "PT", "data": {"overview": "Sinopse em pt-PT."}},
+        {"iso_639_1": "fr", "iso_3166_1": "FR", "data": {"overview": "Synopsis."}},
+    ]}}
+    assert tmdb.pt_br_overview(m) == "Sinopse em pt-PT."
+    m["translations"]["translations"].append({"iso_639_1": "pt", "iso_3166_1": "BR", "data": {"overview": "Sinopse em pt-BR."}})
+    assert tmdb.pt_br_overview(m) == "Sinopse em pt-BR."
+    assert tmdb.pt_br_overview({"overview": "Only English."}) is None

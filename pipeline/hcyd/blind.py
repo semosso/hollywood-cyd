@@ -190,7 +190,8 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
     rec["_keywords"] = keywords(m)
     g = genre_main(rec["genres"])
     tier = budget_tier(rec.get("budget"))
-    ov_pt = mask(pt_br_overview(m) or m.get("overview") or "", words)
+    # Sem sinopse em português, a descrição fica só com gênero, orçamento e ficha técnica: nada de inglês no meio.
+    ov_pt = mask(pt_br_overview(m) or "", words)
     ov_en = mask(m.get("overview") or "", words)
     year = rec["year"] or 0
     did = (rec.get("director") or {}).get("tmdb_id")
@@ -204,7 +205,7 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
             cr = credits_pt or credits
             hard = f"{director_line(cr, year, did, 'pt', 'hard')} quer você {pt_num(g)}. {budget[tier]} {s1}".strip()
             medium = f"{director_line(cr, year, did, 'pt', 'medium')} quer você {pt_num(g)}. {s1} {fact}".strip()
-            easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {first_sentence(ov, 220)}".strip()
+            easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {first_sentence(ov, 220) if ov else fact}".strip()
         else:
             hard = f"{director_line(credits, year, did, 'en', 'hard')} wants you in a {gname}. {budget[tier]} {s1}".strip()
             medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {fact}".strip()
