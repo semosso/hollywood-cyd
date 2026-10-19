@@ -16,7 +16,7 @@ const base: CreationInput = {
   anoEstreia: 1995,
   origem: "garcom",
   atributos: { beleza: 3, talento: 3, contatos: 3, carisma: 2, juizo: 2 },
-  opcoes: { hollywoodRealista: false, idioma: "pt" },
+  opcoes: { hollywoodRealista: false, longa: false, idioma: "pt" },
   seed: "teste-1",
 };
 
@@ -127,21 +127,23 @@ describe("run", () => {
     expect(r.filmografia.map((f) => f.tmdb_id)).toEqual(a.filmografia.map((f) => f.tmdb_id));
     expect(r.endingId).toBe(a.endingId);
   });
-  it("uma run de 1995 tem 3 atos, passa por décadas e usa contexto histórico", () => {
+  it("uma run de 1995 tem 15 decisões, passa por décadas e usa contexto histórico", () => {
     const a = autoplay(base, firstOption);
     expect(createState(base).totalCards).toBe(15);
+    expect(createState({ ...base, opcoes: { ...base.opcoes, longa: true } }).totalCards).toBe(30);
     expect(a.ano).toBeGreaterThan(2010);
     expect(a.contextosVistos).toContain(2007);
     expect(a.contextosVistos).toContain(1988); // anterior à estreia: marcado como visto, nunca mostrado
     expect(a.historico.length).toBeGreaterThan(10);
   });
-  it("a época de estreia dita o número de atos", async () => {
-    const { numAtosFor } = await import("../timeline");
-    expect(numAtosFor(1975)).toBe(3);
-    expect(numAtosFor(1996)).toBe(3);
-    expect(numAtosFor(2000)).toBe(2);
-    expect(numAtosFor(2010)).toBe(1);
-    expect(numAtosFor(2020)).toBe(1);
+  it("a época de estreia e o ritmo ditam o número de decisões, nunca menos que dez", async () => {
+    const { totalCardsFor } = await import("../timeline");
+    expect(totalCardsFor(1975, false)).toBe(25);
+    expect(totalCardsFor(1975, true)).toBe(50);
+    expect(totalCardsFor(1995, false)).toBe(15);
+    expect(totalCardsFor(1995, true)).toBe(30);
+    expect(totalCardsFor(2010, false)).toBe(10); // 7 cabem, mínimo 10
+    expect(totalCardsFor(2020, true)).toBe(10);
   });
 });
 

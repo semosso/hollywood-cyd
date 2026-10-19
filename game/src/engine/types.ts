@@ -56,7 +56,7 @@ export type Film = {
   requer_beleza?: number;
 };
 
-export type Options = { hollywoodRealista: boolean; idioma: Lang };
+export type Options = { hollywoodRealista: boolean; longa: boolean; idioma: Lang };
 
 export type CreationInput = {
   nome: string;

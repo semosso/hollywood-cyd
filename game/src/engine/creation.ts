@@ -1,5 +1,5 @@
-import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, CARDS_PER_ATO, CONTEXT_YEARS, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN, YEAR_STEP } from "./constants";
-import { numAtosFor } from "./timeline";
+import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, CONTEXT_YEARS, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN, YEAR_STEP } from "./constants";
+import { totalCardsFor } from "./timeline";
 import { rngFor } from "./rng";
 import type { Attributes, CreationInput, Meters, OriginId, State } from "./types";
 
@@ -74,7 +74,7 @@ export function createState(input: CreationInput): State {
     anoEstreia: input.anoEstreia,
     idade: o.idade,
     cardsJogados: 0,
-    totalCards: numAtosFor(input.anoEstreia) * CARDS_PER_ATO,
+    totalCards: totalCardsFor(input.anoEstreia, !!input.opcoes.longa),
     meters,
     flags: [...(o.flags ?? [])],
     rede: [],

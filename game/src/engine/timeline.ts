@@ -1,19 +1,25 @@
-import { CARDS_PER_ATO, DATA_YEAR_MAX, MAX_ATOS, MIN_ATOS, YEARS_PER_ATO } from "./constants";
+import { ATOS, DATA_YEAR_MAX, MIN_CARDS, YEARS_PER_CARD_LONGA, YEARS_PER_CARD_NORMAL } from "./constants";
 import type { State } from "./types";
 
-/** Quantos atos cabem entre a estreia e o fim dos dados: 1 a 3 atos de 10 anos (RULES 3.1). */
-export function numAtosFor(anoEstreia: number): number {
-  const decadas = Math.floor((DATA_YEAR_MAX + 1 - anoEstreia) / YEARS_PER_ATO);
-  return Math.max(MIN_ATOS, Math.min(MAX_ATOS, decadas));
+/** Anos que cada decisão avança: 2 no ritmo normal, 1 na carreira longa. É só uma conta interna de tempo. */
+export function yearsPerCardFor(longa: boolean): number {
+  return longa ? YEARS_PER_CARD_LONGA : YEARS_PER_CARD_NORMAL;
 }
 
-/** Ato 1..3 pelo número de cards jogados (5 por ato). */
-export function atoFor(state: Pick<State, "cardsJogados">): number {
-  return Math.floor(state.cardsJogados / CARDS_PER_ATO) + 1;
+export function yearsPerCard(state: State): number {
+  return yearsPerCardFor(state.opcoes.longa);
 }
 
-export function yearsPerCard(_state: State): number {
-  return YEARS_PER_ATO / CARDS_PER_ATO; // 2 anos por decisão
+/** Total de decisões: as que cabem até 2025 no ritmo escolhido, nunca menos que MIN_CARDS (RULES 3.1). */
+export function totalCardsFor(anoEstreia: number, longa: boolean): number {
+  const cabem = Math.floor((DATA_YEAR_MAX - anoEstreia) / yearsPerCardFor(longa));
+  return Math.max(MIN_CARDS, cabem);
+}
+
+/** Ato 1..3 pela fração da carreira já jogada (início, meio, fim). Eventos declaram `atos` nessa escala. */
+export function atoFor(state: Pick<State, "cardsJogados" | "totalCards">): number {
+  const frac = state.cardsJogados / Math.max(1, state.totalCards);
+  return Math.min(ATOS, 1 + Math.floor(frac * ATOS));
 }
 
 export function belezaEfetiva(state: State): number {

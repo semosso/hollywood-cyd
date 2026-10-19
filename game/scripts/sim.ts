@@ -31,8 +31,8 @@ function play(i: number): State {
   const origins = ORIGINS.filter((o) => !o.minAno);
   const o = origins[rng.int(origins.length)];
   const input: CreationInput = {
-    nome: "Sim", genero: rng.next() < 0.5 ? "f" : "m", anoEstreia: 1975 + rng.int(46), origem: o.id as OriginId,
-    atributos: randomAttrs(rng, pointBudget(o.id as OriginId), o.talentoMax), opcoes: { hollywoodRealista: rng.next() < 0.3, idioma: "pt" }, seed: "sim-" + i,
+    nome: "Sim", genero: rng.next() < 0.5 ? "f" : "m", anoEstreia: 1975 + 5 * rng.int(10), origem: o.id as OriginId,
+    atributos: randomAttrs(rng, pointBudget(o.id as OriginId), o.talentoMax), opcoes: { hollywoodRealista: rng.next() < 0.3, longa: rng.next() < 0.3, idioma: "pt" }, seed: "sim-" + i,
   };
   let s = startRun(createState(input), content);
   for (let guard = 0; guard < 400; guard++) {

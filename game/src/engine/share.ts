@@ -33,6 +33,7 @@ export function shareUrl(base: string, state: State, withChoices: boolean): stri
   u.searchParams.set("o", state.origem);
   u.searchParams.set("a", encodeAttrs(state.atributosIniciais));
   u.searchParams.set("h", state.opcoes.hollywoodRealista ? "1" : "0");
+  u.searchParams.set("l", state.opcoes.longa ? "1" : "0");
   u.searchParams.set("n", state.nome);
   if (withChoices && state.escolhas.length) u.searchParams.set("c", encodeChoices(state.escolhas));
   return u.toString();
@@ -49,7 +50,7 @@ export function creationFromParams(p: URLSearchParams, lang: Lang): CreationInpu
     anoEstreia: Math.max(1975, Math.min(2020, Math.round(Number(p.get("y") || 1995) / 5) * 5)),
     origem: (p.get("o") as OriginId) || "garcom",
     atributos,
-    opcoes: { hollywoodRealista: p.get("h") === "1", idioma: lang },
+    opcoes: { hollywoodRealista: p.get("h") === "1", longa: p.get("l") === "1", idioma: lang },
     seed,
   };
 }

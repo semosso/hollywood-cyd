@@ -15,12 +15,13 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const [origem, setOrigem] = useState<OriginId>(prefill?.origem ?? "garcom");
   const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? { beleza: 3, talento: 3, contatos: 2, carisma: 2, juizo: 2 });
   const [hollywoodRealista, setHollywoodRealista] = useState(prefill?.opcoes.hollywoodRealista ?? false);
+  const [longa, setLonga] = useState(prefill?.opcoes.longa ?? false);
   const [seed, setSeed] = useState(initialSeed ?? randomSeed());
   const budget = pointBudget(origem);
   const used = ATTRS.reduce((s, k) => s + attrs[k], 0);
   const left = budget - used;
-  const input: CreationInput = { nome, genero, anoEstreia: ano, origem, atributos: attrs, opcoes: { hollywoodRealista, idioma: lang }, seed };
-  const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, hollywoodRealista, seed, lang]);
+  const input: CreationInput = { nome, genero, anoEstreia: ano, origem, atributos: attrs, opcoes: { hollywoodRealista, longa, idioma: lang }, seed };
+  const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, hollywoodRealista, longa, seed, lang]);
   const bump = (k: keyof Attributes, d: number) => setAttrs((a) => ({ ...a, [k]: Math.min(5, Math.max(1, a[k] + d)) }));
   const names = genero === "f" ? NAMES_F : NAMES_M;
   const bonus = originById(origem).bonus;
@@ -100,6 +101,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
       <section>
         <div className="eyebrow">{t("options", lang)}</div>
         <label className="toggle"><input type="checkbox" checked={hollywoodRealista} onChange={(e) => setHollywoodRealista(e.target.checked)} /><span><b>{t("hollywood", lang)}</b><div className="d">{t("hollywoodHelp", lang)}</div></span></label>
+        <label className="toggle"><input type="checkbox" checked={longa} onChange={(e) => setLonga(e.target.checked)} /><span><b>{t("longa", lang)}</b><div className="d">{t("longaHelp", lang)}</div></span></label>
         <div className="toggle" style={{ gridTemplateColumns: "1fr" }}>
           <div className="field"><label htmlFor="seed">{t("seed", lang)}</label>
             <div className="row" style={{ gap: 6 }}><input id="seed" value={seed} onChange={(e) => setSeed(e.target.value)} style={{ flex: 1, minWidth: 0 }} /><button type="button" onClick={() => setSeed(randomSeed())}>🎲</button></div>

@@ -22,7 +22,7 @@
 
 ### 2.1 Entradas
 - `nome` (string, gerado ou digitado), `genero` ∈ {`f`, `m`}, `anoEstreia` ∈ {1975, 1980, …, 2020} (dropdown de 5 em 5 anos; 2020 é o máximo para a carreira alcançar 2025), `origem`, `atributos`, `opcoes`.
-- `opcoes`: `hollywoodRealista` (default **false**), `idioma` ∈ {`pt`, `en`}. Não existe "modo realista": a morte é sempre possível.
+- `opcoes`: `hollywoodRealista` (default **false**), `longa` (default **false**; ver 3.1), `idioma` ∈ {`pt`, `en`}. Não existe "modo realista": a morte é sempre possível.
 
 ### 2.2 Atributos
 - Cinco atributos, cada um inteiro em [1, 5]. **12 pontos no total** (mínimo 1 em cada, 7 livres). Distribuição padrão da tela: 3, 3, 2, 2, 2.
@@ -49,18 +49,18 @@
 
 ## 3. Linha do tempo
 
-### 3.1 Atos de dez anos, cinco decisões cada
-- Cada ato tem **10 anos** e **5 decisões**; cada card avança **2 anos** (e a idade junto).
-- O número de atos é ditado pela época de estreia: `clamp(floor((2026 − anoEstreia) / 10), 1, 3)`. Estreia até 1996 → 3 atos (15 decisões, 30 anos); 1997–2006 → 2 atos; 2007 em diante → 1 ato. Quando o jogo cobrir outras eras, a mesma conta vale para elas.
-- Nomes dos atos: I (chegada e ascensão), II (auge), III (virada e legado). Eventos declaram `atos` nessa escala de 1 a 3.
-- `totalCards = atos × 5` fica no estado e aparece no HUD ("7/15").
+### 3.1 Ritmo e número de decisões
+- Ritmo normal: cada decisão avança **2 anos**. Toggle **Carreira longa** (`opcoes.longa`): **1 ano** por decisão. Isso não é dito ao jogador em anos; é só a conta interna de tempo.
+- `totalCards = max(10, floor((2025 − anoEstreia) / anosPorDecisão))`. Exemplos: 1995 normal → 15; 1995 longa → 30; 1975 normal → 25; 2010 ou 2020 → 10 (o mínimo), e a carreira passa de 2025 com ofertas de fallback (o futuro não tem filmes reais).
+- **Atos** são uma escala de três terços da carreira (início, meio, fim), usada pelos eventos (`atos: [1..3]`) e pelo HUD ("ato II").
+- O HUD mostra "7/15".
 
 ### 3.2 Fim da run
 A run termina quando acontecer o primeiro:
 1. `cardsJogados == totalCards` → card final.
 2. Morte → card final imediato.
 3. Saída voluntária (evento `largar_tudo` aceito) → card final imediato.
-4. `ano > 2025` → card final "carreira até aqui" (a carreira alcançou o presente).
+4. (removido) A carreira pode passar de 2025 para cumprir o mínimo de dez decisões; a partir daí só há ofertas de fallback e o final "Carreira em andamento" fica elegível.
 
 ### 3.3 Deck: que card vem agora
 Padrão por ato, repetido: `projeto, vida, projeto, X, projeto`, onde `X` é escolhido pelo estado, nesta ordem de prioridade:

@@ -1,9 +1,9 @@
 import type { AttrKey, MeterKey, Outcome, PersonalResult } from "./types";
 
-export const CARDS_PER_ATO = 5;
-export const YEARS_PER_ATO = 10;
-export const MAX_ATOS = 3;          // 15 decisões; a época de estreia pode reduzir (menos décadas até 2025)
-export const MIN_ATOS = 1;
+export const MIN_CARDS = 10;        // mínimo de decisões, mesmo com pouca carreira pela frente
+export const YEARS_PER_CARD_NORMAL = 2;
+export const YEARS_PER_CARD_LONGA = 1;
+export const ATOS = 3;              // escala dos eventos: início, meio e fim da carreira
 export const POINT_BUY_TOTAL = 12;
 export const ATTR_MIN = 1;
 export const ATTR_MAX = 5;
