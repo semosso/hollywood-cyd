@@ -48,6 +48,7 @@ export function About({ lang, onClose }: { lang: Lang; onClose: () => void }) {
         <div className="eyebrow">{pt ? "Código e licença" : "Code and license"}</div>
         <p style={{ margin: "6px 0 0" }}>
           <a href="https://github.com/semosso/hollywood-cyd" target="_blank" rel="noreferrer">github.com/semosso/hollywood-cyd</a>.
+          {" "}{pt ? "Endereço principal: " : "Main address: "}<a href="https://thank-the-academy.vnazambuja.workers.dev/">thank-the-academy.vnazambuja.workers.dev</a>.
           {" "}{pt ? "Código sob MIT. Textos do jogo sob CC BY-NC-SA 4.0." : "Code under MIT. Game texts under CC BY-NC-SA 4.0."}
         </p>
       </div>
