@@ -1,6 +1,6 @@
 # Relatório de balanceamento
 
-Gerado por `scripts/sim.ts` com 1500 carreiras de política aleatória, 1524 filmes jogáveis (1522 com descrição automática), 46 eventos, 28 finais. 2026-10-19, 15.2s.
+Gerado por `scripts/sim.ts` com 1500 carreiras de política aleatória, 1524 filmes jogáveis (1522 com descrição automática), 46 eventos, 28 finais. 2026-10-19, 14.9s.
 
 ## Médias por carreira
 | métrica | valor |
