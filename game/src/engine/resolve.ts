@@ -24,8 +24,8 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
   if (r.oscar === "won" && score >= 0) res = "ganhou";
   else if ((r.oscar === "won" || r.oscar === "nominated") && score >= -0.5) res = "indicado";
   else if (r.oscar === "none" && ["hit", "oscar_bait", "cult"].includes(film.derived.outcome) && score >= 1.2) res = "roubou_a_cena";
-  else if (score >= -1.2) res = "fez_o_trabalho";
-  else if ((r.razzie !== "none" && score < -0.5) || score < -2.0) res = "razzie";
+  else if (score >= -1.5) res = "fez_o_trabalho";
+  else if ((r.razzie !== "none" && score < -0.5) || (r.oscar === "none" && score < -2.5)) res = "razzie";
   else res = "miscast";
   if (chaosRoll < CHAOS) {
     const all: PersonalResult[] = ["ganhou", "indicado", "roubou_a_cena", "fez_o_trabalho", "miscast", "razzie"];
@@ -37,8 +37,8 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
 
 export function cacheFor(film: Film, roleIndex: number, state: State, cpi: Cpi): number {
   const tier = tierFor(state.meters.fama);
-  const billing = BILLING_FACTOR[Math.min(3, film.roles[roleIndex].order)] ?? 0.5;
-  const budgetFactor = Math.min(3, Math.max(0.3, (film.budget ?? 20e6) / 50e6));
+  const billing = BILLING_FACTOR[Math.min(5, film.roles[roleIndex].order)] ?? 0.4;
+  const budgetFactor = Math.min(2, Math.max(0.3, (film.budget ?? 20e6) / 50e6));
   return inflate(CACHE_BASE_2020[tier] * billing * budgetFactor, state.ano, cpi);
 }
 
@@ -48,7 +48,7 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
   const talento = effAttrs(state).talento - (entry.ambos ? 1 : 0);
   const resultado = personalResult(film, entry.roleIndex, talento, state, rng.next(), rng.next(), rng.next());
   const role = film.roles[entry.roleIndex];
-  const billing = BILLING_FACTOR[Math.min(3, role.order)] ?? 0.5;
+  const billing = BILLING_FACTOR[Math.min(5, role.order)] ?? 0.4;
   const fd = FILM_DELTAS[film.derived.outcome];
   const pd = PERSONAL_DELTAS[resultado];
   const cache = cacheFor(film, entry.roleIndex, state, cpi);

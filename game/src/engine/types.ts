@@ -132,6 +132,7 @@ export type GameEvent = {
 export type Requirements = Partial<Record<AttrKey | MeterKey | "idade" | "ano", string>> & {
   flags?: string[];
   flags_ausentes?: string[];
+  flags_qualquer?: string[];
   genero?: Gender;
 };
 export type Effects = Partial<Record<MeterKey, number>> & {

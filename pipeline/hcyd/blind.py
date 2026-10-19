@@ -14,10 +14,21 @@ MASK = "▇▇▇"
 GENRE_IDS = {28: "Action", 12: "Adventure", 16: "Animation", 35: "Comedy", 80: "Crime", 99: "Documentary", 18: "Drama",
              10751: "Family", 14: "Fantasy", 36: "History", 27: "Horror", 10402: "Music", 9648: "Mystery", 10749: "Romance",
              878: "Science Fiction", 10770: "TV Movie", 53: "Thriller", 10752: "War", 37: "Western"}
-GENRE_PT = {"Action": "filme de ação", "Adventure": "aventura", "Animation": "animação", "Comedy": "comédia", "Crime": "filme policial",
+# (nome, feminino?) para concordância: "num drama" / "numa comédia"
+GENRE_PT = {"Action": "filme de ação", "Adventure": "filme de aventura", "Animation": "animação", "Comedy": "comédia", "Crime": "filme policial",
             "Documentary": "documentário", "Drama": "drama", "Family": "filme de família", "Fantasy": "fantasia", "History": "filme histórico",
             "Horror": "terror", "Music": "filme musical", "Mystery": "mistério", "Romance": "romance", "Science Fiction": "ficção científica",
             "TV Movie": "filme de TV", "Thriller": "thriller", "War": "filme de guerra", "Western": "faroeste"}
+GENRE_PT_FEM = {"Animation", "Comedy", "Fantasy", "Science Fiction"}
+
+
+def pt_num(g: str) -> str:
+    """'num drama' / 'numa comédia'."""
+    return ("numa " if g in GENRE_PT_FEM else "num ") + GENRE_PT.get(g, g.lower())
+
+
+def pt_um(g: str) -> str:
+    return ("uma " if g in GENRE_PT_FEM else "um ") + GENRE_PT.get(g, g.lower())
 GENRE_EN = {"Action": "action film", "Adventure": "adventure film", "Animation": "animated film", "Comedy": "comedy", "Crime": "crime film",
             "Documentary": "documentary", "Drama": "drama", "Family": "family film", "Fantasy": "fantasy film", "History": "period piece",
             "Horror": "horror film", "Music": "music film", "Mystery": "mystery", "Romance": "romance", "Science Fiction": "sci-fi film",
@@ -97,11 +108,11 @@ def director_prior(credits: dict | None, year: int, director_id: int | None) -> 
 
 def describe_prior(c: dict, lang: str) -> str:
     g = GENRE_IDS.get((c.get("genre_ids") or [0])[0], "Drama")
-    gname = (GENRE_PT if lang == "pt" else GENRE_EN).get(g, g.lower())
     yr = (c.get("release_date") or "")[:4]
     ov = first_sentence(mask(c.get("overview") or "", title_words(c.get("title"), c.get("original_title"))), 110)
     if lang == "pt":
-        return f"o diretor de um {gname} de {yr}" + (f" ({ov.rstrip('.')})" if ov else "")
+        return f"o diretor de {pt_um(g)} de {yr}" + (f" ({ov.rstrip('.')})" if ov else "")
+    gname = GENRE_EN.get(g, g.lower())
     return f"the director of a {yr} {gname}" + (f" ({ov.rstrip('.')})" if ov else "")
 
 
@@ -148,6 +159,8 @@ def production_fact(rec: dict, lang: str) -> str:
         return "Quase três horas." if lang == "pt" else "Nearly three hours long."
     if rt and rt <= 90:
         return "Dura menos de hora e meia." if lang == "pt" else "Under ninety minutes."
+    if lang == "pt":
+        return ""  # as palavras-chave do TMDB são só em inglês
     kws = [k for k in (rec.get("_keywords") or []) if len(k) > 3][:2]
     words = rec.get("_title_words") or set()
     kws = [k for k in kws if not (title_words(k) & words)]
@@ -156,7 +169,7 @@ def production_fact(rec: dict, lang: str) -> str:
     return ""
 
 
-def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int], my_index: int) -> tuple[dict, dict]:
+def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int], my_index: int, credits_pt: dict | None = None) -> tuple[dict, dict]:
     """Devolve (blind_pt, blind_en) com hard/medium/easy."""
     from .tmdb import keywords, pt_br_overview  # import tardio para facilitar testes
     words = title_words(rec["title"].get("en"), rec["title"].get("original"), rec["title"].get("pt"))
@@ -176,9 +189,10 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
         costar = costar_line(rec["roles"], my_index, oscar_wins, lang)
         fact = production_fact(rec, lang)
         if lang == "pt":
-            hard = f"{director_line(credits, year, did, 'pt', 'hard')} quer você num {gname}. {budget[tier]} {s1}".strip()
-            medium = f"{director_line(credits, year, did, 'pt', 'medium')} quer você num {gname}. {s1} {costar} {fact}".strip()
-            easy = f"{dname or 'O diretor'} quer você num {gname}. {ov}".strip()
+            cr = credits_pt or credits
+            hard = f"{director_line(cr, year, did, 'pt', 'hard')} quer você {pt_num(g)}. {budget[tier]} {s1}".strip()
+            medium = f"{director_line(cr, year, did, 'pt', 'medium')} quer você {pt_num(g)}. {s1} {costar} {fact}".strip()
+            easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {ov}".strip()
         else:
             hard = f"{director_line(credits, year, did, 'en', 'hard')} wants you in a {gname}. {budget[tier]} {s1}".strip()
             medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {costar} {fact}".strip()

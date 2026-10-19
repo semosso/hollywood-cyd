@@ -54,12 +54,12 @@ def test_build_film_record():
     assert rec["film_awards"]["oscar_wins"] == 3
     assert rec["film_awards"]["best_picture"] == "nominated"
     lead = rec["roles"][0]
-    assert lead["actor"] == "Jesse Eisenberg" and lead["oscar"] == "nominated" and lead["demand"] >= 4
+    assert lead["actor"] == "Jesse Eisenberg" and lead["oscar"] == "nominated" and lead["demand"] == 3
     assert rec["roles"][1]["oscar"] == "none"
     d = rec["derived"]
     assert d["ratio"] == 5.62
     assert d["p_prize"] >= 0.6 and d["p_box"] == 0.9
-    assert d["outcome"] == "hit"
+    assert d["outcome"] == "hit"  # ratio 5.6 e RT 96: lucrou demais para ser só isca de Oscar
     assert rec["blind"]["hard"] == "x" and rec["poster"].endswith(".jpg")
 
 
@@ -67,7 +67,7 @@ def test_build_without_optional_sources():
     m = load("tmdb_37799.json")
     rec = build.build_film(m, None, [], None)
     assert rec["rt"] is None and rec["film_awards"]["oscar_nominations"] == 0
-    assert rec["roles"][0]["oscar"] == "none" and rec["roles"][0]["demand"] == 4  # Drama
+    assert rec["roles"][0]["oscar"] == "none" and rec["roles"][0]["demand"] == 3  # Drama
     assert rec["derived"]["outcome"] == "popcorn"  # ratio alto, sem crítica conhecida
 
 
@@ -86,6 +86,7 @@ def test_blind_auto_masks_title_and_describes_director():
     assert "Se7en" not in rec["blind"]["medium"]
     assert "David Fincher" in rec["blind"]["easy"] and "David Fincher" not in rec["blind"]["medium"]
     assert "ganhou o Oscar" in rec["blind"]["medium"]   # colega de elenco premiado (mapa do dataset)
+    assert "num drama" in rec["blind"]["hard"] and "um filme policial de 1995" in rec["blind"]["medium"]
     assert "Orçamento" in rec["blind"]["hard"] and "[" not in rec["blind"]["hard"]
     # curadoria manual continua tendo prioridade
     cur = build.build_film(m, None, awards, {"blind": {"hard": "x"}}, credits, {})

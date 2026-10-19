@@ -58,6 +58,7 @@ def cmd_fetch():
         if d:
             try:
                 tmdb.person_credits(d["tmdb_id"])
+                tmdb.person_credits(d["tmdb_id"], "pt-BR")
             except HttpError as e:
                 _log(f"créditos do diretor falharam para {r['title']}: {e}")
         imdb_id = m.get("imdb_id") or (m.get("external_ids") or {}).get("imdb_id")
@@ -94,8 +95,8 @@ def _cached_movie(tmdb_id: int) -> dict | None:
     return _MOVIE_CACHE.get(tmdb_id)
 
 
-def _cached_person_credits(person_id: int) -> dict | None:
-    d = CACHE_DIR / "tmdb_person_credits"
+def _cached_person_credits(person_id: int, ns: str = "tmdb_person_credits") -> dict | None:
+    d = CACHE_DIR / ns
     if not d.exists():
         return None
     for p in d.glob("*.json"):
@@ -141,7 +142,8 @@ def cmd_build():
     for r, m, awards, ratings in raw:
         d = tmdb.director(m)
         credits = _cached_person_credits(d["tmdb_id"]) if d else None
-        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins)
+        credits_pt = _cached_person_credits(d["tmdb_id"], "tmdb_person_credits_pt_BR") if d else None
+        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins, credits_pt)
         rec["why"] = r["why"]
         if r["year"] and rec["year"] and abs(r["year"] - rec["year"]) > 1:
             _log(f"ATENÇÃO: tmdb_id {r['tmdb_id']} no CSV é '{r['title']}' ({r['year']}) mas o TMDB devolveu '{rec['title']['en']}' ({rec['year']}). Confira o id.")

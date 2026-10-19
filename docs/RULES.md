@@ -81,7 +81,7 @@ Em qualquer posição, antes do card, roda a **resolução** pendente (seção 6
 ### 4.1 Pool
 Filmes de `data/films.json` com:
 - `year ∈ [ano+1, ano+anosPorCard]`;
-- pelo menos um `role` com `gender == genero` (ou `gender == null`) e `order ≤ 3`;
+- pelo menos um `role` com `gender == genero` (ou `gender == null`) e `order ≤ 5`;
 - não usado nesta run (nem aceito nem recusado);
 - se flag `sotaque`: `order ≥ 2`; se flag `pigeonhole_comedia` e Prestígio < 30: só gêneros Comedy/Family/Romance.
 - **Hollywood realista** (`hollywoodRealista` ligado, `genero == f`, `idade ≥ 40`): só filmes em que o papel tem `oscar != none` **ou** `derived.p_prize ≥ 0.4`, **ou** Fama ≥ 70. Se o pool esvaziar, entram ofertas de fallback (4.5). O jogo mostra uma linha explicando: *"Hollywood realista: a partir dos 40, só o excepcional chega até você."*
@@ -175,8 +175,8 @@ resultado_pessoal:
   se r.oscar == "won"        e score ≥ 0     → "ganhou"
   se r.oscar ∈ {won,nominated} e score ≥ −0.5 → "indicado"
   se r.oscar == "none" e f.derived.outcome ∈ {hit, oscar_bait, cult} e score ≥ 1.2 → "roubou_a_cena"
-  se score ≥ −1.2                             → "fez_o_trabalho"
-  se (r.razzie != "none" e score < −0.5) ou score < −2.0 → "razzie"
+  se score ≥ −1.5                             → "fez_o_trabalho"
+  se (r.razzie != "none" e score < −0.5) ou (r.oscar == "none" e score < −2.5) → "razzie"
   senão                                       → "miscast"
 caos: com p = 0.10, troca por outro resultado sorteado uniformemente (exceto "ganhou" se r.oscar == none).
 ```
@@ -185,11 +185,11 @@ Deltas (constantes em `constants.ts`):
 
 | | hit | popcorn | oscar_bait | cult | flop | bomb |
 |---|---|---|---|---|---|---|
-| Fama (× fator de billing) | +15 | +12 | +8 | +3 | −3 | −6 |
-| Prestígio | +4 | 0 | +8 | +6 | −2 | −5 |
-| Heat | +4 | +4 | +3 | +1 | +1 | +2 |
+| Fama (× fator de billing) | +10 | +8 | +6 | +2 | −4 | −7 |
+| Prestígio | +3 | −1 | +7 | +6 | −2 | −5 |
+| Heat | +3 | +3 | +2 | +1 | +1 | +2 |
 
-Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5.
+Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5 · 4–5 → 0.4. Papéis elegíveis: `order ≤ 5`.
 
 | resultado pessoal | Fama | Prestígio | Estabilidade | flags |
 |---|---|---|---|---|
@@ -200,7 +200,7 @@ Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5.
 | miscast | −2 | −4 | −1 | |
 | razzie | +2 | −8 | −2 | `razzie` |
 
-Cachê: `base[tier] × billing × fatorOrcamento`, com `base = [50k, 500k, 3M, 12M]` (dólares de 2020) e `fatorOrcamento = clamp(budget / 50M, 0.3, 3)`; convertido para dólares do `ano` via `data/cpi.json`. Dinheiro += cachê.
+Cachê: `base[tier] × billing × fatorOrcamento`, com `base = [30k, 300k, 2M, 8M]` (dólares de 2020) e `fatorOrcamento = clamp(budget / 50M, 0.3, 2)`; convertido para dólares do `ano` via `data/cpi.json`. Dinheiro += cachê.
 
 Flags do filme → estado: `franquia` → `contrato_franquia`; `tirano_genial` → Estabilidade −2 e `talento +1 permanente` (uma vez por diretor); `terror`/`acao` → com p 0.15, flag `lesao` (abre eventos de opioides).
 

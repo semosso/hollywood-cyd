@@ -26,7 +26,7 @@ export function eligibleRole(f: Film, state: State): number {
   const minOrder = state.flags.includes("sotaque") && state.meters.fama < 40 ? 2 : 0;
   let best = -1;
   f.roles.forEach((r: Role, i) => {
-    if (r.order > 3 || r.order < minOrder) return;
+    if (r.order > 5 || r.order < minOrder) return;
     if (r.gender && r.gender !== state.genero) return;
     if (best === -1 || r.order < f.roles[best].order) best = i;
   });

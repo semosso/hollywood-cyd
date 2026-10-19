@@ -208,7 +208,7 @@ def main():
     for (tid, en, pt, year, genres, (did, dname), budget, revenue, rt, (noms, wins, bp), roles, flags, hard, medium, extra) in F:
         rs = []
         for (actor, order, gender, oscar, razzie) in roles:
-            rs.append({"actor": actor, "order": order, "gender": gender, "demand": role_demand(genres, oscar != "none"), "oscar": oscar, "razzie": razzie})
+            rs.append({"actor": actor, "order": order, "gender": gender, "demand": role_demand(genres, oscar != "none", oscar == "won"), "oscar": oscar, "razzie": razzie})
         rec = {
             "tmdb_id": tid, "imdb_id": None, "title": {"original": en, "en": en, "pt": pt}, "year": year, "genres": genres,
             "director": {"tmdb_id": did, "name": dname}, "roles": rs, "budget": int(budget), "revenue": int(revenue), "rt": rt,

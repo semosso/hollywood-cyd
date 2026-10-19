@@ -26,16 +26,16 @@ export const YEARS_PER_CARD = [1, 1, 1, 2, 3]; // por ato (índice 0 = ato I)
 
 export const TIER_BUDGET_MAX = [15e6, 50e6, 120e6, Infinity];
 export const TIER_FAMA_MIN = [0, 20, 45, 70];
-export const CACHE_BASE_2020 = [50_000, 500_000, 3_000_000, 12_000_000];
-export const BILLING_FACTOR = [1.0, 0.8, 0.6, 0.5];
+export const CACHE_BASE_2020 = [30_000, 300_000, 2_000_000, 8_000_000];
+export const BILLING_FACTOR = [1.0, 0.8, 0.6, 0.5, 0.4, 0.4];
 
 export const FILM_DELTAS: Record<Outcome, { fama: number; prestigio: number; heat: number }> = {
-  hit: { fama: 15, prestigio: 4, heat: 4 },
-  popcorn: { fama: 12, prestigio: 0, heat: 4 },
-  oscar_bait: { fama: 8, prestigio: 8, heat: 3 },
-  cult: { fama: 3, prestigio: 6, heat: 1 },
-  flop: { fama: -3, prestigio: -2, heat: 1 },
-  bomb: { fama: -6, prestigio: -5, heat: 2 },
+  hit: { fama: 10, prestigio: 3, heat: 3 },
+  popcorn: { fama: 8, prestigio: -1, heat: 3 },
+  oscar_bait: { fama: 6, prestigio: 7, heat: 2 },
+  cult: { fama: 2, prestigio: 6, heat: 1 },
+  flop: { fama: -4, prestigio: -2, heat: 1 },
+  bomb: { fama: -7, prestigio: -5, heat: 2 },
 };
 
 export const PERSONAL_DELTAS: Record<PersonalResult, { fama: number; prestigio: number; estabilidade: number; flag?: string }> = {

@@ -77,11 +77,12 @@ def producers(m: dict) -> list[dict]:
     ][:6]
 
 
-def person_credits(tmdb_id: int) -> dict:
+def person_credits(tmdb_id: int, language: str = "en-US") -> dict:
     """Filmografia da pessoa (cast + crew). Usada para descrever o diretor sem nomeá-lo."""
     params, headers = _auth()
-    params.update({"language": "en-US"})
-    return get_json(f"{TMDB_BASE}/person/{tmdb_id}/movie_credits", params, headers, namespace="tmdb_person_credits", ttl_days=90)
+    params.update({"language": language})
+    ns = "tmdb_person_credits" if language == "en-US" else "tmdb_person_credits_" + language.replace("-", "_")
+    return get_json(f"{TMDB_BASE}/person/{tmdb_id}/movie_credits", params, headers, namespace=ns, ttl_days=90)
 
 
 def pt_br_overview(m: dict) -> str | None:

@@ -8,16 +8,18 @@ from . import blind as blind_mod
 
 # Exigência dramática do papel por gênero (1 a 5). Combinado com indicação real.
 GENRE_DEMAND = {
-    "Drama": 4, "History": 4, "War": 3, "Romance": 3, "Crime": 3, "Thriller": 3, "Mystery": 3,
-    "Horror": 3, "Music": 3, "Comedy": 2, "Action": 2, "Adventure": 2, "Science Fiction": 2,
-    "Fantasy": 2, "Western": 3, "Family": 1, "Animation": 1, "Documentary": 1, "TV Movie": 1,
+    "Drama": 3, "History": 3, "War": 3, "Romance": 2, "Crime": 3, "Thriller": 2, "Mystery": 2,
+    "Horror": 2, "Music": 3, "Comedy": 2, "Action": 1, "Adventure": 1, "Science Fiction": 2,
+    "Fantasy": 2, "Western": 2, "Family": 1, "Animation": 1, "Documentary": 1, "TV Movie": 1,
 }
 
 
-def role_demand(genres: list[str], nominated: bool) -> int:
+def role_demand(genres: list[str], nominated: bool, won: bool = False) -> int:
     base = max((GENRE_DEMAND.get(g, 2) for g in genres), default=2)
-    if nominated:
+    if won:
         base = max(base, 4)
+    elif nominated:
+        base = max(base, 3)
     return min(5, base)
 
 
@@ -51,20 +53,21 @@ def _film_awards(awards: list[dict]) -> dict:
     }
 
 
-def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None, director_credits: dict | None = None, oscar_wins: dict[str, int] | None = None) -> dict:
+def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None, director_credits: dict | None = None, oscar_wins: dict[str, int] | None = None, director_credits_pt: dict | None = None) -> dict:
     genres = [g["name"] for g in m.get("genres", [])]
     year = int((m.get("release_date") or "0000")[:4]) or None
     roles = []
     for c in tmdb_mod.top_cast(m, 4):
         pa = _person_awards(awards, c["name"])
         nominated = pa.get("oscar") in ("won", "nominated")
+        won = pa.get("oscar") == "won"
         roles.append({
             "actor": c["name"],
             "actor_tmdb_id": c["tmdb_id"],
             "character": c["character"],
             "order": c["order"],
             "gender": c["gender"],
-            "demand": role_demand(genres, nominated),
+            "demand": role_demand(genres, nominated, won),
             "oscar": pa.get("oscar", "none"),
             "razzie": pa.get("razzie", "none"),
             "globe": pa.get("globe", "none"),
@@ -101,7 +104,7 @@ def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict
     }
     if not rec["blind"]:
         my_index = next((i for i, r in enumerate(roles) if r["order"] == 0), 0)
-        pt, en = blind_mod.generate(rec, m, director_credits, oscar_wins or {}, my_index)
+        pt, en = blind_mod.generate(rec, m, director_credits, oscar_wins or {}, my_index, director_credits_pt)
         rec["blind"], rec["blind_en"], rec["blind_auto"] = pt, en, True
     rec["derived"] = derive(rec)
     return rec
@@ -133,12 +136,12 @@ def derive(rec: dict) -> dict:
     if fa["razzie_nominations"]:
         scandal = 0.3
     outcome = "flop"
-    if ratio is not None and ratio >= 2.5 and (rt or 0) >= 70:
+    if (rt or 0) >= 85 and fa["oscar_nominations"] >= 4 and (ratio is None or ratio < 4):
+        outcome = "oscar_bait"
+    elif ratio is not None and ratio >= 3 and (rt or 0) >= 70:
         outcome = "hit"
     elif ratio is not None and ratio >= 2.5:
         outcome = "popcorn"
-    elif (rt or 0) >= 85 and fa["oscar_nominations"] >= 3:
-        outcome = "oscar_bait"
     elif (rt or 0) >= 85:
         outcome = "cult"
     elif ratio is not None and ratio < 1 and (rt or 0) < 40:

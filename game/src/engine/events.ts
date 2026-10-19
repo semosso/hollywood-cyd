@@ -25,6 +25,7 @@ export function meets(req: Requirements | undefined, state: State): boolean {
   for (const [k, v] of Object.entries(req)) {
     if (k === "flags") { if (!(v as string[]).every((f) => state.flags.includes(f))) return false; continue; }
     if (k === "flags_ausentes") { if ((v as string[]).some((f) => state.flags.includes(f))) return false; continue; }
+    if (k === "flags_qualquer") { if (!(v as string[]).some((f) => state.flags.includes(f))) return false; continue; }
     if (k === "genero") { if (state.genero !== v) return false; continue; }
     if (k === "idade") { if (!cmp(v as string, state.idade)) return false; continue; }
     if (k === "ano") { if (!cmp(v as string, state.ano)) return false; continue; }
