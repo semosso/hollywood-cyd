@@ -76,7 +76,7 @@ Em qualquer posição, antes do card, roda a **resolução** pendente (seção 6
 ### 4.1 Pool
 Filmes de `data/films.json` com:
 - `year ∈ [ano+1, ano+anosPorCard]`;
-- pelo menos um `role` com `gender == genero` (ou `gender == null`) e `order ≤ 5`;
+- pelo menos um `role` com `gender == genero` e `order ≤ 5`. Papéis de ator não-binário (`nb`) ficam abertos a qualquer jogador; papéis cujo gênero o TMDB desconhece ficam fora.
 - não usado nesta run (nem aceito nem recusado);
 - se flag `sotaque`: `order ≥ 2`; se flag `pigeonhole_comedia` e Prestígio < 30: só gêneros Comedy/Family/Romance.
 - **Hollywood realista** (`hollywoodRealista` ligado, `genero == f`, `idade ≥ 45`): só filmes em que o papel tem `oscar != none` **ou** `derived.p_prize ≥ 0.4`, **ou** Fama ≥ 70. Se o pool esvaziar, entram ofertas de fallback (4.5). O jogo mostra uma linha explicando: *"Hollywood realista: a partir dos 45, só o excepcional chega até você."*

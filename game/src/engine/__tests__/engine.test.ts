@@ -57,7 +57,7 @@ describe("ofertas", () => {
     expect(p.length).toBeGreaterThan(0);
     for (const c of p) {
       expect([1996, 1997]).toContain(c.film.year); // janela de 2 anos por decisão
-      expect(c.film.roles[c.roleIndex].gender === "f" || c.film.roles[c.roleIndex].gender == null).toBe(true);
+      expect(["f", "nb"]).toContain(c.film.roles[c.roleIndex].gender);
     }
     s.usados.push(p[0].film.tmdb_id);
     expect(pool(content.films, s).find((c) => c.film.tmdb_id === p[0].film.tmdb_id)).toBeUndefined();

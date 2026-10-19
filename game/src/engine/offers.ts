@@ -27,7 +27,9 @@ export function eligibleRole(f: Film, state: State): number {
   let best = -1;
   f.roles.forEach((r: Role, i) => {
     if (r.order > 5 || r.order < minOrder) return;
-    if (r.gender && r.gender !== state.genero) return;
+    // gênero desconhecido no TMDB: fora (não dá para garantir o par); não-binário: aberto a quem jogar
+    if (!r.gender) return;
+    if (r.gender !== "nb" && r.gender !== state.genero) return;
     if (best === -1 || r.order < f.roles[best].order) best = i;
   });
   return best;
