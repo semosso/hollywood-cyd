@@ -1,0 +1,3633 @@
+[
+ {
+  "tmdb_id": 103,
+  "imdb_id": null,
+  "title": {
+   "original": "Taxi Driver",
+   "en": "Taxi Driver",
+   "pt": "Taxi Driver: Motorista de Táxi"
+  },
+  "year": 1976,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 1032,
+   "name": "Martin Scorsese"
+  },
+  "roles": [
+   {
+    "actor": "Robert De Niro",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jodie Foster",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Cybill Shepherd",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 1900000,
+  "revenue": 28000000,
+  "rt": 89,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor nova-iorquino de 33 anos quer você num filme sobre um motorista que não dorme. A cidade é suja de verdade; a câmera também.",
+   "medium": "O diretor de um filme sobre um bairro italiano do Brooklyn quer você num filme com um taxista insone e um espelho. O roteirista escreveu em duas semanas, deprimido, com uma arma na gaveta."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 14.74,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 703,
+  "imdb_id": null,
+  "title": {
+   "original": "Annie Hall",
+   "en": "Annie Hall",
+   "pt": "Noivo Neurótico, Noiva Nervosa"
+  },
+  "year": 1977,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 1243,
+   "name": "Woody Allen"
+  },
+  "roles": [
+   {
+    "actor": "Woody Allen",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Diane Keaton",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   }
+  ],
+  "budget": 4000000,
+  "revenue": 38000000,
+  "rt": 96,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 5,
+   "oscar_wins": 4,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um comediante baixinho e ansioso quer você numa comédia romântica em que ele fala com a câmera. Você vai usar gravata e colete.",
+   "medium": "O comediante de óculos que faz um filme por ano quer você como a namorada que canta em bar. O figurino é seu mesmo. O nome da personagem também."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [
+   "O filme bateu Star Wars no Oscar de Melhor Filme."
+  ],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.5,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 694,
+  "imdb_id": null,
+  "title": {
+   "original": "The Shining",
+   "en": "The Shining",
+   "pt": "O Iluminado"
+  },
+  "year": 1980,
+  "genres": [
+   "Horror",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 240,
+   "name": "Stanley Kubrick"
+  },
+  "roles": [
+   {
+    "actor": "Jack Nicholson",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Shelley Duvall",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "nominated"
+   },
+   {
+    "actor": "Danny Lloyd",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 19000000,
+  "revenue": 47000000,
+  "rt": 83,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 1
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor que mora na Inglaterra e não entra em avião quer você num hotel vazio no inverno. Uma cena vai ter 127 takes. Seu marido na tela é mais famoso que você.",
+   "medium": "O diretor de um filme sobre astronautas e um computador que canta quer você num hotel isolado, com um menino que fala com o dedo. Treze meses de filmagem. Você vai chorar de verdade, todos os dias."
+  },
+  "flags": [
+   "tirano_genial",
+   "terror"
+  ],
+  "trivia": [
+   "A cena da escada com o taco de beisebol entrou no Guinness: 127 takes."
+  ],
+  "rumors": [],
+  "revision": {
+   "year": 2022,
+   "text": {
+    "pt": "A Razzie Foundation retira sua indicação e pede desculpas. Você diz que não se lembra do filme. É mentira.",
+    "en": "The Razzies rescind your nomination and apologize. You say you don't remember the film. You're lying."
+   },
+   "prestige_delta": 4
+  },
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.5,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 2.47,
+   "outcome": "flop"
+  }
+ },
+ {
+  "tmdb_id": 9576,
+  "imdb_id": null,
+  "title": {
+   "original": "Tootsie",
+   "en": "Tootsie",
+   "pt": "Tootsie"
+  },
+  "year": 1982,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 2226,
+   "name": "Sydney Pollack"
+  },
+  "roles": [
+   {
+    "actor": "Dustin Hoffman",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jessica Lange",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Teri Garr",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 21000000,
+  "revenue": 177000000,
+  "rt": 90,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 10,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um astro baixinho e difícil vai passar o filme inteiro vestido de mulher. Você é a colega de novela que não sabe disso.",
+   "medium": "O ator de um filme sobre um divórcio em Manhattan vai interpretar uma atriz de novela. O diretor também atua, como o agente dele, porque ninguém mais aguentava."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 8.43,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 218,
+  "imdb_id": null,
+  "title": {
+   "original": "The Terminator",
+   "en": "The Terminator",
+   "pt": "O Exterminador do Futuro"
+  },
+  "year": 1984,
+  "genres": [
+   "Action",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 2710,
+   "name": "James Cameron"
+  },
+  "roles": [
+   {
+    "actor": "Arnold Schwarzenegger",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Linda Hamilton",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Michael Biehn",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 6400000,
+  "revenue": 78000000,
+  "rt": 100,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor que até ontem fazia maquete de peixe quer você num filme barato sobre um robô do futuro. O vilão é um fisiculturista austríaco.",
+   "medium": "O diretor demitido de um filme sobre piranhas voadoras sonhou com um esqueleto de metal saindo do fogo e escreveu um roteiro. O vilão quase foi o O.J. Simpson."
+  },
+  "flags": [
+   "acao",
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "terminator",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 12.19,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 744,
+  "imdb_id": null,
+  "title": {
+   "original": "Top Gun",
+   "en": "Top Gun",
+   "pt": "Top Gun: Ases Indomáveis"
+  },
+  "year": 1986,
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 1766,
+   "name": "Tony Scott"
+  },
+  "roles": [
+   {
+    "actor": "Tom Cruise",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Kelly McGillis",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Val Kilmer",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 15000000,
+  "revenue": 357000000,
+  "rt": 58,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 1,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor de comercial quer você num filme sobre pilotos de caça com muita luz laranja. A Marinha pagou parte. O astro tem 1,70 m e sorri muito.",
+   "medium": "O irmão do diretor de Alien, vindo da publicidade, filma pilotos suados jogando vôlei. Seu par romântico é 5 cm mais alta que o astro; vão filmar você sem sapato."
+  },
+  "flags": [
+   "acao"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 23.8,
+   "outcome": "popcorn"
+  }
+ },
+ {
+  "tmdb_id": 380,
+  "imdb_id": null,
+  "title": {
+   "original": "Rain Man",
+   "en": "Rain Man",
+   "pt": "Rain Man"
+  },
+  "year": 1988,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 5125,
+   "name": "Barry Levinson"
+  },
+  "roles": [
+   {
+    "actor": "Dustin Hoffman",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Tom Cruise",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Valeria Golino",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 25000000,
+  "revenue": 355000000,
+  "rt": 88,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 4,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um road movie com dois irmãos num carro antigo. Um deles conta palitos de dente. Quatro diretores já desistiram do projeto.",
+   "medium": "O astro dos pilotos de caça quer provar que atua. O irmão autista é do ator de Tootsie, que ensaiou com pacientes de verdade por um ano."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 14.2,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 114,
+  "imdb_id": null,
+  "title": {
+   "original": "Pretty Woman",
+   "en": "Pretty Woman",
+   "pt": "Uma Linda Mulher"
+  },
+  "year": 1990,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 11714,
+   "name": "Garry Marshall"
+  },
+  "roles": [
+   {
+    "actor": "Richard Gere",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Julia Roberts",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 14000000,
+  "revenue": 463000000,
+  "rt": 65,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um roteiro sombrio sobre uma prostituta de Hollywood Boulevard virou comédia romântica com um bilionário. Pôster com uma loja de luxo. Molly Ringwald recusou.",
+   "medium": "O criador de sitcoms dos anos 70 dirige um conto de fadas com uma garota de programa em Rodeo Drive. A cena da caixa de joias foi improvisada e a risada é real."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Molly Ringwald",
+    "role": "Vivian"
+   }
+  ],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 33.07,
+   "outcome": "popcorn"
+  }
+ },
+ {
+  "tmdb_id": 274,
+  "imdb_id": null,
+  "title": {
+   "original": "The Silence of the Lambs",
+   "en": "The Silence of the Lambs",
+   "pt": "O Silêncio dos Inocentes"
+  },
+  "year": 1991,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 7493,
+   "name": "Jonathan Demme"
+  },
+  "roles": [
+   {
+    "actor": "Jodie Foster",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Anthony Hopkins",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Scott Glenn",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 19000000,
+  "revenue": 273000000,
+  "rt": 95,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 7,
+   "oscar_wins": 5,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Uma estagiária do FBI entrevista um psiquiatra canibal. Michelle Pfeiffer recusou por achar violento demais. Lança em fevereiro, mês de lixo.",
+   "medium": "O diretor de um filme sobre a banda Talking Heads faz um thriller com um ator galês que fala sem piscar. O canibal tem 16 minutos de tela e vai ganhar tudo."
+  },
+  "flags": [
+   "terror"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Michelle Pfeiffer",
+    "role": "Clarice Starling"
+   }
+  ],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 14.37,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 402,
+  "imdb_id": null,
+  "title": {
+   "original": "Basic Instinct",
+   "en": "Basic Instinct",
+   "pt": "Instinto Selvagem"
+  },
+  "year": 1992,
+  "genres": [
+   "Thriller",
+   "Mystery"
+  ],
+  "director": {
+   "tmdb_id": 1176,
+   "name": "Paul Verhoeven"
+  },
+  "roles": [
+   {
+    "actor": "Michael Douglas",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Sharon Stone",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "George Dzundza",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 49000000,
+  "revenue": 353000000,
+  "rt": 55,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 2,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor holandês quer você num thriller erótico com um picador de gelo. Há uma cena de interrogatório sobre a qual você vai ser perguntada pelo resto da vida.",
+   "medium": "O diretor de RoboCop e um roteiro de US$ 3 milhões. Protestos no set em São Francisco. A atriz diz que não sabia o que a câmera via na cena do interrogatório."
+  },
+  "flags": [
+   "escandalo"
+  ],
+  "trivia": [],
+  "rumors": [
+   {
+    "text": {
+     "pt": "Dizem que a atriz não foi avisada do enquadramento da cena famosa.",
+     "en": "They say the actress wasn't told about the framing of the famous scene."
+    }
+   }
+  ],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.35,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 7.2,
+   "outcome": "popcorn"
+  }
+ },
+ {
+  "tmdb_id": 329,
+  "imdb_id": null,
+  "title": {
+   "original": "Jurassic Park",
+   "en": "Jurassic Park",
+   "pt": "Jurassic Park: O Parque dos Dinossauros"
+  },
+  "year": 1993,
+  "genres": [
+   "Adventure",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 488,
+   "name": "Steven Spielberg"
+  },
+  "roles": [
+   {
+    "actor": "Sam Neill",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Laura Dern",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jeff Goldblum",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 63000000,
+  "revenue": 1100000000,
+  "rt": 91,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 3,
+   "oscar_wins": 3,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Dinossauros feitos de computador, o que ninguém acredita que vai funcionar. O diretor vai editar este filme enquanto filma um drama em preto e branco na Polônia.",
+   "medium": "O diretor de E.T. adaptou um best-seller sobre um parque de dinossauros. Você é a paleobotânica. Vai mexer num monte de excremento de tricerátops de verdade."
+  },
+  "flags": [
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "jurassic",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.4,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 17.46,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 680,
+  "imdb_id": null,
+  "title": {
+   "original": "Pulp Fiction",
+   "en": "Pulp Fiction",
+   "pt": "Pulp Fiction: Tempo de Violência"
+  },
+  "year": 1994,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 138,
+   "name": "Quentin Tarantino"
+  },
+  "roles": [
+   {
+    "actor": "John Travolta",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Samuel L. Jackson",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Uma Thurman",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Bruce Willis",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 8500000,
+  "revenue": 214000000,
+  "rt": 92,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 7,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": true,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um ex-balconista de videolocadora, no segundo filme, quer você numa história contada fora de ordem. Há uma dança de twist e uma seringa no coração.",
+   "medium": "O diretor de um filme de assalto com nomes de cores quer ressuscitar um astro de dança dos anos 70 e dar a você uma peruca preta. Palma de Ouro garantida, diz ele."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 25.18,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 807,
+  "imdb_id": null,
+  "title": {
+   "original": "Se7en",
+   "en": "Se7en",
+   "pt": "Seven: Os Sete Crimes Capitais"
+  },
+  "year": 1995,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 7467,
+   "name": "David Fincher"
+  },
+  "roles": [
+   {
+    "actor": "Brad Pitt",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Morgan Freeman",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Gwyneth Paltrow",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 33000000,
+  "revenue": 327000000,
+  "rt": 83,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor de clipes, traumatizado pelo primeiro filme (um com alienígena), quer você num thriller onde chove o tempo todo. Há uma caixa no final.",
+   "medium": "O diretor do terceiro filme de Alien, que quase largou o cinema, filma um serial killer dos sete pecados. O estúdio queria tirar a caixa. O astro loiro ameaçou sair."
+  },
+  "flags": [
+   "tirano_genial",
+   "terror"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.3,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.91,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 9390,
+  "imdb_id": null,
+  "title": {
+   "original": "Jerry Maguire",
+   "en": "Jerry Maguire",
+   "pt": "Jerry Maguire: A Grande Virada"
+  },
+  "year": 1996,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 4762,
+   "name": "Cameron Crowe"
+  },
+  "roles": [
+   {
+    "actor": "Tom Cruise",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Cuba Gooding Jr.",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Renée Zellweger",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 50000000,
+  "revenue": 273000000,
+  "rt": 84,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 5,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um agente esportivo demitido e uma mãe solteira com um filho de óculos. O astro é o dos pilotos de caça, querendo ser levado a sério de novo.",
+   "medium": "O diretor-roteirista que foi jornalista de rock aos 15 anos escreveu uma comédia sobre agentes esportivos. Há uma frase sobre dinheiro que vai virar bordão."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 5.46,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 597,
+  "imdb_id": null,
+  "title": {
+   "original": "Titanic",
+   "en": "Titanic",
+   "pt": "Titanic"
+  },
+  "year": 1997,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 2710,
+   "name": "James Cameron"
+  },
+  "roles": [
+   {
+    "actor": "Leonardo DiCaprio",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Kate Winslet",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Billy Zane",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 200000000,
+  "revenue": 2260000000,
+  "rt": 88,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 14,
+   "oscar_wins": 11,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O filme mais caro da história, sobre um navio que todo mundo sabe que afunda. O diretor grita. O estúdio já deu o filme como flop. Gwyneth Paltrow recusou.",
+   "medium": "O diretor do Exterminador construiu um navio de verdade no México e estourou o orçamento em US$ 100 milhões. A atriz inglesa mandou rosas para ele implorando pelo papel."
+  },
+  "flags": [
+   "set_problematico"
+  ],
+  "trivia": [],
+  "rumors": [
+   {
+    "text": {
+     "pt": "Dizem que alguém colocou PCP na sopa da equipe num dia de filmagem.",
+     "en": "They say someone laced the crew's chowder with PCP one shooting day."
+    }
+   }
+  ],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Gwyneth Paltrow",
+    "role": "Rose"
+   }
+  ],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 11.3,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 1934,
+  "imdb_id": null,
+  "title": {
+   "original": "Shakespeare in Love",
+   "en": "Shakespeare in Love",
+   "pt": "Shakespeare Apaixonado"
+  },
+  "year": 1998,
+  "genres": [
+   "Drama",
+   "Romance",
+   "History"
+  ],
+  "director": {
+   "tmdb_id": 39996,
+   "name": "John Madden"
+  },
+  "roles": [
+   {
+    "actor": "Joseph Fiennes",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Gwyneth Paltrow",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Geoffrey Rush",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 25000000,
+  "revenue": 289000000,
+  "rt": 92,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 13,
+   "oscar_wins": 7,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um produtor cuja campanha de Oscar é mais agressiva que o filme quer você numa comédia romântica de época sobre um dramaturgo com bloqueio criativo. Rival: um filme de guerra de um diretor barbudo.",
+   "medium": "O produtor que distribuiu Pulp Fiction vai gastar milhões em anúncios para bater um filme sobre o Dia D. Julia Roberts ia fazer o papel nos anos 90 e desistiu."
+  },
+  "flags": [
+   "produtor_dos_abracos"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Julia Roberts",
+    "role": "Viola"
+   }
+  ],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 11.56,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 603,
+  "imdb_id": null,
+  "title": {
+   "original": "The Matrix",
+   "en": "The Matrix",
+   "pt": "Matrix"
+  },
+  "year": 1999,
+  "genres": [
+   "Action",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 9340,
+   "name": "Lana Wachowski"
+  },
+  "roles": [
+   {
+    "actor": "Keanu Reeves",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Carrie-Anne Moss",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Laurence Fishburne",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 63000000,
+  "revenue": 467000000,
+  "rt": 83,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 4,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Dois irmãos de Chicago, com um filme no currículo, querem você num filme de ação com filosofia e óculos escuros. Will Smith recusou para fazer um faroeste com aranha gigante.",
+   "medium": "Os diretores de um noir lésbico de baixo orçamento convenceram o estúdio com um storyboard em quadrinhos. Você vai treinar kung fu por quatro meses em Sydney."
+  },
+  "flags": [
+   "acao",
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Will Smith",
+    "role": "Neo"
+   }
+  ],
+  "franchise_id": "matrix",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 7.41,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 462,
+  "imdb_id": null,
+  "title": {
+   "original": "Erin Brockovich",
+   "en": "Erin Brockovich",
+   "pt": "Erin Brockovich: Uma Mulher de Talento"
+  },
+  "year": 2000,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 1884,
+   "name": "Steven Soderbergh"
+  },
+  "roles": [
+   {
+    "actor": "Julia Roberts",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Albert Finney",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Aaron Eckhart",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 52000000,
+  "revenue": 256000000,
+  "rt": 85,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 5,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Uma mãe solteira sem diploma processa uma companhia de energia. Decotes e palavrões. O diretor vai lançar outro filme no mesmo ano e concorrer consigo mesmo.",
+   "medium": "O diretor de um filme sobre sexo, mentiras e fitas de vídeo dirige a história real de uma assistente jurídica da Califórnia. Cachê recorde para uma atriz: US$ 20 milhões."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 4.92,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 1018,
+  "imdb_id": null,
+  "title": {
+   "original": "Mulholland Drive",
+   "en": "Mulholland Drive",
+   "pt": "Cidade dos Sonhos"
+  },
+  "year": 2001,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 5602,
+   "name": "David Lynch"
+  },
+  "roles": [
+   {
+    "actor": "Naomi Watts",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Laura Harring",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Justin Theroux",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 15000000,
+  "revenue": 20000000,
+  "rt": 84,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um piloto de série rejeitado pela TV virou filme. O diretor não explica nada. Há um teste de elenco dentro do filme que é melhor que qualquer teste de verdade.",
+   "medium": "O diretor de uma série sobre uma cidade com uma garota morta embrulhada em plástico quer você como atriz aspirante em Los Angeles. Ninguém vai entender a segunda metade. Você também não."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.3,
+   "p_box": 0.25,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 1.33,
+   "outcome": "flop"
+  }
+ },
+ {
+  "tmdb_id": 1574,
+  "imdb_id": null,
+  "title": {
+   "original": "Chicago",
+   "en": "Chicago",
+   "pt": "Chicago"
+  },
+  "year": 2002,
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Music"
+  ],
+  "director": {
+   "tmdb_id": 9565,
+   "name": "Rob Marshall"
+  },
+  "roles": [
+   {
+    "actor": "Renée Zellweger",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Catherine Zeta-Jones",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Richard Gere",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 45000000,
+  "revenue": 307000000,
+  "rt": 86,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 13,
+   "oscar_wins": 6,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um musical da Broadway que todo estúdio evitou por 20 anos. Você precisa cantar e dançar de verdade. Primeiro filme do diretor.",
+   "medium": "O coreógrafo de um musical de TV sobre Annie dirige a história de duas assassinas que viram celebridades. O ator de Uma Linda Mulher sapateia."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 6.82,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 153,
+  "imdb_id": null,
+  "title": {
+   "original": "Lost in Translation",
+   "en": "Lost in Translation",
+   "pt": "Encontros e Desencontros"
+  },
+  "year": 2003,
+  "genres": [
+   "Drama",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 1769,
+   "name": "Sofia Coppola"
+  },
+  "roles": [
+   {
+    "actor": "Bill Murray",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Scarlett Johansson",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 4000000,
+  "revenue": 119000000,
+  "rt": 95,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "A filha de um diretor famoso quer você num hotel de Tóquio por quatro semanas, com um comediante de 52 anos que não tem agente e demora meses para responder.",
+   "medium": "A diretora de um filme sobre cinco irmãs suicidas escreveu este para o ator de Caça-Fantasmas e disse que não faria sem ele. Ele só confirmou chegando no Japão."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 29.75,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 70,
+  "imdb_id": null,
+  "title": {
+   "original": "Million Dollar Baby",
+   "en": "Million Dollar Baby",
+   "pt": "Menina de Ouro"
+  },
+  "year": 2004,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 190,
+   "name": "Clint Eastwood"
+  },
+  "roles": [
+   {
+    "actor": "Hilary Swank",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Clint Eastwood",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Morgan Freeman",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   }
+  ],
+  "budget": 30000000,
+  "revenue": 217000000,
+  "rt": 90,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 7,
+   "oscar_wins": 4,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor de 74 anos filma em 37 dias, sem ensaio, um take só. Uma garçonete que quer boxear. O final é um segredo que vai causar briga.",
+   "medium": "O ator de faroestes, hoje diretor, adaptou contos de um treinador de boxe. Você vai ganhar 9 kg de músculo. O filme vai bater O Aviador."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 7.23,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 142,
+  "imdb_id": null,
+  "title": {
+   "original": "Brokeback Mountain",
+   "en": "Brokeback Mountain",
+   "pt": "O Segredo de Brokeback Mountain"
+  },
+  "year": 2005,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 1614,
+   "name": "Ang Lee"
+  },
+  "roles": [
+   {
+    "actor": "Heath Ledger",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jake Gyllenhaal",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Michelle Williams",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 14000000,
+  "revenue": 178000000,
+  "rt": 88,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 3,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor taiwanês quer você numa história de amor entre dois caubóis de Wyoming. Vários astros recusaram. Vai perder o Oscar para um filme sobre racismo em Los Angeles.",
+   "medium": "O diretor de um filme de artes marciais em que as pessoas voam adaptou um conto da New Yorker sobre dois pastores de ovelhas. O protagonista fala com a mandíbula travada."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 12.71,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 350,
+  "imdb_id": null,
+  "title": {
+   "original": "The Devil Wears Prada",
+   "en": "The Devil Wears Prada",
+   "pt": "O Diabo Veste Prada"
+  },
+  "year": 2006,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 43621,
+   "name": "David Frankel"
+  },
+  "roles": [
+   {
+    "actor": "Anne Hathaway",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Meryl Streep",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Emily Blunt",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 35000000,
+  "revenue": 326000000,
+  "rt": 75,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 2,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Uma comédia sobre uma revista de moda baseada num livro de vingança de uma ex-assistente. A editora-chefe será interpretada pela atriz mais indicada da história, com cabelo branco.",
+   "medium": "O diretor de episódios de Sex and the City adapta o livro sobre a editora da Vogue. A vilã fala baixo, nunca grita. Você vai vestir Chanel e ser a terceira escolha para o papel."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.31,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 6977,
+  "imdb_id": null,
+  "title": {
+   "original": "No Country for Old Men",
+   "en": "No Country for Old Men",
+   "pt": "Onde os Fracos Não Têm Vez"
+  },
+  "year": 2007,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 1223,
+   "name": "Joel Coen"
+  },
+  "roles": [
+   {
+    "actor": "Josh Brolin",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Javier Bardem",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Tommy Lee Jones",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 25000000,
+  "revenue": 171000000,
+  "rt": 93,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 4,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Dois irmãos diretores adaptam um romance do Texas sem trilha sonora. O vilão tem um corte de cabelo que o ator espanhol chama de o pior da história.",
+   "medium": "Os diretores de Fargo filmam no deserto um assassino com um tanque de ar comprimido. O protagonista teve que fazer teste em vídeo, filmado por Tarantino."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 6.84,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 155,
+  "imdb_id": null,
+  "title": {
+   "original": "The Dark Knight",
+   "en": "The Dark Knight",
+   "pt": "Batman: O Cavaleiro das Trevas"
+  },
+  "year": 2008,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 525,
+   "name": "Christopher Nolan"
+  },
+  "roles": [
+   {
+    "actor": "Christian Bale",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Heath Ledger",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Aaron Eckhart",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Maggie Gyllenhaal",
+    "order": 3,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 185000000,
+  "revenue": 1005000000,
+  "rt": 94,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 2,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "A sequência de um filme de herói de capa, dirigida por um britânico que filma em IMAX. O vilão é um australiano de comédia romântica, e os fãs odiaram a escolha.",
+   "medium": "O diretor de Memento refilma o palhaço do crime com um ator que se trancou num quarto de hotel por um mês escrevendo um diário. Ele não vai ver o filme pronto."
+  },
+  "flags": [
+   "acao",
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "batman_nolan",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 5.43,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 19995,
+  "imdb_id": null,
+  "title": {
+   "original": "Avatar",
+   "en": "Avatar",
+   "pt": "Avatar"
+  },
+  "year": 2009,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 2710,
+   "name": "James Cameron"
+  },
+  "roles": [
+   {
+    "actor": "Sam Worthington",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Zoe Saldaña",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Sigourney Weaver",
+    "order": 2,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 237000000,
+  "revenue": 2920000000,
+  "rt": 81,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 3,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O diretor do Titanic passou 12 anos esperando a tecnologia para filmar gente azul de 3 metros. Você vai atuar de macacão com bolinhas. Matt Damon recusou US$ 250 milhões.",
+   "medium": "Depois de 12 anos no fundo do mar, o diretor mais arrogante de Hollywood volta com captura de movimento em 3D. O estúdio acha que vai quebrar. A ex-esposa dele concorre com um filme de guerra."
+  },
+  "flags": [
+   "acao",
+   "franquia",
+   "set_problematico"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Matt Damon",
+    "role": "Jake Sully"
+   }
+  ],
+  "franchise_id": "avatar",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 12.32,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 37799,
+  "imdb_id": null,
+  "title": {
+   "original": "The Social Network",
+   "en": "The Social Network",
+   "pt": "A Rede Social"
+  },
+  "year": 2010,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 7467,
+   "name": "David Fincher"
+  },
+  "roles": [
+   {
+    "actor": "Jesse Eisenberg",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Andrew Garfield",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Justin Timberlake",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Rooney Mara",
+    "order": 4,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 40000000,
+  "revenue": 224900000,
+  "rt": 96,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 3,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor que não faz menos de 50 takes quer você num filme sobre um site. Duas horas de gente digitando e falando rápido.",
+   "medium": "O diretor de um filme sobre um serial killer que nunca é pego, e de outro em que o protagonista envelhece ao contrário, quer você num filme sobre a criação de um site. A cena de abertura vai ter 99 takes."
+  },
+  "flags": [
+   "tirano_genial",
+   "roteirista_estrela"
+  ],
+  "trivia": [
+   "A cena de abertura foi filmada 99 vezes.",
+   "O roteiro de Aaron Sorkin tem 162 páginas; o filme tem 2 horas."
+  ],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 5.62,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 10195,
+  "imdb_id": null,
+  "title": {
+   "original": "Thor",
+   "en": "Thor",
+   "pt": "Thor"
+  },
+  "year": 2011,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "director": {
+   "tmdb_id": 11181,
+   "name": "Kenneth Branagh"
+  },
+  "roles": [
+   {
+    "actor": "Chris Hemsworth",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Natalie Portman",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Tom Hiddleston",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 150000000,
+  "revenue": 449000000,
+  "rt": 77,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O quarto filme de um universo compartilhado de heróis. Um deus nórdico cai no Novo México. Contrato de mais aparições. Dirige um ator shakespeariano.",
+   "medium": "O estúdio dos quadrinhos contratou o diretor de Hamlet (de 4 horas) para um filme sobre um deus com martelo. Você é a astrofísica. Assine seis filmes."
+  },
+  "flags": [
+   "acao",
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "mcu",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 2.99,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 82693,
+  "imdb_id": null,
+  "title": {
+   "original": "Silver Linings Playbook",
+   "en": "Silver Linings Playbook",
+   "pt": "O Lado Bom da Vida"
+  },
+  "year": 2012,
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 51329,
+   "name": "David O. Russell"
+  },
+  "roles": [
+   {
+    "actor": "Bradley Cooper",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jennifer Lawrence",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Robert De Niro",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 21000000,
+  "revenue": 236000000,
+  "rt": 92,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor com fama de gritar com atrizes quer você numa comédia sobre bipolaridade e dança na Filadélfia. O produtor é o dos abraços longos.",
+   "medium": "O diretor que brigou com George Clooney num set faz um filme com um ex-paciente psiquiátrico e uma viúva jovem. Os quatro atores principais vão ser indicados."
+  },
+  "flags": [
+   "set_problematico"
+  ],
+  "trivia": [],
+  "rumors": [
+   {
+    "text": {
+     "pt": "Dizem que o diretor faz as atrizes chorarem fora da cena também.",
+     "en": "They say the director makes actresses cry off camera too."
+    }
+   }
+  ],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 11.24,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 106646,
+  "imdb_id": null,
+  "title": {
+   "original": "The Wolf of Wall Street",
+   "en": "The Wolf of Wall Street",
+   "pt": "O Lobo de Wall Street"
+  },
+  "year": 2013,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 1032,
+   "name": "Martin Scorsese"
+  },
+  "roles": [
+   {
+    "actor": "Leonardo DiCaprio",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jonah Hill",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Margot Robbie",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 100000000,
+  "revenue": 407000000,
+  "rt": 80,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 5,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Três horas de corretores de Wall Street com drogas e anões. O diretor tem 70 anos. O financiamento vem de um fundo da Malásia que vai parar no noticiário.",
+   "medium": "O diretor de Taxi Driver, com o astro de Titanic pela quinta vez, filma a memória de um golpista. Uma atriz australiana desconhecida vai dar um tapa de verdade no astro no teste."
+  },
+  "flags": [
+   "autor",
+   "escandalo"
+  ],
+  "trivia": [],
+  "rumors": [
+   {
+    "text": {
+     "pt": "Dizem que o dinheiro do filme veio de um esquema de corrupção bilionário.",
+     "en": "They say the money came from a billion-dollar embezzlement scheme."
+    }
+   }
+  ],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 4.07,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 194662,
+  "imdb_id": null,
+  "title": {
+   "original": "Birdman",
+   "en": "Birdman",
+   "pt": "Birdman ou (A Inesperada Virtude da Ignorância)"
+  },
+  "year": 2014,
+  "genres": [
+   "Drama",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 223,
+   "name": "Alejandro González Iñárritu"
+  },
+  "roles": [
+   {
+    "actor": "Michael Keaton",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Edward Norton",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Emma Stone",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 18000000,
+  "revenue": 103000000,
+  "rt": 91,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 4,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor mexicano quer filmar um filme inteiro como se fosse um plano-sequência, nos bastidores da Broadway. O protagonista é um ex-herói de capa dos anos 80 que sumiu.",
+   "medium": "O diretor de Babel escolheu o Batman de 1989 para fazer um ator que foi um herói de capa e quer ser respeitado. A piada é o filme inteiro. Você é a filha recém-saída da reabilitação."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 5.72,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 76341,
+  "imdb_id": null,
+  "title": {
+   "original": "Mad Max: Fury Road",
+   "en": "Mad Max: Fury Road",
+   "pt": "Mad Max: Estrada da Fúria"
+  },
+  "year": 2015,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 20629,
+   "name": "George Miller"
+  },
+  "roles": [
+   {
+    "actor": "Tom Hardy",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Charlize Theron",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Nicholas Hoult",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 150000000,
+  "revenue": 380000000,
+  "rt": 97,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 10,
+   "oscar_wins": 6,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor de 70 anos, que também fez um filme sobre um porco falante, quer refilmar sua franquia de deserto. Nove meses na Namíbia. Os dois astros não se falam.",
+   "medium": "O diretor da trilogia dos anos 80 do carro no deserto tenta de novo, sem roteiro tradicional, só storyboards. O protagonista chegou atrasado tantas vezes que a atriz pediu segurança."
+  },
+  "flags": [
+   "acao",
+   "set_problematico",
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [
+   {
+    "text": {
+     "pt": "Dizem que os dois protagonistas quase se agrediram no set.",
+     "en": "They say the two leads nearly came to blows on set."
+    }
+   }
+  ],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "madmax",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 2.53,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 313369,
+  "imdb_id": null,
+  "title": {
+   "original": "La La Land",
+   "en": "La La Land",
+   "pt": "La La Land: Cantando Estações"
+  },
+  "year": 2016,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance",
+   "Music"
+  ],
+  "director": {
+   "tmdb_id": 136495,
+   "name": "Damien Chazelle"
+  },
+  "roles": [
+   {
+    "actor": "Ryan Gosling",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Emma Stone",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "John Legend",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 30000000,
+  "revenue": 447000000,
+  "rt": 91,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 14,
+   "oscar_wins": 6,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor de 31 anos, que acabou de fazer um filme sobre um baterista humilhado, quer você num musical original em Los Angeles. Você precisa cantar. Mais ou menos.",
+   "medium": "O diretor de Whiplash escreveu um musical que ninguém quis financiar por seis anos. Emma Watson desistiu para fazer A Bela e a Fera. Vai ser anunciado como Melhor Filme por engano."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [
+   {
+    "who": "Emma Watson",
+    "role": "Mia"
+   }
+  ],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 14.9,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 419430,
+  "imdb_id": null,
+  "title": {
+   "original": "Get Out",
+   "en": "Get Out",
+   "pt": "Corra!"
+  },
+  "year": 2017,
+  "genres": [
+   "Horror",
+   "Thriller",
+   "Mystery"
+  ],
+  "director": {
+   "tmdb_id": 291263,
+   "name": "Jordan Peele"
+  },
+  "roles": [
+   {
+    "actor": "Daniel Kaluuya",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Allison Williams",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Bradley Whitford",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 4500000,
+  "revenue": 255000000,
+  "rt": 98,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um comediante de dupla de TV quer dirigir um terror sobre um namorado negro conhecendo a família branca da namorada. Orçamento de US$ 4,5 milhões. O estúdio achou que ninguém ia ver.",
+   "medium": "Metade de uma dupla de esquetes escreveu um terror sobre racismo liberal, com uma xícara de chá hipnótica. O protagonista é um inglês que você viu numa série de antologia distópica."
+  },
+  "flags": [
+   "terror"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 56.67,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 493922,
+  "imdb_id": null,
+  "title": {
+   "original": "Hereditary",
+   "en": "Hereditary",
+   "pt": "Hereditário"
+  },
+  "year": 2018,
+  "genres": [
+   "Horror",
+   "Drama",
+   "Mystery"
+  ],
+  "director": {
+   "tmdb_id": 1902698,
+   "name": "Ari Aster"
+  },
+  "roles": [
+   {
+    "actor": "Toni Collette",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Alex Wolff",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Gabriel Byrne",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 10000000,
+  "revenue": 82000000,
+  "rt": 89,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um estúdio com logo em serifa quer você num terror sobre luto, filmado em Utah, cheio de casinhas em miniatura. Sem dinheiro. Você vai gritar muito.",
+   "medium": "Um diretor de curtas perturbadores, no primeiro longa, filma uma família destruída por uma avó morta e um poste. A crítica vai dizer que você foi roubada no Oscar."
+  },
+  "flags": [
+   "terror"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 8.2,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 475557,
+  "imdb_id": null,
+  "title": {
+   "original": "Joker",
+   "en": "Joker",
+   "pt": "Coringa"
+  },
+  "year": 2019,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 73421,
+   "name": "Todd Phillips"
+  },
+  "roles": [
+   {
+    "actor": "Joaquin Phoenix",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Robert De Niro",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Zazie Beetz",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 55000000,
+  "revenue": 1070000000,
+  "rt": 68,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 11,
+   "oscar_wins": 2,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O diretor de uma trilogia de comédias sobre uma ressaca em Las Vegas quer fazer um drama sombrio com um vilão de quadrinhos. O astro vai perder 23 kg. Haverá debate sobre violência.",
+   "medium": "O diretor de Se Beber, Não Case convenceu o estúdio a fazer um filme de palhaço sem heróis, parecido com Taxi Driver. Vai ganhar o Leão de Ouro e passar de um bilhão."
+  },
+  "flags": [
+   "escandalo"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 19.45,
+   "outcome": "popcorn"
+  }
+ },
+ {
+  "tmdb_id": 466272,
+  "imdb_id": null,
+  "title": {
+   "original": "Once Upon a Time... in Hollywood",
+   "en": "Once Upon a Time... in Hollywood",
+   "pt": "Era uma Vez em... Hollywood"
+  },
+  "year": 2019,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 138,
+   "name": "Quentin Tarantino"
+  },
+  "roles": [
+   {
+    "actor": "Leonardo DiCaprio",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Brad Pitt",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Margot Robbie",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 90000000,
+  "revenue": 374000000,
+  "rt": 85,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 10,
+   "oscar_wins": 2,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O diretor que diz que vai parar no décimo filme faz o nono: Hollywood em 1969, um ator de faroeste decadente e seu dublê. Você é a vizinha famosa que quase não fala.",
+   "medium": "O diretor de Pulp Fiction reconstrói a Hollywood Boulevard de 1969 e reescreve um crime famoso. Uma jornalista vai perguntar por que sua personagem tem tão poucas falas; ele não vai gostar."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 4.16,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 581734,
+  "imdb_id": null,
+  "title": {
+   "original": "Nomadland",
+   "en": "Nomadland",
+   "pt": "Nomadland"
+  },
+  "year": 2020,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 1392137,
+   "name": "Chloé Zhao"
+  },
+  "roles": [
+   {
+    "actor": "Frances McDormand",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "David Strathairn",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 5000000,
+  "revenue": 39000000,
+  "rt": 93,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 6,
+   "oscar_wins": 3,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Uma diretora chinesa que filma com não-atores quer você numa van, atravessando o oeste americano com nômades de verdade. Você vai trabalhar num depósito da Amazon de verdade.",
+   "medium": "A diretora de um filme sobre rodeios em Dakota do Sul adapta um livro-reportagem sobre idosos que vivem em vans. Ninguém no elenco, além de você, é ator. Lança no meio da pandemia."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 7.8,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 438631,
+  "imdb_id": null,
+  "title": {
+   "original": "Dune",
+   "en": "Dune",
+   "pt": "Duna"
+  },
+  "year": 2021,
+  "genres": [
+   "Science Fiction",
+   "Adventure"
+  ],
+  "director": {
+   "tmdb_id": 137427,
+   "name": "Denis Villeneuve"
+  },
+  "roles": [
+   {
+    "actor": "Timothée Chalamet",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Rebecca Ferguson",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Oscar Isaac",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 165000000,
+  "revenue": 434000000,
+  "rt": 83,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 10,
+   "oscar_wins": 6,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor canadense quer adaptar o livro que já destruiu um diretor nos anos 80. Só metade do livro. O estúdio vai lançar no streaming no mesmo dia, e o diretor vai ficar furioso.",
+   "medium": "O diretor de A Chegada e de uma sequência de Blade Runner que flopou filma vermes de areia na Jordânia. Seu protagonista tem 25 anos e o rosto numa marca de perfume."
+  },
+  "flags": [
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "dune",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 2.63,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 545611,
+  "imdb_id": null,
+  "title": {
+   "original": "Everything Everywhere All at Once",
+   "en": "Everything Everywhere All at Once",
+   "pt": "Tudo em Todo o Lugar ao Mesmo Tempo"
+  },
+  "year": 2022,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 1061391,
+   "name": "Daniel Kwan"
+  },
+  "roles": [
+   {
+    "actor": "Michelle Yeoh",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Ke Huy Quan",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Stephanie Hsu",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Jamie Lee Curtis",
+    "order": 3,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   }
+  ],
+  "budget": 25000000,
+  "revenue": 143000000,
+  "rt": 93,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 11,
+   "oscar_wins": 7,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Dois diretores que fizeram um filme com um cadáver que solta gases querem você num multiverso dentro de uma lavanderia. Há dedos de salsicha. Era para ser com o Jackie Chan.",
+   "medium": "A dupla do filme do cadáver falante oferece o papel a uma atriz malaia de 60 anos, com um ex-ator mirim que largou a carreira por 20 anos. O estúdio é o do logo em serifa."
+  },
+  "flags": [],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 5.72,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 785084,
+  "imdb_id": null,
+  "title": {
+   "original": "The Whale",
+   "en": "The Whale",
+   "pt": "A Baleia"
+  },
+  "year": 2022,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 6431,
+   "name": "Darren Aronofsky"
+  },
+  "roles": [
+   {
+    "actor": "Brendan Fraser",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Sadie Sink",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Hong Chau",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 3000000,
+  "revenue": 55000000,
+  "rt": 64,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 3,
+   "oscar_wins": 2,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "O diretor de Cisne Negro quer um astro de comédia dos anos 90, sumido há uma década, para um papel de 270 kg com prótese. Uma peça filmada num apartamento.",
+   "medium": "O diretor que fez Natalie Portman ganhar um Oscar adapta uma peça sobre um professor obeso. O protagonista foi o da Múmia; vai chorar de pé em Veneza por seis minutos."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 18.33,
+   "outcome": "popcorn"
+  }
+ },
+ {
+  "tmdb_id": 346698,
+  "imdb_id": null,
+  "title": {
+   "original": "Barbie",
+   "en": "Barbie",
+   "pt": "Barbie"
+  },
+  "year": 2023,
+  "genres": [
+   "Comedy",
+   "Adventure",
+   "Fantasy"
+  ],
+  "director": {
+   "tmdb_id": 45400,
+   "name": "Greta Gerwig"
+  },
+  "roles": [
+   {
+    "actor": "Margot Robbie",
+    "order": 0,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Ryan Gosling",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "America Ferrera",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 145000000,
+  "revenue": 1450000000,
+  "rt": 88,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 8,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "A diretora de Lady Bird quer fazer um filme sobre uma boneca, financiado pela fabricante da boneca. Vai esgotar a tinta rosa do mundo. Lança no mesmo dia que um filme sobre a bomba atômica.",
+   "medium": "A diretora-roteirista indie assume a propriedade mais valiosa de uma empresa de brinquedos, com o marido no roteiro. A protagonista também produz. Ela não vai ser indicada; o namorado dela, sim."
+  },
+  "flags": [
+   "franquia"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": "barbie",
+  "sample": true,
+  "derived": {
+   "p_prize": 0.65,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 10.0,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 872585,
+  "imdb_id": null,
+  "title": {
+   "original": "Oppenheimer",
+   "en": "Oppenheimer",
+   "pt": "Oppenheimer"
+  },
+  "year": 2023,
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "director": {
+   "tmdb_id": 525,
+   "name": "Christopher Nolan"
+  },
+  "roles": [
+   {
+    "actor": "Cillian Murphy",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Emily Blunt",
+    "order": 1,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Robert Downey Jr.",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   }
+  ],
+  "budget": 100000000,
+  "revenue": 975000000,
+  "rt": 93,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 13,
+   "oscar_wins": 7,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor britânico que não usa celular quer três horas sobre o físico da bomba atômica, filmadas em IMAX preto e branco. Sem CGI para a explosão. Você é a esposa que bebe.",
+   "medium": "O diretor de A Origem rompeu com o estúdio dele e levou o projeto para outro. O protagonista irlandês foi coadjuvante em cinco filmes dele; agora comanda 180 minutos de diálogo."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.75,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 1064213,
+  "imdb_id": null,
+  "title": {
+   "original": "Anora",
+   "en": "Anora",
+   "pt": "Anora"
+  },
+  "year": 2024,
+  "genres": [
+   "Drama",
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 1172607,
+   "name": "Sean Baker"
+  },
+  "roles": [
+   {
+    "actor": "Mikey Madison",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none"
+   },
+   {
+    "actor": "Mark Eydelshteyn",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Yura Borisov",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   }
+  ],
+  "budget": 6000000,
+  "revenue": 57000000,
+  "rt": 93,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 6,
+   "oscar_wins": 5,
+   "best_picture": "won",
+   "palme_dor": true,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Um diretor que filmou um longa inteiro com iPhone quer você como dançarina do Brooklyn que se casa com o filho de um oligarca russo. Palma de Ouro, dizem.",
+   "medium": "O diretor de um filme sobre um motel roxo na Flórida escolheu a atriz que foi queimada viva por Tarantino e por Scream. Vai ganhar cinco Oscars com cinco pessoas na equipe."
+  },
+  "flags": [
+   "autor"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.5,
+   "outcome": "hit"
+  }
+ },
+ {
+  "tmdb_id": 933260,
+  "imdb_id": null,
+  "title": {
+   "original": "The Substance",
+   "en": "The Substance",
+   "pt": "A Substância"
+  },
+  "year": 2024,
+  "genres": [
+   "Horror",
+   "Science Fiction"
+  ],
+  "director": {
+   "tmdb_id": 1143375,
+   "name": "Coralie Fargeat"
+  },
+  "roles": [
+   {
+    "actor": "Demi Moore",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "nominated",
+    "razzie": "none"
+   },
+   {
+    "actor": "Margaret Qualley",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   },
+   {
+    "actor": "Dennis Quaid",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none"
+   }
+  ],
+  "budget": 17500000,
+  "revenue": 77000000,
+  "rt": 89,
+  "metacritic": null,
+  "film_awards": {
+   "oscar_nominations": 5,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": null,
+  "blind": {
+   "hard": "Uma diretora francesa quer você, uma estrela dos anos 90 que Hollywood descartou aos 50, num terror sobre uma estrela dos anos 90 que Hollywood descartou aos 50. Há muito sangue. É sobre você.",
+   "medium": "A diretora de um filme de vingança no deserto faz body horror sobre uma apresentadora de ginástica demitida aos 50. A protagonista foi a mulher mais bem paga de Hollywood em 1996."
+  },
+  "flags": [
+   "terror"
+  ],
+  "trivia": [],
+  "rumors": [],
+  "revision": null,
+  "refused_by": [],
+  "franchise_id": null,
+  "sample": true,
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 4.4,
+   "outcome": "hit"
+  }
+ }
+]
