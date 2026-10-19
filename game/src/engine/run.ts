@@ -108,6 +108,11 @@ function advance(state: State, content: Content): void {
     state.card = null;
     return;
   }
+  if (state.ano > DATA_YEAR_MAX) {
+    state.fim = { tipo: "ate_aqui" }; // a carreira alcançou o presente
+    state.card = null;
+    return;
+  }
   const card = nextCard(state, content);
   if (!card) {
     state.fim = { tipo: state.ano > DATA_YEAR_MAX ? "ate_aqui" : "cards" };

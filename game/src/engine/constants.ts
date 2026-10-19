@@ -10,6 +10,8 @@ export const ATTR_MAX = 5;
 export const ATTR_CAP = 6;
 export const YEAR_MIN = 1975;
 export const YEAR_MAX_DEBUT = 2020;
+export const YEAR_STEP = 5;        // anos de estreia escolhíveis: 1975, 1980, …, 2020
+export const DEBUT_YEARS = Array.from({ length: (YEAR_MAX_DEBUT - YEAR_MIN) / YEAR_STEP + 1 }, (_, i) => YEAR_MIN + i * YEAR_STEP);
 export const DATA_YEAR_MAX = 2025;
 export const NOISE = 0.15;
 export const HOLLYWOOD_REALISTA_IDADE = 45;

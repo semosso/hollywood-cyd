@@ -46,7 +46,7 @@ export function creationFromParams(p: URLSearchParams, lang: Lang): CreationInpu
   return {
     nome: p.get("n") || "—",
     genero: (p.get("g") as Gender) || "f",
-    anoEstreia: Number(p.get("y") || 1995),
+    anoEstreia: Math.max(1975, Math.min(2020, Math.round(Number(p.get("y") || 1995) / 5) * 5)),
     origem: (p.get("o") as OriginId) || "garcom",
     atributos,
     opcoes: { hollywoodRealista: p.get("h") === "1", idioma: lang },

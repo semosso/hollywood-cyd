@@ -1,4 +1,4 @@
-import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, CARDS_PER_ATO, CONTEXT_YEARS, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN } from "./constants";
+import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, CARDS_PER_ATO, CONTEXT_YEARS, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN, YEAR_STEP } from "./constants";
 import { numAtosFor } from "./timeline";
 import { rngFor } from "./rng";
 import type { Attributes, CreationInput, Meters, OriginId, State } from "./types";
@@ -39,6 +39,7 @@ export function validateCreation(input: CreationInput): string[] {
   const errs: string[] = [];
   const o = originById(input.origem);
   if (input.anoEstreia < YEAR_MIN || input.anoEstreia > YEAR_MAX_DEBUT) errs.push(`anoEstreia fora de [${YEAR_MIN}, ${YEAR_MAX_DEBUT}]`);
+  if ((input.anoEstreia - YEAR_MIN) % YEAR_STEP !== 0) errs.push(`anoEstreia deve ser múltiplo de ${YEAR_STEP} a partir de ${YEAR_MIN}`);
   if (o.minAno && input.anoEstreia < o.minAno) errs.push(`origem ${o.id} exige estreia a partir de ${o.minAno}`);
   let sum = 0;
   for (const k of ATTRS) {

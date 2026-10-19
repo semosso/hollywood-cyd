@@ -21,7 +21,7 @@
 ## 2. Criação
 
 ### 2.1 Entradas
-- `nome` (string, gerado ou digitado), `genero` ∈ {`f`, `m`}, `anoEstreia` ∈ [1975, 2020], `origem`, `atributos`, `opcoes`.
+- `nome` (string, gerado ou digitado), `genero` ∈ {`f`, `m`}, `anoEstreia` ∈ {1975, 1980, …, 2020} (dropdown de 5 em 5 anos; 2020 é o máximo para a carreira alcançar 2025), `origem`, `atributos`, `opcoes`.
 - `opcoes`: `hollywoodRealista` (default **false**), `idioma` ∈ {`pt`, `en`}. Não existe "modo realista": a morte é sempre possível.
 
 ### 2.2 Atributos
@@ -60,7 +60,7 @@ A run termina quando acontecer o primeiro:
 1. `cardsJogados == totalCards` → card final.
 2. Morte → card final imediato.
 3. Saída voluntária (evento `largar_tudo` aceito) → card final imediato.
-4. `ano > 2025` e nenhuma oferta de projeto disponível → card final "carreira até aqui".
+4. `ano > 2025` → card final "carreira até aqui" (a carreira alcançou o presente).
 
 ### 3.3 Deck: que card vem agora
 Padrão por ato, repetido: `projeto, vida, projeto, X, projeto`, onde `X` é escolhido pelo estado, nesta ordem de prioridade:

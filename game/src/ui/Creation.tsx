@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ATTRS, YEAR_MAX_DEBUT, YEAR_MIN } from "../engine/constants";
+import { ATTRS, DEBUT_YEARS } from "../engine/constants";
 import { ORIGINS, originById, pointBudget, validateCreation } from "../engine/creation";
 import { randomSeed } from "../engine/rng";
 import type { Attributes, CreationInput, Gender, Lang, OriginId } from "../engine/types";
@@ -57,7 +57,9 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
         </div>
         <div className="field">
           <label htmlFor="ano">{t("debut", lang)}</label>
-          <input id="ano" type="number" min={YEAR_MIN} max={YEAR_MAX_DEBUT} value={ano} onChange={(e) => setAno(Number(e.target.value))} style={{ width: 100 }} />
+          <select id="ano" value={ano} onChange={(e) => setAno(Number(e.target.value))}>
+            {DEBUT_YEARS.map((y) => <option key={y} value={y}>{y}</option>)}
+          </select>
         </div>
       </div>
 

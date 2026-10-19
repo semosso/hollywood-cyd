@@ -40,6 +40,7 @@ describe("criação", () => {
     expect(validateCreation({ ...base, atributos: { ...base.atributos, beleza: 0, juizo: 5 } })).toContainEqual(expect.stringContaining("beleza"));
     expect(pointBudget("garcom")).toBe(13);
     expect(validateCreation(base)).toEqual([]);
+    expect(validateCreation({ ...base, anoEstreia: 1997 })).toContainEqual(expect.stringContaining("múltiplo"));
   });
   it("aplica bônus de origem e sorteia a sorte pela seed", () => {
     const s = createState({ ...base, origem: "nepo", atributos: { beleza: 3, talento: 3, contatos: 2, carisma: 2, juizo: 2 } });
