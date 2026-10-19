@@ -34,6 +34,19 @@ GENRE_EN = {"Action": "action film", "Adventure": "adventure film", "Animation":
             "Horror": "horror film", "Music": "music film", "Mystery": "mystery", "Romance": "romance", "Science Fiction": "sci-fi film",
             "TV Movie": "TV movie", "Thriller": "thriller", "War": "war film", "Western": "western"}
 STOP = {"the", "and", "for", "with", "from", "part", "uma", "um", "the", "dos", "das", "los", "las", "les", "der", "die", "das", "del", "una", "los"}
+# nomes de personagem genéricos que não devem ser mascarados
+GENERIC_CHARS = {"himself", "herself", "narrator", "voice", "man", "woman", "boy", "girl", "mother", "father", "doctor", "dr", "mr", "mrs", "ms", "the", "young", "old", "uncredited", "self", "additional", "voices"}
+
+
+def character_words(m: dict) -> set[str]:
+    """Tokens dos nomes de personagem do elenco (para sumir da sinopse)."""
+    out: set[str] = set()
+    for c in (m.get("credits") or {}).get("cast", [])[:12]:
+        for w in re.findall(r"[\w']+", _norm(c.get("character") or "")):
+            w = w.strip("'")
+            if len(w) >= 3 and w not in GENERIC_CHARS and not w.isdigit():
+                out.add(w)
+    return out
 BUDGET_PT = ["Orçamento de um sofá.", "Orçamento modesto.", "Orçamento de estúdio.", "Orçamento de blockbuster."]
 BUDGET_EN = ["Couch-cushion budget.", "Modest budget.", "Studio budget.", "Blockbuster budget."]
 
@@ -107,13 +120,13 @@ def director_prior(credits: dict | None, year: int, director_id: int | None) -> 
 
 
 def describe_prior(c: dict, lang: str) -> str:
+    """Só gênero e ano do filme anterior: curto, e sem nomes que entreguem o diretor de bandeja."""
     g = GENRE_IDS.get((c.get("genre_ids") or [0])[0], "Drama")
     yr = (c.get("release_date") or "")[:4]
-    ov = first_sentence(mask(c.get("overview") or "", title_words(c.get("title"), c.get("original_title"))), 110)
     if lang == "pt":
-        return f"o diretor de {pt_um(g)} de {yr}" + (f" ({ov.rstrip('.')})" if ov else "")
+        return f"o diretor de {pt_um(g)} de {yr}"
     gname = GENRE_EN.get(g, g.lower())
-    return f"the director of a {yr} {gname}" + (f" ({ov.rstrip('.')})" if ov else "")
+    return f"the director of a {yr} {gname}"
 
 
 def director_line(credits: dict | None, year: int, director_id: int | None, lang: str, level: str) -> str:
@@ -172,7 +185,7 @@ def production_fact(rec: dict, lang: str) -> str:
 def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int], my_index: int, credits_pt: dict | None = None) -> tuple[dict, dict]:
     """Devolve (blind_pt, blind_en) com hard/medium/easy."""
     from .tmdb import keywords, pt_br_overview  # import tardio para facilitar testes
-    words = title_words(rec["title"].get("en"), rec["title"].get("original"), rec["title"].get("pt"))
+    words = title_words(rec["title"].get("en"), rec["title"].get("original"), rec["title"].get("pt")) | character_words(m)
     rec["_title_words"] = words
     rec["_keywords"] = keywords(m)
     g = genre_main(rec["genres"])
@@ -185,18 +198,17 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
     out = {}
     for lang, ov, gmap, budget in (("pt", ov_pt, GENRE_PT, BUDGET_PT), ("en", ov_en, GENRE_EN, BUDGET_EN)):
         gname = gmap.get(g, g.lower())
-        s1 = first_sentence(ov) if ov else ""
-        costar = costar_line(rec["roles"], my_index, oscar_wins, lang)
+        s1 = first_sentence(ov, 120) if ov else ""
         fact = production_fact(rec, lang)
         if lang == "pt":
             cr = credits_pt or credits
             hard = f"{director_line(cr, year, did, 'pt', 'hard')} quer você {pt_num(g)}. {budget[tier]} {s1}".strip()
-            medium = f"{director_line(cr, year, did, 'pt', 'medium')} quer você {pt_num(g)}. {s1} {costar} {fact}".strip()
-            easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {ov}".strip()
+            medium = f"{director_line(cr, year, did, 'pt', 'medium')} quer você {pt_num(g)}. {s1} {fact}".strip()
+            easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {first_sentence(ov, 220)}".strip()
         else:
             hard = f"{director_line(credits, year, did, 'en', 'hard')} wants you in a {gname}. {budget[tier]} {s1}".strip()
-            medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {costar} {fact}".strip()
-            easy = f"{dname or 'The director'} wants you in a {gname}. {ov}".strip()
+            medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {fact}".strip()
+            easy = f"{dname or 'The director'} wants you in a {gname}. {first_sentence(ov, 220)}".strip()
         out[lang] = {"hard": re.sub(r"\s+", " ", hard), "medium": re.sub(r"\s+", " ", medium), "easy": re.sub(r"\s+", " ", easy)}
     rec.pop("_title_words", None); rec.pop("_keywords", None)
     return out["pt"], out["en"]

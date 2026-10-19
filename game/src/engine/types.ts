@@ -111,6 +111,8 @@ export type Offer = {
     scriptBand: string | null;
     redFlag: boolean;
     rumors: string[];
+    /** Carisma 3: dica ("alguém que já ganhou o Oscar"); Carisma 4+: nomes dos colegas de elenco */
+    costars: string | null;
   };
 };
 

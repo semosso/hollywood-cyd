@@ -117,7 +117,10 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 | Contatos 5 | `blind.medium` + **nome do diretor** |
 | Talento ≥ 3 | faixa de roteiro: `rt ≥ 75` "o texto é bom" · `40–74` "o texto é ok" · `< 40` "o texto é um pretexto" · sem dado: "ninguém leu o roteiro" |
 | Juízo ≥ 3 | 🚩 se o filme tem flag `set_problematico` ou `derived.outcome == bomb` |
-| Carisma ≥ 3 | até 2 linhas de `rumors[]` da curadoria, com a tag 🗞️ RUMOR; 20% das linhas marcadas `false: true` são mentira (revelado na resolução) |
+| Carisma ≥ 3 | até 2 linhas de `rumors[]` da curadoria, com a tag 🗞️ RUMOR; 20% das linhas marcadas `false: true` são mentira (revelado na resolução). Dica de elenco: "com alguém que ganha o Oscar por este filme" |
+| Carisma ≥ 4 | **nomes** dos colegas de elenco (até 3) |
+
+As descrições às cegas automáticas são curtas: diretor descrito só por gênero e ano do filme anterior, primeira frase da sinopse com título e **nomes de personagens** mascarados. Nomes reais (diretor, elenco) só aparecem pelos atributos acima.
 
 **Ruído**: para cada ícone, `mostrado = clamp(p + u, 0.02, 0.95)`, com `u ~ U(−0.15, +0.15)` sorteado por `(seed, tmdb_id, ícone)`. O ruído é fixo por run (reabrir o card não re-rola).
 

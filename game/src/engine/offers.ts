@@ -101,6 +101,20 @@ function scriptBand(f: Film, lang: Lang): string {
   return lang === "en" ? "the script is an excuse" : "o texto é um pretexto";
 }
 
+function costarsLine(f: Film, roleIndex: number, carisma: number, lang: Lang): string | null {
+  const others = f.roles.filter((_, i) => i !== roleIndex && f.roles[i].actor);
+  if (!others.length || f.fallback) return null;
+  if (carisma >= 4) {
+    const names = others.slice(0, 3).map((r) => r.actor).join(", ");
+    return lang === "en" ? `with ${names}` : `com ${names}`;
+  }
+  if (carisma >= 3) {
+    if (others.some((r) => r.oscar === "won")) return lang === "en" ? "with someone who wins the Oscar for this" : "com alguém que ganha o Oscar por este filme";
+    if (others.some((r) => r.oscar === "nominated")) return lang === "en" ? "with someone who gets nominated for this" : "com alguém que é indicado por este filme";
+  }
+  return null;
+}
+
 export function makeOffer(f: Film, roleIndex: number, state: State, reach: boolean, forceDirector = false): Offer {
   const lang = state.opcoes.idioma;
   const a = effAttrs(state);
@@ -124,6 +138,7 @@ export function makeOffer(f: Film, roleIndex: number, state: State, reach: boole
       scriptBand: a.talento >= 3 ? scriptBand(f, lang) : null,
       redFlag: a.juizo >= 3 && (f.flags.includes("set_problematico") || f.derived.outcome === "bomb"),
       rumors,
+      costars: costarsLine(f, roleIndex, a.carisma, lang),
     },
   };
 }

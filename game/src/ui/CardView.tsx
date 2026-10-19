@@ -43,6 +43,7 @@ function OfferBox({ o, lang, hot, tag }: { o: Offer; lang: Lang; hot: "left" | "
       </div>
       <div className="blind">{o.visible.blind}</div>
       {o.visible.directorName && <div className="mono" style={{ color: "var(--accent)" }}>dir. {o.visible.directorName}</div>}
+      {o.visible.costars && <div className="mono" style={{ color: "var(--accent)" }}>♟ {o.visible.costars}</div>}
       {o.visible.scriptBand && <div className="mono">✎ {o.visible.scriptBand}</div>}
       {o.visible.redFlag && <div className="flag">🚩 {lang === "en" ? "troubled production" : "produção problemática"}</div>}
       {o.visible.rumors.map((r, i) => <div className="rumor" key={i}>🗞️ {r}</div>)}

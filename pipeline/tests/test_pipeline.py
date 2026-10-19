@@ -82,10 +82,11 @@ def test_blind_auto_masks_title_and_describes_director():
         assert "Social Network" not in rec["blind"][lvl]
     assert "diretor" in rec["blind"]["hard"].lower()
     assert "2 filmes" in rec["blind"]["hard"]          # Se7en e Benjamin Button antes de 2010; Gone Girl não
-    assert "1995" in rec["blind"]["medium"]            # descreve o filme anterior mais votado
-    assert "Se7en" not in rec["blind"]["medium"]
+    assert "1995" in rec["blind"]["medium"]            # descreve o filme anterior mais votado (só gênero e ano)
+    assert "Se7en" not in rec["blind"]["medium"] and "detectives" not in rec["blind"]["medium"]
+    assert "Zuckerberg" not in rec["blind"]["hard"] and "Zuckerberg" not in rec["blind"]["easy"]  # nomes de personagem mascarados
     assert "David Fincher" in rec["blind"]["easy"] and "David Fincher" not in rec["blind"]["medium"]
-    assert "ganhou o Oscar" in rec["blind"]["medium"]   # colega de elenco premiado (mapa do dataset)
+    assert "ganhou o Oscar" not in rec["blind"]["medium"]  # co-stars agora são revelados pelo jogo, por Carisma
     assert "num drama" in rec["blind"]["hard"] and "um filme policial de 1995" in rec["blind"]["medium"]
     assert "Orçamento" in rec["blind"]["hard"] and "[" not in rec["blind"]["hard"]
     # curadoria manual continua tendo prioridade
