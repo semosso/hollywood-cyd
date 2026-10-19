@@ -119,7 +119,12 @@ export const METER_HELP: Record<string, { pt: string; en: string }> = {
   reputacao: { pt: "Como a indústria te vê. Abaixo de zero, ninguém quer o seu problema.", en: "How the industry sees you. Below zero, nobody wants your trouble." },
 };
 
-/** Texto com `crases` vira <code class="attr"> (nomes de atributo nas explicações). */
+/** Texto com `crases` vira uma etiqueta (nome de atributo nas explicações); um número no fim sai em negrito. */
 export function inline(text: string): ReactNode[] {
-  return text.split("`").map((piece, i) => (i % 2 ? createElement("code", { className: "attr", key: i }, piece) : piece));
+  return text.split("`").map((piece, i) => {
+    if (i % 2 === 0) return piece;
+    const m = /^(.*?)(\s-?\d+)$/.exec(piece);
+    const body = m ? [m[1], createElement("b", { key: "v" }, m[2])] : piece;
+    return createElement("code", { className: "attrtag", key: i }, body);
+  });
 }

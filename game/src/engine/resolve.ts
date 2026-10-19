@@ -160,9 +160,9 @@ export function whyLine(r: { resultado: PersonalResult; fatores: { talento: numb
   const gap = f.talento - f.demand;
   if (f.caos) parts.push(pt ? "Hollywood não faz sentido: o resultado saiu do nada" : "Hollywood makes no sense: this came out of nowhere");
   else {
-    if (gap >= 1) parts.push(pt ? "`Talento` " + f.talento + " para um papel nível " + f.demand + ": sobrou" : "`Talent` " + f.talento + " for a level " + f.demand + " role: plenty");
-    else if (gap === 0) parts.push(pt ? "`Talento` " + f.talento + " para um papel nível " + f.demand + ": no limite" : "`Talent` " + f.talento + " for a level " + f.demand + " role: just enough");
-    else parts.push(pt ? "`Talento` " + f.talento + " para um papel nível " + f.demand + ": faltou" : "`Talent` " + f.talento + " for a level " + f.demand + " role: not enough");
+    if (gap >= 1) parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": sobrou" : "`Talent " + f.talento + "` for a level " + f.demand + " role: plenty");
+    else if (gap === 0) parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": no limite" : "`Talent " + f.talento + "` for a level " + f.demand + " role: just enough");
+    else parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": faltou" : "`Talent " + f.talento + "` for a level " + f.demand + " role: not enough");
     if (f.penalidade < 0) parts.push(pt ? "o filme afundou e levou gente junto" : "the film sank and took people with it");
     if (f.estabilidade <= 3) parts.push(pt ? "a `Estabilidade` lá embaixo: você chegou ao set destruído(a)" : "`Stability` at rock bottom: you arrived on set in pieces");
     if (f.sorte === 3) parts.push(pt ? "e a `Sorte` estava do seu lado" : "and `Luck` was on your side");
