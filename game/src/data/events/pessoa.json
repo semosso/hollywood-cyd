@@ -1,301 +1,304 @@
 [
- {
-  "id": "agente_lavanderia",
-  "tipo": "pessoa",
-  "atos": [
-   1
-  ],
-  "peso": 10,
-  "requer": {
-   "flags_ausentes": [
-    "agente"
-   ]
-  },
-  "texto": {
-   "pt": "Sal Tubarão tem um escritório em cima de uma lavanderia e três clientes, um deles um cachorro. Ele quer te representar. Cobra 20%. 'Confia.'",
-   "en": "Sal Shark has an office above a laundromat and three clients, one of them a dog. He wants to represent you. He takes 20%. 'Trust me.'"
-  },
-  "opcoes": [
-   {
-    "id": "assinar",
-    "rotulo": {
-     "pt": "Assinar",
-     "en": "Sign"
-    },
-    "efeitos": {
-     "flag_add": [
-      "agente",
-      "agente_tubarao"
-     ],
-     "contatos_evento": 1
-    }
-   },
-   {
-    "id": "esperar",
-    "rotulo": {
-     "pt": "Esperar um melhor",
-     "en": "Wait for a better one"
-    },
+  {
+    "id": "agente_lavanderia",
+    "tipo": "pessoa",
+    "atos": [
+      1
+    ],
+    "peso": 10,
     "requer": {
-     "contatos": ">=3"
+      "flags_ausentes": [
+        "agente"
+      ]
     },
-    "efeitos": {
-     "flag_add": [
-      "agente"
-     ],
-     "prestigio": 2
-    }
-   },
-   {
-    "id": "recusar",
-    "rotulo": {
-     "pt": "Recusar",
-     "en": "Decline"
+    "texto": {
+      "pt": "Sal Tubarão tem um escritório em cima de uma lavanderia e três clientes, um deles um cachorro. Ele quer te representar. Cobra 20%. 'Confia.'",
+      "en": "Sal Shark has an office above a laundromat and three clients, one of them a dog. He wants to represent you. He takes 20%. 'Trust me.'"
     },
-    "efeitos": {
-     "fama": -2
-    }
-   }
-  ]
- },
- {
-  "id": "agente_some",
-  "tipo": "pessoa",
-  "atos": [
-   1,
-   2
-  ],
-  "peso": 5,
-  "requer": {
-   "flags": [
-    "agente_tubarao"
-   ],
-   "dinheiro": ">=500000"
-  },
-  "texto": {
-   "pt": "Sal Tubarão não atende há três semanas. A conta da produtora dele está vazia. A sua também.",
-   "en": "Sal Shark hasn't picked up in three weeks. His production company's account is empty. So is yours."
-  },
-  "baseado_em": [
-   {
-    "quem": "Leonard Cohen",
-    "ano": 2005,
-    "o_que": "A empresária desviou cerca de US$ 5 milhões das economias do artista",
-    "link": "https://en.wikipedia.org/wiki/Leonard_Cohen"
-   }
-  ],
-  "opcoes": [
-   {
-    "id": "processar",
-    "rotulo": {
-     "pt": "Processar",
-     "en": "Sue"
-    },
-    "resultados": [
-     {
-      "p": 0.5,
-      "efeitos": {
-       "dinheiro": -1500000,
-       "flag_remove": [
-        "agente_tubarao"
-       ],
-       "heat": 2
+    "opcoes": [
+      {
+        "id": "assinar",
+        "rotulo": {
+          "pt": "Assinar",
+          "en": "Sign"
+        },
+        "efeitos": {
+          "flag_add": [
+            "agente",
+            "agente_tubarao"
+          ],
+          "contatos_evento": 1
+        }
       },
-      "texto": {
-       "pt": "Você ganha o processo. Ele não tem o dinheiro. Você volta a trabalhar aos 60.",
-       "en": "You win the case. He doesn't have the money. You'll be working at 60."
-      }
-     },
-     {
-      "p": 0.5,
-      "efeitos": {
-       "dinheiro": -500000,
-       "flag_remove": [
-        "agente_tubarao"
-       ]
+      {
+        "id": "esperar",
+        "rotulo": {
+          "pt": "Esperar um melhor",
+          "en": "Wait for a better one"
+        },
+        "requer": {
+          "contatos": ">=3"
+        },
+        "efeitos": {
+          "flag_add": [
+            "agente"
+          ],
+          "prestigio": 2
+        }
       },
-      "texto": {
-       "pt": "Acordo. Metade de volta. Nunca mais fale o nome dele.",
-       "en": "Settlement. Half back. Never say his name again."
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "fama": -2
+        }
       }
-     }
     ]
-   },
-   {
-    "id": "turne",
-    "rotulo": {
-     "pt": "Aceitar tudo que aparecer por dois anos",
-     "en": "Take everything for two years"
-    },
-    "efeitos": {
-     "dinheiro": -2000000,
-     "fama": 5,
-     "prestigio": -5,
-     "flag_remove": [
-      "agente_tubarao"
-     ],
-     "flag_add": [
-      "aceita_tudo"
-     ]
-    }
-   }
-  ]
- },
- {
-  "id": "veterano_generoso",
-  "tipo": "pessoa",
-  "atos": [
-   1
-  ],
-  "peso": 6,
-  "texto": {
-   "pt": "Um veterano que ganhou tudo te chama de 'garoto' (ou 'garota') no set e te apresenta a todo mundo. Ele tem uma marca de molho de salada que doa o lucro.",
-   "en": "A veteran who has won everything calls you 'kid' on set and introduces you to everyone. He has a salad dressing brand that gives away its profits."
   },
-  "baseado_em": [
-   {
-    "quem": "Paul Newman",
-    "ano": 1982,
-    "o_que": "A marca Newman's Own doou centenas de milhões para caridade",
-    "link": "https://en.wikipedia.org/wiki/Paul_Newman"
-   }
-  ],
-  "opcoes": [
-   {
-    "id": "aprender",
-    "rotulo": {
-     "pt": "Ficar perto e ouvir",
-     "en": "Stay close and listen"
+  {
+    "id": "agente_some",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "flags": [
+        "agente_tubarao"
+      ],
+      "dinheiro": ">=500000"
     },
-    "efeitos": {
-     "contatos_evento": 2,
-     "atributo": {
-      "talento": 1
-     },
-     "flag_add": [
-      "padrinho"
-     ]
-    }
-   },
-   {
-    "id": "ocupado",
-    "rotulo": {
-     "pt": "Você está ocupado(a) com o seu trailer",
-     "en": "You're busy in your trailer"
+    "texto": {
+      "pt": "Sal Tubarão não atende há três semanas. A conta da produtora dele está vazia. A sua também.",
+      "en": "Sal Shark hasn't picked up in three weeks. His production company's account is empty. So is yours."
     },
-    "efeitos": {
-     "reputacao": -1
-    }
-   }
-  ]
- },
- {
-  "id": "produtor_cafe",
-  "tipo": "pessoa",
-  "atos": [
-   1,
-   2
-  ],
-  "peso": 6,
-  "requer": {
-   "ano": "<=2017",
-   "flags_ausentes": [
-    "recusou_cafe",
-    "cafe"
-   ]
+    "baseado_em": [
+      {
+        "quem": "Leonard Cohen",
+        "ano": 2005,
+        "o_que": "A empresária desviou cerca de US$ 5 milhões das economias do artista",
+        "link": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+        "o_que_en": "His manager drained about US$ 5 million from the artist's savings"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "processar",
+        "rotulo": {
+          "pt": "Processar",
+          "en": "Sue"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "dinheiro": -1500000,
+              "flag_remove": [
+                "agente_tubarao"
+              ],
+              "heat": 2
+            },
+            "texto": {
+              "pt": "Você ganha o processo. Ele não tem o dinheiro. Você volta a trabalhar aos 60.",
+              "en": "You win the case. He doesn't have the money. You'll be working at 60."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "dinheiro": -500000,
+              "flag_remove": [
+                "agente_tubarao"
+              ]
+            },
+            "texto": {
+              "pt": "Acordo. Metade de volta. Nunca mais fale o nome dele.",
+              "en": "Settlement. Half back. Never say his name again."
+            }
+          }
+        ]
+      },
+      {
+        "id": "turne",
+        "rotulo": {
+          "pt": "Aceitar tudo que aparecer por dois anos",
+          "en": "Take everything for two years"
+        },
+        "efeitos": {
+          "dinheiro": -2000000,
+          "fama": 5,
+          "prestigio": -5,
+          "flag_remove": [
+            "agente_tubarao"
+          ],
+          "flag_add": [
+            "aceita_tudo"
+          ]
+        }
+      }
+    ]
   },
-  "texto": {
-   "pt": "O produtor que distribuiu metade dos filmes indicados da década quer 'tomar um café' para falar de um papel. O café é na suíte dele. Todo mundo sabe. Ninguém fala.",
-   "en": "The producer who distributed half the decade's nominated films wants 'a coffee' to talk about a part. The coffee is in his suite. Everybody knows. Nobody talks."
+  {
+    "id": "veterano_generoso",
+    "tipo": "pessoa",
+    "atos": [
+      1
+    ],
+    "peso": 6,
+    "texto": {
+      "pt": "Um veterano que ganhou tudo te chama de 'garoto' (ou 'garota') no set e te apresenta a todo mundo. Ele tem uma marca de molho de salada que doa o lucro.",
+      "en": "A veteran who has won everything calls you 'kid' on set and introduces you to everyone. He has a salad dressing brand that gives away its profits."
+    },
+    "baseado_em": [
+      {
+        "quem": "Paul Newman",
+        "ano": 1982,
+        "o_que": "A marca Newman's Own doou centenas de milhões para caridade",
+        "link": "https://en.wikipedia.org/wiki/Paul_Newman",
+        "o_que_en": "The Newman's Own brand has given hundreds of millions to charity"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aprender",
+        "rotulo": {
+          "pt": "Ficar perto e ouvir",
+          "en": "Stay close and listen"
+        },
+        "efeitos": {
+          "contatos_evento": 2,
+          "atributo": {
+            "talento": 1
+          },
+          "flag_add": [
+            "padrinho"
+          ]
+        }
+      },
+      {
+        "id": "ocupado",
+        "rotulo": {
+          "pt": "Você está ocupado(a) com o seu trailer",
+          "en": "You're busy in your trailer"
+        },
+        "efeitos": {
+          "reputacao": -1
+        }
+      }
+    ]
   },
-  "opcoes": [
-   {
-    "id": "ir_com_amiga",
-    "rotulo": {
-     "pt": "Ir, com uma amiga, e sair quando ele pedir para ela esperar lá fora",
-     "en": "Go with a friend, and leave when he asks her to wait outside"
+  {
+    "id": "produtor_cafe",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 6,
+    "requer": {
+      "ano": "<=2017",
+      "flags_ausentes": [
+        "recusou_cafe",
+        "cafe"
+      ]
     },
-    "efeitos": {
-     "flag_add": [
-      "recusou_cafe"
-     ],
-     "prestigio": 1
-    }
-   },
-   {
-    "id": "recusar",
-    "rotulo": {
-     "pt": "Recusar o café",
-     "en": "Decline the coffee"
+    "texto": {
+      "pt": "O produtor que distribuiu metade dos filmes indicados da década quer 'tomar um café' para falar de um papel. O café é na suíte dele. Todo mundo sabe. Ninguém fala.",
+      "en": "The producer who distributed half the decade's nominated films wants 'a coffee' to talk about a part. The coffee is in his suite. Everybody knows. Nobody talks."
     },
-    "efeitos": {
-     "flag_add": [
-      "recusou_cafe"
-     ],
-     "fama": -3
-    }
-   },
-   {
-    "id": "ir",
-    "rotulo": {
-     "pt": "Ir sozinha(o)",
-     "en": "Go alone"
-    },
-    "efeitos": {
-     "flag_add": [
-      "cafe"
-     ],
-     "estabilidade": -3,
-     "contatos_evento": 1
-    }
-   }
-  ]
- },
- {
-  "id": "turma_do_comediante",
-  "tipo": "pessoa",
-  "atos": [
-   1,
-   2
-  ],
-  "peso": 5,
-  "texto": {
-   "pt": "Um comediante que faz um filme por ano com os mesmos amigos, sempre num resort, te convida para a turma. É trabalho para o resto da vida. É também o fim da crítica.",
-   "en": "A comedian who makes one film a year with the same friends, always at a resort, invites you into the gang. It's work for life. It's also the end of the critics."
+    "opcoes": [
+      {
+        "id": "ir_com_amiga",
+        "rotulo": {
+          "pt": "Ir, com uma amiga, e sair quando ele pedir para ela esperar lá fora",
+          "en": "Go with a friend, and leave when he asks her to wait outside"
+        },
+        "efeitos": {
+          "flag_add": [
+            "recusou_cafe"
+          ],
+          "prestigio": 1
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar o café",
+          "en": "Decline the coffee"
+        },
+        "efeitos": {
+          "flag_add": [
+            "recusou_cafe"
+          ],
+          "fama": -3
+        }
+      },
+      {
+        "id": "ir",
+        "rotulo": {
+          "pt": "Ir sozinha(o)",
+          "en": "Go alone"
+        },
+        "efeitos": {
+          "flag_add": [
+            "cafe"
+          ],
+          "estabilidade": -3,
+          "contatos_evento": 1
+        }
+      }
+    ]
   },
-  "baseado_em": [
-   {
-    "quem": "Adam Sandler",
-    "ano": 2014,
-    "o_que": "Contrato de quatro filmes com a Netflix, filmados com os amigos de sempre",
-    "link": "https://en.wikipedia.org/wiki/Adam_Sandler"
-   }
-  ],
-  "opcoes": [
-   {
-    "id": "entrar",
-    "rotulo": {
-     "pt": "Entrar para a turma",
-     "en": "Join the gang"
+  {
+    "id": "turma_do_comediante",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Um comediante que faz um filme por ano com os mesmos amigos, sempre num resort, te convida para a turma. É trabalho para o resto da vida. É também o fim da crítica.",
+      "en": "A comedian who makes one film a year with the same friends, always at a resort, invites you into the gang. It's work for life. It's also the end of the critics."
     },
-    "efeitos": {
-     "flag_add": [
-      "turma_do_comediante"
-     ],
-     "dinheiro": 3000000,
-     "fama": 5,
-     "prestigio": -10,
-     "estabilidade": 2
-    }
-   },
-   {
-    "id": "nao",
-    "rotulo": {
-     "pt": "Agradecer e recusar",
-     "en": "Thank him and pass"
-    },
-    "efeitos": {}
-   }
-  ]
- }
+    "baseado_em": [
+      {
+        "quem": "Adam Sandler",
+        "ano": 2014,
+        "o_que": "Contrato de quatro filmes com a Netflix, filmados com os amigos de sempre",
+        "link": "https://en.wikipedia.org/wiki/Adam_Sandler",
+        "o_que_en": "Four-film deal with Netflix, shot with the same old friends"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "entrar",
+        "rotulo": {
+          "pt": "Entrar para a turma",
+          "en": "Join the gang"
+        },
+        "efeitos": {
+          "flag_add": [
+            "turma_do_comediante"
+          ],
+          "dinheiro": 3000000,
+          "fama": 5,
+          "prestigio": -10,
+          "estabilidade": 2
+        }
+      },
+      {
+        "id": "nao",
+        "rotulo": {
+          "pt": "Agradecer e recusar",
+          "en": "Thank him and pass"
+        },
+        "efeitos": {}
+      }
+    ]
+  }
 ]

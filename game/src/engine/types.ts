@@ -134,7 +134,7 @@ export type GameEvent = {
   unico?: boolean;
   requer?: Requirements;
   texto: I18n;
-  baseado_em?: { quem: string; ano: number; o_que: string; link?: string }[];
+  baseado_em?: { quem: string; quem_en?: string; ano: number; o_que: string; o_que_en?: string; link?: string }[];
   opcoes: EventOption[];
 };
 export type Requirements = Partial<Record<AttrKey | MeterKey | "idade" | "ano", string>> & {

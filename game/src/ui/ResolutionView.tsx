@@ -19,7 +19,7 @@ export function ResolutionView({ r, state, lang, content, onContinue }: { r: Res
           {r.event.baseado_em?.length ? (
             <div className="refused">
               <b>{t("basedOn", lang)}</b>
-              {r.event.baseado_em.map((b, i) => <div key={i}>{b.quem}, {b.ano}. {b.o_que}. {b.link && <a href={b.link} target="_blank" rel="noreferrer">↗</a>}</div>)}
+              {r.event.baseado_em.map((b, i) => <div key={i}>{lang === "en" ? (b.quem_en ?? b.quem) : b.quem}, {b.ano}. {lang === "en" ? (b.o_que_en ?? b.o_que) : b.o_que}. {b.link && <a href={b.link} target="_blank" rel="noreferrer">↗</a>}</div>)}
             </div>
           ) : null}
         </>

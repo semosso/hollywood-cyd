@@ -150,7 +150,7 @@ Definidos em dados (`game/src/data/events/*.json`), nunca em código. Esquema:
   "peso": 8,
   "requer": { "heat": ">=2", "flags_ausentes": ["sobrio"] },     // condições opcionais
   "texto": { "pt": "...", "en": "..." },
-  "baseado_em": [{ "quem": "John Belushi", "ano": 1982, "o_que": "...", "link": "..." }],
+  "baseado_em": [{ "quem": "John Belushi", "ano": 1982, "o_que": "...", "o_que_en": "...", "link": "..." }],
   "opcoes": [
     { "id": "ir", "rotulo": {"pt": "Ir"}, "resultados": [
         { "p": 0.25, "efeitos": { "contatos_evento": 1 }, "texto": {"pt": "..."} },
