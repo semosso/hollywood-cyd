@@ -37,7 +37,20 @@ def cmd_resolve():
             best = res[0]
             conf = "high" if len(res) == 1 or best.get("popularity", 0) > 2 * (res[1].get("popularity", 0) or 0.01) else "check"
             w.writerow([best["id"], r["title"], r["year"], r["why"], best.get("title"), (best.get("release_date") or "")[:4], conf])
-    _log(f"escrito {out}. Revise as linhas 'check' e 'NOT FOUND', depois copie os ids para films.csv.")
+    _log(f"escrito {out}. Revise as linhas 'check' e 'NOT FOUND'.")
+    # adota automaticamente os ids de confiança alta em films.csv, para o fetch do mesmo run já incluí-los
+    resolved = {r["title"]: r for r in csv.DictReader(open(out, encoding="utf-8"))}
+    src = CURATION_DIR / "films.csv"
+    raw = list(csv.DictReader(open(src, newline="", encoding="utf-8")))
+    adopted = 0
+    for r in raw:
+        if not (r.get("tmdb_id") or "").strip():
+            x = resolved.get(r["title"])
+            if x and x["confidence"] == "high" and x["tmdb_id"]:
+                r["tmdb_id"] = x["tmdb_id"]; adopted += 1
+    with open(src, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["tmdb_id", "title", "year", "why"]); w.writeheader(); w.writerows(raw)
+    _log(f"{adopted} ids adotados em films.csv")
 
 
 def cmd_fetch():
