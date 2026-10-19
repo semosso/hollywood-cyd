@@ -3,6 +3,7 @@ import type { Lang, Resolution, State } from "../engine/types";
 import type { Content } from "../engine/run";
 import { t } from "../i18n/strings";
 import { METER_LABEL, OUTCOME_LABEL, RESULT_LABEL, money } from "./format";
+import { ATTR_HELP } from "../i18n/strings";
 
 export function ResolutionView({ r, state, lang, content, onContinue }: { r: Resolution; state: State; lang: Lang; content: Content; onContinue: () => void }) {
   return (
@@ -26,6 +27,16 @@ export function ResolutionView({ r, state, lang, content, onContinue }: { r: Res
           <div className="eyebrow">{t("revision", lang)} · {r.film.title[lang] ?? r.film.title.en}</div>
           <p style={{ margin: 0 }}>{r.film.revision?.text[lang] ?? r.film.revision?.text.pt}</p>
           <Deltas d={{ prestigio: r.delta }} lang={lang} />
+        </>
+      )}
+      {r.kind === "guinada" && (
+        <>
+          <div className="eyebrow" style={{ color: r.mod.tipo === "boost" ? "var(--ok)" : "var(--warn)" }}>{r.mod.tipo === "boost" ? "★ " + t("guinadaUp", lang) : "▼ " + t("guinadaDown", lang)}</div>
+          <p style={{ margin: 0, fontSize: 18 }}>{r.mod.texto[lang] ?? r.mod.texto.pt}</p>
+          {r.mod.atributo && (
+            <div className="deltas"><span className={r.mod.delta > 0 ? "up" : "down"}>{ATTR_HELP[r.mod.atributo].name[lang]} {r.mod.delta > 0 ? "+" : ""}{r.mod.delta} {t("forCards", lang)} {r.mod.ateCard - state.cardsJogados} {t("cards", lang)}</span></div>
+          )}
+          <p className="muted" style={{ margin: 0 }}>{r.mod.tipo === "boost" ? t("goldenNext", lang) : t("badNext", lang)}</p>
         </>
       )}
       {r.kind === "morte" && (

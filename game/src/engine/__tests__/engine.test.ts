@@ -144,3 +144,42 @@ describe("share", () => {
     expect(back.anoEstreia).toBe(1995);
   });
 });
+
+
+describe("guinadas", () => {
+  it("boost dourado traz diretores foda e revela o nome; queda só traz ofertas ruins", async () => {
+    const { buildProjectCard } = await import("../offers");
+    const { isGolden, isBad } = await import("../guinada");
+    const s = createState({ ...base, atributos: { beleza: 3, talento: 3, contatos: 1, carisma: 2, juizo: 4 } });
+    s.ano = 1999; // ofertas de 2000 (Erin Brockovich: papel feminino premiado)
+    s.modificadores = [{ id: "x", tipo: "boost", atributo: "contatos", delta: 2, ateCard: 2, dourado: true, origem: "t", texto: { pt: "" } }];
+    const gold = buildProjectCard(content.films, content.fallbacks, s)!;
+    expect(gold.modo).toBe("dourado");
+    expect(isGolden(gold.offers[0].film)).toBe(true);
+    expect(gold.offers[0].visible.directorName).toBeTruthy();
+    s.modificadores = [{ id: "y", tipo: "queda", atributo: "contatos", delta: -3, ateCard: 2, origem: "t", texto: { pt: "" } }];
+    const bad = buildProjectCard(content.films, content.fallbacks, s)!;
+    expect(bad.modo).toBe("queda");
+    for (const o of bad.offers) expect(isBad(o.film)).toBe(true);
+  });
+  it("atributos efetivos aplicam o modificador e expiram", async () => {
+    const { effAttrs } = await import("../attrs");
+    const s = createState(base);
+    s.modificadores = [{ id: "x", tipo: "boost", atributo: "talento", delta: 2, ateCard: 1, origem: "t", texto: { pt: "" } }];
+    expect(effAttrs(s).talento).toBe(5);
+    s.cardsJogados = 2;
+    expect(effAttrs(s).talento).toBe(3);
+  });
+  it("frequência de guinadas por evento pessoal fica entre 1% e 12%", async () => {
+    const { maybeGuinada } = await import("../guinada");
+    const ev = content.events.find((e) => e.tipo === "vida")!;
+    let hits = 0, n = 0;
+    for (let i = 0; i < 400; i++) {
+      const s = createState({ ...base, seed: `g-${i}` });
+      s.cardsJogados = i % 20;
+      n++; if (maybeGuinada(s, ev)) hits++;
+    }
+    expect(hits / n).toBeGreaterThan(0.01);
+    expect(hits / n).toBeLessThan(0.12);
+  });
+});

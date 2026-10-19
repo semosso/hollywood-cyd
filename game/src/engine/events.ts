@@ -2,6 +2,7 @@ import { atoFor } from "./timeline";
 import { rngFor } from "./rng";
 import type { Effects, EventOption, GameEvent, I18n, MeterKey, Requirements, Resolution, State } from "./types";
 import { ATTRS } from "./constants";
+import { effAttrs } from "./attrs";
 
 function cmp(expr: string, value: number): boolean {
   const m = /^(>=|<=|==|>|<|!=)?\s*(-?\d+(?:\.\d+)?)$/.exec(expr.trim());
@@ -20,13 +21,14 @@ function cmp(expr: string, value: number): boolean {
 
 export function meets(req: Requirements | undefined, state: State): boolean {
   if (!req) return true;
+  const attrs = effAttrs(state);
   for (const [k, v] of Object.entries(req)) {
     if (k === "flags") { if (!(v as string[]).every((f) => state.flags.includes(f))) return false; continue; }
     if (k === "flags_ausentes") { if ((v as string[]).some((f) => state.flags.includes(f))) return false; continue; }
     if (k === "genero") { if (state.genero !== v) return false; continue; }
     if (k === "idade") { if (!cmp(v as string, state.idade)) return false; continue; }
     if (k === "ano") { if (!cmp(v as string, state.ano)) return false; continue; }
-    if ((ATTRS as string[]).includes(k)) { if (!cmp(v as string, state.atributos[k as keyof typeof state.atributos])) return false; continue; }
+    if ((ATTRS as string[]).includes(k)) { if (!cmp(v as string, attrs[k as keyof typeof attrs])) return false; continue; }
     if (k in state.meters) { if (!cmp(v as string, state.meters[k as MeterKey])) return false; continue; }
   }
   return true;

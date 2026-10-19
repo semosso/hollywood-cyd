@@ -87,6 +87,7 @@ export function createState(input: CreationInput): State {
     ultimaEstreiaEm: -99,
     proximoX: "pessoa",
     pendentes: [],
+    modificadores: [],
     card: null,
     fim: null,
     endingId: null,

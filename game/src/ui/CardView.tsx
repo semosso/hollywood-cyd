@@ -94,7 +94,7 @@ function ProjectCard({ state, card, lang, onAction, showTutorial, onTutorialDone
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
         <div className="row" style={{ justifyContent: "space-between" }}>
           <span className="eyebrow">{lang === "en" ? "two offers" : "duas ofertas"}</span>
-          {card.hint && <span className="mono" style={{ color: "var(--warn)" }}>{card.hint}</span>}
+          {card.hint && <span className="mono" style={{ color: card.modo === "dourado" ? "var(--ok)" : "var(--warn)" }}>{card.modo === "dourado" ? "★ " : ""}{card.hint}</span>}
         </div>
         <div className="offers">
           <OfferBox o={A} lang={lang} hot={intent === "A" || (!intent && dx < -40) ? "left" : null} />

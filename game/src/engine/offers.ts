@@ -1,5 +1,7 @@
 import { NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN } from "./constants";
 import { rngFor } from "./rng";
+import { effAttrs, activeMods } from "./attrs";
+import { isBad, isGolden } from "./guinada";
 import { yearsPerCard } from "./timeline";
 import type { Film, Lang, Offer, ProjectCard, Role, State, ThirdOption } from "./types";
 
@@ -58,7 +60,7 @@ export function noisyIcon(seed: string, tmdbId: number, icon: string, p: number)
 }
 
 function blindText(f: Film, state: State, lang: Lang): string {
-  const c = state.atributos.contatos;
+  const c = effAttrs(state).contatos;
   const src = lang === "en" && f.blind_en ? f.blind_en : f.blind;
   const level = c >= 3 ? "medium" : "hard";
   return src[level] ?? src.medium ?? src.hard ?? (lang === "en" ? "A film. Nobody will tell you more." : "Um filme. Ninguém te conta mais que isso.");
@@ -71,9 +73,9 @@ function scriptBand(f: Film, lang: Lang): string {
   return lang === "en" ? "the script is an excuse" : "o texto é um pretexto";
 }
 
-export function makeOffer(f: Film, roleIndex: number, state: State, reach: boolean): Offer {
+export function makeOffer(f: Film, roleIndex: number, state: State, reach: boolean, forceDirector = false): Offer {
   const lang = state.opcoes.idioma;
-  const a = state.atributos;
+  const a = effAttrs(state);
   const rumors = a.carisma >= 3 ? (f.rumors ?? []).slice(0, 2).map((r) => r.text[lang] ?? r.text.pt) : [];
   return {
     film: f,
@@ -90,7 +92,7 @@ export function makeOffer(f: Film, roleIndex: number, state: State, reach: boole
       budgetBand: budgetBand(f),
       releaseIn: Math.max(1, f.year - state.ano),
       blind: blindText(f, state, lang),
-      directorName: a.contatos >= 5 && f.director ? f.director.name : null,
+      directorName: (forceDirector || a.contatos >= 5) && f.director ? f.director.name : null,
       scriptBand: a.talento >= 3 ? scriptBand(f, lang) : null,
       redFlag: a.juizo >= 3 && (f.flags.includes("set_problematico") || f.derived.outcome === "bomb"),
       rumors,
@@ -101,8 +103,19 @@ export function makeOffer(f: Film, roleIndex: number, state: State, reach: boole
 /** Monta o card de projeto (RULES 4.3). Retorna null se nem com fallback dá 2 ofertas. */
 export function buildProjectCard(films: Film[], fallbacks: Film[], state: State): ProjectCard | null {
   const rng = rngFor(state.seed, "offers", state.cardsJogados);
-  const p = pool(films, state);
-  const tier = tierFor(state.meters.fama);
+  const mods = activeMods(state);
+  const dourado = mods.find((m) => m.tipo === "boost" && m.dourado);
+  const queda = mods.find((m) => m.tipo === "queda");
+  let modo: ProjectCard["modo"] = "normal";
+  let p = pool(films, state);
+  if (dourado) {
+    const golden = p.filter((c) => isGolden(c.film));
+    if (golden.length >= 1) { p = golden; modo = "dourado"; }
+  } else if (queda) {
+    p = p.filter((c) => isBad(c.film));
+    modo = "queda";
+  }
+  const tier = modo === "dourado" ? 3 : tierFor(state.meters.fama);
   const redeDir = new Set(state.rede.filter((r) => r.kind === "diretor").map((r) => r.tmdb_id));
   const weight = (c: { film: Film; roleIndex: number }, wantTier: number) => {
     let w = filmTier(c.film) === wantTier ? 1 : filmTier(c.film) === wantTier - 1 ? 0.4 : 0.1;
@@ -129,17 +142,23 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   });
   const recent = new Set(state.filmografia.slice(-2).map((f) => f.tmdb_id).concat(state.pipeline.map((p) => p.tmdb_id)));
   const fb = rngFor(state.seed, "fallback", state.cardsJogados).shuffle(fallbacks.filter((f) => !recent.has(f.tmdb_id) && eligibleYear(f, state)));
+  if (modo === "dourado" && !B) {
+    // segunda oferta dourada indisponível: completa com o pool normal
+    B = rng.weighted(pool(films, state).filter((c) => c.film.tmdb_id !== A?.film.tmdb_id), (c) => weight(c, tierFor(state.meters.fama)));
+  }
   if (!A && fb.length) A = { film: fb.shift()!, roleIndex: 0 };
   if (!B && fb.length) B = { film: fb.shift()!, roleIndex: 0 };
   if (!A || !B) return null;
-  const offers: [Offer, Offer] = [makeOffer(A.film, A.roleIndex, state, false), makeOffer(B.film, B.roleIndex, state, filmTier(B.film) > tier)];
+  const offers: [Offer, Offer] = [makeOffer(A.film, A.roleIndex, state, false, modo === "dourado"), makeOffer(B.film, B.roleIndex, state, filmTier(B.film) > tier, modo === "dourado" && isGolden(B.film))];
   const third = thirdOption(state, offers);
   const lang = state.opcoes.idioma;
   let hint: string | null = null;
+  if (modo === "dourado") hint = lang === "en" ? "He asked for you personally." : "Ele pediu você pessoalmente.";
+  if (modo === "queda") hint = lang === "en" ? "This is what's left." : "É o que sobrou.";
   if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= 40 && state.meters.fama < 70) {
     hint = lang === "en" ? "Realistic Hollywood: past 40, only the exceptional reaches you." : "Hollywood realista: a partir dos 40, só o excepcional chega até você.";
   }
-  return { kind: "projeto", offers, third, hint };
+  return { kind: "projeto", offers, third, hint, modo };
 }
 
 function eligibleYear(f: Film, state: State): boolean {
@@ -149,9 +168,10 @@ function eligibleYear(f: Film, state: State): boolean {
 
 export function thirdOption(state: State, offers: [Offer, Offer]): ThirdOption | null {
   const lang = state.opcoes.idioma;
+  const a = effAttrs(state);
   const anyFlag = offers.some((o) => o.visible.redFlag);
   if (anyFlag) {
-    return { id: "recusar_ambos", requisito: lang === "en" ? "Judgment 4: turn both down" : "Juízo 4: recusar os dois", disponivel: state.atributos.juizo >= 4 };
+    return { id: "recusar_ambos", requisito: lang === "en" ? "Judgment 4: turn both down" : "Juízo 4: recusar os dois", disponivel: a.juizo >= 4 };
   }
-  return { id: "ambos", requisito: lang === "en" ? "Connections 4: do both" : "Contatos 4: fazer os dois", disponivel: state.atributos.contatos >= 4 };
+  return { id: "ambos", requisito: lang === "en" ? "Connections 4: do both" : "Contatos 4: fazer os dois", disponivel: a.contatos >= 4 };
 }

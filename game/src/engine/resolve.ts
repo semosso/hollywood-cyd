@@ -1,6 +1,7 @@
 import { BILLING_FACTOR, CACHE_BASE_2020, CHAOS, FILM_DELTAS, PERSONAL_DELTAS } from "./constants";
 import { tierFor } from "./offers";
 import { rngFor } from "./rng";
+import { effAttrs } from "./attrs";
 import type { Film, Lang, MeterKey, PersonalResult, PipelineEntry, Resolution, State } from "./types";
 
 export type Cpi = Record<string, number>;
@@ -44,7 +45,7 @@ export function cacheFor(film: Film, roleIndex: number, state: State, cpi: Cpi):
 /** Resolve uma estreia: devolve a Resolution e muta o state (medidores, flags, rede, filmografia). */
 export function resolveRelease(state: State, entry: PipelineEntry, film: Film, recusado: Film | null, cpi: Cpi): Resolution {
   const rng = rngFor(state.seed, "release", film.tmdb_id, entry.assinadoNoCard);
-  const talento = state.atributos.talento - (entry.ambos ? 1 : 0);
+  const talento = effAttrs(state).talento - (entry.ambos ? 1 : 0);
   const resultado = personalResult(film, entry.roleIndex, talento, state, rng.next(), rng.next(), rng.next());
   const role = film.roles[entry.roleIndex];
   const billing = BILLING_FACTOR[Math.min(3, role.order)] ?? 0.5;
@@ -83,7 +84,7 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
   state.filmografia.push({ tmdb_id: film.tmdb_id, year: film.year || state.ano, roleIndex: entry.roleIndex, resultado, recusado: recusado?.tmdb_id ?? null, cache, deltas });
   state.ultimaEstreiaEm = state.cardsJogados;
   let rumorFalso: string | null = null;
-  if (state.atributos.carisma >= 3) {
+  if (effAttrs(state).carisma >= 3) {
     const f = (film.rumors ?? []).find((r) => r.false);
     if (f) rumorFalso = f.text[state.opcoes.idioma] ?? f.text.pt;
   }

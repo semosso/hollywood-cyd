@@ -62,6 +62,12 @@ const S = {
   attribution: { pt: "Fan-made. Sátira. Não afiliado a nenhum estúdio, pessoa ou premiação. Dados: TMDB (não endossado nem certificado pelo TMDB).", en: "Fan-made. Satire. Not affiliated with any studio, person or award. Data: TMDB (not endorsed or certified by TMDB)." },
   help: { pt: "Linha de apoio: CVV 188 (Brasil) · 988 (EUA)", en: "If you need to talk: 988 (US) · CVV 188 (Brazil)" },
   probability: { pt: "chance", en: "chance" },
+  guinadaUp: { pt: "Guinada", en: "Swing" },
+  guinadaDown: { pt: "Maré baixa", en: "Low tide" },
+  forCards: { pt: "pelos próximos", en: "for the next" },
+  cards: { pt: "cards", en: "cards" },
+  goldenNext: { pt: "Seu próximo card de projeto vai ser diferente.", en: "Your next project card will be different." },
+  badNext: { pt: "Pelos próximos cards, só vai aparecer o que sobrou.", en: "For the next few cards, only leftovers will show up." },
   locked: { pt: "requer", en: "requires" },
   age: { pt: "anos", en: "years old" },
 } as const;

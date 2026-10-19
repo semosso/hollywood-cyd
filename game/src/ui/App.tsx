@@ -5,6 +5,8 @@ import { replay, screen, startRun, step } from "../engine/run";
 import { creationFromParams, decodeChoices } from "../engine/share";
 import type { Action, CreationInput, Lang, State } from "../engine/types";
 import { atoFor } from "../engine/timeline";
+import { activeMods } from "../engine/attrs";
+import { ATTR_HELP } from "../i18n/strings";
 import { t } from "../i18n/strings";
 import { CardView } from "./CardView";
 import { Creation } from "./Creation";
@@ -50,6 +52,9 @@ export function App() {
             <span title={METER_LABEL.fama[lang]}>★ {Math.round(m.fama)}</span>
             <span title={METER_LABEL.prestigio[lang]}>♛ {Math.round(m.prestigio)}</span>
             <span title={METER_LABEL.heat[lang]}>🔥 {m.heat}</span>
+            {activeMods(state).map((mod) => (
+              <span key={mod.id} style={{ color: mod.tipo === "boost" ? "var(--ok)" : "var(--warn)" }}>{mod.tipo === "boost" ? "★" : "▼"} {mod.atributo ? ATTR_HELP[mod.atributo].name[lang] : ""} {mod.delta > 0 ? "+" : ""}{mod.delta}</span>
+            ))}
           </div>
         </div>
       )}

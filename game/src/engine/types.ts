@@ -112,7 +112,7 @@ export type Offer = {
   };
 };
 
-export type ProjectCard = { kind: "projeto"; offers: [Offer, Offer]; third: ThirdOption | null; hint: string | null };
+export type ProjectCard = { kind: "projeto"; offers: [Offer, Offer]; third: ThirdOption | null; hint: string | null; modo: "normal" | "dourado" | "queda" };
 export type ThirdOption = { id: "ambos" | "recusar_ambos"; requisito: string; disponivel: boolean };
 
 export type EventOptionResult = { p: number; efeitos: Effects; texto?: I18n; so_realista?: boolean };
@@ -160,6 +160,7 @@ export type Resolution =
     }
   | { kind: "evento"; event: GameEvent; optionId: string; texto: I18n | null; efeitos: Effects }
   | { kind: "revisao"; film: Film; delta: number }
+  | { kind: "guinada"; mod: Modifier }
   | { kind: "morte"; causa: DeathCause };
 
 export type Ending = {
@@ -170,6 +171,19 @@ export type Ending = {
   alvo?: Partial<Record<MeterKey, number>>;
   titulo: I18n;
   manchete: I18n;
+  texto: I18n;
+};
+
+export type Modifier = {
+  id: string;
+  tipo: "boost" | "queda";
+  atributo: AttrKey | null;
+  delta: number;
+  /** último card (cardsJogados) em que o modificador vale */
+  ateCard: number;
+  /** boost: o próximo card de projeto é "dourado" (diretor foda). queda: cards de projeto só trazem ofertas ruins. */
+  dourado?: boolean;
+  origem: string;
   texto: I18n;
 };
 
@@ -202,6 +216,7 @@ export type State = {
   ultimaEstreiaEm: number;
   proximoX: "pessoa" | "midia";
   pendentes: Resolution[];
+  modificadores: Modifier[];
   card: Card | null;
   fim: { tipo: "cards" | "morte" | "saida" | "ate_aqui"; causa?: DeathCause } | null;
   endingId: string | null;

@@ -5,6 +5,8 @@ import { availableOptions, contextEvent, pickEvent, resolveEvent } from "./event
 import { buildProjectCard } from "./offers";
 import { resolveRelease, type Cpi } from "./resolve";
 import { rngFor } from "./rng";
+import { effAttrs } from "./attrs";
+import { maybeGuinada } from "./guinada";
 import { atoFor, yearsPerCard } from "./timeline";
 import type { Action, Card, Ending, Film, GameEvent, Screen, State } from "./types";
 void CHAOS;
@@ -38,27 +40,27 @@ function nextCard(state: State, content: Content): Card | null {
   }
   if (slot === "vida" || slot === "projeto") {
     const ev = pickEvent(content.events, "vida", state);
-    if (ev) return { kind: "evento", event: ev, showProbabilities: state.atributos.juizo >= 3 };
+    if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
   }
   // X
   const ctx = contextEvent(content.events, state);
-  if (ctx) return { kind: "evento", event: ctx, showProbabilities: state.atributos.juizo >= 3 };
+  if (ctx) return { kind: "evento", event: ctx, showProbabilities: effAttrs(state).juizo >= 3 };
   const lastRelease = state.filmografia[state.filmografia.length - 1];
   if (lastRelease && state.cardsJogados - state.ultimaEstreiaEm <= 1) {
     const f = filmById(content, lastRelease.tmdb_id);
     if (f && (f.derived.p_prize >= 0.25 || lastRelease.resultado === "indicado" || lastRelease.resultado === "ganhou")) {
       const ev = pickEvent(content.events, "premiacao", state);
-      if (ev) return { kind: "evento", event: ev, showProbabilities: state.atributos.juizo >= 3 };
+      if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
     }
   }
   if (!state.destinoVisto && rngFor(state.seed, "destino", atoFor(state.idade)).next() < 0.08) {
     const ev = pickEvent(content.events, "destino", state);
-    if (ev) return { kind: "evento", event: ev, showProbabilities: state.atributos.juizo >= 3 };
+    if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
   }
   const tipo = state.proximoX;
   state.proximoX = tipo === "pessoa" ? "midia" : "pessoa";
   const ev = pickEvent(content.events, tipo, state) ?? pickEvent(content.events, state.proximoX, state) ?? pickEvent(content.events, "vida", state);
-  if (ev) return { kind: "evento", event: ev, showProbabilities: state.atributos.juizo >= 3 };
+  if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
   return null;
 }
 
@@ -87,6 +89,7 @@ function advance(state: State, content: Content): void {
       state.pendentes.push({ kind: "revisao", film: f, delta: f.revision.prestige_delta });
     }
   }
+  state.modificadores = state.modificadores.filter((m) => m.ateCard >= state.cardsJogados);
   clampMeters(state);
   if (!state.fim) {
     const causa = checkDeath(state);
@@ -152,6 +155,8 @@ export function step(state: State, action: Action, content: Content): State {
     if (!opt || !opt.disponivel) return state;
     const r = resolveEvent(s, ev, action.optionId);
     s.escolhas.push(`e:${action.optionId}`);
+    const g = maybeGuinada(s, ev);
+    if (g) { s.modificadores.push(g); s.pendentes.unshift({ kind: "guinada", mod: g }); }
     if (r.texto || Object.keys(r.efeitos).length || ev.baseado_em?.length) s.pendentes.unshift(r);
     advance(s, content);
     return s;

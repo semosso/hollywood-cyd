@@ -231,6 +231,25 @@ Filmes com `revision` geram um card `midia` especial quando `ano ≥ revision.ye
 - Eventos com `morte` no resultado.
 - Automático: ao final de cada card, se `vicio ≥ 7`: `p_od = 0.05 × (vicio − 6)`; se rolar, fim com causa `od`.
 
+### 6.6 Guinadas (o randomizer)
+Com baixa probabilidade, um evento **pessoal** (`vida`, `pessoa`, `midia`, `destino`) joga a carreira muito
+para cima ou muito para baixo por alguns cards. É o que gera "fui numa festa e saí com um filme do
+diretor X" e "briguei com a pessoa errada e passei dois anos fazendo filme de TV".
+
+- **Gatilho**: depois de resolver o evento, `p = 0.05 + 0.02 × (sorte − 2)` (3%, 5% ou 7%).
+- **Direção**: `P(positiva) = clamp(0.5 + 0.04 × (estabilidade − 5) − 0.04 × vicio, 0.25, 0.75)`.
+- **Boost** (dura 2 cards): +2 em Contatos, Carisma ou Talento (sorteado), e o **próximo card de projeto é
+  dourado**: ofertas só de filmes de diretor foda (`flags` `autor`/`tirano_genial`, `p_prize ≥ 0.4` ou
+  ≥ 4 indicações), ignorando o tier do jogador, com o nome do diretor revelado ("ele pediu você
+  pessoalmente") mesmo sem Contatos 5.
+- **Queda** (dura 2 cards): −3 Contatos, −2 Juízo ou −2 Carisma (sorteado), e os cards de projeto do
+  período só trazem **ofertas ruins** (`flop`/`bomb`/`popcorn` com `p_prize < 0.3`, ou fallbacks). O card
+  diz "é o que sobrou".
+- Modificadores somam aos atributos base para tudo: informação revelada, terceira opção, requisitos de
+  opção de evento, probabilidades visíveis (Juízo) e talento na resolução. Teto 6, piso 0.
+- A guinada aparece como uma resolução própria (texto + delta + duração) e como selo no HUD enquanto dura.
+- Eventos podem, no futuro, declarar guinada explícita nos efeitos (ex.: o veterano generoso).
+
 ## 7. Finais
 
 Definidos em `game/src/data/endings.json`. Esquema:
@@ -281,3 +300,4 @@ Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` r
 7. Hollywood realista: mulher aos 40 com Fama 30 só recebe papéis excepcionais ou fallback.
 8. Sempre há um final elegível.
 9. Link de compartilhamento reproduz a filmografia.
+10. Guinada: com boost dourado ativo, as ofertas do próximo card de projeto são de diretores "foda"; com queda ativa, só ofertas ruins; a frequência de guinadas por evento pessoal fica entre 1% e 12%.
