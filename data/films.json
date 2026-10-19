@@ -115,6 +115,126 @@
   "why": ""
  },
  {
+  "tmdb_id": 968,
+  "imdb_id": "tt0072890",
+  "title": {
+   "original": "Dog Day Afternoon",
+   "en": "Dog Day Afternoon",
+   "pt": "Um Dia de Cão"
+  },
+  "year": 1975,
+  "runtime": 124,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 39996,
+   "name": "Sidney Lumet",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 14535,
+    "name": "Martin Elfand"
+   },
+   {
+    "tmdb_id": 1151,
+    "name": "Martin Bregman"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Al Pacino",
+    "actor_tmdb_id": 1158,
+    "character": "Sonny",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "John Cazale",
+    "actor_tmdb_id": 3096,
+    "character": "Sal",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "nominated",
+    "cannes": "none"
+   },
+   {
+    "actor": "Charles Durning",
+    "actor_tmdb_id": 1466,
+    "character": "Moretti",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Chris Sarandon",
+    "actor_tmdb_id": 14541,
+    "character": "Leon",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 1800000,
+  "revenue": 56665856,
+  "rt": 94,
+  "metacritic": 86,
+  "imdb": 8.0,
+  "tmdb_vote": 7.9,
+  "film_awards": {
+   "oscar_nominations": 6,
+   "oscar_wins": 1,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg",
+  "blind": {
+   "hard": "Um diretor com 12 filmes no currículo quer você num filme policial. Orçamento de um sofá. Quando o inexperiente criminoso Sonny Wortzik lidera um assalto a um banco em Brooklyn, as coisas rapidamente dão errado e uma situação de refém se desenvolve.",
+   "medium": "O diretor de um drama de 1957 (Um jovem porto-riquenho é acusado do brutal crime de ter matado o próprio pai) quer você num filme policial. Quando o inexperiente criminoso Sonny Wortzik lidera um assalto a um banco em Brooklyn, as coisas rapidamente dão errado e uma situação de refém se desenvolve. Um colega de elenco vai ser indicado por este filme.",
+   "easy": "Sidney Lumet quer você num filme policial. Quando o inexperiente criminoso Sonny Wortzik lidera um assalto a um banco em Brooklyn, as coisas rapidamente dão errado e uma situação de refém se desenvolve. Sonny e seu cúmplice, Sal Naturile, tentam desesperadamente permanecer em controle, mas a mídia vai à loucura e o FBI chega, criando uma tensão ainda maior. Gradualmente, os verdadeiros motivos para o roubo são revelados."
+  },
+  "blind_en": {
+   "hard": "A director with 12 films behind him wants you in a crime film. Couch-cushion budget. Based on the true story of would-be Brooklyn bank robbers John Wojtowicz and Salvatore Naturile.",
+   "medium": "The director of a 1957 drama (The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young…) wants you in a crime film. Based on the true story of would-be Brooklyn bank robbers John Wojtowicz and Salvatore Naturile. A castmate will be nominated for this one. Keywords: new york city, airport.",
+   "easy": "Sidney Lumet wants you in a crime film. Based on the true story of would-be Brooklyn bank robbers John Wojtowicz and Salvatore Naturile. Sonny and Sal attempt a bank heist which quickly turns sour and escalates into a hostage situation and stand-off with the police. As Sonny's motives for the robbery are slowly revealed and things become more complicated, the heist turns into a media circus."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 31.48,
+   "outcome": "hit"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 578,
   "imdb_id": "tt0073195",
   "title": {
@@ -233,6 +353,238 @@
    "outcome": "hit"
   },
   "why": "primeiro blockbuster de verão"
+ },
+ {
+  "tmdb_id": 510,
+  "imdb_id": "tt0073486",
+  "title": {
+   "original": "One Flew Over the Cuckoo's Nest",
+   "en": "One Flew Over the Cuckoo's Nest",
+   "pt": "Um Estranho no Ninho"
+  },
+  "year": 1975,
+  "runtime": 135,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 3974,
+   "name": "Miloš Forman",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 3392,
+    "name": "Michael Douglas"
+   },
+   {
+    "tmdb_id": 1310,
+    "name": "Saul Zaentz"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Jack Nicholson",
+    "actor_tmdb_id": 514,
+    "character": "Randle Patrick McMurphy",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "won",
+    "cannes": "none"
+   },
+   {
+    "actor": "Brad Dourif",
+    "actor_tmdb_id": 1370,
+    "character": "Billy Bibbit",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Louise Fletcher",
+    "actor_tmdb_id": 7071,
+    "character": "Nurse Mildred Ratched",
+    "order": 2,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Danny DeVito",
+    "actor_tmdb_id": 518,
+    "character": "Martini",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 3000000,
+  "revenue": 108981275,
+  "rt": 92,
+  "metacritic": 84,
+  "imdb": 8.6,
+  "tmdb_vote": 8.404,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 5,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+  "blind": {
+   "hard": "Um diretor com 4 filmes no currículo quer você num drama. Orçamento de um sofá. Randle Patrick McMurphy é um malandro que, após ser preso, se finge de louco para ir a um hospital psiquiátrico e assim esquivar-se a uma porção de trabalhos…",
+   "medium": "O diretor de uma comédia de 1967 quer você num drama. Randle Patrick McMurphy é um malandro que, após ser preso, se finge de louco para ir a um hospital psiquiátrico e assim esquivar-se a uma porção de trabalhos… Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "Miloš Forman quer você num drama. Randle Patrick McMurphy é um malandro que, após ser preso, se finge de louco para ir a um hospital psiquiátrico e assim esquivar-se a uma porção de trabalhos forçados na prisão. Lá ele começa a influenciar os outros internos e começa a sofrer oposição da cruel e sádica enfermeira Mildred Ratched. Com forte poder persuasivo, McMurphy instaura uma reviravolta na clínica, não sabendo o que isto pode lhe custar."
+  },
+  "blind_en": {
+   "hard": "A director with 4 films behind him wants you in a drama. Couch-cushion budget. A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison.",
+   "medium": "The director of a 1967 comedy (The firemen of a provincial Czechoslovakian town throw a ▇▇▇ in honor of the old chief's retirement) wants you in a drama. A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. You share the screen with an Oscar winner. Keywords: mentally disabled, friendship.",
+   "easy": "Miloš Forman wants you in a drama. A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 36.33,
+   "outcome": "hit"
+  },
+  "why": "Nicholson ganha; Louise Fletcher ganha"
+ },
+ {
+  "tmdb_id": 10774,
+  "imdb_id": "tt0074958",
+  "title": {
+   "original": "Network",
+   "en": "Network",
+   "pt": "Rede de Intrigas"
+  },
+  "year": 1976,
+  "runtime": 122,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 39996,
+   "name": "Sidney Lumet",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 66714,
+    "name": "Howard Gottfried"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Faye Dunaway",
+    "actor_tmdb_id": 6450,
+    "character": "Diana Christensen",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "William Holden",
+    "actor_tmdb_id": 8252,
+    "character": "Max Schumacher",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Peter Finch",
+    "actor_tmdb_id": 29903,
+    "character": "Howard Beale",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Robert Duvall",
+    "actor_tmdb_id": 3087,
+    "character": "Frank Hackett",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 3800000,
+  "revenue": 23700000,
+  "rt": 90,
+  "metacritic": 83,
+  "imdb": 8.0,
+  "tmdb_vote": 7.8,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 4,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/qZomlHsaALUtkFeMDwdYmwS2Pbo.jpg",
+  "blind": {
+   "hard": "Um diretor com 13 filmes no currículo quer você num drama. Orçamento de um sofá. Um locutor de noticiário de uma ▇▇▇ de televisão americana é demitido em razão da baixa audiência do programa.",
+   "medium": "O diretor de um drama de 1957 (Um jovem porto-riquenho é acusado do brutal crime de ter matado o próprio pai) quer você num drama. Um locutor de noticiário de uma ▇▇▇ de televisão americana é demitido em razão da baixa audiência do programa. Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "Sidney Lumet quer você num drama. Um locutor de noticiário de uma ▇▇▇ de televisão americana é demitido em razão da baixa audiência do programa. Ele então anuncia que irá cometer suicídio no ar. Por esta razão, os índices de audiência do programa voltam a crescer, ele passa a ser conhecido como o Profeta Louco, e é readmitido. Mas seu comportamento insano faz com que os responsáveis pela sua ascensão decidam detê-lo."
+  },
+  "blind_en": {
+   "hard": "A director with 13 films behind him wants you in a drama. Couch-cushion budget. When veteran anchorman Howard Beale is forced to retire his 25-year post because of his age, he announces to viewers that he will kill himself during his…",
+   "medium": "The director of a 1957 drama (The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young…) wants you in a drama. When veteran anchorman Howard Beale is forced to retire his 25-year post because of his age, he announces to viewers that he will kill himself during his… You share the screen with an Oscar winner. Keywords: adultery, new york city.",
+   "easy": "Sidney Lumet wants you in a drama. When veteran anchorman Howard Beale is forced to retire his 25-year post because of his age, he announces to viewers that he will kill himself during his farewell broadcast. ▇▇▇ executives rethink their decision when his fanatical tirade results in a spike in ratings."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 6.24,
+   "outcome": "hit"
+  },
+  "why": ""
  },
  {
   "tmdb_id": 1366,
@@ -961,6 +1313,133 @@
   "why": ""
  },
  {
+  "tmdb_id": 11778,
+  "imdb_id": "tt0077416",
+  "title": {
+   "original": "The Deer Hunter",
+   "en": "The Deer Hunter",
+   "pt": "O Franco Atirador"
+  },
+  "year": 1978,
+  "runtime": 183,
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "director": {
+   "tmdb_id": 12114,
+   "name": "Michael Cimino",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 14895,
+    "name": "Barry Spikings"
+   },
+   {
+    "tmdb_id": 581,
+    "name": "Michael Deeley"
+   },
+   {
+    "tmdb_id": 12114,
+    "name": "Michael Cimino"
+   },
+   {
+    "tmdb_id": 14897,
+    "name": "John Peverall"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Robert De Niro",
+    "actor_tmdb_id": 380,
+    "character": "Michael Vronsky",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Christopher Walken",
+    "actor_tmdb_id": 4690,
+    "character": "Nikanor \"Nick\" Chevotarevich",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "John Cazale",
+    "actor_tmdb_id": 3096,
+    "character": "Stan",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "John Savage",
+    "actor_tmdb_id": 47879,
+    "character": "Steven Pushkov",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 15000000,
+  "revenue": 49000000,
+  "rt": 86,
+  "metacritic": 90,
+  "imdb": 8.1,
+  "tmdb_vote": 7.959,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 5,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg",
+  "blind": {
+   "hard": "Um diretor no segundo filme quer você num filme de guerra. Orçamento modesto. Um grupo de amigos da classe trabalhadora decide alistar-se no exército durante a Guerra do Vietnam e descobrem que é um caos infernal - não a nobre aventura…",
+   "medium": "O diretor de uma comédia de 1974 (As lendas do cinema Clint Eastwood e Jeff Bridges estrelam como dois bandidos dos tempos modernos neste filme…) quer você num filme de guerra. Um grupo de amigos da classe trabalhadora decide alistar-se no exército durante a Guerra do Vietnam e descobrem que é um caos infernal - não a nobre aventura… Você contracena com alguém que já ganhou o Oscar. Quase três horas.",
+   "easy": "Michael Cimino quer você num filme de guerra. Um grupo de amigos da classe trabalhadora decide alistar-se no exército durante a Guerra do Vietnam e descobrem que é um caos infernal - não a nobre aventura que imaginavam. Antes de partirem, Steven casou-se com a namorada grávida - e Michael e Nick estavam apaixonados pela mesma mulher. Mas os três são homens diferentes quando regressam."
+  },
+  "blind_en": {
+   "hard": "A director on his second film wants you in a war film. Modest budget. Three steelworkers enlist in the army and are sent to Vietnam, one leaving behind a rushed marriage, the others a shared love.",
+   "medium": "The director of a 1974 comedy (With the help of an irreverent young sidekick, a bank robber gets his old gang back together to organise a…) wants you in a war film. Three steelworkers enlist in the army and are sent to Vietnam, one leaving behind a rushed marriage, the others a shared love. You share the screen with an Oscar winner. Nearly three hours long.",
+   "easy": "Michael Cimino wants you in a war film. Three steelworkers enlist in the army and are sent to Vietnam, one leaving behind a rushed marriage, the others a shared love. What they encounter during the war changes their lives forever."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 3.27,
+   "outcome": "oscar_bait"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 348,
   "imdb_id": "tt0078748",
   "title": {
@@ -1315,6 +1794,130 @@
    "outcome": "hit"
   },
   "why": "Streep e Hoffman; bastidores tensos"
+ },
+ {
+  "tmdb_id": 10935,
+  "imdb_id": "tt0080855",
+  "title": {
+   "original": "Heaven's Gate",
+   "en": "Heaven's Gate",
+   "pt": "O Portal do Paraíso"
+  },
+  "year": 1980,
+  "runtime": 217,
+  "genres": [
+   "Drama",
+   "Western",
+   "History"
+  ],
+  "director": {
+   "tmdb_id": 12114,
+   "name": "Michael Cimino",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 10589,
+    "name": "Denis O'Dell"
+   },
+   {
+    "tmdb_id": 16329,
+    "name": "Charles Okun"
+   },
+   {
+    "tmdb_id": 67561,
+    "name": "Joann Carelli"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Kris Kristofferson",
+    "actor_tmdb_id": 10823,
+    "character": "James Averill",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "nominated",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Christopher Walken",
+    "actor_tmdb_id": 4690,
+    "character": "Nathan D. Champion",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "John Hurt",
+    "actor_tmdb_id": 5049,
+    "character": "Billy Irvine",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Sam Waterston",
+    "actor_tmdb_id": 8975,
+    "character": "Frank Canton",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 44000000,
+  "revenue": 3484331,
+  "rt": 57,
+  "metacritic": 57,
+  "imdb": 6.7,
+  "tmdb_vote": 6.7,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 5
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/kW4Vk31nhtKPKGuYMaVATq3wcHC.jpg",
+  "blind": {
+   "hard": "Um diretor com 2 filmes no currículo quer você num faroeste. Orçamento modesto. 1890, estado de Wyoming, Estados Unidos.",
+   "medium": "O diretor de um drama de 1978 (Um grupo de amigos da classe trabalhadora decide alistar-se no exército durante a Guerra do Vietnam e…) quer você num faroeste. 1890, estado de Wyoming, Estados Unidos. Você contracena com alguém que já ganhou o Oscar. Quase três horas.",
+   "easy": "Michael Cimino quer você num faroeste. 1890, estado de Wyoming, Estados Unidos. Um xerife faz o possível para proteger fazendeiros imigrantes de ricos criadores de gado, em lutas por mais terras. Ao mesmo tempo, ele luta pelo coração de uma jovem com um pistoleiro."
+  },
+  "blind_en": {
+   "hard": "A director with 2 films behind him wants you in a western. Modest budget. Harvard graduate James Averill serves as the sheriff of prosperous Jackson County, Wyoming, standing at the center of a conflict between impoverished…",
+   "medium": "The director of a 1978 drama (Three steelworkers enlist in the army and are sent to Vietnam, one leaving behind a rushed marriage, the…) wants you in a western. Harvard graduate James Averill serves as the sheriff of prosperous Jackson County, Wyoming, standing at the center of a conflict between impoverished… You share the screen with an Oscar winner. Nearly three hours long.",
+   "easy": "Michael Cimino wants you in a western. Harvard graduate James Averill serves as the sheriff of prosperous Jackson County, Wyoming, standing at the center of a conflict between impoverished immigrants and affluent cattle farmers. Politically connected ranchers enlist mercenary Nathan Champion—who is also vying for the affections of local madam Ella Watson—to combat the immigrant uprising. As tensions escalate, both Averill and Champion start to question their decisions."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.3,
+   "p_box": 0.1,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 0.08,
+   "outcome": "flop"
+  },
+  "why": "o flop que quebrou a United Artists"
  },
  {
   "tmdb_id": 16619,
@@ -2042,6 +2645,137 @@
   "why": ""
  },
  {
+  "tmdb_id": 535,
+  "imdb_id": "tt0085549",
+  "title": {
+   "original": "Flashdance",
+   "en": "Flashdance",
+   "pt": "Flashdance: Em Ritmo de Embalo"
+  },
+  "year": 1983,
+  "runtime": 95,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 7270,
+   "name": "Adrian Lyne",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 770,
+    "name": "Jerry Bruckheimer"
+   },
+   {
+    "tmdb_id": 771,
+    "name": "Don Simpson"
+   },
+   {
+    "tmdb_id": 60554,
+    "name": "Christine Forsyth-Peters"
+   },
+   {
+    "tmdb_id": 3804,
+    "name": "Peter Guber"
+   },
+   {
+    "tmdb_id": 3805,
+    "name": "Jon Peters"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Jennifer Beals",
+    "actor_tmdb_id": 3130,
+    "character": "Alex Owens",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Michael Nouri",
+    "actor_tmdb_id": 8699,
+    "character": "Nick Hurley",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Sunny Johnson",
+    "actor_tmdb_id": 31116,
+    "character": "Jeanie Szabo",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Kyle T. Heffner",
+    "actor_tmdb_id": 31115,
+    "character": "Richie",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 7000000,
+  "revenue": 201521203,
+  "rt": 37,
+  "metacritic": 39,
+  "imdb": 6.2,
+  "tmdb_vote": 6.492,
+  "film_awards": {
+   "oscar_nominations": 2,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 1
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/ziiy6ORt8BlxWFXskBChBMInvDA.jpg",
+  "blind": {
+   "hard": "Um diretor no segundo filme quer você num romance. Orçamento de um sofá. Uma jovem de garra e talento não mede esforços para realizar o sonho de se tornar uma bailarina.",
+   "medium": "O diretor de um drama de 1980 (O filme aborda os problemas de quatro adolescentes, Jeanie (Jodie Foster), Annie (Cherie Currie), Madge…) quer você num romance. Uma jovem de garra e talento não mede esforços para realizar o sonho de se tornar uma bailarina.",
+   "easy": "Adrian Lyne quer você num romance. Uma jovem de garra e talento não mede esforços para realizar o sonho de se tornar uma bailarina. Para tanto, durante o dia ela trabalha como operária e à noite solta seu corpo no ▇▇▇ alucinante das discotecas."
+  },
+  "blind_en": {
+   "hard": "A director on his second film wants you in a romance. Couch-cushion budget. Alex Owens, a young woman juggling between two odd jobs, aspires to become a successful ballet dancer.",
+   "medium": "The director of a 1980 drama (A group of friends come of age in the asphalt desert of the San Fernando Valley, as set to a blazing…) wants you in a romance. Alex Owens, a young woman juggling between two odd jobs, aspires to become a successful ballet dancer. Keywords: dancing, dance.",
+   "easy": "Adrian Lyne wants you in a romance. Alex Owens, a young woman juggling between two odd jobs, aspires to become a successful ballet dancer. Nick, who is her boss and lover, supports and encourages her to fulfil her dream."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.35,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 28.79,
+   "outcome": "popcorn"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 111,
   "imdb_id": "tt0086250",
   "title": {
@@ -2158,6 +2892,121 @@
    "p_scandal": 0.3,
    "ratio": 2.64,
    "outcome": "popcorn"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 11050,
+  "imdb_id": "tt0086425",
+  "title": {
+   "original": "Terms of Endearment",
+   "en": "Terms of Endearment",
+   "pt": "Laços de Ternura"
+  },
+  "year": 1983,
+  "runtime": 132,
+  "genres": [
+   "Drama",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 3388,
+   "name": "James L. Brooks",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 3388,
+    "name": "James L. Brooks"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Shirley MacLaine",
+    "actor_tmdb_id": 4090,
+    "character": "Aurora Greenway",
+    "order": 0,
+    "gender": "f",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "won",
+    "cannes": "none"
+   },
+   {
+    "actor": "Debra Winger",
+    "actor_tmdb_id": 26513,
+    "character": "Emma Greenway Horton",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Jack Nicholson",
+    "actor_tmdb_id": 514,
+    "character": "Garrett Breedlove",
+    "order": 2,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "won",
+    "cannes": "none"
+   },
+   {
+    "actor": "Danny DeVito",
+    "actor_tmdb_id": 518,
+    "character": "Vernon Dahlart",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 8000000,
+  "revenue": 108423749,
+  "rt": 81,
+  "metacritic": 79,
+  "imdb": 7.4,
+  "tmdb_vote": 7.1,
+  "film_awards": {
+   "oscar_nominations": 9,
+   "oscar_wins": 5,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/l77DRjJuykqKMtD9GTK4YT7qKHW.jpg",
+  "blind": {
+   "hard": "Um diretor estreante quer você numa comédia. Orçamento de um sofá. Aurora (Shirley MacLaine), uma viúva, e Emma (Debra Winger), sua filha, apesar de se amarem tem uma relação conflituosa.",
+   "medium": "Um diretor estreante quer você numa comédia. Aurora (Shirley MacLaine), uma viúva, e Emma (Debra Winger), sua filha, apesar de se amarem tem uma relação conflituosa. Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "James L. Brooks quer você numa comédia. Aurora (Shirley MacLaine), uma viúva, e Emma (Debra Winger), sua filha, apesar de se amarem tem uma relação conflituosa. Entretanto, tudo muda quando a filha descobre que está com câncer e, ao mesmo tempo, toma consciência de que foi traída por Flap (Jeff Daniels), seu marido. Simultaneamente sua mãe após anos passa a se interessar por Garrett Breedlove (Jack Nicholson), um ex astronauta vizinho e paquerador."
+  },
+  "blind_en": {
+   "hard": "A first-time director wants you in a comedy. Couch-cushion budget. Aurora, a finicky woman, is in search of true love while her daughter faces marital issues.",
+   "medium": "A first-time director wants you in a comedy. Aurora, a finicky woman, is in search of true love while her daughter faces marital issues. You share the screen with an Oscar winner. Keywords: adultery, based on novel or book.",
+   "easy": "James L. Brooks wants you in a comedy. Aurora, a finicky woman, is in search of true love while her daughter faces marital issues. Together, they help each other deal with problems and find reasons to live a joyful life."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.7,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 13.55,
+   "outcome": "hit"
   },
   "why": ""
  },
@@ -2789,6 +3638,140 @@
   "why": ""
  },
  {
+  "tmdb_id": 873,
+  "imdb_id": "tt0088939",
+  "title": {
+   "original": "The Color Purple",
+   "en": "The Color Purple",
+   "pt": "A Cor Púrpura"
+  },
+  "year": 1985,
+  "runtime": 154,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 488,
+   "name": "Steven Spielberg",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 488,
+    "name": "Steven Spielberg"
+   },
+   {
+    "tmdb_id": 3805,
+    "name": "Jon Peters"
+   },
+   {
+    "tmdb_id": 489,
+    "name": "Kathleen Kennedy"
+   },
+   {
+    "tmdb_id": 13301,
+    "name": "Quincy Jones"
+   },
+   {
+    "tmdb_id": 3804,
+    "name": "Peter Guber"
+   },
+   {
+    "tmdb_id": 13302,
+    "name": "Carole Isenberg"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Danny Glover",
+    "actor_tmdb_id": 2047,
+    "character": "Albert",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Whoopi Goldberg",
+    "actor_tmdb_id": 2395,
+    "character": "Celie",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Margaret Avery",
+    "actor_tmdb_id": 13307,
+    "character": "Shug Avery",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Oprah Winfrey",
+    "actor_tmdb_id": 13309,
+    "character": "Sofia",
+    "order": 3,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 15000000,
+  "revenue": 146300000,
+  "rt": 73,
+  "metacritic": 78,
+  "imdb": 7.7,
+  "tmdb_vote": 7.724,
+  "film_awards": {
+   "oscar_nominations": 10,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/6bvxkcTAXyqxGRwo38mxw92D6Xr.jpg",
+  "blind": {
+   "hard": "Um diretor com 11 filmes no currículo quer você num drama. Orçamento modesto. Em 1906, em uma pequena cidade da Georgia, sul dos Estados Unidos, a quase adolescente Celie, violentada pelo próprio pai, torna-se mãe de duas crianças.",
+   "medium": "O diretor de um filme de aventura de 1981 (Em 1936, o professor e arqueólogo ▇▇▇ ▇▇▇ é contratado pelo governo para encontrar a ▇▇▇ da Aliança, que…) quer você num drama. Em 1906, em uma pequena cidade da Georgia, sul dos Estados Unidos, a quase adolescente Celie, violentada pelo próprio pai, torna-se mãe de duas crianças. Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "Steven Spielberg quer você num drama. Em 1906, em uma pequena cidade da Georgia, sul dos Estados Unidos, a quase adolescente Celie, violentada pelo próprio pai, torna-se mãe de duas crianças. Separada dos filhos, Celie, é doada à Mister, que a trata como companheira e escrava ao mesmo tempo. Cada vez mais calada e solitária, Celie passa a compartilhar sua tristeza em carta."
+  },
+  "blind_en": {
+   "hard": "A director with 11 films behind him wants you in a drama. Modest budget. An epic tale spanning forty years in the life of Celie, an African-American woman living in the South who survives incredible abuse and bigotry.",
+   "medium": "The director of a 1981 adventure film (When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is…) wants you in a drama. An epic tale spanning forty years in the life of Celie, an African-American woman living in the South who survives incredible abuse and bigotry. You share the screen with an Oscar winner. Keywords: prison, rape.",
+   "easy": "Steven Spielberg wants you in a drama. An epic tale spanning forty years in the life of Celie, an African-American woman living in the South who survives incredible abuse and bigotry. After Celie's abusive father marries her off to the equally debasing 'Mister' Albert Johnson, things go from bad to worse, leaving Celie to find companionship anywhere she can. She perseveres, holding on to her dream of one day being reunited with her sister in Africa."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 9.75,
+   "outcome": "hit"
+  },
+  "why": "11 indicações e zero vitórias"
+ },
+ {
   "tmdb_id": 792,
   "imdb_id": "tt0091763",
   "title": {
@@ -3157,6 +4140,241 @@
    "p_scandal": 0.05,
    "ratio": 35.76,
    "outcome": "hit"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 10998,
+  "imdb_id": "tt0093010",
+  "title": {
+   "original": "Fatal Attraction",
+   "en": "Fatal Attraction",
+   "pt": "Atração Fatal"
+  },
+  "year": 1987,
+  "runtime": 119,
+  "genres": [
+   "Thriller",
+   "Drama",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 7270,
+   "name": "Adrian Lyne",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 34693,
+    "name": "Stanley R. Jaffe"
+   },
+   {
+    "tmdb_id": 34695,
+    "name": "Sherry Lansing"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Michael Douglas",
+    "actor_tmdb_id": 3392,
+    "character": "Dan Gallagher",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Glenn Close",
+    "actor_tmdb_id": 515,
+    "character": "Alex Forrest",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Anne Archer",
+    "actor_tmdb_id": 10427,
+    "character": "Beth Gallagher",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Ellen Hamilton Latzen",
+    "actor_tmdb_id": 45865,
+    "character": "Ellen Gallagher",
+    "order": 3,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 14000000,
+  "revenue": 320145693,
+  "rt": 74,
+  "metacritic": 67,
+  "imdb": 6.9,
+  "tmdb_vote": 6.837,
+  "film_awards": {
+   "oscar_nominations": 6,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/vjB9XwJKnYqFKKjhWcE6WpAf5Ki.jpg",
+  "blind": {
+   "hard": "Um diretor com 3 filmes no currículo quer você num thriller. Orçamento de um sofá. Aproveitando o fato de Beth Gallagher, sua mulher, estar viajando Dan Gallagher, um advogado, tem um rápido caso com Alex Forrest, uma executiva que demostra…",
+   "medium": "O diretor de um drama de 1983 (Uma jovem de garra e talento não mede esforços para realizar o sonho de se tornar uma bailarina) quer você num thriller. Aproveitando o fato de Beth Gallagher, sua mulher, estar viajando Dan Gallagher, um advogado, tem um rápido caso com Alex Forrest, uma executiva que demostra… Um colega de elenco vai ser indicado por este filme.",
+   "easy": "Adrian Lyne quer você num thriller. Aproveitando o fato de Beth Gallagher, sua mulher, estar viajando Dan Gallagher, um advogado, tem um rápido caso com Alex Forrest, uma executiva que demostra ser desequilibrada emocionalmente e até mesmo perigosa, quando decide fazer parte da vida dele custe o que custar."
+  },
+  "blind_en": {
+   "hard": "A director with 3 films behind him wants you in a thriller. Couch-cushion budget. A married man's one-night stand comes back to haunt him when that lover begins to stalk him and his family.",
+   "medium": "The director of a 1983 drama (Alex Owens, a young woman juggling between two odd jobs, aspires to become a successful ballet dancer) wants you in a thriller. A married man's one-night stand comes back to haunt him when that lover begins to stalk him and his family. A castmate will be nominated for this one. Keywords: new york city, sexual obsession.",
+   "easy": "Adrian Lyne wants you in a thriller. A married man's one-night stand comes back to haunt him when that lover begins to stalk him and his family."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.9,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 22.87,
+   "outcome": "hit"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 10673,
+  "imdb_id": "tt0094291",
+  "title": {
+   "original": "Wall Street",
+   "en": "Wall Street",
+   "pt": "Wall Street: Poder e Cobiça"
+  },
+  "year": 1987,
+  "runtime": 126,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 1152,
+   "name": "Oliver Stone",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 32035,
+    "name": "Edward R. Pressman"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Michael Douglas",
+    "actor_tmdb_id": 3392,
+    "character": "Gordon Gekko",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Charlie Sheen",
+    "actor_tmdb_id": 6952,
+    "character": "Bud Fox",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Martin Sheen",
+    "actor_tmdb_id": 8349,
+    "character": "Carl Fox",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Daryl Hannah",
+    "actor_tmdb_id": 589,
+    "character": "Darien Taylor",
+    "order": 3,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "won",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 15000000,
+  "revenue": 43900000,
+  "rt": 78,
+  "metacritic": 56,
+  "imdb": 7.3,
+  "tmdb_vote": 7.16,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 1,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 1
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/2tQYq9ntzn2dEwDIGLBSipYPenv.jpg",
+  "blind": {
+   "hard": "Um diretor com 3 filmes no currículo quer você num filme policial. Orçamento modesto. Bud Fox é um jovem ambicioso que trabalha no mercado de ações.",
+   "medium": "O diretor de um drama de 1986 (Cris é um estudante universitário patriota que abandona os estudos para se alistar na Guerra no Vietnã) quer você num filme policial. Bud Fox é um jovem ambicioso que trabalha no mercado de ações.",
+   "easy": "Oliver Stone quer você num filme policial. Bud Fox é um jovem ambicioso que trabalha no mercado de ações. Ele fará de tudo para chamar a atenção do bilionário Gordon Gekko, abandonando qualquer escrúpulo e ética para enriquecer. Mas ele irá aprender que com o sucesso vêm grandes riscos."
+  },
+  "blind_en": {
+   "hard": "A director with 3 films behind him wants you in a crime film. Modest budget. A young and impatient stockbroker is willing to do anything to get to the top, including trading on illegal inside information taken through a ruthless and…",
+   "medium": "The director of a 1986 drama (As a young and naive recruit in Vietnam, Chris Taylor faces a moral crisis when confronted with the horrors…) wants you in a crime film. A young and impatient stockbroker is willing to do anything to get to the top, including trading on illegal inside information taken through a ruthless and… Keywords: new york city, fraud.",
+   "easy": "Oliver Stone wants you in a crime film. A young and impatient stockbroker is willing to do anything to get to the top, including trading on illegal inside information taken through a ruthless and greedy corporate raider, who takes the youth under his wing."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 2.93,
+   "outcome": "popcorn"
   },
   "why": ""
  },
@@ -3534,6 +4752,130 @@
   "why": ""
  },
  {
+  "tmdb_id": 3525,
+  "imdb_id": "tt0096463",
+  "title": {
+   "original": "Working Girl",
+   "en": "Working Girl",
+   "pt": "Uma Secretária de Futuro"
+  },
+  "year": 1988,
+  "runtime": 114,
+  "genres": [
+   "Comedy",
+   "Romance",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 5342,
+   "name": "Mike Nichols",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 931,
+    "name": "Douglas Wick"
+   },
+   {
+    "tmdb_id": 3658,
+    "name": "Robert Greenhut"
+   },
+   {
+    "tmdb_id": 10685,
+    "name": "Laurence Mark"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Melanie Griffith",
+    "actor_tmdb_id": 29369,
+    "character": "Tess McGill",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "won",
+    "cannes": "none"
+   },
+   {
+    "actor": "Harrison Ford",
+    "actor_tmdb_id": 3,
+    "character": "Jack Trainer",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Sigourney Weaver",
+    "actor_tmdb_id": 10205,
+    "character": "Katharine Parker",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "won",
+    "cannes": "none"
+   },
+   {
+    "actor": "Alec Baldwin",
+    "actor_tmdb_id": 7447,
+    "character": "Mick Dugan",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 28000000,
+  "revenue": 103173635,
+  "rt": 85,
+  "metacritic": 73,
+  "imdb": 6.8,
+  "tmdb_vote": 6.609,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg",
+  "blind": {
+   "hard": "Um diretor com 8 filmes no currículo quer você num romance. Orçamento modesto. Tess McGill tem tudo para subir na vida.",
+   "medium": "O diretor de um drama de 1967 (Após se formar na faculdade, Benjamin Braddock (Dustin Hoffman) retorna para casa) quer você num romance. Tess McGill tem tudo para subir na vida. Um colega de elenco vai ser indicado por este filme.",
+   "easy": "Mike Nichols quer você num romance. Tess McGill tem tudo para subir na vida. Charme, beleza e ambição. Menos as roupas certas, o penteado certo, a atitude certa e o mais importante: o emprego certo. Mas ela não desiste facilmente. Mesmo que tenha que fazer o jogo do sistema e da sedução. Aliada ao belo Jack Trainer, essa simples ▇▇▇ vai provar que vale tudo para se chegar ao topo."
+  },
+  "blind_en": {
+   "hard": "A director with 8 films behind him wants you in a romance. Modest budget. When a secretary's idea is stolen by her boss, she takes a risky chance to reclaim it by impersonating him and running the project from his position.",
+   "medium": "The director of a 1967 drama (A disillusioned college ▇▇▇ finds himself torn between his older lover and her daughter) wants you in a romance. When a secretary's idea is stolen by her boss, she takes a risky chance to reclaim it by impersonating him and running the project from his position. A castmate will be nominated for this one. Keywords: new york city, strong woman.",
+   "easy": "Mike Nichols wants you in a romance. When a secretary's idea is stolen by her boss, she takes a risky chance to reclaim it by impersonating him and running the project from his position."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 3.68,
+   "outcome": "oscar_bait"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 268,
   "imdb_id": "tt0096895",
   "title": {
@@ -3637,12 +4979,12 @@
   "poster": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
   "blind": {
    "hard": "Um diretor com 4 filmes no currículo quer você numa fantasia. Orçamento modesto. Em Gotham City o milionário Bruce Wayne, que quando jovem teve os pais assassinados por bandidos, resolve combater o crime como ▇▇▇, o Homem-Morcego.",
-   "medium": "O diretor de uma fantasia de 1988 (O casarão de uma dupla de ▇▇▇ super atrapalhados foi invadido por novaiorquinos sofisticados) quer você numa fantasia. Em Gotham City o milionário Bruce Wayne, que quando jovem teve os pais assassinados por bandidos, resolve combater o crime como ▇▇▇, o Homem-Morcego.",
+   "medium": "O diretor de uma fantasia de 1988 (O casarão de uma dupla de ▇▇▇ super atrapalhados foi invadido por novaiorquinos sofisticados) quer você numa fantasia. Em Gotham City o milionário Bruce Wayne, que quando jovem teve os pais assassinados por bandidos, resolve combater o crime como ▇▇▇, o Homem-Morcego. Você contracena com alguém que já ganhou o Oscar.",
    "easy": "Tim Burton quer você numa fantasia. Em Gotham City o milionário Bruce Wayne, que quando jovem teve os pais assassinados por bandidos, resolve combater o crime como ▇▇▇, o Homem-Morcego. Mas chega o dia em que o vilão Coringa decide dominar a cidade e se torna um grande desafio para o super-herói."
   },
   "blind_en": {
    "hard": "A director with 4 films behind him wants you in a fantasy film. Modest budget. Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as ▇▇▇, a costumed hero…",
-   "medium": "The director of a 1988 fantasy film (A newly dead New England couple seeks help from a deranged demon exorcist to scare an affluent New York…) wants you in a fantasy film. Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as ▇▇▇, a costumed hero… Keywords: dual identity, double life.",
+   "medium": "The director of a 1988 fantasy film (A newly dead New England couple seeks help from a deranged demon exorcist to scare an affluent New York…) wants you in a fantasy film. Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as ▇▇▇, a costumed hero… You share the screen with an Oscar winner. Keywords: dual identity, double life.",
    "easy": "Tim Burton wants you in a fantasy film. Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as ▇▇▇, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman known as 'The Joker' seizes control of Gotham's criminal underworld, ▇▇▇ must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale."
   },
   "blind_auto": true,
@@ -6143,6 +7485,128 @@
   "why": ""
  },
  {
+  "tmdb_id": 10802,
+  "imdb_id": "tt0114436",
+  "title": {
+   "original": "Showgirls",
+   "en": "Showgirls",
+   "pt": "Showgirls"
+  },
+  "year": 1995,
+  "runtime": 131,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 10491,
+   "name": "Paul Verhoeven",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 7726,
+    "name": "Alan Marshall"
+   },
+   {
+    "tmdb_id": 66876,
+    "name": "Charles Evans"
+   },
+   {
+    "tmdb_id": 3986,
+    "name": "Mario Kassar"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Elizabeth Berkley",
+    "actor_tmdb_id": 19189,
+    "character": "Nomi Malone",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "won",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Kyle MacLachlan",
+    "actor_tmdb_id": 6677,
+    "character": "Zack Carey",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Gina Gershon",
+    "actor_tmdb_id": 11150,
+    "character": "Cristal Connors",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Glenn Plummer",
+    "actor_tmdb_id": 2683,
+    "character": "James Smith",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 45000000,
+  "revenue": 20367472,
+  "rt": 24,
+  "metacritic": 25,
+  "imdb": 5.2,
+  "tmdb_vote": 5.6,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 3
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/o4HT3Ap5c99W4FYpdXUtTvxGgPc.jpg",
+  "blind": {
+   "hard": "Um diretor com 9 filmes no currículo quer você num drama. Orçamento modesto. Nomi Malone se muda para Las Vegas e começa a trabalhar como dançarina em uma boate de quinta categoria.",
+   "medium": "O diretor de um filme de ação de 1990 (No ano de 2084, o operário Doug Quaid recorre a um implante de memória para poder simular uma viagem a Marte) quer você num drama. Nomi Malone se muda para Las Vegas e começa a trabalhar como dançarina em uma boate de quinta categoria.",
+   "easy": "Paul Verhoeven quer você num drama. Nomi Malone se muda para Las Vegas e começa a trabalhar como dançarina em uma boate de quinta categoria. Ela se torna substituta de uma das strippers, dorme com o chefe e é capaz de tudo para ser a principal dançarina do grupo."
+  },
+  "blind_en": {
+   "hard": "A director with 9 films behind him wants you in a drama. Modest budget. Fresh to Las Vegas with no connections, Nomi Malone takes a job as an exotic dancer.",
+   "medium": "The director of a 1990 action film (Construction worker Douglas Quaid's obsession with the planet Mars leads him to visit Rekall, a virtual…) wants you in a drama. Fresh to Las Vegas with no connections, Nomi Malone takes a job as an exotic dancer. Keywords: dancing, go-go dancer.",
+   "easy": "Paul Verhoeven wants you in a drama. Fresh to Las Vegas with no connections, Nomi Malone takes a job as an exotic dancer. Her talents are quickly noticed by Cristal, a headlining dancer who senses an opportunity to bolster her own act. But Nomi won’t play second fiddle and soon begins her venomous path to the top, ruthlessly backstabbing anyone who gets in her way."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.1,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 0.45,
+   "outcome": "bomb"
+  },
+  "why": "Elizabeth Berkley some"
+ },
+ {
   "tmdb_id": 9804,
   "imdb_id": "tt0114898",
   "title": {
@@ -6912,6 +8376,130 @@
    "outcome": "hit"
   },
   "why": ""
+ },
+ {
+  "tmdb_id": 9879,
+  "imdb_id": "tt0117765",
+  "title": {
+   "original": "Striptease",
+   "en": "Striptease",
+   "pt": "Striptease"
+  },
+  "year": 1996,
+  "runtime": 115,
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 41550,
+   "name": "Andrew Bergman",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 41550,
+    "name": "Andrew Bergman"
+   },
+   {
+    "tmdb_id": 31143,
+    "name": "Mike Lobell"
+   },
+   {
+    "tmdb_id": 59970,
+    "name": "Joseph Hartwick"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Demi Moore",
+    "actor_tmdb_id": 3416,
+    "character": "Erin Grant",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Burt Reynolds",
+    "actor_tmdb_id": 16475,
+    "character": "David Dilbeck",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Armand Assante",
+    "actor_tmdb_id": 23346,
+    "character": "Lt. Al Garcia",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Ving Rhames",
+    "actor_tmdb_id": 10182,
+    "character": "Shad",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 50000000,
+  "revenue": 113309743,
+  "rt": 11,
+  "metacritic": 37,
+  "imdb": 4.6,
+  "tmdb_vote": 5.6,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 6
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/4zMy6R7acotCmGoDk4sjzRtDwKn.jpg",
+  "blind": {
+   "hard": "Um diretor com 3 filmes no currículo quer você num filme policial. Orçamento de estúdio. Erin perde o emprego de secretária no FBI por causa do marido, um pequeno golpista.",
+   "medium": "O diretor de uma comédia de 1994 (Em Nova York vive Charlie Lang, um policial que divide US$ 4 milhões com Yvonne Biasi, uma garçonete, pois…) quer você num filme policial. Erin perde o emprego de secretária no FBI por causa do marido, um pequeno golpista.",
+   "easy": "Andrew Bergman quer você num filme policial. Erin perde o emprego de secretária no FBI por causa do marido, um pequeno golpista. Por não ter emprego, perde a custódia da filha. Começa a trabalhar como stripper e se vê às voltas com o ex-marido trapalhão, um congressista tarado e um detetive que quer ajudá-la."
+  },
+  "blind_en": {
+   "hard": "A director with 3 films behind him wants you in a crime film. Studio budget. Bounced from her job, Erin Grant needs money if she's to have any chance of winning back custody of her child.",
+   "medium": "The director of a 1994 comedy (Charlie Lang is a simple, kindhearted New York City cop) wants you in a crime film. Bounced from her job, Erin Grant needs money if she's to have any chance of winning back custody of her child. Keywords: dance, police.",
+   "easy": "Andrew Bergman wants you in a crime film. Bounced from her job, Erin Grant needs money if she's to have any chance of winning back custody of her child. But, eventually, she must confront the naked truth: to take on the system, she'll have to take it all off. Erin strips to conquer, but she faces unintended circumstances when a hound dog of a Congressman zeroes in on her and sharpens the shady tools at his fingertips, including blackmail and murder."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.5,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 2.27,
+   "outcome": "flop"
+  },
+  "why": "US$ 12,5 mi de cachê; Razzies"
  },
  {
   "tmdb_id": 627,
@@ -11308,6 +12896,141 @@
   "why": ""
  },
  {
+  "tmdb_id": 1824,
+  "imdb_id": "tt0343660",
+  "title": {
+   "original": "50 First Dates",
+   "en": "50 First Dates",
+   "pt": "Como Se Fosse a Primeira Vez"
+  },
+  "year": 2004,
+  "runtime": 99,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "director": {
+   "tmdb_id": 13426,
+   "name": "Peter Segal",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 20821,
+    "name": "Jack Giarraputo"
+   },
+   {
+    "tmdb_id": 71079,
+    "name": "Michael Ewing"
+   },
+   {
+    "tmdb_id": 1588,
+    "name": "Nancy Juvonen"
+   },
+   {
+    "tmdb_id": 4769,
+    "name": "Daniel Lupi"
+   },
+   {
+    "tmdb_id": 322,
+    "name": "Steve Golin"
+   },
+   {
+    "tmdb_id": 6737,
+    "name": "Jay Roach"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Adam Sandler",
+    "actor_tmdb_id": 19292,
+    "character": "Henry Roth",
+    "order": 0,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Drew Barrymore",
+    "actor_tmdb_id": 69597,
+    "character": "Lucy Whitmore",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Rob Schneider",
+    "actor_tmdb_id": 60949,
+    "character": "Ula",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Sean Astin",
+    "actor_tmdb_id": 1328,
+    "character": "Doug Whitmore",
+    "order": 3,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 75000000,
+  "revenue": 196482882,
+  "rt": 45,
+  "metacritic": 48,
+  "imdb": 6.8,
+  "tmdb_vote": 6.879,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/lzUI2Cg7OMfcUNv3f7MywYNBjs6.jpg",
+  "blind": {
+   "hard": "Um diretor com 5 filmes no currículo quer você num romance. Orçamento de estúdio. Henry Roth vive uma vida invejável em um paraíso havaiano, passando todas as noites com turistas exuberantes à procura de diversão na ilha.",
+   "medium": "O diretor de uma comédia de 2003 (Dave Buznik (Adam Sandler) é um pacato empresário que é condenado por um crime e sentenciado a realizar um…) quer você num romance. Henry Roth vive uma vida invejável em um paraíso havaiano, passando todas as noites com turistas exuberantes à procura de diversão na ilha.",
+   "easy": "Peter Segal quer você num romance. Henry Roth vive uma vida invejável em um paraíso havaiano, passando todas as noites com turistas exuberantes à procura de diversão na ilha. É uma bela vida, sem compromissos... até que ele conhece Lucy. Ele e Lucy se dão bem desde o início, mas, no dia seguinte, ela age ▇▇▇ se não o conhecesse. Será que ele está levando o troco por todos os anos de cafajeste ou o quê? Na verdade, Lucy sofre de perda de memória recente, então, à noite, todo o seu dia é apagado de sua mente. Mas um homem apaixonado irá tentar de tudo para conquistar a mulher dos seus sonhos, e se isso significa ter que encontrar jeitos criativos de conquistá-la todos os dias, então Henry topa o desafio."
+  },
+  "blind_en": {
+   "hard": "A director with 5 films behind him wants you in a romance. Studio budget. Henry is a player skilled at seducing women.",
+   "medium": "The director of a 2003 comedy (After a small misunderstanding aboard an airplane escalates out of control, timid businessman Dave Buznik is…) wants you in a romance. Henry is a player skilled at seducing women. Keywords: amnesia, hawaii.",
+   "easy": "Peter Segal wants you in a romance. Henry is a player skilled at seducing women. But when this veterinarian meets Lucy, a girl with a quirky problem when it comes to total recall, he realizes it's possible to fall in love all over again…and again, and again. That's because the delightful Lucy has no short-term memory, so Henry must woo her day after day until he finally sweeps her off her feet."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 2.62,
+   "outcome": "popcorn"
+  },
+  "why": "Sandler no Havaí"
+ },
+ {
   "tmdb_id": 314,
   "imdb_id": "tt0327554",
   "title": {
@@ -12841,12 +14564,12 @@
   "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
   "blind": {
    "hard": "Um diretor com 28 filmes no currículo quer você num filme policial. Orçamento de estúdio. Billy Costigan, um jovem policial, recebe a missão de se infiltrar na máfia, mais especificamente no grupo comandado por Frank Costello.",
-   "medium": "O diretor de um drama de 1990 (A história real de Henry Hill, um garoto meio irlandês e meio siciliano do Brooklyn que é adotado por…) quer você num filme policial. Billy Costigan, um jovem policial, recebe a missão de se infiltrar na máfia, mais especificamente no grupo comandado por Frank Costello. Um colega de elenco vai ser indicado por este filme.",
+   "medium": "O diretor de um drama de 1990 (A história real de Henry Hill, um garoto meio irlandês e meio siciliano do Brooklyn que é adotado por…) quer você num filme policial. Billy Costigan, um jovem policial, recebe a missão de se infiltrar na máfia, mais especificamente no grupo comandado por Frank Costello. Você contracena com alguém que já ganhou o Oscar.",
    "easy": "Martin Scorsese quer você num filme policial. Billy Costigan, um jovem policial, recebe a missão de se infiltrar na máfia, mais especificamente no grupo comandado por Frank Costello. Billy conquista sua confiança ao mesmo tempo em que Colin Sullivan, um criminoso que atuou na polícia como informante de Costello, também ascende dentro da corporação. Tanto Billy quanto Colin se sentem aflitos devido à vida dupla que levam. Mas quando a máfia e a polícia descobrem que há um espião entre eles, a vida de ambos passa a correr perigo."
   },
   "blind_en": {
    "hard": "A director with 28 films behind him wants you in a crime film. Studio budget. To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise.",
-   "medium": "The director of a 1990 drama (The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood…) wants you in a crime film. To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. A castmate will be nominated for this one. Keywords: police, undercover.",
+   "medium": "The director of a 1990 drama (The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood…) wants you in a crime film. To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. You share the screen with an Oscar winner. Keywords: police, undercover.",
    "easy": "Martin Scorsese wants you in a crime film. To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. While an undercover cop curries favor with the mob kingpin, a career criminal rises through the police ranks. But both sides soon discover there's a mole among them."
   },
   "blind_auto": true,
@@ -23318,6 +25041,142 @@
   "why": ""
  },
  {
+  "tmdb_id": 536869,
+  "imdb_id": "tt5697572",
+  "title": {
+   "original": "Cats",
+   "en": "Cats",
+   "pt": null
+  },
+  "year": 2019,
+  "runtime": 110,
+  "genres": [
+   "Fantasy",
+   "Comedy",
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 70500,
+   "name": "Tom Hooper",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 2236,
+    "name": "Tim Bevan"
+   },
+   {
+    "tmdb_id": 59541,
+    "name": "Jo Burn"
+   },
+   {
+    "tmdb_id": 2238,
+    "name": "Eric Fellner"
+   },
+   {
+    "tmdb_id": 9150,
+    "name": "Debra Hayward"
+   },
+   {
+    "tmdb_id": 70500,
+    "name": "Tom Hooper"
+   },
+   {
+    "tmdb_id": 65360,
+    "name": "Andrew Lloyd Webber"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Francesca Hayward",
+    "actor_tmdb_id": 1712866,
+    "character": "Victoria",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Judi Dench",
+    "actor_tmdb_id": 5309,
+    "character": "Old Deuteronomy",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Idris Elba",
+    "actor_tmdb_id": 17605,
+    "character": "Macavity",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Jason Derulo",
+    "actor_tmdb_id": 1452124,
+    "character": "Rum Tum Tugger",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 95000000,
+  "revenue": 77276321,
+  "rt": 19,
+  "metacritic": 32,
+  "imdb": 2.8,
+  "tmdb_vote": 4.074,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 1
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/aCNch5FmzT2WaUcY44925owIZXY.jpg",
+  "blind": {
+   "hard": "Um diretor com 5 filmes no currículo quer você numa fantasia. Orçamento de estúdio. Uma tribo de gatos chamada Jellicles todo ano precisa tomar uma grande decisão em uma noite especial: escolher um dos gatos para ascender para o Heaviside…",
+   "medium": "O diretor de um drama de 2010 (O Príncipe Albert da Inglaterra deve ascender ao trono como ▇▇▇ George VI, mas ele tem um problema de fala) quer você numa fantasia. Uma tribo de gatos chamada Jellicles todo ano precisa tomar uma grande decisão em uma noite especial: escolher um dos gatos para ascender para o Heaviside… Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "Tom Hooper quer você numa fantasia. Uma tribo de gatos chamada Jellicles todo ano precisa tomar uma grande decisão em uma noite especial: escolher um dos gatos para ascender para o Heaviside Layer e conseguir uma nova e melhor vida. Cada um dos gatos conta a sua história para seu líder, o velho Deuteronomy, na tentativa de ser o escolhido."
+  },
+  "blind_en": {
+   "hard": "A director with 5 films behind him wants you in a fantasy film. Studio budget. A tribe of ▇▇▇ called the Jellicles must decide yearly which one will ascend to the Heaviside Layer and come back to a new Jellicle life.",
+   "medium": "The director of a 2010 drama (The ▇▇▇ ▇▇▇ tells the story of the man who became King George VI, the father of Queen Elizabeth II) wants you in a fantasy film. A tribe of ▇▇▇ called the Jellicles must decide yearly which one will ascend to the Heaviside Layer and come back to a new Jellicle life. You share the screen with an Oscar winner. Keywords: dance, musical.",
+   "easy": "Tom Hooper wants you in a fantasy film. A tribe of ▇▇▇ called the Jellicles must decide yearly which one will ascend to the Heaviside Layer and come back to a new Jellicle life."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.1,
+   "p_cult": 0.05,
+   "p_scandal": 0.3,
+   "ratio": 0.81,
+   "outcome": "bomb"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 359724,
   "imdb_id": "tt1950186",
   "title": {
@@ -24514,6 +26373,141 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.04,
+   "outcome": "cult"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 502033,
+  "imdb_id": "tt5363618",
+  "title": {
+   "original": "Sound of Metal",
+   "en": "Sound of Metal",
+   "pt": "O Som do Silêncio"
+  },
+  "year": 2020,
+  "runtime": 121,
+  "genres": [
+   "Drama",
+   "Music"
+  ],
+  "director": {
+   "tmdb_id": 1076793,
+   "name": "Darius Marder",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 1602960,
+    "name": "Bill Benz"
+   },
+   {
+    "tmdb_id": 2401383,
+    "name": "Kathy Benz"
+   },
+   {
+    "tmdb_id": 2010181,
+    "name": "Sacha Ben Harroche"
+   },
+   {
+    "tmdb_id": 128616,
+    "name": "Bert Hamelinck"
+   },
+   {
+    "tmdb_id": 1115952,
+    "name": "Fredric King"
+   },
+   {
+    "tmdb_id": 2047037,
+    "name": "Daniel Sbrega"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Riz Ahmed",
+    "actor_tmdb_id": 53240,
+    "character": "Ruben Stone",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Olivia Cooke",
+    "actor_tmdb_id": 1173984,
+    "character": "Lou",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Paul Raci",
+    "actor_tmdb_id": 1216195,
+    "character": "Joe",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Lauren Ridloff",
+    "actor_tmdb_id": 2287101,
+    "character": "Diane",
+    "order": 3,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": null,
+  "revenue": 516520,
+  "rt": 97,
+  "metacritic": 82,
+  "imdb": 7.7,
+  "tmdb_vote": 7.705,
+  "film_awards": {
+   "oscar_nominations": 1,
+   "oscar_wins": 0,
+   "best_picture": "nominated",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/3178oOJKKPDeQ2legWQvMPpllv.jpg",
+  "blind": {
+   "hard": "Um diretor estreante quer você num filme musical. Orçamento de um sofá. Um jovem baterista teme por seu futuro quando percebe que está gradualmente ficando surdo.",
+   "medium": "Um diretor estreante quer você num filme musical. Um jovem baterista teme por seu futuro quando percebe que está gradualmente ficando surdo. Um colega de elenco vai ser indicado por este filme.",
+   "easy": "Darius Marder quer você num filme musical. Um jovem baterista teme por seu futuro quando percebe que está gradualmente ficando surdo. Duas paixões estão em jogo: a música e sua namorada, que é integrante da mesma banda de heavy ▇▇▇. Essa mudança drástica acarreta em muita tensão e angústia na vida do baterista, atormentado lentamente pelo ▇▇▇."
+  },
+  "blind_en": {
+   "hard": "A first-time director wants you in a music film. Couch-cushion budget. ▇▇▇ drummer Ruben begins to lose his hearing.",
+   "medium": "A first-time director wants you in a music film. ▇▇▇ drummer Ruben begins to lose his hearing. A castmate will be nominated for this one. Keywords: deaf, missouri.",
+   "easy": "Darius Marder wants you in a music film. ▇▇▇ drummer Ruben begins to lose his hearing. When a doctor tells him his condition will worsen, he thinks his career and life is over. His girlfriend Lou checks the former addict into a rehab for the deaf hoping it will prevent a relapse and help him adapt to his new life. After being welcomed and accepted just as he is, Ruben must choose between his new normal and the life he once knew."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.6,
+   "p_box": 0.1,
+   "p_cult": 0.35,
+   "p_scandal": 0.05,
+   "ratio": null,
    "outcome": "cult"
   },
   "why": ""
@@ -27209,6 +29203,140 @@
   "why": ""
  },
  {
+  "tmdb_id": 839369,
+  "imdb_id": "tt13651794",
+  "title": {
+   "original": "May December",
+   "en": "May December",
+   "pt": "Segredos de um Escândalo"
+  },
+  "year": 2023,
+  "runtime": 117,
+  "genres": [
+   "Drama"
+  ],
+  "director": {
+   "tmdb_id": 16863,
+   "name": "Todd Haynes",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 2862,
+    "name": "Christine Vachon"
+   },
+   {
+    "tmdb_id": 524,
+    "name": "Natalie Portman"
+   },
+   {
+    "tmdb_id": 80175,
+    "name": "Jessica Elbaum"
+   },
+   {
+    "tmdb_id": 23659,
+    "name": "Will Ferrell"
+   },
+   {
+    "tmdb_id": 1722532,
+    "name": "Sophie Mas"
+   },
+   {
+    "tmdb_id": 3038536,
+    "name": "Elizabeth Niles"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Natalie Portman",
+    "actor_tmdb_id": 524,
+    "character": "Elizabeth",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Julianne Moore",
+    "actor_tmdb_id": 1231,
+    "character": "Gracie",
+    "order": 1,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Charles Melton",
+    "actor_tmdb_id": 1907002,
+    "character": "Joe Yoo",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Cory Michael Smith",
+    "actor_tmdb_id": 1367617,
+    "character": "Georgie",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 20000000,
+  "revenue": 4232370,
+  "rt": 91,
+  "metacritic": 86,
+  "imdb": 6.7,
+  "tmdb_vote": 6.563,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/zhV7B610l7hjlri4ywikJ18ONuq.jpg",
+  "blind": {
+   "hard": "Um diretor com 10 filmes no currículo quer você num drama. Orçamento modesto. 20 anos após um grande romance midiático, um casal enfrenta a pressão quando uma atriz viaja até seu lar para se preparar para um filme sobre o passado deles.",
+   "medium": "O diretor de um romance de 2015 (Therese Belivet tem um emprego entediante em uma loja de departamentos) quer você num drama. 20 anos após um grande romance midiático, um casal enfrenta a pressão quando uma atriz viaja até seu lar para se preparar para um filme sobre o passado deles.",
+   "easy": "Todd Haynes quer você num drama. 20 anos após um grande romance midiático, um casal enfrenta a pressão quando uma atriz viaja até seu lar para se preparar para um filme sobre o passado deles."
+  },
+  "blind_en": {
+   "hard": "A director with 10 films behind him wants you in a drama. Modest budget. Twenty years after their notorious tabloid romance gripped the nation, a married couple buckles under the pressure when an actress arrives to do research for a…",
+   "medium": "The director of a 2015 romance (In 1950s New York, a department-store clerk who dreams of a better life falls for an older, married woman) wants you in a drama. Twenty years after their notorious tabloid romance gripped the nation, a married couple buckles under the pressure when an actress arrives to do research for a… Keywords: infidelity, sexual abuse.",
+   "easy": "Todd Haynes wants you in a drama. Twenty years after their notorious tabloid romance gripped the nation, a married couple buckles under the pressure when an actress arrives to do research for a film about their past."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.1,
+   "p_cult": 0.35,
+   "p_scandal": 0.05,
+   "ratio": 0.21,
+   "outcome": "cult"
+  },
+  "why": ""
+ },
+ {
   "tmdb_id": 872585,
   "imdb_id": "tt15398776",
   "title": {
@@ -27612,6 +29740,142 @@
    "p_scandal": 0.05,
    "ratio": 3.36,
    "outcome": "hit"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 1020006,
+  "imdb_id": "tt22041854",
+  "title": {
+   "original": "Priscilla",
+   "en": "Priscilla",
+   "pt": null
+  },
+  "year": 2023,
+  "runtime": 113,
+  "genres": [
+   "Drama",
+   "Romance",
+   "History"
+  ],
+  "director": {
+   "tmdb_id": 1769,
+   "name": "Sofia Coppola",
+   "gender": "f"
+  },
+  "producers": [
+   {
+    "tmdb_id": 1769,
+    "name": "Sofia Coppola"
+   },
+   {
+    "tmdb_id": 1376798,
+    "name": "Lorenzo Mieli"
+   },
+   {
+    "tmdb_id": 12949,
+    "name": "Priscilla Presley"
+   },
+   {
+    "tmdb_id": 1772306,
+    "name": "Chris Hatcher"
+   },
+   {
+    "tmdb_id": 2871,
+    "name": "Fred Roos"
+   },
+   {
+    "tmdb_id": 1053169,
+    "name": "Youree Henley"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Cailee Spaeny",
+    "actor_tmdb_id": 1683343,
+    "character": "Priscilla",
+    "order": 0,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Jacob Elordi",
+    "actor_tmdb_id": 2034418,
+    "character": "Elvis",
+    "order": 1,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Ari Cohen",
+    "actor_tmdb_id": 107185,
+    "character": "Captain Beaulieu",
+    "order": 2,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Dagmara Dominczyk",
+    "actor_tmdb_id": 52776,
+    "character": "Ann Beaulieu",
+    "order": 3,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 20000000,
+  "revenue": 30140906,
+  "rt": 84,
+  "metacritic": 79,
+  "imdb": 6.4,
+  "tmdb_vote": 6.7,
+  "film_awards": {
+   "oscar_nominations": 0,
+   "oscar_wins": 0,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/uDCeELWWpsNq7ErM61Yuq70WAE9.jpg",
+  "blind": {
+   "hard": "Um diretor com 9 filmes no currículo quer você num filme histórico. Orçamento modesto. Quando ▇▇▇ Beaulieu conheceu Elvis Presley, ele já era a grande estrela do rock que conhecemos, mas logo se revela uma pessoa completamente para ▇▇▇: um aliado…",
+   "medium": "O diretor de um drama de 2003 (Bob Harris é uma estrela de cinema, que está em Tóquio para fazer um comercial de uísque) quer você num filme histórico. Quando ▇▇▇ Beaulieu conheceu Elvis Presley, ele já era a grande estrela do rock que conhecemos, mas logo se revela uma pessoa completamente para ▇▇▇: um aliado…",
+   "easy": "Sofia Coppola quer você num filme histórico. Quando ▇▇▇ Beaulieu conheceu Elvis Presley, ele já era a grande estrela do rock que conhecemos, mas logo se revela uma pessoa completamente para ▇▇▇: um aliado durante momentos ruins, um amigo que se pode contar e claro, uma grande paixão."
+  },
+  "blind_en": {
+   "hard": "A director with 9 films behind him wants you in a period piece. Modest budget. When teenage ▇▇▇ Beaulieu meets Elvis Presley at a party, the man who is already a meteoric rock-and-roll superstar becomes someone entirely unexpected in…",
+   "medium": "The director of a 2003 drama (Two ▇▇▇ souls visiting Tokyo -- the young, neglected wife of a photographer and a washed-up movie star…) wants you in a period piece. When teenage ▇▇▇ Beaulieu meets Elvis Presley at a party, the man who is already a meteoric rock-and-roll superstar becomes someone entirely unexpected in… Keywords: jealousy, husband wife relationship.",
+   "easy": "Sofia Coppola wants you in a period piece. When teenage ▇▇▇ Beaulieu meets Elvis Presley at a party, the man who is already a meteoric rock-and-roll superstar becomes someone entirely unexpected in private moments: a thrilling crush, an ally in loneliness, a vulnerable best friend."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.02,
+   "p_box": 0.5,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 1.51,
+   "outcome": "flop"
   },
   "why": ""
  },
@@ -28825,6 +31089,278 @@
    "p_scandal": 0.05,
    "ratio": 5.09,
    "outcome": "hit"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 1054867,
+  "imdb_id": "tt30144839",
+  "title": {
+   "original": "One Battle After Another",
+   "en": "One Battle After Another",
+   "pt": "Uma Batalha Após a Outra"
+  },
+  "year": 2025,
+  "runtime": 162,
+  "genres": [
+   "Thriller",
+   "Crime",
+   "Comedy"
+  ],
+  "director": {
+   "tmdb_id": 4762,
+   "name": "Paul Thomas Anderson",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 1102140,
+    "name": "Adam Somner"
+   },
+   {
+    "tmdb_id": 1125158,
+    "name": "Will Weiske"
+   },
+   {
+    "tmdb_id": 4445622,
+    "name": "Pete Chiappetta"
+   },
+   {
+    "tmdb_id": 4445624,
+    "name": "Anthony Tittanegro"
+   },
+   {
+    "tmdb_id": 4445623,
+    "name": "Andrew Lary"
+   },
+   {
+    "tmdb_id": 1236222,
+    "name": "Sara Murphy"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Leonardo DiCaprio",
+    "actor_tmdb_id": 6193,
+    "character": "Bob",
+    "order": 0,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Sean Penn",
+    "actor_tmdb_id": 2228,
+    "character": "Col. Steven J. Lockjaw",
+    "order": 1,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Chase Infiniti",
+    "actor_tmdb_id": 3914706,
+    "character": "Willa",
+    "order": 2,
+    "gender": "f",
+    "demand": 3,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Benicio del Toro",
+    "actor_tmdb_id": 1121,
+    "character": "Sensei Sergio St. Carlos",
+    "order": 3,
+    "gender": "m",
+    "demand": 3,
+    "oscar": "nominated",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 175000000,
+  "revenue": 209377100,
+  "rt": 94,
+  "metacritic": 95,
+  "imdb": 7.6,
+  "tmdb_vote": 7.335,
+  "film_awards": {
+   "oscar_nominations": 12,
+   "oscar_wins": 6,
+   "best_picture": "won",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+  "blind": {
+   "hard": "Um diretor com 14 filmes no currículo quer você num filme policial. Orçamento de blockbuster. Bob, um revolucionário fracassado, vive chapado e em um estado de paranoia, sobrevivendo isolado com Willa, sua filha espirituosa e independente.",
+   "medium": "O diretor de um drama de 2007 (Daniel Plainview e seu filho são caçadores de petróleo, que perfuram poços na Califórnia no início do século…) quer você num filme policial. Bob, um revolucionário fracassado, vive chapado e em um estado de paranoia, sobrevivendo isolado com Willa, sua filha espirituosa e independente. Você contracena com alguém que já ganhou o Oscar.",
+   "easy": "Paul Thomas Anderson quer você num filme policial. Bob, um revolucionário fracassado, vive chapado e em um estado de paranoia, sobrevivendo isolado com Willa, sua filha espirituosa e independente. Quando seu perverso arqui-inimigo ressurge ▇▇▇ 16 anos e ela desaparece, o ex-radical corre para encontrá-la, pai e filha tendo que enfrentar as consequências do passado dele."
+  },
+  "blind_en": {
+   "hard": "A director with 14 films behind him wants you in a crime film. Blockbuster budget. Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa.",
+   "medium": "The director of a 2007 drama (Ruthless silver miner, turned oil prospector, Daniel Plainview, moves to oil-rich California) wants you in a crime film. Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. You share the screen with an Oscar winner. Keywords: rebellion, based on novel or book.",
+   "easy": "Paul Thomas Anderson wants you in a crime film. Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces ▇▇▇ 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.75,
+   "p_box": 0.25,
+   "p_cult": 0.35,
+   "p_scandal": 0.05,
+   "ratio": 1.2,
+   "outcome": "oscar_bait"
+  },
+  "why": ""
+ },
+ {
+  "tmdb_id": 1233413,
+  "imdb_id": "tt31193180",
+  "title": {
+   "original": "Sinners",
+   "en": "Sinners",
+   "pt": "Pecadores"
+  },
+  "year": 2025,
+  "runtime": 138,
+  "genres": [
+   "Horror",
+   "Action",
+   "Thriller"
+  ],
+  "director": {
+   "tmdb_id": 1056121,
+   "name": "Ryan Coogler",
+   "gender": "m"
+  },
+  "producers": [
+   {
+    "tmdb_id": 1056121,
+    "name": "Ryan Coogler"
+   },
+   {
+    "tmdb_id": 2246303,
+    "name": "Zinzi Coogler"
+   },
+   {
+    "tmdb_id": 1639084,
+    "name": "Sev Ohanian"
+   },
+   {
+    "tmdb_id": 928158,
+    "name": "Ludwig Göransson"
+   },
+   {
+    "tmdb_id": 3450531,
+    "name": "Rebecca Cho"
+   },
+   {
+    "tmdb_id": 1619915,
+    "name": "Will Greenfield"
+   }
+  ],
+  "roles": [
+   {
+    "actor": "Michael B. Jordan",
+    "actor_tmdb_id": 135651,
+    "character": "Smoke / Stack",
+    "order": 0,
+    "gender": "m",
+    "demand": 4,
+    "oscar": "won",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Hailee Steinfeld",
+    "actor_tmdb_id": 130640,
+    "character": "Mary",
+    "order": 1,
+    "gender": "f",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Miles Caton",
+    "actor_tmdb_id": 4688032,
+    "character": "Sammie Moore",
+    "order": 2,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   },
+   {
+    "actor": "Jack O'Connell",
+    "actor_tmdb_id": 85065,
+    "character": "Remmick",
+    "order": 3,
+    "gender": "m",
+    "demand": 2,
+    "oscar": "none",
+    "razzie": "none",
+    "globe": "none",
+    "cannes": "none"
+   }
+  ],
+  "budget": 100000000,
+  "revenue": 371368759,
+  "rt": 97,
+  "metacritic": 84,
+  "imdb": 7.5,
+  "tmdb_vote": 7.513,
+  "film_awards": {
+   "oscar_nominations": 4,
+   "oscar_wins": 4,
+   "best_picture": "none",
+   "palme_dor": false,
+   "razzie_nominations": 0
+  },
+  "poster": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+  "blind": {
+   "hard": "Um diretor com 4 filmes no currículo quer você num terror. Orçamento de estúdio. Dispostos a deixar suas vidas conturbadas para trás, irmãos gêmeos retornam à sua cidade natal para recomeçar suas vidas do zero, quando descobrem que um mal…",
+   "medium": "O diretor de um filme de ação de 2018 (O príncipe T'Challa retorna a Wakanda para ser coroado rei) quer você num terror. Dispostos a deixar suas vidas conturbadas para trás, irmãos gêmeos retornam à sua cidade natal para recomeçar suas vidas do zero, quando descobrem que um mal…",
+   "easy": "Ryan Coogler quer você num terror. Dispostos a deixar suas vidas conturbadas para trás, irmãos gêmeos retornam à sua cidade natal para recomeçar suas vidas do zero, quando descobrem que um mal ainda maior está à espera deles para recebê-los de volta."
+  },
+  "blind_en": {
+   "hard": "A director with 4 films behind him wants you in a horror film. Studio budget. Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to…",
+   "medium": "The director of a 2018 action film (King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as…) wants you in a horror film. Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to… Keywords: chicago, illinois, capitalism.",
+   "easy": "Ryan Coogler wants you in a horror film. Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back."
+  },
+  "blind_auto": true,
+  "flags": [],
+  "trivia": [],
+  "revision": null,
+  "shoot_days": null,
+  "refused_by": [],
+  "derived": {
+   "p_prize": 0.45,
+   "p_box": 0.7,
+   "p_cult": 0.05,
+   "p_scandal": 0.05,
+   "ratio": 3.71,
+   "outcome": "oscar_bait"
   },
   "why": ""
  }

@@ -1,44 +1,44 @@
 tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 240,The Godfather Part II,1974,,,,given
 578,Jaws,1975,primeiro blockbuster de verão,,,given
-510,One Flew Over the Cuckoo's Nest,1975,Nicholson ganha; Louise Fletcher ganha,One Flew Over the Cuckoo's Nest,1975,high
-968,Dog Day Afternoon,1975,,Dog Day Afternoon,1975,high
+510,One Flew Over the Cuckoo's Nest,1975,Nicholson ganha; Louise Fletcher ganha,,,given
+968,Dog Day Afternoon,1975,,,,given
 103,Taxi Driver,1976,De Niro; Jodie Foster com 12 anos,,,given
 1366,Rocky,1976,Stallone escreveu e exigiu estrelar,,,given
-10774,Network,1976,,Network,1976,high
+10774,Network,1976,,,,given
 703,Annie Hall,1977,bate Star Wars no Oscar,,,given
 11,Star Wars,1977,,,,given
 11009,Saturday Night Fever,1977,,,,given
 621,Grease,1978,,,,given
-11778,The Deer Hunter,1978,,The Deer Hunter,1978,high
+11778,The Deer Hunter,1978,,,,given
 28,Apocalypse Now,1979,set caótico nas Filipinas; Sheen infarta,,,given
 348,Alien,1979,Sigourney Weaver estreia como protagonista,,,given
 12102,Kramer vs. Kramer,1979,Streep e Hoffman; bastidores tensos,,,given
 694,The Shining,1980,127 takes com Shelley Duvall; Razzie retirado em 2022,,,given
 1578,Raging Bull,1980,De Niro engorda 27 kg,,,given
 16619,Ordinary People,1980,Redford dirige e bate Scorsese,,,given
-10935,Heaven's Gate,1980,o flop que quebrou a United Artists,Heaven's Gate,1980,high
+10935,Heaven's Gate,1980,o flop que quebrou a United Artists,,,given
 78,Blade Runner,1982,flop que virou cult,,,given
 601,E.T. the Extra-Terrestrial,1982,,,,given
 9576,Tootsie,1982,,,,given
-535,Flashdance,1983,,Flashdance,1983,high
+535,Flashdance,1983,,,,given
 111,Scarface,1983,,,,given
-11050,Terms of Endearment,1983,,Terms of Endearment,1983,high
+11050,Terms of Endearment,1983,,,,given
 218,The Terminator,1984,,,,given
 620,Ghostbusters,1984,,,,given
 90,Beverly Hills Cop,1984,,,,given
 105,Back to the Future,1985,Eric Stoltz demitido após 5 semanas,,,given
 606,Out of Africa,1985,,,,given
-873,The Color Purple,1985,11 indicações e zero vitórias,The Color Purple,1985,high
+873,The Color Purple,1985,11 indicações e zero vitórias,,,given
 744,Top Gun,1986,,,,given
 792,Platoon,1986,,,,given
 88,Dirty Dancing,1987,,,,given
-10998,Fatal Attraction,1987,,Fatal Attraction,1987,high
-10673,Wall Street,1987,,Wall Street,1987,high
+10998,Fatal Attraction,1987,,,,given
+10673,Wall Street,1987,,,,given
 562,Die Hard,1988,,,,given
 380,Rain Man,1988,,,,given
 2280,Big,1988,,,,given
-3525,Working Girl,1988,,Working Girl,1988,high
+3525,Working Girl,1988,,,,given
 268,Batman,1989,,,,given
 639,When Harry Met Sally...,1989,,,,given
 114,Pretty Woman,1990,Molly Ringwald recusou,,,given
@@ -61,14 +61,14 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 949,Heat,1995,,,,given
 9603,Clueless,1995,,,,given
 9804,Waterworld,1995,orçamento estourado; sinal de alerta,,,given
-10802,Showgirls,1995,Elizabeth Berkley some,Showgirls,1995,high
+10802,Showgirls,1995,Elizabeth Berkley some,,,given
 627,Trainspotting,1996,,,,given
 9390,Jerry Maguire,1996,,,,given
 275,Fargo,1996,,,,given
 602,Independence Day,1996,,,,given
 664,Twister,1996,,,,given
 954,Mission: Impossible,1996,,,,given
-9879,Striptease,1996,US$ 12,Striptease,1996,high
+9879,Striptease,1996,"US$ 12,5 mi de cachê; Razzies",,,given
 4232,Scream,1996,,,,given
 597,Titanic,1997,Gwyneth Paltrow recusou,,,given
 489,Good Will Hunting,1997,,,,given
@@ -107,7 +107,7 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 70,Million Dollar Baby,2004,,,,given
 9675,Sideways,2004,,,,given
 1640,Crash,2004,Melhor Filme que envelheceu mal,,,given
-1824,50 First Dates,2004,Sandler no Havaí,50 First Dates,2004,high
+1824,50 First Dates,2004,Sandler no Havaí,,,given
 314,Catwoman,2004,Halle Berry busca o Razzie pessoalmente,,,given
 142,Brokeback Mountain,2005,,,,given
 69,Walk the Line,2005,,,,given
@@ -200,12 +200,12 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 331482,Little Women,2019,,,,given
 515001,Jojo Rabbit,2019,,,,given
 359724,Ford v Ferrari,2019,,,,given
-536869,Cats,2019,,Cats,2019,high
+536869,Cats,2019,,,,given
 ,The Grudge,2020,remake de remake,,,NOT FOUND
 581734,Nomadland,2020,,,,given
 582014,Promising Young Woman,2020,,,,given
 615643,Minari,2020,,,,given
-502033,Sound of Metal,2020,,Sound of Metal,2020,high
+502033,Sound of Metal,2020,,,,given
 600354,The Father,2020,,,,given
 614409,Mank,2020,,,,given
 438631,Dune,2021,,,,given
@@ -229,8 +229,8 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 666277,Past Lives,2023,,,,given
 523607,Maestro,2023,,,,given
 930564,Saltburn,2023,,,,given
-1020006,Priscilla,2023,,Priscilla,2023,high
-839369,May December,2023,,May December,2023,high
+1020006,Priscilla,2023,,,,given
+839369,May December,2023,,,,given
 693134,Dune: Part Two,2024,,,,given
 937287,Challengers,2024,,,,given
 933260,The Substance,2024,,,,given
@@ -239,5 +239,5 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 661539,A Complete Unknown,2024,,,,given
 1064213,Anora,2024,,,,given
 549509,The Brutalist,2024,,,,given
-1233413,Sinners,2025,,Sinners,2025,high
-1054867,One Battle After Another,2025,,One Battle After Another,2025,high
+1233413,Sinners,2025,,,,given
+1054867,One Battle After Another,2025,,,,given
