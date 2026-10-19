@@ -14,14 +14,13 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const [ano, setAno] = useState(prefill?.anoEstreia ?? 1995);
   const [origem, setOrigem] = useState<OriginId>(prefill?.origem ?? "garcom");
   const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? { beleza: 3, talento: 3, contatos: 3, carisma: 2, juizo: 2 });
-  const [modoRealista, setModoRealista] = useState(prefill?.opcoes.modoRealista ?? true);
   const [hollywoodRealista, setHollywoodRealista] = useState(prefill?.opcoes.hollywoodRealista ?? false);
   const [seed, setSeed] = useState(initialSeed ?? randomSeed());
   const budget = pointBudget(origem);
   const used = ATTRS.reduce((s, k) => s + attrs[k], 0);
   const left = budget - used;
-  const input: CreationInput = { nome, genero, anoEstreia: ano, origem, atributos: attrs, opcoes: { modoRealista, hollywoodRealista, idioma: lang }, seed };
-  const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, modoRealista, hollywoodRealista, seed, lang]);
+  const input: CreationInput = { nome, genero, anoEstreia: ano, origem, atributos: attrs, opcoes: { hollywoodRealista, idioma: lang }, seed };
+  const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, hollywoodRealista, seed, lang]);
   const bump = (k: keyof Attributes, d: number) => setAttrs((a) => ({ ...a, [k]: Math.min(5, Math.max(1, a[k] + d)) }));
   const names = genero === "f" ? NAMES_F : NAMES_M;
 
@@ -92,7 +91,6 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
 
       <section>
         <div className="eyebrow">{t("options", lang)}</div>
-        <label className="toggle"><input type="checkbox" checked={modoRealista} onChange={(e) => setModoRealista(e.target.checked)} /><span><b>{t("realista", lang)}</b><div className="d">{t("realistaHelp", lang)}</div></span></label>
         <label className="toggle"><input type="checkbox" checked={hollywoodRealista} onChange={(e) => setHollywoodRealista(e.target.checked)} /><span><b>{t("hollywood", lang)}</b><div className="d">{t("hollywoodHelp", lang)}</div></span></label>
         <div className="toggle" style={{ gridTemplateColumns: "1fr" }}>
           <div className="field"><label htmlFor="seed">{t("seed", lang)}</label>

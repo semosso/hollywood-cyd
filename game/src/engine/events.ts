@@ -61,8 +61,8 @@ export function availableOptions(ev: GameEvent, state: State): (EventOption & { 
   return ev.opcoes.map((o) => ({ ...o, disponivel: meets(o.requer, state) }));
 }
 
-export function normalizedResults(o: EventOption, state: State) {
-  const rs = (o.resultados ?? []).filter((r) => state.opcoes.modoRealista || !r.so_realista);
+export function normalizedResults(o: EventOption, _state: State) {
+  const rs = o.resultados ?? [];
   const total = rs.reduce((s, r) => s + r.p, 0) || 1;
   return rs.map((r) => ({ ...r, p: r.p / total }));
 }
@@ -78,7 +78,7 @@ export function applyEffects(state: State, ef: Effects): void {
     state.atributos.contatos = Math.min(6, state.atributos.contatos + (ef.contatos_evento >= 2 ? 1 : 0));
   }
   if (ef.atributo) for (const [k, v] of Object.entries(ef.atributo)) state.atributos[k as keyof typeof state.atributos] = Math.min(6, Math.max(1, state.atributos[k as keyof typeof state.atributos] + (v ?? 0)));
-  if (ef.morte && state.opcoes.modoRealista) state.fim = { tipo: "morte", causa: ef.morte };
+  if (ef.morte) state.fim = { tipo: "morte", causa: ef.morte };
   if (ef.fim === "largar_tudo") state.fim = { tipo: "saida" };
 }
 

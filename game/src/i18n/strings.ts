@@ -13,8 +13,6 @@ const S = {
   attrs: { pt: "Atributos", en: "Attributes" },
   pointsLeft: { pt: "pontos para distribuir", en: "points left" },
   options: { pt: "Opções", en: "Options" },
-  realista: { pt: "Modo Realista", en: "Realistic mode" },
-  realistaHelp: { pt: "Overdose, acidente de set e voo particular podem encerrar a carreira. Desligado, o pior é a reabilitação.", en: "Overdose, set accidents and private planes can end the career. Off, the worst is rehab." },
   hollywood: { pt: "Hollywood realista", en: "Realistic Hollywood" },
   hollywoodHelp: { pt: "Com isso ligado, uma atriz a partir dos 40 só recebe ofertas se for muito excepcional, como na vida real. Atores não sentem diferença. Também como na vida real.", en: "With this on, an actress past 40 only gets offers if she is truly exceptional, as in real life. Actors feel no difference. Also as in real life." },
   seed: { pt: "Seed", en: "Seed" },

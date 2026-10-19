@@ -16,7 +16,7 @@ const base: CreationInput = {
   anoEstreia: 1995,
   origem: "garcom",
   atributos: { beleza: 3, talento: 3, contatos: 3, carisma: 2, juizo: 2 },
-  opcoes: { modoRealista: true, hollywoodRealista: false, idioma: "pt" },
+  opcoes: { hollywoodRealista: false, idioma: "pt" },
   seed: "teste-1",
 };
 

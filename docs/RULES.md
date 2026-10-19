@@ -22,7 +22,7 @@
 
 ### 2.1 Entradas
 - `nome` (string, gerado ou digitado), `genero` ∈ {`f`, `m`}, `anoEstreia` ∈ [1975, 2020], `origem`, `atributos`, `opcoes`.
-- `opcoes`: `modoRealista` (default **true**), `hollywoodRealista` (default **false**), `idioma` ∈ {`pt`, `en`}.
+- `opcoes`: `hollywoodRealista` (default **false**), `idioma` ∈ {`pt`, `en`}. Não existe "modo realista": a morte é sempre possível.
 
 ### 2.2 Atributos
 - Cinco atributos, cada um inteiro em [1, 5]. **12 pontos no total** (mínimo 1 em cada, 7 livres).
@@ -63,7 +63,7 @@ Cada card avança `anosPorCard(ato)` anos e `idade` junto. A run tem no máximo 
 ### 3.2 Fim da run
 A run termina quando acontecer o primeiro:
 1. `cardsJogados == MAX_CARDS` → card final.
-2. Morte (só com `modoRealista`) → card final imediato.
+2. Morte → card final imediato.
 3. Saída voluntária (evento `largar_tudo` aceito) → card final imediato.
 4. `ano > 2025` e nenhuma oferta de projeto disponível → card final "carreira até aqui".
 
@@ -143,7 +143,7 @@ Definidos em dados (`game/src/data/events/*.json`), nunca em código. Esquema:
     { "id": "ir", "rotulo": {"pt": "Ir"}, "resultados": [
         { "p": 0.25, "efeitos": { "contatos_evento": 1 }, "texto": {"pt": "..."} },
         { "p": 0.20, "efeitos": { "vicio": 2 }, "texto": {"pt": "..."} },
-        { "p": 0.10, "efeitos": { "morte": "od" }, "texto": {"pt": "..."}, "so_realista": true }
+        { "p": 0.10, "efeitos": { "morte": "od" }, "texto": {"pt": "..."} }
     ]},
     { "id": "nao", "rotulo": {"pt": "Não ir"}, "efeitos": { "estabilidade": 1 } },
     { "id": "sair_cedo", "rotulo": {"pt": "Ir e sair cedo"}, "requer": { "juizo": 3 }, "efeitos": { "contatos_evento": 1 } }
@@ -152,7 +152,7 @@ Definidos em dados (`game/src/data/events/*.json`), nunca em código. Esquema:
 ```
 
 Regras:
-- Os `p` de um conjunto de `resultados` somam 1 (após remover `so_realista` quando o modo está desligado, renormalizar).
+- Os `p` de um conjunto de `resultados` somam 1 (o motor renormaliza).
 - **Probabilidades visíveis** só se `Juízo ≥ 3` (decisão do questionário). Abaixo disso, o card mostra só os rótulos.
 - Terceira opção (`requer` de atributo) segue a mesma UI do card de projeto (puxar para cima).
 - `baseado_em` aparece **na resolução**, nunca antes.
@@ -227,7 +227,7 @@ Filmes com `revision` geram um card `midia` especial quando `ano ≥ revision.ye
 - `beleza_efetiva = beleza − [idade ≥ 35] − [idade ≥ 45] − [idade ≥ 55] + [flag cirurgia e idade < 50] − [flag cirurgia e idade ≥ 50]`
 - clamp de todos os medidores aos limites.
 
-### 6.5 Morte (só `modoRealista`)
+### 6.5 Morte
 - Eventos com `morte` no resultado.
 - Automático: ao final de cada card, se `vicio ≥ 7`: `p_od = 0.05 × (vicio − 6)`; se rolar, fim com causa `od`.
 

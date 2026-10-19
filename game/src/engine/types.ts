@@ -54,7 +54,7 @@ export type Film = {
   fallback?: boolean;
 };
 
-export type Options = { modoRealista: boolean; hollywoodRealista: boolean; idioma: Lang };
+export type Options = { hollywoodRealista: boolean; idioma: Lang };
 
 export type CreationInput = {
   nome: string;
@@ -115,7 +115,7 @@ export type Offer = {
 export type ProjectCard = { kind: "projeto"; offers: [Offer, Offer]; third: ThirdOption | null; hint: string | null; modo: "normal" | "dourado" | "queda" };
 export type ThirdOption = { id: "ambos" | "recusar_ambos"; requisito: string; disponivel: boolean };
 
-export type EventOptionResult = { p: number; efeitos: Effects; texto?: I18n; so_realista?: boolean };
+export type EventOptionResult = { p: number; efeitos: Effects; texto?: I18n };
 export type EventOption = { id: string; rotulo: I18n; requer?: Requirements; efeitos?: Effects; resultados?: EventOptionResult[] };
 export type GameEvent = {
   id: string;

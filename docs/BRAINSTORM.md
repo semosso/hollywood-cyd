@@ -468,7 +468,7 @@ Obrigatório no card:
 
 - **Voz**: narrador de documentário cansado + manchete de *Variety* + amigo fofoqueiro.
 - **Fato é fato, rumor é rumor (🗞️).** Ver 2.7. A piada é sempre sobre Hollywood e sobre o ego, nunca sobre a vítima.
-- **OD e suicídio**: só no Modo Realista; texto seco; linha de apoio discreta no card (CVV 188).
+- **OD e suicídio**: sempre possíveis; texto seco; linha de apoio discreta no card (CVV 188).
 - **Gênero e idade**: duplo padrão explícito porque é sátira; escolha de gênero muda as ofertas (dados
   reais já fazem isso sozinhos: há menos protagonistas mulheres de 45+ no TMDB, e o jogo mostra).
 - **Idiomas**: PT-BR primeiro; EN logo depois (o material é americano, o alcance é global); ES (público do Copero).
@@ -593,7 +593,7 @@ opcoes:
 | **Ruído nas probabilidades** | ±15 pontos | |
 | **Pôsteres do TMDB** | No jogo **e** no card | |
 | **Janela de estreia** | Dados de 1975 a 2025; ano de estreia escolhível de 1975 até ~2020 | "Tem que pegar 75 até 2020 e pouco." Carreiras que passam de 2026 terminam em "carreira até aqui" ou entram no futuro especulativo marcado. |
-| **Modo Realista (morte)** | **Ligado por padrão** | |
+| **Modo Realista (morte)** | **Removido** (decisão posterior ao questionário): a morte é sempre possível, sem toggle | |
 | **Probabilidades em vida pessoal** | Visíveis só com Juízo ≥ 3 | Precisa de uma explicação clara do que cada atributo faz, logo no começo (tela de criação). |
 | **Idiomas** | PT-BR e EN | Seletor de idioma visível; o jogador escolhe. |
 | **Stack** | React + Vite + TypeScript, estático | |

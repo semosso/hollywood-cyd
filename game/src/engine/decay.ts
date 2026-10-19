@@ -17,9 +17,8 @@ export function applyDecay(state: State): void {
   clampMeters(state);
 }
 
-/** RULES 6.5: morte automática por vício, só no Modo Realista. */
+/** RULES 6.5: morte automática por vício. */
 export function checkDeath(state: State): DeathCause | null {
-  if (!state.opcoes.modoRealista) return null;
   if (state.meters.vicio >= 7) {
     const p = 0.05 * (state.meters.vicio - 6);
     if (rngFor(state.seed, "od", state.cardsJogados).next() < p) return "od";

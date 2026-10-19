@@ -1,4 +1,4 @@
-/** Link de compartilhamento: ?seed=…&g=f&y=1995&o=garcom&a=3.3.3.2.2&r=1&h=0&c=<escolhas em base64url>. */
+/** Link de compartilhamento: ?seed=…&g=f&y=1995&o=garcom&a=3.3.3.2.2&h=0&c=<escolhas em base64url>. */
 import { ATTRS } from "./constants";
 import type { Attributes, CreationInput, Gender, Lang, OriginId, State } from "./types";
 
@@ -32,7 +32,6 @@ export function shareUrl(base: string, state: State, withChoices: boolean): stri
   u.searchParams.set("y", String(state.anoEstreia));
   u.searchParams.set("o", state.origem);
   u.searchParams.set("a", encodeAttrs(state.atributosIniciais));
-  u.searchParams.set("r", state.opcoes.modoRealista ? "1" : "0");
   u.searchParams.set("h", state.opcoes.hollywoodRealista ? "1" : "0");
   u.searchParams.set("n", state.nome);
   if (withChoices && state.escolhas.length) u.searchParams.set("c", encodeChoices(state.escolhas));
@@ -50,7 +49,7 @@ export function creationFromParams(p: URLSearchParams, lang: Lang): CreationInpu
     anoEstreia: Number(p.get("y") || 1995),
     origem: (p.get("o") as OriginId) || "garcom",
     atributos,
-    opcoes: { modoRealista: p.get("r") !== "0", hollywoodRealista: p.get("h") === "1", idioma: lang },
+    opcoes: { hollywoodRealista: p.get("h") === "1", idioma: lang },
     seed,
   };
 }
