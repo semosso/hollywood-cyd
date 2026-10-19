@@ -182,7 +182,7 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   // sequência obrigatória
   let A: { film: Film; roleIndex: number } | undefined;
   if (state.flags.includes("contrato_franquia")) {
-    const seqs = candidates.filter((c) => c.(film.flags ?? []).includes("franquia") && c.film.franchise_id && state.flags.includes(`franquia:${c.film.franchise_id}`));
+    const seqs = candidates.filter((c) => (c.film.flags ?? []).includes("franquia") && c.film.franchise_id && state.flags.includes(`franquia:${c.film.franchise_id}`));
     A = rng.pick(seqs);
   }
   if (!A) A = rng.weighted(candidates, (c) => weight(c, tier));
