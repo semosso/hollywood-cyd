@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers (Workers Builds): publica o build estático do jogo.
+  // Build command no painel: cd game && npm ci && npm run build
+  // Deploy command no painel:  npx wrangler deploy
+  "name": "thank-the-academy",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./game/dist",
+    "not_found_handling": "single-page-application"
+  }
+}
