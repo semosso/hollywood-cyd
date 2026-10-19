@@ -7,6 +7,10 @@ on:
         description: "Também rodar `resolve` para os filmes sem tmdb_id"
         type: boolean
         default: true
+      discover:
+        description: "Acrescentar à lista os N filmes mais votados de cada ano (0 = não)"
+        type: string
+        default: "0"
   schedule:
     - cron: "17 6 1 * *"   # dia 1 de cada mês, 06:17 UTC: atualiza bilheteria e notas
 
@@ -46,6 +50,10 @@ jobs:
       - name: Status
         working-directory: pipeline
         run: python -m hcyd status
+      - name: Descobrir filmes no TMDB
+        if: ${{ inputs.discover != '' && inputs.discover != '0' }}
+        working-directory: pipeline
+        run: python -m hcyd discover ${{ inputs.discover }}
       - name: Resolver ids faltantes
         if: ${{ inputs.resolve != false }}
         working-directory: pipeline
@@ -59,8 +67,9 @@ jobs:
       - name: Testes do pipeline
         working-directory: pipeline
         run: pytest -q
-      - name: Copiar para o jogo
-        run: cp data/films.json game/src/data/films.json
+      - name: Copiar para o jogo (versão enxuta)
+        working-directory: pipeline
+        run: python -m hcyd slim
       - uses: actions/setup-node@v4
         with:
           node-version: 22

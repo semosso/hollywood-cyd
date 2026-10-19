@@ -106,7 +106,7 @@ function Release({ r, state, lang, content }: { r: Extract<Resolution, { kind: "
       )}
       {f.refused_by && f.refused_by.length > 0 && <div className="refused"><b>{t("refusedIRL", lang)}:</b> {f.refused_by.map((x) => `${x.who}${x.role ? ` (${x.role})` : ""}`).join(", ")}</div>}
       {r.rumorFalso && <div className="refused"><b>{t("rumorWasFalse", lang)}:</b> {r.rumorFalso}</div>}
-      {lang === "pt" && f.trivia.slice(0, 2).map((tr, i) => <div key={i} className="muted" style={{ fontSize: 14 }}>· {tr}</div>)}
+      {lang === "pt" && (f.trivia ?? []).slice(0, 2).map((tr, i) => <div key={i} className="muted" style={{ fontSize: 14 }}>· {tr}</div>)}
       <div className="mono muted">{state.ano} · {state.idade} {t("age", lang)}</div>
     </>
   );

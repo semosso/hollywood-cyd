@@ -147,7 +147,7 @@ export function makeOffer(f: Film, roleIndex: number, state: State, reach: boole
       blind: blindText(f, state, lang),
       directorName: (forceDirector || a.contatos >= 5) && f.director ? f.director.name : null,
       scriptBand: a.talento >= 3 ? scriptBand(f, lang) : null,
-      redFlag: a.juizo >= 3 && (f.flags.includes("set_problematico") || f.derived.outcome === "bomb"),
+      redFlag: a.juizo >= 3 && ((f.flags ?? []).includes("set_problematico") || f.derived.outcome === "bomb"),
       rumors,
       costars: costarsLine(f, roleIndex, a.carisma, lang),
       locked: lockedHints(f, a, forceDirector, lang),
@@ -182,7 +182,7 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   // sequência obrigatória
   let A: { film: Film; roleIndex: number } | undefined;
   if (state.flags.includes("contrato_franquia")) {
-    const seqs = candidates.filter((c) => c.film.flags.includes("franquia") && c.film.franchise_id && state.flags.includes(`franquia:${c.film.franchise_id}`));
+    const seqs = candidates.filter((c) => c.(film.flags ?? []).includes("franquia") && c.film.franchise_id && state.flags.includes(`franquia:${c.film.franchise_id}`));
     A = rng.pick(seqs);
   }
   if (!A) A = rng.weighted(candidates, (c) => weight(c, tier));

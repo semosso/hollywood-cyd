@@ -2,6 +2,8 @@
   python -m hcyd resolve     # acha o tmdb_id dos filmes do CSV que não têm id (precisa de chave TMDB)
   python -m hcyd fetch       # baixa TMDB + OMDb + Wikidata para todos os filmes (cache em pipeline/cache)
   python -m hcyd build       # gera data/films.json e data/people.json a partir do cache + curadoria
+  python -m hcyd discover [N] # acrescenta a films.csv os N filmes mais votados de cada ano (1975–2025) que ainda não estão na lista
+  python -m hcyd slim        # escreve game/src/data/films.json enxuto a partir de data/films.json
   python -m hcyd status      # mostra o que já está no cache e o que falta
 """
 import csv
@@ -11,7 +13,7 @@ from pathlib import Path
 
 from . import build as build_mod
 from . import curation, omdb, tmdb, wikidata
-from .config import CACHE_DIR, CURATION_DIR, DATA_DIR, OMDB_API_KEY, TMDB_API_KEY, TMDB_READ_TOKEN
+from .config import CACHE_DIR, CURATION_DIR, DATA_DIR, OMDB_API_KEY, REPO_DIR, TMDB_API_KEY, TMDB_READ_TOKEN
 from .http_cache import HttpError
 
 
@@ -174,6 +176,48 @@ def cmd_build():
     _log(f"descrições às cegas: {len(films) - auto} escritas à mão, {auto} geradas automaticamente")
 
 
+def cmd_discover(per_year: int = 10):
+    rows = curation.films_list()
+    have_ids = {r["tmdb_id"] for r in rows if r["tmdb_id"]}
+    have_titles = {(r["title"].lower(), r["year"]) for r in rows}
+    added = []
+    for year in range(1975, 2026):
+        picked = 0
+        for page in (1, 2):
+            if picked >= per_year:
+                break
+            try:
+                results = tmdb.discover(year, page)
+            except HttpError as e:
+                _log(f"discover {year} p{page}: {e}")
+                break
+            for m in results:
+                if picked >= per_year:
+                    break
+                if m["id"] in have_ids or (m["title"].lower(), year) in have_titles:
+                    continue
+                added.append({"tmdb_id": m["id"], "title": m["title"], "year": year, "why": "discover"})
+                have_ids.add(m["id"]); picked += 1
+    src = CURATION_DIR / "films.csv"
+    with open(src, "a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["tmdb_id", "title", "year", "why"])
+        for a in added:
+            w.writerow(a)
+    _log(f"discover: {len(added)} filmes acrescentados a films.csv ({per_year} por ano)")
+
+
+SLIM_DROP = {"producers", "imdb", "tmdb_vote", "why", "shoot_days", "imdb_id"}
+
+
+def cmd_slim():
+    src = DATA_DIR / "films.json"
+    films = json.loads(src.read_text(encoding="utf-8"))
+    slim = [{k: v for k, v in f.items() if k not in SLIM_DROP and v not in (None, [], {})} for f in films]
+    out = REPO_DIR / "game" / "src" / "data" / "films.json"
+    out.write_text(json.dumps(slim, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    _log(f"slim: {len(slim)} filmes → {out} ({out.stat().st_size // 1024} KB)")
+
+
 def cmd_status():
     rows = curation.films_list()
     with_id = [r for r in rows if r["tmdb_id"]]
@@ -185,9 +229,12 @@ def cmd_status():
 
 def main(argv=None):
     argv = argv or sys.argv[1:]
-    cmds = {"resolve": cmd_resolve, "fetch": cmd_fetch, "build": cmd_build, "status": cmd_status}
+    cmds = {"resolve": cmd_resolve, "fetch": cmd_fetch, "build": cmd_build, "status": cmd_status, "discover": cmd_discover, "slim": cmd_slim}
     if not argv or argv[0] not in cmds:
         print(__doc__)
         return 2
-    cmds[argv[0]]()
+    if argv[0] == "discover":
+        cmd_discover(int(argv[1]) if len(argv) > 1 else 10)
+    else:
+        cmds[argv[0]]()
     return 0

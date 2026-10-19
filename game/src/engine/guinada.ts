@@ -45,7 +45,7 @@ export function maybeGuinada(state: State, ev: GameEvent): Modifier | null {
 
 /** Pool "dourado": filmes de diretor foda, ignorando tier. */
 export function isGolden(f: { flags: string[]; derived: { p_prize: number }; film_awards: { oscar_nominations: number }; director: unknown }): boolean {
-  return !!f.director && (f.flags.includes("autor") || f.flags.includes("tirano_genial") || f.derived.p_prize >= 0.4 || f.film_awards.oscar_nominations >= 4);
+  return !!f.director && ((f.flags ?? []).includes("autor") || (f.flags ?? []).includes("tirano_genial") || f.derived.p_prize >= 0.4 || f.film_awards.oscar_nominations >= 4);
 }
 
 /** Pool "ruim": o que sobra quando ninguém te quer. */

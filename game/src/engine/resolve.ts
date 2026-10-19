@@ -71,7 +71,7 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
     estabilidade: pd.estabilidade,
     dinheiro: cache,
   };
-  if (film.flags.includes("tirano_genial")) {
+  if ((film.flags ?? []).includes("tirano_genial")) {
     deltas.estabilidade = (deltas.estabilidade ?? 0) - 2;
     const key = `tirano:${film.director?.tmdb_id ?? film.tmdb_id}`;
     if (!state.flags.includes(key)) {
@@ -82,11 +82,11 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
   if (["flop", "bomb"].includes(film.derived.outcome)) deltas.estabilidade = (deltas.estabilidade ?? 0) - 1;
   for (const [k, v] of Object.entries(deltas)) state.meters[k as MeterKey] += v ?? 0;
   if (pd.flag && !state.flags.includes(pd.flag)) state.flags.push(pd.flag);
-  if (film.flags.includes("franquia")) {
+  if ((film.flags ?? []).includes("franquia")) {
     if (!state.flags.includes("contrato_franquia")) state.flags.push("contrato_franquia");
     if (film.franchise_id && !state.flags.includes(`franquia:${film.franchise_id}`)) state.flags.push(`franquia:${film.franchise_id}`);
   }
-  if ((film.flags.includes("terror") || film.flags.includes("acao")) && rng.next() < 0.15 && !state.flags.includes("lesao")) state.flags.push("lesao");
+  if (((film.flags ?? []).includes("terror") || (film.flags ?? []).includes("acao")) && rng.next() < 0.15 && !state.flags.includes("lesao")) state.flags.push("lesao");
   if (film.derived.outcome === "morno" && rng.next() < 0.3) {
     state.rede.push({ tmdb_id: -(state.rede.length + 1), name: "contato", humor: 1, kind: "ficticio" });
   }

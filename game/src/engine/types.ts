@@ -43,9 +43,9 @@ export type Film = {
   poster: string | null;
   blind: { hard?: string; medium?: string; easy?: string };
   blind_en?: { hard?: string; medium?: string; easy?: string };
-  flags: string[];
+  flags?: string[];
   franchise_id?: string;
-  trivia: string[];
+  trivia?: string[];
   rumors?: { text: I18n; false?: boolean }[];
   revision?: { year: number; text: I18n; prestige_delta: number } | null;
   shoot_days?: number | null;
