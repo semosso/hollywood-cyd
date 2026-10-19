@@ -5,7 +5,8 @@ import { shareUrl } from "../engine/share";
 import type { Lang, State } from "../engine/types";
 import { ATTR_HELP, t } from "../i18n/strings";
 import { originById } from "../engine/creation";
-import { RESULT_LABEL, RESULT_SHORT, money } from "./format";
+import { RESULT_SHORT, money, resultLine } from "./format";
+import { rngFor } from "../engine/rng";
 
 export function FinalView({ state, lang, content, onRestart }: { state: State; lang: Lang; content: Content; onRestart: () => void }) {
   const ending = content.endings.find((e) => e.id === state.endingId) ?? content.endings[content.endings.length - 1];
@@ -53,7 +54,7 @@ export function FinalView({ state, lang, content, onRestart }: { state: State; l
         {regrets.length > 0 && (
           <div>
             <div className="eyebrow">{t("regrets", lang)}</div>
-            {regrets.map((x, i) => <div key={i} style={{ fontSize: 15, marginTop: 4 }}>{x.mine.year}: {lang === "en" ? "turned down" : "recusei"} <b>{x.theirs.title[lang] ?? x.theirs.title.en}</b> {lang === "en" ? "to make" : "para fazer"} <b>{x.mine.title[lang] ?? x.mine.title.en}</b>. <span className="muted">{RESULT_LABEL[x.f.resultado][lang]}</span></div>)}
+            {regrets.map((x, i) => <div key={i} style={{ fontSize: 15, marginTop: 4 }}>{x.mine.year}: {lang === "en" ? "turned down" : "recusei"} <b>{x.theirs.title[lang] ?? x.theirs.title.en}</b> {lang === "en" ? "to make" : "para fazer"} <b>{x.mine.title[lang] ?? x.mine.title.en}</b>. <span className="muted">{resultLine(x.f.resultado, rngFor(state.seed, "resultline", x.mine.tmdb_id).int(1000), lang)}</span></div>)}
           </div>
         )}
         <dl className="kv">

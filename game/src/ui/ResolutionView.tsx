@@ -2,7 +2,8 @@ import { regretLine, toToday } from "../engine/resolve";
 import type { Lang, Resolution, State } from "../engine/types";
 import type { Content } from "../engine/run";
 import { t } from "../i18n/strings";
-import { METER_LABEL, OUTCOME_LABEL, RESULT_LABEL, TIPO_LABEL, money } from "./format";
+import { METER_LABEL, OUTCOME_LABEL, TIPO_LABEL, money, resultLine } from "./format";
+import { rngFor } from "../engine/rng";
 import { ATTR_HELP } from "../i18n/strings";
 
 export function ResolutionView({ r, state, lang, content, onContinue }: { r: Resolution; state: State; lang: Lang; content: Content; onContinue: () => void }) {
@@ -92,7 +93,7 @@ function Release({ r, state, lang, content }: { r: Extract<Resolution, { kind: "
       </div>
       <div>
         <div className="eyebrow">{t("whatHappenedYou", lang)}</div>
-        <p style={{ margin: "4px 0 8px" }}>{RESULT_LABEL[r.resultado][lang]}</p>
+        <p style={{ margin: "4px 0 8px" }}>{resultLine(r.resultado, rngFor(state.seed, "resultline", f.tmdb_id).int(1000), lang)}</p>
         <Deltas d={r.deltas as Record<string, number>} lang={lang} />
         <div className="mono muted" style={{ marginTop: 6 }}>{t("fee", lang)}: {money(r.cache, lang)}</div>
       </div>

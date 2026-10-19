@@ -227,7 +227,7 @@ Flags do filme → estado: `franquia` → `contrato_franquia`; `tirano_genial` �
 ### 6.2 Revelação (conteúdo renderizado)
 1. Título (`title.pt` ou `title.en`), ano, diretor, "**no papel de** {r.actor}" (e "contracenando com" os outros 3 do elenco).
 2. "O que aconteceu com o filme": bilheteria e orçamento (dólares da época e de hoje), crítica (RT/Metacritic), prêmios do filme, `derived.outcome` em palavras.
-3. "O que aconteceu com você": `resultado_pessoal` em uma frase com humor, deltas visíveis como ↑↓.
+3. "O que aconteceu com você": `resultado_pessoal` em uma frase com humor, sorteada entre 6 ou 7 variações por resultado (`RESULT_LINES`), determinística por seed + filme; deltas visíveis como ↑↓.
 4. "Você recusou": o outro filme, mesma estrutura em 2 linhas, mais a frase de arrependimento ou alívio calculada pela diferença de `p_prize + p_box` (e se o papel recusado tinha `oscar == won`: *"Alguém ganhou o Oscar no seu lugar."*).
 5. Se houver `refused_by[]`: "Quem recusou este papel na vida real: …".
 6. Se Carisma ≥ 3 e havia rumor falso: "O rumor sobre X era mentira."
