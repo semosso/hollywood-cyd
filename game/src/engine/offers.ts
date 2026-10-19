@@ -115,6 +115,17 @@ function costarsLine(f: Film, roleIndex: number, carisma: number, lang: Lang): s
   return null;
 }
 
+function lockedHints(f: Film, a: ReturnType<typeof effAttrs>, directorShown: boolean, lang: Lang): string[] {
+  const pt = lang === "pt";
+  const out: string[] = [];
+  if (a.contatos < 3) out.push(pt ? "Contatos 3: descrição melhor" : "Connections 3: better description");
+  if (!directorShown && a.contatos < 5 && f.director) out.push(pt ? "Contatos 5: nome do diretor" : "Connections 5: director's name");
+  if (a.talento < 3) out.push(pt ? "Talento 3: como está o roteiro" : "Talent 3: how the script is");
+  if (a.carisma < 4 && !f.fallback) out.push(pt ? "Carisma 4: nomes do elenco" : "Charisma 4: cast names");
+  if (a.juizo < 3) out.push(pt ? "Juízo 3: sinais de alerta" : "Judgment 3: red flags");
+  return out.slice(0, 2);
+}
+
 export function makeOffer(f: Film, roleIndex: number, state: State, reach: boolean, forceDirector = false): Offer {
   const lang = state.opcoes.idioma;
   const a = effAttrs(state);
@@ -139,6 +150,7 @@ export function makeOffer(f: Film, roleIndex: number, state: State, reach: boole
       redFlag: a.juizo >= 3 && (f.flags.includes("set_problematico") || f.derived.outcome === "bomb"),
       rumors,
       costars: costarsLine(f, roleIndex, a.carisma, lang),
+      locked: lockedHints(f, a, forceDirector, lang),
     },
   };
 }

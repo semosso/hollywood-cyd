@@ -18,7 +18,7 @@ export function toToday(usd: number, fromYear: number, cpi: Cpi): number {
   return Math.round((usd * (cpi["2025"] ?? 322)) / (cpi[String(y)] ?? 322));
 }
 
-export function personalResult(film: Film, roleIndex: number, talentoEfetivo: number, state: State, roll: number, chaosRoll: number, chaosPick: number): PersonalResult {
+export function personalResult(film: Film, roleIndex: number, talentoEfetivo: number, state: State, roll: number, chaosRoll: number, chaosPick: number, out?: { caos?: boolean; prestigioBonus?: number; bisPenalty?: number; penalidade?: number }): PersonalResult {
   const r = film.roles[roleIndex];
   // num filme que deu errado, a crítica procura culpados: penalidade no score pessoal
   const penalty = BAD_FILM_PENALTY[film.derived.outcome] ?? 0;
@@ -26,6 +26,7 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
   // a Academia: exige prestígio acumulado e não gosta de bis (Hanks é exceção, você não)
   const prestigioBonus = Math.min(0.6, Math.max(0, state.meters.prestigio) / 100) + (state.flags.includes("campanha_oscar") ? 0.3 : 0);
   const recentWin = state.filmografia.slice(-3).some((f) => f.resultado === "ganhou") ? 1.0 : 0;
+  if (out) { out.prestigioBonus = prestigioBonus; out.bisPenalty = recentWin; out.penalidade = penalty; out.caos = false; }
   const oscarScore = score + prestigioBonus - recentWin;
   let res: PersonalResult;
   if (r.oscar === "won" && oscarScore >= 0.5) res = "ganhou";
@@ -35,6 +36,7 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
   else if ((r.razzie !== "none" && score < -0.5) || (r.oscar === "none" && score < -2.5)) res = "razzie";
   else res = "miscast";
   if (chaosRoll < CHAOS) {
+    if (out) out.caos = true;
     const all: PersonalResult[] = ["ganhou", "indicado", "roubou_a_cena", "fez_o_trabalho", "miscast", "razzie"];
     const others = all.filter((x) => x !== res && !(x === "ganhou" && r.oscar === "none"));
     res = others[Math.floor(chaosPick * others.length) % others.length];
@@ -53,7 +55,8 @@ export function cacheFor(film: Film, roleIndex: number, state: State, cpi: Cpi):
 export function resolveRelease(state: State, entry: PipelineEntry, film: Film, recusado: Film | null, cpi: Cpi): Resolution {
   const rng = rngFor(state.seed, "release", film.tmdb_id, entry.assinadoNoCard);
   const talento = effAttrs(state).talento - (entry.ambos ? 1 : 0);
-  const resultado = personalResult(film, entry.roleIndex, talento, state, rng.next(), rng.next(), rng.next());
+  const info: { caos?: boolean; prestigioBonus?: number; bisPenalty?: number; penalidade?: number } = {};
+  const resultado = personalResult(film, entry.roleIndex, talento, state, rng.next(), rng.next(), rng.next(), info);
   const role = film.roles[entry.roleIndex];
   const billing = BILLING_FACTOR[Math.min(5, role.order)] ?? 0.4;
   const fd = FILM_DELTAS[film.derived.outcome];
@@ -100,17 +103,73 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
     const f = (film.rumors ?? []).find((r) => r.false);
     if (f) rumorFalso = f.text[state.opcoes.idioma] ?? f.text.pt;
   }
-  return { kind: "estreia", film, roleIndex: entry.roleIndex, resultado, cache, deltas, recusado, rumorFalso };
+  const fatores = { talento, demand: role.demand, sorte: state.sorte, estabilidade: state.meters.estabilidade, penalidade: info.penalidade ?? 0, belezaFator: fd.fama > 0 ? 0.8 + 0.1 * belezaEfetiva(state) : 1, prestigioBonus: info.prestigioBonus ?? 0, bisPenalty: info.bisPenalty ?? 0, caos: !!info.caos };
+  return { kind: "estreia", film, roleIndex: entry.roleIndex, resultado, cache, deltas, recusado, rumorFalso, fatores };
 }
 
-export function regretLine(film: Film, recusado: Film | null, lang: Lang, genero?: "f" | "m"): string | null {
+const REGRET: Record<string, { pt: string; en: string }[]> = {
+  oscar: [
+    { pt: "Alguém ganhou o Oscar no seu lugar.", en: "Someone won the Oscar in your place." },
+    { pt: "Quem ficou com o papel subiu no palco e agradeceu 'a coragem do estúdio'. Você desligou a TV.", en: "Whoever took the part went on stage and thanked 'the studio's courage'. You turned the TV off." },
+    { pt: "O papel que você recusou virou uma estatueta na estante de outra pessoa. Seu agente não comenta.", en: "The part you turned down became a statue on someone else's shelf. Your agent doesn't bring it up." },
+  ],
+  better: [
+    { pt: "Seu agente ainda toca no assunto.", en: "Your agent still brings it up." },
+    { pt: "Você assistiu no cinema, no fundo, de boné. Era bom. Era muito bom.", en: "You watched it in a theater, in the back, in a cap. It was good. It was very good." },
+    { pt: "Em toda entrevista daqui para a frente alguém vai perguntar sobre esse.", en: "In every interview from now on, someone will ask about that one." },
+    { pt: "Dizem que o roteiro foi reescrito depois que você saiu. Dizem que melhorou.", en: "They say the script was rewritten after you passed. They say it got better." },
+  ],
+  worse: [
+    { pt: "Você escapou. Ninguém nunca vai saber.", en: "You dodged one. Nobody will ever know." },
+    { pt: "O filme que você recusou passou em avião entre um documentário sobre golfinhos e nada.", en: "The film you passed on played on airplanes between a dolphin documentary and nothing." },
+    { pt: "Quem aceitou ainda está explicando esse em entrevistas.", en: "Whoever said yes is still explaining that one in interviews." },
+    { pt: "Seu agente, pela primeira vez, elogiou o seu faro.", en: "Your agent, for once, praised your instincts." },
+  ],
+  bomb: [
+    { pt: "Você recusou uma bomba. O estúdio fingiu que o filme nunca existiu, e você também.", en: "You turned down a bomb. The studio pretended the film never existed, and so do you." },
+    { pt: "O outro filme perdeu tanto dinheiro que o executivo que te ofereceu agora vende vinho.", en: "The other film lost so much money that the executive who offered it now sells wine." },
+  ],
+  even: [
+    { pt: "Podia ter sido qualquer um dos dois.", en: "Could have gone either way." },
+    { pt: "Os dois estrearam no mesmo mês. Ninguém notou nenhum dos dois.", en: "Both opened the same month. Nobody noticed either." },
+    { pt: "Você nunca pensou nisso de novo, o que diz alguma coisa.", en: "You never thought about it again, which says something." },
+  ],
+};
+
+export function regretLine(film: Film, recusado: Film | null, lang: Lang, genero?: "f" | "m", pick = 0): string | null {
   if (!recusado) return null;
   const myRoles = recusado.roles.filter((r) => !genero || !r.gender || r.gender === genero);
   const mine = film.derived.p_prize + film.derived.p_box;
   const theirs = recusado.derived.p_prize + recusado.derived.p_box;
-  const wonElsewhere = myRoles.some((r) => r.oscar === "won");
-  if (wonElsewhere) return lang === "en" ? "Someone won the Oscar in your place." : "Alguém ganhou o Oscar no seu lugar.";
-  if (theirs - mine > 0.4) return lang === "en" ? "Your agent still brings it up." : "Seu agente ainda toca no assunto.";
-  if (mine - theirs > 0.4) return lang === "en" ? "You dodged one. Nobody will ever know." : "Você escapou. Ninguém nunca vai saber.";
-  return lang === "en" ? "Could have gone either way." : "Podia ter sido qualquer um dos dois.";
+  let key = "even";
+  if (myRoles.some((r) => r.oscar === "won")) key = "oscar";
+  else if (recusado.derived.outcome === "bomb") key = "bomb";
+  else if (theirs - mine > 0.4) key = "better";
+  else if (mine - theirs > 0.4) key = "worse";
+  const list = REGRET[key];
+  const item = list[((pick % list.length) + list.length) % list.length];
+  return item[lang] ?? item.pt;
+}
+
+/** Uma frase explicando o resultado pelos atributos (RULES 6.2), para o jogador sentir o que pesou. */
+export function whyLine(r: { resultado: PersonalResult; fatores: { talento: number; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean } }, lang: Lang): string {
+  const f = r.fatores;
+  const parts: string[] = [];
+  const pt = lang === "pt";
+  const gap = f.talento - f.demand;
+  if (f.caos) parts.push(pt ? "Hollywood não faz sentido: o resultado saiu do nada" : "Hollywood makes no sense: this came out of nowhere");
+  else {
+    if (gap >= 1) parts.push(pt ? `Talento ${f.talento} para um papel nível ${f.demand}: sobrou` : `Talent ${f.talento} for a level ${f.demand} role: plenty`);
+    else if (gap === 0) parts.push(pt ? `Talento ${f.talento} para um papel nível ${f.demand}: no limite` : `Talent ${f.talento} for a level ${f.demand} role: just enough`);
+    else parts.push(pt ? `Talento ${f.talento} para um papel nível ${f.demand}: faltou` : `Talent ${f.talento} for a level ${f.demand} role: not enough`);
+    if (f.penalidade < 0) parts.push(pt ? "o filme afundou e levou gente junto" : "the film sank and took people with it");
+    if (f.estabilidade <= 3) parts.push(pt ? "você chegou ao set destruído(a)" : "you arrived on set in pieces");
+    if (f.sorte === 3) parts.push(pt ? "e a Sorte estava do seu lado" : "and Luck was on your side");
+    if (f.sorte === 1 && gap <= 0) parts.push(pt ? "e a Sorte, como sempre, não ajudou" : "and Luck, as always, didn't help");
+    if (r.resultado === "ganhou" && f.prestigioBonus >= 0.3) parts.push(pt ? "o Prestígio acumulado fechou a conta" : "accumulated Prestige closed the deal");
+    if (f.bisPenalty > 0 && (r.resultado === "indicado" || r.resultado === "fez_o_trabalho")) parts.push(pt ? "a Academia não dá bis" : "the Academy doesn't do encores");
+  }
+  if (f.belezaFator >= 1.2) parts.push(pt ? "e a Beleza rendeu fama extra" : "and Looks brought extra fame");
+  if (f.belezaFator <= 0.9) parts.push(pt ? "e a Beleza já não rende o que rendia" : "and Looks don't pay what they used to");
+  return parts.join("; ") + ".";
 }

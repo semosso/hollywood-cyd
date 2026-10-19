@@ -113,6 +113,8 @@ export type Offer = {
     rumors: string[];
     /** Carisma 3: dica ("alguém que já ganhou o Oscar"); Carisma 4+: nomes dos colegas de elenco */
     costars: string | null;
+    /** informações trancadas por atributo, para o jogador sentir o que falta (até 2) */
+    locked: string[];
   };
 };
 
@@ -164,6 +166,8 @@ export type Resolution =
       deltas: Partial<Record<MeterKey, number>>;
       recusado: Film | null;
       rumorFalso: string | null;
+      /** o que pesou no resultado pessoal, para a interface explicar */
+      fatores: { talento: number; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean };
     }
   | { kind: "evento"; event: GameEvent; optionId: string; texto: I18n | null; efeitos: Effects }
   | { kind: "revisao"; film: Film; delta: number }

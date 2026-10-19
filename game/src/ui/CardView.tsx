@@ -42,11 +42,12 @@ function OfferBox({ o, lang, hot, tag }: { o: Offer; lang: Lang; hot: "left" | "
         {o.reach && <span style={{ color: "var(--accent)" }}>↑ reach</span>}
       </div>
       <div className="blind">{o.visible.blind}</div>
-      {o.visible.directorName && <div className="mono" style={{ color: "var(--accent)" }}>dir. {o.visible.directorName}</div>}
-      {o.visible.costars && <div className="mono" style={{ color: "var(--accent)" }}>♟ {o.visible.costars}</div>}
-      {o.visible.scriptBand && <div className="mono">✎ {o.visible.scriptBand}</div>}
-      {o.visible.redFlag && <div className="flag">🚩 {lang === "en" ? "troubled production" : "produção problemática"}</div>}
-      {o.visible.rumors.map((r, i) => <div className="rumor" key={i}>🗞️ {r}</div>)}
+      {o.visible.directorName && <div className="mono unlocked"><span className="by">{lang === "en" ? "Connections" : "Contatos"}</span> dir. {o.visible.directorName}</div>}
+      {o.visible.costars && <div className="mono unlocked"><span className="by">{lang === "en" ? "Charisma" : "Carisma"}</span> {o.visible.costars}</div>}
+      {o.visible.scriptBand && <div className="mono unlocked"><span className="by">{lang === "en" ? "Talent" : "Talento"}</span> ✎ {o.visible.scriptBand}</div>}
+      {o.visible.redFlag && <div className="flag"><span className="by">{lang === "en" ? "Judgment" : "Juízo"}</span> 🚩 {lang === "en" ? "troubled production" : "produção problemática"}</div>}
+      {o.visible.rumors.map((r, i) => <div className="rumor" key={i}><span className="by">{lang === "en" ? "Charisma" : "Carisma"}</span> 🗞️ {r}</div>)}
+      {o.visible.locked.length > 0 && <div className="locked">🔒 {o.visible.locked.join(" · ")}</div>}
       <div className="icons">
         <div><b>{pct(o.icons.prize)}</b>🏆 {t("prize", lang)}</div>
         <div><b>{pct(o.icons.box)}</b>💰 {t("box", lang)}</div>

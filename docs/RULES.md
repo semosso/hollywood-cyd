@@ -120,6 +120,8 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 | Carisma ≥ 3 | até 2 linhas de `rumors[]` da curadoria, com a tag 🗞️ RUMOR; 20% das linhas marcadas `false: true` são mentira (revelado na resolução). Dica de elenco: "com alguém que ganha o Oscar por este filme" |
 | Carisma ≥ 4 | **nomes** dos colegas de elenco (até 3) |
 
+Cada informação revelada leva uma etiqueta com o atributo que a destravou (CONTATOS, TALENTO, CARISMA, JUÍZO), e o card lista até duas informações **trancadas** com o atributo e o nível que faltam ("🔒 Contatos 5: nome do diretor · Carisma 4: nomes do elenco").
+
 As descrições às cegas automáticas são curtas: diretor descrito só por gênero e ano do filme anterior, primeira frase da sinopse com título e **nomes de personagens** mascarados. Nomes reais (diretor, elenco) só aparecem pelos atributos acima.
 
 **Ruído**: para cada ícone, `mostrado = clamp(p + u, 0.02, 0.95)`, com `u ~ U(−0.15, +0.15)` sorteado por `(seed, tmdb_id, ícone)`. O ruído é fixo por run (reabrir o card não re-rola).
@@ -227,8 +229,8 @@ Flags do filme → estado: `franquia` → `contrato_franquia`; `tirano_genial` �
 ### 6.2 Revelação (conteúdo renderizado)
 1. Título (`title.pt` ou `title.en`), ano, diretor, "**no papel de** {r.actor}" (e "contracenando com" os outros 3 do elenco).
 2. "O que aconteceu com o filme": bilheteria e orçamento (dólares da época e de hoje), crítica (RT/Metacritic), prêmios do filme, `derived.outcome` em palavras.
-3. "O que aconteceu com você": `resultado_pessoal` em uma frase com humor, sorteada entre 6 ou 7 variações por resultado (`RESULT_LINES`), determinística por seed + filme; deltas visíveis como ↑↓.
-4. "Você recusou": o outro filme, mesma estrutura em 2 linhas, mais a frase de arrependimento ou alívio calculada pela diferença de `p_prize + p_box` (e se o papel recusado tinha `oscar == won`: *"Alguém ganhou o Oscar no seu lugar."*).
+3. "O que aconteceu com você": `resultado_pessoal` em uma frase com humor, sorteada entre 6 ou 7 variações por resultado (`RESULT_LINES`), determinística por seed + filme; deltas visíveis como ↑↓; e uma linha **"por quê"** montada a partir dos fatores da rolagem (Talento × nível do papel, filme ruim, Estabilidade, Sorte, Prestígio, bis, Beleza, caos), para o jogador sentir o peso dos atributos.
+4. "Você recusou": o outro filme, mesma estrutura em 2 linhas, mais uma frase de arrependimento ou alívio em cinco famílias (Oscar perdido, era melhor, era pior, era uma bomba, tanto faz), com 2 a 4 variações cada, sorteadas por seed + filme.
 5. Se houver `refused_by[]`: "Quem recusou este papel na vida real: …".
 6. Se Carisma ≥ 3 e havia rumor falso: "O rumor sobre X era mentira."
 7. `trivia[]` (até 2) como rodapé.

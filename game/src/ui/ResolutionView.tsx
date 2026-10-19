@@ -1,4 +1,4 @@
-import { regretLine, toToday } from "../engine/resolve";
+import { regretLine, toToday, whyLine } from "../engine/resolve";
 import type { Lang, Resolution, State } from "../engine/types";
 import type { Content } from "../engine/run";
 import { t } from "../i18n/strings";
@@ -67,7 +67,7 @@ function Release({ r, state, lang, content }: { r: Extract<Resolution, { kind: "
   const role = f.roles[r.roleIndex];
   const others = f.roles.filter((_, i) => i !== r.roleIndex).slice(0, 3).map((x) => x.actor).filter(Boolean);
   const title = f.title[lang] ?? f.title.en ?? f.title.original ?? "";
-  const regret = regretLine(f, r.recusado, lang, state.genero);
+  const regret = regretLine(f, r.recusado, lang, state.genero, rngFor(state.seed, "regret", f.tmdb_id).int(1000));
   const fa = f.film_awards;
   return (
     <>
@@ -95,6 +95,7 @@ function Release({ r, state, lang, content }: { r: Extract<Resolution, { kind: "
         <div className="eyebrow">{t("whatHappenedYou", lang)}</div>
         <p style={{ margin: "4px 0 8px" }}>{resultLine(r.resultado, rngFor(state.seed, "resultline", f.tmdb_id).int(1000), lang)}</p>
         <Deltas d={r.deltas as Record<string, number>} lang={lang} />
+        <div className="why">{whyLine(r, lang)}</div>
         <div className="mono muted" style={{ marginTop: 6 }}>{t("fee", lang)}: {money(r.cache, lang)}</div>
       </div>
       {r.recusado && (

@@ -59,6 +59,10 @@ input, select { font: inherit; color: var(--fg); background: var(--card); border
 .icons div { text-align: center; border: 1px solid var(--line); border-radius: 4px; padding: 4px 2px; }
 .icons b { display: block; font-size: 14px; }
 .flag { color: var(--warn); font-weight: 600; font-size: 14px; }
+.unlocked { color: var(--accent); }
+.by { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 5px; margin-right: 6px; vertical-align: middle; }
+.locked { font-family: var(--mono); font-size: 11px; color: var(--muted); opacity: .8; }
+.why { font-size: 14px; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 8px; margin-top: 8px; }
 .rumor { font-size: 14px; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 8px; }
 .preview { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
 .preview span { font-family: var(--display); font-size: 28px; padding: 8px 18px; border-radius: 8px; background: var(--card); border: 2px solid var(--accent); color: var(--accent); opacity: 0; transition: opacity .1s; }
