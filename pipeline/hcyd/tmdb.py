@@ -25,7 +25,7 @@ def search_movie(title: str, year: int | None = None) -> list[dict]:
 def movie(tmdb_id: int) -> dict:
     """Detalhes + credits + external_ids + translations numa chamada só."""
     params, headers = _auth()
-    params.update({"language": "en-US", "append_to_response": "credits,external_ids,translations,release_dates"})
+    params.update({"language": "en-US", "append_to_response": "credits,external_ids,translations,release_dates,keywords"})
     return get_json(f"{TMDB_BASE}/movie/{tmdb_id}", params, headers, namespace="tmdb_movie", ttl_days=90)
 
 
@@ -75,3 +75,24 @@ def producers(m: dict) -> list[dict]:
         for c in (m.get("credits") or {}).get("crew", [])
         if c.get("job") in ("Producer", "Executive Producer")
     ][:6]
+
+
+def person_credits(tmdb_id: int) -> dict:
+    """Filmografia da pessoa (cast + crew). Usada para descrever o diretor sem nomeá-lo."""
+    params, headers = _auth()
+    params.update({"language": "en-US"})
+    return get_json(f"{TMDB_BASE}/person/{tmdb_id}/movie_credits", params, headers, namespace="tmdb_person_credits", ttl_days=90)
+
+
+def pt_br_overview(m: dict) -> str | None:
+    for t in (m.get("translations") or {}).get("translations", []):
+        if t.get("iso_3166_1") == "BR" and t.get("iso_639_1") == "pt":
+            ov = (t.get("data") or {}).get("overview")
+            if ov:
+                return ov
+    return None
+
+
+def keywords(m: dict) -> list[str]:
+    kw = (m.get("keywords") or {}).get("keywords", [])
+    return [k["name"] for k in kw if k.get("name")]

@@ -4,6 +4,7 @@ from __future__ import annotations
 from . import omdb as omdb_mod
 from . import tmdb as tmdb_mod
 from . import wikidata as wd_mod
+from . import blind as blind_mod
 
 # Exigência dramática do papel por gênero (1 a 5). Combinado com indicação real.
 GENRE_DEMAND = {
@@ -50,7 +51,7 @@ def _film_awards(awards: list[dict]) -> dict:
     }
 
 
-def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None) -> dict:
+def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None, director_credits: dict | None = None, oscar_wins: dict[str, int] | None = None) -> dict:
     genres = [g["name"] for g in m.get("genres", [])]
     year = int((m.get("release_date") or "0000")[:4]) or None
     roles = []
@@ -90,12 +91,18 @@ def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict
         "film_awards": _film_awards(awards),
         "poster": tmdb_mod.poster_url(m.get("poster_path")),
         "blind": cur.get("blind") or {},
+        "blind_en": cur.get("blind_en") or {},
+        "blind_auto": False,
         "flags": cur.get("flags") or [],
         "trivia": cur.get("trivia") or [],
         "revision": cur.get("revision"),
         "shoot_days": cur.get("shoot_days"),
         "refused_by": cur.get("refused_by") or [],
     }
+    if not rec["blind"]:
+        my_index = next((i for i, r in enumerate(roles) if r["order"] == 0), 0)
+        pt, en = blind_mod.generate(rec, m, director_credits, oscar_wins or {}, my_index)
+        rec["blind"], rec["blind_en"], rec["blind_auto"] = pt, en, True
     rec["derived"] = derive(rec)
     return rec
 

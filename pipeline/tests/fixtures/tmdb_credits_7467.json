@@ -1,0 +1,41 @@
+{
+ "id": 7467,
+ "crew": [
+  {
+   "job": "Director",
+   "title": "Se7en",
+   "original_title": "Se7en",
+   "release_date": "1995-09-22",
+   "vote_count": 20000,
+   "genre_ids": [
+    80,
+    53
+   ],
+   "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the seven deadly sins."
+  },
+  {
+   "job": "Director",
+   "title": "The Curious Case of Benjamin Button",
+   "original_title": "The Curious Case of Benjamin Button",
+   "release_date": "2008-12-25",
+   "vote_count": 12000,
+   "genre_ids": [
+    14,
+    18
+   ],
+   "overview": "Tells the story of Benjamin Button, a man who starts aging backwards with bizarre consequences."
+  },
+  {
+   "job": "Director",
+   "title": "Gone Girl",
+   "original_title": "Gone Girl",
+   "release_date": "2014-10-01",
+   "vote_count": 18000,
+   "genre_ids": [
+    9648,
+    53
+   ],
+   "overview": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him."
+  }
+ ]
+}

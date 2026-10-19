@@ -69,3 +69,24 @@ def test_build_without_optional_sources():
     assert rec["rt"] is None and rec["film_awards"]["oscar_nominations"] == 0
     assert rec["roles"][0]["oscar"] == "none" and rec["roles"][0]["demand"] == 4  # Drama
     assert rec["derived"]["outcome"] == "popcorn"  # ratio alto, sem crítica conhecida
+
+
+def test_blind_auto_masks_title_and_describes_director():
+    m = load("tmdb_37799.json")
+    awards = wikidata.parse(load("wikidata_tt1285016.json"))
+    credits = load("tmdb_credits_7467.json")
+    rec = build.build_film(m, None, awards, None, credits, {"Andrew Garfield": 1})
+    assert rec["blind_auto"] is True
+    for lvl in ("hard", "medium", "easy"):
+        assert rec["blind"][lvl] and rec["blind_en"][lvl]
+        assert "Social Network" not in rec["blind"][lvl]
+    assert "diretor" in rec["blind"]["hard"].lower()
+    assert "2 filmes" in rec["blind"]["hard"]          # Se7en e Benjamin Button antes de 2010; Gone Girl não
+    assert "1995" in rec["blind"]["medium"]            # descreve o filme anterior mais votado
+    assert "Se7en" not in rec["blind"]["medium"]
+    assert "David Fincher" in rec["blind"]["easy"] and "David Fincher" not in rec["blind"]["medium"]
+    assert "ganhou o Oscar" in rec["blind"]["medium"]   # colega de elenco premiado (mapa do dataset)
+    assert "Orçamento" in rec["blind"]["hard"] and "[" not in rec["blind"]["hard"]
+    # curadoria manual continua tendo prioridade
+    cur = build.build_film(m, None, awards, {"blind": {"hard": "x"}}, credits, {})
+    assert cur["blind_auto"] is False and cur["blind"]["hard"] == "x"

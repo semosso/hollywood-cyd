@@ -12,6 +12,7 @@ import { CardView } from "./CardView";
 import { Creation } from "./Creation";
 import { FinalView } from "./FinalView";
 import { ResolutionView } from "./ResolutionView";
+import { About } from "./About";
 import { METER_LABEL } from "./format";
 
 function readLS(k: string): string | null { try { return localStorage.getItem(k); } catch { return null; } }
@@ -23,6 +24,7 @@ export function App() {
   const setLang = (l: Lang) => { setLangState(l); writeLS("lang", l); };
   const [state, setState] = useState<State | null>(null);
   const [tutorial, setTutorial] = useState(readLS("tutorial") !== "done");
+  const [about, setAbout] = useState(false);
   const seedParam = params.get("seed");
   const choicesParam = params.get("c");
 
@@ -40,7 +42,8 @@ export function App() {
   const onStart = (input: CreationInput) => setState(startRun(createState(input), content));
   const act = (a: Action) => setState((s) => (s ? step(s, a, content) : s));
 
-  if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} /></div>;
+  if (about) return <div className="wrap"><About lang={lang} onClose={() => setAbout(false)} /></div>;
+  if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;
   const scr = screen(state);
   const m = state.meters;
   return (
@@ -61,11 +64,16 @@ export function App() {
       {scr === "resolucao" && <ResolutionView r={state.pendentes[0]} state={state} lang={lang} content={content} onContinue={() => act({ type: "continuar" })} />}
       {scr === "card" && state.card && <CardView state={state} card={state.card} lang={lang} onAction={act} showTutorial={tutorial && state.card.kind === "projeto"} onTutorialDone={() => { setTutorial(false); writeLS("tutorial", "done"); }} />}
       {scr === "final" && (state.endingId ? <FinalView state={state} lang={lang} content={content} onRestart={() => { setState(null); history.replaceState(null, "", location.pathname); }} /> : <button className="primary" onClick={() => act({ type: "continuar" })}>{t("continue", lang)}</button>)}
-      <Footer lang={lang} />
+      <Footer lang={lang} onAbout={() => setAbout(true)} />
     </div>
   );
 }
 
-function Footer({ lang }: { lang: Lang }) {
-  return <div className="footer">{t("attribution", lang)}</div>;
+function Footer({ lang, onAbout }: { lang: Lang; onAbout: () => void }) {
+  return (
+    <div className="footer">
+      {t("attribution", lang)}{" "}
+      <button type="button" onClick={onAbout} style={{ padding: "2px 8px", fontSize: 13 }}>{lang === "en" ? "About" : "Sobre"}</button>
+    </div>
+  );
 }

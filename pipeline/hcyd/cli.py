@@ -54,6 +54,12 @@ def cmd_fetch():
         except HttpError as e:
             _log(f"TMDB falhou para {r['title']}: {e}")
             continue
+        d = tmdb.director(m)
+        if d:
+            try:
+                tmdb.person_credits(d["tmdb_id"])
+            except HttpError as e:
+                _log(f"créditos do diretor falharam para {r['title']}: {e}")
         imdb_id = m.get("imdb_id") or (m.get("external_ids") or {}).get("imdb_id")
         if imdb_id:
             try:
@@ -71,14 +77,30 @@ def cmd_fetch():
     _log(f"fetch concluído: {done} filmes")
 
 
+_MOVIE_CACHE: dict[int, dict] | None = None
+
+
 def _cached_movie(tmdb_id: int) -> dict | None:
-    # Reaproveita o cache sem exigir chave: procura o arquivo do movie no cache.
-    d = CACHE_DIR / "tmdb_movie"
+    # Reaproveita o cache sem exigir chave: indexa os arquivos de movie do cache uma vez.
+    global _MOVIE_CACHE
+    if _MOVIE_CACHE is None:
+        _MOVIE_CACHE = {}
+        d = CACHE_DIR / "tmdb_movie"
+        if d.exists():
+            for p in d.glob("*.json"):
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if "id" in data:
+                    _MOVIE_CACHE[data["id"]] = data
+    return _MOVIE_CACHE.get(tmdb_id)
+
+
+def _cached_person_credits(person_id: int) -> dict | None:
+    d = CACHE_DIR / "tmdb_person_credits"
     if not d.exists():
         return None
     for p in d.glob("*.json"):
         data = json.loads(p.read_text(encoding="utf-8"))
-        if data.get("id") == tmdb_id:
+        if data.get("id") == person_id:
             return data
     return None
 
@@ -86,6 +108,8 @@ def _cached_movie(tmdb_id: int) -> dict | None:
 def cmd_build():
     rows = curation.films_list()
     films, people = [], {}
+    # passagem 1: coleta dados brutos e prêmios
+    raw = []
     for r in rows:
         if not r["tmdb_id"]:
             continue
@@ -106,7 +130,18 @@ def cmd_build():
                     ratings = omdb.ratings(imdb_id)
                 except HttpError:
                     pass
-        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]))
+        raw.append((r, m, awards, ratings))
+    # quem já ganhou Oscar de atuação (dentro do dataset), para as descrições às cegas
+    oscar_wins: dict[str, int] = {}
+    for _, _, awards, _ in raw:
+        for a in awards:
+            if a["kind"] == "person_win" and a["family"] == "oscar" and a["acting"] and a["person"]:
+                oscar_wins[a["person"]] = oscar_wins.get(a["person"], 0) + 1
+    # passagem 2: monta os registros
+    for r, m, awards, ratings in raw:
+        d = tmdb.director(m)
+        credits = _cached_person_credits(d["tmdb_id"]) if d else None
+        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins)
         rec["why"] = r["why"]
         if r["year"] and rec["year"] and abs(r["year"] - rec["year"]) > 1:
             _log(f"ATENÇÃO: tmdb_id {r['tmdb_id']} no CSV é '{r['title']}' ({r['year']}) mas o TMDB devolveu '{rec['title']['en']}' ({rec['year']}). Confira o id.")
@@ -120,8 +155,8 @@ def cmd_build():
     (DATA_DIR / "films.json").write_text(json.dumps(films, ensure_ascii=False, indent=1), encoding="utf-8")
     (DATA_DIR / "people.json").write_text(json.dumps(sorted(people.values(), key=lambda p: p["name"]), ensure_ascii=False, indent=1), encoding="utf-8")
     _log(f"data/films.json: {len(films)} filmes; data/people.json: {len(people)} diretores")
-    missing_blind = [f["title"]["en"] for f in films if not f["blind"]]
-    _log(f"sem descrição às cegas: {len(missing_blind)}")
+    auto = sum(1 for f in films if f.get("blind_auto"))
+    _log(f"descrições às cegas: {len(films) - auto} escritas à mão, {auto} geradas automaticamente")
 
 
 def cmd_status():
