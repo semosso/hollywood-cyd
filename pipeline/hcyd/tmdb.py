@@ -22,13 +22,16 @@ def search_movie(title: str, year: int | None = None) -> list[dict]:
     return data.get("results", [])
 
 
-def discover(year: int, page: int = 1, min_votes: int = 300) -> list[dict]:
-    """Filmes mais votados de um ano (EUA/inglês), sem animação (16) nem documentário (99)."""
+def discover(year: int, page: int = 1, min_votes: int = 300, bad: bool = False) -> list[dict]:
+    """Filmes mais votados de um ano (EUA/inglês), sem animação (16) nem documentário (99).
+    bad=True: só os mal avaliados (nota ≤ 5.5) com público suficiente para serem conhecidos: os fracassos famosos."""
     params, headers = _auth()
     params.update({
         "primary_release_year": year, "sort_by": "vote_count.desc", "with_original_language": "en",
-        "without_genres": "16,99", "vote_count.gte": min_votes, "include_adult": "false", "page": page, "language": "en-US",
+        "without_genres": "16,99", "vote_count.gte": min_votes if not bad else max(120, min_votes // 3), "include_adult": "false", "page": page, "language": "en-US",
     })
+    if bad:
+        params["vote_average.lte"] = 5.5
     data = get_json(f"{TMDB_BASE}/discover/movie", params, headers, namespace="tmdb_discover", ttl_days=30)
     return data.get("results", [])
 

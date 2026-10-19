@@ -2,7 +2,7 @@
   python -m hcyd resolve     # acha o tmdb_id dos filmes do CSV que não têm id (precisa de chave TMDB)
   python -m hcyd fetch       # baixa TMDB + OMDb + Wikidata para todos os filmes (cache em pipeline/cache)
   python -m hcyd build       # gera data/films.json e data/people.json a partir do cache + curadoria
-  python -m hcyd discover [N] # acrescenta a films.csv os N filmes mais votados de cada ano (1975–2025) que ainda não estão na lista
+  python -m hcyd discover [N] [--bad] # acrescenta a films.csv os N filmes mais votados de cada ano (1975–2025); --bad: só os mal avaliados (nota ≤ 5.5)
   python -m hcyd slim        # escreve game/src/data/films.json enxuto a partir de data/films.json
   python -m hcyd status      # mostra o que já está no cache e o que falta
 """
@@ -176,7 +176,7 @@ def cmd_build():
     _log(f"descrições às cegas: {len(films) - auto} escritas à mão, {auto} geradas automaticamente")
 
 
-def cmd_discover(per_year: int = 10):
+def cmd_discover(per_year: int = 10, bad: bool = False):
     rows = curation.films_list()
     have_ids = {r["tmdb_id"] for r in rows if r["tmdb_id"]}
     have_titles = {(r["title"].lower(), r["year"]) for r in rows}
@@ -187,7 +187,7 @@ def cmd_discover(per_year: int = 10):
             if picked >= per_year:
                 break
             try:
-                results = tmdb.discover(year, page)
+                results = tmdb.discover(year, page, bad=bad)
             except HttpError as e:
                 _log(f"discover {year} p{page}: {e}")
                 break
@@ -196,14 +196,14 @@ def cmd_discover(per_year: int = 10):
                     break
                 if m["id"] in have_ids or (m["title"].lower(), year) in have_titles:
                     continue
-                added.append({"tmdb_id": m["id"], "title": m["title"], "year": year, "why": "discover"})
+                added.append({"tmdb_id": m["id"], "title": m["title"], "year": year, "why": "discover-bad" if bad else "discover"})
                 have_ids.add(m["id"]); picked += 1
     src = CURATION_DIR / "films.csv"
     with open(src, "a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["tmdb_id", "title", "year", "why"])
         for a in added:
             w.writerow(a)
-    _log(f"discover: {len(added)} filmes acrescentados a films.csv ({per_year} por ano)")
+    _log(f"discover{'-bad' if bad else ''}: {len(added)} filmes acrescentados a films.csv ({per_year} por ano)")
 
 
 SLIM_DROP = {"producers", "imdb", "tmdb_vote", "why", "shoot_days", "imdb_id"}
@@ -234,7 +234,8 @@ def main(argv=None):
         print(__doc__)
         return 2
     if argv[0] == "discover":
-        cmd_discover(int(argv[1]) if len(argv) > 1 else 10)
+        n = int(argv[1]) if len(argv) > 1 and argv[1].isdigit() else 10
+        cmd_discover(n, bad="--bad" in argv)
     else:
         cmds[argv[0]]()
     return 0

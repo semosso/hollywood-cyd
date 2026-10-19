@@ -11,6 +11,10 @@ on:
         description: "Acrescentar à lista os N filmes mais votados de cada ano (0 = não)"
         type: string
         default: "0"
+      discover_bad:
+        description: "Acrescentar os N filmes MAL avaliados mais conhecidos de cada ano (0 = não)"
+        type: string
+        default: "0"
   schedule:
     - cron: "17 6 1 * *"   # dia 1 de cada mês, 06:17 UTC: atualiza bilheteria e notas
 
@@ -54,6 +58,10 @@ jobs:
         if: ${{ inputs.discover != '' && inputs.discover != '0' }}
         working-directory: pipeline
         run: python -m hcyd discover ${{ inputs.discover }}
+      - name: Descobrir fracassos no TMDB
+        if: ${{ inputs.discover_bad != '' && inputs.discover_bad != '0' }}
+        working-directory: pipeline
+        run: python -m hcyd discover ${{ inputs.discover_bad }} --bad
       - name: Resolver ids faltantes
         if: ${{ inputs.resolve != false }}
         working-directory: pipeline
