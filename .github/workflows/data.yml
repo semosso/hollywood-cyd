@@ -1,0 +1,68 @@
+name: Dados (TMDB + OMDb + Wikidata)
+
+on:
+  workflow_dispatch:
+    inputs:
+      resolve:
+        description: "Também rodar `resolve` para os filmes sem tmdb_id"
+        type: boolean
+        default: true
+  schedule:
+    - cron: "17 6 1 * *"   # dia 1 de cada mês, 06:17 UTC: atualiza bilheteria e notas
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  build-data:
+    runs-on: ubuntu-latest
+    env:
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+      OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+      HCYD_CACHE_DIR: ${{ github.workspace }}/pipeline/cache
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cache das respostas das APIs
+        uses: actions/cache@v4
+        with:
+          path: pipeline/cache
+          key: hcyd-cache-${{ hashFiles('pipeline/curation/films.csv') }}
+          restore-keys: hcyd-cache-
+      - name: Instalar dependências
+        run: pip install -r pipeline/requirements.txt
+      - name: Checar chaves
+        run: |
+          if [ -z "$TMDB_API_KEY" ] && [ -z "$TMDB_READ_TOKEN" ]; then echo "::error::Falta o segredo TMDB_API_KEY (ou TMDB_READ_TOKEN)"; exit 1; fi
+          if [ -z "$OMDB_API_KEY" ]; then echo "::warning::Sem OMDB_API_KEY: crítica (RT/Metacritic) ficará vazia"; fi
+      - name: Status
+        working-directory: pipeline
+        run: python -m hcyd status
+      - name: Resolver ids faltantes
+        if: ${{ inputs.resolve != false }}
+        working-directory: pipeline
+        run: python -m hcyd resolve
+      - name: Baixar dados
+        working-directory: pipeline
+        run: python -m hcyd fetch
+      - name: Gerar data/films.json
+        working-directory: pipeline
+        run: python -m hcyd build
+      - name: Testes do pipeline
+        working-directory: pipeline
+        run: pytest -q
+      - name: Commit dos dados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/films.json data/people.json pipeline/curation/films.resolved.csv || true
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -m "data: atualiza films.json e people.json via pipeline"
+          git push
