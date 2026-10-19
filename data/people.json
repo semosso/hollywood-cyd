@@ -1,5 +1,17 @@
 [
  {
+  "tmdb_id": 39104,
+  "name": "Abel Ferrara",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 13553,
+    "year": 1979,
+    "title": "The Driller Killer"
+   }
+  ]
+ },
+ {
   "tmdb_id": 16328,
   "name": "Adam Brooks",
   "gender": "m",
@@ -8,6 +20,18 @@
     "tmdb_id": 8390,
     "year": 2008,
     "title": "Definitely, Maybe"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 64743,
+  "name": "Adam Marcus",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10285,
+    "year": 1993,
+    "title": "Jason Goes to Hell: The Final Friday"
    }
   ]
  },
@@ -42,6 +66,16 @@
     "tmdb_id": 823464,
     "year": 2024,
     "title": "Godzilla x Kong: The New Empire"
+   },
+   {
+    "tmdb_id": 351211,
+    "year": 2016,
+    "title": "Blair Witch"
+   },
+   {
+    "tmdb_id": 351460,
+    "year": 2017,
+    "title": "Death Note"
    }
   ]
  },
@@ -92,6 +126,30 @@
   ]
  },
  {
+  "tmdb_id": 69801,
+  "name": "Alan Metter",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11546,
+    "year": 1994,
+    "title": "Police Academy: Mission to Moscow"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 14995,
+  "name": "Alan Myerson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11825,
+    "year": 1988,
+    "title": "Police Academy 5: Assignment Miami Beach"
+   }
+  ]
+ },
+ {
   "tmdb_id": 9168,
   "name": "Alan Parker",
   "gender": "m",
@@ -109,6 +167,18 @@
   ]
  },
  {
+  "tmdb_id": 55948,
+  "name": "Alan Smithee",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8766,
+    "year": 1996,
+    "title": "Hellraiser: Bloodline"
+   }
+  ]
+ },
+ {
   "tmdb_id": 47005,
   "name": "Alan Taylor",
   "gender": "m",
@@ -117,6 +187,18 @@
     "tmdb_id": 76338,
     "year": 2013,
     "title": "Thor: The Dark World"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 63937,
+  "name": "Albert Pyun",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 13995,
+    "year": 1990,
+    "title": "Captain America"
    }
   ]
  },
@@ -214,6 +296,23 @@
     "tmdb_id": 9675,
     "year": 2004,
     "title": "Sideways"
+   },
+   {
+    "tmdb_id": 301337,
+    "year": 2017,
+    "title": "Downsizing"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 59291,
+  "name": "Alexandre Aja",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 43593,
+    "year": 2010,
+    "title": "Piranha 3D"
    }
   ]
  },
@@ -241,6 +340,18 @@
     "tmdb_id": 9693,
     "year": 2006,
     "title": "Children of Men"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 105984,
+  "name": "Alvin Rakoff",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 31703,
+    "year": 1980,
+    "title": "Death Ship"
    }
   ]
  },
@@ -351,6 +462,30 @@
   ]
  },
  {
+  "tmdb_id": 10765,
+  "name": "Andrzej Bartkowiak",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8814,
+    "year": 2005,
+    "title": "Doom"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3115,
+  "name": "Andrzej Sekula",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 437,
+    "year": 2002,
+    "title": "Cube 2: Hypercube"
+   }
+  ]
+ },
+ {
   "tmdb_id": 32082,
   "name": "Andrzej Żuławski",
   "gender": "m",
@@ -359,6 +494,18 @@
     "tmdb_id": 21484,
     "year": 1981,
     "title": "Possession"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 58375,
+  "name": "Andy Fickman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 256961,
+    "year": 2015,
+    "title": "Paul Blart: Mall Cop 2"
    }
   ]
  },
@@ -436,6 +583,18 @@
   ]
  },
  {
+  "tmdb_id": 58164,
+  "name": "Annabel Jankel",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 9607,
+    "year": 1993,
+    "title": "Super Mario Bros."
+   }
+  ]
+ },
+ {
   "tmdb_id": 29214,
   "name": "Anne Fletcher",
   "gender": "f",
@@ -472,6 +631,18 @@
   ]
  },
  {
+  "tmdb_id": 929825,
+  "name": "Ava DuVernay",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 407451,
+    "year": 2018,
+    "title": "A Wrinkle in Time"
+   }
+  ]
+ },
+ {
   "tmdb_id": 92784,
   "name": "Barry Jenkins",
   "gender": "m",
@@ -502,6 +673,16 @@
     "tmdb_id": 819,
     "year": 1996,
     "title": "Sleepers"
+   },
+   {
+    "tmdb_id": 11597,
+    "year": 1992,
+    "title": "Toys"
+   },
+   {
+    "tmdb_id": 10710,
+    "year": 2004,
+    "title": "Envy"
    }
   ]
  },
@@ -582,6 +763,30 @@
   ]
  },
  {
+  "tmdb_id": 170820,
+  "name": "Ben Falcone",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 615678,
+    "year": 2021,
+    "title": "Thunder Force"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7399,
+  "name": "Ben Stiller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 329833,
+    "year": 2016,
+    "title": "Zoolander 2"
+   }
+  ]
+ },
+ {
   "tmdb_id": 5345,
   "name": "Bennett Miller",
   "gender": "m",
@@ -611,6 +816,30 @@
   ]
  },
  {
+  "tmdb_id": 101225,
+  "name": "Bert I. Gordon",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 42218,
+    "year": 1977,
+    "title": "Empire of the Ants"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 31024,
+  "name": "Betty Thomas",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 8427,
+    "year": 2002,
+    "title": "I Spy"
+   }
+  ]
+ },
+ {
   "tmdb_id": 15557,
   "name": "Bill Condon",
   "gender": "m",
@@ -624,6 +853,11 @@
     "tmdb_id": 321612,
     "year": 2017,
     "title": "Beauty and the Beast"
+   },
+   {
+    "tmdb_id": 10824,
+    "year": 1995,
+    "title": "Candyman: Farewell to the Flesh"
    }
   ]
  },
@@ -677,6 +911,16 @@
     "tmdb_id": 11843,
     "year": 1975,
     "title": "The Return of the Pink Panther"
+   },
+   {
+    "tmdb_id": 9699,
+    "year": 1982,
+    "title": "Trail of the Pink Panther"
+   },
+   {
+    "tmdb_id": 36576,
+    "year": 1983,
+    "title": "Curse of the Pink Panther"
    }
   ]
  },
@@ -689,6 +933,35 @@
     "tmdb_id": 10588,
     "year": 2003,
     "title": "The Cat in the Hat"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 12698,
+  "name": "Bob Clark",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16551,
+    "year": 1984,
+    "title": "Rhinestone"
+   },
+   {
+    "tmdb_id": 22345,
+    "year": 1999,
+    "title": "Baby Geniuses"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 69667,
+  "name": "Bob Logan",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 11510,
+    "year": 1990,
+    "title": "Repossessed"
    }
   ]
  },
@@ -761,6 +1034,18 @@
   ]
  },
  {
+  "tmdb_id": 999812,
+  "name": "Bradley Parker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 93856,
+    "year": 2012,
+    "title": "Chernobyl Diaries"
+   }
+  ]
+ },
+ {
   "tmdb_id": 55493,
   "name": "Brady Corbet",
   "gender": "m",
@@ -769,6 +1054,18 @@
     "tmdb_id": 549509,
     "year": 2024,
     "title": "The Brutalist"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57090,
+  "name": "Brett Leonard",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9271,
+    "year": 1995,
+    "title": "Virtuosity"
    }
   ]
  },
@@ -837,6 +1134,52 @@
   ]
  },
  {
+  "tmdb_id": 13581,
+  "name": "Brian Levant",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 888,
+    "year": 1994,
+    "title": "The Flintstones"
+   },
+   {
+    "tmdb_id": 889,
+    "year": 2000,
+    "title": "The Flintstones in Viva Rock Vegas"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 53177,
+  "name": "Brian Robbins",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11260,
+    "year": 2008,
+    "title": "Meet Dave"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 20192,
+  "name": "Brian Taylor",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 71676,
+    "year": 2011,
+    "title": "Ghost Rider: Spirit of Vengeance"
+   },
+   {
+    "tmdb_id": 1087822,
+    "year": 2024,
+    "title": "Hellboy: The Crooked Man"
+   }
+  ]
+ },
+ {
   "tmdb_id": 18320,
   "name": "Bronwen Hughes",
   "gender": "f",
@@ -845,6 +1188,18 @@
     "tmdb_id": 1641,
     "year": 1999,
     "title": "Forces of Nature"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 102334,
+  "name": "Bruce D. Clark",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 28893,
+    "year": 1981,
+    "title": "Galaxy of Terror"
    }
   ]
  },
@@ -882,6 +1237,18 @@
     "tmdb_id": 246655,
     "year": 2016,
     "title": "X-Men: Apocalypse"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1389077,
+  "name": "Bryce McGuire",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1072342,
+    "year": 2024,
+    "title": "Night Swim"
    }
   ]
  },
@@ -1092,6 +1459,18 @@
   ]
  },
  {
+  "tmdb_id": 10855,
+  "name": "Chris Gorak",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 71469,
+    "year": 2011,
+    "title": "The Darkest Hour"
+   }
+  ]
+ },
+ {
   "tmdb_id": 3288,
   "name": "Chris Weitz",
   "gender": "m",
@@ -1100,6 +1479,42 @@
     "tmdb_id": 18239,
     "year": 2009,
     "title": "The Twilight Saga: New Moon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 56828,
+  "name": "Christopher Cain",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11231,
+    "year": 1994,
+    "title": "The Next Karate Kid"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54248,
+  "name": "Christopher Landon",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 227348,
+    "year": 2014,
+    "title": "Paranormal Activity: The Marked Ones"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57436,
+  "name": "Christopher Leitch",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 15582,
+    "year": 1987,
+    "title": "Teen Wolf Too"
    }
   ]
  },
@@ -1202,6 +1617,18 @@
   ]
  },
  {
+  "tmdb_id": 45577,
+  "name": "Claudio Fragasso",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 26914,
+    "year": 1990,
+    "title": "Troll 2"
+   }
+  ]
+ },
+ {
   "tmdb_id": 190,
   "name": "Clint Eastwood",
   "gender": "m",
@@ -1240,6 +1667,11 @@
     "tmdb_id": 13223,
     "year": 2008,
     "title": "Gran Torino"
+   },
+   {
+    "tmdb_id": 453201,
+    "year": 2018,
+    "title": "The 15:17 to Paris"
    }
   ]
  },
@@ -1264,6 +1696,23 @@
     "tmdb_id": 19494,
     "year": 1980,
     "title": "Nine to Five"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6037,
+  "name": "Colin Strause",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 440,
+    "year": 2007,
+    "title": "Aliens vs Predator: Requiem"
+   },
+   {
+    "tmdb_id": 42684,
+    "year": 2010,
+    "title": "Skyline"
    }
   ]
  },
@@ -1297,6 +1746,18 @@
   ]
  },
  {
+  "tmdb_id": 61921,
+  "name": "Courtney Solomon",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11849,
+    "year": 2000,
+    "title": "Dungeons & Dragons"
+   }
+  ]
+ },
+ {
   "tmdb_id": 50767,
   "name": "Craig Gillespie",
   "gender": "m",
@@ -1305,6 +1766,18 @@
     "tmdb_id": 337404,
     "year": 2021,
     "title": "Cruella"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 35796,
+  "name": "Craig Mazin",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11918,
+    "year": 2008,
+    "title": "Superhero Movie"
    }
   ]
  },
@@ -1348,6 +1821,18 @@
   ]
  },
  {
+  "tmdb_id": 707,
+  "name": "Dan Aykroyd",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11933,
+    "year": 1991,
+    "title": "Nothing but Trouble"
+   }
+  ]
+ },
+ {
   "tmdb_id": 15892,
   "name": "Dan Fogelman",
   "gender": "m",
@@ -1368,6 +1853,23 @@
     "tmdb_id": 242582,
     "year": 2014,
     "title": "Nightcrawler"
+   },
+   {
+    "tmdb_id": 463684,
+    "year": 2019,
+    "title": "Velvet Buzzsaw"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6733,
+  "name": "Dan Mazer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 654974,
+    "year": 2021,
+    "title": "Home Sweet Home Alone"
    }
   ]
  },
@@ -1464,6 +1966,18 @@
   ]
  },
  {
+  "tmdb_id": 33279,
+  "name": "Danny Cannon",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 3600,
+    "year": 1998,
+    "title": "I Still Know What You Did Last Summer"
+   }
+  ]
+ },
+ {
   "tmdb_id": 518,
   "name": "Danny DeVito",
   "gender": "m",
@@ -1472,6 +1986,18 @@
     "tmdb_id": 10830,
     "year": 1996,
     "title": "Matilda"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 58822,
+  "name": "Danny Steinmann",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9731,
+    "year": 1985,
+    "title": "Friday the 13th: A New Beginning"
    }
   ]
  },
@@ -1528,6 +2054,18 @@
     "tmdb_id": 866398,
     "year": 2024,
     "title": "The Beekeeper"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1981891,
+  "name": "David Blue Garcia",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 632727,
+    "year": 2022,
+    "title": "Texas Chainsaw Massacre"
    }
   ]
  },
@@ -1669,6 +2207,18 @@
   ]
  },
  {
+  "tmdb_id": 4759,
+  "name": "David Kellogg",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 332,
+    "year": 1999,
+    "title": "Inspector Gadget"
+   }
+  ]
+ },
+ {
   "tmdb_id": 40684,
   "name": "David Leitch",
   "gender": "m",
@@ -1687,6 +2237,30 @@
     "tmdb_id": 746036,
     "year": 2024,
     "title": "The Fall Guy"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 40187,
+  "name": "David Lowell Rich",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 29723,
+    "year": 1979,
+    "title": "The Concorde... Airport '79"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 592493,
+  "name": "David Lowery",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 420808,
+    "year": 2023,
+    "title": "Peter Pan & Wendy"
    }
   ]
  },
@@ -1723,6 +2297,18 @@
   ]
  },
  {
+  "tmdb_id": 104025,
+  "name": "David M. Rosenthal",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 475210,
+    "year": 2018,
+    "title": "How It Ends"
+   }
+  ]
+ },
+ {
   "tmdb_id": 3055,
   "name": "David Mackenzie",
   "gender": "m",
@@ -1731,6 +2317,18 @@
     "tmdb_id": 338766,
     "year": 2016,
     "title": "Hell or High Water"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 48980,
+  "name": "David McNally",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10628,
+    "year": 2003,
+    "title": "Kangaroo Jack"
    }
   ]
  },
@@ -1757,6 +2355,30 @@
   ]
  },
  {
+  "tmdb_id": 4755,
+  "name": "David R. Ellis",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 326,
+    "year": 2006,
+    "title": "Snakes on a Plane"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 12920,
+  "name": "David S. Ward",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10804,
+    "year": 1991,
+    "title": "King Ralph"
+   }
+  ]
+ },
+ {
   "tmdb_id": 27571,
   "name": "David Slade",
   "gender": "m",
@@ -1765,6 +2387,18 @@
     "tmdb_id": 24021,
     "year": 2010,
     "title": "The Twilight Saga: Eclipse"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 22214,
+  "name": "David Wain",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 50647,
+    "year": 2012,
+    "title": "Wanderlust"
    }
   ]
  },
@@ -1819,6 +2453,11 @@
     "tmdb_id": 37137,
     "year": 1991,
     "title": "The Naked Gun 2½: The Smell of Fear"
+   },
+   {
+    "tmdb_id": 4257,
+    "year": 2006,
+    "title": "Scary Movie 4"
    }
   ]
  },
@@ -1831,6 +2470,18 @@
     "tmdb_id": 274855,
     "year": 2017,
     "title": "Geostorm"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 112921,
+  "name": "Deborah Brock",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 27764,
+    "year": 1987,
+    "title": "Slumber Party Massacre II"
    }
   ]
  },
@@ -1913,6 +2564,30 @@
   ]
  },
  {
+  "tmdb_id": 33880,
+  "name": "Dick Lowry",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 15120,
+    "year": 1983,
+    "title": "Smokey and the Bandit Part 3"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 41355,
+  "name": "Dimitri Logothetis",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 590706,
+    "year": 2020,
+    "title": "Jiu Jitsu"
+   }
+  ]
+ },
+ {
   "tmdb_id": 58498,
   "name": "Dominic Sena",
   "gender": "m",
@@ -1921,6 +2596,18 @@
     "tmdb_id": 9679,
     "year": 2000,
     "title": "Gone in Sixty Seconds"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 32813,
+  "name": "Dominique Othenin-Girard",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11361,
+    "year": 1989,
+    "title": "Halloween 5: The Revenge of Michael Myers"
    }
   ]
  },
@@ -2034,6 +2721,18 @@
   ]
  },
  {
+  "tmdb_id": 2613318,
+  "name": "Edward Drake",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 763164,
+    "year": 2021,
+    "title": "Apex"
+   }
+  ]
+ },
+ {
   "tmdb_id": 9181,
   "name": "Edward Zwick",
   "gender": "m",
@@ -2076,6 +2775,11 @@
     "tmdb_id": 365177,
     "year": 2024,
     "title": "Borderlands"
+   },
+   {
+    "tmdb_id": 263472,
+    "year": 2015,
+    "title": "Knock Knock"
    }
   ]
  },
@@ -2126,6 +2830,18 @@
   ]
  },
  {
+  "tmdb_id": 57665,
+  "name": "Eric Karson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 18214,
+    "year": 1988,
+    "title": "Black Eagle"
+   }
+  ]
+ },
+ {
   "tmdb_id": 52803,
   "name": "Etan Cohen",
   "gender": "m",
@@ -2146,6 +2862,23 @@
     "tmdb_id": 44264,
     "year": 2010,
     "title": "True Grit"
+   },
+   {
+    "tmdb_id": 957304,
+    "year": 2024,
+    "title": "Drive-Away Dolls"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 94403,
+  "name": "F. Javier Gutiérrez",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 14564,
+    "year": 2017,
+    "title": "Rings"
    }
   ]
  },
@@ -2250,6 +2983,18 @@
   ]
  },
  {
+  "tmdb_id": 57370,
+  "name": "Frank Coraci",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 38317,
+    "year": 2011,
+    "title": "Zookeeper"
+   }
+  ]
+ },
+ {
   "tmdb_id": 4027,
   "name": "Frank Darabont",
   "gender": "m",
@@ -2263,6 +3008,18 @@
     "tmdb_id": 497,
     "year": 1999,
     "title": "The Green Mile"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 44056,
+  "name": "Fred Dekker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 5550,
+    "year": 1993,
+    "title": "RoboCop 3"
    }
   ]
  },
@@ -2345,6 +3102,18 @@
   ]
  },
  {
+  "tmdb_id": 47893,
+  "name": "Gary Nelson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9710,
+    "year": 1986,
+    "title": "Allan Quatermain and the Lost City of Gold"
+   }
+  ]
+ },
+ {
   "tmdb_id": 23964,
   "name": "Gary Ross",
   "gender": "m",
@@ -2353,6 +3122,30 @@
     "tmdb_id": 70160,
     "year": 2012,
     "title": "The Hunger Games"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 33094,
+  "name": "Gary Sherman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10306,
+    "year": 1988,
+    "title": "Poltergeist III"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 20779,
+  "name": "Gary Sinyor",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2020,
+    "year": 1999,
+    "title": "The Bachelor"
    }
   ]
  },
@@ -2387,6 +3180,18 @@
     "tmdb_id": 2080,
     "year": 2009,
     "title": "X-Men Origins: Wolverine"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3460,
+  "name": "Gene Wilder",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 24103,
+    "year": 1986,
+    "title": "Haunted Honeymoon"
    }
   ]
  },
@@ -2518,6 +3323,18 @@
     "tmdb_id": 4951,
     "year": 1999,
     "title": "10 Things I Hate About You"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57193,
+  "name": "Gil Kenan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 243688,
+    "year": 2015,
+    "title": "Poltergeist"
    }
   ]
  },
@@ -2654,6 +3471,11 @@
     "tmdb_id": 10139,
     "year": 2008,
     "title": "Milk"
+   },
+   {
+    "tmdb_id": 11252,
+    "year": 1998,
+    "title": "Psycho"
    }
   ]
  },
@@ -2730,6 +3552,11 @@
     "tmdb_id": 11006,
     "year": 1977,
     "title": "Smokey and the Bandit"
+   },
+   {
+    "tmdb_id": 11950,
+    "year": 1984,
+    "title": "Cannonball Run II"
    }
   ]
  },
@@ -2758,6 +3585,18 @@
   ]
  },
  {
+  "tmdb_id": 51918,
+  "name": "Harmony Korine",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 122081,
+    "year": 2013,
+    "title": "Spring Breakers"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1524,
   "name": "Harold Ramis",
   "gender": "m",
@@ -2771,6 +3610,11 @@
     "tmdb_id": 137,
     "year": 1993,
     "title": "Groundhog Day"
+   },
+   {
+    "tmdb_id": 17610,
+    "year": 2009,
+    "title": "Year One"
    }
   ]
  },
@@ -2783,6 +3627,42 @@
     "tmdb_id": 497582,
     "year": 2020,
     "title": "Enola Holmes"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1354171,
+  "name": "Henry Hobson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 287424,
+    "year": 2015,
+    "title": "Maggie"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 142272,
+  "name": "Henry Joost",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 82990,
+    "year": 2012,
+    "title": "Paranormal Activity 4"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 22423,
+  "name": "Herb Freed",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 27420,
+    "year": 1981,
+    "title": "Graduation Day"
    }
   ]
  },
@@ -2827,6 +3707,18 @@
     "tmdb_id": 4032,
     "year": 1991,
     "title": "My Girl"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 84851,
+  "name": "Hoyt Yeatman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 19585,
+    "year": 2009,
+    "title": "G-Force"
    }
   ]
  },
@@ -2884,6 +3776,23 @@
   ]
  },
  {
+  "tmdb_id": 7506,
+  "name": "Irwin Allen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 46878,
+    "year": 1978,
+    "title": "The Swarm"
+   },
+   {
+    "tmdb_id": 31638,
+    "year": 1979,
+    "title": "Beyond the Poseidon Adventure"
+   }
+  ]
+ },
+ {
   "tmdb_id": 8858,
   "name": "Ivan Reitman",
   "gender": "m",
@@ -2907,6 +3816,11 @@
     "tmdb_id": 2978,
     "year": 1989,
     "title": "Ghostbusters II"
+   },
+   {
+    "tmdb_id": 6280,
+    "year": 1994,
+    "title": "Junior"
    }
   ]
  },
@@ -2919,6 +3833,23 @@
     "tmdb_id": 351286,
     "year": 2018,
     "title": "Jurassic World: Fallen Kingdom"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18669,
+  "name": "J. Lee Thompson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9838,
+    "year": 1985,
+    "title": "King Solomon's Mines"
+   },
+   {
+    "tmdb_id": 12715,
+    "year": 1986,
+    "title": "Firewalker"
    }
   ]
  },
@@ -2969,6 +3900,18 @@
   ]
  },
  {
+  "tmdb_id": 30422,
+  "name": "Jack Smight",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 25763,
+    "year": 1977,
+    "title": "Damnation Alley"
+   }
+  ]
+ },
+ {
   "tmdb_id": 51851,
   "name": "Jake Kasdan",
   "gender": "m",
@@ -2977,6 +3920,11 @@
     "tmdb_id": 353486,
     "year": 2017,
     "title": "Jumanji: Welcome to the Jungle"
+   },
+   {
+    "tmdb_id": 225886,
+    "year": 2014,
+    "title": "Sex Tape"
    }
   ]
  },
@@ -3041,6 +3989,11 @@
     "tmdb_id": 83533,
     "year": 2025,
     "title": "Avatar: Fire and Ash"
+   },
+   {
+    "tmdb_id": 31646,
+    "year": 1982,
+    "title": "Piranha II: The Spawning"
    }
   ]
  },
@@ -3097,6 +4050,18 @@
     "tmdb_id": 1061474,
     "year": 2025,
     "title": "Superman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 69579,
+  "name": "James Isaac",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11470,
+    "year": 2001,
+    "title": "Jason X"
    }
   ]
  },
@@ -3177,6 +4142,18 @@
   ]
  },
  {
+  "tmdb_id": 86194,
+  "name": "James Sbardellati",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 15895,
+    "year": 1983,
+    "title": "Deathstalker"
+   }
+  ]
+ },
+ {
   "tmdb_id": 2127,
   "name": "James Wan",
   "gender": "m",
@@ -3207,6 +4184,11 @@
     "tmdb_id": 9532,
     "year": 2000,
     "title": "Final Destination"
+   },
+   {
+    "tmdb_id": 14164,
+    "year": 2009,
+    "title": "Dragonball Evolution"
    }
   ]
  },
@@ -3258,6 +4240,23 @@
     "tmdb_id": 713,
     "year": 1993,
     "title": "The Piano"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 35694,
+  "name": "Jason Friedberg",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9760,
+    "year": 2007,
+    "title": "Epic Movie"
+   },
+   {
+    "tmdb_id": 7278,
+    "year": 2008,
+    "title": "Meet the Spartans"
    }
   ]
  },
@@ -3352,6 +4351,23 @@
     "tmdb_id": 579,
     "year": 1978,
     "title": "Jaws 2"
+   },
+   {
+    "tmdb_id": 9651,
+    "year": 1984,
+    "title": "Supergirl"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 31621,
+  "name": "Jeff Burr",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 25018,
+    "year": 1990,
+    "title": "Leatherface: The Texas Chainsaw Massacre III"
    }
   ]
  },
@@ -3364,6 +4380,18 @@
     "tmdb_id": 454626,
     "year": 2020,
     "title": "Sonic the Hedgehog"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57239,
+  "name": "Jeff Lieberman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 25241,
+    "year": 1976,
+    "title": "Squirm"
    }
   ]
  },
@@ -3381,6 +4409,23 @@
     "tmdb_id": 5825,
     "year": 1989,
     "title": "National Lampoon's Christmas Vacation"
+   },
+   {
+    "tmdb_id": 9320,
+    "year": 1998,
+    "title": "The Avengers"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16377,
+  "name": "Jerry Seinfeld",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 844185,
+    "year": 2024,
+    "title": "Unfrosted"
    }
   ]
  },
@@ -3431,6 +4476,18 @@
   ]
  },
  {
+  "tmdb_id": 4429,
+  "name": "Jim Jarmusch",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 535581,
+    "year": 2019,
+    "title": "The Dead Don't Die"
+   }
+  ]
+ },
+ {
   "tmdb_id": 13484,
   "name": "Jim Sharman",
   "gender": "m",
@@ -3439,6 +4496,42 @@
     "tmdb_id": 36685,
     "year": 1975,
     "title": "The Rocky Horror Picture Show"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 63920,
+  "name": "Jim Wheat",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10372,
+    "year": 1985,
+    "title": "Ewoks: The Battle for Endor"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 113921,
+  "name": "Jimmy Huston",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 40469,
+    "year": 1981,
+    "title": "Final Exam"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 67268,
+  "name": "Jimmy T. Murakami",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 14460,
+    "year": 1980,
+    "title": "Battle Beyond the Stars"
    }
   ]
  },
@@ -3455,6 +4548,42 @@
   ]
  },
  {
+  "tmdb_id": 8558,
+  "name": "Joe Alves",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 17692,
+    "year": 1983,
+    "title": "Jaws 3-D"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 69237,
+  "name": "Joe Berlinger",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11531,
+    "year": 2000,
+    "title": "Book of Shadows: Blair Witch 2"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 55116,
+  "name": "Joe Chappelle",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10987,
+    "year": 1995,
+    "title": "Halloween: The Curse of Michael Myers"
+   }
+  ]
+ },
+ {
   "tmdb_id": 4600,
   "name": "Joe Dante",
   "gender": "m",
@@ -3463,6 +4592,18 @@
     "tmdb_id": 927,
     "year": 1984,
     "title": "Gremlins"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 311395,
+  "name": "Joe Giannone",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 47957,
+    "year": 1981,
+    "title": "Madman"
    }
   ]
  },
@@ -3490,6 +4631,18 @@
     "tmdb_id": 1771,
     "year": 2011,
     "title": "Captain America: The First Avenger"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54597,
+  "name": "Joe Nussbaum",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8275,
+    "year": 2006,
+    "title": "American Pie Presents: The Naked Mile"
    }
   ]
  },
@@ -3560,6 +4713,18 @@
   ]
  },
  {
+  "tmdb_id": 239180,
+  "name": "Joel M. Reed",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 34023,
+    "year": 1976,
+    "title": "Blood Sucking Freaks"
+   }
+  ]
+ },
+ {
   "tmdb_id": 5572,
   "name": "Joel Schumacher",
   "gender": "m",
@@ -3592,6 +4757,18 @@
   ]
  },
  {
+  "tmdb_id": 167407,
+  "name": "John Alan Schwartz",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12237,
+    "year": 1978,
+    "title": "Faces of Death"
+   }
+  ]
+ },
+ {
   "tmdb_id": 12840,
   "name": "John Badham",
   "gender": "m",
@@ -3617,6 +4794,35 @@
     "tmdb_id": 11586,
     "year": 1977,
     "title": "Exorcist II: The Heretic"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 58338,
+  "name": "John Bruno",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9423,
+    "year": 1999,
+    "title": "Virus"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 64722,
+  "name": "John Carl Buechler",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 33061,
+    "year": 1986,
+    "title": "Troll"
+   },
+   {
+    "tmdb_id": 10281,
+    "year": 1988,
+    "title": "Friday the 13th Part VII - The New Blood"
    }
   ]
  },
@@ -3664,6 +4870,11 @@
     "tmdb_id": 8337,
     "year": 1988,
     "title": "They Live"
+   },
+   {
+    "tmdb_id": 10016,
+    "year": 2001,
+    "title": "Ghosts of Mars"
    }
   ]
  },
@@ -3680,6 +4891,18 @@
   ]
  },
  {
+  "tmdb_id": 22353,
+  "name": "John De Bello",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2182,
+    "year": 1978,
+    "title": "Attack of the Killer Tomatoes!"
+   }
+  ]
+ },
+ {
   "tmdb_id": 52935,
   "name": "John Francis Daley",
   "gender": "m",
@@ -3688,6 +4911,23 @@
     "tmdb_id": 493529,
     "year": 2023,
     "title": "Dungeons & Dragons: Honor Among Thieves"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13776,
+  "name": "John Frankenheimer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 31915,
+    "year": 1979,
+    "title": "Prophecy"
+   },
+   {
+    "tmdb_id": 9306,
+    "year": 1996,
+    "title": "The Island of Dr. Moreau"
    }
   ]
  },
@@ -3759,6 +4999,23 @@
     "tmdb_id": 4192,
     "year": 1978,
     "title": "Death on the Nile"
+   },
+   {
+    "tmdb_id": 31947,
+    "year": 1986,
+    "title": "King Kong Lives"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 62797,
+  "name": "John Gulager",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 71668,
+    "year": 2012,
+    "title": "Piranha 3DD"
    }
   ]
  },
@@ -3909,6 +5166,23 @@
   ]
  },
  {
+  "tmdb_id": 12028,
+  "name": "John Moore",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 13051,
+    "year": 2008,
+    "title": "Max Payne"
+   },
+   {
+    "tmdb_id": 47964,
+    "year": 2013,
+    "title": "A Good Day to Die Hard"
+   }
+  ]
+ },
+ {
   "tmdb_id": 26095,
   "name": "John Patrick Shanley",
   "gender": "m",
@@ -3917,6 +5191,18 @@
     "tmdb_id": 2565,
     "year": 1990,
     "title": "Joe Versus the Volcano"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 26714,
+  "name": "John R. Leonetti",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9823,
+    "year": 1997,
+    "title": "Mortal Kombat: Annihilation"
    }
   ]
  },
@@ -3946,6 +5232,18 @@
     "tmdb_id": 584,
     "year": 2003,
     "title": "2 Fast 2 Furious"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 146836,
+  "name": "John Suits",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 651571,
+    "year": 2020,
+    "title": "Breach"
    }
   ]
  },
@@ -4074,6 +5372,18 @@
   ]
  },
  {
+  "tmdb_id": 1539926,
+  "name": "Jonathan Helpert",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 433249,
+    "year": 2019,
+    "title": "IO"
+   }
+  ]
+ },
+ {
   "tmdb_id": 42171,
   "name": "Jonathan Kaplan",
   "gender": "m",
@@ -4110,6 +5420,18 @@
   ]
  },
  {
+  "tmdb_id": 66823,
+  "name": "Joseph Kahn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10718,
+    "year": 2004,
+    "title": "Torque"
+   }
+  ]
+ },
+ {
   "tmdb_id": 86270,
   "name": "Joseph Kosinski",
   "gender": "m",
@@ -4132,6 +5454,18 @@
   ]
  },
  {
+  "tmdb_id": 15663,
+  "name": "Joseph Sargent",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 580,
+    "year": 1987,
+    "title": "Jaws: The Revenge"
+   }
+  ]
+ },
+ {
   "tmdb_id": 934803,
   "name": "Josh Trank",
   "gender": "m",
@@ -4140,6 +5474,18 @@
     "tmdb_id": 166424,
     "year": 2015,
     "title": "Fantastic Four"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 93151,
+  "name": "Joshua John Miller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 646683,
+    "year": 2024,
+    "title": "The Exorcism"
    }
   ]
  },
@@ -4161,6 +5507,18 @@
   ]
  },
  {
+  "tmdb_id": 41039,
+  "name": "Judd Apatow",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 765119,
+    "year": 2022,
+    "title": "The Bubble"
+   }
+  ]
+ },
+ {
   "tmdb_id": 114597,
   "name": "Julie Anne Robinson",
   "gender": "f",
@@ -4169,6 +5527,18 @@
     "tmdb_id": 54054,
     "year": 2012,
     "title": "One for the Money"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 549310,
+  "name": "Justin Kurzel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 121856,
+    "year": 2016,
+    "title": "Assassin's Creed"
    }
   ]
  },
@@ -4219,6 +5589,18 @@
   ]
  },
  {
+  "tmdb_id": 102634,
+  "name": "Katt Shea",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 9264,
+    "year": 1992,
+    "title": "Poison Ivy"
+   }
+  ]
+ },
+ {
   "tmdb_id": 35689,
   "name": "Keenen Ivory Wayans",
   "gender": "m",
@@ -4231,6 +5613,18 @@
   ]
  },
  {
+  "tmdb_id": 2381662,
+  "name": "Keith Thomas",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 532710,
+    "year": 2022,
+    "title": "Firestarter"
+   }
+  ]
+ },
+ {
   "tmdb_id": 940376,
   "name": "Kelly Marcel",
   "gender": "f",
@@ -4239,6 +5633,18 @@
     "tmdb_id": 912649,
     "year": 2024,
     "title": "Venom: The Last Dance"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 92851,
+  "name": "Ken Wiederhorn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 26680,
+    "year": 1977,
+    "title": "Shock Waves"
    }
   ]
  },
@@ -4275,6 +5681,18 @@
     "tmdb_id": 10439,
     "year": 1993,
     "title": "Hocus Pocus"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 95329,
+  "name": "Kevin Connor",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 26398,
+    "year": 1976,
+    "title": "At the Earth's Core"
    }
   ]
  },
@@ -4349,6 +5767,18 @@
   ]
  },
  {
+  "tmdb_id": 27797,
+  "name": "Kim Henkel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16780,
+    "year": 1995,
+    "title": "The Return of the Texas Chainsaw Massacre"
+   }
+  ]
+ },
+ {
   "tmdb_id": 2836,
   "name": "Kimberly Peirce",
   "gender": "nb",
@@ -4357,6 +5787,42 @@
     "tmdb_id": 226,
     "year": 1999,
     "title": "Boys Don't Cry"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 73962,
+  "name": "Kristine Peterson",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 12702,
+    "year": 1991,
+    "title": "Critters 3"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13927,
+  "name": "Kurt Wimmer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9920,
+    "year": 2006,
+    "title": "Ultraviolet"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3607164,
+  "name": "Kyle Edward Ball",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 994143,
+    "year": 2023,
+    "title": "Skinamarink"
    }
   ]
  },
@@ -4417,6 +5883,23 @@
   ]
  },
  {
+  "tmdb_id": 64191,
+  "name": "Lawrence Guterman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10992,
+    "year": 2001,
+    "title": "Cats & Dogs"
+   },
+   {
+    "tmdb_id": 10214,
+    "year": 2005,
+    "title": "Son of the Mask"
+   }
+  ]
+ },
+ {
   "tmdb_id": 8844,
   "name": "Lawrence Kasdan",
   "gender": "m",
@@ -4425,6 +5908,18 @@
     "tmdb_id": 397,
     "year": 1995,
     "title": "French Kiss"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 213404,
+  "name": "Lee Harry",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 50719,
+    "year": 1987,
+    "title": "Silent Night, Deadly Night Part 2"
    }
   ]
  },
@@ -4453,6 +5948,18 @@
   ]
  },
  {
+  "tmdb_id": 7256,
+  "name": "Lee Tamahori",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11679,
+    "year": 2005,
+    "title": "xXx: State of the Union"
+   }
+  ]
+ },
+ {
   "tmdb_id": 2128,
   "name": "Leigh Whannell",
   "gender": "m",
@@ -4477,6 +5984,18 @@
   ]
  },
  {
+  "tmdb_id": 217587,
+  "name": "Leslye Headland",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 84174,
+    "year": 2012,
+    "title": "Bachelorette"
+   }
+  ]
+ },
+ {
   "tmdb_id": 10076,
   "name": "Lewis Gilbert",
   "gender": "m",
@@ -4490,6 +6009,18 @@
     "tmdb_id": 698,
     "year": 1979,
     "title": "Moonraker"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 103318,
+  "name": "Lewis Jackson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 27230,
+    "year": 1980,
+    "title": "Christmas Evil"
    }
   ]
  },
@@ -4528,6 +6059,18 @@
   ]
  },
  {
+  "tmdb_id": 29383,
+  "name": "Luca Bercovici",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 18498,
+    "year": 1984,
+    "title": "Ghoulies"
+   }
+  ]
+ },
+ {
   "tmdb_id": 78160,
   "name": "Luca Guadagnino",
   "gender": "m",
@@ -4541,6 +6084,18 @@
     "tmdb_id": 937287,
     "year": 2024,
     "title": "Challengers"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 26648,
+  "name": "Luis Llosa",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9360,
+    "year": 1997,
+    "title": "Anaconda"
    }
   ]
  },
@@ -4565,6 +6120,11 @@
     "tmdb_id": 49022,
     "year": 2011,
     "title": "Something Borrowed"
+   },
+   {
+    "tmdb_id": 11090,
+    "year": 2001,
+    "title": "The Animal"
    }
   ]
  },
@@ -4587,6 +6147,33 @@
     "tmdb_id": 381288,
     "year": 2017,
     "title": "Split"
+   },
+   {
+    "tmdb_id": 8645,
+    "year": 2008,
+    "title": "The Happening"
+   },
+   {
+    "tmdb_id": 10196,
+    "year": 2010,
+    "title": "The Last Airbender"
+   },
+   {
+    "tmdb_id": 82700,
+    "year": 2013,
+    "title": "After Earth"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 72024,
+  "name": "Malcolm D. Lee",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4258,
+    "year": 2013,
+    "title": "Scary Movie 5"
    }
   ]
  },
@@ -4643,6 +6230,11 @@
     "tmdb_id": 1930,
     "year": 2012,
     "title": "The Amazing Spider-Man"
+   },
+   {
+    "tmdb_id": 447273,
+    "year": 2025,
+    "title": "Snow White"
    }
   ]
  },
@@ -4671,6 +6263,30 @@
   ]
  },
  {
+  "tmdb_id": 29922,
+  "name": "Marcus Nispel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 37430,
+    "year": 2011,
+    "title": "Conan the Barbarian"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 87130,
+  "name": "Mark A.Z. Dippé",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10336,
+    "year": 1997,
+    "title": "Spawn"
+   }
+  ]
+ },
+ {
   "tmdb_id": 55299,
   "name": "Mark Herman",
   "gender": "m",
@@ -4691,6 +6307,18 @@
     "tmdb_id": 10999,
     "year": 1985,
     "title": "Commando"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16837,
+  "name": "Mark Steven Johnson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9480,
+    "year": 2003,
+    "title": "Daredevil"
    }
   ]
  },
@@ -4757,6 +6385,11 @@
     "tmdb_id": 36557,
     "year": 2006,
     "title": "Casino Royale"
+   },
+   {
+    "tmdb_id": 44912,
+    "year": 2011,
+    "title": "Green Lantern"
    }
   ]
  },
@@ -4872,6 +6505,35 @@
     "tmdb_id": 8913,
     "year": 1989,
     "title": "Pet Sematary"
+   },
+   {
+    "tmdb_id": 10906,
+    "year": 1992,
+    "title": "Pet Sematary II"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 231705,
+  "name": "Matt Eskandari",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 724989,
+    "year": 2020,
+    "title": "Hard Kill"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1517250,
+  "name": "Matt Palmer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1001414,
+    "year": 2025,
+    "title": "Fear Street: Prom Queen"
    }
   ]
  },
@@ -4952,6 +6614,11 @@
     "tmdb_id": 4327,
     "year": 2000,
     "title": "Charlie's Angels"
+   },
+   {
+    "tmdb_id": 9471,
+    "year": 2003,
+    "title": "Charlie's Angels: Full Throttle"
    }
   ]
  },
@@ -4981,6 +6648,18 @@
     "tmdb_id": 324786,
     "year": 2016,
     "title": "Hacksaw Ridge"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 33008,
+  "name": "Menahem Golan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 17205,
+    "year": 1981,
+    "title": "Enter the Ninja"
    }
   ]
  },
@@ -5112,6 +6791,23 @@
     "tmdb_id": 9292,
     "year": 1991,
     "title": "Hudson Hawk"
+   },
+   {
+    "tmdb_id": 2752,
+    "year": 2002,
+    "title": "40 Days and 40 Nights"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15045,
+  "name": "Michael Lembeck",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 23023,
+    "year": 2010,
+    "title": "Tooth Fairy"
    }
   ]
  },
@@ -5151,6 +6847,18 @@
     "tmdb_id": 4564,
     "year": 2008,
     "title": "Sex and the City"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 41887,
+  "name": "Michael Polish",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 619592,
+    "year": 2020,
+    "title": "Force of Nature"
    }
   ]
  },
@@ -5245,6 +6953,18 @@
   ]
  },
  {
+  "tmdb_id": 1675644,
+  "name": "Mimi Cave",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 257094,
+    "year": 2025,
+    "title": "Holland"
+   }
+  ]
+ },
+ {
   "tmdb_id": 51984,
   "name": "Mimi Leder",
   "gender": "f",
@@ -5292,6 +7012,18 @@
     "tmdb_id": 9820,
     "year": 1998,
     "title": "The Parent Trap"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1132181,
+  "name": "Nathaniel Martello-White",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1063422,
+    "year": 2023,
+    "title": "The Strays"
    }
   ]
  },
@@ -5376,6 +7108,30 @@
     "tmdb_id": 11036,
     "year": 2004,
     "title": "The Notebook"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6361,
+  "name": "Nick Hamm",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11058,
+    "year": 2004,
+    "title": "Godsend"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1545927,
+  "name": "Nicolas Pesce",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 465086,
+    "year": 2019,
+    "title": "The Grudge"
    }
   ]
  },
@@ -5472,6 +7228,18 @@
   ]
  },
  {
+  "tmdb_id": 1321207,
+  "name": "Nour Wazzi",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 1064024,
+    "year": 2023,
+    "title": "Locked In"
+   }
+  ]
+ },
+ {
   "tmdb_id": 17510,
   "name": "Ol Parker",
   "gender": "m",
@@ -5528,6 +7296,42 @@
   ]
  },
  {
+  "tmdb_id": 56755,
+  "name": "Patricia Birch",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 9037,
+    "year": 1982,
+    "title": "Grease 2"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1155547,
+  "name": "Patrick Brice",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 512025,
+    "year": 2021,
+    "title": "There's Someone Inside Your House"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 27226,
+  "name": "Patrick Lussier",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10577,
+    "year": 2000,
+    "title": "Dracula 2000"
+   }
+  ]
+ },
+ {
   "tmdb_id": 6884,
   "name": "Patty Jenkins",
   "gender": "f",
@@ -5563,6 +7367,11 @@
     "tmdb_id": 549053,
     "year": 2019,
     "title": "Last Christmas"
+   },
+   {
+    "tmdb_id": 43074,
+    "year": 2016,
+    "title": "Ghostbusters"
    }
   ]
  },
@@ -5754,6 +7563,18 @@
   ]
  },
  {
+  "tmdb_id": 14987,
+  "name": "Peter Bonerz",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11895,
+    "year": 1989,
+    "title": "Police Academy 6: City Under Siege"
+   }
+  ]
+ },
+ {
   "tmdb_id": 36804,
   "name": "Peter Chelsom",
   "gender": "m",
@@ -5866,6 +7687,18 @@
   ]
  },
  {
+  "tmdb_id": 21377,
+  "name": "Peter Medak",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10216,
+    "year": 1998,
+    "title": "Species II"
+   }
+  ]
+ },
+ {
   "tmdb_id": 13426,
   "name": "Peter Segal",
   "gender": "m",
@@ -5874,6 +7707,23 @@
     "tmdb_id": 1824,
     "year": 2004,
     "title": "50 First Dates"
+   },
+   {
+    "tmdb_id": 12107,
+    "year": 2000,
+    "title": "Nutty Professor II: The Klumps"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 130093,
+  "name": "Peter Sykes",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 40064,
+    "year": 1976,
+    "title": "To the Devil a Daughter"
    }
   ]
  },
@@ -5947,6 +7797,18 @@
     "tmdb_id": 64688,
     "year": 2012,
     "title": "21 Jump Street"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7727,
+  "name": "Phil Tippett",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10304,
+    "year": 2004,
+    "title": "Starship Troopers 2: Hero of the Federation"
    }
   ]
  },
@@ -6056,6 +7918,42 @@
   ]
  },
  {
+  "tmdb_id": 56891,
+  "name": "Rachel Talalay",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 11284,
+    "year": 1991,
+    "title": "Freddy's Dead: The Final Nightmare"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1215,
+  "name": "Raja Gosnell",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9714,
+    "year": 1997,
+    "title": "Home Alone 3"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18855,
+  "name": "Ralph S. Singleton",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 19158,
+    "year": 1990,
+    "title": "Graveyard Shift"
+   }
+  ]
+ },
+ {
   "tmdb_id": 19798,
   "name": "Randa Haines",
   "gender": "f",
@@ -6086,6 +7984,11 @@
     "tmdb_id": 5689,
     "year": 1980,
     "title": "The Blue Lagoon"
+   },
+   {
+    "tmdb_id": 11158,
+    "year": 1992,
+    "title": "Honey, I Blew Up the Kid"
    }
   ]
  },
@@ -6103,6 +8006,23 @@
     "tmdb_id": 1573,
     "year": 1990,
     "title": "Die Hard 2"
+   },
+   {
+    "tmdb_id": 11026,
+    "year": 2004,
+    "title": "Exorcist: The Beginning"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3122176,
+  "name": "Rhys Frake-Waterfield",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 980078,
+    "year": 2023,
+    "title": "Winnie the Pooh: Blood and Honey"
    }
   ]
  },
@@ -6137,6 +8057,18 @@
     "tmdb_id": 524047,
     "year": 2020,
     "title": "Greenland"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1634181,
+  "name": "Rich Lee",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 755898,
+    "year": 2025,
+    "title": "War of the Worlds"
    }
   ]
  },
@@ -6219,6 +8151,23 @@
   ]
  },
  {
+  "tmdb_id": 2087,
+  "name": "Richard Fleischer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 27214,
+    "year": 1983,
+    "title": "Amityville 3-D"
+   },
+   {
+    "tmdb_id": 9626,
+    "year": 1985,
+    "title": "Red Sonja"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1577,
   "name": "Richard Kelly",
   "gender": "m",
@@ -6227,6 +8176,11 @@
     "tmdb_id": 141,
     "year": 2001,
     "title": "Donnie Darko"
+   },
+   {
+    "tmdb_id": 4723,
+    "year": 2007,
+    "title": "Southland Tales"
    }
   ]
  },
@@ -6277,6 +8231,18 @@
   ]
  },
  {
+  "tmdb_id": 65548,
+  "name": "Rick Friedberg",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10535,
+    "year": 1996,
+    "title": "Spy Hard"
+   }
+  ]
+ },
+ {
   "tmdb_id": 33341,
   "name": "Rick Rosenthal",
   "gender": "m",
@@ -6285,6 +8251,11 @@
     "tmdb_id": 11281,
     "year": 1981,
     "title": "Halloween II"
+   },
+   {
+    "tmdb_id": 11442,
+    "year": 2002,
+    "title": "Halloween: Resurrection"
    }
   ]
  },
@@ -6341,6 +8312,18 @@
   ]
  },
  {
+  "tmdb_id": 12523,
+  "name": "Rob Bowman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9947,
+    "year": 2005,
+    "title": "Elektra"
+   }
+  ]
+ },
+ {
   "tmdb_id": 18878,
   "name": "Rob Cohen",
   "gender": "m",
@@ -6349,6 +8332,35 @@
     "tmdb_id": 9799,
     "year": 2001,
     "title": "The Fast and the Furious"
+   },
+   {
+    "tmdb_id": 241251,
+    "year": 2015,
+    "title": "The Boy Next Door"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 64735,
+  "name": "Rob Hedden",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10283,
+    "year": 1989,
+    "title": "Friday the 13th Part VIII: Jason Takes Manhattan"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 65630,
+  "name": "Rob Letterman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 38745,
+    "year": 2010,
+    "title": "Gulliver's Travels"
    }
   ]
  },
@@ -6435,6 +8447,18 @@
     "tmdb_id": 2493,
     "year": 1987,
     "title": "The Princess Bride"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 59413,
+  "name": "Robert Ben Garant",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9750,
+    "year": 2007,
+    "title": "Balls of Fury"
    }
   ]
  },
@@ -6549,6 +8573,11 @@
     "tmdb_id": 399579,
     "year": 2019,
     "title": "Alita: Battle Angel"
+   },
+   {
+    "tmdb_id": 12279,
+    "year": 2003,
+    "title": "Spy Kids 3-D: Game Over"
    }
   ]
  },
@@ -6614,6 +8643,18 @@
   ]
  },
  {
+  "tmdb_id": 64877,
+  "name": "Rod Daniel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12536,
+    "year": 2002,
+    "title": "Home Alone 4"
+   }
+  ]
+ },
+ {
   "tmdb_id": 5058,
   "name": "Roger Christian",
   "gender": "m",
@@ -6655,6 +8696,18 @@
   ]
  },
  {
+  "tmdb_id": 1724,
+  "name": "Roger Spottiswoode",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9876,
+    "year": 1992,
+    "title": "Stop! Or My Mom Will Shoot"
+   }
+  ]
+ },
+ {
   "tmdb_id": 6046,
   "name": "Roland Emmerich",
   "gender": "m",
@@ -6678,6 +8731,11 @@
     "tmdb_id": 14161,
     "year": 2009,
     "title": "2012"
+   },
+   {
+    "tmdb_id": 47933,
+    "year": 2016,
+    "title": "Independence Day: Resurgence"
    }
   ]
  },
@@ -6743,6 +8801,18 @@
   ]
  },
  {
+  "tmdb_id": 7501,
+  "name": "Ronald Neame",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 40160,
+    "year": 1979,
+    "title": "Meteor"
+   }
+  ]
+ },
+ {
   "tmdb_id": 91268,
   "name": "Ruben Fleischer",
   "gender": "m",
@@ -6797,6 +8867,11 @@
     "tmdb_id": 8009,
     "year": 1986,
     "title": "Highlander"
+   },
+   {
+    "tmdb_id": 8010,
+    "year": 1991,
+    "title": "Highlander II: The Quickening"
    }
   ]
  },
@@ -6969,6 +9044,18 @@
   ]
  },
  {
+  "tmdb_id": 11641,
+  "name": "Scott Spiegel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12095,
+    "year": 1999,
+    "title": "From Dusk Till Dawn 2: Texas Blood Money"
+   }
+  ]
+ },
+ {
   "tmdb_id": 118415,
   "name": "Sean Baker",
   "gender": "m",
@@ -7013,6 +9100,18 @@
     "tmdb_id": 311,
     "year": 1984,
     "title": "Once Upon a Time in America"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1505073,
+  "name": "Seth Larney",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 528085,
+    "year": 2020,
+    "title": "2067"
    }
   ]
  },
@@ -7099,6 +9198,18 @@
   ]
  },
  {
+  "tmdb_id": 64508,
+  "name": "Sidney J. Furie",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11411,
+    "year": 1987,
+    "title": "Superman IV: The Quest for Peace"
+   }
+  ]
+ },
+ {
   "tmdb_id": 39996,
   "name": "Sidney Lumet",
   "gender": "m",
@@ -7140,6 +9251,30 @@
   ]
  },
  {
+  "tmdb_id": 18254,
+  "name": "Simon Wincer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9826,
+    "year": 1996,
+    "title": "The Phantom"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 67075,
+  "name": "Sion Sono",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 523638,
+    "year": 2021,
+    "title": "Prisoners of the Ghostland"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1769,
   "name": "Sofia Coppola",
   "gender": "f",
@@ -7158,6 +9293,11 @@
     "tmdb_id": 1887,
     "year": 2006,
     "title": "Marie Antoinette"
+   },
+   {
+    "tmdb_id": 96936,
+    "year": 2013,
+    "title": "The Bling Ring"
    }
   ]
  },
@@ -7187,6 +9327,35 @@
     "tmdb_id": 487558,
     "year": 2018,
     "title": "BlacKkKlansman"
+   },
+   {
+    "tmdb_id": 1242434,
+    "year": 2025,
+    "title": "Highest 2 Lowest"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 72619,
+  "name": "Stacy Title",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 292280,
+    "year": 2017,
+    "title": "The Bye Bye Man"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13284,
+  "name": "Stanley Donen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 19761,
+    "year": 1980,
+    "title": "Saturn 3"
    }
   ]
  },
@@ -7214,6 +9383,18 @@
     "tmdb_id": 600,
     "year": 1987,
     "title": "Full Metal Jacket"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 25453,
+  "name": "Stefen Fangmeier",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2486,
+    "year": 2006,
+    "title": "Eragon"
    }
   ]
  },
@@ -7296,6 +9477,16 @@
     "tmdb_id": 169,
     "year": 1990,
     "title": "Predator 2"
+   },
+   {
+    "tmdb_id": 10160,
+    "year": 1989,
+    "title": "A Nightmare on Elm Street: The Dream Child"
+   },
+   {
+    "tmdb_id": 2157,
+    "year": 1998,
+    "title": "Lost in Space"
    }
   ]
  },
@@ -7329,6 +9520,18 @@
   ]
  },
  {
+  "tmdb_id": 49949,
+  "name": "Steve Binder",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 74849,
+    "year": 1978,
+    "title": "The Star Wars Holiday Special"
+   }
+  ]
+ },
+ {
   "tmdb_id": 52112,
   "name": "Steve Carr",
   "gender": "m",
@@ -7337,6 +9540,16 @@
     "tmdb_id": 87818,
     "year": 2013,
     "title": "Movie 43"
+   },
+   {
+    "tmdb_id": 10808,
+    "year": 2001,
+    "title": "Dr. Dolittle 2"
+   },
+   {
+    "tmdb_id": 14560,
+    "year": 2009,
+    "title": "Paul Blart: Mall Cop"
    }
   ]
  },
@@ -7377,6 +9590,30 @@
   ]
  },
  {
+  "tmdb_id": 54590,
+  "name": "Steve Rash",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8274,
+    "year": 2005,
+    "title": "American Pie Presents: Band Camp"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 30058,
+  "name": "Steven C. Miller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 440471,
+    "year": 2018,
+    "title": "Escape Plan 2: Hades"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1551545,
   "name": "Steven Caple Jr.",
   "gender": "m",
@@ -7385,6 +9622,30 @@
     "tmdb_id": 667538,
     "year": 2023,
     "title": "Transformers: Rise of the Beasts"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1726,
+  "name": "Steven E. de Souza",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11667,
+    "year": 1994,
+    "title": "Street Fighter"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 23227,
+  "name": "Steven Knight",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 452832,
+    "year": 2019,
+    "title": "Serenity"
    }
   ]
  },
@@ -7535,6 +9796,42 @@
   ]
  },
  {
+  "tmdb_id": 59023,
+  "name": "Stewart Raffill",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 20196,
+    "year": 1988,
+    "title": "Mac and Me"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 84962,
+  "name": "Stiles White",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 242512,
+    "year": 2014,
+    "title": "Ouija"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1707,
+  "name": "Stuart Beattie",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 100241,
+    "year": 2014,
+    "title": "I, Frankenstein"
+   }
+  ]
+ },
+ {
   "tmdb_id": 13859,
   "name": "Stuart Rosenberg",
   "gender": "m",
@@ -7611,6 +9908,18 @@
     "tmdb_id": 11963,
     "year": 1975,
     "title": "Three Days of the Condor"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 31119,
+  "name": "Sylvain White",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 439015,
+    "year": 2018,
+    "title": "Slender Man"
    }
   ]
  },
@@ -7837,6 +10146,18 @@
   ]
  },
  {
+  "tmdb_id": 65602,
+  "name": "Tim Pope",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10546,
+    "year": 1996,
+    "title": "The Crow: City of Angels"
+   }
+  ]
+ },
+ {
   "tmdb_id": 20400,
   "name": "Tim Story",
   "gender": "m",
@@ -7850,6 +10171,18 @@
     "tmdb_id": 1979,
     "year": 2007,
     "title": "Fantastic Four: Rise of the Silver Surfer"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 66212,
+  "name": "Timo Vuorensola",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 717728,
+    "year": 2022,
+    "title": "Jeepers Creepers: Reborn"
    }
   ]
  },
@@ -7879,6 +10212,18 @@
     "tmdb_id": 609,
     "year": 1982,
     "title": "Poltergeist"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1203968,
+  "name": "Toby Meakins",
+  "gender": null,
+  "films": [
+   {
+    "tmdb_id": 838484,
+    "year": 2022,
+    "title": "Choose or Die"
    }
   ]
  },
@@ -8009,6 +10354,18 @@
   ]
  },
  {
+  "tmdb_id": 19305,
+  "name": "Tom Ropelewski",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11982,
+    "year": 1993,
+    "title": "Look Who's Talking Now!"
+   }
+  ]
+ },
+ {
   "tmdb_id": 4499,
   "name": "Tom Shadyac",
   "gender": "m",
@@ -8042,6 +10399,54 @@
     "tmdb_id": 310,
     "year": 2003,
     "title": "Bruce Almighty"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 118639,
+  "name": "Tom Six",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 37169,
+    "year": 2009,
+    "title": "The Human Centipede (First Sequence)"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 74396,
+  "name": "Tomas Alfredson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 372343,
+    "year": 2017,
+    "title": "The Snowman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11777,
+  "name": "Tommy Lee Wallace",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10676,
+    "year": 1982,
+    "title": "Halloween III: Season of the Witch"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 81916,
+  "name": "Tommy Wiseau",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 17473,
+    "year": 2003,
+    "title": "The Room"
    }
   ]
  },
@@ -8114,6 +10519,30 @@
   ]
  },
  {
+  "tmdb_id": 26760,
+  "name": "Tsui Hark",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9405,
+    "year": 1997,
+    "title": "Double Team"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15868,
+  "name": "Uli Edel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2149,
+    "year": 1993,
+    "title": "Body of Evidence"
+   }
+  ]
+ },
+ {
   "tmdb_id": 23799,
   "name": "Uwe Boll",
   "gender": "m",
@@ -8122,6 +10551,11 @@
     "tmdb_id": 12142,
     "year": 2005,
     "title": "Alone in the Dark"
+   },
+   {
+    "tmdb_id": 2312,
+    "year": 2007,
+    "title": "In the Name of the King: A Dungeon Siege Tale"
    }
   ]
  },
@@ -8134,6 +10568,30 @@
     "tmdb_id": 773,
     "year": 2006,
     "title": "Little Miss Sunshine"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15358,
+  "name": "Vic Armstrong",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 218043,
+    "year": 2014,
+    "title": "Left Behind"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15657,
+  "name": "Vincent McEveety",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12129,
+    "year": 1980,
+    "title": "Herbie Goes Bananas"
    }
   ]
  },
@@ -8238,6 +10696,21 @@
     "tmdb_id": 377,
     "year": 1984,
     "title": "A Nightmare on Elm Street"
+   },
+   {
+    "tmdb_id": 17918,
+    "year": 1982,
+    "title": "Swamp Thing"
+   },
+   {
+    "tmdb_id": 18477,
+    "year": 1985,
+    "title": "The Hills Have Eyes Part 2"
+   },
+   {
+    "tmdb_id": 12158,
+    "year": 1995,
+    "title": "Vampire in Brooklyn"
    }
   ]
  },
@@ -8250,6 +10723,11 @@
     "tmdb_id": 10658,
     "year": 1986,
     "title": "Howard the Duck"
+   },
+   {
+    "tmdb_id": 11221,
+    "year": 1984,
+    "title": "Best Defense"
    }
   ]
  },
@@ -8262,6 +10740,18 @@
     "tmdb_id": 38985,
     "year": 1977,
     "title": "Sorcerer"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 112400,
+  "name": "William Girdler",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 55784,
+    "year": 1976,
+    "title": "Grizzly"
    }
   ]
  },
@@ -8379,6 +10869,18 @@
     "tmdb_id": 791373,
     "year": 2021,
     "title": "Zack Snyder's Justice League"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 42113,
+  "name": "Zalman King",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 5203,
+    "year": 1989,
+    "title": "Wild Orchid"
    }
   ]
  }
