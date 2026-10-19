@@ -24,6 +24,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const bump = (k: keyof Attributes, d: number) => setAttrs((a) => ({ ...a, [k]: Math.min(5, Math.max(1, a[k] + d)) }));
   const names = genero === "f" ? NAMES_F : NAMES_M;
   const bonus = originById(origem).bonus;
+  const talentoMax = originById(origem).talentoMax;
 
   return (
     <div className="stack" style={{ gap: 22 }}>
@@ -82,11 +83,12 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
             <div>
               <b>{ATTR_HELP[k].name[lang]}</b> <span className="pips">{"●".repeat(attrs[k])}{"○".repeat(5 - attrs[k])}{bonus[k] ? <span className="bonus">{"●".repeat(bonus[k]!)}</span> : null}</span>
               {bonus[k] ? <span className="mono" style={{ color: "var(--ok)", marginLeft: 8 }}>+{bonus[k]} {lang === "en" ? "from origin" : "de origem"} = {Math.min(6, attrs[k] + bonus[k]!)}</span> : null}
+              {k === "talento" && talentoMax ? <span className="mono" style={{ color: "var(--warn)", marginLeft: 8 }}>{lang === "en" ? `max ${talentoMax} from origin` : `máximo ${talentoMax} de origem`}</span> : null}
             </div>
             <div className="ctl">
               <button type="button" onClick={() => bump(k, -1)} disabled={attrs[k] <= 1} aria-label={`- ${k}`}>−</button>
               <span style={{ width: 16, textAlign: "center" }}>{attrs[k]}</span>
-              <button type="button" onClick={() => bump(k, 1)} disabled={attrs[k] >= 5 || left <= 0} aria-label={`+ ${k}`}>+</button>
+              <button type="button" onClick={() => bump(k, 1)} disabled={attrs[k] >= 5 || left <= 0 || (k === "talento" && !!talentoMax && attrs[k] >= talentoMax)} aria-label={`+ ${k}`}>+</button>
             </div>
             <div className="help">{ATTR_HELP[k][lang]}</div>
           </div>
