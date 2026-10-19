@@ -2,7 +2,7 @@
   python -m hcyd resolve     # acha o tmdb_id dos filmes do CSV que não têm id (precisa de chave TMDB)
   python -m hcyd fetch       # baixa TMDB + OMDb + Wikidata para todos os filmes (cache em pipeline/cache)
   python -m hcyd build       # gera data/films.json e data/people.json a partir do cache + curadoria
-  python -m hcyd discover [N] [--bad] # acrescenta a films.csv os N filmes mais votados de cada ano (1975–2025); --bad: só os mal avaliados (nota ≤ 5.5)
+  python -m hcyd discover [N] [--bad] [--years 2018-2025] # acrescenta a films.csv os N filmes mais votados de cada ano (padrão 1975–2025); --bad: só os mal avaliados (nota ≤ 5.5)
   python -m hcyd slim        # escreve game/src/data/films.json enxuto a partir de data/films.json
   python -m hcyd status      # mostra o que já está no cache e o que falta
 """
@@ -226,14 +226,15 @@ def cmd_build():
     _log(f"descrições às cegas: {len(films) - auto} escritas à mão, {auto} geradas automaticamente")
 
 
-def cmd_discover(per_year: int = 10, bad: bool = False):
+def cmd_discover(per_year: int = 10, bad: bool = False, year_from: int = 1975, year_to: int = 2025):
     rows = curation.films_list()
     have_ids = {r["tmdb_id"] for r in rows if r["tmdb_id"]}
     have_titles = {(r["title"].lower(), r["year"]) for r in rows}
     added = []
-    for year in range(1975, 2026):
+    pages = max(2, -(-per_year // 15))   # TMDB devolve 20 por página; sobra margem para os já na lista
+    for year in range(year_from, year_to + 1):
         picked = 0
-        for page in (1, 2):
+        for page in range(1, pages + 1):
             if picked >= per_year:
                 break
             try:
@@ -253,7 +254,7 @@ def cmd_discover(per_year: int = 10, bad: bool = False):
         w = csv.DictWriter(f, fieldnames=["tmdb_id", "title", "year", "why"])
         for a in added:
             w.writerow(a)
-    _log(f"discover{'-bad' if bad else ''}: {len(added)} filmes acrescentados a films.csv ({per_year} por ano)")
+    _log(f"discover{'-bad' if bad else ''}: {len(added)} filmes acrescentados a films.csv ({per_year} por ano, {year_from}–{year_to})")
 
 
 SLIM_DROP = {"producers", "imdb", "tmdb_vote", "why", "shoot_days", "imdb_id"}
@@ -285,7 +286,11 @@ def main(argv=None):
         return 2
     if argv[0] == "discover":
         n = int(argv[1]) if len(argv) > 1 and argv[1].isdigit() else 10
-        cmd_discover(n, bad="--bad" in argv)
+        y0, y1 = 1975, 2025
+        if "--years" in argv:
+            a, _, b = argv[argv.index("--years") + 1].partition("-")
+            y0, y1 = int(a), int(b or a)
+        cmd_discover(n, bad="--bad" in argv, year_from=y0, year_to=y1)
     else:
         cmds[argv[0]]()
     return 0

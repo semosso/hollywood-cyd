@@ -15,6 +15,10 @@ on:
         description: "Acrescentar os N filmes MAL avaliados mais conhecidos de cada ano (0 = não)"
         type: string
         default: "0"
+      years:
+        description: "Faixa de anos para o discover, ex. 2018-2025 (vazio = 1975-2025)"
+        type: string
+        default: ""
   schedule:
     - cron: "17 6 1 * *"   # dia 1 de cada mês, 06:17 UTC: atualiza bilheteria e notas
 
@@ -63,11 +67,11 @@ jobs:
       - name: Descobrir filmes no TMDB
         if: ${{ inputs.discover != '' && inputs.discover != '0' }}
         working-directory: pipeline
-        run: python -m hcyd discover ${{ inputs.discover }}
+        run: python -m hcyd discover ${{ inputs.discover }} ${{ inputs.years != '' && format('--years {0}', inputs.years) || '' }}
       - name: Descobrir fracassos no TMDB
         if: ${{ inputs.discover_bad != '' && inputs.discover_bad != '0' }}
         working-directory: pipeline
-        run: python -m hcyd discover ${{ inputs.discover_bad }} --bad
+        run: python -m hcyd discover ${{ inputs.discover_bad }} --bad ${{ inputs.years != '' && format('--years {0}', inputs.years) || '' }}
       - name: Resolver ids faltantes
         if: ${{ inputs.resolve != false }}
         working-directory: pipeline
