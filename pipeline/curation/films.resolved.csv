@@ -395,103 +395,613 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 800939,Ticket to Paradise,2022,,,,given
 982271,Book Club: The Next Chapter,2023,,,,given
 956842,Fly Me to the Moon,2024,,,,given
-42222,Julia,1977,protagonista mulher,Julia,1977,high
-14741,The Goodbye Girl,1977,protagonista mulher,The Goodbye Girl,1977,high
-37749,Looking for Mr. Goodbar,1977,protagonista mulher,Looking for Mr. Goodbar,1977,high
-61280,The Turning Point,1977,protagonista mulher,The Turning Point,1977,high
-38731,An Unmarried Woman,1978,protagonista mulher,An Unmarried Woman,1978,high
-31657,Coming Home,1978,protagonista mulher,Coming Home,1978,high
-40842,Norma Rae,1979,protagonista mulher,Norma Rae,1979,high
-19494,9 to 5,1980,protagonista mulher,Nine to Five,1980,high
-10765,Private Benjamin,1980,protagonista mulher,Private Benjamin,1980,high
-16769,Coal Miner's Daughter,1980,protagonista mulher,Coal Miner's Daughter,1980,high
-15764,Sophie's Choice,1982,protagonista mulher,Sophie's Choice,1982,high
-12502,Silkwood,1983,protagonista mulher,Silkwood,1983,high
-13681,Places in the Heart,1984,protagonista mulher,Places in the Heart,1984,high
-8130,Desperately Seeking Susan,1985,protagonista mulher,Desperately Seeking Susan,1985,high
-679,Aliens,1986,protagonista mulher,Aliens,1986,high
-1890,Children of a Lesser God,1986,protagonista mulher,Children of a Lesser God,1986,high
-2039,Moonstruck,1987,protagonista mulher,Moonstruck,1987,high
-12626,Broadcast News,1987,protagonista mulher,Broadcast News,1987,high
-10868,The Accused,1988,protagonista mulher,The Accused,1988,high
-15592,Beaches,1988,protagonista mulher,Beaches,1988,high
-10130,Gorillas in the Mist,1988,protagonista mulher,Gorillas in the Mist,1988,high
-10860,Steel Magnolias,1989,protagonista mulher,Steel Magnolias,1989,high
-1700,Misery,1990,protagonista mulher,Misery,1990,high
-1633,Fried Green Tomatoes,1991,protagonista mulher,Fried Green Tomatoes,1991,high
-11287,A League of Their Own,1992,protagonista mulher,A League of Their Own,1992,high
-713,The Piano,1993,protagonista mulher,The Piano,1993,high
-858,Sleepless in Seattle,1993,protagonista mulher,Sleepless in Seattle,1993,high
-4584,Sense and Sensibility,1995,protagonista mulher,Sense and Sensibility,1995,high
-31357,Waiting to Exhale,1995,protagonista mulher,Waiting to Exhale,1995,high
-2925,The First Wives Club,1996,protagonista mulher,The First Wives Club,1996,high
-8818,Evita,1996,protagonista mulher,Evita,1996,high
-686,Contact,1997,protagonista mulher,Contact,1997,high
-4421,G.I. Jane,1997,protagonista mulher,G.I. Jane,1997,high
-4518,Elizabeth,1998,protagonista mulher,Elizabeth,1998,high
-9489,You've Got Mail,1998,protagonista mulher,You've Got Mail,1998,high
-9441,Stepmom,1998,protagonista mulher,Stepmom,1998,high
-6435,Practical Magic,1998,protagonista mulher,Practical Magic,1998,high
-226,Boys Don't Cry,1999,protagonista mulher,Boys Don't Cry,1999,high
-3558,"Girl, Interrupted",1999,protagonista mulher,"Girl, Interrupted",1999,high
-4806,Runaway Bride,1999,protagonista mulher,Runaway Bride,1999,high
-1493,Miss Congeniality,2000,protagonista mulher,Miss Congeniality,2000,high
-4327,Charlie's Angels,2000,protagonista mulher,Charlie's Angels,2000,high
-634,Bridget Jones's Diary,2001,protagonista mulher,Bridget Jones's Diary,2001,high
-590,The Hours,2002,protagonista mulher,The Hours,2002,high
+42222,Julia,1977,protagonista mulher,,,given
+14741,The Goodbye Girl,1977,protagonista mulher,,,given
+37749,Looking for Mr. Goodbar,1977,protagonista mulher,,,given
+61280,The Turning Point,1977,protagonista mulher,,,given
+38731,An Unmarried Woman,1978,protagonista mulher,,,given
+31657,Coming Home,1978,protagonista mulher,,,given
+40842,Norma Rae,1979,protagonista mulher,,,given
+19494,9 to 5,1980,protagonista mulher,,,given
+10765,Private Benjamin,1980,protagonista mulher,,,given
+16769,Coal Miner's Daughter,1980,protagonista mulher,,,given
+15764,Sophie's Choice,1982,protagonista mulher,,,given
+12502,Silkwood,1983,protagonista mulher,,,given
+13681,Places in the Heart,1984,protagonista mulher,,,given
+8130,Desperately Seeking Susan,1985,protagonista mulher,,,given
+679,Aliens,1986,protagonista mulher,,,given
+1890,Children of a Lesser God,1986,protagonista mulher,,,given
+2039,Moonstruck,1987,protagonista mulher,,,given
+12626,Broadcast News,1987,protagonista mulher,,,given
+10868,The Accused,1988,protagonista mulher,,,given
+15592,Beaches,1988,protagonista mulher,,,given
+10130,Gorillas in the Mist,1988,protagonista mulher,,,given
+10860,Steel Magnolias,1989,protagonista mulher,,,given
+1700,Misery,1990,protagonista mulher,,,given
+1633,Fried Green Tomatoes,1991,protagonista mulher,,,given
+11287,A League of Their Own,1992,protagonista mulher,,,given
+713,The Piano,1993,protagonista mulher,,,given
+858,Sleepless in Seattle,1993,protagonista mulher,,,given
+4584,Sense and Sensibility,1995,protagonista mulher,,,given
+31357,Waiting to Exhale,1995,protagonista mulher,,,given
+2925,The First Wives Club,1996,protagonista mulher,,,given
+8818,Evita,1996,protagonista mulher,,,given
+686,Contact,1997,protagonista mulher,,,given
+4421,G.I. Jane,1997,protagonista mulher,,,given
+4518,Elizabeth,1998,protagonista mulher,,,given
+9489,You've Got Mail,1998,protagonista mulher,,,given
+9441,Stepmom,1998,protagonista mulher,,,given
+6435,Practical Magic,1998,protagonista mulher,,,given
+226,Boys Don't Cry,1999,protagonista mulher,,,given
+3558,"Girl, Interrupted",1999,protagonista mulher,,,given
+4806,Runaway Bride,1999,protagonista mulher,,,given
+1493,Miss Congeniality,2000,protagonista mulher,,,given
+4327,Charlie's Angels,2000,protagonista mulher,,,given
+634,Bridget Jones's Diary,2001,protagonista mulher,,,given
+590,The Hours,2002,protagonista mulher,,,given
 1360,Frida,2002,protagonista mulher,Frida,2002,check
-11529,Sweet Home Alabama,2002,protagonista mulher,Sweet Home Alabama,2002,high
-11820,Mona Lisa Smile,2003,protagonista mulher,Mona Lisa Smile,2003,high
-6964,Something's Gotta Give,2003,protagonista mulher,Something's Gotta Give,2003,high
-10096,13 Going on 30,2004,protagonista mulher,13 Going on 30,2004,high
-11036,The Notebook,2004,protagonista mulher,The Notebook,2004,high
-1904,Memoirs of a Geisha,2005,protagonista mulher,Memoirs of a Geisha,2005,high
-9701,North Country,2005,protagonista mulher,North Country,2005,high
-1165,The Queen,2006,protagonista mulher,The Queen,2006,high
-1887,Marie Antoinette,2006,protagonista mulher,Marie Antoinette,2006,high
-4523,Enchanted,2007,protagonista mulher,Enchanted,2007,high
-11631,Mamma Mia!,2008,protagonista mulher,Mamma Mia!,2008,high
-4564,Sex and the City,2008,protagonista mulher,Sex and the City,2008,high
-3580,Changeling,2008,protagonista mulher,Changeling,2008,high
-18240,The Proposal,2009,protagonista mulher,The Proposal,2009,high
-24803,Julie & Julia,2009,protagonista mulher,Julie & Julia,2009,high
-891,All the President's Men,1976,,All the President's Men,1976,high
-10322,Being There,1979,,Being There,1979,high
-1955,The Elephant Man,1980,,The Elephant Man,1980,high
-9443,Chariots of Fire,1981,,Chariots of Fire,1981,high
-9549,The Right Stuff,1983,,The Right Stuff,1983,high
-279,Amadeus,1984,,Amadeus,1984,high
-11873,The Color of Money,1986,,The Color of Money,1986,high
-235,Stand by Me,1986,,Stand by Me,1986,high
-801,"Good Morning, Vietnam",1987,,"Good Morning, Vietnam",1987,high
-207,Dead Poets Society,1989,,Dead Poets Society,1989,high
-2323,Field of Dreams,1989,,Field of Dreams,1989,high
-9665,Glory,1989,,Glory,1989,high
-11005,Awakenings,1990,,Awakenings,1990,high
-820,JFK,1991,,JFK,1991,high
-881,A Few Good Men,1992,,A Few Good Men,1992,high
-9386,In the Line of Fire,1993,,In the Line of Fire,1993,high
-5503,The Fugitive,1993,,The Fugitive,1993,high
-11450,Quiz Show,1994,,Quiz Show,1994,high
-568,Apollo 13,1995,,Apollo 13,1995,high
-1592,Primal Fear,1996,,Primal Fear,1996,high
-2118,L.A. Confidential,1997,,L.A. Confidential,1997,high
-37165,The Truman Show,1998,,The Truman Show,1998,high
-9008,The Insider,1999,,The Insider,1999,high
-8358,Cast Away,2000,,Cast Away,2000,high
-161,Ocean's Eleven,2001,,Ocean's Eleven,2001,high
-640,Catch Me If You Can,2002,,Catch Me If You Can,2002,high
-616,The Last Samurai,2003,,The Last Samurai,2003,high
-1538,Collateral,2004,,Collateral,2004,high
-1949,Zodiac,2007,,Zodiac,2007,high
-23168,The Town,2010,,The Town,2010,high
-146233,Prisoners,2013,,Prisoners,2013,high
-242582,Nightcrawler,2014,,Nightcrawler,2014,high
-273481,Sicario,2015,,Sicario,2015,high
-324786,Hacksaw Ridge,2016,,Hacksaw Ridge,2016,high
-339403,Baby Driver,2017,,Baby Driver,2017,high
-335984,Blade Runner 2049,2017,,Blade Runner 2049,2017,high
-487558,BlacKkKlansman,2018,,BlacKkKlansman,2018,high
-473033,Uncut Gems,2019,,Uncut Gems,2019,high
-419704,Ad Astra,2019,,Ad Astra,2019,high
-577922,Tenet,2020,,Tenet,2020,high
+11529,Sweet Home Alabama,2002,protagonista mulher,,,given
+11820,Mona Lisa Smile,2003,protagonista mulher,,,given
+6964,Something's Gotta Give,2003,protagonista mulher,,,given
+10096,13 Going on 30,2004,protagonista mulher,,,given
+11036,The Notebook,2004,protagonista mulher,,,given
+1904,Memoirs of a Geisha,2005,protagonista mulher,,,given
+9701,North Country,2005,protagonista mulher,,,given
+1165,The Queen,2006,protagonista mulher,,,given
+1887,Marie Antoinette,2006,protagonista mulher,,,given
+4523,Enchanted,2007,protagonista mulher,,,given
+11631,Mamma Mia!,2008,protagonista mulher,,,given
+4564,Sex and the City,2008,protagonista mulher,,,given
+3580,Changeling,2008,protagonista mulher,,,given
+18240,The Proposal,2009,protagonista mulher,,,given
+24803,Julie & Julia,2009,protagonista mulher,,,given
+891,All the President's Men,1976,,,,given
+10322,Being There,1979,,,,given
+1955,The Elephant Man,1980,,,,given
+9443,Chariots of Fire,1981,,,,given
+9549,The Right Stuff,1983,,,,given
+279,Amadeus,1984,,,,given
+11873,The Color of Money,1986,,,,given
+235,Stand by Me,1986,,,,given
+801,"Good Morning, Vietnam",1987,,,,given
+207,Dead Poets Society,1989,,,,given
+2323,Field of Dreams,1989,,,,given
+9665,Glory,1989,,,,given
+11005,Awakenings,1990,,,,given
+820,JFK,1991,,,,given
+881,A Few Good Men,1992,,,,given
+9386,In the Line of Fire,1993,,,,given
+5503,The Fugitive,1993,,,,given
+11450,Quiz Show,1994,,,,given
+568,Apollo 13,1995,,,,given
+1592,Primal Fear,1996,,,,given
+2118,L.A. Confidential,1997,,,,given
+37165,The Truman Show,1998,,,,given
+9008,The Insider,1999,,,,given
+8358,Cast Away,2000,,,,given
+161,Ocean's Eleven,2001,,,,given
+640,Catch Me If You Can,2002,,,,given
+616,The Last Samurai,2003,,,,given
+1538,Collateral,2004,,,,given
+1949,Zodiac,2007,,,,given
+23168,The Town,2010,,,,given
+146233,Prisoners,2013,,,,given
+242582,Nightcrawler,2014,,,,given
+273481,Sicario,2015,,,,given
+324786,Hacksaw Ridge,2016,,,,given
+339403,Baby Driver,2017,,,,given
+335984,Blade Runner 2049,2017,,,,given
+487558,BlacKkKlansman,2018,,,,given
+473033,Uncut Gems,2019,,,,given
+419704,Ad Astra,2019,,,,given
+577922,Tenet,2020,,,,given
+762,Monty Python and the Holy Grail,1975,discover,,,given
+3175,Barry Lyndon,1975,discover,,,given
+36685,The Rocky Horror Picture Show,1975,discover,,,given
+11963,Three Days of the Condor,1975,discover,,,given
+11686,Love and Death,1975,discover,,,given
+11020,Picnic at Hanging Rock,1975,discover,,,given
+983,The Man Who Would Be King,1975,discover,,,given
+27429,Shivers,1975,discover,,,given
+11843,The Return of the Pink Panther,1975,discover,,,given
+357953,Return,1975,discover,,,given
+7340,Carrie,1976,discover,,,given
+794,The Omen,1976,discover,,,given
+10747,The Outlaw Josey Wales,1976,discover,,,given
+10518,Marathon Man,1976,discover,,,given
+17814,Assault on Precinct 13,1976,discover,,,given
+11482,The Tenant,1976,discover,,,given
+10803,Logan's Run,1976,discover,,,given
+10649,The Enforcer,1976,discover,,,given
+10730,King Kong,1976,discover,,,given
+6037,Murder by Death,1976,discover,,,given
+840,Close Encounters of the Third Kind,1977,discover,,,given
+985,Eraserhead,1977,discover,,,given
+691,The Spy Who Loved Me,1977,discover,,,given
+12262,The Hills Have Eyes,1977,discover,,,given
+5902,A Bridge Too Far,1977,discover,,,given
+11006,Smokey and the Bandit,1977,discover,,,given
+11586,Exorcist II: The Heretic,1977,discover,,,given
+38985,Sorcerer,1977,discover,,,given
+19067,The Duellists,1977,discover,,,given
+17689,The Gauntlet,1977,discover,,,given
+948,Halloween,1978,discover,,,given
+1924,Superman,1978,discover,,,given
+923,Dawn of the Dead,1978,discover,,,given
+579,Jaws 2,1978,discover,,,given
+11327,Midnight Express,1978,discover,,,given
+8469,Animal House,1978,discover,,,given
+11850,Invasion of the Body Snatchers,1978,discover,,,given
+16642,Days of Heaven,1978,discover,,,given
+4192,Death on the Nile,1978,discover,,,given
+10766,Damien - Omen II,1978,discover,,,given
+9659,Mad Max,1979,discover,,,given
+583,Life of Brian,1979,discover,,,given
+1367,Rocky II,1979,discover,,,given
+10734,Escape from Alcatraz,1979,discover,,,given
+696,Manhattan,1979,discover,,,given
+11474,The Warriors,1979,discover,,,given
+698,Moonraker,1979,discover,,,given
+152,Star Trek: The Motion Picture,1979,discover,,,given
+11449,The Amityville Horror,1979,discover,,,given
+6471,The Jerk,1979,discover,,,given
+1891,The Empire Strikes Back,1980,discover,,,given
+813,Airplane!,1980,discover,,,given
+525,The Blues Brothers,1980,discover,,,given
+4488,Friday the 13th,1980,discover,,,given
+8536,Superman II,1980,discover,,,given
+5689,The Blue Lagoon,1980,discover,,,given
+790,The Fog,1980,discover,,,given
+8393,The Gods Must Be Crazy,1980,discover,,,given
+11977,Caddyshack,1980,discover,,,given
+11033,Dressed to Kill,1980,discover,,,given
+85,Raiders of the Lost Ark,1981,discover,,,given
+8810,Mad Max 2,1981,discover,,,given
+1103,Escape from New York,1981,discover,,,given
+814,An American Werewolf in London,1981,discover,,,given
+11281,Halloween II,1981,discover,,,given
+699,For Your Eyes Only,1981,discover,,,given
+9725,Friday the 13th Part 2,1981,discover,,,given
+11644,Blow Out,1981,discover,,,given
+21484,Possession,1981,discover,,,given
+9538,Scanners,1981,discover,,,given
+1091,The Thing,1982,discover,,,given
+1368,First Blood,1982,discover,,,given
+1371,Rocky III,1982,discover,,,given
+609,Poltergeist,1982,discover,,,given
+9387,Conan the Barbarian,1982,discover,,,given
+97,Tron,1982,discover,,,given
+262,The King of Comedy,1982,discover,,,given
+783,Gandhi,1982,discover,,,given
+154,Star Trek II: The Wrath of Khan,1982,discover,,,given
+150,48 Hrs.,1982,discover,,,given
+1892,Return of the Jedi,1983,discover,,,given
+764,The Evil Dead,1983,discover,,,given
+1621,Trading Places,1983,discover,,,given
+837,Videodrome,1983,discover,,,given
+8769,Christine,1983,discover,,,given
+700,Octopussy,1983,discover,,,given
+860,WarGames,1983,discover,,,given
+4543,Monty Python's The Meaning of Life,1983,discover,,,given
+9531,Superman III,1983,discover,,,given
+11336,The Dead Zone,1983,discover,,,given
+87,Indiana Jones and the Temple of Doom,1984,discover,,,given
+927,Gremlins,1984,discover,,,given
+311,Once Upon a Time in America,1984,discover,,,given
+377,A Nightmare on Elm Street,1984,discover,,,given
+1885,The Karate Kid,1984,discover,,,given
+841,Dune,1984,discover,,,given
+9336,Police Academy,1984,discover,,,given
+655,"Paris, Texas",1984,discover,,,given
+1788,Footloose,1984,discover,,,given
+15144,Sixteen Candles,1984,discover,,,given
+2108,The Breakfast Club,1985,discover,,,given
+9340,The Goonies,1985,discover,,,given
+1374,Rocky IV,1985,discover,,,given
+1369,Rambo: First Blood Part II,1985,discover,,,given
+68,Brazil,1985,discover,,,given
+9355,Mad Max Beyond Thunderdome,1985,discover,,,given
+10999,Commando,1985,discover,,,given
+403587,Return,1985,discover,,,given
+10925,The Return of the Living Dead,1985,discover,,,given
+707,A View to a Kill,1985,discover,,,given
+9377,Ferris Bueller's Day Off,1986,discover,,,given
+9426,The Fly,1986,discover,,,given
+793,Blue Velvet,1986,discover,,,given
+6978,Big Trouble in Little China,1986,discover,,,given
+192,The Name of the Rose,1986,discover,,,given
+8009,Highlander,1986,discover,,,given
+13597,Labyrinth,1986,discover,,,given
+8856,The Karate Kid Part II,1986,discover,,,given
+9671,Crocodile Dundee,1986,discover,,,given
+9874,Cobra,1986,discover,,,given
+600,Full Metal Jacket,1987,discover,,,given
+106,Predator,1987,discover,,,given
+117,The Untouchables,1987,discover,,,given
+5548,RoboCop,1987,discover,,,given
+2493,The Princess Bride,1987,discover,,,given
+941,Lethal Weapon,1987,discover,,,given
+765,Evil Dead II,1987,discover,,,given
+957,Spaceballs,1987,discover,,,given
+9003,Hellraiser,1987,discover,,,given
+865,The Running Man,1987,discover,,,given
+4011,Beetlejuice,1988,discover,,,given
+9602,Coming to America,1988,discover,,,given
+37136,The Naked Gun: From the Files of Police Squad!,1988,discover,,,given
+8337,They Live,1988,discover,,,given
+1370,Rambo III,1988,discover,,,given
+10585,Child's Play,1988,discover,,,given
+9493,Twins,1988,discover,,,given
+623,A Fish Called Wanda,1988,discover,,,given
+11690,Bloodsport,1988,discover,,,given
+847,Willow,1988,discover,,,given
+165,Back to the Future Part II,1989,discover,,,given
+89,Indiana Jones and the Last Crusade,1989,discover,,,given
+2978,Ghostbusters II,1989,discover,,,given
+942,Lethal Weapon 2,1989,discover,,,given
+2756,The Abyss,1989,discover,,,given
+9354,"Honey, I Shrunk the Kids",1989,discover,,,given
+5825,National Lampoon's Christmas Vacation,1989,discover,,,given
+9494,Look Who's Talking,1989,discover,,,given
+8913,Pet Sematary,1989,discover,,,given
+709,Licence to Kill,1989,discover,,,given
+162,Edward Scissorhands,1990,discover,,,given
+771,Home Alone,1990,discover,,,given
+196,Back to the Future Part III,1990,discover,,,given
+242,The Godfather Part III,1990,discover,,,given
+861,Total Recall,1990,discover,,,given
+1573,Die Hard 2,1990,discover,,,given
+169,Predator 2,1990,discover,,,given
+1669,The Hunt for Red October,1990,discover,,,given
+9362,Tremors,1990,discover,,,given
+1375,Rocky V,1990,discover,,,given
+879,Hook,1991,discover,,,given
+2907,The Addams Family,1991,discover,,,given
+1089,Point Break,1991,discover,,,given
+1598,Cape Fear,1991,discover,,,given
+8367,Robin Hood: Prince of Thieves,1991,discover,,,given
+37137,The Naked Gun 2½: The Smell of Fear,1991,discover,,,given
+9595,Hot Shots!,1991,discover,,,given
+4032,My Girl,1991,discover,,,given
+650,Boyz n the Hood,1991,discover,,,given
+9319,The Last Boy Scout,1991,discover,,,given
+500,Reservoir Dogs,1992,discover,,,given
+772,Home Alone 2: Lost in New York,1992,discover,,,given
+364,Batman Returns,1992,discover,,,given
+8077,Alien³,1992,discover,,,given
+6114,Bram Stoker's Dracula,1992,discover,,,given
+9475,Scent of a Woman,1992,discover,,,given
+766,Army of Darkness,1992,discover,,,given
+9361,The Last of the Mohicans,1992,discover,,,given
+2005,Sister Act,1992,discover,,,given
+943,Lethal Weapon 3,1992,discover,,,given
+137,Groundhog Day,1993,discover,,,given
+788,Mrs. Doubtfire,1993,discover,,,given
+1587,What's Eating Gilbert Grape,1993,discover,,,given
+9739,Demolition Man,1993,discover,,,given
+37094,Falling Down,1993,discover,,,given
+6075,Carlito's Way,1993,discover,,,given
+2758,Addams Family Values,1993,discover,,,given
+10439,Hocus Pocus,1993,discover,,,given
+319,True Romance,1993,discover,,,given
+1607,A Bronx Tale,1993,discover,,,given
+278,The Shawshank Redemption,1994,discover,,,given
+854,The Mask,1994,discover,,,given
+8467,Dumb and Dumber,1994,discover,,,given
+628,Interview with the Vampire,1994,discover,,,given
+3049,Ace Ventura: Pet Detective,1994,discover,,,given
+36955,True Lies,1994,discover,,,given
+9495,The Crow,1994,discover,,,given
+2164,Stargate,1994,discover,,,given
+241,Natural Born Killers,1994,discover,,,given
+712,Four Weddings and a Funeral,1994,discover,,,given
+629,The Usual Suspects,1995,discover,,,given
+8844,Jumanji,1995,discover,,,given
+63,Twelve Monkeys,1995,discover,,,given
+9737,Bad Boys,1995,discover,,,given
+1572,Die Hard: With a Vengeance,1995,discover,,,given
+524,Casino,1995,discover,,,given
+414,Batman Forever,1995,discover,,,given
+8839,Casper,1995,discover,,,given
+76,Before Sunrise,1995,discover,,,given
+9273,Ace Ventura: When Nature Calls,1995,discover,,,given
+755,From Dusk Till Dawn,1996,discover,,,given
+75,Mars Attacks!,1996,discover,,,given
+454,Romeo + Juliet,1996,discover,,,given
+9802,The Rock,1996,discover,,,given
+10830,Matilda,1996,discover,,,given
+819,Sleepers,1996,discover,,,given
+11674,101 Dalmatians,1996,discover,,,given
+9614,Happy Gilmore,1996,discover,,,given
+9327,The Nutty Professor,1996,discover,,,given
+1645,A Time to Kill,1996,discover,,,given
+330,The Lost World: Jurassic Park,1997,discover,,,given
+2649,The Game,1997,discover,,,given
+782,Gattaca,1997,discover,,,given
+184,Jackie Brown,1997,discover,,,given
+1813,The Devil's Advocate,1997,discover,,,given
+1624,Liar Liar,1997,discover,,,given
+754,Face/Off,1997,discover,,,given
+8078,Alien Resurrection,1997,discover,,,given
+563,Starship Troopers,1997,discover,,,given
+9366,Donnie Brasco,1997,discover,,,given
+73,American History X,1998,discover,,,given
+100,"Lock, Stock and Two Smoking Barrels",1998,discover,,,given
+36647,Blade,1998,discover,,,given
+297,Meet Joe Black,1998,discover,,,given
+2109,Rush Hour,1998,discover,,,given
+431,Cube,1998,discover,,,given
+1878,Fear and Loathing in Las Vegas,1998,discover,,,given
+9820,The Parent Trap,1998,discover,,,given
+9342,The Mask of Zorro,1998,discover,,,given
+9798,Enemy of the State,1998,discover,,,given
+550,Fight Club,1999,discover,,,given
+497,The Green Mile,1999,discover,,,given
+1893,Star Wars: Episode I - The Phantom Menace,1999,discover,,,given
+564,The Mummy,1999,discover,,,given
+4951,10 Things I Hate About You,1999,discover,,,given
+2105,American Pie,1999,discover,,,given
+2668,Sleepy Hollow,1999,discover,,,given
+509,Notting Hill,1999,discover,,,given
+2667,The Blair Witch Project,1999,discover,,,given
+10137,Stuart Little,1999,discover,,,given
+1359,American Psycho,2000,discover,,,given
+36657,X-Men,2000,discover,,,given
+107,Snatch,2000,discover,,,given
+9741,Unbreakable,2000,discover,,,given
+8871,How the Grinch Stole Christmas,2000,discover,,,given
+4247,Scary Movie,2000,discover,,,given
+955,Mission: Impossible II,2000,discover,,,given
+9532,Final Destination,2000,discover,,,given
+1597,Meet the Parents,2000,discover,,,given
+9679,Gone in Sixty Seconds,2000,discover,,,given
+671,Harry Potter and the Philosopher's Stone,2001,discover,,,given
+120,The Lord of the Rings: The Fellowship of the Ring,2001,discover,,,given
+141,Donnie Darko,2001,discover,,,given
+453,A Beautiful Mind,2001,discover,,,given
+9799,The Fast and the Furious,2001,discover,,,given
+331,Jurassic Park III,2001,discover,,,given
+1734,The Mummy Returns,2001,discover,,,given
+1933,The Others,2001,discover,,,given
+676,Pearl Harbor,2001,discover,,,given
+644,A.I. Artificial Intelligence,2001,discover,,,given
+121,The Lord of the Rings: The Two Towers,2002,discover,,,given
+672,Harry Potter and the Chamber of Secrets,2002,discover,,,given
+557,Spider-Man,2002,discover,,,given
+1894,Star Wars: Episode II - Attack of the Clones,2002,discover,,,given
+608,Men in Black II,2002,discover,,,given
+423,The Pianist,2002,discover,,,given
+2501,The Bourne Identity,2002,discover,,,given
+180,Minority Report,2002,discover,,,given
+170,28 Days Later,2002,discover,,,given
+65,8 Mile,2002,discover,,,given
+122,The Lord of the Rings: The Return of the King,2003,discover,,,given
+22,Pirates of the Caribbean: The Curse of the Black Pearl,2003,discover,,,given
+604,The Matrix Reloaded,2003,discover,,,given
+310,Bruce Almighty,2003,discover,,,given
+36658,X2,2003,discover,,,given
+605,The Matrix Revolutions,2003,discover,,,given
+584,2 Fast 2 Furious,2003,discover,,,given
+587,Big Fish,2003,discover,,,given
+508,Love Actually,2003,discover,,,given
+296,Terminator 3: Rise of the Machines,2003,discover,,,given
+673,Harry Potter and the Prisoner of Azkaban,2004,discover,,,given
+558,Spider-Man 2,2004,discover,,,given
+393,Kill Bill: Vol. 2,2004,discover,,,given
+2048,"I, Robot",2004,discover,,,given
+652,Troy,2004,discover,,,given
+176,Saw,2004,discover,,,given
+747,Shaun of the Dead,2004,discover,,,given
+435,The Day After Tomorrow,2004,discover,,,given
+594,The Terminal,2004,discover,,,given
+1954,The Butterfly Effect,2004,discover,,,given
+272,Batman Begins,2005,discover,,,given
+674,Harry Potter and the Goblet of Fire,2005,discover,,,given
+118,Charlie and the Chocolate Factory,2005,discover,,,given
+1895,Star Wars: Episode III - Revenge of the Sith,2005,discover,,,given
+411,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",2005,discover,,,given
+787,Mr. & Mrs. Smith,2005,discover,,,given
+9738,Fantastic Four,2005,discover,,,given
+74,War of the Worlds,2005,discover,,,given
+187,Sin City,2005,discover,,,given
+4348,Pride & Prejudice,2005,discover,,,given
+1124,The Prestige,2006,discover,,,given
+58,Pirates of the Caribbean: Dead Man's Chest,2006,discover,,,given
+752,V for Vendetta,2006,discover,,,given
+36557,Casino Royale,2006,discover,,,given
+1593,Night at the Museum,2006,discover,,,given
+1402,The Pursuit of Happyness,2006,discover,,,given
+36668,X-Men: The Last Stand,2006,discover,,,given
+591,The Da Vinci Code,2006,discover,,,given
+1372,Blood Diamond,2006,discover,,,given
+9693,Children of Men,2006,discover,,,given
+675,Harry Potter and the Order of the Phoenix,2007,discover,,,given
+6479,I Am Legend,2007,discover,,,given
+285,Pirates of the Caribbean: At World's End,2007,discover,,,given
+559,Spider-Man 3,2007,discover,,,given
+1271,300,2007,discover,,,given
+1858,Transformers,2007,discover,,,given
+5915,Into the Wild,2007,discover,,,given
+4638,Hot Fuzz,2007,discover,,,given
+2503,The Bourne Ultimatum,2007,discover,,,given
+1979,Fantastic Four: Rise of the Silver Surfer,2007,discover,,,given
+4922,The Curious Case of Benjamin Button,2008,discover,,,given
+1724,The Incredible Hulk,2008,discover,,,given
+8681,Taken,2008,discover,,,given
+13223,Gran Torino,2008,discover,,,given
+8960,Hancock,2008,discover,,,given
+217,Indiana Jones and the Kingdom of the Crystal Skull,2008,discover,,,given
+10764,Quantum of Solace,2008,discover,,,given
+7191,Cloverfield,2008,discover,,,given
+14574,The Boy in the Striped Pyjamas,2008,discover,,,given
+8909,Wanted,2008,discover,,,given
+767,Harry Potter and the Half-Blood Prince,2009,discover,,,given
+10528,Sherlock Holmes,2009,discover,,,given
+19908,Zombieland,2009,discover,,,given
+14161,2012,2009,discover,,,given
+2080,X-Men Origins: Wolverine,2009,discover,,,given
+19913,(500) Days of Summer,2009,discover,,,given
+13475,Star Trek,2009,discover,,,given
+17654,District 9,2009,discover,,,given
+13183,Watchmen,2009,discover,,,given
+18239,The Twilight Saga: New Moon,2009,discover,,,given
+11324,Shutter Island,2010,discover,,,given
+10138,Iron Man 2,2010,discover,,,given
+12444,Harry Potter and the Deathly Hallows: Part 1,2010,discover,,,given
+12155,Alice in Wonderland,2010,discover,,,given
+23483,Kick-Ass,2010,discover,,,given
+24021,The Twilight Saga: Eclipse,2010,discover,,,given
+22538,Scott Pilgrim vs. the World,2010,discover,,,given
+27578,The Expendables,2010,discover,,,given
+44115,127 Hours,2010,discover,,,given
+20526,TRON: Legacy,2010,discover,,,given
+1771,Captain America: The First Avenger,2011,discover,,,given
+12445,Harry Potter and the Deathly Hallows: Part 2,2011,discover,,,given
+1865,Pirates of the Caribbean: On Stranger Tides,2011,discover,,,given
+49538,X-Men: First Class,2011,discover,,,given
+61791,Rise of the Planet of the Apes,2011,discover,,,given
+49530,In Time,2011,discover,,,given
+51876,Limitless,2011,discover,,,given
+45243,The Hangover Part II,2011,discover,,,given
+58574,Sherlock Holmes: A Game of Shadows,2011,discover,,,given
+56292,Mission: Impossible - Ghost Protocol,2011,discover,,,given
+24428,The Avengers,2012,discover,,,given
+49026,The Dark Knight Rises,2012,discover,,,given
+49051,The Hobbit: An Unexpected Journey,2012,discover,,,given
+1930,The Amazing Spider-Man,2012,discover,,,given
+37724,Skyfall,2012,discover,,,given
+87827,Life of Pi,2012,discover,,,given
+70981,Prometheus,2012,discover,,,given
+72105,Ted,2012,discover,,,given
+84892,The Perks of Being a Wallflower,2012,discover,,,given
+64688,21 Jump Street,2012,discover,,,given
+68721,Iron Man 3,2013,discover,,,given
+101299,The Hunger Games: Catching Fire,2013,discover,,,given
+76338,Thor: The Dark World,2013,discover,,,given
+75656,Now You See Me,2013,discover,,,given
+72190,World War Z,2013,discover,,,given
+49521,Man of Steel,2013,discover,,,given
+57158,The Hobbit: The Desolation of Smaug,2013,discover,,,given
+68726,Pacific Rim,2013,discover,,,given
+64682,The Great Gatsby,2013,discover,,,given
+138843,The Conjuring,2013,discover,,,given
+157336,Interstellar,2014,discover,,,given
+245891,John Wick,2014,discover,,,given
+100402,Captain America: The Winter Soldier,2014,discover,,,given
+198663,The Maze Runner,2014,discover,,,given
+205596,The Imitation Game,2014,discover,,,given
+240832,Lucy,2014,discover,,,given
+131631,The Hunger Games: Mockingjay - Part 1,2014,discover,,,given
+127585,X-Men: Days of Future Past,2014,discover,,,given
+120467,The Grand Budapest Hotel,2014,discover,,,given
+122917,The Hobbit: The Battle of the Five Armies,2014,discover,,,given
+99861,Avengers: Age of Ultron,2015,discover,,,given
+135397,Jurassic World,2015,discover,,,given
+286217,The Martian,2015,discover,,,given
+102899,Ant-Man,2015,discover,,,given
+140607,Star Wars: The Force Awakens,2015,discover,,,given
+207703,Kingsman: The Secret Service,2015,discover,,,given
+273248,The Hateful Eight,2015,discover,,,given
+264660,Ex Machina,2015,discover,,,given
+131634,The Hunger Games: Mockingjay - Part 2,2015,discover,,,given
+206647,Spectre,2015,discover,,,given
+293660,Deadpool,2016,discover,,,given
+271110,Captain America: Civil War,2016,discover,,,given
+284052,Doctor Strange,2016,discover,,,given
+259316,Fantastic Beasts and Where to Find Them,2016,discover,,,given
+209112,Batman v Superman: Dawn of Justice,2016,discover,,,given
+330459,Rogue One: A Star Wars Story,2016,discover,,,given
+274870,Passengers,2016,discover,,,given
+246655,X-Men: Apocalypse,2016,discover,,,given
+296096,Me Before You,2016,discover,,,given
+291805,Now You See Me 2,2016,discover,,,given
+315635,Spider-Man: Homecoming,2017,discover,,,given
+283995,Guardians of the Galaxy Vol. 2,2017,discover,,,given
+284053,Thor: Ragnarok,2017,discover,,,given
+263115,Logan,2017,discover,,,given
+346364,It,2017,discover,,,given
+381288,Split,2017,discover,,,given
+374720,Dunkirk,2017,discover,,,given
+181808,Star Wars: The Last Jedi,2017,discover,,,given
+321612,Beauty and the Beast,2017,discover,,,given
+353486,Jumanji: Welcome to the Jungle,2017,discover,,,given
+299536,Avengers: Infinity War,2018,discover,,,given
+383498,Deadpool 2,2018,discover,,,given
+335983,Venom,2018,discover,,,given
+333339,Ready Player One,2018,discover,,,given
+447332,A Quiet Place,2018,discover,,,given
+297802,Aquaman,2018,discover,,,given
+363088,Ant-Man and the Wasp,2018,discover,,,given
+351286,Jurassic World: Fallen Kingdom,2018,discover,,,given
+338952,Fantastic Beasts: The Crimes of Grindelwald,2018,discover,,,given
+405774,Bird Box,2018,discover,,,given
+299534,Avengers: Endgame,2019,discover,,,given
+429617,Spider-Man: Far From Home,2019,discover,,,given
+299537,Captain Marvel,2019,discover,,,given
+546554,Knives Out,2019,discover,,,given
+458156,John Wick: Chapter 3 - Parabellum,2019,discover,,,given
+181812,Star Wars: The Rise of Skywalker,2019,discover,,,given
+420817,Aladdin,2019,discover,,,given
+287947,Shazam!,2019,discover,,,given
+399579,Alita: Battle Angel,2019,discover,,,given
+474350,It Chapter Two,2019,discover,,,given
+495764,Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn),2020,discover,,,given
+454626,Sonic the Hedgehog,2020,discover,,,given
+464052,Wonder Woman 1984,2020,discover,,,given
+38700,Bad Boys for Life,2020,discover,,,given
+337401,Mulan,2020,discover,,,given
+522627,The Gentlemen,2020,discover,,,given
+497582,Enola Holmes,2020,discover,,,given
+545609,Extraction,2020,discover,,,given
+570670,The Invisible Man,2020,discover,,,given
+524047,Greenland,2020,discover,,,given
+634649,Spider-Man: No Way Home,2021,discover,,,given
+497698,Black Widow,2021,discover,,,given
+580489,Venom: Let There Be Carnage,2021,discover,,,given
+791373,Zack Snyder's Justice League,2021,discover,,,given
+399566,Godzilla vs. Kong,2021,discover,,,given
+566525,Shang-Chi and the Legend of the Ten Rings,2021,discover,,,given
+337404,Cruella,2021,discover,,,given
+550988,Free Guy,2021,discover,,,given
+436969,The Suicide Squad,2021,discover,,,given
+646380,Don't Look Up,2021,discover,,,given
+76600,Avatar: The Way of Water,2022,discover,,,given
+414906,The Batman,2022,discover,,,given
+453395,Doctor Strange in the Multiverse of Madness,2022,discover,,,given
+616037,Thor: Love and Thunder,2022,discover,,,given
+766507,Prey,2022,discover,,,given
+718930,Bullet Train,2022,discover,,,given
+505642,Black Panther: Wakanda Forever,2022,discover,,,given
+507086,Jurassic World Dominion,2022,discover,,,given
+661374,Glass Onion: A Knives Out Mystery,2022,discover,,,given
+335787,Uncharted,2022,discover,,,given
+447365,Guardians of the Galaxy Vol. 3,2023,discover,,,given
+603692,John Wick: Chapter 4,2023,discover,,,given
+385687,Fast X,2023,discover,,,given
+640146,Ant-Man and the Wasp: Quantumania,2023,discover,,,given
+667538,Transformers: Rise of the Beasts,2023,discover,,,given
+575264,Mission: Impossible - Dead Reckoning Part One,2023,discover,,,given
+507089,Five Nights at Freddy's,2023,discover,,,given
+493529,Dungeons & Dragons: Honor Among Thieves,2023,discover,,,given
+787699,Wonka,2023,discover,,,given
+335977,Indiana Jones and the Dial of Destiny,2023,discover,,,given
+533535,Deadpool & Wolverine,2024,discover,,,given
+786892,Furiosa: A Mad Max Saga,2024,discover,,,given
+945961,Alien: Romulus,2024,discover,,,given
+823464,Godzilla x Kong: The New Empire,2024,discover,,,given
+558449,Gladiator II,2024,discover,,,given
+929590,Civil War,2024,discover,,,given
+866398,The Beekeeper,2024,discover,,,given
+912649,Venom: The Last Dance,2024,discover,,,given
+653346,Kingdom of the Planet of the Apes,2024,discover,,,given
+746036,The Fall Guy,2024,discover,,,given
+1061474,Superman,2025,discover,,,given
+911430,F1,2025,discover,,,given
+83533,Avatar: Fire and Ash,2025,discover,,,given
+950396,The Gorge,2025,discover,,,given
+986056,Thunderbolts*,2025,discover,,,given
+1078605,Weapons,2025,discover,,,given
+696506,Mickey 17,2025,discover,,,given
+617126,The Fantastic 4: First Steps,2025,discover,,,given
+1062722,Frankenstein,2025,discover,,,given
+1234821,Jurassic World Rebirth,2025,discover,,,given
