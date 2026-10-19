@@ -164,11 +164,11 @@ describe("armadilhas", () => {
     const { buildProjectCard, isTrap } = await import("../offers");
     let traps = 0, cards = 0;
     for (let i = 0; i < 200; i++) {
-      const s = createState({ ...base, seed: `trap-${i}`, anoEstreia: 1990 + (i % 25) });
+      const s = createState({ ...base, seed: `trap-${i}`, anoEstreia: 1975 + 5 * (i % 9) });
       s.cardsJogados = i % 7;
       const card = buildProjectCard(content.films, content.fallbacks, s);
       if (!card) continue;
-      const poolHasTrap = content.films.some((f) => f.year === s.ano + 1 && isTrap(f) && !f.fallback);
+      const poolHasTrap = content.films.some((f) => f.year >= s.ano + 1 && f.year <= s.ano + 2 && isTrap(f) && !f.fallback);
       if (!poolHasTrap) continue;
       cards++; if (card.offers.some((o) => isTrap(o.film))) traps++;
     }
