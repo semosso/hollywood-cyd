@@ -172,22 +172,16 @@ def production_fact(rec: dict, lang: str) -> str:
         return "Quase três horas." if lang == "pt" else "Nearly three hours long."
     if rt and rt <= 90:
         return "Dura menos de hora e meia." if lang == "pt" else "Under ninety minutes."
-    if lang == "pt":
-        return ""  # as palavras-chave do TMDB são só em inglês
-    kws = [k for k in (rec.get("_keywords") or []) if len(k) > 3][:2]
-    words = rec.get("_title_words") or set()
-    kws = [k for k in kws if not (title_words(k) & words)]
-    if kws:
-        return ("Palavras-chave: " if lang == "pt" else "Keywords: ") + ", ".join(kws) + "."
+    # Sem fato de duração, a descrição termina na sinopse. (Palavras-chave do TMDB saíram: liam como
+    # metadado, repetiam a sinopse e só existiam em inglês.)
     return ""
 
 
 def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int], my_index: int, credits_pt: dict | None = None) -> tuple[dict, dict]:
     """Devolve (blind_pt, blind_en) com hard/medium/easy."""
-    from .tmdb import keywords, pt_br_overview  # import tardio para facilitar testes
+    from .tmdb import pt_br_overview  # import tardio para facilitar testes
     words = title_words(rec["title"].get("en"), rec["title"].get("original"), rec["title"].get("pt")) | character_words(m)
     rec["_title_words"] = words
-    rec["_keywords"] = keywords(m)
     g = genre_main(rec["genres"])
     tier = budget_tier(rec.get("budget"))
     # Sem sinopse em português, a descrição fica só com gênero, orçamento e ficha técnica: nada de inglês no meio.
@@ -211,5 +205,5 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
             medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {fact}".strip()
             easy = f"{dname or 'The director'} wants you in a {gname}. {first_sentence(ov, 220)}".strip()
         out[lang] = {"hard": re.sub(r"\s+", " ", hard), "medium": re.sub(r"\s+", " ", medium), "easy": re.sub(r"\s+", " ", easy)}
-    rec.pop("_title_words", None); rec.pop("_keywords", None)
+    rec.pop("_title_words", None)
     return out["pt"], out["en"]
