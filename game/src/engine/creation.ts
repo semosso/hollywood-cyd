@@ -20,7 +20,6 @@ export const ORIGINS: Origin[] = [
   { id: "modelo", bonus: { beleza: 1 }, idade: 21, flags: ["nao_levada_a_serio"] },
   { id: "influencer", bonus: {}, idade: 22, minAno: 2012, meters: { fama: 40, heat: 5, prestigio: -15 }, flags: ["tweets_antigos"] },
   { id: "garcom", bonus: {}, extraPoints: 1, idade: 22 },
-  { id: "standup", bonus: { carisma: 1 }, idade: 24, flags: ["pigeonhole_comedia"] },
   { id: "atleta", bonus: {}, idade: 23, talentoMax: 1, flags: ["fisico"] },
   { id: "imigrante", bonus: { talento: 1 }, idade: 25, flags: ["sotaque"] },
 ];

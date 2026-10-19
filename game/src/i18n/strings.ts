@@ -88,7 +88,6 @@ export const ORIGIN_HELP: Record<string, { name: { pt: string; en: string }; pt:
   modelo: { name: { pt: "Modelo", en: "Model" }, pt: "Beleza +1. Ninguém te leva a sério por dez anos.", en: "Looks +1. Nobody takes you seriously for ten years." },
   influencer: { name: { pt: "Influencer", en: "Influencer" }, pt: "Fama instantânea, zero prestígio, tweets de 2012. Só a partir de 2012.", en: "Instant fame, zero prestige, tweets from 2012. From 2012 on." },
   garcom: { name: { pt: "Garçom/garçonete em LA", en: "LA waiter" }, pt: "O clássico. Nada de bônus, mas um ponto extra para distribuir.", en: "The classic. No bonus, but one extra point to spend." },
-  standup: { name: { pt: "Stand-up", en: "Stand-up" }, pt: "Carisma +1. Só ofertas de comédia até provar o contrário.", en: "Charisma +1. Comedy offers only, until you prove otherwise." },
   atleta: { name: { pt: "Ex-atleta", en: "Former athlete" }, pt: "Físico de capa até os 35. Talento começa em 1.", en: "Cover-ready body until 35. Talent starts at 1." },
   imigrante: { name: { pt: "Imigrante com sotaque", en: "Immigrant with an accent" }, pt: "Talento +1 do teatro no país de origem. Só vilão e coadjuvante até a fama chegar.", en: "Talent +1 from theater back home. Villains and supporting parts only, until fame arrives." },
 };

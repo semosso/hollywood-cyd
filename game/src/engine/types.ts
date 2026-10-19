@@ -5,7 +5,7 @@ export type I18n = { pt: string; en?: string };
 export type AttrKey = "beleza" | "talento" | "contatos" | "carisma" | "juizo";
 export type Attributes = Record<AttrKey, number>;
 
-export type OriginId = "nepo" | "teatro_ny" | "ex_crianca" | "modelo" | "influencer" | "garcom" | "standup" | "atleta" | "imigrante";
+export type OriginId = "nepo" | "teatro_ny" | "ex_crianca" | "modelo" | "influencer" | "garcom" | "atleta" | "imigrante";
 
 export type AwardStatus = "none" | "nominated" | "won";
 export type Outcome = "hit" | "popcorn" | "oscar_bait" | "cult" | "flop" | "bomb";

@@ -283,7 +283,6 @@ Opcional: **Sorte** oculta (1–3), sorteada, revelada só no card final.
 | **Modelo** | Beleza +1 | Ninguém te leva a sério por 10 anos | "Um diretor europeu quer você num filme sem falas" |
 | **Influencer** (só estreia ≥ 2012) | Fama instantânea | Zero Prestígio; tweets de 2012 | "Um streaming quer um filme de Natal com você" |
 | **Garçom/garçonete em LA** | +1 ponto no point buy | Começa aos 22 lavando prato | "Um cliente deixa um cartão e uma gorjeta de 3 dólares" |
-| **Stand-up** | Carisma +1 | Só comédia até provar o contrário | "Uma piada antiga sua ressurge" |
 | **Ex-atleta** | Físico, fama de nicho | Talento 1 | "Uma franquia de carros precisa de um músculo novo" |
 | **Imigrante com sotaque** | Talento +1 | Só vilão/terrorista/empregada até virar o jogo | "O estúdio quer que você 'suavize' o sotaque" |
 

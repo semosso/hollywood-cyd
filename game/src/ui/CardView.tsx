@@ -32,10 +32,11 @@ export function CardView({ state, card, lang, onAction, showTutorial, onTutorial
   );
 }
 
-function OfferBox({ o, lang, hot }: { o: Offer; lang: Lang; hot: "left" | "right" | null }) {
+function OfferBox({ o, lang, hot, tag }: { o: Offer; lang: Lang; hot: "left" | "right" | null; tag: "A" | "B" }) {
   const yrs = o.visible.releaseIn === 1 ? t("year", lang) : t("years", lang);
   return (
     <div className={`offer ${hot ? `hot-${hot}` : ""}`}>
+      <div className={`tag tag-${tag}`}>{tag === "A" ? "◀ A" : "B ▶"}</div>
       <div className="meta">
         <span>{o.visible.genres.join(" · ") || "—"}</span><span>{o.visible.budgetBand}</span><span>{t("releaseIn", lang)} {o.visible.releaseIn} {yrs}</span>
         {o.reach && <span style={{ color: "var(--accent)" }}>↑ reach</span>}
@@ -89,7 +90,7 @@ function ProjectCard({ state, card, lang, onAction, showTutorial, onTutorialDone
     mode.current = "idle";
     setAnimate(true); setDrag(null);
   };
-  const label = intent === "A" ? `${t("accept", lang)}: ◀` : intent === "B" ? `${t("accept", lang)}: ▶` : "";
+  const label = intent === "A" ? `◀ ${t("accept", lang)} A` : intent === "B" ? `${t("accept", lang)} B ▶` : "";
   const rot = Math.max(-8, Math.min(8, dx / 25));
 
   return (
@@ -108,8 +109,8 @@ function ProjectCard({ state, card, lang, onAction, showTutorial, onTutorialDone
           {card.hint && <span className="mono" style={{ color: card.modo === "dourado" ? "var(--ok)" : "var(--warn)" }}>{card.modo === "dourado" ? "★ " : ""}{card.hint}</span>}
         </div>
         <div className="offers">
-          <OfferBox o={A} lang={lang} hot={intent === "A" || (!intent && dx < -40) ? "left" : null} />
-          <OfferBox o={B} lang={lang} hot={intent === "B" || (!intent && dx > 40) ? "right" : null} />
+          <OfferBox o={A} lang={lang} tag="A" hot={intent === "A" || (!intent && dx < -40) ? "left" : null} />
+          <OfferBox o={B} lang={lang} tag="B" hot={intent === "B" || (!intent && dx > 40) ? "right" : null} />
         </div>
         {third && <div className={`third ${third.disponivel ? "on" : ""}`}>▲ {third.disponivel ? third.requisito : `${t("locked", lang)} ${third.requisito}`}</div>}
         <div className="preview"><span className={intent ? "on" : ""}>{label}</span></div>

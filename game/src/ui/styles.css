@@ -47,6 +47,9 @@ input, select { font: inherit; color: var(--fg); background: var(--card); border
 .offer { border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: grid; gap: 8px; align-content: start; min-width: 0; transition: border-color .15s, background .15s; }
 .offer.hot-left { border-color: var(--left); background: color-mix(in srgb, var(--left) 10%, var(--card)); }
 .offer.hot-right { border-color: var(--right); background: color-mix(in srgb, var(--right) 10%, var(--card)); }
+.offer .tag { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: .04em; padding: 2px 10px; border-radius: 4px; width: max-content; color: #fff; }
+.offer .tag-A { background: var(--left); }
+.offer .tag-B { background: var(--right); }
 .offer .blind { font-size: 16px; }
 .offer .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 10px; }
 .icons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-family: var(--mono); font-size: 12px; }

@@ -38,7 +38,6 @@
 | `modelo` | beleza +1 | flag `nao_levada_a_serio` (prestigio ganha 50% por 10 anos) | 21 |
 | `influencer` (só anoEstreia ≥ 2012) | — | fama 40, heat 5, prestigio −15, flag `tweets_antigos` | 22 |
 | `garcom` | +1 ponto livre no point buy | — | 22 |
-| `standup` | carisma +1 | flag `pigeonhole_comedia` (até Prestígio ≥ 30, só ofertas de comédia/família contam como "do seu tamanho") | 24 |
 | `atleta` | — | beleza efetiva +1 até 35, talento máx 1 na criação | 23 |
 | `imigrante` | talento +1 | flag `sotaque` (só papéis order ≥ 2 até Fama ≥ 40) | 25 |
 
