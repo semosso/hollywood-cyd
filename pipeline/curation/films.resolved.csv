@@ -1252,3 +1252,281 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 1001414,Fear Street: Prom Queen,2025,discover-bad,,,given
 1242434,Highest 2 Lowest,2025,discover-bad,,,given
 257094,Holland,2025,discover-bad,,,given
+381284,Hidden Figures,2016,discover,,,given
+283366,Miss Peregrine's Home for Peculiar Children,2016,discover,,,given
+259693,The Conjuring 2,2016,discover,,,given
+290250,The Nice Guys,2016,discover,,,given
+333371,10 Cloverfield Lane,2016,discover,,,given
+278927,The Jungle Book,2016,discover,,,given
+340666,Nocturnal Animals,2016,discover,,,given
+300669,Don't Breathe,2016,discover,,,given
+310131,The Witch,2016,discover,,,given
+363676,Sully,2016,discover,,,given
+302946,The Accountant,2016,discover,,,given
+68735,Warcraft,2016,discover,,,given
+188927,Star Trek Beyond,2016,discover,,,given
+262504,Allegiant,2016,discover,,,given
+328387,Nerve,2016,discover,,,given
+334543,Lion,2016,discover,,,given
+334533,Captain Fantastic,2016,discover,,,given
+241259,Alice Through the Looking Glass,2016,discover,,,given
+207932,Inferno,2016,discover,,,given
+258489,The Legend of Tarzan,2016,discover,,,given
+333484,The Magnificent Seven,2016,discover,,,given
+324552,John Wick: Chapter 2,2017,discover,,,given
+166426,Pirates of the Caribbean: Dead Men Tell No Tales,2017,discover,,,given
+343668,Kingsman: The Golden Circle,2017,discover,,,given
+293167,Kong: Skull Island,2017,discover,,,given
+337339,The Fate of the Furious,2017,discover,,,given
+392044,Murder on the Orient Express,2017,discover,,,given
+316029,The Greatest Showman,2017,discover,,,given
+281338,War for the Planet of the Apes,2017,discover,,,given
+126889,Alien: Covenant,2017,discover,,,given
+47971,xXx: Return of Xander Cage,2017,discover,,,given
+315837,Ghost in the Shell,2017,discover,,,given
+339846,Baywatch,2017,discover,,,given
+406997,Wonder,2017,discover,,,given
+339964,Valerian and the City of a Thousand Planets,2017,discover,,,given
+395992,Life,2017,discover,,,given
+341174,Fifty Shades Darker,2017,discover,,,given
+381283,mother!,2017,discover,,,given
+335988,Transformers: The Last Knight,2017,discover,,,given
+390043,The Hitman's Bodyguard,2017,discover,,,given
+341013,Atomic Blonde,2017,discover,,,given
+300668,Annihilation,2018,discover,,,given
+348350,Solo: A Star Wars Story,2018,discover,,,given
+402900,Ocean's Eight,2018,discover,,,given
+466282,To All the Boys I've Loved Before,2018,discover,,,given
+336843,Maze Runner: The Death Cure,2018,discover,,,given
+338970,Tomb Raider,2018,discover,,,given
+337167,Fifty Shades Freed,2018,discover,,,given
+345940,The Meg,2018,discover,,,given
+427641,Rampage,2018,discover,,,given
+454983,The Kissing Booth,2018,discover,,,given
+439079,The Nun,2018,discover,,,given
+424783,Bumblebee,2018,discover,,,given
+445571,Game Night,2018,discover,,,given
+401981,Red Sparrow,2018,discover,,,given
+449176,"Love, Simon",2018,discover,,,given
+345887,The Equalizer 2,2018,discover,,,given
+480530,Creed II,2018,discover,,,given
+369972,First Man,2018,discover,,,given
+268896,Pacific Rim: Uprising,2018,discover,,,given
+504172,The Mule,2018,discover,,,given
+447200,Skyscraper,2018,discover,,,given
+428078,Mortal Engines,2018,discover,,,given
+512200,Jumanji: The Next Level,2019,discover,,,given
+450465,Glass,2019,discover,,,given
+537915,After,2019,discover,,,given
+530385,Midsommar,2019,discover,,,given
+458723,Us,2019,discover,,,given
+384018,Fast & Furious Presents: Hobbs & Shaw,2019,discover,,,given
+398978,The Irishman,2019,discover,,,given
+447404,Pokémon Detective Pikachu,2019,discover,,,given
+373571,Godzilla: King of the Monsters,2019,discover,,,given
+420809,Maleficent: Mistress of Evil,2019,discover,,,given
+338967,Zombieland: Double Tap,2019,discover,,,given
+527641,Five Feet Apart,2019,discover,,,given
+567609,Ready or Not,2019,discover,,,given
+290859,Terminator: Dark Fate,2019,discover,,,given
+559969,El Camino: A Breaking Bad Movie,2019,discover,,,given
+503919,The Lighthouse,2019,discover,,,given
+453405,Gemini Man,2019,discover,,,given
+479455,Men in Black: International,2019,discover,,,given
+509967,6 Underground,2019,discover,,,given
+522681,Escape Room,2019,discover,,,given
+613504,After We Collided,2020,discover,,,given
+338762,Bloodshot,2020,discover,,,given
+583083,The Kissing Booth 2,2020,discover,,,given
+547016,The Old Guard,2020,discover,,,given
+590223,Love and Monsters,2020,discover,,,given
+481848,The Call of the Wild,2020,discover,,,given
+514847,The Hunt,2020,discover,,,given
+340102,The New Mutants,2020,discover,,,given
+499932,The Devil All the Time,2020,discover,,,given
+443791,Underwater,2020,discover,,,given
+458576,Monster Hunter,2020,discover,,,given
+516486,Greyhound,2020,discover,,,given
+556984,The Trial of the Chicago 7,2020,discover,,,given
+605116,Project Power,2020,discover,,,given
+342470,All the Bright Places,2020,discover,,,given
+531219,Roald Dahl's The Witches,2020,discover,,,given
+546121,Run,2020,discover,,,given
+740985,Borat Subsequent Moviefilm: Delivery of Prodigious Bribe to American Regime for Make Benefit Once Glorious Nation of Kazakhstan,2020,discover,,,given
+539885,Ava,2020,discover,,,given
+565426,To All the Boys: P.S. I Still Love You,2020,discover,,,given
+539537,Fantasy Island,2020,discover,,,given
+457335,Guns Akimbo,2020,discover,,,given
+625568,Unhinged,2020,discover,,,given
+581600,Spenser Confidential,2020,discover,,,given
+524434,Eternals,2021,discover,,,given
+615457,Nobody,2021,discover,,,given
+385128,F9,2021,discover,,,given
+520763,A Quiet Place Part II,2021,discover,,,given
+370172,No Time to Die,2021,discover,,,given
+460465,Mortal Kombat,2021,discover,,,given
+624860,The Matrix Resurrections,2021,discover,,,given
+423108,The Conjuring: The Devil Made Me Do It,2021,discover,,,given
+512195,Red Notice,2021,discover,,,given
+637649,Wrath of Man,2021,discover,,,given
+451048,Jungle Cruise,2021,discover,,,given
+425909,Ghostbusters: Afterlife,2021,discover,,,given
+476669,The King's Man,2021,discover,,,given
+631843,Old,2021,discover,,,given
+503736,Army of the Dead,2021,discover,,,given
+588228,The Tomorrow War,2021,discover,,,given
+522402,Finch,2021,discover,,,given
+576845,Last Night in Soho,2021,discover,,,given
+617653,The Last Duel,2021,discover,,,given
+644495,House of Gucci,2021,discover,,,given
+597208,Nightmare Alley,2021,discover,,,given
+567748,The Guilty,2021,discover,,,given
+542178,"The French Dispatch of the Liberty, Kansas Evening Sun",2021,discover,,,given
+601666,I Care a Lot,2021,discover,,,given
+610253,Halloween Kills,2021,discover,,,given
+602269,The Little Things,2021,discover,,,given
+614917,King Richard,2021,discover,,,given
+593643,The Menu,2022,discover,,,given
+756999,The Black Phone,2022,discover,,,given
+675353,Sonic the Hedgehog 2,2022,discover,,,given
+639933,The Northman,2022,discover,,,given
+338953,Fantastic Beasts: The Secrets of Dumbledore,2022,discover,,,given
+762504,Nope,2022,discover,,,given
+696806,The Adam Project,2022,discover,,,given
+536554,M3GAN,2022,discover,,,given
+985939,Fall,2022,discover,,,given
+725201,The Gray Man,2022,discover,,,given
+505026,Death on the Nile,2022,discover,,,given
+882598,Smile,2022,discover,,,given
+760104,X,2022,discover,,,given
+752623,The Lost City,2022,discover,,,given
+646385,Scream,2022,discover,,,given
+406759,Moonfall,2022,discover,,,given
+937278,A Man Called Otto,2022,discover,,,given
+913290,Barbarian,2022,discover,,,given
+829280,Enola Holmes 2,2022,discover,,,given
+619730,Don't Worry Darling,2022,discover,,,given
+762975,Purple Hearts,2022,discover,,,given
+670292,The Creator,2023,discover,,,given
+615656,Meg 2: The Trench,2023,discover,,,given
+884605,No Hard Feelings,2023,discover,,,given
+713704,Evil Dead Rise,2023,discover,,,given
+1008042,Talk to Me,2023,discover,,,given
+926393,The Equalizer 3,2023,discover,,,given
+594767,Shazam! Fury of the Gods,2023,discover,,,given
+695721,The Hunger Games: The Ballad of Songbirds & Snakes,2023,discover,,,given
+572802,Aquaman and the Lost Kingdom,2023,discover,,,given
+609681,The Marvels,2023,discover,,,given
+980489,Gran Turismo,2023,discover,,,given
+726209,Leave the World Behind,2023,discover,,,given
+447277,The Little Mermaid,2023,discover,,,given
+882569,Guy Ritchie's The Covenant,2023,discover,,,given
+934433,Scream VI,2023,discover,,,given
+758323,The Pope's Exorcist,2023,discover,,,given
+753342,Napoleon,2023,discover,,,given
+565770,Blue Beetle,2023,discover,,,given
+1072790,Anyone but You,2023,discover,,,given
+631842,Knock at the Cabin,2023,discover,,,given
+697843,Extraction 2,2023,discover,,,given
+800158,The Killer,2023,discover,,,given
+677179,Creed III,2023,discover,,,given
+700391,65,2023,discover,,,given
+426063,Nosferatu,2024,discover,,,given
+762441,A Quiet Place: Day One,2024,discover,,,given
+573435,Bad Boys: Ride or Die,2024,discover,,,given
+939243,Sonic the Hedgehog 3,2024,discover,,,given
+917496,Beetlejuice Beetlejuice,2024,discover,,,given
+359410,Road House,2024,discover,,,given
+718821,Twisters,2024,discover,,,given
+845781,Red One,2024,discover,,,given
+1032823,Trap,2024,discover,,,given
+1138194,Heretic,2024,discover,,,given
+1005331,Carry-On,2024,discover,,,given
+763215,Damsel,2024,discover,,,given
+1226578,Longlegs,2024,discover,,,given
+1106739,Juror #2,2024,discover,,,given
+539972,Kraven the Hunter,2024,discover,,,given
+1100782,Smile 2,2024,discover,,,given
+1114513,Speak No Evil,2024,discover,,,given
+938614,Late Night with the Devil,2024,discover,,,given
+967847,Ghostbusters: Frozen Empire,2024,discover,,,given
+1111873,Abigail,2024,discover,,,given
+799583,The Ministry of Ungentlemanly Warfare,2024,discover,,,given
+840705,Blink Twice,2024,discover,,,given
+1242898,Predator: Badlands,2025,discover,,,given
+822119,Captain America: Brave New World,2025,discover,,,given
+950387,A Minecraft Movie,2025,discover,,,given
+575265,Mission: Impossible - The Final Reckoning,2025,discover,,,given
+1368166,The Housemaid,2025,discover,,,given
+1087192,How to Train Your Dragon,2025,discover,,,given
+574475,Final Destination Bloodlines,2025,discover,,,given
+1100988,28 Years Later,2025,discover,,,given
+541671,Ballerina,2025,discover,,,given
+812583,Wake Up Dead Man: A Knives Out Mystery,2025,discover,,,given
+1084199,Companion,2025,discover,,,given
+701387,Bugonia,2025,discover,,,given
+552524,Lilo & Stitch,2025,discover,,,given
+1317288,Marty Supreme,2025,discover,,,given
+1038392,The Conjuring: Last Rites,2025,discover,,,given
+1197306,A Working Man,2025,discover,,,given
+604079,The Long Walk,2025,discover,,,given
+798645,The Running Man,2025,discover,,,given
+1035259,The Naked Gun,2025,discover,,,given
+1151031,Bring Her Back,2025,discover,,,given
+870028,The Accountant²,2025,discover,,,given
+1007734,Nobody 2,2025,discover,,,given
+425274,Now You See Me: Now You Don't,2025,discover,,,given
+777443,The Electric State,2025,discover,,,given
+1087891,The Amateur,2025,discover,,,given
+1195506,Novocaine,2025,discover,,,given
+858024,Hamnet,2025,discover,,,given
+329440,The Forest,2016,discover-bad,,,given
+351819,Fifty Shades of Black,2016,discover-bad,,,given
+168098,Cell,2016,discover-bad,,,given
+338964,Bad Santa 2,2016,discover-bad,,,given
+284564,31,2016,discover-bad,,,given
+316154,The Bad Batch,2017,discover-bad,,,given
+271404,Beyond Skyline,2017,discover-bad,,,given
+203835,Amityville: The Awakening,2017,discover-bad,,,given
+472838,SPF-18,2017,discover-bad,,,given
+55341,Jeepers Creepers 3,2017,discover-bad,,,given
+485774,The Open House,2018,discover-bad,,,given
+476926,The Titan,2018,discover-bad,,,given
+401561,Mom and Dad,2018,discover-bad,,,given
+395841,Hold the Dark,2018,discover-bad,,,given
+456750,"Game Over, Man!",2018,discover-bad,,,given
+480042,Escape Plan: The Extractors,2019,discover-bad,,,given
+505423,Wounds,2019,discover-bad,,,given
+551808,Black Christmas,2019,discover-bad,,,given
+513083,Wine Country,2019,discover-bad,,,given
+520901,Doom: Annihilation,2019,discover-bad,,,given
+505225,The Last Thing He Wanted,2020,discover-bad,,,given
+522444,Black Water: Abyss,2020,discover-bad,,,given
+429422,Capone,2020,discover-bad,,,given
+615177,Coffee & Kareem,2020,discover-bad,,,given
+560391,Downhill,2020,discover-bad,,,given
+681887,Cosmic Sin,2021,discover-bad,,,given
+581644,The Misfits,2021,discover-bad,,,given
+534072,Great White,2021,discover-bad,,,given
+802443,Deadly Illusions,2021,discover-bad,,,given
+741228,Locked Down,2021,discover-bad,,,given
+850018,Windfall,2022,discover-bad,,,given
+1024530,Grimcutty,2022,discover-bad,,,given
+916740,Brazen,2022,discover-bad,,,given
+803114,The Requin,2022,discover-bad,,,given
+751237,Umma,2022,discover-bad,,,given
+972230,Maybe I Do,2023,discover-bad,,,given
+944952,The Royal Hotel,2023,discover-bad,,,given
+987490,Best. Christmas. Ever!,2023,discover-bad,,,given
+516806,Last Sentinel,2023,discover-bad,,,given
+977013,Haunting of the Queen Mary,2023,discover-bad,,,given
+1094274,Y2K,2024,discover-bad,,,given
+1019411,Space Cadet,2024,discover-bad,,,given
+1182387,Armor,2024,discover-bad,,,given
+5492,Gunner,2024,discover-bad,,,given
+914215,Humane,2024,discover-bad,,,given
+931349,Ash,2025,discover-bad,,,given
+1114894,Star Trek: Section 31,2025,discover-bad,,,given
+1417059,Mountainhead,2025,discover-bad,,,given
+1407861,The Bayou,2025,discover-bad,,,given
+1124619,Bride Hard,2025,discover-bad,,,given

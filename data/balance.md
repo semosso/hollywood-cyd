@@ -1,65 +1,65 @@
 # Relatório de balanceamento
 
-Gerado por `scripts/sim.ts` com 1500 carreiras de política aleatória, 1246 filmes jogáveis (1244 com descrição automática), 46 eventos, 28 finais. 2026-10-19, 18.1s.
+Gerado por `scripts/sim.ts` com 1500 carreiras de política aleatória, 1524 filmes jogáveis (1522 com descrição automática), 46 eventos, 28 finais. 2026-10-19, 15.2s.
 
 ## Médias por carreira
 | métrica | valor |
 |---|---|
 | cards jogados | 18.4 |
-| anos de carreira | 28.8 |
-| filmes | 11.36 (fallbacks: 6.9%) |
-| Fama final | 8.9 |
-| Prestígio final | -8.5 |
-| Dinheiro final | US$ 1.0 mi |
+| anos de carreira | 28.7 |
+| filmes | 11.36 (fallbacks: 6.8%) |
+| Fama final | 9.0 |
+| Prestígio final | -9.9 |
+| Dinheiro final | US$ 0.9 mi |
 | mortes | 2.0% |
 
 ## Como as runs terminam
 | tipo | n | % |
 |---|---|---|
-| cards | 1462 | 97.5% |
+| cards | 1461 | 97.4% |
 | morte | 30 | 2.0% |
-| saida | 8 | 0.5% |
+| saida | 9 | 0.6% |
 
 ## Finais
 | final | n | % |
 |---|---|---|
-| rei_natal | 773 | 51.5% |
-| esquecido | 369 | 24.6% |
-| ate_aqui | 102 | 6.8% |
+| rei_natal | 749 | 49.9% |
+| esquecido | 399 | 26.6% |
+| ate_aqui | 96 | 6.4% |
 | cancelado | 51 | 3.4% |
-| julgamento | 37 | 2.5% |
-| turma | 37 | 2.5% |
+| julgamento | 42 | 2.8% |
+| turma | 39 | 2.6% |
 | od | 30 | 2.0% |
-| meme | 25 | 1.7% |
 | industria_adulta | 22 | 1.5% |
-| preso_fiscal | 18 | 1.2% |
-| diretor | 13 | 0.9% |
-| professor_ohio | 8 | 0.5% |
-| pelado_sunset | 4 | 0.3% |
-| culto_cruzeiro | 3 | 0.2% |
-| paria | 2 | 0.1% |
-| aposentado_paz | 2 | 0.1% |
-| produtor | 2 | 0.1% |
+| meme | 21 | 1.4% |
+| preso_fiscal | 14 | 0.9% |
+| diretor | 14 | 0.9% |
+| professor_ohio | 9 | 0.6% |
+| pelado_sunset | 5 | 0.3% |
+| culto_cruzeiro | 4 | 0.3% |
+| produtor | 1 | 0.1% |
+| paria | 1 | 0.1% |
+| comeback | 1 | 0.1% |
 | livro_do_culto | 1 | 0.1% |
 | presa_pelo_culto | 1 | 0.1% |
 
 ## Resultado pessoal por estreia
 | resultado | n | % |
 |---|---|---|
-| fez_o_trabalho | 11934 | 70.0% |
-| miscast | 2368 | 13.9% |
-| razzie | 1186 | 7.0% |
-| roubou_a_cena | 967 | 5.7% |
-| indicado | 567 | 3.3% |
-| ganhou | 15 | 0.1% |
+| fez_o_trabalho | 12047 | 70.7% |
+| miscast | 2347 | 13.8% |
+| razzie | 1203 | 7.1% |
+| roubou_a_cena | 882 | 5.2% |
+| indicado | 546 | 3.2% |
+| ganhou | 8 | 0.0% |
 
 ## Classificação dos filmes aceitos
 | outcome | n | % |
 |---|---|---|
-| flop | 5731 | 36.1% |
-| popcorn | 2964 | 18.7% |
-| bomb | 2767 | 17.4% |
-| hit | 1725 | 10.9% |
-| morno | 1537 | 9.7% |
-| cult | 809 | 5.1% |
-| oscar_bait | 326 | 2.1% |
+| flop | 5699 | 35.9% |
+| popcorn | 3202 | 20.2% |
+| bomb | 2653 | 16.7% |
+| morno | 1908 | 12.0% |
+| hit | 1579 | 9.9% |
+| cult | 591 | 3.7% |
+| oscar_bait | 250 | 1.6% |
