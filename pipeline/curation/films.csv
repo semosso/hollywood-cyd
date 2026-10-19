@@ -395,103 +395,103 @@ tmdb_id,title,year,why
 800939,Ticket to Paradise,2022,
 982271,Book Club: The Next Chapter,2023,
 956842,Fly Me to the Moon,2024,
-,Julia,1977,protagonista mulher
-,The Goodbye Girl,1977,protagonista mulher
-,Looking for Mr. Goodbar,1977,protagonista mulher
-,The Turning Point,1977,protagonista mulher
-,An Unmarried Woman,1978,protagonista mulher
-,Coming Home,1978,protagonista mulher
-,Norma Rae,1979,protagonista mulher
-,9 to 5,1980,protagonista mulher
-,Private Benjamin,1980,protagonista mulher
-,Coal Miner's Daughter,1980,protagonista mulher
-,Sophie's Choice,1982,protagonista mulher
-,Silkwood,1983,protagonista mulher
-,Places in the Heart,1984,protagonista mulher
-,Desperately Seeking Susan,1985,protagonista mulher
-,Aliens,1986,protagonista mulher
-,Children of a Lesser God,1986,protagonista mulher
-,Moonstruck,1987,protagonista mulher
-,Broadcast News,1987,protagonista mulher
-,The Accused,1988,protagonista mulher
-,Beaches,1988,protagonista mulher
-,Gorillas in the Mist,1988,protagonista mulher
-,Steel Magnolias,1989,protagonista mulher
-,Misery,1990,protagonista mulher
-,Fried Green Tomatoes,1991,protagonista mulher
-,A League of Their Own,1992,protagonista mulher
-,The Piano,1993,protagonista mulher
-,Sleepless in Seattle,1993,protagonista mulher
-,Sense and Sensibility,1995,protagonista mulher
-,Waiting to Exhale,1995,protagonista mulher
-,The First Wives Club,1996,protagonista mulher
-,Evita,1996,protagonista mulher
-,Contact,1997,protagonista mulher
-,G.I. Jane,1997,protagonista mulher
-,Elizabeth,1998,protagonista mulher
-,You've Got Mail,1998,protagonista mulher
-,Stepmom,1998,protagonista mulher
-,Practical Magic,1998,protagonista mulher
-,Boys Don't Cry,1999,protagonista mulher
-,"Girl, Interrupted",1999,protagonista mulher
-,Runaway Bride,1999,protagonista mulher
-,Miss Congeniality,2000,protagonista mulher
-,Charlie's Angels,2000,protagonista mulher
-,Bridget Jones's Diary,2001,protagonista mulher
-,The Hours,2002,protagonista mulher
+42222,Julia,1977,protagonista mulher
+14741,The Goodbye Girl,1977,protagonista mulher
+37749,Looking for Mr. Goodbar,1977,protagonista mulher
+61280,The Turning Point,1977,protagonista mulher
+38731,An Unmarried Woman,1978,protagonista mulher
+31657,Coming Home,1978,protagonista mulher
+40842,Norma Rae,1979,protagonista mulher
+19494,9 to 5,1980,protagonista mulher
+10765,Private Benjamin,1980,protagonista mulher
+16769,Coal Miner's Daughter,1980,protagonista mulher
+15764,Sophie's Choice,1982,protagonista mulher
+12502,Silkwood,1983,protagonista mulher
+13681,Places in the Heart,1984,protagonista mulher
+8130,Desperately Seeking Susan,1985,protagonista mulher
+679,Aliens,1986,protagonista mulher
+1890,Children of a Lesser God,1986,protagonista mulher
+2039,Moonstruck,1987,protagonista mulher
+12626,Broadcast News,1987,protagonista mulher
+10868,The Accused,1988,protagonista mulher
+15592,Beaches,1988,protagonista mulher
+10130,Gorillas in the Mist,1988,protagonista mulher
+10860,Steel Magnolias,1989,protagonista mulher
+1700,Misery,1990,protagonista mulher
+1633,Fried Green Tomatoes,1991,protagonista mulher
+11287,A League of Their Own,1992,protagonista mulher
+713,The Piano,1993,protagonista mulher
+858,Sleepless in Seattle,1993,protagonista mulher
+4584,Sense and Sensibility,1995,protagonista mulher
+31357,Waiting to Exhale,1995,protagonista mulher
+2925,The First Wives Club,1996,protagonista mulher
+8818,Evita,1996,protagonista mulher
+686,Contact,1997,protagonista mulher
+4421,G.I. Jane,1997,protagonista mulher
+4518,Elizabeth,1998,protagonista mulher
+9489,You've Got Mail,1998,protagonista mulher
+9441,Stepmom,1998,protagonista mulher
+6435,Practical Magic,1998,protagonista mulher
+226,Boys Don't Cry,1999,protagonista mulher
+3558,"Girl, Interrupted",1999,protagonista mulher
+4806,Runaway Bride,1999,protagonista mulher
+1493,Miss Congeniality,2000,protagonista mulher
+4327,Charlie's Angels,2000,protagonista mulher
+634,Bridget Jones's Diary,2001,protagonista mulher
+590,The Hours,2002,protagonista mulher
 ,Frida,2002,protagonista mulher
-,Sweet Home Alabama,2002,protagonista mulher
-,Mona Lisa Smile,2003,protagonista mulher
-,Something's Gotta Give,2003,protagonista mulher
-,13 Going on 30,2004,protagonista mulher
-,The Notebook,2004,protagonista mulher
-,Memoirs of a Geisha,2005,protagonista mulher
-,North Country,2005,protagonista mulher
-,The Queen,2006,protagonista mulher
-,Marie Antoinette,2006,protagonista mulher
-,Enchanted,2007,protagonista mulher
-,Mamma Mia!,2008,protagonista mulher
-,Sex and the City,2008,protagonista mulher
-,Changeling,2008,protagonista mulher
-,The Proposal,2009,protagonista mulher
-,Julie & Julia,2009,protagonista mulher
-,All the President's Men,1976,
-,Being There,1979,
-,The Elephant Man,1980,
-,Chariots of Fire,1981,
-,The Right Stuff,1983,
-,Amadeus,1984,
-,The Color of Money,1986,
-,Stand by Me,1986,
-,"Good Morning, Vietnam",1987,
-,Dead Poets Society,1989,
-,Field of Dreams,1989,
-,Glory,1989,
-,Awakenings,1990,
-,JFK,1991,
-,A Few Good Men,1992,
-,In the Line of Fire,1993,
-,The Fugitive,1993,
-,Quiz Show,1994,
-,Apollo 13,1995,
-,Primal Fear,1996,
-,L.A. Confidential,1997,
-,The Truman Show,1998,
-,The Insider,1999,
-,Cast Away,2000,
-,Ocean's Eleven,2001,
-,Catch Me If You Can,2002,
-,The Last Samurai,2003,
-,Collateral,2004,
-,Zodiac,2007,
-,The Town,2010,
-,Prisoners,2013,
-,Nightcrawler,2014,
-,Sicario,2015,
-,Hacksaw Ridge,2016,
-,Baby Driver,2017,
-,Blade Runner 2049,2017,
-,BlacKkKlansman,2018,
-,Uncut Gems,2019,
-,Ad Astra,2019,
-,Tenet,2020,
+11529,Sweet Home Alabama,2002,protagonista mulher
+11820,Mona Lisa Smile,2003,protagonista mulher
+6964,Something's Gotta Give,2003,protagonista mulher
+10096,13 Going on 30,2004,protagonista mulher
+11036,The Notebook,2004,protagonista mulher
+1904,Memoirs of a Geisha,2005,protagonista mulher
+9701,North Country,2005,protagonista mulher
+1165,The Queen,2006,protagonista mulher
+1887,Marie Antoinette,2006,protagonista mulher
+4523,Enchanted,2007,protagonista mulher
+11631,Mamma Mia!,2008,protagonista mulher
+4564,Sex and the City,2008,protagonista mulher
+3580,Changeling,2008,protagonista mulher
+18240,The Proposal,2009,protagonista mulher
+24803,Julie & Julia,2009,protagonista mulher
+891,All the President's Men,1976,
+10322,Being There,1979,
+1955,The Elephant Man,1980,
+9443,Chariots of Fire,1981,
+9549,The Right Stuff,1983,
+279,Amadeus,1984,
+11873,The Color of Money,1986,
+235,Stand by Me,1986,
+801,"Good Morning, Vietnam",1987,
+207,Dead Poets Society,1989,
+2323,Field of Dreams,1989,
+9665,Glory,1989,
+11005,Awakenings,1990,
+820,JFK,1991,
+881,A Few Good Men,1992,
+9386,In the Line of Fire,1993,
+5503,The Fugitive,1993,
+11450,Quiz Show,1994,
+568,Apollo 13,1995,
+1592,Primal Fear,1996,
+2118,L.A. Confidential,1997,
+37165,The Truman Show,1998,
+9008,The Insider,1999,
+8358,Cast Away,2000,
+161,Ocean's Eleven,2001,
+640,Catch Me If You Can,2002,
+616,The Last Samurai,2003,
+1538,Collateral,2004,
+1949,Zodiac,2007,
+23168,The Town,2010,
+146233,Prisoners,2013,
+242582,Nightcrawler,2014,
+273481,Sicario,2015,
+324786,Hacksaw Ridge,2016,
+339403,Baby Driver,2017,
+335984,Blade Runner 2049,2017,
+487558,BlacKkKlansman,2018,
+473033,Uncut Gems,2019,
+419704,Ad Astra,2019,
+577922,Tenet,2020,

@@ -395,3 +395,103 @@ tmdb_id,title,year,why,resolved_title,resolved_year,confidence
 800939,Ticket to Paradise,2022,,,,given
 982271,Book Club: The Next Chapter,2023,,,,given
 956842,Fly Me to the Moon,2024,,,,given
+42222,Julia,1977,protagonista mulher,Julia,1977,high
+14741,The Goodbye Girl,1977,protagonista mulher,The Goodbye Girl,1977,high
+37749,Looking for Mr. Goodbar,1977,protagonista mulher,Looking for Mr. Goodbar,1977,high
+61280,The Turning Point,1977,protagonista mulher,The Turning Point,1977,high
+38731,An Unmarried Woman,1978,protagonista mulher,An Unmarried Woman,1978,high
+31657,Coming Home,1978,protagonista mulher,Coming Home,1978,high
+40842,Norma Rae,1979,protagonista mulher,Norma Rae,1979,high
+19494,9 to 5,1980,protagonista mulher,Nine to Five,1980,high
+10765,Private Benjamin,1980,protagonista mulher,Private Benjamin,1980,high
+16769,Coal Miner's Daughter,1980,protagonista mulher,Coal Miner's Daughter,1980,high
+15764,Sophie's Choice,1982,protagonista mulher,Sophie's Choice,1982,high
+12502,Silkwood,1983,protagonista mulher,Silkwood,1983,high
+13681,Places in the Heart,1984,protagonista mulher,Places in the Heart,1984,high
+8130,Desperately Seeking Susan,1985,protagonista mulher,Desperately Seeking Susan,1985,high
+679,Aliens,1986,protagonista mulher,Aliens,1986,high
+1890,Children of a Lesser God,1986,protagonista mulher,Children of a Lesser God,1986,high
+2039,Moonstruck,1987,protagonista mulher,Moonstruck,1987,high
+12626,Broadcast News,1987,protagonista mulher,Broadcast News,1987,high
+10868,The Accused,1988,protagonista mulher,The Accused,1988,high
+15592,Beaches,1988,protagonista mulher,Beaches,1988,high
+10130,Gorillas in the Mist,1988,protagonista mulher,Gorillas in the Mist,1988,high
+10860,Steel Magnolias,1989,protagonista mulher,Steel Magnolias,1989,high
+1700,Misery,1990,protagonista mulher,Misery,1990,high
+1633,Fried Green Tomatoes,1991,protagonista mulher,Fried Green Tomatoes,1991,high
+11287,A League of Their Own,1992,protagonista mulher,A League of Their Own,1992,high
+713,The Piano,1993,protagonista mulher,The Piano,1993,high
+858,Sleepless in Seattle,1993,protagonista mulher,Sleepless in Seattle,1993,high
+4584,Sense and Sensibility,1995,protagonista mulher,Sense and Sensibility,1995,high
+31357,Waiting to Exhale,1995,protagonista mulher,Waiting to Exhale,1995,high
+2925,The First Wives Club,1996,protagonista mulher,The First Wives Club,1996,high
+8818,Evita,1996,protagonista mulher,Evita,1996,high
+686,Contact,1997,protagonista mulher,Contact,1997,high
+4421,G.I. Jane,1997,protagonista mulher,G.I. Jane,1997,high
+4518,Elizabeth,1998,protagonista mulher,Elizabeth,1998,high
+9489,You've Got Mail,1998,protagonista mulher,You've Got Mail,1998,high
+9441,Stepmom,1998,protagonista mulher,Stepmom,1998,high
+6435,Practical Magic,1998,protagonista mulher,Practical Magic,1998,high
+226,Boys Don't Cry,1999,protagonista mulher,Boys Don't Cry,1999,high
+3558,"Girl, Interrupted",1999,protagonista mulher,"Girl, Interrupted",1999,high
+4806,Runaway Bride,1999,protagonista mulher,Runaway Bride,1999,high
+1493,Miss Congeniality,2000,protagonista mulher,Miss Congeniality,2000,high
+4327,Charlie's Angels,2000,protagonista mulher,Charlie's Angels,2000,high
+634,Bridget Jones's Diary,2001,protagonista mulher,Bridget Jones's Diary,2001,high
+590,The Hours,2002,protagonista mulher,The Hours,2002,high
+1360,Frida,2002,protagonista mulher,Frida,2002,check
+11529,Sweet Home Alabama,2002,protagonista mulher,Sweet Home Alabama,2002,high
+11820,Mona Lisa Smile,2003,protagonista mulher,Mona Lisa Smile,2003,high
+6964,Something's Gotta Give,2003,protagonista mulher,Something's Gotta Give,2003,high
+10096,13 Going on 30,2004,protagonista mulher,13 Going on 30,2004,high
+11036,The Notebook,2004,protagonista mulher,The Notebook,2004,high
+1904,Memoirs of a Geisha,2005,protagonista mulher,Memoirs of a Geisha,2005,high
+9701,North Country,2005,protagonista mulher,North Country,2005,high
+1165,The Queen,2006,protagonista mulher,The Queen,2006,high
+1887,Marie Antoinette,2006,protagonista mulher,Marie Antoinette,2006,high
+4523,Enchanted,2007,protagonista mulher,Enchanted,2007,high
+11631,Mamma Mia!,2008,protagonista mulher,Mamma Mia!,2008,high
+4564,Sex and the City,2008,protagonista mulher,Sex and the City,2008,high
+3580,Changeling,2008,protagonista mulher,Changeling,2008,high
+18240,The Proposal,2009,protagonista mulher,The Proposal,2009,high
+24803,Julie & Julia,2009,protagonista mulher,Julie & Julia,2009,high
+891,All the President's Men,1976,,All the President's Men,1976,high
+10322,Being There,1979,,Being There,1979,high
+1955,The Elephant Man,1980,,The Elephant Man,1980,high
+9443,Chariots of Fire,1981,,Chariots of Fire,1981,high
+9549,The Right Stuff,1983,,The Right Stuff,1983,high
+279,Amadeus,1984,,Amadeus,1984,high
+11873,The Color of Money,1986,,The Color of Money,1986,high
+235,Stand by Me,1986,,Stand by Me,1986,high
+801,"Good Morning, Vietnam",1987,,"Good Morning, Vietnam",1987,high
+207,Dead Poets Society,1989,,Dead Poets Society,1989,high
+2323,Field of Dreams,1989,,Field of Dreams,1989,high
+9665,Glory,1989,,Glory,1989,high
+11005,Awakenings,1990,,Awakenings,1990,high
+820,JFK,1991,,JFK,1991,high
+881,A Few Good Men,1992,,A Few Good Men,1992,high
+9386,In the Line of Fire,1993,,In the Line of Fire,1993,high
+5503,The Fugitive,1993,,The Fugitive,1993,high
+11450,Quiz Show,1994,,Quiz Show,1994,high
+568,Apollo 13,1995,,Apollo 13,1995,high
+1592,Primal Fear,1996,,Primal Fear,1996,high
+2118,L.A. Confidential,1997,,L.A. Confidential,1997,high
+37165,The Truman Show,1998,,The Truman Show,1998,high
+9008,The Insider,1999,,The Insider,1999,high
+8358,Cast Away,2000,,Cast Away,2000,high
+161,Ocean's Eleven,2001,,Ocean's Eleven,2001,high
+640,Catch Me If You Can,2002,,Catch Me If You Can,2002,high
+616,The Last Samurai,2003,,The Last Samurai,2003,high
+1538,Collateral,2004,,Collateral,2004,high
+1949,Zodiac,2007,,Zodiac,2007,high
+23168,The Town,2010,,The Town,2010,high
+146233,Prisoners,2013,,Prisoners,2013,high
+242582,Nightcrawler,2014,,Nightcrawler,2014,high
+273481,Sicario,2015,,Sicario,2015,high
+324786,Hacksaw Ridge,2016,,Hacksaw Ridge,2016,high
+339403,Baby Driver,2017,,Baby Driver,2017,high
+335984,Blade Runner 2049,2017,,Blade Runner 2049,2017,high
+487558,BlacKkKlansman,2018,,BlacKkKlansman,2018,high
+473033,Uncut Gems,2019,,Uncut Gems,2019,high
+419704,Ad Astra,2019,,Ad Astra,2019,high
+577922,Tenet,2020,,Tenet,2020,high
