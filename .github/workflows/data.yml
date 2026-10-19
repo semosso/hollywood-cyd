@@ -36,6 +36,12 @@ jobs:
       HCYD_CACHE_DIR: ${{ github.workspace }}/pipeline/cache
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+      # Runs na fila ficam presos ao commit do disparo; um run anterior pode já ter
+      # commitado dados novos. Sincroniza com a ponta de main antes de gerar.
+      - name: Sincronizar com main
+        run: git fetch origin main && git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
