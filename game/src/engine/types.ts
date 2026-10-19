@@ -144,6 +144,8 @@ export type Effects = Partial<Record<MeterKey, number>> & {
   atributo?: Partial<Attributes>;
   morte?: DeathCause;
   fim?: "largar_tudo";
+  /** demitido(a) do filme assinado mais recente: sai do pipeline, Fama −3, Heat +2 */
+  demissao?: boolean;
 };
 
 export type EventCard = { kind: "evento"; event: GameEvent; showProbabilities: boolean };

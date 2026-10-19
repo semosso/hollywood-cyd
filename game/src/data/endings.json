@@ -529,5 +529,210 @@
    "pt": "Numa fila de farmácia, alguém pergunta: 'você não era…?'. Você diz que não. É mais fácil. Seus filmes estão num catálogo de avião, entre um documentário sobre golfinhos e um filme de Natal.",
    "en": "In a pharmacy line, someone asks: 'weren't you…?'. You say no. It's easier. Your films are in an airline catalog, between a dolphin documentary and a Christmas movie."
   }
+ },
+ {
+  "id": "acidente",
+  "categoria": "queda",
+  "raridade": 0.03,
+  "requer": {
+   "morte": "acidente"
+  },
+  "titulo": {
+   "pt": "O Túnel",
+   "en": "The Tunnel"
+  },
+  "manchete": {
+   "pt": "ASTRO MORRE EM PERSEGUIÇÃO DE PAPARAZZI; FOTÓGRAFOS CONTINUARAM FOTOGRAFANDO",
+   "en": "STAR DIES IN PAPARAZZI CHASE; PHOTOGRAPHERS KEPT SHOOTING"
+  },
+  "texto": {
+   "pt": "Aos {idade} anos. As fotos do acidente valem mais que qualquer foto sua em vida. A revista que as comprou publica um editorial sobre privacidade.",
+   "en": "At {idade}. The crash photos are worth more than any photo of you alive. The magazine that bought them runs an editorial about privacy."
+  }
+ },
+ {
+  "id": "voo",
+  "categoria": "queda",
+  "raridade": 0.02,
+  "requer": {
+   "morte": "voo"
+  },
+  "titulo": {
+   "pt": "O Voo Particular",
+   "en": "The Private Plane"
+  },
+  "manchete": {
+   "pt": "JATO COM ASTRO A BORDO DESAPARECE DO RADAR",
+   "en": "JET CARRYING STAR DISAPPEARS FROM RADAR"
+  },
+  "texto": {
+   "pt": "Aos {idade} anos. O piloto tinha 61 anos e uma licença vencida. Seu último filme ganha um relançamento.",
+   "en": "At {idade}. The pilot was 61 with an expired license. Your last film gets a re-release."
+  }
+ },
+ {
+  "id": "paria",
+  "categoria": "queda",
+  "raridade": 0.05,
+  "requer": {
+   "flags": [
+    "demitido_set"
+   ],
+   "reputacao": "<=-2"
+  },
+  "alvo": {
+   "fama": 35,
+   "prestigio": -5,
+   "vicio": 5,
+   "heat": 5
+  },
+  "titulo": {
+   "pt": "Impossível de Segurar",
+   "en": "Uninsurable"
+  },
+  "manchete": {
+   "pt": "NENHUMA SEGURADORA ACEITA COBRIR O ASTRO; 'ELE É UM RISCO', DIZ PRODUTOR",
+   "en": "NO INSURER WILL COVER THE STAR; 'A LIABILITY', SAYS PRODUCER"
+  },
+  "texto": {
+   "pt": "Você foi demitido(a) de um filme. Depois de outro. Agora nenhuma seguradora cobre uma produção com você. Há um filme independente na Bulgária que aceita, se você pagar a própria passagem.",
+   "en": "You were fired from one film. Then another. Now no insurer will cover a production with you. There's an indie in Bulgaria that will have you, if you pay your own airfare."
+  }
+ },
+ {
+  "id": "presa_pelo_culto",
+  "categoria": "culto",
+  "raridade": 0.02,
+  "requer": {
+   "flags": [
+    "culto_2"
+   ]
+  },
+  "alvo": {
+   "estabilidade": 2,
+   "fama": 40
+  },
+  "titulo": {
+   "pt": "Presa pelo Culto",
+   "en": "Jailed for the Cult"
+  },
+  "manchete": {
+   "pt": "ATRIZ CONDENADA A TRÊS ANOS POR RECRUTAR MULHERES PARA 'GRUPO DE AUTOAJUDA'",
+   "en": "ACTRESS SENTENCED TO THREE YEARS FOR RECRUITING WOMEN INTO 'SELF-HELP GROUP'"
+  },
+  "texto": {
+   "pt": "O FBI chegou antes do documentário. Depois veio o documentário. Depois a série. Depois o podcast. Você assistiu a tudo da prisão.",
+   "en": "The FBI arrived before the documentary. Then came the documentary. Then the series. Then the podcast. You watched it all from prison."
+  }
+ },
+ {
+  "id": "livro_do_culto",
+  "categoria": "culto",
+  "raridade": 0.03,
+  "requer": {
+   "flags": [
+    "fugiu_do_culto"
+   ]
+  },
+  "alvo": {
+   "prestigio": 40,
+   "fama": 50,
+   "heat": 5
+  },
+  "titulo": {
+   "pt": "Fugiu e Escreveu o Livro",
+   "en": "Escaped and Wrote the Book"
+  },
+  "manchete": {
+   "pt": "EX-MEMBRO EXPÕE 'CENTRO' EM BEST-SELLER; GRUPO PROCESSA, PERDE, PROCESSA DE NOVO",
+   "en": "FORMER MEMBER EXPOSES 'CENTER' IN BESTSELLER; GROUP SUES, LOSES, SUES AGAIN"
+  },
+  "texto": {
+   "pt": "O livro vendeu mais que qualquer filme seu. A série documental ganhou um Emmy. Um astro de franquia que ainda está lá dentro nunca mais olhou para você num evento.",
+   "en": "The book outsold every film you made. The docuseries won an Emmy. A franchise star who's still inside has never looked at you at an event since."
+  }
+ },
+ {
+  "id": "julgamento",
+  "categoria": "meme",
+  "raridade": 0.03,
+  "requer": {
+   "flags": [
+    "julgamento_publico"
+   ]
+  },
+  "alvo": {
+   "heat": 9,
+   "fama": 60,
+   "prestigio": -5,
+   "estabilidade": 2
+  },
+  "titulo": {
+   "pt": "O Julgamento",
+   "en": "The Trial"
+  },
+  "manchete": {
+   "pt": "SEIS SEMANAS AO VIVO: O JULGAMENTO QUE PAROU A INTERNET",
+   "en": "SIX WEEKS LIVE: THE TRIAL THAT STOPPED THE INTERNET"
+  },
+  "texto": {
+   "pt": "Ninguém lembra do veredito. Todo mundo lembra do áudio. Há um documentário de cada lado, e os dois mentem.",
+   "en": "Nobody remembers the verdict. Everybody remembers the audio. There's a documentary from each side, and both lie."
+  }
+ },
+ {
+  "id": "refugio_canada",
+  "categoria": "queda",
+  "raridade": 0.01,
+  "requer": {
+   "flags": [
+    "canada"
+   ]
+  },
+  "alvo": {
+   "fama": 20,
+   "estabilidade": 1
+  },
+  "titulo": {
+   "pt": "Refúgio no Canadá",
+   "en": "Asylum in Canada"
+  },
+  "manchete": {
+   "pt": "EX-ASTRO PEDE ASILO EM VANCOUVER; DIZ QUE 'ELES' CONTINUAM ATRÁS DELE",
+   "en": "FORMER STAR SEEKS ASYLUM IN VANCOUVER; SAYS 'THEY' ARE STILL AFTER HIM"
+  },
+  "texto": {
+   "pt": "Vocês moram num trailer. Você posta vídeos de 40 minutos sobre os star whackers. Um deles tem 2 milhões de visualizações. Ninguém te matou. Você acha que isso prova alguma coisa.",
+   "en": "You live in a trailer. You post 40-minute videos about the star whackers. One has 2 million views. Nobody killed you. You think that proves something."
+  }
+ },
+ {
+  "id": "falido",
+  "categoria": "queda",
+  "raridade": 0.04,
+  "requer": {
+   "flags_qualquer": [
+    "falencia",
+    "filmografia_de_cage"
+   ],
+   "dinheiro": "<=1000000"
+  },
+  "alvo": {
+   "dinheiro": 0,
+   "fama": 45,
+   "prestigio": 5
+  },
+  "titulo": {
+   "pt": "Aceita Tudo",
+   "en": "Takes Anything"
+  },
+  "manchete": {
+   "pt": "ASTRO LANÇA SEU SÉTIMO FILME DO ANO, DIRETO PARA O STREAMING",
+   "en": "STAR RELEASES SEVENTH FILM OF THE YEAR, STRAIGHT TO STREAMING"
+  },
+  "texto": {
+   "pt": "Castelos vendidos. Crânio devolvido. Você faz sete filmes por ano para pagar o fisco. Um deles, por acidente, é bom. A crítica chama de 'renascimento'. É só a quarta-feira.",
+   "en": "Castles sold. Skull returned. You make seven films a year to pay the IRS. One of them, by accident, is good. Critics call it a 'renaissance'. It's just Wednesday."
+  }
  }
 ]

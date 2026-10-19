@@ -1,75 +1,1385 @@
 [
- {"id":"balada_bangalo_3","tipo":"vida","atos":[1,2,3],"peso":8,"requer":{"heat":">=1","flags_ausentes":["sobrio"]},
-  "texto":{"pt":"Depois da festa de Oscar de uma revista, Chip Marmont te chama para a continuação no bangalô 3 de um hotel na Sunset. Ele diz que tem uma mistura nova.","en":"After a magazine's Oscar party, Chip Marmont invites you to the after-party in bungalow 3 of a Sunset hotel. He says he has a new mix."},
-  "baseado_em":[{"quem":"John Belushi","ano":1982,"o_que":"Overdose no bangalô 3 do Chateau Marmont","link":"https://en.wikipedia.org/wiki/John_Belushi"}],
-  "opcoes":[
-   {"id":"ir","rotulo":{"pt":"Ir","en":"Go"},"resultados":[
-     {"p":0.25,"efeitos":{"contatos_evento":1,"heat":1},"texto":{"pt":"Você conhece um produtor que lembra do seu nome na semana seguinte.","en":"You meet a producer who remembers your name the following week."}},
-     {"p":0.2,"efeitos":{"flag_add":["amor_da_vida"],"estabilidade":2},"texto":{"pt":"Você conhece alguém que não é da indústria e não sabe quem você é. Gosta disso.","en":"You meet someone who isn't in the industry and doesn't know who you are. You like it."}},
-     {"p":0.25,"efeitos":{"vicio":2,"heat":1},"texto":{"pt":"Você experimenta a mistura. Chip sorri. Você vai voltar.","en":"You try the mix. Chip smiles. You'll be back."}},
-     {"p":0.1,"efeitos":{"flag_add":["culto_1"]},"texto":{"pt":"Alguém te fala de um 'centro' com cursos. Metade do elenco de uma franquia frequenta.","en":"Someone tells you about a 'center' with courses. Half the cast of a franchise goes."}},
-     {"p":0.1,"efeitos":{"heat":2,"flag_add":["foto_vazada"]},"texto":{"pt":"Uma foto vaza. Você está de olhos fechados e não parece dormir.","en":"A photo leaks. Your eyes are closed and you don't look asleep."}},
-     {"p":0.1,"efeitos":{},"texto":{"pt":"Você segura um copo por duas horas e vai embora.","en":"You hold a glass for two hours and leave."}}
-   ]},
-   {"id":"nao","rotulo":{"pt":"Não ir","en":"Stay home"},"efeitos":{"estabilidade":1}},
-   {"id":"sair_cedo","rotulo":{"pt":"Ir e sair cedo","en":"Go and leave early"},"requer":{"juizo":">=3"},"efeitos":{"contatos_evento":1}}
-  ]},
- {"id":"loja_beverly_hills","tipo":"vida","atos":[2,3],"peso":4,"requer":{"estabilidade":"<=4"},
-  "texto":{"pt":"Você está numa loja de luxo em Beverly Hills com uma tesoura na bolsa. Ninguém está olhando. São só US$ 5 mil em roupas.","en":"You're in a Beverly Hills luxury store with scissors in your bag. Nobody's looking. It's only $5,000 in clothes."},
-  "baseado_em":[{"quem":"Winona Ryder","ano":2001,"o_que":"Furto de US$ 5.500 em roupas na Saks Fifth Avenue de Beverly Hills","link":"https://en.wikipedia.org/wiki/Winona_Ryder"}],
-  "opcoes":[
-   {"id":"levar","rotulo":{"pt":"Cortar as etiquetas","en":"Cut the tags"},"resultados":[
-     {"p":0.6,"efeitos":{"heat":4,"prestigio":-6,"fama":4,"flag_add":["presa_furto"]},"texto":{"pt":"Os seguranças da Sacks estavam olhando. O vídeo passa no noticiário por um mês.","en":"The Sacks guards were watching. The tape runs on the news for a month."}},
-     {"p":0.4,"efeitos":{"estabilidade":-1},"texto":{"pt":"Você sai pela porta. Ninguém vê. Você não usa nada do que levou.","en":"You walk out. Nobody sees. You never wear any of it."}}
-   ]},
-   {"id":"pagar","rotulo":{"pt":"Pagar e ir para a terapia","en":"Pay and book therapy"},"efeitos":{"estabilidade":1,"dinheiro":-5000}}
-  ]},
- {"id":"vegas_55_horas","tipo":"vida","atos":[1,2],"peso":5,"requer":{"flags_ausentes":["casado"]},
-  "texto":{"pt":"Três da manhã em Las Vegas. Tommy Lixo, baterista de uma banda de metal, acha que vocês deviam casar agora. Há uma capela aberta.","en":"3 a.m. in Las Vegas. Tommy Trash, drummer in a metal band, thinks you two should get married right now. There's a chapel open."},
-  "baseado_em":[{"quem":"Britney Spears","ano":2004,"o_que":"Casamento de 55 horas em Las Vegas","link":"https://en.wikipedia.org/wiki/Britney_Spears"}],
-  "opcoes":[
-   {"id":"casar","rotulo":{"pt":"Casar","en":"Marry him"},"resultados":[
-     {"p":0.8,"efeitos":{"heat":3,"fama":3,"estabilidade":-1},"texto":{"pt":"Dura 55 horas. A anulação sai antes das fotos.","en":"It lasts 55 hours. The annulment comes before the photos."}},
-     {"p":0.2,"efeitos":{"flag_add":["casado"],"estabilidade":1,"heat":2},"texto":{"pt":"Dura. Ninguém entende. Vocês também não.","en":"It lasts. Nobody understands. Neither do you."}}
-   ]},
-   {"id":"nao","rotulo":{"pt":"Pedir um táxi","en":"Call a cab"},"efeitos":{"estabilidade":1}}
-  ]},
- {"id":"filhos","tipo":"vida","atos":[2,3,4],"peso":5,"requer":{"flags":["amor_da_vida"],"flags_ausentes":["filhos"]},
-  "texto":{"pt":"A pessoa que não é da indústria quer ter um filho. Agora. Seu agente diz que 'agora' é a pior palavra do vocabulário.","en":"The person who isn't in the industry wants a baby. Now. Your agent says 'now' is the worst word in the language."},
-  "opcoes":[
-   {"id":"sim","rotulo":{"pt":"Ter o filho","en":"Have the baby"},"efeitos":{"flag_add":["filhos"],"estabilidade":2,"heat":-1}},
-   {"id":"depois","rotulo":{"pt":"Depois do próximo filme","en":"After the next film"},"efeitos":{"estabilidade":-1}}
-  ]},
- {"id":"guru_fiscal","tipo":"vida","atos":[2,3],"peso":4,"requer":{"dinheiro":">=1000000"},
-  "texto":{"pt":"Eddie Isento, consultor financeiro de três astros, explica que imposto de renda é 'voluntário' para artistas. Ele tem um gráfico.","en":"Eddie Exempt, financial adviser to three stars, explains that income tax is 'voluntary' for artists. He has a chart."},
-  "baseado_em":[{"quem":"Wesley Snipes","ano":2010,"o_que":"Três anos de prisão por não declarar imposto de renda","link":"https://en.wikipedia.org/wiki/Wesley_Snipes"}],
-  "opcoes":[
-   {"id":"confiar","rotulo":{"pt":"Confiar no gráfico","en":"Trust the chart"},"resultados":[
-     {"p":0.7,"efeitos":{"dinheiro":-3000000,"heat":3,"prestigio":-5,"flag_add":["preso_fiscal"]},"texto":{"pt":"Sete anos depois, o fisco não acha o gráfico engraçado. Três anos.","en":"Seven years later, the IRS doesn't find the chart funny. Three years."}},
-     {"p":0.3,"efeitos":{"dinheiro":2000000},"texto":{"pt":"Por enquanto, funciona. Por enquanto.","en":"For now, it works. For now."}}
-   ]},
-   {"id":"contador","rotulo":{"pt":"Contratar um contador chato","en":"Hire a boring accountant"},"efeitos":{"dinheiro":-50000,"estabilidade":1}},
-   {"id":"denunciar","rotulo":{"pt":"Perguntar quem são os três astros","en":"Ask who the three stars are"},"requer":{"juizo":">=4"},"efeitos":{"contatos_evento":1}}
-  ]},
- {"id":"cirurgia","tipo":"vida","atos":[3,4],"peso":6,"requer":{"idade":">=36","flags_ausentes":["cirurgia"]},
-  "texto":{"pt":"Dr. Bem-Estar, cirurgião de metade do tapete vermelho, diz que é 'só um retoque'. Ninguém vai notar. Todo mundo nota.","en":"Dr. Wellness, surgeon to half the red carpet, says it's 'just a touch-up'. Nobody will notice. Everybody notices."},
-  "opcoes":[
-   {"id":"sim","rotulo":{"pt":"Só um retoque","en":"Just a touch-up"},"efeitos":{"flag_add":["cirurgia"],"heat":1,"dinheiro":-80000}},
-   {"id":"nao","rotulo":{"pt":"Envelhecer em público","en":"Age in public"},"efeitos":{"prestigio":2}}
-  ]},
- {"id":"largar_tudo","tipo":"vida","atos":[3,4],"peso":3,"requer":{"estabilidade":"<=4","flags":["amor_da_vida"]},
-  "texto":{"pt":"Uma faculdade em Ohio precisa de professor de teatro. Casa com quintal. Ninguém pede autógrafo no supermercado. Você pode sair enquanto ainda dá.","en":"A college in Ohio needs a drama teacher. House with a yard. Nobody asks for autographs at the grocery store. You can leave while you still can."},
-  "opcoes":[
-   {"id":"sair","rotulo":{"pt":"Sair enquanto dá","en":"Leave while you can"},"efeitos":{"fim":"largar_tudo"}},
-   {"id":"ficar","rotulo":{"pt":"Mais um filme","en":"One more film"},"efeitos":{"estabilidade":-1}}
-  ]},
- {"id":"intervencao","tipo":"vida","atos":[2,3,4],"peso":10,"requer":{"vicio":">=6"},
-  "texto":{"pt":"Seus amigos estão na sua sala. Um ator de comédia que virou sério lê uma carta. Há um lugar em Malibu, 30 dias, US$ 120 mil.","en":"Your friends are in your living room. A comedy actor who went serious reads a letter. There's a place in Malibu, 30 days, $120,000."},
-  "opcoes":[
-   {"id":"ir","rotulo":{"pt":"Ir para Malibu","en":"Go to Malibu"},"resultados":[
-     {"p":0.6,"efeitos":{"vicio":-4,"flag_add":["sobrio"],"dinheiro":-120000,"estabilidade":2},"texto":{"pt":"Trinta dias. Você sai dizendo que mudou. Desta vez, é verdade.","en":"Thirty days. You come out saying you've changed. This time it's true."}},
-     {"p":0.4,"efeitos":{"vicio":-2,"dinheiro":-120000},"texto":{"pt":"Trinta dias. Você sai dizendo que mudou.","en":"Thirty days. You come out saying you've changed."}}
-   ]},
-   {"id":"nao","rotulo":{"pt":"Expulsar todo mundo","en":"Throw everyone out"},"efeitos":{"vicio":1,"estabilidade":-2,"reputacao":-1}}
-  ]}
+ {
+  "id": "balada_bangalo_3",
+  "tipo": "vida",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 8,
+  "requer": {
+   "heat": ">=1",
+   "flags_ausentes": [
+    "sobrio"
+   ]
+  },
+  "texto": {
+   "pt": "Depois da festa de Oscar de uma revista, Chip Marmont te chama para a continuação no bangalô 3 de um hotel na Sunset. Ele diz que tem uma mistura nova.",
+   "en": "After a magazine's Oscar party, Chip Marmont invites you to the after-party in bungalow 3 of a Sunset hotel. He says he has a new mix."
+  },
+  "baseado_em": [
+   {
+    "quem": "John Belushi",
+    "ano": 1982,
+    "o_que": "Overdose no bangalô 3 do Chateau Marmont",
+    "link": "https://en.wikipedia.org/wiki/John_Belushi"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "ir",
+    "rotulo": {
+     "pt": "Ir",
+     "en": "Go"
+    },
+    "resultados": [
+     {
+      "p": 0.4,
+      "efeitos": {
+       "vicio": 2,
+       "heat": 1
+      },
+      "texto": {
+       "pt": "Você experimenta a mistura. Chip sorri. Você vai voltar.",
+       "en": "You try the mix. Chip smiles. You'll be back."
+      }
+     },
+     {
+      "p": 0.12,
+      "efeitos": {
+       "vicio": 3,
+       "estabilidade": -2,
+       "heat": 2,
+       "flag_add": [
+        "noite_perdida"
+       ]
+      },
+      "texto": {
+       "pt": "Você acorda no bangalô às 15h, sem sapatos, com um número de telefone escrito no braço. Perdeu uma leitura de roteiro.",
+       "en": "You wake up in the bungalow at 3 p.m., no shoes, a phone number written on your arm. You missed a table read."
+      }
+     },
+     {
+      "p": 0.15,
+      "efeitos": {
+       "contatos_evento": 1,
+       "heat": 1
+      },
+      "texto": {
+       "pt": "Você conhece um produtor que lembra do seu nome na semana seguinte.",
+       "en": "You meet a producer who remembers your name the following week."
+      }
+     },
+     {
+      "p": 0.1,
+      "efeitos": {
+       "flag_add": [
+        "amor_da_vida"
+       ],
+       "estabilidade": 2
+      },
+      "texto": {
+       "pt": "Você conhece alguém que não é da indústria e não sabe quem você é. Gosta disso.",
+       "en": "You meet someone who isn't in the industry and doesn't know who you are. You like it."
+      }
+     },
+     {
+      "p": 0.08,
+      "efeitos": {
+       "flag_add": [
+        "culto_1"
+       ]
+      },
+      "texto": {
+       "pt": "Alguém te fala de um 'centro' com cursos. Metade do elenco de uma franquia frequenta.",
+       "en": "Someone tells you about a 'center' with courses. Half the cast of a franchise goes."
+      }
+     },
+     {
+      "p": 0.1,
+      "efeitos": {
+       "heat": 3,
+       "flag_add": [
+        "foto_vazada"
+       ],
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Uma foto vaza. Você está de olhos fechados e não parece dormir.",
+       "en": "A photo leaks. Your eyes are closed and you don't look asleep."
+      }
+     },
+     {
+      "p": 0.05,
+      "efeitos": {},
+      "texto": {
+       "pt": "Você segura um copo por duas horas e vai embora.",
+       "en": "You hold a glass for two hours and leave."
+      }
+     }
+    ]
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Não ir",
+     "en": "Stay home"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   },
+   {
+    "id": "sair_cedo",
+    "rotulo": {
+     "pt": "Ir e sair cedo",
+     "en": "Go and leave early"
+    },
+    "requer": {
+     "juizo": ">=3"
+    },
+    "efeitos": {
+     "contatos_evento": 1
+    }
+   }
+  ],
+  "unico": false
+ },
+ {
+  "id": "loja_beverly_hills",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 4,
+  "requer": {
+   "estabilidade": "<=4"
+  },
+  "texto": {
+   "pt": "Você está numa loja de luxo em Beverly Hills com uma tesoura na bolsa. Ninguém está olhando. São só US$ 5 mil em roupas.",
+   "en": "You're in a Beverly Hills luxury store with scissors in your bag. Nobody's looking. It's only $5,000 in clothes."
+  },
+  "baseado_em": [
+   {
+    "quem": "Winona Ryder",
+    "ano": 2001,
+    "o_que": "Furto de US$ 5.500 em roupas na Saks Fifth Avenue de Beverly Hills",
+    "link": "https://en.wikipedia.org/wiki/Winona_Ryder"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "levar",
+    "rotulo": {
+     "pt": "Cortar as etiquetas",
+     "en": "Cut the tags"
+    },
+    "resultados": [
+     {
+      "p": 0.6,
+      "efeitos": {
+       "heat": 4,
+       "prestigio": -6,
+       "fama": 4,
+       "flag_add": [
+        "presa_furto"
+       ]
+      },
+      "texto": {
+       "pt": "Os seguranças da Sacks estavam olhando. O vídeo passa no noticiário por um mês.",
+       "en": "The Sacks guards were watching. The tape runs on the news for a month."
+      }
+     },
+     {
+      "p": 0.4,
+      "efeitos": {
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Você sai pela porta. Ninguém vê. Você não usa nada do que levou.",
+       "en": "You walk out. Nobody sees. You never wear any of it."
+      }
+     }
+    ]
+   },
+   {
+    "id": "pagar",
+    "rotulo": {
+     "pt": "Pagar e ir para a terapia",
+     "en": "Pay and book therapy"
+    },
+    "efeitos": {
+     "estabilidade": 1,
+     "dinheiro": -5000
+    }
+   }
+  ]
+ },
+ {
+  "id": "vegas_55_horas",
+  "tipo": "vida",
+  "atos": [
+   1,
+   2
+  ],
+  "peso": 5,
+  "requer": {
+   "flags_ausentes": [
+    "casado"
+   ]
+  },
+  "texto": {
+   "pt": "Três da manhã em Las Vegas. Tommy Lixo, baterista de uma banda de metal, acha que vocês deviam casar agora. Há uma capela aberta.",
+   "en": "3 a.m. in Las Vegas. Tommy Trash, drummer in a metal band, thinks you two should get married right now. There's a chapel open."
+  },
+  "baseado_em": [
+   {
+    "quem": "Britney Spears",
+    "ano": 2004,
+    "o_que": "Casamento de 55 horas em Las Vegas",
+    "link": "https://en.wikipedia.org/wiki/Britney_Spears"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "casar",
+    "rotulo": {
+     "pt": "Casar",
+     "en": "Marry him"
+    },
+    "resultados": [
+     {
+      "p": 0.8,
+      "efeitos": {
+       "heat": 3,
+       "fama": 3,
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Dura 55 horas. A anulação sai antes das fotos.",
+       "en": "It lasts 55 hours. The annulment comes before the photos."
+      }
+     },
+     {
+      "p": 0.2,
+      "efeitos": {
+       "flag_add": [
+        "casado"
+       ],
+       "estabilidade": 1,
+       "heat": 2
+      },
+      "texto": {
+       "pt": "Dura. Ninguém entende. Vocês também não.",
+       "en": "It lasts. Nobody understands. Neither do you."
+      }
+     }
+    ]
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Pedir um táxi",
+     "en": "Call a cab"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "filhos",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 5,
+  "requer": {
+   "flags": [
+    "amor_da_vida"
+   ],
+   "flags_ausentes": [
+    "filhos"
+   ]
+  },
+  "texto": {
+   "pt": "A pessoa que não é da indústria quer ter um filho. Agora. Seu agente diz que 'agora' é a pior palavra do vocabulário.",
+   "en": "The person who isn't in the industry wants a baby. Now. Your agent says 'now' is the worst word in the language."
+  },
+  "opcoes": [
+   {
+    "id": "sim",
+    "rotulo": {
+     "pt": "Ter o filho",
+     "en": "Have the baby"
+    },
+    "efeitos": {
+     "flag_add": [
+      "filhos"
+     ],
+     "estabilidade": 2,
+     "heat": -1
+    }
+   },
+   {
+    "id": "depois",
+    "rotulo": {
+     "pt": "Depois do próximo filme",
+     "en": "After the next film"
+    },
+    "efeitos": {
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "guru_fiscal",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 4,
+  "requer": {
+   "dinheiro": ">=1000000"
+  },
+  "texto": {
+   "pt": "Eddie Isento, consultor financeiro de três astros, explica que imposto de renda é 'voluntário' para artistas. Ele tem um gráfico.",
+   "en": "Eddie Exempt, financial adviser to three stars, explains that income tax is 'voluntary' for artists. He has a chart."
+  },
+  "baseado_em": [
+   {
+    "quem": "Wesley Snipes",
+    "ano": 2010,
+    "o_que": "Três anos de prisão por não declarar imposto de renda",
+    "link": "https://en.wikipedia.org/wiki/Wesley_Snipes"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "confiar",
+    "rotulo": {
+     "pt": "Confiar no gráfico",
+     "en": "Trust the chart"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "dinheiro": -3000000,
+       "heat": 3,
+       "prestigio": -5,
+       "flag_add": [
+        "preso_fiscal"
+       ]
+      },
+      "texto": {
+       "pt": "Sete anos depois, o fisco não acha o gráfico engraçado. Três anos.",
+       "en": "Seven years later, the IRS doesn't find the chart funny. Three years."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "dinheiro": 2000000
+      },
+      "texto": {
+       "pt": "Por enquanto, funciona. Por enquanto.",
+       "en": "For now, it works. For now."
+      }
+     }
+    ]
+   },
+   {
+    "id": "contador",
+    "rotulo": {
+     "pt": "Contratar um contador chato",
+     "en": "Hire a boring accountant"
+    },
+    "efeitos": {
+     "dinheiro": -50000,
+     "estabilidade": 1
+    }
+   },
+   {
+    "id": "denunciar",
+    "rotulo": {
+     "pt": "Perguntar quem são os três astros",
+     "en": "Ask who the three stars are"
+    },
+    "requer": {
+     "juizo": ">=4"
+    },
+    "efeitos": {
+     "contatos_evento": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "cirurgia",
+  "tipo": "vida",
+  "atos": [
+   3,
+   4
+  ],
+  "peso": 6,
+  "requer": {
+   "idade": ">=36",
+   "flags_ausentes": [
+    "cirurgia"
+   ]
+  },
+  "texto": {
+   "pt": "Dr. Bem-Estar, cirurgião de metade do tapete vermelho, diz que é 'só um retoque'. Ninguém vai notar. Todo mundo nota.",
+   "en": "Dr. Wellness, surgeon to half the red carpet, says it's 'just a touch-up'. Nobody will notice. Everybody notices."
+  },
+  "opcoes": [
+   {
+    "id": "sim",
+    "rotulo": {
+     "pt": "Só um retoque",
+     "en": "Just a touch-up"
+    },
+    "efeitos": {
+     "flag_add": [
+      "cirurgia"
+     ],
+     "heat": 1,
+     "dinheiro": -80000
+    }
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Envelhecer em público",
+     "en": "Age in public"
+    },
+    "efeitos": {
+     "prestigio": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "largar_tudo",
+  "tipo": "vida",
+  "atos": [
+   3,
+   4
+  ],
+  "peso": 3,
+  "requer": {
+   "estabilidade": "<=4",
+   "flags": [
+    "amor_da_vida"
+   ]
+  },
+  "texto": {
+   "pt": "Uma faculdade em Ohio precisa de professor de teatro. Casa com quintal. Ninguém pede autógrafo no supermercado. Você pode sair enquanto ainda dá.",
+   "en": "A college in Ohio needs a drama teacher. House with a yard. Nobody asks for autographs at the grocery store. You can leave while you still can."
+  },
+  "opcoes": [
+   {
+    "id": "sair",
+    "rotulo": {
+     "pt": "Sair enquanto dá",
+     "en": "Leave while you can"
+    },
+    "efeitos": {
+     "fim": "largar_tudo"
+    }
+   },
+   {
+    "id": "ficar",
+    "rotulo": {
+     "pt": "Mais um filme",
+     "en": "One more film"
+    },
+    "efeitos": {
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "intervencao",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 10,
+  "requer": {
+   "vicio": ">=6"
+  },
+  "texto": {
+   "pt": "Seus amigos estão na sua sala. Um ator de comédia que virou sério lê uma carta. Há um lugar em Malibu, 30 dias, US$ 120 mil.",
+   "en": "Your friends are in your living room. A comedy actor who went serious reads a letter. There's a place in Malibu, 30 days, $120,000."
+  },
+  "opcoes": [
+   {
+    "id": "ir",
+    "rotulo": {
+     "pt": "Ir para Malibu",
+     "en": "Go to Malibu"
+    },
+    "resultados": [
+     {
+      "p": 0.6,
+      "efeitos": {
+       "vicio": -4,
+       "flag_add": [
+        "sobrio"
+       ],
+       "dinheiro": -120000,
+       "estabilidade": 2
+      },
+      "texto": {
+       "pt": "Trinta dias. Você sai dizendo que mudou. Desta vez, é verdade.",
+       "en": "Thirty days. You come out saying you've changed. This time it's true."
+      }
+     },
+     {
+      "p": 0.4,
+      "efeitos": {
+       "vicio": -2,
+       "dinheiro": -120000
+      },
+      "texto": {
+       "pt": "Trinta dias. Você sai dizendo que mudou.",
+       "en": "Thirty days. You come out saying you've changed."
+      }
+     }
+    ]
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Expulsar todo mundo",
+     "en": "Throw everyone out"
+    },
+    "efeitos": {
+     "vicio": 1,
+     "estabilidade": -2,
+     "reputacao": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "viper_room",
+  "tipo": "vida",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 9,
+  "unico": false,
+  "requer": {
+   "vicio": ">=3"
+  },
+  "texto": {
+   "pt": "Madrugada de Halloween na porta de um clube na Sunset. Johnny Víbora, o dono, oferece 'uma coisa nova' no banheiro. Seu amigo músico já foi.",
+   "en": "Halloween, small hours, outside a club on Sunset. Johnny Viper, the owner, offers 'something new' in the bathroom. Your musician friend already went."
+  },
+  "baseado_em": [
+   {
+    "quem": "River Phoenix",
+    "ano": 1993,
+    "o_que": "Overdose na calçada do Viper Room, aos 23 anos",
+    "link": "https://en.wikipedia.org/wiki/River_Phoenix"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "ir",
+    "rotulo": {
+     "pt": "Ir ao banheiro",
+     "en": "Go to the bathroom"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "vicio": 2,
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Você sai do banheiro uma pessoa diferente. Vai durar uma semana.",
+       "en": "You leave the bathroom a different person. It lasts a week."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "vicio": 2,
+       "heat": 4,
+       "flag_add": [
+        "foto_vazada"
+       ]
+      },
+      "texto": {
+       "pt": "Você desmaia na calçada. Alguém filma antes de chamar a ambulância.",
+       "en": "You collapse on the sidewalk. Someone films before calling an ambulance."
+      }
+     },
+     {
+      "p": 0.2,
+      "efeitos": {
+       "morte": "od"
+      },
+      "texto": {
+       "pt": "A ambulância chega em 11 minutos. Não foi o suficiente.",
+       "en": "The ambulance arrives in 11 minutes. It wasn't enough."
+      }
+     }
+    ]
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Pedir um táxi",
+     "en": "Call a cab"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   },
+   {
+    "id": "levar_amigo",
+    "rotulo": {
+     "pt": "Tirar o amigo de lá",
+     "en": "Drag your friend out"
+    },
+    "requer": {
+     "juizo": ">=3"
+    },
+    "efeitos": {
+     "estabilidade": 1,
+     "contatos_evento": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "cama_do_vizinho",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 8,
+  "unico": false,
+  "requer": {
+   "vicio": ">=4"
+  },
+  "texto": {
+   "pt": "Você acorda numa cama que não é sua, numa casa que não é sua. Uma família de Malibu está na porta do quarto, olhando. A polícia já foi chamada.",
+   "en": "You wake up in a bed that isn't yours, in a house that isn't yours. A Malibu family stands in the bedroom doorway, staring. The police are on their way."
+  },
+  "baseado_em": [
+   {
+    "quem": "Robert Downey Jr.",
+    "ano": 1996,
+    "o_que": "Encontrado dormindo na cama de um vizinho em Malibu, sob efeito de drogas",
+    "link": "https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "desculpas",
+    "rotulo": {
+     "pt": "Pedir desculpas e esperar a polícia",
+     "en": "Apologize and wait for the police"
+    },
+    "efeitos": {
+     "heat": 4,
+     "fama": 2,
+     "prestigio": -4,
+     "flag_add": [
+      "preso_1"
+     ],
+     "demissao": true
+    },
+    "texto": {
+     "pt": "A foto da prisão vira capa. O estúdio te tira do filme que você ia começar na segunda.",
+     "en": "The mugshot makes the cover. The studio drops you from the film you were starting Monday."
+    }
+   },
+   {
+    "id": "fugir",
+    "rotulo": {
+     "pt": "Sair pela janela",
+     "en": "Out the window"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 2,
+       "vicio": 1
+      },
+      "texto": {
+       "pt": "Funciona. Ninguém acredita, mas funciona.",
+       "en": "It works. Nobody believes it, but it works."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 5,
+       "prestigio": -6,
+       "flag_add": [
+        "preso_1"
+       ],
+       "demissao": true
+      },
+      "texto": {
+       "pt": "A janela dá para a piscina. O vídeo tem 40 segundos.",
+       "en": "The window opens onto the pool. The video is 40 seconds long."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sunset_1h",
+  "tipo": "vida",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 6,
+  "requer": {
+   "heat": ">=2",
+   "genero": "m"
+  },
+  "texto": {
+   "pt": "1h da manhã. Carro estacionado na Sunset. Divina Marrom no banco do passageiro. Uma luz azul no retrovisor.",
+   "en": "1 a.m. Car parked on Sunset. Divine Brown in the passenger seat. A blue light in the rearview mirror."
+  },
+  "baseado_em": [
+   {
+    "quem": "Hugh Grant",
+    "ano": 1995,
+    "o_que": "Preso com uma profissional do sexo num carro na Sunset Boulevard, duas semanas antes de uma estreia",
+    "link": "https://en.wikipedia.org/wiki/Hugh_Grant"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "late_show",
+    "rotulo": {
+     "pt": "Ir ao talk show na semana seguinte e encarar",
+     "en": "Go on the talk show next week and face it"
+    },
+    "requer": {
+     "carisma": ">=4"
+    },
+    "efeitos": {
+     "heat": 6,
+     "fama": 8,
+     "prestigio": -2,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   },
+   {
+    "id": "assessor",
+    "rotulo": {
+     "pt": "Nota do assessor e sumir",
+     "en": "Publicist's note and disappear"
+    },
+    "efeitos": {
+     "heat": 5,
+     "fama": 3,
+     "prestigio": -6,
+     "estabilidade": -2,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "tiger_blood",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 7,
+  "requer": {
+   "vicio": ">=6",
+   "fama": ">=40"
+  },
+  "texto": {
+   "pt": "Você dá uma entrevista de 40 minutos, ao vivo, sobre o seu sangue, suas deusas e o fato de você estar 'vencendo'. Você é o ator mais bem pago da TV. Era.",
+   "en": "You give a 40-minute live interview about your blood, your goddesses and the fact that you are 'winning'. You're the highest-paid actor on TV. Were."
+  },
+  "baseado_em": [
+   {
+    "quem": "Charlie Sheen",
+    "ano": 2011,
+    "o_que": "Entrevistas sobre 'tiger blood' e demissão da sitcom mais bem paga da TV",
+    "link": "https://en.wikipedia.org/wiki/Charlie_Sheen"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "turne",
+    "rotulo": {
+     "pt": "Sair em turnê com o monólogo",
+     "en": "Take the monologue on tour"
+    },
+    "efeitos": {
+     "fama": 10,
+     "heat": 8,
+     "prestigio": -12,
+     "dinheiro": -5000000,
+     "vicio": 1,
+     "flag_add": [
+      "demitido_sitcom",
+      "meme_discurso"
+     ],
+     "demissao": true
+    }
+   },
+   {
+    "id": "reabilitacao",
+    "rotulo": {
+     "pt": "Reabilitação em casa, com câmeras",
+     "en": "At-home rehab, with cameras"
+    },
+    "efeitos": {
+     "heat": 5,
+     "vicio": -1,
+     "prestigio": -6,
+     "demissao": true
+    }
+   }
+  ]
+ },
+ {
+  "id": "dui_malibu",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 6,
+  "requer": {
+   "vicio": ">=3"
+  },
+  "texto": {
+   "pt": "Blitz na Pacific Coast Highway. Você está acima do limite e, por algum motivo, decide explicar ao policial quem controla Hollywood.",
+   "en": "Checkpoint on the Pacific Coast Highway. You're over the limit and, for some reason, decide to explain to the officer who runs Hollywood."
+  },
+  "baseado_em": [
+   {
+    "quem": "Mel Gibson",
+    "ano": 2006,
+    "o_que": "Prisão por dirigir embriagado em Malibu e discurso antissemita gravado pela polícia",
+    "link": "https://en.wikipedia.org/wiki/Mel_Gibson"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "falar",
+    "rotulo": {
+     "pt": "Explicar",
+     "en": "Explain"
+    },
+    "efeitos": {
+     "heat": 8,
+     "prestigio": -20,
+     "fama": -5,
+     "reputacao": -3,
+     "flag_add": [
+      "cancelado",
+      "preso_1"
+     ],
+     "demissao": true
+    }
+   },
+   {
+    "id": "calar",
+    "rotulo": {
+     "pt": "Ficar em silêncio e aceitar a multa",
+     "en": "Stay quiet and take the ticket"
+    },
+    "requer": {
+     "juizo": ">=2"
+    },
+    "efeitos": {
+     "heat": 3,
+     "prestigio": -3,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "cranio_dinossauro",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 6,
+  "requer": {
+   "dinheiro": ">=5000000"
+  },
+  "texto": {
+   "pt": "Um leilão. Um crânio de tiranossauro. Você já tem dois castelos, uma ilha e um polvo de estimação. O leiloeiro olha para você.",
+   "en": "An auction. A tyrannosaurus skull. You already own two castles, an island and a pet octopus. The auctioneer looks at you."
+  },
+  "baseado_em": [
+   {
+    "quem": "Nicolas Cage",
+    "ano": 2007,
+    "o_que": "Comprou um crânio de dinossauro por US$ 276 mil e acumulou dívidas milionárias com o fisco",
+    "link": "https://en.wikipedia.org/wiki/Nicolas_Cage"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "comprar",
+    "rotulo": {
+     "pt": "Levantar a mão",
+     "en": "Raise your hand"
+    },
+    "efeitos": {
+     "dinheiro": -4000000,
+     "heat": 2,
+     "flag_add": [
+      "filmografia_de_cage",
+      "aceita_tudo"
+     ]
+    },
+    "texto": {
+     "pt": "O crânio era roubado. O fisco liga no mês seguinte. Você vai aceitar qualquer filme pelos próximos dez anos.",
+     "en": "The skull was stolen. The IRS calls the following month. You'll take any film for the next ten years."
+    }
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Sentar na mão",
+     "en": "Sit on your hand"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "cidade_georgia",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 4,
+  "requer": {
+   "dinheiro": ">=15000000"
+  },
+  "texto": {
+   "pt": "Uma cidade inteira na Geórgia está à venda por US$ 20 milhões. Seu empresário diz que é 'um investimento em você'.",
+   "en": "An entire town in Georgia is for sale for $20 million. Your manager calls it 'an investment in you'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Kim Basinger",
+    "ano": 1989,
+    "o_que": "Comprou a cidade de Braselton, na Geórgia, e declarou falência quatro anos depois",
+    "link": "https://en.wikipedia.org/wiki/Kim_Basinger"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "comprar",
+    "rotulo": {
+     "pt": "Comprar a cidade",
+     "en": "Buy the town"
+    },
+    "efeitos": {
+     "dinheiro": -20000000,
+     "heat": 3,
+     "flag_add": [
+      "falencia"
+     ]
+    },
+    "texto": {
+     "pt": "Quatro anos depois você declara falência num tribunal de Los Angeles. A cidade não ficou mais famosa.",
+     "en": "Four years later you file for bankruptcy in a Los Angeles court. The town didn't get any more famous."
+    }
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Comprar uma casa",
+     "en": "Buy a house"
+    },
+    "efeitos": {
+     "dinheiro": -3000000,
+     "estabilidade": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "atraso_set",
+  "tipo": "vida",
+  "atos": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "peso": 10,
+  "unico": false,
+  "requer": {
+   "vicio": ">=5"
+  },
+  "texto": {
+   "pt": "Terceiro dia seguido chegando quatro horas atrasado(a) ao set. O diretor parou de falar com você. O produtor liga para o seu agente.",
+   "en": "Third day in a row arriving four hours late on set. The director stopped talking to you. The producer calls your agent."
+  },
+  "baseado_em": [
+   {
+    "quem": "Lindsay Lohan",
+    "ano": 2007,
+    "o_que": "Carta pública do produtor de Georgia Rule sobre atrasos e comportamento no set",
+    "link": "https://en.wikipedia.org/wiki/Lindsay_Lohan"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "chegar",
+    "rotulo": {
+     "pt": "Chegar cedo amanhã, custe o que custar",
+     "en": "Be early tomorrow, whatever it takes"
+    },
+    "resultados": [
+     {
+      "p": 0.6,
+      "efeitos": {
+       "reputacao": -1,
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Você chega. Ninguém comenta. Todo mundo lembra.",
+       "en": "You show up. Nobody mentions it. Everybody remembers."
+      }
+     },
+     {
+      "p": 0.4,
+      "efeitos": {
+       "reputacao": -2,
+       "heat": 3,
+       "demissao": true,
+       "flag_add": [
+        "demitido_set"
+       ]
+      },
+      "texto": {
+       "pt": "Você não chega. A carta do produtor vaza. Você está fora do filme.",
+       "en": "You don't show up. The producer's letter leaks. You're off the film."
+      }
+     }
+    ]
+   },
+   {
+    "id": "largar",
+    "rotulo": {
+     "pt": "Largar o filme antes que te larguem",
+     "en": "Quit before they fire you"
+    },
+    "efeitos": {
+     "reputacao": -2,
+     "heat": 2,
+     "demissao": true,
+     "flag_add": [
+      "demitido_set"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "recaida",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "peso": 8,
+  "unico": false,
+  "requer": {
+   "flags": [
+    "sobrio"
+   ],
+   "heat": ">=2"
+  },
+  "texto": {
+   "pt": "Festa de encerramento. Alguém que você não vê há anos diz 'só uma, para comemorar'. Você está sóbrio(a) há três anos.",
+   "en": "Wrap party. Someone you haven't seen in years says 'just one, to celebrate'. You've been sober for three years."
+  },
+  "baseado_em": [
+   {
+    "quem": "Matthew Perry",
+    "ano": 2001,
+    "o_que": "Recaídas sucessivas durante Friends, contadas no livro de memórias",
+    "link": "https://en.wikipedia.org/wiki/Matthew_Perry"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "uma",
+    "rotulo": {
+     "pt": "Só uma",
+     "en": "Just one"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "vicio": 4,
+       "estabilidade": -3,
+       "flag_remove": [
+        "sobrio"
+       ]
+      },
+      "texto": {
+       "pt": "Não foi só uma.",
+       "en": "It wasn't just one."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Foi só uma. Você não dorme pensando nisso.",
+       "en": "It was just one. You don't sleep thinking about it."
+      }
+     }
+    ]
+   },
+   {
+    "id": "sair",
+    "rotulo": {
+     "pt": "Ir embora antes do bolo",
+     "en": "Leave before the cake"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "ex_vingativo",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 6,
+  "requer": {
+   "flags_qualquer": [
+    "amor_da_vida",
+    "casado"
+   ],
+   "heat": ">=3"
+  },
+  "texto": {
+   "pt": "O relacionamento acabou mal. Muito mal. Há cartas, há áudios, há um advogado famoso por julgamentos transmitidos ao vivo.",
+   "en": "The relationship ended badly. Very badly. There are letters, there are audio files, there's a lawyer famous for televised trials."
+  },
+  "baseado_em": [
+   {
+    "quem": "Johnny Depp e Amber Heard",
+    "ano": 2022,
+    "o_que": "Julgamento por difamação transmitido ao vivo, com áudios e mensagens expostos",
+    "link": "https://en.wikipedia.org/wiki/Depp_v._Heard"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "processar",
+    "rotulo": {
+     "pt": "Processar e ir a julgamento",
+     "en": "Sue and go to trial"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 10,
+       "fama": 10,
+       "prestigio": -10,
+       "dinheiro": -8000000,
+       "estabilidade": -4,
+       "flag_remove": [
+        "amor_da_vida",
+        "casado"
+       ],
+       "flag_add": [
+        "julgamento_publico"
+       ]
+      },
+      "texto": {
+       "pt": "Você ganha. Seis semanas de transmissão ao vivo. Metade da internet te odeia; a outra metade vende camiseta.",
+       "en": "You win. Six weeks of live broadcast. Half the internet hates you; the other half sells T-shirts."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 10,
+       "fama": 5,
+       "prestigio": -18,
+       "dinheiro": -12000000,
+       "estabilidade": -5,
+       "flag_remove": [
+        "amor_da_vida",
+        "casado"
+       ],
+       "flag_add": [
+        "julgamento_publico",
+        "cancelado"
+       ]
+      },
+      "texto": {
+       "pt": "Você perde. Os áudios ficam para sempre.",
+       "en": "You lose. The audio files are forever."
+      }
+     }
+    ]
+   },
+   {
+    "id": "acordo",
+    "rotulo": {
+     "pt": "Acordo em silêncio",
+     "en": "Settle quietly"
+    },
+    "efeitos": {
+     "dinheiro": -5000000,
+     "estabilidade": -2,
+     "flag_remove": [
+      "amor_da_vida",
+      "casado"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "paparazzi_tunel",
+  "tipo": "vida",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 5,
+  "requer": {
+   "fama": ">=60",
+   "heat": ">=4"
+  },
+  "texto": {
+   "pt": "Oito motos atrás do seu carro desde o restaurante. Seu motorista pergunta se pode acelerar. Vocês estão entrando num túnel.",
+   "en": "Eight motorcycles behind your car since the restaurant. Your driver asks if he can speed up. You're entering a tunnel."
+  },
+  "baseado_em": [
+   {
+    "quem": "Princesa Diana",
+    "ano": 1997,
+    "o_que": "Morte em acidente de carro perseguida por paparazzi no túnel da Pont de l'Alma, em Paris",
+    "link": "https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "acelerar",
+    "rotulo": {
+     "pt": "Acelerar",
+     "en": "Speed up"
+    },
+    "resultados": [
+     {
+      "p": 0.75,
+      "efeitos": {
+       "heat": 2,
+       "estabilidade": -2
+      },
+      "texto": {
+       "pt": "Vocês despistam. Suas mãos tremem por uma hora.",
+       "en": "You lose them. Your hands shake for an hour."
+      }
+     },
+     {
+      "p": 0.15,
+      "efeitos": {
+       "estabilidade": -4,
+       "heat": 6,
+       "flag_add": [
+        "lesao"
+       ]
+      },
+      "texto": {
+       "pt": "O carro bate no pilar. Você sai andando. O motorista não.",
+       "en": "The car hits a pillar. You walk away. The driver doesn't."
+      }
+     },
+     {
+      "p": 0.1,
+      "efeitos": {
+       "morte": "acidente"
+      },
+      "texto": {
+       "pt": "O carro bate no décimo terceiro pilar do túnel.",
+       "en": "The car hits the thirteenth pillar of the tunnel."
+      }
+     }
+    ]
+   },
+   {
+    "id": "parar",
+    "rotulo": {
+     "pt": "Parar e deixar fotografarem",
+     "en": "Stop and let them shoot"
+    },
+    "efeitos": {
+     "heat": 3,
+     "fama": 1
+    }
+   }
+  ]
+ }
 ]

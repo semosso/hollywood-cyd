@@ -1,27 +1,485 @@
 [
- {"id":"ventura_blvd","tipo":"destino","atos":[2,3,4],"peso":5,"requer":{"estabilidade":"<=2"},
-  "texto":{"pt":"Você está no meio da Ventura Boulevard, gritando. Há uma arma na sua cintura. Há um helicóptero do Canal 7. Você não lembra como chegou aqui.","en":"You're in the middle of Ventura Boulevard, screaming. There's a gun in your waistband. There's a Channel 7 helicopter. You don't remember how you got here."},
-  "baseado_em":[{"quem":"Martin Lawrence","ano":1996,"o_que":"Surto no meio da Ventura Blvd, armado, gritando com os carros","link":"https://en.wikipedia.org/wiki/Martin_Lawrence"}],
-  "opcoes":[
-   {"id":"hospital","rotulo":{"pt":"Deixar que te levem","en":"Let them take you"},"efeitos":{"flag_add":["surto_publico"],"heat":5,"fama":3,"estabilidade":3,"vicio":-1}},
-   {"id":"correr","rotulo":{"pt":"Correr","en":"Run"},"efeitos":{"flag_add":["surto_publico","pelado_na_rua"],"heat":6,"estabilidade":-1}}
-  ]},
- {"id":"fita_cofre","tipo":"destino","atos":[2,3],"peso":5,"requer":{"heat":">=3"},
-  "texto":{"pt":"Durante a reforma da casa, um eletricista levou o cofre. Dentro, joias, armas e uma fita. A fita está à venda na internet, que acabou de ser inventada.","en":"During the renovation, an electrician took the safe. Inside: jewelry, guns and a tape. The tape is for sale on the internet, which was just invented."},
-  "baseado_em":[{"quem":"Pamela Anderson e Tommy Lee","ano":1995,"o_que":"Fita íntima roubada do cofre da casa durante uma reforma e distribuída online","link":"https://en.wikipedia.org/wiki/Pamela_Anderson"}],
-  "opcoes":[
-   {"id":"processar","rotulo":{"pt":"Processar todo mundo","en":"Sue everyone"},"efeitos":{"heat":6,"fama":8,"prestigio":-5,"estabilidade":-3,"dinheiro":-500000,"flag_add":["fita"]}},
-   {"id":"ignorar","rotulo":{"pt":"Fingir que não existe","en":"Pretend it doesn't exist"},"efeitos":{"heat":4,"fama":5,"estabilidade":-2,"flag_add":["fita"]}},
-   {"id":"lancar","rotulo":{"pt":"Lançar você mesmo(a) e ficar com o dinheiro","en":"Release it yourself and keep the money"},"requer":{"juizo":"<=2"},"efeitos":{"heat":8,"fama":10,"prestigio":-15,"dinheiro":3000000,"flag_add":["fita","fita_propria"]}}
-  ]},
- {"id":"universidade_remo","tipo":"destino","atos":[3,4],"peso":4,"requer":{"flags":["filhos"],"dinheiro":">=1000000"},
-  "texto":{"pt":"Rick Cantor, consultor universitário, garante vaga para sua filha numa universidade de elite como atleta de remo. Ela nunca remou. São US$ 500 mil.","en":"Rick Cantor, college consultant, guarantees your daughter a spot at an elite university as a rowing recruit. She has never rowed. It's $500,000."},
-  "baseado_em":[{"quem":"Lori Loughlin e Felicity Huffman","ano":2019,"o_que":"Escândalo de suborno para admissão universitária (Operação Varsity Blues)","link":"https://en.wikipedia.org/wiki/2019_college_admissions_bribery_scandal"}],
-  "opcoes":[
-   {"id":"pagar","rotulo":{"pt":"Pagar","en":"Pay"},"resultados":[
-     {"p":0.7,"efeitos":{"dinheiro":-500000,"heat":6,"prestigio":-12,"flag_add":["presa_universidade","cancelado"]},"texto":{"pt":"O FBI tem as gravações. Dois meses de prisão. A filha vira influencer.","en":"The FBI has the recordings. Two months in prison. Your daughter becomes an influencer."}},
-     {"p":0.3,"efeitos":{"dinheiro":-500000},"texto":{"pt":"Ela entra. Nunca rema. Ninguém pergunta.","en":"She gets in. Never rows. Nobody asks."}}
-   ]},
-   {"id":"nao","rotulo":{"pt":"Ela vai para a faculdade estadual","en":"She goes to state college"},"efeitos":{"estabilidade":1}}
-  ]}
+ {
+  "id": "ventura_blvd",
+  "tipo": "destino",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 5,
+  "requer": {
+   "estabilidade": "<=2"
+  },
+  "texto": {
+   "pt": "Você está no meio da Ventura Boulevard, gritando. Há uma arma na sua cintura. Há um helicóptero do Canal 7. Você não lembra como chegou aqui.",
+   "en": "You're in the middle of Ventura Boulevard, screaming. There's a gun in your waistband. There's a Channel 7 helicopter. You don't remember how you got here."
+  },
+  "baseado_em": [
+   {
+    "quem": "Martin Lawrence",
+    "ano": 1996,
+    "o_que": "Surto no meio da Ventura Blvd, armado, gritando com os carros",
+    "link": "https://en.wikipedia.org/wiki/Martin_Lawrence"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "hospital",
+    "rotulo": {
+     "pt": "Deixar que te levem",
+     "en": "Let them take you"
+    },
+    "efeitos": {
+     "flag_add": [
+      "surto_publico"
+     ],
+     "heat": 5,
+     "fama": 3,
+     "estabilidade": 3,
+     "vicio": -1
+    }
+   },
+   {
+    "id": "correr",
+    "rotulo": {
+     "pt": "Correr",
+     "en": "Run"
+    },
+    "efeitos": {
+     "flag_add": [
+      "surto_publico",
+      "pelado_na_rua"
+     ],
+     "heat": 6,
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "fita_cofre",
+  "tipo": "destino",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 5,
+  "requer": {
+   "heat": ">=3"
+  },
+  "texto": {
+   "pt": "Durante a reforma da casa, um eletricista levou o cofre. Dentro, joias, armas e uma fita. A fita está à venda na internet, que acabou de ser inventada.",
+   "en": "During the renovation, an electrician took the safe. Inside: jewelry, guns and a tape. The tape is for sale on the internet, which was just invented."
+  },
+  "baseado_em": [
+   {
+    "quem": "Pamela Anderson e Tommy Lee",
+    "ano": 1995,
+    "o_que": "Fita íntima roubada do cofre da casa durante uma reforma e distribuída online",
+    "link": "https://en.wikipedia.org/wiki/Pamela_Anderson"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "processar",
+    "rotulo": {
+     "pt": "Processar todo mundo",
+     "en": "Sue everyone"
+    },
+    "efeitos": {
+     "heat": 6,
+     "fama": 8,
+     "prestigio": -5,
+     "estabilidade": -3,
+     "dinheiro": -500000,
+     "flag_add": [
+      "fita"
+     ]
+    }
+   },
+   {
+    "id": "ignorar",
+    "rotulo": {
+     "pt": "Fingir que não existe",
+     "en": "Pretend it doesn't exist"
+    },
+    "efeitos": {
+     "heat": 4,
+     "fama": 5,
+     "estabilidade": -2,
+     "flag_add": [
+      "fita"
+     ]
+    }
+   },
+   {
+    "id": "lancar",
+    "rotulo": {
+     "pt": "Lançar você mesmo(a) e ficar com o dinheiro",
+     "en": "Release it yourself and keep the money"
+    },
+    "requer": {
+     "juizo": "<=2"
+    },
+    "efeitos": {
+     "heat": 8,
+     "fama": 10,
+     "prestigio": -15,
+     "dinheiro": 3000000,
+     "flag_add": [
+      "fita",
+      "fita_propria"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "universidade_remo",
+  "tipo": "destino",
+  "atos": [
+   3,
+   4
+  ],
+  "peso": 4,
+  "requer": {
+   "flags": [
+    "filhos"
+   ],
+   "dinheiro": ">=1000000"
+  },
+  "texto": {
+   "pt": "Rick Cantor, consultor universitário, garante vaga para sua filha numa universidade de elite como atleta de remo. Ela nunca remou. São US$ 500 mil.",
+   "en": "Rick Cantor, college consultant, guarantees your daughter a spot at an elite university as a rowing recruit. She has never rowed. It's $500,000."
+  },
+  "baseado_em": [
+   {
+    "quem": "Lori Loughlin e Felicity Huffman",
+    "ano": 2019,
+    "o_que": "Escândalo de suborno para admissão universitária (Operação Varsity Blues)",
+    "link": "https://en.wikipedia.org/wiki/2019_college_admissions_bribery_scandal"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "pagar",
+    "rotulo": {
+     "pt": "Pagar",
+     "en": "Pay"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "dinheiro": -500000,
+       "heat": 6,
+       "prestigio": -12,
+       "flag_add": [
+        "presa_universidade",
+        "cancelado"
+       ]
+      },
+      "texto": {
+       "pt": "O FBI tem as gravações. Dois meses de prisão. A filha vira influencer.",
+       "en": "The FBI has the recordings. Two months in prison. Your daughter becomes an influencer."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "dinheiro": -500000
+      },
+      "texto": {
+       "pt": "Ela entra. Nunca rema. Ninguém pergunta.",
+       "en": "She gets in. Never rows. Nobody asks."
+      }
+     }
+    ]
+   },
+   {
+    "id": "nao",
+    "rotulo": {
+     "pt": "Ela vai para a faculdade estadual",
+     "en": "She goes to state college"
+    },
+    "efeitos": {
+     "estabilidade": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "agenda_madame",
+  "tipo": "destino",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 5,
+  "requer": {
+   "fama": ">=40",
+   "genero": "m"
+  },
+  "texto": {
+   "pt": "A polícia apreendeu a agenda de Heidi Flash, a madame de Hollywood. Há nomes. O seu está lá, com um valor ao lado.",
+   "en": "The police seized Heidi Flash's little black book, the Hollywood madam. There are names. Yours is in it, with a figure next to it."
+  },
+  "baseado_em": [
+   {
+    "quem": "Heidi Fleiss",
+    "ano": 1993,
+    "o_que": "A 'madame de Hollywood' foi presa e sua lista de clientes virou obsessão da imprensa",
+    "link": "https://en.wikipedia.org/wiki/Heidi_Fleiss"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "negar",
+    "rotulo": {
+     "pt": "Negar",
+     "en": "Deny"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 3
+      },
+      "texto": {
+       "pt": "A lista nunca sai. Você envelhece dez anos esperando.",
+       "en": "The list never comes out. You age ten years waiting."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 8,
+       "prestigio": -8,
+       "fama": 4,
+       "estabilidade": -3,
+       "flag_add": [
+        "escandalo_sexual"
+       ],
+       "flag_remove": [
+        "amor_da_vida",
+        "casado"
+       ]
+      },
+      "texto": {
+       "pt": "A lista sai. Com o valor.",
+       "en": "The list comes out. With the figure."
+      }
+     }
+    ]
+   },
+   {
+    "id": "admitir",
+    "rotulo": {
+     "pt": "Admitir antes que vaze",
+     "en": "Admit it before it leaks"
+    },
+    "efeitos": {
+     "heat": 6,
+     "prestigio": -4,
+     "fama": 3,
+     "estabilidade": -1,
+     "flag_add": [
+      "escandalo_sexual"
+     ],
+     "flag_remove": [
+      "amor_da_vida",
+      "casado"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "fresno",
+  "tipo": "destino",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 5,
+  "requer": {
+   "estabilidade": "<=3"
+  },
+  "texto": {
+   "pt": "Você dirigiu até o interior da Califórnia, abandonou o carro e bateu na porta de uma casa em Fresno. Disse à família que precisava esperar a nave. Eles te deixaram tomar banho.",
+   "en": "You drove inland, abandoned the car and knocked on a door in Fresno. You told the family you needed to wait for the spaceship. They let you take a shower."
+  },
+  "baseado_em": [
+   {
+    "quem": "Anne Heche",
+    "ano": 2000,
+    "o_que": "Episódio psicótico em Fresno: bateu na porta de estranhos dizendo que esperava uma nave",
+    "link": "https://en.wikipedia.org/wiki/Anne_Heche"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "internar",
+    "rotulo": {
+     "pt": "Aceitar a internação",
+     "en": "Accept the hospital"
+    },
+    "efeitos": {
+     "estabilidade": 4,
+     "heat": 5,
+     "fama": 2,
+     "prestigio": -3,
+     "flag_add": [
+      "surto_publico"
+     ],
+     "demissao": true
+    }
+   },
+   {
+    "id": "livro",
+    "rotulo": {
+     "pt": "Escrever um livro sobre a nave",
+     "en": "Write a book about the spaceship"
+    },
+    "efeitos": {
+     "heat": 6,
+     "fama": 5,
+     "prestigio": -8,
+     "dinheiro": 1000000,
+     "estabilidade": -1,
+     "flag_add": [
+      "surto_publico"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "star_whackers",
+  "tipo": "destino",
+  "atos": [
+   3,
+   4,
+   5
+  ],
+  "peso": 4,
+  "requer": {
+   "estabilidade": "<=3",
+   "fama": ">=30"
+  },
+  "texto": {
+   "pt": "Você e seu cônjuge concluíram que existe um grupo matando astros de Hollywood para ficar com o dinheiro deles. Vocês estão num carro a caminho do Canadá, pedindo asilo.",
+   "en": "You and your spouse have concluded that a group is killing Hollywood stars for their money. You're in a car headed to Canada, seeking asylum."
+  },
+  "baseado_em": [
+   {
+    "quem": "Randy Quaid",
+    "ano": 2010,
+    "o_que": "Fugiu para o Canadá alegando perseguição dos 'star whackers'",
+    "link": "https://en.wikipedia.org/wiki/Randy_Quaid"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "canada",
+    "rotulo": {
+     "pt": "Seguir para Vancouver",
+     "en": "Keep driving to Vancouver"
+    },
+    "efeitos": {
+     "fama": -10,
+     "heat": 6,
+     "prestigio": -10,
+     "estabilidade": -2,
+     "flag_add": [
+      "surto_publico",
+      "canada"
+     ],
+     "demissao": true
+    }
+   },
+   {
+    "id": "voltar",
+    "rotulo": {
+     "pt": "Voltar e ligar para um médico",
+     "en": "Turn around and call a doctor"
+    },
+    "requer": {
+     "juizo": ">=2"
+    },
+    "efeitos": {
+     "estabilidade": 3,
+     "heat": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "marca_a_ferro",
+  "tipo": "destino",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 8,
+  "requer": {
+   "flags": [
+    "culto_1"
+   ]
+  },
+  "texto": {
+   "pt": "O grupo de autoconhecimento tem um nível secreto, só para mulheres, com uma cerimônia. Keith Brilhante explica que a marca é 'um símbolo de compromisso'. Há um ferro quente na sala.",
+   "en": "The self-improvement group has a secret level, women only, with a ceremony. Keith Brilliant explains the brand is 'a symbol of commitment'. There is a hot iron in the room."
+  },
+  "baseado_em": [
+   {
+    "quem": "Allison Mack e NXIVM",
+    "ano": 2018,
+    "o_que": "Grupo de 'autoajuda' que marcava mulheres a ferro; a atriz foi condenada por recrutar",
+    "link": "https://en.wikipedia.org/wiki/NXIVM"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "ficar",
+    "rotulo": {
+     "pt": "Ficar e subir de nível",
+     "en": "Stay and level up"
+    },
+    "efeitos": {
+     "flag_add": [
+      "culto_2"
+     ],
+     "estabilidade": -3,
+     "heat": 1,
+     "dinheiro": -500000
+    },
+    "texto": {
+     "pt": "Você fica. Três anos depois, o FBI chega antes do documentário.",
+     "en": "You stay. Three years later, the FBI arrives before the documentary."
+    }
+   },
+   {
+    "id": "fugir",
+    "rotulo": {
+     "pt": "Sair pela porta e procurar uma jornalista",
+     "en": "Walk out and find a journalist"
+    },
+    "efeitos": {
+     "flag_remove": [
+      "culto_1"
+     ],
+     "prestigio": 6,
+     "heat": 5,
+     "estabilidade": 1,
+     "flag_add": [
+      "fugiu_do_culto"
+     ]
+    }
+   }
+  ]
+ }
 ]

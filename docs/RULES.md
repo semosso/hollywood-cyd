@@ -160,7 +160,7 @@ Regras:
 - **Probabilidades visíveis** só se `Juízo ≥ 3` (decisão do questionário). Abaixo disso, o card mostra só os rótulos.
 - Terceira opção (`requer` de atributo) segue a mesma UI do card de projeto (puxar para cima).
 - `baseado_em` aparece **na resolução**, nunca antes.
-- Efeitos permitidos: qualquer medidor (`fama`, `prestigio`, `dinheiro`, `heat`, `estabilidade`, `vicio`, `reputacao`), `flag_add`, `flag_remove`, `contatos_evento` (soma a `rede` um contato fictício), `atributo` (`{"talento": 1}` permanente, teto 6), `multiplicador` (`{"p_prize": 2, "cards": 3}`), `morte` (`od`, `acidente`, `voo`), `fim` (`largar_tudo`).
+- Efeitos permitidos: qualquer medidor (`fama`, `prestigio`, `dinheiro`, `heat`, `estabilidade`, `vicio`, `reputacao`), `flag_add`, `flag_remove`, `contatos_evento` (soma a `rede` um contato fictício), `atributo` (`{"talento": 1}` permanente, teto 6), `multiplicador` (`{"p_prize": 2, "cards": 3}`), `morte` (`od`, `acidente`, `voo`), `fim` (`largar_tudo`), `demissao` (tira do `pipeline` o filme assinado mais recente: Fama −3, Heat +2, Reputação −1; a revelação não acontece).
 - Sorteio de evento: entre os elegíveis para o `tipo` e o `ato`, ponderado por `peso`, excluindo os já mostrados na run (eventos com `unico: false` sempre podem repetir). Se não sobrar nenhum, repete os vistos há 5 cards ou mais (nunca `contexto` nem `destino`).
 - Ofertas de fallback (4.5) não entram em `usados`: só não repetem nos 2 cards seguintes.
 

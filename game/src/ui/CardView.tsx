@@ -13,7 +13,7 @@ export function CardView({ state, card, lang, onAction, showTutorial, onTutorial
   return (
     <div className="swipe">
       <div className="eyebrow">{card.event.tipo}</div>
-      <p style={{ fontSize: 18, marginTop: 8 }}>{card.event.texto[lang] ?? card.event.texto.pt}</p>
+      <p style={{ fontSize: 18, marginTop: 8 }}>{(card.event.texto[lang] ?? card.event.texto.pt).replace("{idade}", String(state.idade))}</p>
       <div className="evopts">
         {opts.map((o) => {
           const rs = normalizedResults(o, state);

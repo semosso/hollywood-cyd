@@ -1,31 +1,470 @@
 [
- {"id":"entrevista_sobrenome","tipo":"midia","atos":[1,2],"peso":10,"requer":{"flags":["sobrenome"]},
-  "texto":{"pt":"Uma jornalista pergunta, na frente de todo mundo, se você teria chegado aqui sem o sobrenome.","en":"A journalist asks, in front of everyone, whether you'd have gotten here without the last name."},
-  "opcoes":[
-   {"id":"piada","rotulo":{"pt":"Fazer piada","en":"Make a joke"},"requer":{"carisma":">=4"},"efeitos":{"fama":4,"heat":1,"prestigio":2}},
-   {"id":"honesto","rotulo":{"pt":"Dizer que não","en":"Say no, you wouldn't"},"efeitos":{"prestigio":5,"heat":2}},
-   {"id":"defensivo","rotulo":{"pt":"Dizer que trabalhou muito","en":"Say you worked very hard"},"efeitos":{"prestigio":-3,"heat":2,"fama":2}}
-  ]},
- {"id":"tabloide_romance","tipo":"midia","atos":[1,2,3],"peso":6,"requer":{"heat":">=2"},
-  "texto":{"pt":"Um tabloide inventa um romance seu com um músico que você viu uma vez num elevador. A foto é do elevador.","en":"A tabloid invents a romance between you and a musician you once saw in an elevator. The photo is from the elevator."},
-  "opcoes":[
-   {"id":"confirmar","rotulo":{"pt":"Não negar","en":"Don't deny it"},"efeitos":{"heat":3,"fama":4,"estabilidade":-1}},
-   {"id":"negar","rotulo":{"pt":"Negar com nota do assessor","en":"Deny through your publicist"},"efeitos":{"heat":1}},
-   {"id":"nada","rotulo":{"pt":"'Não comento minha vida pessoal'","en":"'I don't discuss my personal life'"},"efeitos":{"prestigio":1}}
-  ]},
- {"id":"audio_vazado","tipo":"midia","atos":[2,3,4],"peso":4,"requer":{"estabilidade":"<=5"},
-  "texto":{"pt":"Shane, o iluminador, mexeu na luz durante a sua cena. Você gritou por quatro minutos. Há áudio. Está na internet.","en":"Shane, the gaffer, adjusted a light during your scene. You yelled for four minutes. There's audio. It's online."},
-  "baseado_em":[{"quem":"Christian Bale","ano":2009,"o_que":"Áudio vazado gritando com o diretor de fotografia no set de O Exterminador do Futuro: A Salvação","link":"https://en.wikipedia.org/wiki/Christian_Bale"}],
-  "opcoes":[
-   {"id":"desculpas","rotulo":{"pt":"Pedir desculpas numa rádio","en":"Apologize on a radio show"},"efeitos":{"reputacao":-1,"heat":2}},
-   {"id":"remix","rotulo":{"pt":"Rir do remix","en":"Laugh at the remix"},"requer":{"carisma":">=3"},"efeitos":{"fama":3,"heat":3}},
-   {"id":"silencio","rotulo":{"pt":"Silêncio","en":"Silence"},"efeitos":{"reputacao":-2,"heat":1}}
-  ]},
- {"id":"saco_de_papel","tipo":"midia","atos":[2,3],"peso":2,"requer":{"prestigio":">=20"},
-  "texto":{"pt":"Você está cansado(a) de ser famoso(a). Há um saco de papel no seu camarim. A première é em dez minutos.","en":"You're tired of being famous. There's a paper bag in your dressing room. The premiere is in ten minutes."},
-  "baseado_em":[{"quem":"Shia LaBeouf","ano":2014,"o_que":"Tapete vermelho de Berlim com um saco de papel escrito 'I AM NOT FAMOUS ANYMORE'","link":"https://en.wikipedia.org/wiki/Shia_LaBeouf"}],
-  "opcoes":[
-   {"id":"saco","rotulo":{"pt":"Colocar o saco na cabeça","en":"Put the bag on"},"efeitos":{"heat":4,"fama":2,"prestigio":-2,"flag_add":["performance_art"]}},
-   {"id":"sorrir","rotulo":{"pt":"Sorrir para as fotos","en":"Smile for the photos"},"efeitos":{"estabilidade":-1}}
-  ]}
+ {
+  "id": "entrevista_sobrenome",
+  "tipo": "midia",
+  "atos": [
+   1,
+   2
+  ],
+  "peso": 10,
+  "requer": {
+   "flags": [
+    "sobrenome"
+   ]
+  },
+  "texto": {
+   "pt": "Uma jornalista pergunta, na frente de todo mundo, se você teria chegado aqui sem o sobrenome.",
+   "en": "A journalist asks, in front of everyone, whether you'd have gotten here without the last name."
+  },
+  "opcoes": [
+   {
+    "id": "piada",
+    "rotulo": {
+     "pt": "Fazer piada",
+     "en": "Make a joke"
+    },
+    "requer": {
+     "carisma": ">=4"
+    },
+    "efeitos": {
+     "fama": 4,
+     "heat": 1,
+     "prestigio": 2
+    }
+   },
+   {
+    "id": "honesto",
+    "rotulo": {
+     "pt": "Dizer que não",
+     "en": "Say no, you wouldn't"
+    },
+    "efeitos": {
+     "prestigio": 5,
+     "heat": 2
+    }
+   },
+   {
+    "id": "defensivo",
+    "rotulo": {
+     "pt": "Dizer que trabalhou muito",
+     "en": "Say you worked very hard"
+    },
+    "efeitos": {
+     "prestigio": -3,
+     "heat": 2,
+     "fama": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "tabloide_romance",
+  "tipo": "midia",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 6,
+  "requer": {
+   "heat": ">=2"
+  },
+  "texto": {
+   "pt": "Um tabloide inventa um romance seu com um músico que você viu uma vez num elevador. A foto é do elevador.",
+   "en": "A tabloid invents a romance between you and a musician you once saw in an elevator. The photo is from the elevator."
+  },
+  "opcoes": [
+   {
+    "id": "confirmar",
+    "rotulo": {
+     "pt": "Não negar",
+     "en": "Don't deny it"
+    },
+    "efeitos": {
+     "heat": 3,
+     "fama": 4,
+     "estabilidade": -1
+    }
+   },
+   {
+    "id": "negar",
+    "rotulo": {
+     "pt": "Negar com nota do assessor",
+     "en": "Deny through your publicist"
+    },
+    "efeitos": {
+     "heat": 1
+    }
+   },
+   {
+    "id": "nada",
+    "rotulo": {
+     "pt": "'Não comento minha vida pessoal'",
+     "en": "'I don't discuss my personal life'"
+    },
+    "efeitos": {
+     "prestigio": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "audio_vazado",
+  "tipo": "midia",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 4,
+  "requer": {
+   "estabilidade": "<=5"
+  },
+  "texto": {
+   "pt": "Shane, o iluminador, mexeu na luz durante a sua cena. Você gritou por quatro minutos. Há áudio. Está na internet.",
+   "en": "Shane, the gaffer, adjusted a light during your scene. You yelled for four minutes. There's audio. It's online."
+  },
+  "baseado_em": [
+   {
+    "quem": "Christian Bale",
+    "ano": 2009,
+    "o_que": "Áudio vazado gritando com o diretor de fotografia no set de O Exterminador do Futuro: A Salvação",
+    "link": "https://en.wikipedia.org/wiki/Christian_Bale"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "desculpas",
+    "rotulo": {
+     "pt": "Pedir desculpas numa rádio",
+     "en": "Apologize on a radio show"
+    },
+    "efeitos": {
+     "reputacao": -1,
+     "heat": 2
+    }
+   },
+   {
+    "id": "remix",
+    "rotulo": {
+     "pt": "Rir do remix",
+     "en": "Laugh at the remix"
+    },
+    "requer": {
+     "carisma": ">=3"
+    },
+    "efeitos": {
+     "fama": 3,
+     "heat": 3
+    }
+   },
+   {
+    "id": "silencio",
+    "rotulo": {
+     "pt": "Silêncio",
+     "en": "Silence"
+    },
+    "efeitos": {
+     "reputacao": -2,
+     "heat": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "saco_de_papel",
+  "tipo": "midia",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 2,
+  "requer": {
+   "prestigio": ">=20"
+  },
+  "texto": {
+   "pt": "Você está cansado(a) de ser famoso(a). Há um saco de papel no seu camarim. A première é em dez minutos.",
+   "en": "You're tired of being famous. There's a paper bag in your dressing room. The premiere is in ten minutes."
+  },
+  "baseado_em": [
+   {
+    "quem": "Shia LaBeouf",
+    "ano": 2014,
+    "o_que": "Tapete vermelho de Berlim com um saco de papel escrito 'I AM NOT FAMOUS ANYMORE'",
+    "link": "https://en.wikipedia.org/wiki/Shia_LaBeouf"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "saco",
+    "rotulo": {
+     "pt": "Colocar o saco na cabeça",
+     "en": "Put the bag on"
+    },
+    "efeitos": {
+     "heat": 4,
+     "fama": 2,
+     "prestigio": -2,
+     "flag_add": [
+      "performance_art"
+     ]
+    }
+   },
+   {
+    "id": "sorrir",
+    "rotulo": {
+     "pt": "Sorrir para as fotos",
+     "en": "Smile for the photos"
+    },
+    "efeitos": {
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "foto_prisao",
+  "tipo": "midia",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 7,
+  "requer": {
+   "flags": [
+    "preso_1"
+   ]
+  },
+  "texto": {
+   "pt": "Sua foto de prisão vazou. Cabelo em pé, camisa havaiana, olhar de quem viu Deus. É a imagem mais compartilhada do ano. Vai ser a mais compartilhada da década.",
+   "en": "Your mugshot leaked. Hair on end, Hawaiian shirt, the eyes of someone who has seen God. It's the most shared image of the year. It will be the most shared of the decade."
+  },
+  "baseado_em": [
+   {
+    "quem": "Nick Nolte",
+    "ano": 2002,
+    "o_que": "Foto de prisão por dirigir sob efeito de GHB virou ícone pop",
+    "link": "https://en.wikipedia.org/wiki/Nick_Nolte"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "abracar",
+    "rotulo": {
+     "pt": "Vender a camiseta",
+     "en": "Sell the T-shirt"
+    },
+    "requer": {
+     "carisma": ">=3"
+    },
+    "efeitos": {
+     "fama": 8,
+     "heat": 5,
+     "prestigio": -4,
+     "dinheiro": 500000,
+     "flag_add": [
+      "meme_discurso"
+     ]
+    }
+   },
+   {
+    "id": "sumir",
+    "rotulo": {
+     "pt": "Sumir seis meses",
+     "en": "Disappear for six months"
+    },
+    "efeitos": {
+     "fama": -6,
+     "heat": -2,
+     "estabilidade": 1,
+     "flag_add": [
+      "meme_discurso"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "telefone_hotel",
+  "tipo": "midia",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 5,
+  "requer": {
+   "estabilidade": "<=5",
+   "fama": ">=40"
+  },
+  "texto": {
+   "pt": "O telefone do hotel não liga para a sua casa. Nestor, da recepção, diz que vai 'verificar'. Você arremessa o telefone. Nestor estava no caminho.",
+   "en": "The hotel phone won't call home. Nestor at the front desk says he'll 'look into it'. You throw the phone. Nestor was in the way."
+  },
+  "baseado_em": [
+   {
+    "quem": "Russell Crowe",
+    "ano": 2005,
+    "o_que": "Preso em Nova York por arremessar um telefone num funcionário de hotel",
+    "link": "https://en.wikipedia.org/wiki/Russell_Crowe"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "acordo",
+    "rotulo": {
+     "pt": "Acordo com Nestor",
+     "en": "Settle with Nestor"
+    },
+    "efeitos": {
+     "dinheiro": -100000,
+     "heat": 4,
+     "reputacao": -2,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   },
+   {
+    "id": "letterman",
+    "rotulo": {
+     "pt": "Pedir desculpas num talk show",
+     "en": "Apologize on a talk show"
+    },
+    "requer": {
+     "carisma": ">=3"
+    },
+    "efeitos": {
+     "dinheiro": -100000,
+     "heat": 5,
+     "fama": 3,
+     "reputacao": -1,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "sabe_quem_eu_sou",
+  "tipo": "midia",
+  "atos": [
+   2,
+   3,
+   4
+  ],
+  "peso": 5,
+  "requer": {
+   "fama": ">=50"
+  },
+  "texto": {
+   "pt": "Blitz em Atlanta. Param o carro do seu marido. Você sai do carro e pergunta ao policial se ele sabe quem você é. Ele não sabe. A câmera do uniforme sabe.",
+   "en": "Checkpoint in Atlanta. They pull your husband over. You get out of the car and ask the officer if he knows who you are. He doesn't. His body camera does."
+  },
+  "baseado_em": [
+   {
+    "quem": "Reese Witherspoon",
+    "ano": 2013,
+    "o_que": "Presa por desacato após perguntar 'você sabe quem eu sou?' a um policial",
+    "link": "https://en.wikipedia.org/wiki/Reese_Witherspoon"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "desculpas",
+    "rotulo": {
+     "pt": "Pedir desculpas no dia seguinte",
+     "en": "Apologize the next day"
+    },
+    "efeitos": {
+     "heat": 4,
+     "prestigio": -3,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   },
+   {
+    "id": "piada",
+    "rotulo": {
+     "pt": "Virar piada você mesma",
+     "en": "Make the joke yourself"
+    },
+    "requer": {
+     "carisma": ">=4"
+    },
+    "efeitos": {
+     "heat": 4,
+     "fama": 4,
+     "flag_add": [
+      "preso_1"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "tabloide_corpo",
+  "tipo": "midia",
+  "atos": [
+   3,
+   4,
+   5
+  ],
+  "peso": 7,
+  "unico": false,
+  "requer": {
+   "genero": "f",
+   "idade": ">=38",
+   "fama": ">=30"
+  },
+  "texto": {
+   "pt": "Uma foto sua de biquíni, tirada com teleobjetiva, com a manchete 'O CORPO DE [SEU NOME] AOS {idade}'. O texto usa a palavra 'corajosa'.",
+   "en": "A telephoto shot of you in a bikini, headlined 'HER BODY AT {idade}'. The copy uses the word 'brave'."
+  },
+  "opcoes": [
+   {
+    "id": "ignorar",
+    "rotulo": {
+     "pt": "Ignorar",
+     "en": "Ignore it"
+    },
+    "efeitos": {
+     "estabilidade": -2,
+     "heat": 2
+    }
+   },
+   {
+    "id": "responder",
+    "rotulo": {
+     "pt": "Responder com uma foto sem filtro",
+     "en": "Answer with an unfiltered photo"
+    },
+    "requer": {
+     "carisma": ">=3"
+    },
+    "efeitos": {
+     "heat": 4,
+     "fama": 4,
+     "prestigio": 2,
+     "estabilidade": -1
+    }
+   },
+   {
+    "id": "cirurgia",
+    "rotulo": {
+     "pt": "Ligar para o Dr. Bem-Estar",
+     "en": "Call Dr. Wellness"
+    },
+    "efeitos": {
+     "flag_add": [
+      "cirurgia"
+     ],
+     "dinheiro": -80000,
+     "estabilidade": -1
+    }
+   }
+  ]
+ }
 ]

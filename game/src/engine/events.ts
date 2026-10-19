@@ -78,6 +78,13 @@ export function applyEffects(state: State, ef: Effects): void {
     state.atributos.contatos = Math.min(6, state.atributos.contatos + (ef.contatos_evento >= 2 ? 1 : 0));
   }
   if (ef.atributo) for (const [k, v] of Object.entries(ef.atributo)) state.atributos[k as keyof typeof state.atributos] = Math.min(6, Math.max(1, state.atributos[k as keyof typeof state.atributos] + (v ?? 0)));
+  if (ef.demissao && state.pipeline.length) {
+    const fired = state.pipeline.pop()!;
+    state.flags.push(`demitido:${fired.tmdb_id}`);
+    state.meters.fama -= 3;
+    state.meters.heat += 2;
+    state.meters.reputacao -= 1;
+  }
   if (ef.morte) state.fim = { tipo: "morte", causa: ef.morte };
   if (ef.fim === "largar_tudo") state.fim = { tipo: "saida" };
 }
