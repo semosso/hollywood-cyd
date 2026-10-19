@@ -143,9 +143,25 @@ def _cached_person_credits(person_id: int, ns: str = "tmdb_person_credits") -> d
     return None
 
 
+RATING_KEYS = ("rt", "metacritic", "imdb")
+
+
+def _previous_films() -> dict[int, dict]:
+    """data/films.json já publicado, por tmdb_id. Uma API fora do ar não pode apagar nota que já tínhamos."""
+    p = DATA_DIR / "films.json"
+    if not p.exists():
+        return {}
+    try:
+        return {f["tmdb_id"]: f for f in json.loads(p.read_text(encoding="utf-8"))}
+    except (ValueError, KeyError, TypeError):
+        return {}
+
+
 def cmd_build():
     rows = curation.films_list()
     films, people = [], {}
+    prev = _previous_films()
+    kept = 0
     # passagem 1: coleta dados brutos e prêmios
     raw = []
     for r in rows:
@@ -182,6 +198,13 @@ def cmd_build():
         credits_pt = _cached_person_credits(d["tmdb_id"], "tmdb_person_credits_pt_BR") if d else None
         births = {c["tmdb_id"]: tmdb.birth_year(_cached_person(c["tmdb_id"])) for c in tmdb.top_cast(m, 6)}
         rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins, credits_pt, births)
+        old = prev.get(rec["tmdb_id"])
+        if old and any(rec.get(k) is None and old.get(k) is not None for k in RATING_KEYS):
+            for k in RATING_KEYS:
+                if rec.get(k) is None and old.get(k) is not None:
+                    rec[k] = old[k]
+            rec["derived"] = build_mod.derive(rec)
+            kept += 1
         rec["why"] = r["why"]
         if r["year"] and rec["year"] and abs(r["year"] - rec["year"]) > 1:
             _log(f"ATENÇÃO: tmdb_id {r['tmdb_id']} no CSV é '{r['title']}' ({r['year']}) mas o TMDB devolveu '{rec['title']['en']}' ({rec['year']}). Confira o id.")
@@ -195,6 +218,10 @@ def cmd_build():
     (DATA_DIR / "films.json").write_text(json.dumps(films, ensure_ascii=False, indent=1), encoding="utf-8")
     (DATA_DIR / "people.json").write_text(json.dumps(sorted(people.values(), key=lambda p: p["name"]), ensure_ascii=False, indent=1), encoding="utf-8")
     _log(f"data/films.json: {len(films)} filmes; data/people.json: {len(people)} diretores")
+    if kept:
+        _log(f"notas preservadas da versão anterior (API sem resposta): {kept} filmes")
+    sem_rt = sum(1 for f in films if f.get("rt") is None)
+    _log(f"sem Rotten Tomatoes (usando nota do TMDB como aproximação): {sem_rt} filmes")
     auto = sum(1 for f in films if f.get("blind_auto"))
     _log(f"descrições às cegas: {len(films) - auto} escritas à mão, {auto} geradas automaticamente")
 

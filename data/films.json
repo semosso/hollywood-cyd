@@ -255,9 +255,9 @@
   ],
   "budget": 11000000,
   "revenue": 31500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 78,
+  "metacritic": 89,
+  "imdb": 8.1,
   "tmdb_vote": 8.002,
   "film_awards": {
    "oscar_nominations": 7,
@@ -704,9 +704,9 @@
   ],
   "budget": 3000000,
   "revenue": 20173742,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 100,
+  "metacritic": 89,
+  "imdb": 7.6,
   "tmdb_vote": 7.451,
   "film_awards": {
    "oscar_nominations": 0,
@@ -738,7 +738,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.72,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -858,9 +858,9 @@
   ],
   "budget": 400000,
   "revenue": 5763644,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 92,
+  "metacritic": 91,
+  "imdb": 8.1,
   "tmdb_vote": 7.802,
   "film_awards": {
    "oscar_nominations": 0,
@@ -892,7 +892,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 14.41,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -1163,9 +1163,9 @@
   ],
   "budget": 460000,
   "revenue": 5125000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 81,
+  "imdb": 7.3,
   "tmdb_vote": 7.223,
   "film_awards": {
    "oscar_nominations": 0,
@@ -1197,7 +1197,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.14,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -1269,7 +1269,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -1392,9 +1392,9 @@
   ],
   "budget": 179000,
   "revenue": 1000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 58,
+  "imdb": 6.3,
   "tmdb_vote": 6.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -1426,7 +1426,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.59,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -1537,9 +1537,9 @@
   ],
   "budget": 8000000,
   "revenue": 12678,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 97,
+  "metacritic": 91,
+  "imdb": 7.7,
   "tmdb_vote": 7.471,
   "film_awards": {
    "oscar_nominations": 4,
@@ -1568,10 +1568,10 @@
   "derived": {
    "p_prize": 0.45,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.0,
-   "outcome": "bomb"
+   "outcome": "oscar_bait"
   },
   "why": "discover"
  },
@@ -1683,9 +1683,9 @@
   ],
   "budget": 5000000,
   "revenue": 41833347,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 79,
+  "metacritic": 61,
+  "imdb": 7.0,
   "tmdb_vote": 6.784,
   "film_awards": {
    "oscar_nominations": 0,
@@ -1717,7 +1717,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.37,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -1833,9 +1833,9 @@
   ],
   "budget": 1400000,
   "revenue": 171181400,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 65,
+  "imdb": 7.4,
   "tmdb_vote": 7.443,
   "film_awards": {
    "oscar_nominations": 0,
@@ -1867,7 +1867,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 122.27,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -1986,9 +1986,9 @@
   ],
   "budget": 7800000,
   "revenue": 41509797,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 63,
+  "imdb": 7.4,
   "tmdb_vote": 7.3,
   "film_awards": {
    "oscar_nominations": 1,
@@ -2020,7 +2020,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.32,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -2282,9 +2282,9 @@
   ],
   "budget": 150000,
   "revenue": null,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 94,
+  "metacritic": 89,
+  "imdb": 7.3,
   "tmdb_vote": 7.256,
   "film_awards": {
    "oscar_nominations": 0,
@@ -2313,10 +2313,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -2730,9 +2730,9 @@
   ],
   "budget": 1800000,
   "revenue": 33800000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 94,
+  "metacritic": 86,
+  "imdb": 7.4,
   "tmdb_vote": 7.341,
   "film_awards": {
    "oscar_nominations": 2,
@@ -2764,7 +2764,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 18.78,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -3038,8 +3038,8 @@
   "budget": 23000000,
   "revenue": 90614445,
   "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "metacritic": 61,
+  "imdb": 6.0,
   "tmdb_vote": 6.3,
   "film_awards": {
    "oscar_nominations": 2,
@@ -3182,9 +3182,9 @@
   ],
   "budget": 9000000,
   "revenue": 25000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 58,
+  "metacritic": 53,
+  "imdb": 6.8,
   "tmdb_vote": 6.615,
   "film_awards": {
    "oscar_nominations": 2,
@@ -3332,9 +3332,9 @@
   ],
   "budget": 6500000,
   "revenue": 21709020,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 64,
+  "imdb": 7.4,
   "tmdb_vote": 7.17,
   "film_awards": {
    "oscar_nominations": 1,
@@ -3366,7 +3366,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.34,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -3478,9 +3478,9 @@
   ],
   "budget": null,
   "revenue": 32511047,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 63,
+  "metacritic": 59,
+  "imdb": 7.2,
   "tmdb_vote": 7.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -3512,7 +3512,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -4222,9 +4222,9 @@
   ],
   "budget": 9000000,
   "revenue": 46236000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 58,
+  "imdb": 6.7,
   "tmdb_vote": 6.724,
   "film_awards": {
    "oscar_nominations": 0,
@@ -4375,9 +4375,9 @@
   ],
   "budget": 2800000,
   "revenue": 60922980,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 63,
+  "imdb": 7.5,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 1,
@@ -4409,7 +4409,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 21.76,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -4519,9 +4519,9 @@
   ],
   "budget": 3700000,
   "revenue": 31800000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 91,
+  "metacritic": 69,
+  "imdb": 7.8,
   "tmdb_vote": 7.455,
   "film_awards": {
    "oscar_nominations": 1,
@@ -4553,7 +4553,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.59,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -4669,9 +4669,9 @@
   ],
   "budget": null,
   "revenue": 5100000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 71,
+  "imdb": 7.5,
   "tmdb_vote": 7.584,
   "film_awards": {
    "oscar_nominations": 0,
@@ -4700,10 +4700,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -4963,9 +4963,9 @@
   ],
   "budget": 22000000,
   "revenue": 50750000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 61,
+  "metacritic": 63,
+  "imdb": 7.4,
   "tmdb_vote": 7.205,
   "film_awards": {
    "oscar_nominations": 0,
@@ -4997,7 +4997,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.31,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -5266,9 +5266,9 @@
   ],
   "budget": 20000000,
   "revenue": 306889114,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 91,
+  "metacritic": 90,
+  "imdb": 7.6,
   "tmdb_vote": 7.351,
   "film_awards": {
    "oscar_nominations": 8,
@@ -5300,7 +5300,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 15.34,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -5722,9 +5722,9 @@
   ],
   "budget": 100000,
   "revenue": 7100000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 87,
+  "imdb": 7.2,
   "tmdb_vote": 7.328,
   "film_awards": {
    "oscar_nominations": 0,
@@ -5756,7 +5756,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 71.0,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -5870,9 +5870,9 @@
   ],
   "budget": 14000000,
   "revenue": 30749142,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 10,
+  "metacritic": 39,
+  "imdb": 3.8,
   "tmdb_vote": 4.527,
   "film_awards": {
    "oscar_nominations": 0,
@@ -6611,9 +6611,9 @@
   ],
   "budget": 4300000,
   "revenue": 126700000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 50,
+  "imdb": 7.0,
   "tmdb_vote": 7.006,
   "film_awards": {
    "oscar_nominations": 1,
@@ -6645,7 +6645,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 29.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -6757,9 +6757,9 @@
   ],
   "budget": 22000000,
   "revenue": 9000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 68,
+  "imdb": 7.7,
   "tmdb_vote": 7.5,
   "film_awards": {
    "oscar_nominations": 1,
@@ -6791,7 +6791,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.41,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -7052,9 +7052,9 @@
   ],
   "budget": 900000,
   "revenue": null,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 75,
+  "metacritic": 70,
+  "imdb": 7.4,
   "tmdb_vote": 7.3,
   "film_awards": {
    "oscar_nominations": 0,
@@ -7086,7 +7086,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -7199,9 +7199,9 @@
   ],
   "budget": 5500000,
   "revenue": 26400000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 75,
+  "metacritic": 59,
+  "imdb": 6.4,
   "tmdb_vote": 6.5,
   "film_awards": {
    "oscar_nominations": 0,
@@ -7233,7 +7233,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.8,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -7489,9 +7489,9 @@
   ],
   "budget": 350000,
   "revenue": 25000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 64,
+  "imdb": 6.3,
   "tmdb_vote": 6.163,
   "film_awards": {
    "oscar_nominations": 0,
@@ -7635,9 +7635,9 @@
   ],
   "budget": 13500000,
   "revenue": 185438673,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 55,
+  "imdb": 7.0,
   "tmdb_vote": 6.8,
   "film_awards": {
    "oscar_nominations": 2,
@@ -7669,7 +7669,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 13.74,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -8090,9 +8090,9 @@
   ],
   "budget": 2700000,
   "revenue": 141000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 79,
+  "imdb": 7.4,
   "tmdb_vote": 6.947,
   "film_awards": {
    "oscar_nominations": 0,
@@ -8124,7 +8124,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 52.22,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -8527,9 +8527,9 @@
   ],
   "budget": 6800000,
   "revenue": 26518355,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 50,
+  "metacritic": 45,
+  "imdb": 6.2,
   "tmdb_vote": 6.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -8680,9 +8680,9 @@
   ],
   "budget": 640000,
   "revenue": 55000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 92,
+  "metacritic": 71,
+  "imdb": 7.8,
   "tmdb_vote": 7.479,
   "film_awards": {
    "oscar_nominations": 0,
@@ -8714,7 +8714,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 85.94,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -8833,9 +8833,9 @@
   ],
   "budget": 3000000,
   "revenue": 3700000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 94,
+  "imdb": 7.7,
   "tmdb_vote": 7.479,
   "film_awards": {
    "oscar_nominations": 4,
@@ -8864,10 +8864,10 @@
   "derived": {
    "p_prize": 0.45,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.23,
-   "outcome": "flop"
+   "outcome": "oscar_bait"
   },
   "why": "discover"
  },
@@ -8981,9 +8981,9 @@
   ],
   "budget": 7920000,
   "revenue": 14560084,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 80,
+  "metacritic": 59,
+  "imdb": 7.3,
   "tmdb_vote": 7.156,
   "film_awards": {
    "oscar_nominations": 1,
@@ -9015,7 +9015,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.84,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -9439,9 +9439,9 @@
   ],
   "budget": 325000,
   "revenue": 70260597,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 97,
+  "metacritic": 91,
+  "imdb": 7.7,
   "tmdb_vote": 7.561,
   "film_awards": {
    "oscar_nominations": 0,
@@ -9473,7 +9473,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 216.19,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -9584,9 +9584,9 @@
   ],
   "budget": 3500000,
   "revenue": 24946533,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 75,
+  "imdb": 7.4,
   "tmdb_vote": 7.219,
   "film_awards": {
    "oscar_nominations": 0,
@@ -9618,7 +9618,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 7.13,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -9733,9 +9733,9 @@
   ],
   "budget": 20000000,
   "revenue": 187884000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 56,
+  "metacritic": 51,
+  "imdb": 5.8,
   "tmdb_vote": 6.042,
   "film_awards": {
    "oscar_nominations": 0,
@@ -9886,9 +9886,9 @@
   ],
   "budget": 2300000,
   "revenue": 35000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 90,
+  "metacritic": 59,
+  "imdb": 7.5,
   "tmdb_vote": 7.436,
   "film_awards": {
    "oscar_nominations": 6,
@@ -9920,7 +9920,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 15.22,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -10036,9 +10036,9 @@
   ],
   "budget": 55000000,
   "revenue": 300478449,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 82,
+  "imdb": 7.4,
   "tmdb_vote": 7.2,
   "film_awards": {
    "oscar_nominations": 3,
@@ -10070,7 +10070,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.46,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -11255,9 +11255,9 @@
   ],
   "budget": 8000000,
   "revenue": 43004381,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 97,
+  "metacritic": 76,
+  "imdb": 7.5,
   "tmdb_vote": 7.5,
   "film_awards": {
    "oscar_nominations": 0,
@@ -11289,7 +11289,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.38,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -11555,9 +11555,9 @@
   ],
   "budget": 4000000,
   "revenue": 20833252,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 96,
+  "metacritic": 77,
+  "imdb": 8.0,
   "tmdb_vote": 7.8,
   "film_awards": {
    "oscar_nominations": 0,
@@ -11589,7 +11589,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.21,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -11701,9 +11701,9 @@
   ],
   "budget": 350000,
   "revenue": 100000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 73,
+  "imdb": 6.8,
   "tmdb_vote": 6.683,
   "film_awards": {
    "oscar_nominations": 0,
@@ -11735,7 +11735,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 285.71,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -11855,9 +11855,9 @@
   ],
   "budget": 9000000,
   "revenue": 40194067,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 83,
+  "imdb": 7.8,
   "tmdb_vote": 7.697,
   "film_awards": {
    "oscar_nominations": 2,
@@ -11889,7 +11889,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -12176,9 +12176,9 @@
   ],
   "budget": 34000000,
   "revenue": 210308099,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 59,
+  "metacritic": 66,
+  "imdb": 6.3,
   "tmdb_vote": 6.2,
   "film_awards": {
    "oscar_nominations": 1,
@@ -12618,9 +12618,9 @@
   ],
   "budget": 7000000,
   "revenue": 200182160,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 61,
+  "imdb": 7.3,
   "tmdb_vote": 7.298,
   "film_awards": {
    "oscar_nominations": 0,
@@ -12768,9 +12768,9 @@
   ],
   "budget": 44000000,
   "revenue": 139346243,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 51,
+  "metacritic": 50,
+  "imdb": 6.4,
   "tmdb_vote": 6.483,
   "film_awards": {
    "oscar_nominations": 3,
@@ -12920,9 +12920,9 @@
   ],
   "budget": 4700000,
   "revenue": 86432488,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 33,
+  "metacritic": 28,
+  "imdb": 6.2,
   "tmdb_vote": 6.285,
   "film_awards": {
    "oscar_nominations": 1,
@@ -13358,9 +13358,9 @@
   ],
   "budget": 4000000,
   "revenue": 100000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 61,
+  "imdb": 7.1,
   "tmdb_vote": 6.876,
   "film_awards": {
    "oscar_nominations": 0,
@@ -13392,7 +13392,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 25.0,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -13507,9 +13507,9 @@
   ],
   "budget": 4000000,
   "revenue": 22490039,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 65,
+  "imdb": 7.5,
   "tmdb_vote": 7.691,
   "film_awards": {
    "oscar_nominations": 0,
@@ -13541,7 +13541,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.62,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -13663,9 +13663,9 @@
   ],
   "budget": 3500000,
   "revenue": 83453539,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 97,
+  "metacritic": 78,
+  "imdb": 7.7,
   "tmdb_vote": 7.307,
   "film_awards": {
    "oscar_nominations": 0,
@@ -13697,7 +13697,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 23.84,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -13961,9 +13961,9 @@
   ],
   "budget": 6000000,
   "revenue": 39846344,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 73,
+  "metacritic": 48,
+  "imdb": 7.2,
   "tmdb_vote": 6.58,
   "film_awards": {
    "oscar_nominations": 0,
@@ -13995,7 +13995,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.64,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -14564,9 +14564,9 @@
   ],
   "budget": 6500000,
   "revenue": 31899000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 74,
+  "imdb": 7.0,
   "tmdb_vote": 6.937,
   "film_awards": {
    "oscar_nominations": 0,
@@ -14598,7 +14598,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.3,
    "ratio": 4.91,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -14712,9 +14712,9 @@
   ],
   "budget": 550000,
   "revenue": 39925100,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 50,
+  "metacritic": 22,
+  "imdb": 6.3,
   "tmdb_vote": 6.405,
   "film_awards": {
    "oscar_nominations": 0,
@@ -15905,9 +15905,9 @@
   ],
   "budget": 54000000,
   "revenue": 216385706,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 83,
+  "imdb": 6.8,
   "tmdb_vote": 6.75,
   "film_awards": {
    "oscar_nominations": 0,
@@ -15939,7 +15939,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.01,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -16051,9 +16051,9 @@
   ],
   "budget": 4500000,
   "revenue": 58853106,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 12,
+  "metacritic": 31,
+  "imdb": 5.8,
   "tmdb_vote": 6.1,
   "film_awards": {
    "oscar_nominations": 1,
@@ -16201,9 +16201,9 @@
   ],
   "budget": 27000000,
   "revenue": 115229890,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 72,
+  "metacritic": 60,
+  "imdb": 7.9,
   "tmdb_vote": 7.712,
   "film_awards": {
    "oscar_nominations": 0,
@@ -16235,7 +16235,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.27,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -16504,9 +16504,9 @@
   ],
   "budget": 18000000,
   "revenue": 538400000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 82,
+  "imdb": 8.7,
   "tmdb_vote": 8.393,
   "film_awards": {
    "oscar_nominations": 3,
@@ -16538,7 +16538,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 29.91,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -16660,9 +16660,9 @@
   ],
   "budget": 1000000,
   "revenue": 21448830,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 55,
+  "imdb": 6.8,
   "tmdb_vote": 6.743,
   "film_awards": {
    "oscar_nominations": 0,
@@ -16694,7 +16694,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 21.45,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -16809,9 +16809,9 @@
   ],
   "budget": 5000000,
   "revenue": 200000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 73,
+  "imdb": 7.3,
   "tmdb_vote": 7.287,
   "film_awards": {
    "oscar_nominations": 0,
@@ -16843,7 +16843,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 40.0,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -17118,9 +17118,9 @@
   ],
   "budget": 10000000,
   "revenue": 31973249,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 80,
+  "metacritic": 55,
+  "imdb": 7.5,
   "tmdb_vote": 7.387,
   "film_awards": {
    "oscar_nominations": 1,
@@ -17152,7 +17152,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.2,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -17268,9 +17268,9 @@
   ],
   "budget": 18000000,
   "revenue": 12000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 86,
+  "imdb": 7.4,
   "tmdb_vote": 7.348,
   "film_awards": {
    "oscar_nominations": 0,
@@ -17299,10 +17299,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.67,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -17722,9 +17722,9 @@
   ],
   "budget": 6000000,
   "revenue": 50244700,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 70,
+  "metacritic": 76,
+  "imdb": 7.1,
   "tmdb_vote": 7.04,
   "film_awards": {
    "oscar_nominations": 0,
@@ -17756,7 +17756,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.37,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -18032,9 +18032,9 @@
   ],
   "budget": 28000000,
   "revenue": 195300000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 54,
+  "imdb": 6.7,
   "tmdb_vote": 6.551,
   "film_awards": {
    "oscar_nominations": 0,
@@ -18184,9 +18184,9 @@
   ],
   "budget": 1250000,
   "revenue": 21724205,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 29,
+  "metacritic": 26,
+  "imdb": 6.1,
   "tmdb_vote": 6.197,
   "film_awards": {
    "oscar_nominations": 0,
@@ -18644,9 +18644,9 @@
   ],
   "budget": 2500000,
   "revenue": 25533818,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 27,
+  "metacritic": 40,
+  "imdb": 6.5,
   "tmdb_vote": 6.596,
   "film_awards": {
    "oscar_nominations": 0,
@@ -18790,9 +18790,9 @@
   ],
   "budget": 2000000,
   "revenue": 24600832,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 77,
+  "imdb": 7.6,
   "tmdb_vote": 7.394,
   "film_awards": {
    "oscar_nominations": 0,
@@ -18824,7 +18824,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 12.3,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -19083,9 +19083,9 @@
   ],
   "budget": 2400000,
   "revenue": 1200000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 75,
+  "imdb": 7.2,
   "tmdb_vote": 7.319,
   "film_awards": {
    "oscar_nominations": 0,
@@ -19114,10 +19114,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.5,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -19236,9 +19236,9 @@
   ],
   "budget": 18000000,
   "revenue": 389925971,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 94,
+  "metacritic": 86,
+  "imdb": 8.4,
   "tmdb_vote": 7.928,
   "film_awards": {
    "oscar_nominations": 8,
@@ -19270,7 +19270,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 21.66,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -19389,9 +19389,9 @@
   ],
   "budget": 4100000,
   "revenue": 14225876,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 60,
+  "imdb": 6.7,
   "tmdb_vote": 6.718,
   "film_awards": {
    "oscar_nominations": 0,
@@ -19543,9 +19543,9 @@
   ],
   "budget": 12000000,
   "revenue": 78868508,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 92,
+  "metacritic": 71,
+  "imdb": 6.9,
   "tmdb_vote": 6.675,
   "film_awards": {
    "oscar_nominations": 0,
@@ -19577,7 +19577,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.57,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -19859,9 +19859,9 @@
   ],
   "budget": 20000000,
   "revenue": 68851475,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 43,
+  "imdb": 6.9,
   "tmdb_vote": 6.81,
   "film_awards": {
    "oscar_nominations": 0,
@@ -20163,9 +20163,9 @@
   ],
   "budget": 15000000,
   "revenue": 125212904,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 61,
+  "imdb": 7.7,
   "tmdb_vote": 7.5,
   "film_awards": {
    "oscar_nominations": 0,
@@ -20197,7 +20197,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.35,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -20316,9 +20316,9 @@
   ],
   "budget": 22000000,
   "revenue": 77737889,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 79,
+  "imdb": 8.0,
   "tmdb_vote": 7.556,
   "film_awards": {
    "oscar_nominations": 11,
@@ -20350,7 +20350,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.53,
-   "outcome": "popcorn"
+   "outcome": "oscar_bait"
   },
   "why": "discover"
  },
@@ -20937,9 +20937,9 @@
   ],
   "budget": 10700000,
   "revenue": 121733131,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 79,
+  "imdb": 7.3,
   "tmdb_vote": 7.163,
   "film_awards": {
    "oscar_nominations": 3,
@@ -20971,7 +20971,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.38,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -21090,9 +21090,9 @@
   ],
   "budget": 17000000,
   "revenue": 125052898,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 57,
+  "imdb": 6.9,
   "tmdb_vote": 6.908,
   "film_awards": {
    "oscar_nominations": 0,
@@ -21394,9 +21394,9 @@
   ],
   "budget": 12000000,
   "revenue": 96594943,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 68,
+  "imdb": 7.7,
   "tmdb_vote": 7.449,
   "film_awards": {
    "oscar_nominations": 0,
@@ -21428,7 +21428,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.05,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -21692,9 +21692,9 @@
   ],
   "budget": 19000000,
   "revenue": 2536000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 73,
+  "imdb": 7.8,
   "tmdb_vote": 7.768,
   "film_awards": {
    "oscar_nominations": 0,
@@ -21723,10 +21723,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.13,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -21846,9 +21846,9 @@
   ],
   "budget": 15000000,
   "revenue": 19629760,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 57,
+  "imdb": 8.2,
   "tmdb_vote": 8.075,
   "film_awards": {
    "oscar_nominations": 0,
@@ -21877,10 +21877,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.3,
    "ratio": 1.31,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -22303,9 +22303,9 @@
   ],
   "budget": 17000000,
   "revenue": 33002371,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 61,
+  "metacritic": 58,
+  "imdb": 6.7,
   "tmdb_vote": 6.6,
   "film_awards": {
    "oscar_nominations": 2,
@@ -22337,7 +22337,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.94,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -22603,9 +22603,9 @@
   ],
   "budget": 9700000,
   "revenue": 21200000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 57,
+  "imdb": 6.8,
   "tmdb_vote": 6.889,
   "film_awards": {
    "oscar_nominations": 0,
@@ -22637,7 +22637,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.19,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -23360,9 +23360,9 @@
   ],
   "budget": 9000000,
   "revenue": 42749697,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 72,
+  "imdb": 7.5,
   "tmdb_vote": 7.313,
   "film_awards": {
    "oscar_nominations": 0,
@@ -23394,7 +23394,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.75,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -23514,9 +23514,9 @@
   ],
   "budget": 27500000,
   "revenue": 187518457,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 41,
+  "metacritic": 63,
+  "imdb": 6.5,
   "tmdb_vote": 6.363,
   "film_awards": {
    "oscar_nominations": 0,
@@ -23664,9 +23664,9 @@
   ],
   "budget": 32350000,
   "revenue": 572700000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 58,
+  "imdb": 8.3,
   "tmdb_vote": 7.911,
   "film_awards": {
    "oscar_nominations": 4,
@@ -23698,7 +23698,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 17.7,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -24267,9 +24267,9 @@
   ],
   "budget": 39000000,
   "revenue": 80250623,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 31,
+  "metacritic": 44,
+  "imdb": 5.0,
   "tmdb_vote": 5.502,
   "film_awards": {
    "oscar_nominations": 0,
@@ -24562,9 +24562,9 @@
   ],
   "budget": 10000000,
   "revenue": 20766616,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 69,
+  "imdb": 7.1,
   "tmdb_vote": 7.008,
   "film_awards": {
    "oscar_nominations": 0,
@@ -24596,7 +24596,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.08,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -24718,9 +24718,9 @@
   ],
   "budget": 350000,
   "revenue": 29400000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 71,
+  "imdb": 7.3,
   "tmdb_vote": 7.265,
   "film_awards": {
    "oscar_nominations": 0,
@@ -24752,7 +24752,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 84.0,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -25027,9 +25027,9 @@
   ],
   "budget": 15000000,
   "revenue": 90404800,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 69,
+  "imdb": 7.5,
   "tmdb_vote": 7.231,
   "film_awards": {
    "oscar_nominations": 1,
@@ -25061,7 +25061,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.03,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -25181,9 +25181,9 @@
   ],
   "budget": 5952000,
   "revenue": 2120439,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 58,
+  "imdb": 7.2,
   "tmdb_vote": 7.248,
   "film_awards": {
    "oscar_nominations": 0,
@@ -25215,7 +25215,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.36,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -25335,9 +25335,9 @@
   ],
   "budget": 12000000,
   "revenue": 124600000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 77,
+  "imdb": 7.1,
   "tmdb_vote": 7.07,
   "film_awards": {
    "oscar_nominations": 3,
@@ -25369,7 +25369,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 10.38,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -25495,9 +25495,9 @@
   ],
   "budget": 1800000,
   "revenue": 57004513,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 76,
+  "imdb": 7.4,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -25529,7 +25529,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 31.67,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -26263,9 +26263,9 @@
   ],
   "budget": 40000000,
   "revenue": 31502434,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 36,
+  "metacritic": 41,
+  "imdb": 6.2,
   "tmdb_vote": 6.197,
   "film_awards": {
    "oscar_nominations": 1,
@@ -26416,9 +26416,9 @@
   ],
   "budget": 8200000,
   "revenue": 80035402,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 55,
+  "metacritic": 42,
+  "imdb": 6.6,
   "tmdb_vote": 6.698,
   "film_awards": {
    "oscar_nominations": 0,
@@ -26876,9 +26876,9 @@
   ],
   "budget": 11000000,
   "revenue": 165449255,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 70,
+  "imdb": 7.3,
   "tmdb_vote": 7.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -26910,7 +26910,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 15.04,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -27029,9 +27029,9 @@
   ],
   "budget": 28000000,
   "revenue": 333107271,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 57,
+  "imdb": 7.5,
   "tmdb_vote": 7.309,
   "film_awards": {
    "oscar_nominations": 2,
@@ -27063,7 +27063,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.9,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -27178,9 +27178,9 @@
   ],
   "budget": 30000000,
   "revenue": 5500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 75,
+  "imdb": 8.3,
   "tmdb_vote": 8.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -27209,10 +27209,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.18,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -27334,9 +27334,9 @@
   ],
   "budget": 1750000,
   "revenue": 2181987,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 95,
+  "metacritic": 81,
+  "imdb": 8.1,
   "tmdb_vote": 8.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -27365,10 +27365,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.25,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -27635,9 +27635,9 @@
   ],
   "budget": 4500000,
   "revenue": 81198894,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 58,
+  "metacritic": 41,
+  "imdb": 6.7,
   "tmdb_vote": 6.729,
   "film_awards": {
    "oscar_nominations": 0,
@@ -27939,9 +27939,9 @@
   ],
   "budget": 6500000,
   "revenue": 23686027,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 81,
+  "metacritic": 61,
+  "imdb": 7.0,
   "tmdb_vote": 6.745,
   "film_awards": {
    "oscar_nominations": 0,
@@ -27973,7 +27973,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.64,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -28240,9 +28240,9 @@
   ],
   "budget": 8000000,
   "revenue": 91138075,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 81,
+  "metacritic": 61,
+  "imdb": 7.4,
   "tmdb_vote": 7.23,
   "film_awards": {
    "oscar_nominations": 1,
@@ -28274,7 +28274,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.39,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -28548,9 +28548,9 @@
   ],
   "budget": 30000000,
   "revenue": 152427960,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 36,
+  "metacritic": 40,
+  "imdb": 6.3,
   "tmdb_vote": 6.3,
   "film_awards": {
    "oscar_nominations": 0,
@@ -28859,9 +28859,9 @@
   ],
   "budget": 15000000,
   "revenue": 9953708,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 98,
+  "metacritic": 84,
+  "imdb": 7.8,
   "tmdb_vote": 7.7,
   "film_awards": {
    "oscar_nominations": 2,
@@ -28890,10 +28890,10 @@
   "derived": {
    "p_prize": 0.35,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.66,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -29005,9 +29005,9 @@
   ],
   "budget": 10000000,
   "revenue": 57500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 70,
+  "metacritic": 51,
+  "imdb": 6.7,
   "tmdb_vote": 6.759,
   "film_awards": {
    "oscar_nominations": 0,
@@ -29039,7 +29039,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.75,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -29758,9 +29758,9 @@
   ],
   "budget": 10000000,
   "revenue": 36230219,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 80,
+  "metacritic": 71,
+  "imdb": 6.2,
   "tmdb_vote": 6.219,
   "film_awards": {
    "oscar_nominations": 0,
@@ -29792,7 +29792,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.62,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -30063,9 +30063,9 @@
   ],
   "budget": 44000000,
   "revenue": 300400432,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 33,
+  "metacritic": 47,
+  "imdb": 6.5,
   "tmdb_vote": 6.673,
   "film_awards": {
    "oscar_nominations": 1,
@@ -30360,7 +30360,7 @@
   "revenue": null,
   "rt": null,
   "metacritic": null,
-  "imdb": null,
+  "imdb": 4.8,
   "tmdb_vote": 6.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -30515,9 +30515,9 @@
   ],
   "budget": 31000000,
   "revenue": 300473716,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 38,
+  "metacritic": 40,
+  "imdb": 6.9,
   "tmdb_vote": 7.093,
   "film_awards": {
    "oscar_nominations": 0,
@@ -30672,9 +30672,9 @@
   ],
   "budget": 1000000,
   "revenue": 51530442,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 66,
+  "imdb": 7.8,
   "tmdb_vote": 7.714,
   "film_awards": {
    "oscar_nominations": 0,
@@ -30706,7 +30706,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 51.53,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -30998,9 +30998,9 @@
   ],
   "budget": 19000000,
   "revenue": 69649283,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 62,
+  "imdb": 7.7,
   "tmdb_vote": 7.5,
   "film_awards": {
    "oscar_nominations": 0,
@@ -31032,7 +31032,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.67,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -31300,9 +31300,9 @@
   ],
   "budget": 4000000,
   "revenue": 14241310,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 66,
+  "imdb": 7.3,
   "tmdb_vote": 7.201,
   "film_awards": {
    "oscar_nominations": 0,
@@ -31334,7 +31334,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.56,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -31768,9 +31768,9 @@
   ],
   "budget": 25000000,
   "revenue": 11102672,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 65,
+  "metacritic": 53,
+  "imdb": 7.2,
   "tmdb_vote": 7.21,
   "film_awards": {
    "oscar_nominations": 0,
@@ -31802,7 +31802,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.44,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -31922,9 +31922,9 @@
   ],
   "budget": 6000000,
   "revenue": 8636706,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 75,
+  "imdb": 7.7,
   "tmdb_vote": 7.604,
   "film_awards": {
    "oscar_nominations": 1,
@@ -31953,10 +31953,10 @@
   "derived": {
    "p_prize": 0.3,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.44,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -32229,9 +32229,9 @@
   ],
   "budget": 25000000,
   "revenue": 49042224,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 24,
+  "metacritic": 25,
+  "imdb": 5.8,
   "tmdb_vote": 6.169,
   "film_awards": {
    "oscar_nominations": 0,
@@ -32374,9 +32374,9 @@
   ],
   "budget": 5000000,
   "revenue": 328203506,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 91,
+  "metacritic": 62,
+  "imdb": 6.7,
   "tmdb_vote": 6.455,
   "film_awards": {
    "oscar_nominations": 1,
@@ -32408,7 +32408,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 65.64,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -32526,9 +32526,9 @@
   ],
   "budget": 6000000,
   "revenue": 70100000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 61,
+  "imdb": 7.8,
   "tmdb_vote": 7.6,
   "film_awards": {
    "oscar_nominations": 0,
@@ -32560,7 +32560,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.68,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -32984,9 +32984,9 @@
   ],
   "budget": 19000000,
   "revenue": 12900000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 70,
+  "metacritic": 24,
+  "imdb": 7.0,
   "tmdb_vote": 6.9,
   "film_awards": {
    "oscar_nominations": 0,
@@ -33018,7 +33018,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.68,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -33442,9 +33442,9 @@
   ],
   "budget": 25000000,
   "revenue": 12729917,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 63,
+  "metacritic": 50,
+  "imdb": 7.3,
   "tmdb_vote": 7.29,
   "film_awards": {
    "oscar_nominations": 0,
@@ -33476,7 +33476,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.51,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -34042,9 +34042,9 @@
   ],
   "budget": 15000000,
   "revenue": 60629159,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 81,
+  "imdb": 7.6,
   "tmdb_vote": 7.449,
   "film_awards": {
    "oscar_nominations": 1,
@@ -34076,7 +34076,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.04,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -34194,9 +34194,9 @@
   ],
   "budget": 13000000,
   "revenue": 115103979,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 49,
+  "metacritic": 55,
+  "imdb": 6.2,
   "tmdb_vote": 6.355,
   "film_awards": {
    "oscar_nominations": 0,
@@ -34360,9 +34360,9 @@
   ],
   "budget": 18000000,
   "revenue": 77200000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 74,
+  "metacritic": 54,
+  "imdb": 7.7,
   "tmdb_vote": 7.5,
   "film_awards": {
    "oscar_nominations": 0,
@@ -34394,7 +34394,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.29,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -35266,9 +35266,9 @@
   ],
   "budget": 3500000,
   "revenue": 5932279,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 72,
+  "imdb": 7.6,
   "tmdb_vote": 7.533,
   "film_awards": {
    "oscar_nominations": 0,
@@ -35297,10 +35297,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.5,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.69,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -35565,9 +35565,9 @@
   ],
   "budget": 30000000,
   "revenue": 46357676,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 78,
+  "imdb": 8.2,
   "tmdb_vote": 8.118,
   "film_awards": {
    "oscar_nominations": 1,
@@ -35596,10 +35596,10 @@
   "derived": {
    "p_prize": 0.3,
    "p_box": 0.5,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.55,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -35872,9 +35872,9 @@
   ],
   "budget": 1000000,
   "revenue": 14580380,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 72,
+  "metacritic": 56,
+  "imdb": 6.9,
   "tmdb_vote": 6.887,
   "film_awards": {
    "oscar_nominations": 0,
@@ -35906,7 +35906,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 14.58,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -36313,9 +36313,9 @@
   ],
   "budget": 15000000,
   "revenue": 120207127,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 68,
+  "imdb": 7.6,
   "tmdb_vote": 7.309,
   "film_awards": {
    "oscar_nominations": 1,
@@ -36347,7 +36347,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.01,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -36779,9 +36779,9 @@
   ],
   "budget": 15000000,
   "revenue": 98267558,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 65,
+  "metacritic": 47,
+  "imdb": 7.8,
   "tmdb_vote": 7.585,
   "film_awards": {
    "oscar_nominations": 1,
@@ -36929,9 +36929,9 @@
   ],
   "budget": 13000000,
   "revenue": 53424681,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 70,
+  "imdb": 7.6,
   "tmdb_vote": 7.368,
   "film_awards": {
    "oscar_nominations": 2,
@@ -36963,7 +36963,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.11,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -37372,9 +37372,9 @@
   ],
   "budget": 22700000,
   "revenue": 38120460,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 53,
+  "metacritic": 46,
+  "imdb": 7.1,
   "tmdb_vote": 6.9,
   "film_awards": {
    "oscar_nominations": 0,
@@ -37406,7 +37406,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.68,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -37835,9 +37835,9 @@
   ],
   "budget": 16000000,
   "revenue": 30900000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 78,
+  "imdb": 8.0,
   "tmdb_vote": 7.7,
   "film_awards": {
    "oscar_nominations": 0,
@@ -37866,10 +37866,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.5,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.93,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -37993,9 +37993,9 @@
   ],
   "budget": 27000000,
   "revenue": 38122105,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 59,
+  "metacritic": 45,
+  "imdb": 6.6,
   "tmdb_vote": 6.545,
   "film_awards": {
    "oscar_nominations": 0,
@@ -38027,7 +38027,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.41,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -38139,9 +38139,9 @@
   ],
   "budget": 25000000,
   "revenue": 76270454,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 79,
+  "imdb": 7.8,
   "tmdb_vote": 7.752,
   "film_awards": {
    "oscar_nominations": 4,
@@ -38173,7 +38173,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.05,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -38437,9 +38437,9 @@
   ],
   "budget": 7500000,
   "revenue": 188593712,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 96,
+  "metacritic": 80,
+  "imdb": 7.5,
   "tmdb_vote": 7.213,
   "film_awards": {
    "oscar_nominations": 3,
@@ -38471,7 +38471,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 25.15,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -38748,9 +38748,9 @@
   ],
   "budget": 15000000,
   "revenue": 84554197,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 71,
+  "imdb": 7.4,
   "tmdb_vote": 7.368,
   "film_awards": {
    "oscar_nominations": 1,
@@ -38782,7 +38782,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.64,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -39348,9 +39348,9 @@
   ],
   "budget": 1500000,
   "revenue": 63500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 48,
+  "metacritic": 29,
+  "imdb": 6.8,
   "tmdb_vote": 7.076,
   "film_awards": {
    "oscar_nominations": 0,
@@ -39496,9 +39496,9 @@
   ],
   "budget": 9000000,
   "revenue": 44196684,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 65,
+  "metacritic": 58,
+  "imdb": 6.7,
   "tmdb_vote": 6.776,
   "film_awards": {
    "oscar_nominations": 0,
@@ -39807,9 +39807,9 @@
   ],
   "budget": 30000000,
   "revenue": 288752301,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 47,
+  "imdb": 7.1,
   "tmdb_vote": 6.9,
   "film_awards": {
    "oscar_nominations": 2,
@@ -39841,7 +39841,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 9.63,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -41034,9 +41034,9 @@
   ],
   "budget": 63000000,
   "revenue": 189015611,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 39,
+  "metacritic": 36,
+  "imdb": 5.8,
   "tmdb_vote": 6.2,
   "film_awards": {
    "oscar_nominations": 0,
@@ -41340,9 +41340,9 @@
   ],
   "budget": 12000000,
   "revenue": 152356177,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 76,
+  "imdb": 7.6,
   "tmdb_vote": 7.28,
   "film_awards": {
    "oscar_nominations": 0,
@@ -41374,7 +41374,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 12.7,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -41494,9 +41494,9 @@
   ],
   "budget": 4000000,
   "revenue": 13000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 55,
+  "imdb": 7.2,
   "tmdb_vote": 7.31,
   "film_awards": {
    "oscar_nominations": 0,
@@ -41528,7 +41528,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.25,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -41646,9 +41646,9 @@
   ],
   "budget": 15000000,
   "revenue": 216614388,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 44,
+  "metacritic": 50,
+  "imdb": 6.2,
   "tmdb_vote": 6.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -41800,9 +41800,9 @@
   ],
   "budget": 35000000,
   "revenue": 57300000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 53,
+  "metacritic": 47,
+  "imdb": 7.2,
   "tmdb_vote": 7.013,
   "film_awards": {
    "oscar_nominations": 2,
@@ -41834,7 +41834,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.3,
    "ratio": 1.64,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -42273,9 +42273,9 @@
   ],
   "budget": 40000000,
   "revenue": 332861197,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 63,
+  "metacritic": 57,
+  "imdb": 7.8,
   "tmdb_vote": 7.785,
   "film_awards": {
    "oscar_nominations": 1,
@@ -43182,9 +43182,9 @@
   ],
   "budget": 37000000,
   "revenue": 215394738,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 57,
+  "metacritic": 56,
+  "imdb": 6.6,
   "tmdb_vote": 6.6,
   "film_awards": {
    "oscar_nominations": 0,
@@ -43628,9 +43628,9 @@
   ],
   "budget": 18000000,
   "revenue": 222724172,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 63,
+  "imdb": 6.5,
   "tmdb_vote": 6.3,
   "film_awards": {
    "oscar_nominations": 0,
@@ -43662,7 +43662,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 12.37,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -43781,9 +43781,9 @@
   ],
   "budget": 48000000,
   "revenue": 474171806,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 65,
+  "imdb": 8.2,
   "tmdb_vote": 7.857,
   "film_awards": {
    "oscar_nominations": 3,
@@ -43815,7 +43815,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 9.88,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -43931,9 +43931,9 @@
   ],
   "budget": 25000000,
   "revenue": 227853986,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 70,
+  "imdb": 7.3,
   "tmdb_vote": 7.051,
   "film_awards": {
    "oscar_nominations": 1,
@@ -43965,7 +43965,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 9.11,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -44081,9 +44081,9 @@
   ],
   "budget": 32000000,
   "revenue": 156167015,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 79,
+  "metacritic": 58,
+  "imdb": 6.7,
   "tmdb_vote": 6.438,
   "film_awards": {
    "oscar_nominations": 0,
@@ -44115,7 +44115,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.88,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -44226,9 +44226,9 @@
   ],
   "budget": 7500000,
   "revenue": 296999813,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 56,
+  "metacritic": 51,
+  "imdb": 6.0,
   "tmdb_vote": 6.295,
   "film_awards": {
    "oscar_nominations": 0,
@@ -44382,9 +44382,9 @@
   ],
   "budget": 27000000,
   "revenue": 74542088,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 72,
+  "metacritic": 49,
+  "imdb": 7.5,
   "tmdb_vote": 7.23,
   "film_awards": {
    "oscar_nominations": 0,
@@ -44530,9 +44530,9 @@
   ],
   "budget": 11500000,
   "revenue": 57500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 55,
+  "metacritic": 38,
+  "imdb": 6.5,
   "tmdb_vote": 6.7,
   "film_awards": {
    "oscar_nominations": 0,
@@ -44974,9 +44974,9 @@
   ],
   "budget": 43000000,
   "revenue": 90000098,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 75,
+  "metacritic": 62,
+  "imdb": 7.5,
   "tmdb_vote": 7.364,
   "film_awards": {
    "oscar_nominations": 4,
@@ -45008,7 +45008,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.09,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -45607,9 +45607,9 @@
   ],
   "budget": 40000000,
   "revenue": 245077583,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 79,
+  "metacritic": 55,
+  "imdb": 7.5,
   "tmdb_vote": 7.495,
   "film_awards": {
    "oscar_nominations": 0,
@@ -45641,7 +45641,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.13,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -46076,9 +46076,9 @@
   ],
   "budget": 70000000,
   "revenue": 240031094,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 67,
+  "imdb": 7.2,
   "tmdb_vote": 6.968,
   "film_awards": {
    "oscar_nominations": 0,
@@ -46230,9 +46230,9 @@
   ],
   "budget": 20000000,
   "revenue": 86024005,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 92,
+  "metacritic": 74,
+  "imdb": 7.8,
   "tmdb_vote": 7.719,
   "film_awards": {
    "oscar_nominations": 1,
@@ -46264,7 +46264,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.3,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -47000,9 +47000,9 @@
   ],
   "budget": 18000000,
   "revenue": 476684675,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 63,
+  "imdb": 7.8,
   "tmdb_vote": 7.469,
   "film_awards": {
    "oscar_nominations": 1,
@@ -47618,9 +47618,9 @@
   ],
   "budget": 35000000,
   "revenue": 57120318,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 36,
+  "metacritic": 46,
+  "imdb": 6.3,
   "tmdb_vote": 6.3,
   "film_awards": {
    "oscar_nominations": 0,
@@ -48073,9 +48073,9 @@
   ],
   "budget": 42000000,
   "revenue": 119946358,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 31,
+  "metacritic": 55,
+  "imdb": 5.4,
   "tmdb_vote": 5.777,
   "film_awards": {
    "oscar_nominations": 0,
@@ -48384,9 +48384,9 @@
   ],
   "budget": 54000000,
   "revenue": 136766062,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 67,
+  "metacritic": 60,
+  "imdb": 7.5,
   "tmdb_vote": 7.412,
   "film_awards": {
    "oscar_nominations": 6,
@@ -48537,9 +48537,9 @@
   ],
   "budget": 30000000,
   "revenue": 200512643,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 58,
+  "imdb": 7.5,
   "tmdb_vote": 7.386,
   "film_awards": {
    "oscar_nominations": 3,
@@ -48571,7 +48571,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.68,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -48695,9 +48695,9 @@
   ],
   "budget": 65000000,
   "revenue": 261317921,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 80,
+  "metacritic": 60,
+  "imdb": 7.5,
   "tmdb_vote": 7.33,
   "film_awards": {
    "oscar_nominations": 2,
@@ -48729,7 +48729,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.02,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -48849,9 +48849,9 @@
   ],
   "budget": 11000000,
   "revenue": 48572000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 65,
+  "imdb": 7.2,
   "tmdb_vote": 6.954,
   "film_awards": {
    "oscar_nominations": 0,
@@ -48883,7 +48883,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.42,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -49134,9 +49134,9 @@
   ],
   "budget": 6500000,
   "revenue": 57504069,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 76,
+  "imdb": 7.7,
   "tmdb_vote": 7.6,
   "film_awards": {
    "oscar_nominations": 2,
@@ -49168,7 +49168,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.85,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -49288,9 +49288,9 @@
   ],
   "budget": 35000000,
   "revenue": 182300000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 73,
+  "imdb": 7.3,
   "tmdb_vote": 7.26,
   "film_awards": {
    "oscar_nominations": 2,
@@ -49322,7 +49322,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.21,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -50224,9 +50224,9 @@
   ],
   "budget": 70000000,
   "revenue": 300854823,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 37,
+  "metacritic": 52,
+  "imdb": 6.8,
   "tmdb_vote": 6.845,
   "film_awards": {
    "oscar_nominations": 4,
@@ -50374,9 +50374,9 @@
   ],
   "budget": 26000000,
   "revenue": 181096164,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 61,
+  "imdb": 6.7,
   "tmdb_vote": 6.585,
   "film_awards": {
    "oscar_nominations": 0,
@@ -50408,7 +50408,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.97,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -50987,9 +50987,9 @@
   ],
   "budget": 17000000,
   "revenue": 59490000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 57,
+  "metacritic": 56,
+  "imdb": 6.9,
   "tmdb_vote": 7.425,
   "film_awards": {
    "oscar_nominations": 0,
@@ -51290,9 +51290,9 @@
   ],
   "budget": 24000000,
   "revenue": 83531958,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 60,
+  "imdb": 7.3,
   "tmdb_vote": 7.149,
   "film_awards": {
    "oscar_nominations": 0,
@@ -51605,9 +51605,9 @@
   ],
   "budget": 48000000,
   "revenue": 390493908,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 52,
+  "metacritic": 51,
+  "imdb": 6.9,
   "tmdb_vote": 6.857,
   "film_awards": {
    "oscar_nominations": 0,
@@ -51912,9 +51912,9 @@
   ],
   "budget": 30000000,
   "revenue": 191502426,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 67,
+  "metacritic": 57,
+  "imdb": 7.0,
   "tmdb_vote": 7.082,
   "film_awards": {
    "oscar_nominations": 1,
@@ -52221,9 +52221,9 @@
   ],
   "budget": 29000000,
   "revenue": 114500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 48,
+  "metacritic": 52,
+  "imdb": 7.0,
   "tmdb_vote": 6.8,
   "film_awards": {
    "oscar_nominations": 0,
@@ -52378,9 +52378,9 @@
   ],
   "budget": 23000000,
   "revenue": 192030411,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 65,
+  "imdb": 6.9,
   "tmdb_vote": 6.8,
   "film_awards": {
    "oscar_nominations": 0,
@@ -52412,7 +52412,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.35,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -53156,9 +53156,9 @@
   ],
   "budget": 50000000,
   "revenue": 159773545,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 43,
+  "metacritic": 59,
+  "imdb": 6.4,
   "tmdb_vote": 6.39,
   "film_awards": {
    "oscar_nominations": 1,
@@ -53302,9 +53302,9 @@
   ],
   "budget": 11000000,
   "revenue": 21502976,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 68,
+  "metacritic": 59,
+  "imdb": 7.4,
   "tmdb_vote": 7.259,
   "film_awards": {
    "oscar_nominations": 0,
@@ -53336,7 +53336,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.95,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -53616,9 +53616,9 @@
   ],
   "budget": 80000000,
   "revenue": 280000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 81,
+  "metacritic": 68,
+  "imdb": 7.1,
   "tmdb_vote": 6.953,
   "film_awards": {
    "oscar_nominations": 2,
@@ -53650,7 +53650,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.5,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -53777,9 +53777,9 @@
   ],
   "budget": 40000000,
   "revenue": 215862692,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 57,
+  "imdb": 7.4,
   "tmdb_vote": 7.442,
   "film_awards": {
    "oscar_nominations": 4,
@@ -54084,9 +54084,9 @@
   ],
   "budget": 18000000,
   "revenue": 358994850,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 35,
+  "metacritic": 46,
+  "imdb": 6.9,
   "tmdb_vote": 6.797,
   "film_awards": {
    "oscar_nominations": 0,
@@ -54393,9 +54393,9 @@
   ],
   "budget": 35000000,
   "revenue": 321731527,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 63,
+  "metacritic": 40,
+  "imdb": 6.7,
   "tmdb_vote": 6.731,
   "film_awards": {
    "oscar_nominations": 0,
@@ -54847,9 +54847,9 @@
   ],
   "budget": 1200000,
   "revenue": 2859750,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 90,
+  "metacritic": 81,
+  "imdb": 8.2,
   "tmdb_vote": 8.109,
   "film_awards": {
    "oscar_nominations": 0,
@@ -54881,7 +54881,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.38,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -54995,9 +54995,9 @@
   ],
   "budget": 31000000,
   "revenue": 134100000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 57,
+  "imdb": 8.0,
   "tmdb_vote": 7.792,
   "film_awards": {
    "oscar_nominations": 4,
@@ -55029,7 +55029,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.33,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -55144,9 +55144,9 @@
   ],
   "budget": 31000000,
   "revenue": 231605150,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 73,
+  "metacritic": 51,
+  "imdb": 6.6,
   "tmdb_vote": 6.838,
   "film_awards": {
    "oscar_nominations": 0,
@@ -55178,7 +55178,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 7.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -55459,9 +55459,9 @@
   ],
   "budget": 40000000,
   "revenue": 75505856,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 76,
+  "imdb": 7.6,
   "tmdb_vote": 7.388,
   "film_awards": {
    "oscar_nominations": 1,
@@ -55490,10 +55490,10 @@
   "derived": {
    "p_prize": 0.3,
    "p_box": 0.5,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.89,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -55914,9 +55914,9 @@
   ],
   "budget": 22000000,
   "revenue": 17287898,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 97,
+  "metacritic": 80,
+  "imdb": 7.8,
   "tmdb_vote": 7.9,
   "film_awards": {
    "oscar_nominations": 0,
@@ -55945,10 +55945,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.79,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -56068,9 +56068,9 @@
   ],
   "budget": 47000000,
   "revenue": 48919043,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 61,
+  "imdb": 6.9,
   "tmdb_vote": 7.0,
   "film_awards": {
    "oscar_nominations": 1,
@@ -56102,7 +56102,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.04,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -56545,9 +56545,9 @@
   ],
   "budget": 30000000,
   "revenue": 63848322,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 66,
+  "imdb": 7.9,
   "tmdb_vote": 7.8,
   "film_awards": {
    "oscar_nominations": 0,
@@ -56579,7 +56579,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.13,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -56711,9 +56711,9 @@
   ],
   "budget": 57000000,
   "revenue": 159055768,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 67,
+  "metacritic": 34,
+  "imdb": 6.7,
   "tmdb_vote": 6.775,
   "film_awards": {
    "oscar_nominations": 0,
@@ -56869,9 +56869,9 @@
   ],
   "budget": 25000000,
   "revenue": 40903593,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 56,
+  "imdb": 7.5,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -56903,7 +56903,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.64,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -57023,9 +57023,9 @@
   ],
   "budget": 14600000,
   "revenue": 71108778,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 72,
+  "imdb": 8.0,
   "tmdb_vote": 7.637,
   "film_awards": {
    "oscar_nominations": 0,
@@ -57057,7 +57057,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.87,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -57177,9 +57177,9 @@
   ],
   "budget": 28000000,
   "revenue": 51663767,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 42,
+  "metacritic": 43,
+  "imdb": 6.9,
   "tmdb_vote": 7.044,
   "film_awards": {
    "oscar_nominations": 0,
@@ -57211,7 +57211,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.85,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -58099,9 +58099,9 @@
   ],
   "budget": 25000000,
   "revenue": 441286195,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 54,
+  "imdb": 7.1,
   "tmdb_vote": 7.195,
   "film_awards": {
    "oscar_nominations": 1,
@@ -58133,7 +58133,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 17.65,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -59337,9 +59337,9 @@
   ],
   "budget": 12500000,
   "revenue": 12600000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 59,
+  "imdb": 7.9,
   "tmdb_vote": 7.536,
   "film_awards": {
    "oscar_nominations": 0,
@@ -59368,10 +59368,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.01,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -59498,9 +59498,9 @@
   ],
   "budget": 11000000,
   "revenue": 10000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 90,
+  "metacritic": 73,
+  "imdb": 7.7,
   "tmdb_vote": 7.7,
   "film_awards": {
    "oscar_nominations": 1,
@@ -59529,10 +59529,10 @@
   "derived": {
    "p_prize": 0.45,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.91,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -59648,9 +59648,9 @@
   ],
   "budget": 15000000,
   "revenue": 107217396,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 48,
+  "metacritic": 37,
+  "imdb": 6.9,
   "tmdb_vote": 6.583,
   "film_awards": {
    "oscar_nominations": 0,
@@ -59808,9 +59808,9 @@
   ],
   "budget": 16000000,
   "revenue": 247275374,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 41,
+  "imdb": 7.3,
   "tmdb_vote": 6.667,
   "film_awards": {
    "oscar_nominations": 0,
@@ -60116,9 +60116,9 @@
   ],
   "budget": 4400000,
   "revenue": 245700832,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 92,
+  "metacritic": 81,
+  "imdb": 7.1,
   "tmdb_vote": 6.8,
   "film_awards": {
    "oscar_nominations": 2,
@@ -60150,7 +60150,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 55.84,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -60266,9 +60266,9 @@
   ],
   "budget": 60000000,
   "revenue": 223664608,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 62,
+  "imdb": 7.5,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 2,
@@ -60581,9 +60581,9 @@
   ],
   "budget": 34000000,
   "revenue": 110000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 52,
+  "metacritic": 74,
+  "imdb": 7.2,
   "tmdb_vote": 7.046,
   "film_awards": {
    "oscar_nominations": 0,
@@ -61517,9 +61517,9 @@
   ],
   "budget": 55000000,
   "revenue": 196567262,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 53,
+  "metacritic": 42,
+  "imdb": 7.0,
   "tmdb_vote": 7.035,
   "film_awards": {
    "oscar_nominations": 0,
@@ -61837,9 +61837,9 @@
   ],
   "budget": 23000000,
   "revenue": 93722164,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 72,
+  "imdb": 7.5,
   "tmdb_vote": 7.53,
   "film_awards": {
    "oscar_nominations": 0,
@@ -61871,7 +61871,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.07,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -62166,9 +62166,9 @@
   ],
   "budget": 23000000,
   "revenue": 351583407,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 59,
+  "imdb": 7.0,
   "tmdb_vote": 6.997,
   "film_awards": {
    "oscar_nominations": 1,
@@ -62200,7 +62200,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 15.29,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -62470,9 +62470,9 @@
   ],
   "budget": 25000000,
   "revenue": 28341469,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 82,
+  "imdb": 9.3,
   "tmdb_vote": 8.732,
   "film_awards": {
    "oscar_nominations": 7,
@@ -62501,10 +62501,10 @@
   "derived": {
    "p_prize": 0.6,
    "p_box": 0.25,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.13,
-   "outcome": "flop"
+   "outcome": "oscar_bait"
   },
   "why": "discover"
  },
@@ -62631,9 +62631,9 @@
   ],
   "budget": 115000000,
   "revenue": 378900000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 63,
+  "imdb": 7.3,
   "tmdb_vote": 7.104,
   "film_awards": {
    "oscar_nominations": 1,
@@ -62665,7 +62665,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.29,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -62789,9 +62789,9 @@
   ],
   "budget": 30000000,
   "revenue": 212385533,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 23,
+  "metacritic": 43,
+  "imdb": 6.4,
   "tmdb_vote": 6.344,
   "film_awards": {
    "oscar_nominations": 0,
@@ -63096,9 +63096,9 @@
   ],
   "budget": 19000000,
   "revenue": 141407024,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 46,
+  "metacritic": 41,
+  "imdb": 6.8,
   "tmdb_vote": 6.832,
   "film_awards": {
    "oscar_nominations": 0,
@@ -63254,9 +63254,9 @@
   ],
   "budget": 100000000,
   "revenue": 336529144,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 41,
+  "metacritic": 54,
+  "imdb": 5.5,
   "tmdb_vote": 5.464,
   "film_awards": {
    "oscar_nominations": 3,
@@ -63403,9 +63403,9 @@
   ],
   "budget": 2500000,
   "revenue": 5987386,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 100,
+  "metacritic": 79,
+  "imdb": 8.1,
   "tmdb_vote": 7.968,
   "film_awards": {
    "oscar_nominations": 0,
@@ -63437,7 +63437,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.39,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -63859,9 +63859,9 @@
   ],
   "budget": 50000000,
   "revenue": 116112375,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 79,
+  "metacritic": 73,
+  "imdb": 8.2,
   "tmdb_vote": 8.0,
   "film_awards": {
    "oscar_nominations": 1,
@@ -63893,7 +63893,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.32,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -64017,9 +64017,9 @@
   ],
   "budget": 50000000,
   "revenue": 287928194,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 59,
+  "metacritic": 49,
+  "imdb": 6.2,
   "tmdb_vote": 6.3,
   "film_awards": {
    "oscar_nominations": 0,
@@ -64490,9 +64490,9 @@
   ],
   "budget": 90000000,
   "revenue": 366101666,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 60,
+  "metacritic": 58,
+  "imdb": 7.6,
   "tmdb_vote": 7.285,
   "film_awards": {
    "oscar_nominations": 0,
@@ -65271,9 +65271,9 @@
   ],
   "budget": 65000000,
   "revenue": 262821940,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 56,
+  "metacritic": 41,
+  "imdb": 7.1,
   "tmdb_vote": 7.249,
   "film_awards": {
    "oscar_nominations": 0,
@@ -66204,9 +66204,9 @@
   ],
   "budget": 6000000,
   "revenue": 23300000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 76,
+  "imdb": 8.5,
   "tmdb_vote": 8.162,
   "film_awards": {
    "oscar_nominations": 2,
@@ -66238,7 +66238,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.88,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -66362,9 +66362,9 @@
   ],
   "budget": 29000000,
   "revenue": 168841459,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 75,
+  "imdb": 8.0,
   "tmdb_vote": 7.6,
   "film_awards": {
    "oscar_nominations": 2,
@@ -66396,7 +66396,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.82,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -67146,9 +67146,9 @@
   ],
   "budget": 54000000,
   "revenue": 320689294,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 39,
+  "metacritic": 50,
+  "imdb": 5.8,
   "tmdb_vote": 5.949,
   "film_awards": {
    "oscar_nominations": 0,
@@ -67304,9 +67304,9 @@
   ],
   "budget": 40000000,
   "revenue": 152266007,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 53,
+  "imdb": 7.5,
   "tmdb_vote": 7.391,
   "film_awards": {
    "oscar_nominations": 0,
@@ -67922,9 +67922,9 @@
   ],
   "budget": 19000000,
   "revenue": 25800000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 65,
+  "metacritic": 48,
+  "imdb": 7.2,
   "tmdb_vote": 7.053,
   "film_awards": {
    "oscar_nominations": 0,
@@ -67956,7 +67956,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.36,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -68078,9 +68078,9 @@
   ],
   "budget": 12000000,
   "revenue": 41422354,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 31,
+  "imdb": 7.0,
   "tmdb_vote": 6.677,
   "film_awards": {
    "oscar_nominations": 0,
@@ -68702,9 +68702,9 @@
   ],
   "budget": 70000000,
   "revenue": 101371017,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 57,
+  "metacritic": 52,
+  "imdb": 6.4,
   "tmdb_vote": 6.434,
   "film_awards": {
    "oscar_nominations": 0,
@@ -68736,7 +68736,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.45,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -68868,9 +68868,9 @@
   ],
   "budget": 36000000,
   "revenue": 33500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 72,
+  "imdb": 7.0,
   "tmdb_vote": 7.192,
   "film_awards": {
    "oscar_nominations": 0,
@@ -68899,10 +68899,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 0.93,
-   "outcome": "bomb"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -69474,9 +69474,9 @@
   ],
   "budget": 14500000,
   "revenue": 147298761,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 75,
+  "metacritic": 62,
+  "imdb": 6.7,
   "tmdb_vote": 6.778,
   "film_awards": {
    "oscar_nominations": 1,
@@ -69508,7 +69508,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 10.16,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -69790,9 +69790,9 @@
   ],
   "budget": 44000000,
   "revenue": 165600000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 49,
+  "imdb": 7.5,
   "tmdb_vote": 7.603,
   "film_awards": {
    "oscar_nominations": 1,
@@ -69824,7 +69824,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.76,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -70742,9 +70742,9 @@
   ],
   "budget": 54000000,
   "revenue": 128769345,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 64,
+  "metacritic": 64,
+  "imdb": 5.7,
   "tmdb_vote": 5.652,
   "film_awards": {
    "oscar_nominations": 1,
@@ -70776,7 +70776,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.38,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -71065,9 +71065,9 @@
   ],
   "budget": 75000000,
   "revenue": 335062621,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 58,
+  "imdb": 7.4,
   "tmdb_vote": 7.157,
   "film_awards": {
    "oscar_nominations": 1,
@@ -71099,7 +71099,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -71695,9 +71695,9 @@
   ],
   "budget": 70000000,
   "revenue": 162000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 55,
+  "metacritic": 62,
+  "imdb": 6.2,
   "tmdb_vote": 6.172,
   "film_awards": {
    "oscar_nominations": 0,
@@ -71729,7 +71729,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.31,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -72496,9 +72496,9 @@
   ],
   "budget": 35000000,
   "revenue": 124909762,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 77,
+  "imdb": 7.7,
   "tmdb_vote": 7.533,
   "film_awards": {
    "oscar_nominations": 1,
@@ -72530,7 +72530,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.57,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -72815,9 +72815,9 @@
   ],
   "budget": 80000000,
   "revenue": 245700000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 93,
+  "metacritic": 82,
+  "imdb": 7.3,
   "tmdb_vote": 7.063,
   "film_awards": {
    "oscar_nominations": 1,
@@ -72849,7 +72849,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.07,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -73283,9 +73283,9 @@
   ],
   "budget": 36000000,
   "revenue": 12532777,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 64,
+  "imdb": 7.7,
   "tmdb_vote": 7.568,
   "film_awards": {
    "oscar_nominations": 1,
@@ -73317,7 +73317,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.35,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -73758,9 +73758,9 @@
   ],
   "budget": 12000000,
   "revenue": 74727492,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 62,
+  "imdb": 7.5,
   "tmdb_vote": 7.358,
   "film_awards": {
    "oscar_nominations": 1,
@@ -73792,7 +73792,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.23,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -74073,9 +74073,9 @@
   ],
   "budget": 45000000,
   "revenue": 302710615,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 83,
+  "metacritic": 70,
+  "imdb": 6.9,
   "tmdb_vote": 6.7,
   "film_awards": {
    "oscar_nominations": 0,
@@ -74107,7 +74107,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.73,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -75001,9 +75001,9 @@
   ],
   "budget": 105000000,
   "revenue": 121214377,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 72,
+  "metacritic": 52,
+  "imdb": 7.3,
   "tmdb_vote": 7.118,
   "film_awards": {
    "oscar_nominations": 1,
@@ -75035,7 +75035,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.15,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -75167,9 +75167,9 @@
   ],
   "budget": 57000000,
   "revenue": 153000000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 65,
+  "metacritic": 60,
+  "imdb": 7.5,
   "tmdb_vote": 7.483,
   "film_awards": {
    "oscar_nominations": 0,
@@ -75321,9 +75321,9 @@
   ],
   "budget": 50000000,
   "revenue": 109423648,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 77,
+  "metacritic": 63,
+  "imdb": 7.7,
   "tmdb_vote": 7.58,
   "film_awards": {
    "oscar_nominations": 0,
@@ -75355,7 +75355,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.19,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -75475,9 +75475,9 @@
   ],
   "budget": 73000000,
   "revenue": 618638999,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 57,
+  "metacritic": 59,
+  "imdb": 6.6,
   "tmdb_vote": 6.566,
   "film_awards": {
    "oscar_nominations": 1,
@@ -76103,9 +76103,9 @@
   ],
   "budget": 20000000,
   "revenue": 23900000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 62,
+  "imdb": 8.5,
   "tmdb_vote": 8.322,
   "film_awards": {
    "oscar_nominations": 1,
@@ -76137,7 +76137,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.2,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -76434,9 +76434,9 @@
   ],
   "budget": 45000000,
   "revenue": 131183530,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 59,
+  "metacritic": 47,
+  "imdb": 7.1,
   "tmdb_vote": 6.86,
   "film_awards": {
    "oscar_nominations": 0,
@@ -76588,9 +76588,9 @@
   ],
   "budget": 257899,
   "revenue": 8969065,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 61,
+  "metacritic": 61,
+  "imdb": 7.1,
   "tmdb_vote": 6.827,
   "film_awards": {
    "oscar_nominations": 0,
@@ -76899,9 +76899,9 @@
   ],
   "budget": 90000000,
   "revenue": 250649836,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 67,
+  "imdb": 7.3,
   "tmdb_vote": 7.081,
   "film_awards": {
    "oscar_nominations": 0,
@@ -77061,9 +77061,9 @@
   ],
   "budget": 18500000,
   "revenue": 10700000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 50,
+  "metacritic": 41,
+  "imdb": 7.4,
   "tmdb_vote": 7.199,
   "film_awards": {
    "oscar_nominations": 0,
@@ -77095,7 +77095,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.58,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -77518,9 +77518,9 @@
   ],
   "budget": 1350000,
   "revenue": 28356188,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 75,
+  "metacritic": 67,
+  "imdb": 8.1,
   "tmdb_vote": 8.093,
   "film_awards": {
    "oscar_nominations": 0,
@@ -77552,7 +77552,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 21.0,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -77834,9 +77834,9 @@
   ],
   "budget": 90000000,
   "revenue": 142940100,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 48,
+  "metacritic": 43,
+  "imdb": 7.2,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -77868,7 +77868,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.59,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -78300,9 +78300,9 @@
   ],
   "budget": 33000000,
   "revenue": 244721064,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 62,
+  "metacritic": 61,
+  "imdb": 7.1,
   "tmdb_vote": 7.089,
   "film_awards": {
    "oscar_nominations": 0,
@@ -79582,9 +79582,9 @@
   ],
   "budget": 95000000,
   "revenue": 250288523,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 62,
+  "imdb": 6.8,
   "tmdb_vote": 6.585,
   "film_awards": {
    "oscar_nominations": 2,
@@ -79728,9 +79728,9 @@
   ],
   "budget": 15000000,
   "revenue": 92108518,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 63,
+  "imdb": 6.7,
   "tmdb_vote": 7.221,
   "film_awards": {
    "oscar_nominations": 0,
@@ -79762,7 +79762,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.14,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -80369,9 +80369,9 @@
   ],
   "budget": 16000000,
   "revenue": 53478166,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 72,
+  "metacritic": 70,
+  "imdb": 7.4,
   "tmdb_vote": 7.601,
   "film_awards": {
    "oscar_nominations": 0,
@@ -80403,7 +80403,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.34,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -80674,9 +80674,9 @@
   ],
   "budget": 11000000,
   "revenue": 235483004,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 62,
+  "metacritic": 58,
+  "imdb": 7.0,
   "tmdb_vote": 6.666,
   "film_awards": {
    "oscar_nominations": 0,
@@ -81466,9 +81466,9 @@
   ],
   "budget": 63000000,
   "revenue": 100853753,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 81,
+  "metacritic": 67,
+  "imdb": 8.8,
   "tmdb_vote": 8.438,
   "film_awards": {
    "oscar_nominations": 1,
@@ -81500,7 +81500,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.6,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -82575,9 +82575,9 @@
   ],
   "budget": 42000000,
   "revenue": 363889678,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 68,
+  "imdb": 7.2,
   "tmdb_vote": 7.26,
   "film_awards": {
    "oscar_nominations": 0,
@@ -82609,7 +82609,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.66,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -83057,9 +83057,9 @@
   ],
   "budget": 100000000,
   "revenue": 206071526,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 65,
+  "imdb": 7.3,
   "tmdb_vote": 7.198,
   "film_awards": {
    "oscar_nominations": 3,
@@ -83091,7 +83091,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.06,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -83207,9 +83207,9 @@
   ],
   "budget": 115000000,
   "revenue": 1046515409,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 54,
+  "metacritic": 51,
+  "imdb": 6.5,
   "tmdb_vote": 6.583,
   "film_awards": {
    "oscar_nominations": 3,
@@ -83366,9 +83366,9 @@
   ],
   "budget": 133000000,
   "revenue": 300135367,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 66,
+  "metacritic": 61,
+  "imdb": 6.0,
   "tmdb_vote": 6.086,
   "film_awards": {
    "oscar_nominations": 1,
@@ -83400,7 +83400,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.26,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -83688,9 +83688,9 @@
   ],
   "budget": 60000,
   "revenue": 248639099,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 86,
+  "metacritic": 80,
+  "imdb": 6.5,
   "tmdb_vote": 6.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -83722,7 +83722,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4143.98,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -83838,9 +83838,9 @@
   ],
   "budget": 60000000,
   "revenue": 286801374,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 78,
+  "metacritic": 61,
+  "imdb": 8.6,
   "tmdb_vote": 8.506,
   "film_awards": {
    "oscar_nominations": 4,
@@ -83872,7 +83872,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.78,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -84306,9 +84306,9 @@
   ],
   "budget": 80000000,
   "revenue": 415885488,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 64,
+  "metacritic": 49,
+  "imdb": 7.1,
   "tmdb_vote": 6.999,
   "film_awards": {
    "oscar_nominations": 1,
@@ -85263,9 +85263,9 @@
   ],
   "budget": 7000000,
   "revenue": 34269748,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 69,
+  "metacritic": 64,
+  "imdb": 7.6,
   "tmdb_vote": 7.4,
   "film_awards": {
    "oscar_nominations": 0,
@@ -86877,9 +86877,9 @@
   ],
   "budget": 23000000,
   "revenue": 112880294,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 50,
+  "metacritic": 39,
+  "imdb": 6.7,
   "tmdb_vote": 6.645,
   "film_awards": {
    "oscar_nominations": 0,
@@ -87209,9 +87209,9 @@
   ],
   "budget": 90000000,
   "revenue": 237200000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 25,
+  "metacritic": 35,
+  "imdb": 6.5,
   "tmdb_vote": 6.477,
   "film_awards": {
    "oscar_nominations": 0,
@@ -87512,9 +87512,9 @@
   ],
   "budget": 123000000,
   "revenue": 345800000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 50,
+  "metacritic": 46,
+  "imdb": 6.4,
   "tmdb_vote": 6.78,
   "film_awards": {
    "oscar_nominations": 3,
@@ -87669,9 +87669,9 @@
   ],
   "budget": 55000000,
   "revenue": 330444045,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 73,
+  "imdb": 7.0,
   "tmdb_vote": 6.699,
   "film_awards": {
    "oscar_nominations": 0,
@@ -87703,7 +87703,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.01,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -88139,8 +88139,8 @@
   "budget": 125000000,
   "revenue": 546388108,
   "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "metacritic": 59,
+  "imdb": 6.1,
   "tmdb_vote": 6.138,
   "film_awards": {
    "oscar_nominations": 0,
@@ -88945,9 +88945,9 @@
   ],
   "budget": 19000000,
   "revenue": 278023280,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 52,
+  "metacritic": 48,
+  "imdb": 6.3,
   "tmdb_vote": 6.411,
   "film_awards": {
    "oscar_nominations": 0,
@@ -89110,9 +89110,9 @@
   ],
   "budget": 100000000,
   "revenue": 83557872,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 74,
+  "metacritic": 55,
+  "imdb": 8.2,
   "tmdb_vote": 7.8,
   "film_awards": {
    "oscar_nominations": 0,
@@ -89144,7 +89144,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.84,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -89600,9 +89600,9 @@
   ],
   "budget": 75000000,
   "revenue": 248118121,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 71,
+  "metacritic": 62,
+  "imdb": 7.3,
   "tmdb_vote": 7.144,
   "film_awards": {
    "oscar_nominations": 0,
@@ -89634,7 +89634,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.31,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -89766,9 +89766,9 @@
   ],
   "budget": 75000000,
   "revenue": 296339527,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 64,
+  "imdb": 7.3,
   "tmdb_vote": 7.023,
   "film_awards": {
    "oscar_nominations": 0,
@@ -89800,7 +89800,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.95,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -89923,9 +89923,9 @@
   ],
   "budget": 58000000,
   "revenue": 316791257,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 74,
+  "metacritic": 72,
+  "imdb": 8.2,
   "tmdb_vote": 7.853,
   "film_awards": {
    "oscar_nominations": 8,
@@ -89957,7 +89957,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.46,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -90085,9 +90085,9 @@
   ],
   "budget": 100000000,
   "revenue": 235926552,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 65,
+  "imdb": 7.2,
   "tmdb_vote": 7.1,
   "film_awards": {
    "oscar_nominations": 2,
@@ -90119,7 +90119,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.36,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -90581,9 +90581,9 @@
   ],
   "budget": 4500000,
   "revenue": 7500000,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 88,
+  "metacritic": 88,
+  "imdb": 8.0,
   "tmdb_vote": 7.761,
   "film_awards": {
    "oscar_nominations": 0,
@@ -90612,10 +90612,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.5,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": 1.67,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -91197,9 +91197,9 @@
   ],
   "budget": 125000000,
   "revenue": 1029374615,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 80,
+  "metacritic": 65,
+  "imdb": 7.7,
   "tmdb_vote": 7.905,
   "film_awards": {
    "oscar_nominations": 3,
@@ -91231,7 +91231,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.23,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -91505,9 +91505,9 @@
   ],
   "budget": 93000000,
   "revenue": 368780809,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 49,
+  "metacritic": 42,
+  "imdb": 6.0,
   "tmdb_vote": 6.179,
   "film_awards": {
    "oscar_nominations": 0,
@@ -92615,9 +92615,9 @@
   ],
   "budget": 140000000,
   "revenue": 449220945,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 24,
+  "metacritic": 44,
+  "imdb": 6.3,
   "tmdb_vote": 6.931,
   "film_awards": {
    "oscar_nominations": 3,
@@ -93244,9 +93244,9 @@
   ],
   "budget": 38000000,
   "revenue": 207283925,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 56,
+  "metacritic": 58,
+  "imdb": 6.8,
   "tmdb_vote": 7.023,
   "film_awards": {
    "oscar_nominations": 0,
@@ -93410,9 +93410,9 @@
   ],
   "budget": 93000000,
   "revenue": 871368364,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 91,
+  "metacritic": 92,
+  "imdb": 8.9,
   "tmdb_vote": 8.447,
   "film_awards": {
    "oscar_nominations": 13,
@@ -93444,7 +93444,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 9.37,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -93568,9 +93568,9 @@
   ],
   "budget": 98000000,
   "revenue": 443280904,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 46,
+  "metacritic": 48,
+  "imdb": 6.4,
   "tmdb_vote": 6.417,
   "film_awards": {
    "oscar_nominations": 0,
@@ -93734,9 +93734,9 @@
   ],
   "budget": 17000000,
   "revenue": 210002906,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 74,
+  "imdb": 7.6,
   "tmdb_vote": 7.618,
   "film_awards": {
    "oscar_nominations": 0,
@@ -93768,7 +93768,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 12.35,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -94045,9 +94045,9 @@
   ],
   "budget": 8000000,
   "revenue": 82784517,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 87,
+  "metacritic": 73,
+  "imdb": 7.5,
   "tmdb_vote": 7.245,
   "film_awards": {
    "oscar_nominations": 0,
@@ -94079,7 +94079,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 10.35,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -94375,9 +94375,9 @@
   ],
   "budget": 41000000,
   "revenue": 242875078,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 76,
+  "metacritic": 77,
+  "imdb": 7.2,
   "tmdb_vote": 7.1,
   "film_awards": {
    "oscar_nominations": 0,
@@ -94409,7 +94409,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.92,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -95505,9 +95505,9 @@
   ],
   "budget": 100000000,
   "revenue": 876688482,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 82,
+  "metacritic": 63,
+  "imdb": 7.5,
   "tmdb_vote": 7.709,
   "film_awards": {
    "oscar_nominations": 0,
@@ -95539,7 +95539,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.77,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -96146,9 +96146,9 @@
   ],
   "budget": 140000000,
   "revenue": 445135288,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 38,
+  "metacritic": 49,
+  "imdb": 6.2,
   "tmdb_vote": 6.393,
   "film_awards": {
    "oscar_nominations": 0,
@@ -96312,9 +96312,9 @@
   ],
   "budget": 102000000,
   "revenue": 358372926,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 89,
+  "metacritic": 80,
+  "imdb": 7.6,
   "tmdb_vote": 7.355,
   "film_awards": {
    "oscar_nominations": 0,
@@ -96346,7 +96346,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.51,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -96469,9 +96469,9 @@
   ],
   "budget": 139000000,
   "revenue": 821708551,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 90,
+  "metacritic": 73,
+  "imdb": 7.4,
   "tmdb_vote": 7.358,
   "film_awards": {
    "oscar_nominations": 2,
@@ -96503,7 +96503,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.91,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -96627,9 +96627,9 @@
   ],
   "budget": 120000000,
   "revenue": 649398328,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 62,
+  "metacritic": 54,
+  "imdb": 6.6,
   "tmdb_vote": 6.6,
   "film_awards": {
    "oscar_nominations": 1,
@@ -97095,9 +97095,9 @@
   ],
   "budget": 60000000,
   "revenue": 214034224,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 84,
+  "metacritic": 68,
+  "imdb": 7.8,
   "tmdb_vote": 7.487,
   "film_awards": {
    "oscar_nominations": 0,
@@ -97129,7 +97129,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.57,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -97417,9 +97417,9 @@
   ],
   "budget": 79000000,
   "revenue": 926287400,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 95,
+  "metacritic": 87,
+  "imdb": 8.8,
   "tmdb_vote": 8.431,
   "film_awards": {
    "oscar_nominations": 6,
@@ -97451,7 +97451,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.73,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -97582,9 +97582,9 @@
   ],
   "budget": 35000000,
   "revenue": 120098945,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 95,
+  "metacritic": 85,
+  "imdb": 8.5,
   "tmdb_vote": 8.369,
   "film_awards": {
    "oscar_nominations": 7,
@@ -97616,7 +97616,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.43,
-   "outcome": "popcorn"
+   "outcome": "oscar_bait"
   },
   "why": "discover"
  },
@@ -98246,7 +98246,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.76,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -98377,9 +98377,9 @@
   ],
   "budget": 80000000,
   "revenue": 484592874,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 48,
+  "metacritic": 46,
+  "imdb": 6.8,
   "tmdb_vote": 6.73,
   "film_awards": {
    "oscar_nominations": 0,
@@ -100300,9 +100300,9 @@
   ],
   "budget": 140000000,
   "revenue": 655011224,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 79,
+  "metacritic": 63,
+  "imdb": 8.1,
   "tmdb_vote": 7.836,
   "film_awards": {
    "oscar_nominations": 4,
@@ -100334,7 +100334,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.68,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -101436,9 +101436,9 @@
   ],
   "budget": 94000000,
   "revenue": 1118888979,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 94,
+  "metacritic": 94,
+  "imdb": 9.0,
   "tmdb_vote": 8.504,
   "film_awards": {
    "oscar_nominations": 11,
@@ -101470,7 +101470,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 11.9,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -101602,9 +101602,9 @@
   ],
   "budget": 150000000,
   "revenue": 738599701,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 74,
+  "metacritic": 62,
+  "imdb": 7.2,
   "tmdb_vote": 7.086,
   "film_awards": {
    "oscar_nominations": 0,
@@ -101636,7 +101636,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.3,
    "ratio": 4.92,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -102091,9 +102091,9 @@
   ],
   "budget": 110000000,
   "revenue": 407711549,
-  "rt": null,
-  "metacritic": null,
-  "imdb": null,
+  "rt": 85,
+  "metacritic": 68,
+  "imdb": 7.4,
   "tmdb_vote": 7.046,
   "film_awards": {
    "oscar_nominations": 0,
@@ -102125,7 +102125,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.71,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -103759,7 +103759,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.08,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -104086,7 +104086,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.07,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -105061,7 +105061,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.57,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -105689,7 +105689,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 7.45,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -106960,7 +106960,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.49,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -108575,7 +108575,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.97,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -109387,7 +109387,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.45,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -111803,7 +111803,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.72,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -111961,7 +111961,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.99,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -112285,7 +112285,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.93,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -114376,7 +114376,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.58,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -114873,7 +114873,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.49,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -115039,7 +115039,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.19,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -116500,7 +116500,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.25,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -116658,7 +116658,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.72,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -117154,7 +117154,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.75,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -120094,7 +120094,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.18,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -122670,7 +122670,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.63,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -122824,7 +122824,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.24,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -125568,7 +125568,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.74,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -127863,7 +127863,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.43,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -128513,7 +128513,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.98,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -129332,7 +129332,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.82,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -130492,7 +130492,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.71,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -130658,7 +130658,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.69,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -130982,7 +130982,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.41,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -133758,7 +133758,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 10.73,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -136552,7 +136552,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.21,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -139963,7 +139963,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.9,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -140129,7 +140129,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.32,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -143387,7 +143387,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.28,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -144540,7 +144540,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 24.71,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -145036,7 +145036,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.83,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -146519,7 +146519,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.2,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -147182,7 +147182,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.52,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -148462,7 +148462,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.82,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -148953,7 +148953,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 16.68,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -150767,7 +150767,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.46,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -151581,7 +151581,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.12,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -154044,7 +154044,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.54,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -154541,7 +154541,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.84,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -156026,7 +156026,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 13.5,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -157658,7 +157658,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 10.4,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -158484,7 +158484,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.28,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -160624,7 +160624,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.32,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -161765,7 +161765,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.38,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -163574,7 +163574,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.75,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -164894,7 +164894,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.84,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -165060,7 +165060,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -165889,7 +165889,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 7.14,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -167550,7 +167550,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -169353,7 +169353,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.38,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -169519,7 +169519,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 8.25,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -171157,7 +171157,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 7.82,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -174752,7 +174752,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -174917,7 +174917,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -175249,7 +175249,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.54,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -175739,7 +175739,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.35,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -176886,7 +176886,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.24,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -177550,7 +177550,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.9,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -178047,7 +178047,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.17,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -178201,7 +178201,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.01,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -178698,7 +178698,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.35,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -179671,7 +179671,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 9.61,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -180002,7 +180002,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.91,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -180994,10 +180994,10 @@
   "derived": {
    "p_prize": 0.02,
    "p_box": 0.1,
-   "p_cult": 0.05,
+   "p_cult": 0.35,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "cult"
   },
   "why": "discover"
  },
@@ -181485,7 +181485,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 5.07,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -183127,7 +183127,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.38,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -183453,7 +183453,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.52,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -183951,7 +183951,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -184446,7 +184446,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.18,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -185749,7 +185749,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.83,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": ""
  },
@@ -186574,7 +186574,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.38,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -186740,7 +186740,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.07,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -187071,7 +187071,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 3.38,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -187236,7 +187236,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.3,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -187402,7 +187402,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.47,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -189827,7 +189827,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.26,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -191643,7 +191643,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 6.69,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -192296,7 +192296,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.04,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -192462,7 +192462,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.49,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -193126,7 +193126,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.48,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -194274,7 +194274,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.45,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -195098,7 +195098,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 4.25,
-   "outcome": "popcorn"
+   "outcome": "hit"
   },
   "why": "discover"
  },
@@ -195263,7 +195263,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.11,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -195582,7 +195582,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 0.0,
-   "outcome": "bomb"
+   "outcome": "flop"
   },
   "why": "discover"
  },
@@ -196244,7 +196244,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.13,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -197223,7 +197223,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },
@@ -197381,7 +197381,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.12,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "discover"
  },

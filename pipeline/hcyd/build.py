@@ -116,6 +116,10 @@ def derive(rec: dict) -> dict:
     budget, revenue = rec.get("budget") or 0, rec.get("revenue") or 0
     ratio = (revenue / budget) if budget and revenue else None
     rt = rec.get("rt")
+    if rt is None and rec.get("tmdb_vote"):
+        # OMDb sem Rotten Tomatoes (ou cota diária estourada): aproxima pela nota do TMDB.
+        # 7.5 -> 70, 8.0 -> 84, 6.5 -> 42, 6.0 -> 28.
+        rt = max(0, min(100, round((rec["tmdb_vote"] - 5.0) * 28)))
     fa = rec["film_awards"]
     acting_noms = sum(1 for r in rec["roles"] if r["oscar"] != "none")
     prize = 0.02
