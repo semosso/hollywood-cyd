@@ -1,0 +1,243 @@
+tmdb_id,title,year,why,resolved_title,resolved_year,confidence
+240,The Godfather Part II,1974,,,,given
+578,Jaws,1975,primeiro blockbuster de verão,,,given
+510,One Flew Over the Cuckoo's Nest,1975,Nicholson ganha; Louise Fletcher ganha,One Flew Over the Cuckoo's Nest,1975,high
+968,Dog Day Afternoon,1975,,Dog Day Afternoon,1975,high
+103,Taxi Driver,1976,De Niro; Jodie Foster com 12 anos,,,given
+1366,Rocky,1976,Stallone escreveu e exigiu estrelar,,,given
+10774,Network,1976,,Network,1976,high
+703,Annie Hall,1977,bate Star Wars no Oscar,,,given
+11,Star Wars,1977,,,,given
+11009,Saturday Night Fever,1977,,,,given
+621,Grease,1978,,,,given
+11778,The Deer Hunter,1978,,The Deer Hunter,1978,high
+28,Apocalypse Now,1979,set caótico nas Filipinas; Sheen infarta,,,given
+348,Alien,1979,Sigourney Weaver estreia como protagonista,,,given
+12102,Kramer vs. Kramer,1979,Streep e Hoffman; bastidores tensos,,,given
+694,The Shining,1980,127 takes com Shelley Duvall; Razzie retirado em 2022,,,given
+1578,Raging Bull,1980,De Niro engorda 27 kg,,,given
+16619,Ordinary People,1980,Redford dirige e bate Scorsese,,,given
+10935,Heaven's Gate,1980,o flop que quebrou a United Artists,Heaven's Gate,1980,high
+78,Blade Runner,1982,flop que virou cult,,,given
+601,E.T. the Extra-Terrestrial,1982,,,,given
+9576,Tootsie,1982,,,,given
+535,Flashdance,1983,,Flashdance,1983,high
+111,Scarface,1983,,,,given
+11050,Terms of Endearment,1983,,Terms of Endearment,1983,high
+218,The Terminator,1984,,,,given
+620,Ghostbusters,1984,,,,given
+90,Beverly Hills Cop,1984,,,,given
+105,Back to the Future,1985,Eric Stoltz demitido após 5 semanas,,,given
+606,Out of Africa,1985,,,,given
+873,The Color Purple,1985,11 indicações e zero vitórias,The Color Purple,1985,high
+744,Top Gun,1986,,,,given
+792,Platoon,1986,,,,given
+88,Dirty Dancing,1987,,,,given
+10998,Fatal Attraction,1987,,Fatal Attraction,1987,high
+10673,Wall Street,1987,,Wall Street,1987,high
+562,Die Hard,1988,,,,given
+380,Rain Man,1988,,,,given
+2280,Big,1988,,,,given
+3525,Working Girl,1988,,Working Girl,1988,high
+268,Batman,1989,,,,given
+639,When Harry Met Sally...,1989,,,,given
+114,Pretty Woman,1990,Molly Ringwald recusou,,,given
+769,Goodfellas,1990,,,,given
+251,Ghost,1990,,,,given
+581,Dances with Wolves,1990,bate Goodfellas,,,given
+274,The Silence of the Lambs,1991,Michelle Pfeiffer recusou Clarice,,,given
+280,Terminator 2: Judgment Day,1991,,,,given
+1541,Thelma & Louise,1991,Brad Pitt surge,,,given
+402,Basic Instinct,1992,,,,given
+33,Unforgiven,1992,,,,given
+329,Jurassic Park,1993,,,,given
+424,Schindler's List,1993,,,,given
+9800,Philadelphia,1993,,,,given
+13,Forrest Gump,1994,Travolta recusou,,,given
+680,Pulp Fiction,1994,Travolta renasce,,,given
+1637,Speed,1994,,,,given
+807,Se7en,1995,,,,given
+197,Braveheart,1995,,,,given
+949,Heat,1995,,,,given
+9603,Clueless,1995,,,,given
+9804,Waterworld,1995,orçamento estourado; sinal de alerta,,,given
+10802,Showgirls,1995,Elizabeth Berkley some,Showgirls,1995,high
+627,Trainspotting,1996,,,,given
+9390,Jerry Maguire,1996,,,,given
+275,Fargo,1996,,,,given
+602,Independence Day,1996,,,,given
+664,Twister,1996,,,,given
+954,Mission: Impossible,1996,,,,given
+9879,Striptease,1996,US$ 12,Striptease,1996,high
+4232,Scream,1996,,,,given
+597,Titanic,1997,Gwyneth Paltrow recusou,,,given
+489,Good Will Hunting,1997,,,,given
+4995,Boogie Nights,1997,,,,given
+607,Men in Black,1997,,,,given
+415,Batman & Robin,1997,,,,given
+857,Saving Private Ryan,1998,,,,given
+1934,Shakespeare in Love,1998,campanha Miramax; Julia Roberts recusou nos anos 90,,,given
+544,There's Something About Mary,1998,,,,given
+95,Armageddon,1998,,,,given
+603,The Matrix,1999,Will Smith recusou Neo,,,given
+14,American Beauty,1999,,,,given
+345,Eyes Wide Shut,1999,400 dias de filmagem,,,given
+745,The Sixth Sense,1999,,,,given
+492,Being John Malkovich,1999,,,,given
+334,Magnolia,1999,,,,given
+8487,Wild Wild West,1999,o que Will Smith escolheu em vez de Matrix,,,given
+115,The Big Lebowski,1998,,,,given
+98,Gladiator,2000,,,,given
+462,Erin Brockovich,2000,,,,given
+16,Dancer in the Dark,2000,Björk jura nunca mais atuar,,,given
+77,Memento,2000,,,,given
+1900,Traffic,2000,,,,given
+786,Almost Famous,2000,,,,given
+641,Requiem for a Dream,2000,,,,given
+824,Moulin Rouge!,2001,,,,given
+1018,Mulholland Drive,2001,,,,given
+8835,Legally Blonde,2001,,,,given
+1574,Chicago,2002,,,,given
+153,Lost in Translation,2003,,,,given
+24,Kill Bill: Vol. 1,2003,,,,given
+322,Mystic River,2003,,,,given
+504,Monster,2003,Charlize Theron se transforma,,,given
+10625,Mean Girls,2004,,,,given
+38,Eternal Sunshine of the Spotless Mind,2004,,,,given
+70,Million Dollar Baby,2004,,,,given
+9675,Sideways,2004,,,,given
+1640,Crash,2004,Melhor Filme que envelheceu mal,,,given
+1824,50 First Dates,2004,Sandler no Havaí,50 First Dates,2004,high
+314,Catwoman,2004,Halle Berry busca o Razzie pessoalmente,,,given
+142,Brokeback Mountain,2005,,,,given
+69,Walk the Line,2005,,,,given
+398,Capote,2005,,,,given
+1422,The Departed,2006,Scorsese finalmente ganha,,,given
+350,The Devil Wears Prada,2006,,,,given
+773,Little Miss Sunshine,2006,,,,given
+1164,Babel,2006,,,,given
+6977,No Country for Old Men,2007,,,,given
+7345,There Will Be Blood,2007,,,,given
+7326,Juno,2007,,,,given
+4566,Michael Clayton,2007,,,,given
+4347,Atonement,2007,,,,given
+155,The Dark Knight,2008,Heath Ledger póstumo,,,given
+12405,Slumdog Millionaire,2008,,,,given
+12163,The Wrestler,2008,Mickey Rourke renasce,,,given
+10139,Milk,2008,,,,given
+1726,Iron Man,2008,Downey Jr. renasce; início do universo,,,given
+8966,Twilight,2008,,,,given
+18785,The Hangover,2009,,,,given
+19995,Avatar,2009,Matt Damon recusou US$ 250 mi,,,given
+12162,The Hurt Locker,2009,Bigelow bate Cameron,,,given
+16869,Inglourious Basterds,2009,,,,given
+22947,Up in the Air,2009,,,,given
+22881,The Blind Side,2009,,,,given
+37799,The Social Network,2010,99 takes na cena de abertura,,,given
+27205,Inception,2010,,,,given
+44214,Black Swan,2010,,,,given
+45317,The Fighter,2010,,,,given
+45269,The King's Speech,2010,bate A Rede Social,,,given
+44264,True Grit,2010,,,,given
+10195,Thor,2011,papel de Kat Dennings; contrato de franquia,,,given
+55721,Bridesmaids,2011,,,,given
+74643,The Artist,2011,,,,given
+64690,Drive,2011,,,,given
+50014,The Help,2011,,,,given
+60308,Moneyball,2011,,,,given
+82693,Silver Linings Playbook,2012,,,,given
+68718,Django Unchained,2012,,,,given
+68734,Argo,2012,,,,given
+97630,Zero Dark Thirty,2012,,,,given
+82695,Les Misérables,2012,,,,given
+70160,The Hunger Games,2012,,,,given
+76203,12 Years a Slave,2013,,,,given
+49047,Gravity,2013,,,,given
+106646,The Wolf of Wall Street,2013,,,,given
+110415,Snowpiercer,2013,Bong Joon-ho; Chris Evans,,,given
+152601,Her,2013,,,,given
+152532,Dallas Buyers Club,2013,,,,given
+194662,Birdman,2014,,,,given
+118340,Guardians of the Galaxy,2014,a voz do guaxinim,,,given
+244786,Whiplash,2014,,,,given
+85350,Boyhood,2014,12 anos de filmagem,,,given
+210577,Gone Girl,2014,,,,given
+76341,Mad Max: Fury Road,2015,set hostil; Hardy e Theron brigam,,,given
+281957,The Revenant,2015,DiCaprio finalmente ganha,,,given
+314365,Spotlight,2015,,,,given
+264644,Room,2015,,,,given
+258480,Carol,2015,,,,given
+321697,Steve Jobs,2015,,,,given
+216015,Fifty Shades of Grey,2015,,,,given
+313369,La La Land,2016,o envelope errado,,,given
+376867,Moonlight,2016,,,,given
+334541,Manchester by the Sea,2016,,,,given
+329865,Arrival,2016,,,,given
+338766,Hell or High Water,2016,,,,given
+297761,Suicide Squad,2016,presentes de método de Jared Leto,,,given
+419430,Get Out,2017,,,,given
+359940,"Three Billboards Outside Ebbing, Missouri",2017,,,,given
+391713,Lady Bird,2017,,,,given
+398818,Call Me by Your Name,2017,,,,given
+399055,The Shape of Water,2017,,,,given
+400617,Phantom Thread,2017,,,,given
+297762,Wonder Woman,2017,,,,given
+141052,Justice League,2017,o bigode digital,,,given
+493922,Hereditary,2018,Toni Collette esnobada,,,given
+424694,Bohemian Rhapsody,2018,diretor demitido; Malek ganha,,,given
+332562,A Star Is Born,2018,,,,given
+353081,Mission: Impossible - Fallout,2018,Cruise quebra o tornozelo; o bigode de Cavill,,,given
+426426,Roma,2018,,,,given
+284054,Black Panther,2018,,,,given
+375262,The Favourite,2018,,,,given
+429197,Vice,2018,,,,given
+490132,Green Book,2018,,,,given
+496243,Parasite,2019,,,,given
+475557,Joker,2019,,,,given
+466272,Once Upon a Time... in Hollywood,2019,,,,given
+492188,Marriage Story,2019,,,,given
+530915,1917,2019,,,,given
+331482,Little Women,2019,,,,given
+515001,Jojo Rabbit,2019,,,,given
+359724,Ford v Ferrari,2019,,,,given
+536869,Cats,2019,,Cats,2019,high
+,The Grudge,2020,remake de remake,,,NOT FOUND
+581734,Nomadland,2020,,,,given
+582014,Promising Young Woman,2020,,,,given
+615643,Minari,2020,,,,given
+502033,Sound of Metal,2020,,Sound of Metal,2020,high
+600354,The Father,2020,,,,given
+614409,Mank,2020,,,,given
+438631,Dune,2021,,,,given
+600583,The Power of the Dog,2021,,,,given
+511809,West Side Story,2021,,,,given
+587792,Licorice Pizza,2021,,,,given
+776503,CODA,2021,,,,given
+545611,Everything Everywhere All at Once,2022,,,,given
+361743,Top Gun: Maverick,2022,,,,given
+785084,The Whale,2022,Brendan Fraser volta,,,given
+817758,Tár,2022,,,,given
+674324,The Banshees of Inisherin,2022,,,,given
+614934,Elvis,2022,,,,given
+804095,The Fabelmans,2022,,,,given
+965150,Aftersun,2022,,,,given
+497828,Triangle of Sadness,2022,,,,given
+346698,Barbie,2023,,,,given
+872585,Oppenheimer,2023,,,,given
+466420,Killers of the Flower Moon,2023,Scorsese aos 80; Lily Gladstone,,,given
+792307,Poor Things,2023,,,,given
+666277,Past Lives,2023,,,,given
+523607,Maestro,2023,,,,given
+930564,Saltburn,2023,,,,given
+1020006,Priscilla,2023,,Priscilla,2023,high
+839369,May December,2023,,May December,2023,high
+693134,Dune: Part Two,2024,,,,given
+937287,Challengers,2024,,,,given
+933260,The Substance,2024,,,,given
+974576,Conclave,2024,,,,given
+402431,Wicked,2024,,,,given
+661539,A Complete Unknown,2024,,,,given
+1064213,Anora,2024,,,,given
+549509,The Brutalist,2024,,,,given
+1233413,Sinners,2025,,Sinners,2025,high
+1054867,One Battle After Another,2025,,One Battle After Another,2025,high

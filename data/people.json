@@ -1,0 +1,2122 @@
+[
+ {
+  "tmdb_id": 55710,
+  "name": "Adam McKay",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 429197,
+    "year": 2018,
+    "title": "Vice"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 223,
+  "name": "Alejandro G. Iñárritu",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1164,
+    "year": 2006,
+    "title": "Babel"
+   },
+   {
+    "tmdb_id": 194662,
+    "year": 2014,
+    "title": "Birdman or (The Unexpected Virtue of Ignorance)"
+   },
+   {
+    "tmdb_id": 281957,
+    "year": 2015,
+    "title": "The Revenant"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13235,
+  "name": "Alexander Payne",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9675,
+    "year": 2004,
+    "title": "Sideways"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11218,
+  "name": "Alfonso Cuarón",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 49047,
+    "year": 2013,
+    "title": "Gravity"
+   },
+   {
+    "tmdb_id": 426426,
+    "year": 2018,
+    "title": "Roma"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57434,
+  "name": "Amy Heckerling",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 9603,
+    "year": 1995,
+    "title": "Clueless"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1614,
+  "name": "Ang Lee",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 142,
+    "year": 2005,
+    "title": "Brokeback Mountain"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1145520,
+  "name": "Ari Aster",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 493922,
+    "year": 2018,
+    "title": "Hereditary"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 92784,
+  "name": "Barry Jenkins",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 376867,
+    "year": 2016,
+    "title": "Moonlight"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8246,
+  "name": "Barry Levinson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 380,
+    "year": 1988,
+    "title": "Rain Man"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5174,
+  "name": "Barry Sonnenfeld",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 607,
+    "year": 1997,
+    "title": "Men in Black"
+   },
+   {
+    "tmdb_id": 8487,
+    "year": 1999,
+    "title": "Wild Wild West"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6201,
+  "name": "Baz Luhrmann",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 824,
+    "year": 2001,
+    "title": "Moulin Rouge!"
+   },
+   {
+    "tmdb_id": 614934,
+    "year": 2022,
+    "title": "Elvis"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 880,
+  "name": "Ben Affleck",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 68734,
+    "year": 2012,
+    "title": "Argo"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5345,
+  "name": "Bennett Miller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 398,
+    "year": 2005,
+    "title": "Capote"
+   },
+   {
+    "tmdb_id": 60308,
+    "year": 2011,
+    "title": "Moneyball"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 21684,
+  "name": "Bong Joon Ho",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 110415,
+    "year": 2013,
+    "title": "Snowpiercer"
+   },
+   {
+    "tmdb_id": 496243,
+    "year": 2019,
+    "title": "Parasite"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 51329,
+  "name": "Bradley Cooper",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 332562,
+    "year": 2018,
+    "title": "A Star Is Born"
+   },
+   {
+    "tmdb_id": 523607,
+    "year": 2023,
+    "title": "Maestro"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 55493,
+  "name": "Brady Corbet",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 549509,
+    "year": 2024,
+    "title": "The Brutalist"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1150,
+  "name": "Brian De Palma",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 111,
+    "year": 1983,
+    "title": "Scarface"
+   },
+   {
+    "tmdb_id": 954,
+    "year": 1996,
+    "title": "Mission: Impossible"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 9032,
+  "name": "Bryan Singer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 424694,
+    "year": 2018,
+    "title": "Bohemian Rhapsody"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11649,
+  "name": "Cameron Crowe",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9390,
+    "year": 1996,
+    "title": "Jerry Maguire"
+   },
+   {
+    "tmdb_id": 786,
+    "year": 2000,
+    "title": "Almost Famous"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 19850,
+  "name": "Catherine Hardwicke",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 8966,
+    "year": 2008,
+    "title": "Twilight"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2518227,
+  "name": "Celine Song",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 666277,
+    "year": 2023,
+    "title": "Past Lives"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1904110,
+  "name": "Charlotte Wells",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 965150,
+    "year": 2022,
+    "title": "Aftersun"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1395183,
+  "name": "Chloé Zhao",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 581734,
+    "year": 2021,
+    "title": "Nomadland"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 9033,
+  "name": "Christopher McQuarrie",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 353081,
+    "year": 2018,
+    "title": "Mission: Impossible - Fallout"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 525,
+  "name": "Christopher Nolan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 77,
+    "year": 2000,
+    "title": "Memento"
+   },
+   {
+    "tmdb_id": 155,
+    "year": 2008,
+    "title": "The Dark Knight"
+   },
+   {
+    "tmdb_id": 27205,
+    "year": 2010,
+    "title": "Inception"
+   },
+   {
+    "tmdb_id": 872585,
+    "year": 2023,
+    "title": "Oppenheimer"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 190,
+  "name": "Clint Eastwood",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 33,
+    "year": 1992,
+    "title": "Unforgiven"
+   },
+   {
+    "tmdb_id": 322,
+    "year": 2003,
+    "title": "Mystic River"
+   },
+   {
+    "tmdb_id": 70,
+    "year": 2004,
+    "title": "Million Dollar Baby"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1607016,
+  "name": "Coralie Fargeat",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 933260,
+    "year": 2024,
+    "title": "The Substance"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 136495,
+  "name": "Damien Chazelle",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 244786,
+    "year": 2014,
+    "title": "Whiplash"
+   },
+   {
+    "tmdb_id": 313369,
+    "year": 2016,
+    "title": "La La Land"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1317730,
+  "name": "Daniel Scheinert",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 545611,
+    "year": 2022,
+    "title": "Everything Everywhere All at Once"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2034,
+  "name": "Danny Boyle",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 627,
+    "year": 1996,
+    "title": "Trainspotting"
+   },
+   {
+    "tmdb_id": 12405,
+    "year": 2008,
+    "title": "Slumdog Millionaire"
+   },
+   {
+    "tmdb_id": 321697,
+    "year": 2015,
+    "title": "Steve Jobs"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6431,
+  "name": "Darren Aronofsky",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 641,
+    "year": 2000,
+    "title": "Requiem for a Dream"
+   },
+   {
+    "tmdb_id": 12163,
+    "year": 2008,
+    "title": "The Wrestler"
+   },
+   {
+    "tmdb_id": 44214,
+    "year": 2010,
+    "title": "Black Swan"
+   },
+   {
+    "tmdb_id": 785084,
+    "year": 2022,
+    "title": "The Whale"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 19769,
+  "name": "David Ayer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 297761,
+    "year": 2016,
+    "title": "Suicide Squad"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7467,
+  "name": "David Fincher",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 807,
+    "year": 1995,
+    "title": "Se7en"
+   },
+   {
+    "tmdb_id": 37799,
+    "year": 2010,
+    "title": "The Social Network"
+   },
+   {
+    "tmdb_id": 210577,
+    "year": 2014,
+    "title": "Gone Girl"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5065,
+  "name": "David Frankel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 350,
+    "year": 2006,
+    "title": "The Devil Wears Prada"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5602,
+  "name": "David Lynch",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1018,
+    "year": 2001,
+    "title": "Mulholland Drive"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3055,
+  "name": "David Mackenzie",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 338766,
+    "year": 2016,
+    "title": "Hell or High Water"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17883,
+  "name": "David O. Russell",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 45317,
+    "year": 2010,
+    "title": "The Fighter"
+   },
+   {
+    "tmdb_id": 82693,
+    "year": 2012,
+    "title": "Silver Linings Playbook"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 137427,
+  "name": "Denis Villeneuve",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 329865,
+    "year": 2016,
+    "title": "Arrival"
+   },
+   {
+    "tmdb_id": 438631,
+    "year": 2021,
+    "title": "Dune"
+   },
+   {
+    "tmdb_id": 693134,
+    "year": 2024,
+    "title": "Dune: Part Two"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 221522,
+  "name": "Edward Berger",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 974576,
+    "year": 2024,
+    "title": "Conclave"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1252934,
+  "name": "Emerald Fennell",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 582014,
+    "year": 2020,
+    "title": "Promising Young Woman"
+   },
+   {
+    "tmdb_id": 930564,
+    "year": 2023,
+    "title": "Saltburn"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 716,
+  "name": "Emile Ardolino",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 88,
+    "year": 1987,
+    "title": "Dirty Dancing"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1224,
+  "name": "Ethan Coen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 44264,
+    "year": 2010,
+    "title": "True Grit"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1150548,
+  "name": "Florian Zeller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 600354,
+    "year": 2020,
+    "title": "The Father"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1776,
+  "name": "Francis Ford Coppola",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 240,
+    "year": 1974,
+    "title": "The Godfather Part II"
+   },
+   {
+    "tmdb_id": 28,
+    "year": 1979,
+    "title": "Apocalypse Now"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1201,
+  "name": "Garry Marshall",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 114,
+    "year": 1990,
+    "title": "Pretty Woman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 23964,
+  "name": "Gary Ross",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 70160,
+    "year": 2012,
+    "title": "The Hunger Games"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1,
+  "name": "George Lucas",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11,
+    "year": 1977,
+    "title": "Star Wars"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 20629,
+  "name": "George Miller",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 76341,
+    "year": 2015,
+    "title": "Mad Max: Fury Road"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 45400,
+  "name": "Greta Gerwig",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 391713,
+    "year": 2017,
+    "title": "Lady Bird"
+   },
+   {
+    "tmdb_id": 331482,
+    "year": 2019,
+    "title": "Little Women"
+   },
+   {
+    "tmdb_id": 346698,
+    "year": 2023,
+    "title": "Barbie"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 10828,
+  "name": "Guillermo del Toro",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 399055,
+    "year": 2017,
+    "title": "The Shape of Water"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5216,
+  "name": "Gus Van Sant",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 489,
+    "year": 1997,
+    "title": "Good Will Hunting"
+   },
+   {
+    "tmdb_id": 10139,
+    "year": 2008,
+    "title": "Milk"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8858,
+  "name": "Ivan Reitman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 620,
+    "year": 1984,
+    "title": "Ghostbusters"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2710,
+  "name": "James Cameron",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 218,
+    "year": 1984,
+    "title": "The Terminator"
+   },
+   {
+    "tmdb_id": 280,
+    "year": 1991,
+    "title": "Terminator 2: Judgment Day"
+   },
+   {
+    "tmdb_id": 597,
+    "year": 1997,
+    "title": "Titanic"
+   },
+   {
+    "tmdb_id": 19995,
+    "year": 2009,
+    "title": "Avatar"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15218,
+  "name": "James Gunn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 118340,
+    "year": 2014,
+    "title": "Guardians of the Galaxy"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 366,
+  "name": "James Mangold",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 69,
+    "year": 2005,
+    "title": "Walk the Line"
+   },
+   {
+    "tmdb_id": 359724,
+    "year": 2019,
+    "title": "Ford v Ferrari"
+   },
+   {
+    "tmdb_id": 661539,
+    "year": 2024,
+    "title": "A Complete Unknown"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2209,
+  "name": "Jan de Bont",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1637,
+    "year": 1994,
+    "title": "Speed"
+   },
+   {
+    "tmdb_id": 664,
+    "year": 1996,
+    "title": "Twister"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 10757,
+  "name": "Jane Campion",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 600583,
+    "year": 2021,
+    "title": "The Power of the Dog"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 52443,
+  "name": "Jason Reitman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 7326,
+    "year": 2007,
+    "title": "Juno"
+   },
+   {
+    "tmdb_id": 22947,
+    "year": 2009,
+    "title": "Up in the Air"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 69371,
+  "name": "Jean-Marc Vallée",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 152532,
+    "year": 2013,
+    "title": "Dallas Buyers Club"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3415,
+  "name": "Jerry Zucker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 251,
+    "year": 1990,
+    "title": "Ghost"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 36588,
+  "name": "Joe Wright",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4347,
+    "year": 2007,
+    "title": "Atonement"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1223,
+  "name": "Joel Coen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 275,
+    "year": 1996,
+    "title": "Fargo"
+   },
+   {
+    "tmdb_id": 115,
+    "year": 1998,
+    "title": "The Big Lebowski"
+   },
+   {
+    "tmdb_id": 6977,
+    "year": 2007,
+    "title": "No Country for Old Men"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5572,
+  "name": "Joel Schumacher",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 415,
+    "year": 1997,
+    "title": "Batman & Robin"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 12840,
+  "name": "John Badham",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11009,
+    "year": 1977,
+    "title": "Saturday Night Fever"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16513,
+  "name": "John G. Avildsen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1366,
+    "year": 1976,
+    "title": "Rocky"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54040,
+  "name": "John Lee Hancock",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 22881,
+    "year": 2009,
+    "title": "The Blind Side"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18844,
+  "name": "John Madden",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1934,
+    "year": 1998,
+    "title": "Shakespeare in Love"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1090,
+  "name": "John McTiernan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 562,
+    "year": 1988,
+    "title": "Die Hard"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15277,
+  "name": "Jon Favreau",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1726,
+    "year": 2008,
+    "title": "Iron Man"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54507,
+  "name": "Jon M. Chu",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 402431,
+    "year": 2024,
+    "title": "Wicked"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16294,
+  "name": "Jonathan Demme",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 274,
+    "year": 1991,
+    "title": "The Silence of the Lambs"
+   },
+   {
+    "tmdb_id": 9800,
+    "year": 1993,
+    "title": "Philadelphia"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 291263,
+  "name": "Jordan Peele",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 419430,
+    "year": 2017,
+    "title": "Get Out"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 86270,
+  "name": "Joseph Kosinski",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 361743,
+    "year": 2022,
+    "title": "Top Gun: Maverick"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 14392,
+  "name": "Kathryn Bigelow",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 12162,
+    "year": 2008,
+    "title": "The Hurt Locker"
+   },
+   {
+    "tmdb_id": 97630,
+    "year": 2012,
+    "title": "Zero Dark Thirty"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11181,
+  "name": "Kenneth Branagh",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10195,
+    "year": 2011,
+    "title": "Thor"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 30711,
+  "name": "Kenneth Lonergan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 334541,
+    "year": 2016,
+    "title": "Manchester by the Sea"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1269,
+  "name": "Kevin Costner",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 581,
+    "year": 1990,
+    "title": "Dances with Wolves"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8300,
+  "name": "Kevin Reynolds",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9804,
+    "year": 1995,
+    "title": "Waterworld"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 9340,
+  "name": "Lana Wachowski",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 603,
+    "year": 1999,
+    "title": "The Matrix"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 42,
+  "name": "Lars von Trier",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16,
+    "year": 2000,
+    "title": "Dancer in the Dark"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 931952,
+  "name": "Lee Isaac Chung",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 615643,
+    "year": 2021,
+    "title": "Minari"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 83281,
+  "name": "Lenny Abrahamson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 264644,
+    "year": 2015,
+    "title": "Room"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 78160,
+  "name": "Luca Guadagnino",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 398818,
+    "year": 2017,
+    "title": "Call Me by Your Name"
+   },
+   {
+    "tmdb_id": 937287,
+    "year": 2024,
+    "title": "Challengers"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11614,
+  "name": "M. Night Shyamalan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 745,
+    "year": 1999,
+    "title": "The Sixth Sense"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54050,
+  "name": "Mark Waters",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10625,
+    "year": 2004,
+    "title": "Mean Girls"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 769,
+  "name": "Martin Brest",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 90,
+    "year": 1984,
+    "title": "Beverly Hills Cop"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54472,
+  "name": "Martin McDonagh",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 359940,
+    "year": 2017,
+    "title": "Three Billboards Outside Ebbing, Missouri"
+   },
+   {
+    "tmdb_id": 674324,
+    "year": 2022,
+    "title": "The Banshees of Inisherin"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1032,
+  "name": "Martin Scorsese",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 103,
+    "year": 1976,
+    "title": "Taxi Driver"
+   },
+   {
+    "tmdb_id": 1578,
+    "year": 1980,
+    "title": "Raging Bull"
+   },
+   {
+    "tmdb_id": 769,
+    "year": 1990,
+    "title": "GoodFellas"
+   },
+   {
+    "tmdb_id": 1422,
+    "year": 2006,
+    "title": "The Departed"
+   },
+   {
+    "tmdb_id": 106646,
+    "year": 2013,
+    "title": "The Wolf of Wall Street"
+   },
+   {
+    "tmdb_id": 466420,
+    "year": 2023,
+    "title": "Killers of the Flower Moon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1704882,
+  "name": "Max Barbakow",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 587792,
+    "year": 2020,
+    "title": "Palm Springs"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2461,
+  "name": "Mel Gibson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 197,
+    "year": 1995,
+    "title": "Braveheart"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 865,
+  "name": "Michael Bay",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 95,
+    "year": 1998,
+    "title": "Armageddon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 63099,
+  "name": "Michael Fimognari",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 614409,
+    "year": 2021,
+    "title": "To All the Boys: Always and Forever"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 638,
+  "name": "Michael Mann",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 949,
+    "year": 1995,
+    "title": "Heat"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 201,
+  "name": "Michel Gondry",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 38,
+    "year": 2004,
+    "title": "Eternal Sunshine of the Spotless Mind"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 67717,
+  "name": "Michel Hazanavicius",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 74643,
+    "year": 2011,
+    "title": "The Artist"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 21183,
+  "name": "Nicolas Winding Refn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 64690,
+    "year": 2011,
+    "title": "Drive"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5656,
+  "name": "Noah Baumbach",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 492188,
+    "year": 2019,
+    "title": "Marriage Story"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1152,
+  "name": "Oliver Stone",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 792,
+    "year": 1986,
+    "title": "Platoon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6884,
+  "name": "Patty Jenkins",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 504,
+    "year": 2003,
+    "title": "Monster"
+   },
+   {
+    "tmdb_id": 297762,
+    "year": 2017,
+    "title": "Wonder Woman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 116805,
+  "name": "Paul Feig",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 55721,
+    "year": 2011,
+    "title": "Bridesmaids"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 455,
+  "name": "Paul Haggis",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1640,
+    "year": 2005,
+    "title": "Crash"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 4762,
+  "name": "Paul Thomas Anderson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4995,
+    "year": 1997,
+    "title": "Boogie Nights"
+   },
+   {
+    "tmdb_id": 334,
+    "year": 1999,
+    "title": "Magnolia"
+   },
+   {
+    "tmdb_id": 7345,
+    "year": 2007,
+    "title": "There Will Be Blood"
+   },
+   {
+    "tmdb_id": 400617,
+    "year": 2017,
+    "title": "Phantom Thread"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 10491,
+  "name": "Paul Verhoeven",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 402,
+    "year": 1992,
+    "title": "Basic Instinct"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 14911,
+  "name": "Penny Marshall",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 2280,
+    "year": 1988,
+    "title": "Big"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7396,
+  "name": "Peter Farrelly",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 544,
+    "year": 1998,
+    "title": "There's Something About Mary"
+   },
+   {
+    "tmdb_id": 490132,
+    "year": 2018,
+    "title": "Green Book"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 4586,
+  "name": "Pitof",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 314,
+    "year": 2004,
+    "title": "Catwoman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 138,
+  "name": "Quentin Tarantino",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 680,
+    "year": 1994,
+    "title": "Pulp Fiction"
+   },
+   {
+    "tmdb_id": 24,
+    "year": 2003,
+    "title": "Kill Bill: Vol. 1"
+   },
+   {
+    "tmdb_id": 16869,
+    "year": 2009,
+    "title": "Inglourious Basterds"
+   },
+   {
+    "tmdb_id": 68718,
+    "year": 2012,
+    "title": "Django Unchained"
+   },
+   {
+    "tmdb_id": 466272,
+    "year": 2019,
+    "title": "Once Upon a Time... in Hollywood"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8876,
+  "name": "Randal Kleiser",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 621,
+    "year": 1978,
+    "title": "Grease"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 564,
+  "name": "Richard Linklater",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 85350,
+    "year": 2014,
+    "title": "Boyhood"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 578,
+  "name": "Ridley Scott",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 348,
+    "year": 1979,
+    "title": "Alien"
+   },
+   {
+    "tmdb_id": 78,
+    "year": 1982,
+    "title": "Blade Runner"
+   },
+   {
+    "tmdb_id": 1541,
+    "year": 1991,
+    "title": "Thelma & Louise"
+   },
+   {
+    "tmdb_id": 98,
+    "year": 2000,
+    "title": "Gladiator"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17633,
+  "name": "Rob Marshall",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1574,
+    "year": 2002,
+    "title": "Chicago"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3026,
+  "name": "Rob Reiner",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 639,
+    "year": 1989,
+    "title": "When Harry Met Sally..."
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6729,
+  "name": "Robert Benton",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12102,
+    "year": 1979,
+    "title": "Kramer vs. Kramer"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 36797,
+  "name": "Robert Luketic",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8835,
+    "year": 2001,
+    "title": "Legally Blonde"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 4135,
+  "name": "Robert Redford",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16619,
+    "year": 1980,
+    "title": "Ordinary People"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 24,
+  "name": "Robert Zemeckis",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 105,
+    "year": 1985,
+    "title": "Back to the Future"
+   },
+   {
+    "tmdb_id": 13,
+    "year": 1994,
+    "title": "Forrest Gump"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 6046,
+  "name": "Roland Emmerich",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 602,
+    "year": 1996,
+    "title": "Independence Day"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 56370,
+  "name": "Ruben Östlund",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 497828,
+    "year": 2022,
+    "title": "Triangle of Sadness"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1056121,
+  "name": "Ryan Coogler",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 284054,
+    "year": 2018,
+    "title": "Black Panther"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 39,
+  "name": "Sam Mendes",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 14,
+    "year": 1999,
+    "title": "American Beauty"
+   },
+   {
+    "tmdb_id": 530915,
+    "year": 2019,
+    "title": "1917"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1137903,
+  "name": "Sam Taylor-Johnson",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 216015,
+    "year": 2015,
+    "title": "Fifty Shades of Grey"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 118415,
+  "name": "Sean Baker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1064213,
+    "year": 2024,
+    "title": "Anora"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 154865,
+  "name": "Sian Heder",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 776503,
+    "year": 2021,
+    "title": "CODA"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1769,
+  "name": "Sofia Coppola",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 153,
+    "year": 2003,
+    "title": "Lost in Translation"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5953,
+  "name": "Spike Jonze",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 492,
+    "year": 1999,
+    "title": "Being John Malkovich"
+   },
+   {
+    "tmdb_id": 152601,
+    "year": 2013,
+    "title": "Her"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 240,
+  "name": "Stanley Kubrick",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 694,
+    "year": 1980,
+    "title": "The Shining"
+   },
+   {
+    "tmdb_id": 345,
+    "year": 1999,
+    "title": "Eyes Wide Shut"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 72757,
+  "name": "Steve McQueen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 76203,
+    "year": 2013,
+    "title": "12 Years a Slave"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1884,
+  "name": "Steven Soderbergh",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 462,
+    "year": 2000,
+    "title": "Erin Brockovich"
+   },
+   {
+    "tmdb_id": 1900,
+    "year": 2000,
+    "title": "Traffic"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 488,
+  "name": "Steven Spielberg",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 578,
+    "year": 1975,
+    "title": "Jaws"
+   },
+   {
+    "tmdb_id": 601,
+    "year": 1982,
+    "title": "E.T. the Extra-Terrestrial"
+   },
+   {
+    "tmdb_id": 329,
+    "year": 1993,
+    "title": "Jurassic Park"
+   },
+   {
+    "tmdb_id": 424,
+    "year": 1993,
+    "title": "Schindler's List"
+   },
+   {
+    "tmdb_id": 857,
+    "year": 1998,
+    "title": "Saving Private Ryan"
+   },
+   {
+    "tmdb_id": 511809,
+    "year": 2021,
+    "title": "West Side Story"
+   },
+   {
+    "tmdb_id": 804095,
+    "year": 2022,
+    "title": "The Fabelmans"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2226,
+  "name": "Sydney Pollack",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9576,
+    "year": 1982,
+    "title": "Tootsie"
+   },
+   {
+    "tmdb_id": 606,
+    "year": 1985,
+    "title": "Out of Africa"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 55934,
+  "name": "Taika Waititi",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 515001,
+    "year": 2019,
+    "title": "Jojo Rabbit"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 55789,
+  "name": "Tate Taylor",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 50014,
+    "year": 2011,
+    "title": "The Help"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 510,
+  "name": "Tim Burton",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 268,
+    "year": 1989,
+    "title": "Batman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5010,
+  "name": "Todd Field",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 817758,
+    "year": 2022,
+    "title": "TÁR"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16863,
+  "name": "Todd Haynes",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 258480,
+    "year": 2015,
+    "title": "Carol"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57130,
+  "name": "Todd Phillips",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 18785,
+    "year": 2009,
+    "title": "The Hangover"
+   },
+   {
+    "tmdb_id": 475557,
+    "year": 2019,
+    "title": "Joker"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 70500,
+  "name": "Tom Hooper",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 45269,
+    "year": 2010,
+    "title": "The King's Speech"
+   },
+   {
+    "tmdb_id": 82695,
+    "year": 2012,
+    "title": "Les Misérables"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17867,
+  "name": "Tom McCarthy",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 314365,
+    "year": 2015,
+    "title": "Spotlight"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 19242,
+  "name": "Tony Gilroy",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4566,
+    "year": 2007,
+    "title": "Michael Clayton"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 893,
+  "name": "Tony Scott",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 744,
+    "year": 1986,
+    "title": "Top Gun"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16960,
+  "name": "Valerie Faris",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 773,
+    "year": 2006,
+    "title": "Little Miss Sunshine"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5140,
+  "name": "Wes Craven",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4232,
+    "year": 1996,
+    "title": "Scream"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1243,
+  "name": "Woody Allen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 703,
+    "year": 1977,
+    "title": "Annie Hall"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 122423,
+  "name": "Yorgos Lanthimos",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 375262,
+    "year": 2018,
+    "title": "The Favourite"
+   },
+   {
+    "tmdb_id": 792307,
+    "year": 2023,
+    "title": "Poor Things"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15217,
+  "name": "Zack Snyder",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 141052,
+    "year": 2017,
+    "title": "Justice League"
+   }
+  ]
+ }
+]
