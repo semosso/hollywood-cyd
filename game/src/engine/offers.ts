@@ -1,4 +1,4 @@
-import { HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN, TRAP_RATE } from "./constants";
+import { AGE_OLDER, AGE_YOUNGER, HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN, TRAP_RATE } from "./constants";
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
@@ -19,6 +19,12 @@ export function filmTier(f: Film): number {
 
 export function budgetBand(f: Film): "$" | "$$" | "$$$" | "$$$$" {
   return (["$", "$$", "$$$", "$$$$"] as const)[filmTier(f)];
+}
+
+/** A idade do ator no papel precisa bater com a sua: até AGE_YOUNGER anos mais novo, até AGE_OLDER mais velho. Idade desconhecida passa. */
+export function ageFits(r: Role, idade: number): boolean {
+  if (r.age == null) return true;
+  return r.age >= idade - AGE_YOUNGER && r.age <= idade + AGE_OLDER;
 }
 
 /** Status acumulado, 0..1: metade Fama, metade Prestígio, com Reputação e Contatos ajustando nas pontas (RULES 4.2). */
@@ -50,6 +56,7 @@ export function eligibleRole(f: Film, state: State): number {
     if (r.order > 5) return;
     if (!r.gender) return;
     if (r.gender !== "nb" && r.gender !== state.genero) return;
+    if (!ageFits(r, state.idade)) return;
     if (fallback === -1 || r.order < f.roles[fallback].order) fallback = i;
     if (r.order < minOrder) return;
     // gênero desconhecido no TMDB: fora (não dá para garantir o par); não-binário: aberto a quem jogar

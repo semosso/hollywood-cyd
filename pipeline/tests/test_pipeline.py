@@ -101,3 +101,11 @@ def test_outcome_morno():
     assert build.derive(rec)["outcome"] == "flop"
     rec["rt"] = 30
     assert build.derive(rec)["outcome"] == "bomb"
+
+
+def test_role_age_from_birth_year():
+    m = load("tmdb_37799.json")
+    rec = build.build_film(m, None, [], None, None, {}, None, {37625: 1983, 37632: 1983})
+    by = {r["actor"]: r for r in rec["roles"]}
+    assert by["Jesse Eisenberg"]["age"] == 27
+    assert by["Justin Timberlake"]["age"] is None

@@ -69,6 +69,12 @@ def cmd_fetch():
         except HttpError as e:
             _log(f"TMDB falhou para {r['title']}: {e}")
             continue
+        # data de nascimento dos 6 primeiros do elenco (idade no papel)
+        for c in tmdb.top_cast(m, 6):
+            try:
+                tmdb.person(c["tmdb_id"])
+            except HttpError as e:
+                _log(f"pessoa {c['name']} falhou: {e}")
         d = tmdb.director(m)
         if d:
             try:
@@ -108,6 +114,22 @@ def _cached_movie(tmdb_id: int) -> dict | None:
                 if "id" in data:
                     _MOVIE_CACHE[data["id"]] = data
     return _MOVIE_CACHE.get(tmdb_id)
+
+
+_PERSON_CACHE: dict[int, dict] | None = None
+
+
+def _cached_person(person_id: int) -> dict | None:
+    global _PERSON_CACHE
+    if _PERSON_CACHE is None:
+        _PERSON_CACHE = {}
+        d = CACHE_DIR / "tmdb_person"
+        if d.exists():
+            for p in d.glob("*.json"):
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if "id" in data:
+                    _PERSON_CACHE[data["id"]] = data
+    return _PERSON_CACHE.get(person_id)
 
 
 def _cached_person_credits(person_id: int, ns: str = "tmdb_person_credits") -> dict | None:
@@ -158,7 +180,8 @@ def cmd_build():
         d = tmdb.director(m)
         credits = _cached_person_credits(d["tmdb_id"]) if d else None
         credits_pt = _cached_person_credits(d["tmdb_id"], "tmdb_person_credits_pt_BR") if d else None
-        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins, credits_pt)
+        births = {c["tmdb_id"]: tmdb.birth_year(_cached_person(c["tmdb_id"])) for c in tmdb.top_cast(m, 6)}
+        rec = build_mod.build_film(m, ratings, awards, curation.blind_for(r["tmdb_id"]), credits, oscar_wins, credits_pt, births)
         rec["why"] = r["why"]
         if r["year"] and rec["year"] and abs(r["year"] - rec["year"]) > 1:
             _log(f"ATENÇÃO: tmdb_id {r['tmdb_id']} no CSV é '{r['title']}' ({r['year']}) mas o TMDB devolveu '{rec['title']['en']}' ({rec['year']}). Confira o id.")

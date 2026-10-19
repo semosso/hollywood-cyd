@@ -53,11 +53,11 @@ def _film_awards(awards: list[dict]) -> dict:
     }
 
 
-def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None, director_credits: dict | None = None, oscar_wins: dict[str, int] | None = None, director_credits_pt: dict | None = None) -> dict:
+def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict | None, director_credits: dict | None = None, oscar_wins: dict[str, int] | None = None, director_credits_pt: dict | None = None, births: dict[int, int | None] | None = None) -> dict:
     genres = [g["name"] for g in m.get("genres", [])]
     year = int((m.get("release_date") or "0000")[:4]) or None
     roles = []
-    for c in tmdb_mod.top_cast(m, 4):
+    for c in tmdb_mod.top_cast(m, 6):
         pa = _person_awards(awards, c["name"])
         nominated = pa.get("oscar") in ("won", "nominated")
         won = pa.get("oscar") == "won"
@@ -67,6 +67,7 @@ def build_film(m: dict, ratings: dict | None, awards: list[dict], curation: dict
             "character": c["character"],
             "order": c["order"],
             "gender": c["gender"],
+            "age": (year - births[c["tmdb_id"]]) if (births and births.get(c["tmdb_id"]) and year) else None,
             "demand": role_demand(genres, nominated, won),
             "oscar": pa.get("oscar", "none"),
             "razzie": pa.get("razzie", "none"),

@@ -161,6 +161,19 @@ describe("share", () => {
 });
 
 
+describe("idade", () => {
+  it("papel só cabe se a idade do ator no filme bate com a do jogador", async () => {
+    const { ageFits } = await import("../offers");
+    const role = { actor: "x", order: 0, gender: "f" as const, demand: 3, oscar: "none" as const, razzie: "none" as const };
+    expect(ageFits({ ...role, age: 27 }, 65)).toBe(false);
+    expect(ageFits({ ...role, age: 27 }, 30)).toBe(true);
+    expect(ageFits({ ...role, age: 20 }, 22)).toBe(true);
+    expect(ageFits({ ...role, age: 40 }, 32)).toBe(true);
+    expect(ageFits({ ...role, age: 45 }, 32)).toBe(false);
+    expect(ageFits({ ...role, age: null }, 65)).toBe(true);
+  });
+});
+
 describe("status e cobiça", () => {
   it("iniciante recebe bem menos filmes cobiçados que uma estrela", async () => {
     const { buildProjectCard, cobica } = await import("../offers");

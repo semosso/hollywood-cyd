@@ -16,6 +16,8 @@ export type Role = {
   character?: string | null;
   order: number;
   gender: Gender | "nb" | null;
+  /** idade do ator/atriz no ano do filme (TMDB); null quando desconhecida */
+  age?: number | null;
   demand: number;
   oscar: AwardStatus;
   razzie: AwardStatus;

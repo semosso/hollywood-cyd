@@ -62,6 +62,14 @@ def pt_br_title(m: dict) -> str | None:
     return None
 
 
+def birth_year(p: dict | None) -> int | None:
+    b = (p or {}).get("birthday")
+    try:
+        return int(b[:4]) if b else None
+    except (TypeError, ValueError):
+        return None
+
+
 def top_cast(m: dict, n: int = 4) -> list[dict]:
     cast = sorted((m.get("credits") or {}).get("cast", []), key=lambda c: c.get("order", 999))
     return [
