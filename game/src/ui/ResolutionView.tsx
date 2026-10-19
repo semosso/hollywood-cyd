@@ -2,7 +2,7 @@ import { regretLine, toToday } from "../engine/resolve";
 import type { Lang, Resolution, State } from "../engine/types";
 import type { Content } from "../engine/run";
 import { t } from "../i18n/strings";
-import { METER_LABEL, OUTCOME_LABEL, RESULT_LABEL, money } from "./format";
+import { METER_LABEL, OUTCOME_LABEL, RESULT_LABEL, TIPO_LABEL, money } from "./format";
 import { ATTR_HELP } from "../i18n/strings";
 
 export function ResolutionView({ r, state, lang, content, onContinue }: { r: Resolution; state: State; lang: Lang; content: Content; onContinue: () => void }) {
@@ -11,7 +11,7 @@ export function ResolutionView({ r, state, lang, content, onContinue }: { r: Res
       {r.kind === "estreia" && <Release r={r} state={state} lang={lang} content={content} />}
       {r.kind === "evento" && (
         <>
-          <div className="eyebrow">{r.event.tipo}</div>
+          <div className="eyebrow">{TIPO_LABEL[r.event.tipo]?.[lang] ?? r.event.tipo}</div>
           <p style={{ margin: 0 }}>{r.texto ? (r.texto[lang] ?? r.texto.pt) : (r.event.opcoes.find((o) => o.id === r.optionId)?.rotulo[lang] ?? "")}</p>
           <Deltas d={r.efeitos as Record<string, number>} lang={lang} />
           {r.event.baseado_em?.length ? (
@@ -104,7 +104,7 @@ function Release({ r, state, lang, content }: { r: Extract<Resolution, { kind: "
       )}
       {f.refused_by && f.refused_by.length > 0 && <div className="refused"><b>{t("refusedIRL", lang)}:</b> {f.refused_by.map((x) => `${x.who}${x.role ? ` (${x.role})` : ""}`).join(", ")}</div>}
       {r.rumorFalso && <div className="refused"><b>{t("rumorWasFalse", lang)}:</b> {r.rumorFalso}</div>}
-      {f.trivia.slice(0, 2).map((tr, i) => <div key={i} className="muted" style={{ fontSize: 14 }}>· {tr}</div>)}
+      {lang === "pt" && f.trivia.slice(0, 2).map((tr, i) => <div key={i} className="muted" style={{ fontSize: 14 }}>· {tr}</div>)}
       <div className="mono muted">{state.ano} · {state.idade} {t("age", lang)}</div>
     </>
   );

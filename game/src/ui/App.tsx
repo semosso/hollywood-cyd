@@ -24,7 +24,7 @@ function writeLS(k: string, v: string) { try { localStorage.setItem(k, v); } cat
 export function App() {
   const params = useMemo(() => new URLSearchParams(typeof location !== "undefined" ? location.search : ""), []);
   const [lang, setLangState] = useState<Lang>((readLS("lang") as Lang) || (navigator.language.startsWith("pt") ? "pt" : "en"));
-  const setLang = (l: Lang) => { setLangState(l); writeLS("lang", l); };
+  const setLang = (l: Lang) => { setLangState(l); writeLS("lang", l); try { document.documentElement.lang = l === "pt" ? "pt-BR" : "en"; } catch { /* ignore */ } };
   const [state, setState] = useState<State | null>(null);
   const [tutorial, setTutorial] = useState(readLS("tutorial") !== "done");
   const [about, setAbout] = useState(false);

@@ -80,6 +80,9 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
     if (film.franchise_id && !state.flags.includes(`franquia:${film.franchise_id}`)) state.flags.push(`franquia:${film.franchise_id}`);
   }
   if ((film.flags.includes("terror") || film.flags.includes("acao")) && rng.next() < 0.15 && !state.flags.includes("lesao")) state.flags.push("lesao");
+  if (film.derived.outcome === "morno" && rng.next() < 0.3) {
+    state.rede.push({ tmdb_id: -(state.rede.length + 1), name: "contato", humor: 1, kind: "ficticio" });
+  }
   if (film.director) {
     const humor = resultado === "razzie" || resultado === "miscast" ? -1 : 1;
     const ex = state.rede.find((r) => r.kind === "diretor" && r.tmdb_id === film.director!.tmdb_id);

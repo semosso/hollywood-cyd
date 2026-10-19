@@ -188,11 +188,13 @@ caos: com p = 0.10, troca por outro resultado sorteado uniformemente (exceto "ga
 
 Deltas (constantes em `constants.ts`):
 
-| | hit | popcorn | oscar_bait | cult | flop | bomb |
-|---|---|---|---|---|---|---|
-| Fama (× fator de billing) | +10 | +8 | +6 | +2 | −4 | −7 |
-| Prestígio | +3 | −1 | +7 | +6 | −2 | −5 |
-| Heat | +3 | +3 | +2 | +1 | +1 | +2 |
+| | hit | popcorn | oscar_bait | cult | morno | flop | bomb |
+|---|---|---|---|---|---|---|---|
+| Fama (× fator de billing) | +10 | +8 | +6 | +2 | +2 | −4 | −7 |
+| Prestígio | +3 | −1 | +7 | +6 | 0 | −2 | −5 |
+| Heat | +3 | +3 | +2 | +1 | +1 | +1 | +2 |
+
+`morno` (recuperou o orçamento sem empolgar, crítica entre 40 e 84): move de lado; em 30% das vezes rende um contato fictício na `rede`. Não é armadilha nem conta como filme ruim.
 
 Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5 · 4–5 → 0.4. Papéis elegíveis: `order ≤ 5`.
 

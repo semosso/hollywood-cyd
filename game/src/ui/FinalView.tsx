@@ -5,7 +5,7 @@ import { shareUrl } from "../engine/share";
 import type { Lang, State } from "../engine/types";
 import { ATTR_HELP, t } from "../i18n/strings";
 import { originById } from "../engine/creation";
-import { RESULT_LABEL, money } from "./format";
+import { RESULT_LABEL, RESULT_SHORT, money } from "./format";
 
 export function FinalView({ state, lang, content, onRestart }: { state: State; lang: Lang; content: Content; onRestart: () => void }) {
   const ending = content.endings.find((e) => e.id === state.endingId) ?? content.endings[content.endings.length - 1];
@@ -44,7 +44,7 @@ export function FinalView({ state, lang, content, onRestart }: { state: State; l
                 <div key={i}>
                   <span className="mono muted">{fe.year}</span>
                   <span><b>{f.title[lang] ?? f.title.en}</b>{role.actor ? <span className="muted"> · {t("inTheRoleOf", lang)} {role.actor}</span> : null}</span>
-                  <span className="badge">{fe.resultado.replace(/_/g, " ")}</span>
+                  <span className="badge">{RESULT_SHORT[fe.resultado]?.[lang] ?? fe.resultado}</span>
                 </div>
               );
             })}

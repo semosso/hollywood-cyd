@@ -18,6 +18,7 @@ export const OUTCOME_LABEL: Record<string, { pt: string; en: string }> = {
   popcorn: { pt: "pipoca: bilheteria sim, crítica não", en: "popcorn: box office yes, critics no" },
   oscar_bait: { pt: "isca de Oscar", en: "Oscar bait" },
   cult: { pt: "cult: a crítica amou, ninguém viu", en: "cult: critics loved it, nobody saw it" },
+  morno: { pt: "morno: passou, pagou a conta, ninguém lembra", en: "lukewarm: came, paid the bills, went" },
   flop: { pt: "flop", en: "flop" },
   bomb: { pt: "bomba: perdeu dinheiro e a crítica", en: "bomb: lost money and the critics" },
 };
@@ -29,6 +30,16 @@ export const RESULT_LABEL: Record<string, { pt: string; en: string }> = {
   fez_o_trabalho: { pt: "Você fez o trabalho. Ninguém reclamou. Ninguém lembrou.", en: "You did the job. Nobody complained. Nobody remembered." },
   miscast: { pt: "A crítica te escolheu como o problema do filme.", en: "The critics singled you out as the film's problem." },
   razzie: { pt: "Indicado(a) ao Razzie. Você não foi buscar. Deveria.", en: "Nominated for a Razzie. You didn't show up. You should have." },
+};
+
+export const TIPO_LABEL: Record<string, { pt: string; en: string }> = {
+  vida: { pt: "vida pessoal", en: "personal life" }, pessoa: { pt: "pessoa", en: "people" }, midia: { pt: "imprensa", en: "press" },
+  premiacao: { pt: "temporada de prêmios", en: "awards season" }, contexto: { pt: "o mundo lá fora", en: "the world outside" }, destino: { pt: "destino", en: "fate" },
+};
+
+export const RESULT_SHORT: Record<string, { pt: string; en: string }> = {
+  ganhou: { pt: "ganhou o Oscar", en: "won the Oscar" }, indicado: { pt: "indicado", en: "nominated" }, roubou_a_cena: { pt: "roubou a cena", en: "stole the scene" },
+  fez_o_trabalho: { pt: "fez o trabalho", en: "did the job" }, miscast: { pt: "miscast", en: "miscast" }, razzie: { pt: "Razzie", en: "Razzie" },
 };
 
 export const METER_LABEL: Record<string, { pt: string; en: string }> = {

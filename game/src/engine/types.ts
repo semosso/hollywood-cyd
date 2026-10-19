@@ -8,7 +8,7 @@ export type Attributes = Record<AttrKey, number>;
 export type OriginId = "nepo" | "teatro_ny" | "ex_crianca" | "modelo" | "influencer" | "garcom" | "atleta" | "imigrante";
 
 export type AwardStatus = "none" | "nominated" | "won";
-export type Outcome = "hit" | "popcorn" | "oscar_bait" | "cult" | "flop" | "bomb";
+export type Outcome = "hit" | "popcorn" | "oscar_bait" | "cult" | "morno" | "flop" | "bomb";
 
 export type Role = {
   actor: string;

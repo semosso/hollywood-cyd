@@ -91,3 +91,12 @@ def test_blind_auto_masks_title_and_describes_director():
     # curadoria manual continua tendo prioridade
     cur = build.build_film(m, None, awards, {"blind": {"hard": "x"}}, credits, {})
     assert cur["blind_auto"] is False and cur["blind"]["hard"] == "x"
+
+
+def test_outcome_morno():
+    rec = {"budget": 30_000_000, "revenue": 50_000_000, "rt": 55, "film_awards": {"oscar_nominations": 0, "oscar_wins": 0, "best_picture": "none", "palme_dor": False, "razzie_nominations": 0}, "roles": []}
+    assert build.derive(rec)["outcome"] == "morno"
+    rec["revenue"] = 20_000_000
+    assert build.derive(rec)["outcome"] == "flop"
+    rec["rt"] = 30
+    assert build.derive(rec)["outcome"] == "bomb"

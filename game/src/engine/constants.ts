@@ -37,6 +37,7 @@ export const FILM_DELTAS: Record<Outcome, { fama: number; prestigio: number; hea
   popcorn: { fama: 8, prestigio: -1, heat: 3 },
   oscar_bait: { fama: 6, prestigio: 7, heat: 2 },
   cult: { fama: 2, prestigio: 6, heat: 1 },
+  morno: { fama: 2, prestigio: 0, heat: 1 },
   flop: { fama: -4, prestigio: -2, heat: 1 },
   bomb: { fama: -7, prestigio: -5, heat: 2 },
 };

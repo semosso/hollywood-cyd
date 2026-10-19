@@ -7737,7 +7737,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.3,
    "ratio": 1.51,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": "orçamento estourado; sinal de alerta"
  },
@@ -10544,7 +10544,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.31,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -11714,7 +11714,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.64,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -12228,7 +12228,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.35,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -24900,7 +24900,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.27,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -26913,7 +26913,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.49,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -27448,7 +27448,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": null,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -28655,7 +28655,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.59,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -29875,7 +29875,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.51,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -30007,7 +30007,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 1.05,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },
@@ -30142,7 +30142,7 @@
    "p_cult": 0.05,
    "p_scandal": 0.05,
    "ratio": 2.16,
-   "outcome": "flop"
+   "outcome": "morno"
   },
   "why": ""
  },

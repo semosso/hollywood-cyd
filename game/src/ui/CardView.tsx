@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { availableOptions, normalizedResults } from "../engine/events";
 import type { Action, Card, Lang, Offer, State } from "../engine/types";
 import { t } from "../i18n/strings";
-import { pct } from "./format";
+import { TIPO_LABEL, pct } from "./format";
 
 const SWIPE_X = 0.4; // fração da largura para confirmar
 const START_PX = 12;  // deslocamento mínimo para decidir se é swipe ou rolagem
@@ -12,7 +12,7 @@ export function CardView({ state, card, lang, onAction, showTutorial, onTutorial
   const opts = availableOptions(card.event, state);
   return (
     <div className="swipe">
-      <div className="eyebrow">{card.event.tipo}</div>
+      <div className="eyebrow">{TIPO_LABEL[card.event.tipo]?.[lang] ?? card.event.tipo}</div>
       <p style={{ fontSize: 18, marginTop: 8 }}>{(card.event.texto[lang] ?? card.event.texto.pt).replace("{idade}", String(state.idade))}</p>
       <div className="evopts">
         {opts.map((o) => {

@@ -146,6 +146,10 @@ def derive(rec: dict) -> dict:
         outcome = "cult"
     elif ratio is not None and ratio < 1 and (rt or 0) < 40:
         outcome = "bomb"
+    elif ratio is not None and ratio < 1:
+        outcome = "flop"
+    elif (rt or 0) >= 40:
+        outcome = "morno"   # pagou a conta, ninguém lembra: move de lado
     return {
         "p_prize": round(min(prize, 0.95), 2),
         "p_box": round(box, 2),
