@@ -1,0 +1,13 @@
+title_pt: "O Iluminado"
+blind:
+  hard: "Um diretor que mora na Inglaterra e não entra em avião quer você num hotel vazio no inverno. Uma cena vai ter 127 takes. Seu marido na tela é mais famoso que você."
+  medium: "O diretor de um filme sobre astronautas e um computador que canta quer você num hotel isolado, com um menino que fala com o dedo. Treze meses de filmagem. Você vai chorar de verdade, todos os dias."
+  easy: "Kubrick. O hotel. O machado. Você é a esposa."
+flags: [tirano_genial, terror]
+trivia:
+  - "A cena da escada com o taco de beisebol entrou no Guinness: 127 takes."
+  - "Shelley Duvall foi indicada ao Razzie de Pior Atriz em 1981; a indicação foi retirada em 2022."
+revision:
+  year: 2022
+  text: "A Razzie Foundation retira sua indicação e pede desculpas. Você diz que não se lembra do filme. É mentira."
+  prestige_delta: 4

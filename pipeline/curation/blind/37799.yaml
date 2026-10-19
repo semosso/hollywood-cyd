@@ -1,0 +1,10 @@
+title_pt: "A Rede Social"
+blind:
+  hard: "Um diretor que não faz menos de 50 takes quer você num filme sobre um site. Duas horas de gente digitando e falando rápido."
+  medium: "O diretor de um filme sobre um serial killer que nunca é pego, e de outro em que o protagonista envelhece ao contrário, quer você num filme sobre a criação de um site. A cena de abertura vai ter 99 takes."
+  easy: "O Fincher quer você no filme do Facebook. Roteiro do cara que escreve andando."
+flags: [roteirista_estrela, filme_de_processo]
+trivia:
+  - "A cena de abertura foi filmada 99 vezes."
+  - "O roteiro de Aaron Sorkin tem 162 páginas; o filme tem 2 horas."
+shoot_days: 70

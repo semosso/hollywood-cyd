@@ -1,0 +1,1620 @@
+{
+  "head" : {
+    "vars" : [ "film", "filmLabel", "person", "personLabel", "award", "awardLabel", "kind", "year" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1966965"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Board of Review: Top Ten Films"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q900414"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "César Award for Best Foreign Film"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q26705935"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "BBC's 100 Greatest Films of the 21st Century"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1789102"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Board of Review Award for Best Film"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q103916"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Actor"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q107258"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Writing, Adapted Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q102427"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q131520"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Cinematography"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q103360"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Director"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q830079"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Sound"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5211226"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dallas-Fort Worth Film Critics Association Award for Best Film"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q107258"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Writing, Adapted Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "film_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q102427"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1159206"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dana Brunetti"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5569374"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Producers Guild of America Award for Best Theatrical Motion Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1159206"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dana Brunetti"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q139184"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "BAFTA Award for Best Film"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1159206"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dana Brunetti"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q830079"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Sound"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1297272"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Ren Klyce"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q131520"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Cinematography"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1358070"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jeff Cronenweth"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q830079"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Sound"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1705192"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Michael Semanick"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q103360"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Director"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q184903"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "David Fincher"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q103916"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Actor"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q219512"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jesse Eisenberg"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5569172"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "San Diego Film Critics Society Award for Best Performance by an Ensemble"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q2315802"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dakota Johnson"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q863434"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Washington D.C. Area Film Critics Association"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q2315802"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dakota Johnson"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q282722"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Trent Reznor"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q107258"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Writing, Adapted Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q299194"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Aaron Sorkin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q830079"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Sound"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q3021483"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "David Parker"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q102427"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q461529"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Scott Rudin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q520346"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Atticus Ross"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q537808"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Kirk Baxter"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q544658"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Angus Wall"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q830079"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Sound"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q6770276"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Mark Weingarten"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q102427"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q920273"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Michael De Luca"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q102427"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q961183"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Ceán Chaffin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q518675"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_nomination"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Actor Award for Outstanding Performance by a Cast in a Motion Picture"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q967833"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Josh Pence"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q2358089"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Satellite Award for Best Film"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1159206"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dana Brunetti"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q787131"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "BAFTA Award for Best Direction"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q184903"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "David Fincher"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5211225"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dallas-Fort Worth Film Critics Association Award for Best Director"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q184903"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "David Fincher"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5569066"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Phoenix Film Critics Society Award for Best Cast"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q2315802"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dakota Johnson"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q282722"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Trent Reznor"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q1634847"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Satellite Award for Best Adapted Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q299194"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Aaron Sorkin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q107258"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Writing, Adapted Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q299194"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Aaron Sorkin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q849124"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Golden Globe Award for Best Screenplay"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2010"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q299194"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Aaron Sorkin"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q488651"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Original Score"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q520346"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Atticus Ross"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q537808"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Kirk Baxter"
+      }
+    }, {
+      "film" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q185888"
+      },
+      "award" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q281939"
+      },
+      "kind" : {
+        "type" : "literal",
+        "value" : "person_win"
+      },
+      "filmLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Social Network"
+      },
+      "awardLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Academy Award for Best Film Editing"
+      },
+      "year" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#integer",
+        "type" : "literal",
+        "value" : "2011"
+      },
+      "person" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q544658"
+      },
+      "personLabel" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Angus Wall"
+      }
+    } ]
+  }
+}
