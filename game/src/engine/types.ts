@@ -52,6 +52,8 @@ export type Film = {
   refused_by?: { who: string; role?: string; source?: string }[];
   derived: { p_prize: number; p_box: number; p_cult: number; p_scandal: number; ratio: number | null; outcome: Outcome };
   fallback?: boolean;
+  era?: [number, number];
+  requer_beleza?: number;
 };
 
 export type Options = { hollywoodRealista: boolean; idioma: Lang };

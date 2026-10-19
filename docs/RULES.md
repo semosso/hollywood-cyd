@@ -25,8 +25,9 @@
 - `opcoes`: `hollywoodRealista` (default **false**), `idioma` ∈ {`pt`, `en`}. Não existe "modo realista": a morte é sempre possível.
 
 ### 2.2 Atributos
-- Cinco atributos, cada um inteiro em [1, 5]. **12 pontos no total** (mínimo 1 em cada, 7 livres).
-- Bônus de origem são somados depois, com teto **6**.
+- Cinco atributos, cada um inteiro em [1, 5]. **12 pontos no total** (mínimo 1 em cada, 7 livres). Distribuição padrão da tela: 3, 3, 2, 2, 2.
+- Bônus de origem são somados depois, com teto **6**, e aparecem na tela de criação ("3 +2 de origem = 5"), no HUD e no card final.
+- O HUD mostra os atributos **efetivos** durante toda a run (base + bônus de origem + guinadas; Beleza já com o decaimento por idade).
 - **Sorte** ∈ {1, 2, 3}, sorteada pela seed, oculta até o card final.
 
 ### 2.3 Origens
@@ -100,6 +101,7 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 2. Oferta **B**: filme do tier+1 (reach) se existir; senão do mesmo tier com `derived.outcome` diferente de A.
 3. Preferências ao sortear (aplicadas como pesos, não filtros): gêneros diferentes entre A e B; diretores diferentes; se possível, uma com `p_prize ≥ 0.3` e outra com `p_box ≥ 0.5`.
 4. Se o jogador tem `rede` com o diretor de um candidato, ele ganha peso ×3 (o diretor "te quer de novo").
+   Candidatos de tier acima do jogador (reach) têm peso × `(0.5 + 0.15 × beleza_efetiva)`: Beleza abre portas acima do seu tamanho.
 5. Se flag `contrato_franquia` e existe sequência (`flags` do filme contém `franquia` e mesmo `franchise_id`), ela entra como A obrigatória.
 
 ### 4.4 O que o jogador vê antes de escolher
@@ -115,7 +117,7 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 **Ruído**: para cada ícone, `mostrado = clamp(p + u, 0.02, 0.95)`, com `u ~ U(−0.15, +0.15)` sorteado por `(seed, tmdb_id, ícone)`. O ruído é fixo por run (reabrir o card não re-rola).
 
 ### 4.5 Fallback (pool insuficiente)
-Ofertas fictícias com dados fixos, por era: `filme_de_tv`, `filme_de_natal` (≥ 2000), `comercial_no_japao` (≤ 2010), `serie_de_streaming` (≥ 2013), `dublagem_animacao`. Cada uma tem `derived` fixo e nenhum revela nada (não há o que reconhecer). O card final lista como "projetos menores".
+Ofertas fictícias com dados fixos, por era: `filme_de_tv`, `filme_de_natal` (≥ 2000), `comercial_no_japao` (≤ 2012, exige Beleza efetiva ≥ 3), `serie_de_streaming` (≥ 2013), `dublagem_animacao`, `campanha_de_perfume` (exige Beleza efetiva ≥ 4; cachê alto). Cada uma tem `derived` fixo e nenhum revela nada (não há o que reconhecer). O card final lista como "projetos menores".
 
 ### 4.6 Opções
 - ◀ Aceitar A · ▶ Aceitar B (uma só; a outra vira "recusada").
@@ -189,6 +191,8 @@ Deltas (constantes em `constants.ts`):
 | Heat | +3 | +3 | +2 | +1 | +1 | +2 |
 
 Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5 · 4–5 → 0.4. Papéis elegíveis: `order ≤ 5`.
+
+**Beleza** (efetiva, com decaimento por idade) multiplica o ganho de Fama do filme quando positivo: `0.8 + 0.1 × beleza_efetiva` (0.8× com 0, 1.0× com 2, 1.3× com 5). Não altera perdas nem Prestígio.
 
 | resultado pessoal | Fama | Prestígio | Estabilidade | flags |
 |---|---|---|---|---|

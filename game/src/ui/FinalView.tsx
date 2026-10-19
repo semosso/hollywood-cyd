@@ -4,6 +4,7 @@ import { filmById, type Content } from "../engine/run";
 import { shareUrl } from "../engine/share";
 import type { Lang, State } from "../engine/types";
 import { ATTR_HELP, t } from "../i18n/strings";
+import { originById } from "../engine/creation";
 import { RESULT_LABEL, money } from "./format";
 
 export function FinalView({ state, lang, content, onRestart }: { state: State; lang: Lang; content: Content; onRestart: () => void }) {
@@ -29,7 +30,7 @@ export function FinalView({ state, lang, content, onRestart }: { state: State; l
         <div>
           <div className="eyebrow">{state.nome}</div>
           <div className="mono" style={{ marginTop: 4 }}>
-            {Object.entries(state.atributosIniciais).map(([k, v]) => <span key={k} style={{ marginRight: 10 }}>{ATTR_HELP[k].name[lang]} {v}</span>)}
+            {Object.entries(state.atributosIniciais).map(([k, v]) => { const b = originById(state.origem).bonus[k as keyof typeof state.atributosIniciais] ?? 0; return <span key={k} style={{ marginRight: 10 }}>{ATTR_HELP[k].name[lang]} {Math.min(6, v + b)}{b ? <span className="muted"> ({v}+{b})</span> : null}</span>; })}
             <span style={{ color: "var(--accent)" }}>{t("luck", lang)}: {state.sorte}</span>
           </div>
         </div>

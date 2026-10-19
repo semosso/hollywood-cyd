@@ -74,7 +74,7 @@ export type Key = keyof typeof S;
 export const t = (k: Key, lang: Lang): string => S[k][lang] ?? S[k].pt;
 
 export const ATTR_HELP: Record<string, { pt: string; en: string; name: { pt: string; en: string } }> = {
-  beleza: { name: { pt: "Beleza", en: "Looks" }, pt: "Impacta os papéis de galã e musa, comerciais e capas. Cai com a idade. Não revela nada antes de escolher.", en: "Affects leading-man and muse parts, commercials and covers. Fades with age. Reveals nothing before you choose." },
+  beleza: { name: { pt: "Beleza", en: "Looks" }, pt: "Impacta a fama que cada filme te dá, as ofertas acima do seu tamanho, comerciais e campanhas. Cai com a idade. Não revela nada antes de escolher.", en: "Affects how much fame each film brings you, offers above your level, commercials and campaigns. Fades with age. Reveals nothing before you choose." },
   talento: { name: { pt: "Talento", en: "Talent" }, pt: "Impacta prêmios e críticas, e o quanto você sabe sobre o roteiro antes de aceitar.", en: "Affects awards and reviews, and how much you know about the script before signing." },
   contatos: { name: { pt: "Contatos", en: "Connections" }, pt: "Impacta quanto você enxerga de cada oferta e quantas consegue aceitar.", en: "Affects how much of each offer you can see and how many you can take." },
   carisma: { name: { pt: "Carisma", en: "Charisma" }, pt: "Impacta imprensa, fãs e os rumores que chegam até você. Nem todo rumor é verdade.", en: "Affects press, fans and the rumors that reach you. Not every rumor is true." },

@@ -2,7 +2,7 @@ import { HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN } from 
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
-import { yearsPerCard } from "./timeline";
+import { belezaEfetiva, yearsPerCard } from "./timeline";
 import type { Film, Lang, Offer, ProjectCard, Role, State, ThirdOption } from "./types";
 
 export function tierFor(fama: number): number {
@@ -134,6 +134,7 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   if (A) candidates = candidates.filter((c) => c.film.tmdb_id !== A!.film.tmdb_id);
   let B = rng.weighted(candidates, (c) => {
     let w = weight(c, Math.min(3, tier + 1));
+    if (filmTier(c.film) > tier) w *= reachFactor(state);
     if (A) {
       if (c.film.director && A.film.director && c.film.director.tmdb_id === A.film.director.tmdb_id) w *= 0.2;
       if (c.film.genres.some((g) => A!.film.genres.includes(g))) w *= 0.5;
@@ -163,8 +164,15 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
 }
 
 function eligibleYear(f: Film, state: State): boolean {
-  const era = (f as Film & { era?: [number, number] }).era;
-  return !era || (state.ano >= era[0] && state.ano <= era[1]);
+  const era = f.era;
+  if (era && (state.ano < era[0] || state.ano > era[1])) return false;
+  if (f.requer_beleza && belezaEfetiva(state) < f.requer_beleza) return false;
+  return true;
+}
+
+/** Beleza efetiva pesa nas ofertas acima do seu tamanho (reach): 0.5× com Beleza 0, 1.25× com Beleza 5. */
+export function reachFactor(state: State): number {
+  return 0.5 + 0.15 * belezaEfetiva(state);
 }
 
 export function thirdOption(state: State, offers: [Offer, Offer]): ThirdOption | null {

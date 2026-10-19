@@ -2,6 +2,7 @@ import { BILLING_FACTOR, CACHE_BASE_2020, CHAOS, FILM_DELTAS, PERSONAL_DELTAS } 
 import { tierFor } from "./offers";
 import { rngFor } from "./rng";
 import { effAttrs } from "./attrs";
+import { belezaEfetiva } from "./timeline";
 import type { Film, Lang, MeterKey, PersonalResult, PipelineEntry, Resolution, State } from "./types";
 
 export type Cpi = Record<string, number>;
@@ -52,8 +53,10 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
   const fd = FILM_DELTAS[film.derived.outcome];
   const pd = PERSONAL_DELTAS[resultado];
   const cache = cacheFor(film, entry.roleIndex, state, cpi);
+  // Beleza efetiva: 0.8× com 0, 1.0× com 2, 1.3× com 5 (só sobre ganhos de fama do filme)
+  const belezaFator = fd.fama > 0 ? 0.8 + 0.1 * belezaEfetiva(state) : 1;
   const deltas: Partial<Record<MeterKey, number>> = {
-    fama: Math.round(fd.fama * billing) + pd.fama,
+    fama: Math.round(fd.fama * billing * belezaFator) + pd.fama,
     prestigio: fd.prestigio + pd.prestigio,
     heat: fd.heat,
     estabilidade: pd.estabilidade,

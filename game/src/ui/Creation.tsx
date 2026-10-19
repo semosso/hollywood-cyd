@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { ATTRS, YEAR_MAX_DEBUT, YEAR_MIN } from "../engine/constants";
-import { ORIGINS, pointBudget, validateCreation } from "../engine/creation";
+import { ORIGINS, originById, pointBudget, validateCreation } from "../engine/creation";
 import { randomSeed } from "../engine/rng";
 import type { Attributes, CreationInput, Gender, Lang, OriginId } from "../engine/types";
 import { ATTR_HELP, ORIGIN_HELP, t } from "../i18n/strings";
@@ -13,7 +13,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const [nome, setNome] = useState((prefill?.genero ?? "f") === "f" ? NAMES_F[0] : NAMES_M[0]);
   const [ano, setAno] = useState(prefill?.anoEstreia ?? 1995);
   const [origem, setOrigem] = useState<OriginId>(prefill?.origem ?? "garcom");
-  const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? { beleza: 3, talento: 3, contatos: 3, carisma: 2, juizo: 2 });
+  const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? { beleza: 3, talento: 3, contatos: 2, carisma: 2, juizo: 2 });
   const [hollywoodRealista, setHollywoodRealista] = useState(prefill?.opcoes.hollywoodRealista ?? false);
   const [seed, setSeed] = useState(initialSeed ?? randomSeed());
   const budget = pointBudget(origem);
@@ -23,6 +23,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const errors = useMemo(() => validateCreation(input), [nome, genero, ano, origem, attrs, hollywoodRealista, seed, lang]);
   const bump = (k: keyof Attributes, d: number) => setAttrs((a) => ({ ...a, [k]: Math.min(5, Math.max(1, a[k] + d)) }));
   const names = genero === "f" ? NAMES_F : NAMES_M;
+  const bonus = originById(origem).bonus;
 
   return (
     <div className="stack" style={{ gap: 22 }}>
@@ -78,7 +79,10 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
         </div>
         {ATTRS.map((k) => (
           <div className="attr" key={k}>
-            <div><b>{ATTR_HELP[k].name[lang]}</b> <span className="pips">{"●".repeat(attrs[k])}{"○".repeat(5 - attrs[k])}</span></div>
+            <div>
+              <b>{ATTR_HELP[k].name[lang]}</b> <span className="pips">{"●".repeat(attrs[k])}{"○".repeat(5 - attrs[k])}{bonus[k] ? <span className="bonus">{"●".repeat(bonus[k]!)}</span> : null}</span>
+              {bonus[k] ? <span className="mono" style={{ color: "var(--ok)", marginLeft: 8 }}>+{bonus[k]} {lang === "en" ? "from origin" : "de origem"} = {Math.min(6, attrs[k] + bonus[k]!)}</span> : null}
+            </div>
             <div className="ctl">
               <button type="button" onClick={() => bump(k, -1)} disabled={attrs[k] <= 1} aria-label={`- ${k}`}>−</button>
               <span style={{ width: 16, textAlign: "center" }}>{attrs[k]}</span>

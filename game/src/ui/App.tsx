@@ -5,7 +5,9 @@ import { replay, screen, startRun, step } from "../engine/run";
 import { creationFromParams, decodeChoices } from "../engine/share";
 import type { Action, CreationInput, Lang, State } from "../engine/types";
 import { atoFor } from "../engine/timeline";
-import { activeMods } from "../engine/attrs";
+import { activeMods, effAttrs } from "../engine/attrs";
+import { ATTRS } from "../engine/constants";
+import { belezaEfetiva } from "../engine/timeline";
 import { ATTR_HELP } from "../i18n/strings";
 import { t } from "../i18n/strings";
 import { CardView } from "./CardView";
@@ -65,6 +67,14 @@ export function App() {
             {activeMods(state).map((mod) => (
               <span key={mod.id} style={{ color: mod.tipo === "boost" ? "var(--ok)" : "var(--warn)" }}>{mod.tipo === "boost" ? "★" : "▼"} {mod.atributo ? ATTR_HELP[mod.atributo].name[lang] : ""} {mod.delta > 0 ? "+" : ""}{mod.delta}</span>
             ))}
+          </div>
+          <div className="attrs" style={{ flexBasis: "100%" }}>
+            {ATTRS.map((k) => {
+              const eff = k === "beleza" ? belezaEfetiva(state) : effAttrs(state)[k];
+              const base = state.atributos[k];
+              const cls = eff > base ? "up" : eff < base ? "down" : "";
+              return <span key={k} className={cls} title={ATTR_HELP[k].name[lang]}>{ATTR_HELP[k].name[lang].slice(0, 3)} {eff}</span>;
+            })}
           </div>
         </div>
       )}

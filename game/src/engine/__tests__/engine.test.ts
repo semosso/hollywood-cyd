@@ -146,6 +146,34 @@ describe("share", () => {
 });
 
 
+describe("beleza", () => {
+  it("multiplica a fama ganha por filme e abre fallbacks de comercial e campanha", async () => {
+    const { resolveRelease } = await import("../resolve");
+    const { belezaEfetiva } = await import("../timeline");
+    const film = content.films.find((f) => f.tmdb_id === 597)!; // Titanic, hit
+    const lo = createState({ ...base, atributos: { beleza: 1, talento: 3, contatos: 3, carisma: 2, juizo: 4 } });
+    const hi = createState({ ...base, atributos: { beleza: 5, talento: 3, contatos: 2, carisma: 2, juizo: 1 } });
+    const entry = { tmdb_id: 597, roleIndex: 1, assinadoNoCard: 0, estreiaNoCard: 1, recusado: null, ambos: false };
+    const rLo = resolveRelease(lo, entry, film, null, content.cpi);
+    const rHi = resolveRelease(hi, entry, film, null, content.cpi);
+    expect(belezaEfetiva(hi)).toBeGreaterThan(belezaEfetiva(lo));
+    const famaLo = rLo.kind === "estreia" ? rLo.deltas.fama! - (rLo.resultado ? 0 : 0) : 0;
+    const famaHi = rHi.kind === "estreia" ? rHi.deltas.fama! : 0;
+    // mesma seed e mesmo papel: a diferença vem do fator de Beleza (0.9× vs 1.3× sobre +10×0.8) e do resultado pessoal
+    expect(famaHi - famaLo).toBeGreaterThanOrEqual(2);
+    const perfume = content.fallbacks.find((f) => f.tmdb_id === -6)!;
+    expect(perfume.requer_beleza).toBe(4);
+  });
+  it("Beleza efetiva cai aos 35, 45 e 55", async () => {
+    const { belezaEfetiva } = await import("../timeline");
+    const s = createState({ ...base, atributos: { beleza: 5, talento: 3, contatos: 2, carisma: 2, juizo: 1 } });
+    expect(belezaEfetiva(s)).toBe(5);
+    s.idade = 36; expect(belezaEfetiva(s)).toBe(4);
+    s.idade = 46; expect(belezaEfetiva(s)).toBe(3);
+    s.idade = 56; expect(belezaEfetiva(s)).toBe(2);
+  });
+});
+
 describe("guinadas", () => {
   it("boost dourado traz diretores foda e revela o nome; queda só traz ofertas ruins", async () => {
     const { buildProjectCard } = await import("../offers");
