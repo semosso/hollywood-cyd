@@ -16,7 +16,7 @@ export const DATA_YEAR_MAX = 2025;
 export const NOISE = 0.15;
 export const HOLLYWOOD_REALISTA_IDADE = 45;
 export const CHAOS = 0.1;
-export const TRAP_RATE = 0.5;      // fração dos cards normais com uma armadilha, quando o pool permite
+export const TRAP_RATE = 0.4;      // fração dos cards normais com uma armadilha, quando o pool permite
 export const BAD_FILM_PENALTY = { flop: -0.6, bomb: -1.0, popcorn: -0.2 } as Record<string, number>;
 export const ATTRS: AttrKey[] = ["beleza", "talento", "contatos", "carisma", "juizo"];
 

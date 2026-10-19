@@ -21,17 +21,42 @@ export function budgetBand(f: Film): "$" | "$$" | "$$$" | "$$$$" {
   return (["$", "$$", "$$$", "$$$$"] as const)[filmTier(f)];
 }
 
-/** Índice do papel elegível (menor order) para o jogador, ou -1. */
+/** Status acumulado, 0..1: metade Fama, metade Prestígio, com Reputação e Contatos ajustando nas pontas (RULES 4.2). */
+export function statusFor(state: State): number {
+  const a = effAttrs(state);
+  const s = 0.5 * (state.meters.fama / 100) + 0.5 * (Math.max(0, state.meters.prestigio) / 100) + 0.03 * state.meters.reputacao + 0.04 * (a.contatos - 3);
+  return Math.min(1, Math.max(0, s));
+}
+
+/** Quanto um filme é cobiçado, 0..1: chance de prêmio pesa mais que bilheteria. */
+export function cobica(f: Film): number {
+  return Math.min(1, 0.6 * f.derived.p_prize + 0.4 * f.derived.p_box + (f.roles.some((r) => r.oscar === "won") ? 0.15 : 0));
+}
+
+/** Peso de uma oferta cobiçada para quem ainda não tem status: cai rápido acima do seu nível; nunca zera (sorte existe). */
+export function desireWeight(f: Film, state: State): number {
+  const gap = cobica(f) - statusFor(state);
+  if (gap <= 0) return 1;
+  return Math.max(0.04, Math.exp(-3.5 * gap));
+}
+
+/** Índice do papel elegível para o jogador, ou -1. Iniciante em filme acima do seu nível entra como coadjuvante. */
 export function eligibleRole(f: Film, state: State): number {
-  const minOrder = state.flags.includes("sotaque") && state.meters.fama < 40 ? 2 : 0;
+  let minOrder = state.flags.includes("sotaque") && state.meters.fama < 40 ? 2 : 0;
+  if (cobica(f) - statusFor(state) > 0.25) minOrder = Math.max(minOrder, 2); // ninguém te dá o protagonista ainda
   let best = -1;
+  let fallback = -1;
   f.roles.forEach((r: Role, i) => {
-    if (r.order > 5 || r.order < minOrder) return;
-    // gênero desconhecido no TMDB: fora (não dá para garantir o par); não-binário: aberto a quem jogar
+    if (r.order > 5) return;
     if (!r.gender) return;
     if (r.gender !== "nb" && r.gender !== state.genero) return;
+    if (fallback === -1 || r.order < f.roles[fallback].order) fallback = i;
+    if (r.order < minOrder) return;
+    // gênero desconhecido no TMDB: fora (não dá para garantir o par); não-binário: aberto a quem jogar
     if (best === -1 || r.order < f.roles[best].order) best = i;
   });
+  // se só existe papel de protagonista para o seu gênero e você ainda não tem status, o filme não vem (volta -1)
+  if (best === -1 && minOrder > 0 && fallback !== -1) return -1;
   return best;
 }
 
@@ -122,7 +147,8 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   const redeDir = new Set(state.rede.filter((r) => r.kind === "diretor").map((r) => r.tmdb_id));
   const weight = (c: { film: Film; roleIndex: number }, wantTier: number) => {
     let w = filmTier(c.film) === wantTier ? 1 : filmTier(c.film) === wantTier - 1 ? 0.4 : 0.1;
-    if (c.film.director && redeDir.has(c.film.director.tmdb_id)) w *= 3;
+    w *= desireWeight(c.film, state);                                   // status acumulado abre (ou fecha) as portas
+    if (c.film.director && redeDir.has(c.film.director.tmdb_id)) w *= 3; // o diretor te quer de novo
     return w;
   };
   let candidates = p.slice();
@@ -184,9 +210,9 @@ export function isTrap(f: Film): boolean {
   return ["flop", "bomb"].includes(f.derived.outcome) || (f.derived.outcome === "popcorn" && (f.rt ?? 100) < 50 && f.derived.p_prize < 0.2);
 }
 
-/** Beleza efetiva pesa nas ofertas acima do seu tamanho (reach): 0.5× com Beleza 0, 1.25× com Beleza 5. */
+/** Ofertas acima do seu tamanho (reach): Beleza e Contatos abrem portas. 0.5× no piso, ~1.7× com Beleza 5 e Contatos 5. */
 export function reachFactor(state: State): number {
-  return 0.5 + 0.15 * belezaEfetiva(state);
+  return (0.5 + 0.15 * belezaEfetiva(state)) * (1 + 0.15 * (effAttrs(state).contatos - 3));
 }
 
 export function thirdOption(state: State, offers: [Offer, Offer]): ThirdOption | null {

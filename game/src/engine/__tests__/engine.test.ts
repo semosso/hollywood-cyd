@@ -161,6 +161,43 @@ describe("share", () => {
 });
 
 
+describe("status e cobiça", () => {
+  it("iniciante recebe bem menos filmes cobiçados que uma estrela", async () => {
+    const { buildProjectCard, cobica } = await import("../offers");
+    const avg = (fama: number, prestigio: number) => {
+      let sum = 0, n = 0;
+      for (let i = 0; i < 120; i++) {
+        const s = createState({ ...base, seed: `cob-${i}`, anoEstreia: 1975 + 5 * (i % 9) });
+        s.meters.fama = fama; s.meters.prestigio = prestigio; s.cardsJogados = i % 5;
+        const card = buildProjectCard(content.films, content.fallbacks, s);
+        if (!card) continue;
+        for (const o of card.offers) if (!o.film.fallback) { sum += cobica(o.film); n++; }
+      }
+      return sum / Math.max(1, n);
+    };
+    expect(avg(5, 0)).toBeLessThan(avg(85, 80) - 0.08);
+  });
+  it("iniciante em filme cobiçado entra como coadjuvante", async () => {
+    const { eligibleRole } = await import("../offers");
+    const s = createState(base); // status ~0
+    const film = content.films.find((f) => f.tmdb_id === 597)!; // Titanic: DiCaprio 0, Winslet 1, Zane 2
+    const male = createState({ ...base, genero: "m" });
+    const ri = eligibleRole(film, male);
+    expect(ri === -1 || film.roles[ri].order >= 2).toBe(true);
+    void s;
+  });
+  it("Oscar exige mais e não dá bis fácil", async () => {
+    const { personalResult } = await import("../resolve");
+    const film = content.films.find((f) => f.tmdb_id === 1934)!; // Shakespeare in Love, Paltrow won
+    const paltrow = film.roles.findIndex((r) => r.actor === "Gwyneth Paltrow");
+    const s = createState(base);
+    const wins = (st: typeof s) => { let w = 0; for (let i = 0; i < 100; i++) if (personalResult(film, paltrow, 4, st, i / 100, 0.99, 0) === "ganhou") w++; return w; };
+    const fresh = wins(s);
+    s.filmografia.push({ tmdb_id: 1, year: 1997, roleIndex: 0, resultado: "ganhou", recusado: null, cache: 0, deltas: {} });
+    expect(wins(s)).toBeLessThan(fresh);
+  });
+});
+
 describe("armadilhas", () => {
   it("cerca de metade dos cards traz um filme que deu errado quando o pool tem um", async () => {
     const { buildProjectCard, isTrap } = await import("../offers");

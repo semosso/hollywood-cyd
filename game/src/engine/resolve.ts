@@ -23,9 +23,13 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
   // num filme que deu errado, a crítica procura culpados: penalidade no score pessoal
   const penalty = BAD_FILM_PENALTY[film.derived.outcome] ?? 0;
   const score = talentoEfetivo - r.demand + 0.3 * state.sorte + 0.1 * (state.meters.estabilidade - 5) + (2 * roll - 1) + penalty;
+  // a Academia: exige prestígio acumulado e não gosta de bis (Hanks é exceção, você não)
+  const prestigioBonus = Math.min(0.6, Math.max(0, state.meters.prestigio) / 100) + (state.flags.includes("campanha_oscar") ? 0.3 : 0);
+  const recentWin = state.filmografia.slice(-3).some((f) => f.resultado === "ganhou") ? 1.0 : 0;
+  const oscarScore = score + prestigioBonus - recentWin;
   let res: PersonalResult;
-  if (r.oscar === "won" && score >= 0) res = "ganhou";
-  else if ((r.oscar === "won" || r.oscar === "nominated") && score >= -0.5) res = "indicado";
+  if (r.oscar === "won" && oscarScore >= 0.5) res = "ganhou";
+  else if ((r.oscar === "won" || r.oscar === "nominated") && oscarScore >= -0.3) res = "indicado";
   else if (r.oscar === "none" && ["hit", "oscar_bait", "cult"].includes(film.derived.outcome) && score >= 1.2) res = "roubou_a_cena";
   else if (score >= -1.5) res = "fez_o_trabalho";
   else if ((r.razzie !== "none" && score < -0.5) || (r.oscar === "none" && score < -2.5)) res = "razzie";

@@ -91,10 +91,17 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 | 2 | 45–69 | < 120M |
 | 3 | ≥ 70 | qualquer |
 
+### 4.2b Status e cobiça (o que faz as ofertas dependerem de você)
+- `status = clamp(0.5·Fama/100 + 0.5·max(0, Prestígio)/100 + 0.03·Reputação + 0.04·(Contatos − 3), 0, 1)`.
+- `cobiça(filme) = min(1, 0.6·p_prize + 0.4·p_box + 0.15 se algum papel ganhou o Oscar)`.
+- Peso da oferta × `desireWeight = exp(−3.5 · max(0, cobiça − status))`, com piso 0.04: um iniciante quase nunca recebe o filme de Oscar, mas a sorte existe.
+- Se `cobiça − status > 0.25`, o jogador só entra no filme como **coadjuvante** (`order ≥ 2`); se o filme só tem protagonista para o seu gênero, ele não é oferecido.
+- Reach: peso × `(0.5 + 0.15·Beleza_ef) × (1 + 0.15·(Contatos − 3))`.
+
 ### 4.3 Montagem das ofertas (determinística pela seed)
 1. Oferta **A**: filme do tier do jogador.
 2. Oferta **B**: filme do tier+1 (reach) se existir; senão do mesmo tier com `derived.outcome` diferente de A.
-3. **Armadilha garantida**: em **50%** dos cards normais (`TRAP_RATE`), uma das duas ofertas é um filme que deu
+3. **Armadilha garantida**: em **40%** dos cards normais (`TRAP_RATE`), uma das duas ofertas é um filme que deu
    errado (`flop`/`bomb`, ou `popcorn` com crítica < 50 e sem chance de prêmio), quando houver um no pool. A
    posição (A ou B) é sorteada. Os ícones com ruído disfarçam; Juízo ≥ 3 vê a 🚩 só em bombas e sets problemáticos.
    Fora isso, preferências como pesos: gêneros diferentes, diretores diferentes, classificações diferentes.
@@ -171,9 +178,11 @@ roll = U(0,1)
 score = (t − d) + 0.3*sorte + 0.1*(estabilidade − 5) + (2*roll − 1) + penalidade_do_filme
 penalidade_do_filme: bomb −1.0 · flop −0.6 · popcorn −0.2 · demais 0   (num filme ruim, a crítica procura culpados)
 
+oscarScore = score + min(0.6, max(0, Prestígio)/100) + 0.3 se flag campanha_oscar − 1.0 se ganhou nos últimos 3 cards
+
 resultado_pessoal:
-  se r.oscar == "won"        e score ≥ 0     → "ganhou"
-  se r.oscar ∈ {won,nominated} e score ≥ −0.5 → "indicado"
+  se r.oscar == "won"        e oscarScore ≥ 0.5  → "ganhou"
+  se r.oscar ∈ {won,nominated} e oscarScore ≥ −0.3 → "indicado"
   se r.oscar == "none" e f.derived.outcome ∈ {hit, oscar_bait, cult} e score ≥ 1.2 → "roubou_a_cena"
   se score ≥ −1.5                             → "fez_o_trabalho"
   se (r.razzie != "none" e score < −0.5) ou (r.oscar == "none" e score < −2.5) → "razzie"
