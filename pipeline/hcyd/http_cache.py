@@ -18,11 +18,18 @@ def _key(url: str, params: dict | None) -> str:
     return hashlib.sha1(raw.encode()).hexdigest()
 
 
-def get_json(url: str, params: dict | None = None, headers: dict | None = None,
-             namespace: str = "misc", ttl_days: int | None = None, retries: int = 4) -> dict:
+def cache_path(url: str, params: dict | None, namespace: str = "misc") -> Path:
     cache_dir = CACHE_DIR / namespace
     cache_dir.mkdir(parents=True, exist_ok=True)
-    path = cache_dir / (_key(url, params) + ".json")
+    return cache_dir / (_key(url, params) + ".json")
+
+
+def get_json(url: str, params: dict | None = None, headers: dict | None = None,
+             namespace: str = "misc", ttl_days: int | None = None, retries: int = 4,
+             cacheable=None) -> dict:
+    """`cacheable(data)` decide se a resposta 200 merece ir ao cache (ex.: OMDb devolve
+    200 com "Request limit reached!"; guardar isso por 90 dias apagaria notas)."""
+    path = cache_path(url, params, namespace)
     if path.exists():
         if ttl_days is None or (time.time() - path.stat().st_mtime) < ttl_days * 86400:
             return json.loads(path.read_text(encoding="utf-8"))
@@ -44,7 +51,8 @@ def get_json(url: str, params: dict | None = None, headers: dict | None = None,
                 raise HttpError(f"401 em {url}: chave ausente ou inválida")
             r.raise_for_status()
             data = r.json()
-            path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+            if cacheable is None or cacheable(data):
+                path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
             return data
         except requests.RequestException as e:
             last = e

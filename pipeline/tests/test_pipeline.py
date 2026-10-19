@@ -23,6 +23,14 @@ def test_omdb_parse():
     assert omdb.parse({"Response": "False"})["rt"] is None
 
 
+def test_omdb_limit_error_is_not_a_result():
+    assert omdb.is_limit_error({"Response": "False", "Error": "Request limit reached!"})
+    assert omdb.is_limit_error({"Response": "False", "Error": "Invalid API key!"})
+    assert not omdb.is_limit_error({"Response": "False", "Error": "Incorrect IMDb ID."})
+    assert not omdb.is_limit_error({"Response": "False", "Error": "Movie not found!"})
+    assert not omdb.is_limit_error(load("omdb_tt1285016.json"))
+
+
 def test_wikidata_parse_keeps_oscars_and_people():
     rows = wikidata.parse(load("wikidata_tt1285016.json"))
     fams = {r["family"] for r in rows}

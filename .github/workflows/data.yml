@@ -50,9 +50,6 @@ jobs:
         with:
           path: pipeline/cache
           key: hcyd-cache-${{ hashFiles('pipeline/curation/films.csv') }}
-          # Sem isto, cada mudança na lista curada zera o cache e o OMDb (1000 pedidos/dia) estoura.
-          restore-keys: |
-            hcyd-cache-
           restore-keys: hcyd-cache-
       - name: Instalar dependências
         run: pip install -r pipeline/requirements.txt
