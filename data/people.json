@@ -1,5 +1,17 @@
 [
  {
+  "tmdb_id": 16328,
+  "name": "Adam Brooks",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 8390,
+    "year": 2008,
+    "title": "Definitely, Maybe"
+   }
+  ]
+ },
+ {
   "tmdb_id": 55710,
   "name": "Adam McKay",
   "gender": "m",
@@ -51,6 +63,30 @@
   ]
  },
  {
+  "tmdb_id": 15345,
+  "name": "Alex Kurtzman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 282035,
+    "year": 2017,
+    "title": "The Mummy"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 21085,
+  "name": "Alex Proyas",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 205584,
+    "year": 2016,
+    "title": "Gods of Egypt"
+   }
+  ]
+ },
+ {
   "tmdb_id": 13235,
   "name": "Alexander Payne",
   "gender": "m",
@@ -92,6 +128,18 @@
   ]
  },
  {
+  "tmdb_id": 989235,
+  "name": "Andrea Berloff",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 487680,
+    "year": 2019,
+    "title": "The Kitchen"
+   }
+  ]
+ },
+ {
   "tmdb_id": 41550,
   "name": "Andrew Bergman",
   "gender": "m",
@@ -100,6 +148,42 @@
     "tmdb_id": 9879,
     "year": 1996,
     "title": "Striptease"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7,
+  "name": "Andrew Stanton",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 49529,
+    "year": 2012,
+    "title": "John Carter"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1113116,
+  "name": "Andy Muschietti",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 298618,
+    "year": 2023,
+    "title": "The Flash"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17167,
+  "name": "Andy Tennant",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1968,
+    "year": 1997,
+    "title": "Fools Rush In"
    }
   ]
  },
@@ -215,6 +299,59 @@
   ]
  },
  {
+  "tmdb_id": 15557,
+  "name": "Bill Condon",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 162903,
+    "year": 2013,
+    "title": "The Fifth Estate"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 971660,
+  "name": "Bill Holderman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 502682,
+    "year": 2018,
+    "title": "Book Club"
+   },
+   {
+    "tmdb_id": 982271,
+    "year": 2023,
+    "title": "Book Club: The Next Chapter"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7904,
+  "name": "Billy Crystal",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10525,
+    "year": 1995,
+    "title": "Forget Paris"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5133,
+  "name": "Bo Welch",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10588,
+    "year": 2003,
+    "title": "The Cat in the Hat"
+   }
+  ]
+ },
+ {
   "tmdb_id": 21684,
   "name": "Bong Joon Ho",
   "gender": "m",
@@ -228,6 +365,18 @@
     "tmdb_id": 496243,
     "year": 2019,
     "title": "Parasite"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11887,
+  "name": "Brad Silberling",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 18162,
+    "year": 2009,
+    "title": "Land of the Lost"
    }
   ]
  },
@@ -274,6 +423,23 @@
     "tmdb_id": 954,
     "year": 1996,
     "title": "Mission: Impossible"
+   },
+   {
+    "tmdb_id": 9586,
+    "year": 1990,
+    "title": "The Bonfire of the Vanities"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18320,
+  "name": "Bronwen Hughes",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 1641,
+    "year": 1999,
+    "title": "Forces of Nature"
    }
   ]
  },
@@ -303,6 +469,28 @@
     "tmdb_id": 786,
     "year": 2000,
     "title": "Almost Famous"
+   },
+   {
+    "tmdb_id": 9621,
+    "year": 2005,
+    "title": "Elizabethtown"
+   },
+   {
+    "tmdb_id": 222936,
+    "year": 2015,
+    "title": "Aloha"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 239571,
+  "name": "Carl Rinsch",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 64686,
+    "year": 2013,
+    "title": "47 Ronin"
    }
   ]
  },
@@ -327,6 +515,18 @@
     "tmdb_id": 666277,
     "year": 2023,
     "title": "Past Lives"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 56106,
+  "name": "Charles Shyer",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11215,
+    "year": 1987,
+    "title": "Baby Boom"
    }
   ]
  },
@@ -394,6 +594,18 @@
   ]
  },
  {
+  "tmdb_id": 51600,
+  "name": "Clare Kilner",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 6961,
+    "year": 2005,
+    "title": "The Wedding Date"
+   }
+  ]
+ },
+ {
   "tmdb_id": 190,
   "name": "Clint Eastwood",
   "gender": "m",
@@ -441,6 +653,35 @@
     "tmdb_id": 313369,
     "year": 2016,
     "title": "La La Land"
+   },
+   {
+    "tmdb_id": 615777,
+    "year": 2022,
+    "title": "Babylon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 15892,
+  "name": "Dan Fogelman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 446696,
+    "year": 2018,
+    "title": "Life Itself"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 125738,
+  "name": "Daniel Espinosa",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 526896,
+    "year": 2022,
+    "title": "Morbius"
    }
   ]
  },
@@ -530,6 +771,18 @@
   ]
  },
  {
+  "tmdb_id": 42994,
+  "name": "David Dobkin",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 205587,
+    "year": 2014,
+    "title": "The Judge"
+   }
+  ]
+ },
+ {
   "tmdb_id": 7467,
   "name": "David Fincher",
   "gender": "m",
@@ -560,6 +813,28 @@
     "tmdb_id": 350,
     "year": 2006,
     "title": "The Devil Wears Prada"
+   },
+   {
+    "tmdb_id": 82696,
+    "year": 2012,
+    "title": "Hope Springs"
+   },
+   {
+    "tmdb_id": 345920,
+    "year": 2016,
+    "title": "Collateral Beauty"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 64141,
+  "name": "David Gordon Green",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10317,
+    "year": 2015,
+    "title": "Our Brand Is Crisis"
    }
   ]
  },
@@ -601,6 +876,23 @@
     "tmdb_id": 82693,
     "year": 2012,
     "title": "Silver Linings Playbook"
+   },
+   {
+    "tmdb_id": 664469,
+    "year": 2022,
+    "title": "Amsterdam"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8676,
+  "name": "Dean Devlin",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 274855,
+    "year": 2017,
+    "title": "Geostorm"
    }
   ]
  },
@@ -627,6 +919,54 @@
   ]
  },
  {
+  "tmdb_id": 17494,
+  "name": "Dennis Dugan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 71880,
+    "year": 2011,
+    "title": "Jack and Jill"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3092,
+  "name": "Diane Keaton",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 10385,
+    "year": 2000,
+    "title": "Hanging Up"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57579,
+  "name": "Don Roos",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10862,
+    "year": 2000,
+    "title": "Bounce"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11694,
+  "name": "Doug Liman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 412656,
+    "year": 2021,
+    "title": "Chaos Walking"
+   }
+  ]
+ },
+ {
   "tmdb_id": 221522,
   "name": "Edward Berger",
   "gender": "m",
@@ -635,6 +975,30 @@
     "tmdb_id": 974576,
     "year": 2024,
     "title": "Conclave"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 58251,
+  "name": "Elaine May",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 12704,
+    "year": 1987,
+    "title": "Ishtar"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16847,
+  "name": "Eli Roth",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 365177,
+    "year": 2024,
+    "title": "Borderlands"
    }
   ]
  },
@@ -668,6 +1032,18 @@
   ]
  },
  {
+  "tmdb_id": 52803,
+  "name": "Etan Cohen",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 426563,
+    "year": 2018,
+    "title": "Holmes & Watson"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1224,
   "name": "Ethan Coen",
   "gender": "m",
@@ -692,6 +1068,18 @@
   ]
  },
  {
+  "tmdb_id": 2178,
+  "name": "Forest Whitaker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9715,
+    "year": 1998,
+    "title": "Hope Floats"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1776,
   "name": "Francis Ford Coppola",
   "gender": "m",
@@ -705,6 +1093,23 @@
     "tmdb_id": 28,
     "year": 1979,
     "title": "Apocalypse Now"
+   },
+   {
+    "tmdb_id": 592831,
+    "year": 2024,
+    "title": "Megalopolis"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 20646,
+  "name": "Gabriele Muccino",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 77875,
+    "year": 2012,
+    "title": "Playing for Keeps"
    }
   ]
  },
@@ -717,6 +1122,16 @@
     "tmdb_id": 114,
     "year": 1990,
     "title": "Pretty Woman"
+   },
+   {
+    "tmdb_id": 10780,
+    "year": 1987,
+    "title": "Overboard"
+   },
+   {
+    "tmdb_id": 3784,
+    "year": 1991,
+    "title": "Frankie and Johnny"
    }
   ]
  },
@@ -729,6 +1144,42 @@
     "tmdb_id": 70160,
     "year": 2012,
     "title": "The Hunger Games"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17046,
+  "name": "Gary Winick",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 37056,
+    "year": 2010,
+    "title": "Letters to Juliet"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13079,
+  "name": "Gavin Hood",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 5125,
+    "year": 2007,
+    "title": "Rendition"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5369,
+  "name": "George C. Wolfe",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 14326,
+    "year": 2008,
+    "title": "Nights in Rodanthe"
    }
   ]
  },
@@ -753,6 +1204,54 @@
     "tmdb_id": 76341,
     "year": 2015,
     "title": "Mad Max: Fury Road"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 66121,
+  "name": "George Tillman Jr.",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 228205,
+    "year": 2015,
+    "title": "The Longest Ride"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 58463,
+  "name": "Glenn Gordon Caron",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9413,
+    "year": 1997,
+    "title": "Picture Perfect"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1704,
+  "name": "Gore Verbinski",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 57201,
+    "year": 2013,
+    "title": "The Lone Ranger"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 88967,
+  "name": "Greg Berlanti",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 956842,
+    "year": 2024,
+    "title": "Fly Me to the Moon"
    }
   ]
  },
@@ -808,6 +1307,59 @@
   ]
  },
  {
+  "tmdb_id": 956,
+  "name": "Guy Ritchie",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12779,
+    "year": 2002,
+    "title": "Swept Away"
+   },
+   {
+    "tmdb_id": 274857,
+    "year": 2017,
+    "title": "King Arthur: Legend of the Sword"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1714926,
+  "name": "Hallie Meyers-Shyer",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 427900,
+    "year": 2017,
+    "title": "Home Again"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 357,
+  "name": "Hany Abu-Assad",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 290512,
+    "year": 2017,
+    "title": "The Mountain Between Us"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1978,
+  "name": "Iain Softley",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 167,
+    "year": 2001,
+    "title": "K-PAX"
+   }
+  ]
+ },
+ {
   "tmdb_id": 8858,
   "name": "Ivan Reitman",
   "gender": "m",
@@ -816,6 +1368,23 @@
     "tmdb_id": 620,
     "year": 1984,
     "title": "Ghostbusters"
+   },
+   {
+    "tmdb_id": 6068,
+    "year": 1998,
+    "title": "Six Days Seven Nights"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 556172,
+  "name": "J.C. Chandor",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 241239,
+    "year": 2014,
+    "title": "A Most Violent Year"
    }
   ]
  },
@@ -867,6 +1436,11 @@
     "tmdb_id": 11050,
     "year": 1983,
     "title": "Terms of Endearment"
+   },
+   {
+    "tmdb_id": 42888,
+    "year": 2010,
+    "title": "How Do You Know"
    }
   ]
  },
@@ -889,6 +1463,11 @@
     "tmdb_id": 661539,
     "year": 2024,
     "title": "A Complete Unknown"
+   },
+   {
+    "tmdb_id": 11232,
+    "year": 2001,
+    "title": "Kate & Leopold"
    }
   ]
  },
@@ -906,6 +1485,11 @@
     "tmdb_id": 664,
     "year": 1996,
     "title": "Twister"
+   },
+   {
+    "tmdb_id": 1639,
+    "year": 1997,
+    "title": "Speed 2: Cruise Control"
    }
   ]
  },
@@ -935,6 +1519,23 @@
     "tmdb_id": 22947,
     "year": 2009,
     "title": "Up in the Air"
+   },
+   {
+    "tmdb_id": 130150,
+    "year": 2013,
+    "title": "Labor Day"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 59521,
+  "name": "Jaume Collet-Serra",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 436270,
+    "year": 2022,
+    "title": "Black Adam"
    }
   ]
  },
@@ -951,6 +1552,18 @@
   ]
  },
  {
+  "tmdb_id": 34682,
+  "name": "Jeremiah S. Chechik",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 4104,
+    "year": 1993,
+    "title": "Benny & Joon"
+   }
+  ]
+ },
+ {
   "tmdb_id": 3415,
   "name": "Jerry Zucker",
   "gender": "m",
@@ -963,6 +1576,30 @@
   ]
  },
  {
+  "tmdb_id": 12936,
+  "name": "Jim Abrahams",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12710,
+    "year": 1988,
+    "title": "Big Business"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 1038,
+  "name": "Jodie Foster",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 303858,
+    "year": 2016,
+    "title": "Money Monster"
+   }
+  ]
+ },
+ {
   "tmdb_id": 36588,
   "name": "Joe Wright",
   "gender": "m",
@@ -971,6 +1608,11 @@
     "tmdb_id": 4347,
     "year": 2007,
     "title": "Atonement"
+   },
+   {
+    "tmdb_id": 266647,
+    "year": 2015,
+    "title": "Pan"
    }
   ]
  },
@@ -1005,6 +1647,11 @@
     "tmdb_id": 415,
     "year": 1997,
     "title": "Batman & Robin"
+   },
+   {
+    "tmdb_id": 31674,
+    "year": 1989,
+    "title": "Cousins"
    }
   ]
  },
@@ -1017,6 +1664,18 @@
     "tmdb_id": 11009,
     "year": 1977,
     "title": "Saturday Night Fever"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 77269,
+  "name": "John Crowley",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 472674,
+    "year": 2019,
+    "title": "The Goldfinch"
    }
   ]
  },
@@ -1065,6 +1724,52 @@
     "tmdb_id": 562,
     "year": 1988,
     "title": "Die Hard"
+   },
+   {
+    "tmdb_id": 9593,
+    "year": 1993,
+    "title": "Last Action Hero"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 26095,
+  "name": "John Patrick Shanley",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2565,
+    "year": 1990,
+    "title": "Joe Versus the Volcano"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 47333,
+  "name": "John Wells",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 44129,
+    "year": 2010,
+    "title": "The Company Men"
+   },
+   {
+    "tmdb_id": 295964,
+    "year": 2015,
+    "title": "Burnt"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18250,
+  "name": "Jon Avnet",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9302,
+    "year": 1996,
+    "title": "Up Close & Personal"
    }
   ]
  },
@@ -1134,6 +1839,54 @@
   ]
  },
  {
+  "tmdb_id": 934803,
+  "name": "Josh Trank",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 166424,
+    "year": 2015,
+    "title": "Fantastic Four"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 114597,
+  "name": "Julie Anne Robinson",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 54054,
+    "year": 2012,
+    "title": "One for the Money"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 54025,
+  "name": "Karyn Kusama",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 8202,
+    "year": 2005,
+    "title": "Æon Flux"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 59218,
+  "name": "Kat Coiro",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 615904,
+    "year": 2022,
+    "title": "Marry Me"
+   }
+  ]
+ },
+ {
   "tmdb_id": 14392,
   "name": "Kathryn Bigelow",
   "gender": "f",
@@ -1183,6 +1936,23 @@
     "tmdb_id": 581,
     "year": 1990,
     "title": "Dances with Wolves"
+   },
+   {
+    "tmdb_id": 9922,
+    "year": 1997,
+    "title": "The Postman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17350,
+  "name": "Kevin Macdonald",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16995,
+    "year": 2009,
+    "title": "State of Play"
    }
   ]
  },
@@ -1199,6 +1969,18 @@
   ]
  },
  {
+  "tmdb_id": 70777,
+  "name": "Kevin Rodney Sullivan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11638,
+    "year": 2005,
+    "title": "Guess Who"
+   }
+  ]
+ },
+ {
   "tmdb_id": 9340,
   "name": "Lana Wachowski",
   "gender": "f",
@@ -1207,6 +1989,11 @@
     "tmdb_id": 603,
     "year": 1999,
     "title": "The Matrix"
+   },
+   {
+    "tmdb_id": 76757,
+    "year": 2015,
+    "title": "Jupiter Ascending"
    }
   ]
  },
@@ -1223,6 +2010,30 @@
   ]
  },
  {
+  "tmdb_id": 5306,
+  "name": "Lasse Hallström",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 6440,
+    "year": 2001,
+    "title": "The Shipping News"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 8844,
+  "name": "Lawrence Kasdan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 397,
+    "year": 1995,
+    "title": "French Kiss"
+   }
+  ]
+ },
+ {
   "tmdb_id": 931952,
   "name": "Lee Isaac Chung",
   "gender": "m",
@@ -1231,6 +2042,18 @@
     "tmdb_id": 615643,
     "year": 2021,
     "title": "Minari"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 929917,
+  "name": "Lee Sternthal",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 83686,
+    "year": 2012,
+    "title": "The Words"
    }
   ]
  },
@@ -1264,6 +2087,30 @@
   ]
  },
  {
+  "tmdb_id": 46085,
+  "name": "Luis Mandoki",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10207,
+    "year": 1999,
+    "title": "Message in a Bottle"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 65734,
+  "name": "Luke Greenfield",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 49022,
+    "year": 2011,
+    "title": "Something Borrowed"
+   }
+  ]
+ },
+ {
   "tmdb_id": 11614,
   "name": "M. Night Shyamalan",
   "gender": "m",
@@ -1276,6 +2123,40 @@
   ]
  },
  {
+  "tmdb_id": 18323,
+  "name": "Marc Lawrence",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2642,
+    "year": 2002,
+    "title": "Two Weeks Notice"
+   },
+   {
+    "tmdb_id": 11172,
+    "year": 2007,
+    "title": "Music and Lyrics"
+   },
+   {
+    "tmdb_id": 24438,
+    "year": 2009,
+    "title": "Did You Hear About the Morgans?"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 71527,
+  "name": "Marco Schnabel",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12177,
+    "year": 2008,
+    "title": "The Love Guru"
+   }
+  ]
+ },
+ {
   "tmdb_id": 54050,
   "name": "Mark Waters",
   "gender": "m",
@@ -1284,6 +2165,11 @@
     "tmdb_id": 10625,
     "year": 2004,
     "title": "Mean Girls"
+   },
+   {
+    "tmdb_id": 9007,
+    "year": 2005,
+    "title": "Just Like Heaven"
    }
   ]
  },
@@ -1296,6 +2182,23 @@
     "tmdb_id": 90,
     "year": 1984,
     "title": "Beverly Hills Cop"
+   },
+   {
+    "tmdb_id": 8046,
+    "year": 2003,
+    "title": "Gigli"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 10702,
+  "name": "Martin Campbell",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12201,
+    "year": 2010,
+    "title": "Edge of Darkness"
    }
   ]
  },
@@ -1354,6 +2257,18 @@
   ]
  },
  {
+  "tmdb_id": 957,
+  "name": "Matthew Vaughn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 848538,
+    "year": 2024,
+    "title": "Argylle"
+   }
+  ]
+ },
+ {
   "tmdb_id": 1704882,
   "name": "Max Barbakow",
   "gender": "m",
@@ -1378,6 +2293,18 @@
   ]
  },
  {
+  "tmdb_id": 10781,
+  "name": "Michael Apted",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11306,
+    "year": 1996,
+    "title": "Extreme Measures"
+   }
+  ]
+ },
+ {
   "tmdb_id": 865,
   "name": "Michael Bay",
   "gender": "m",
@@ -1386,6 +2313,18 @@
     "tmdb_id": 95,
     "year": 1998,
     "title": "Armageddon"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 30365,
+  "name": "Michael Caton-Jones",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 3093,
+    "year": 2006,
+    "title": "Basic Instinct 2"
    }
   ]
  },
@@ -1415,6 +2354,30 @@
     "tmdb_id": 614409,
     "year": 2021,
     "title": "To All the Boys: Always and Forever"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 52405,
+  "name": "Michael Hoffman",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 7300,
+    "year": 1996,
+    "title": "One Fine Day"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7145,
+  "name": "Michael Lehmann",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9292,
+    "year": 1991,
+    "title": "Hudson Hawk"
    }
   ]
  },
@@ -1463,6 +2426,11 @@
     "tmdb_id": 3525,
     "year": 1988,
     "title": "Working Girl"
+   },
+   {
+    "tmdb_id": 11364,
+    "year": 1991,
+    "title": "Regarding Henry"
    }
   ]
  },
@@ -1479,6 +2447,35 @@
   ]
  },
  {
+  "tmdb_id": 51984,
+  "name": "Mimi Leder",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 6623,
+    "year": 1997,
+    "title": "The Peacemaker"
+   },
+   {
+    "tmdb_id": 10647,
+    "year": 2000,
+    "title": "Pay It Forward"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 81856,
+  "name": "Nicholas Jarecki",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 60599,
+    "year": 2012,
+    "title": "Arbitrage"
+   }
+  ]
+ },
+ {
   "tmdb_id": 21183,
   "name": "Nicolas Winding Refn",
   "gender": "m",
@@ -1491,6 +2488,18 @@
   ]
  },
  {
+  "tmdb_id": 1239766,
+  "name": "Nisha Ganatra",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 523172,
+    "year": 2019,
+    "title": "Late Night"
+   }
+  ]
+ },
+ {
   "tmdb_id": 5656,
   "name": "Noah Baumbach",
   "gender": "m",
@@ -1499,6 +2508,30 @@
     "tmdb_id": 492188,
     "year": 2019,
     "title": "Marriage Story"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 13563,
+  "name": "Norman Jewison",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9058,
+    "year": 1994,
+    "title": "Only You"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 17510,
+  "name": "Ol Parker",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 800939,
+    "year": 2022,
+    "title": "Ticket to Paradise"
    }
   ]
  },
@@ -1516,6 +2549,23 @@
     "tmdb_id": 10673,
     "year": 1987,
     "title": "Wall Street"
+   },
+   {
+    "tmdb_id": 1966,
+    "year": 2004,
+    "title": "Alexander"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 128276,
+  "name": "Otto Bathurst",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 375588,
+    "year": 2018,
+    "title": "Robin Hood"
    }
   ]
  },
@@ -1545,6 +2595,11 @@
     "tmdb_id": 55721,
     "year": 2011,
     "title": "Bridesmaids"
+   },
+   {
+    "tmdb_id": 549053,
+    "year": 2019,
+    "title": "Last Christmas"
    }
   ]
  },
@@ -1610,6 +2665,30 @@
   ]
  },
  {
+  "tmdb_id": 66548,
+  "name": "Paul Weiland",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10761,
+    "year": 2008,
+    "title": "Made of Honor"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3289,
+  "name": "Paul Weitz",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 144340,
+    "year": 2013,
+    "title": "Admission"
+   }
+  ]
+ },
+ {
   "tmdb_id": 14911,
   "name": "Penny Marshall",
   "gender": "f",
@@ -1618,6 +2697,23 @@
     "tmdb_id": 2280,
     "year": 1988,
     "title": "Big"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 36804,
+  "name": "Peter Chelsom",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 9778,
+    "year": 2001,
+    "title": "Serendipity"
+   },
+   {
+    "tmdb_id": 4380,
+    "year": 2004,
+    "title": "Shall We Dance?"
    }
   ]
  },
@@ -1639,6 +2735,18 @@
   ]
  },
  {
+  "tmdb_id": 1230252,
+  "name": "Peter Howitt",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11141,
+    "year": 2004,
+    "title": "Laws of Attraction"
+   }
+  ]
+ },
+ {
   "tmdb_id": 13426,
   "name": "Peter Segal",
   "gender": "m",
@@ -1647,6 +2755,18 @@
     "tmdb_id": 1824,
     "year": 2004,
     "title": "50 First Dates"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2690,
+  "name": "Peter Weir",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12157,
+    "year": 1990,
+    "title": "Green Card"
    }
   ]
  },
@@ -1695,6 +2815,18 @@
   ]
  },
  {
+  "tmdb_id": 19798,
+  "name": "Randa Haines",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 26142,
+    "year": 1991,
+    "title": "The Doctor"
+   }
+  ]
+ },
+ {
   "tmdb_id": 8876,
   "name": "Randal Kleiser",
   "gender": "m",
@@ -1703,6 +2835,18 @@
     "tmdb_id": 621,
     "year": 1978,
     "title": "Grease"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 16938,
+  "name": "Renny Harlin",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1408,
+    "year": 1995,
+    "title": "Cutthroat Island"
    }
   ]
  },
@@ -1766,6 +2910,26 @@
     "tmdb_id": 639,
     "year": 1989,
     "title": "When Harry Met Sally..."
+   },
+   {
+    "tmdb_id": 9087,
+    "year": 1995,
+    "title": "The American President"
+   },
+   {
+    "tmdb_id": 12220,
+    "year": 1999,
+    "title": "The Story of Us"
+   },
+   {
+    "tmdb_id": 17813,
+    "year": 2003,
+    "title": "Alex & Emma"
+   },
+   {
+    "tmdb_id": 2800,
+    "year": 2005,
+    "title": "Rumor Has It..."
    }
   ]
  },
@@ -1778,6 +2942,23 @@
     "tmdb_id": 12102,
     "year": 1979,
     "title": "Kramer vs. Kramer"
+   },
+   {
+    "tmdb_id": 10922,
+    "year": 2003,
+    "title": "The Human Stain"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 64815,
+  "name": "Robert Iscove",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 31246,
+    "year": 2003,
+    "title": "From Justin to Kelly"
    }
   ]
  },
@@ -1802,6 +2983,23 @@
     "tmdb_id": 16619,
     "year": 1980,
     "title": "Ordinary People"
+   },
+   {
+    "tmdb_id": 4515,
+    "year": 2007,
+    "title": "Lions for Lambs"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 57270,
+  "name": "Robert Schwentke",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 49524,
+    "year": 2013,
+    "title": "R.I.P.D."
    }
   ]
  },
@@ -1819,6 +3017,42 @@
     "tmdb_id": 13,
     "year": 1994,
     "title": "Forrest Gump"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 5058,
+  "name": "Roger Christian",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 5491,
+    "year": 2000,
+    "title": "Battlefield Earth"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 21370,
+  "name": "Roger Donaldson",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 7520,
+    "year": 1988,
+    "title": "Cocktail"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 7017,
+  "name": "Roger Michell",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 1537,
+    "year": 2002,
+    "title": "Changing Lanes"
    }
   ]
  },
@@ -1864,6 +3098,18 @@
   ]
  },
  {
+  "tmdb_id": 223551,
+  "name": "SJ Clarkson",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 634492,
+    "year": 2024,
+    "title": "Madame Web"
+   }
+  ]
+ },
+ {
   "tmdb_id": 39,
   "name": "Sam Mendes",
   "gender": "m",
@@ -1889,6 +3135,18 @@
     "tmdb_id": 216015,
     "year": 2015,
     "title": "Fifty Shades of Grey"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 33433,
+  "name": "Scott Hicks",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 3638,
+    "year": 2007,
+    "title": "No Reservations"
    }
   ]
  },
@@ -1930,6 +3188,30 @@
     "tmdb_id": 10774,
     "year": 1976,
     "title": "Network"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 11092,
+  "name": "Simon Kinberg",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 320288,
+    "year": 2019,
+    "title": "Dark Phoenix"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 21879,
+  "name": "Simon Wells",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 50321,
+    "year": 2011,
+    "title": "Mars Needs Moms"
    }
   ]
  },
@@ -1981,6 +3263,54 @@
     "tmdb_id": 345,
     "year": 1999,
     "title": "Eyes Wide Shut"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3224,
+  "name": "Stephen Frears",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10699,
+    "year": 1992,
+    "title": "Hero"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 2945,
+  "name": "Stephen Gaghan",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 448119,
+    "year": 2020,
+    "title": "Dolittle"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 18356,
+  "name": "Stephen Herek",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 16643,
+    "year": 2002,
+    "title": "Life or Something Like It"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 52112,
+  "name": "Steve Carr",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 87818,
+    "year": 2013,
+    "title": "Movie 43"
    }
   ]
  },
@@ -2061,6 +3391,18 @@
   ]
  },
  {
+  "tmdb_id": 6340,
+  "name": "Susannah Grant",
+  "gender": "f",
+  "films": [
+   {
+    "tmdb_id": 13668,
+    "year": 2006,
+    "title": "Catch and Release"
+   }
+  ]
+ },
+ {
   "tmdb_id": 2226,
   "name": "Sydney Pollack",
   "gender": "m",
@@ -2074,6 +3416,16 @@
     "tmdb_id": 606,
     "year": 1985,
     "title": "Out of Africa"
+   },
+   {
+    "tmdb_id": 12618,
+    "year": 1999,
+    "title": "Random Hearts"
+   },
+   {
+    "tmdb_id": 179,
+    "year": 2005,
+    "title": "The Interpreter"
    }
   ]
  },
@@ -2102,6 +3454,18 @@
   ]
  },
  {
+  "tmdb_id": 18596,
+  "name": "Taylor Hackford",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 11983,
+    "year": 2000,
+    "title": "Proof of Life"
+   }
+  ]
+ },
+ {
   "tmdb_id": 510,
   "name": "Tim Burton",
   "gender": "m",
@@ -2110,6 +3474,18 @@
     "tmdb_id": 268,
     "year": 1989,
     "title": "Batman"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 23430,
+  "name": "Timur Bekmambetov",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 271969,
+    "year": 2016,
+    "title": "Ben-Hur"
    }
   ]
  },
@@ -2156,6 +3532,35 @@
     "tmdb_id": 475557,
     "year": 2019,
     "title": "Joker"
+   },
+   {
+    "tmdb_id": 889737,
+    "year": 2024,
+    "title": "Joker: Folie à Deux"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 46076,
+  "name": "Tom Dey",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 6877,
+    "year": 2006,
+    "title": "Failure to Launch"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 31,
+  "name": "Tom Hanks",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 59861,
+    "year": 2011,
+    "title": "Larry Crowne"
    }
   ]
  },
@@ -2194,6 +3599,23 @@
   ]
  },
  {
+  "tmdb_id": 4499,
+  "name": "Tom Shadyac",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 2698,
+    "year": 2007,
+    "title": "Evan Almighty"
+   },
+   {
+    "tmdb_id": 10052,
+    "year": 2002,
+    "title": "Dragonfly"
+   }
+  ]
+ },
+ {
   "tmdb_id": 19242,
   "name": "Tony Gilroy",
   "gender": "m",
@@ -2202,6 +3624,23 @@
     "tmdb_id": 4566,
     "year": 2007,
     "title": "Michael Clayton"
+   },
+   {
+    "tmdb_id": 16558,
+    "year": 2009,
+    "title": "Duplicity"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 3417,
+  "name": "Tony Goldwyn",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12658,
+    "year": 2001,
+    "title": "Someone Like You..."
    }
   ]
  },
@@ -2218,6 +3657,18 @@
   ]
  },
  {
+  "tmdb_id": 23799,
+  "name": "Uwe Boll",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 12142,
+    "year": 2005,
+    "title": "Alone in the Dark"
+   }
+  ]
+ },
+ {
   "tmdb_id": 16960,
   "name": "Valerie Faris",
   "gender": "f",
@@ -2230,6 +3681,30 @@
   ]
  },
  {
+  "tmdb_id": 6198,
+  "name": "Vondie Curtis-Hall",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10696,
+    "year": 2001,
+    "title": "Glitter"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 559,
+  "name": "Wally Pfister",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 157353,
+    "year": 2014,
+    "title": "Transcendence"
+   }
+  ]
+ },
+ {
   "tmdb_id": 5140,
   "name": "Wes Craven",
   "gender": "m",
@@ -2238,6 +3713,18 @@
     "tmdb_id": 4232,
     "year": 1996,
     "title": "Scream"
+   }
+  ]
+ },
+ {
+  "tmdb_id": 686,
+  "name": "Willard Huyck",
+  "gender": "m",
+  "films": [
+   {
+    "tmdb_id": 10658,
+    "year": 1986,
+    "title": "Howard the Duck"
    }
   ]
  },
