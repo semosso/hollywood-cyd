@@ -284,7 +284,7 @@ Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` r
 
 - O motor é uma função pura: `step(state, action) → { state, efeitos, proximaTela }`. Nenhum `Math.random` fora de `rng.ts`.
 - Telas: `criacao` → (`resolucao`)? → `card` → … → `final`.
-- Gestos no card: arrastar para a esquerda/direita aceita A/B; para cima abre a terceira opção. **Preview durante o arrasto**: o lado de destino ganha destaque e um rótulo ("Aceitar: o sofá") antes de soltar, como o Tinder. Soltar antes de 40% da largura cancela.
+- Gestos no card: arrastar para a esquerda/direita aceita A/B. A direção é decidida nos primeiros 12 px: horizontal vira swipe, vertical vira rolagem nativa (`touch-action: pan-y`), porque o card é mais alto que a tela do celular e precisa rolar antes da decisão. A terceira opção é um botão (▲); o gesto "puxar para cima" foi removido por conflitar com a rolagem. **Preview durante o arrasto**: o lado de destino ganha destaque e um rótulo ("Aceitar: ◀") antes de soltar. Soltar antes de 40% da largura cancela.
 - Tutorial: no primeiro card da primeira run do dispositivo, overlay com as três setas e os rótulos; some no primeiro gesto.
 - Idioma: seletor na criação e no rodapé; persistido em `localStorage`.
 - Tela de criação explica cada atributo em uma frase com exemplo concreto (decisão do questionário) e o toggle Hollywood realista com o texto da seção 4.1.

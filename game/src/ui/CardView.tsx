@@ -4,8 +4,8 @@ import type { Action, Card, Lang, Offer, State } from "../engine/types";
 import { t } from "../i18n/strings";
 import { pct } from "./format";
 
-const SWIPE_X = 0.4; // fração da largura
-const SWIPE_Y = 0.3;
+const SWIPE_X = 0.4; // fração da largura para confirmar
+const START_PX = 12;  // deslocamento mínimo para decidir se é swipe ou rolagem
 
 export function CardView({ state, card, lang, onAction, showTutorial, onTutorialDone }: { state: State; card: Card; lang: Lang; onAction: (a: Action) => void; showTutorial: boolean; onTutorialDone: () => void }) {
   if (card.kind === "projeto") return <ProjectCard state={state} card={card} lang={lang} onAction={onAction} showTutorial={showTutorial} onTutorialDone={onTutorialDone} />;
@@ -59,38 +59,49 @@ function ProjectCard({ state, card, lang, onAction, showTutorial, onTutorialDone
   const ref = useRef<HTMLDivElement>(null);
   const [drag, setDrag] = useState<{ x: number; y: number } | null>(null);
   const start = useRef<{ x: number; y: number } | null>(null);
+  const mode = useRef<"idle" | "swipe" | "scroll">("idle");
   const [animate, setAnimate] = useState(false);
   const w = ref.current?.offsetWidth ?? 360;
-  const h = ref.current?.offsetHeight ?? 480;
-  const dx = drag?.x ?? 0, dy = drag?.y ?? 0;
+  const dx = drag?.x ?? 0;
   const third = card.third;
-  const intent: "A" | "B" | "terceira" | null = dy < -SWIPE_Y * h && Math.abs(dx) < SWIPE_X * w ? (third?.disponivel ? "terceira" : null) : dx < -SWIPE_X * w ? "A" : dx > SWIPE_X * w ? "B" : null;
+  // só o eixo horizontal decide; o vertical fica para a rolagem nativa (touch-action: pan-y)
+  const intent: "A" | "B" | null = dx < -SWIPE_X * w ? "A" : dx > SWIPE_X * w ? "B" : null;
   const [A, B] = card.offers;
   void state;
 
-  useEffect(() => { setDrag(null); setAnimate(false); }, [card]);
+  useEffect(() => { setDrag(null); setAnimate(false); mode.current = "idle"; }, [card]);
 
-  const onDown = (e: React.PointerEvent) => { if (showTutorial) return; (e.target as Element).setPointerCapture?.(e.pointerId); start.current = { x: e.clientX, y: e.clientY }; setAnimate(false); };
-  const onMove = (e: React.PointerEvent) => { if (!start.current) return; setDrag({ x: e.clientX - start.current.x, y: e.clientY - start.current.y }); };
-  const onUp = () => {
+  const onDown = (e: React.PointerEvent) => { if (showTutorial) return; start.current = { x: e.clientX, y: e.clientY }; mode.current = "idle"; setAnimate(false); };
+  const onMove = (e: React.PointerEvent) => {
     if (!start.current) return;
+    const mx = e.clientX - start.current.x, my = e.clientY - start.current.y;
+    if (mode.current === "idle") {
+      if (Math.abs(mx) > START_PX && Math.abs(mx) > Math.abs(my) * 1.2) { mode.current = "swipe"; (e.currentTarget as Element).setPointerCapture?.(e.pointerId); }
+      else if (Math.abs(my) > START_PX) { mode.current = "scroll"; start.current = null; return; }
+      else return;
+    }
+    if (mode.current === "swipe") setDrag({ x: mx, y: 0 });
+  };
+  const onUp = () => {
+    if (!start.current) { mode.current = "idle"; return; }
     start.current = null;
-    if (intent) { onAction({ type: "escolher", opcao: intent }); }
+    if (mode.current === "swipe" && intent) onAction({ type: "escolher", opcao: intent });
+    mode.current = "idle";
     setAnimate(true); setDrag(null);
   };
-  const label = intent === "A" ? `${t("accept", lang)}: ◀` : intent === "B" ? `${t("accept", lang)}: ▶` : intent === "terceira" ? `▲ ${third?.requisito.split(":").slice(1).join(":").trim()}` : "";
+  const label = intent === "A" ? `${t("accept", lang)}: ◀` : intent === "B" ? `${t("accept", lang)}: ▶` : "";
   const rot = Math.max(-8, Math.min(8, dx / 25));
 
   return (
     <div className="stage">
       {showTutorial && (
         <div className="tut"><div>
-          <div className="arrows">◀ ▲ ▶</div>
+          <div className="arrows">◀ ▶</div>
           <p style={{ margin: 0 }}>{t("tutorial", lang)}</p>
           <button className="primary" onClick={onTutorialDone}>{t("gotIt", lang)}</button>
         </div></div>
       )}
-      <div ref={ref} className={`swipe ${animate ? "animate" : ""}`} style={{ transform: `translate(${dx}px, ${Math.min(0, dy)}px) rotate(${rot}deg)` }}
+      <div ref={ref} className={`swipe ${animate ? "animate" : ""}`} style={{ transform: `translate(${dx}px, 0) rotate(${rot}deg)` }}
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
         <div className="row" style={{ justifyContent: "space-between" }}>
           <span className="eyebrow">{lang === "en" ? "two offers" : "duas ofertas"}</span>
@@ -100,7 +111,7 @@ function ProjectCard({ state, card, lang, onAction, showTutorial, onTutorialDone
           <OfferBox o={A} lang={lang} hot={intent === "A" || (!intent && dx < -40) ? "left" : null} />
           <OfferBox o={B} lang={lang} hot={intent === "B" || (!intent && dx > 40) ? "right" : null} />
         </div>
-        {third && <div className={`third ${third.disponivel ? "on" : ""}`}>▲ {third.disponivel ? `${t("pullUp", lang)}: ${third.requisito}` : `${t("locked", lang)} ${third.requisito}`}</div>}
+        {third && <div className={`third ${third.disponivel ? "on" : ""}`}>▲ {third.disponivel ? third.requisito : `${t("locked", lang)} ${third.requisito}`}</div>}
         <div className="preview"><span className={intent ? "on" : ""}>{label}</span></div>
       </div>
       <div className="controls">

@@ -55,7 +55,7 @@ const S = {
   shareSeed: { pt: "Copiar seed (mesmas ofertas, novas escolhas)", en: "Copy seed (same offers, new choices)" },
   copied: { pt: "Copiado", en: "Copied" },
   playAgain: { pt: "Outra carreira", en: "Another career" },
-  tutorial: { pt: "Arraste para a esquerda ou para a direita para aceitar uma oferta. Puxe para cima para a opção extra, quando seu atributo permitir.", en: "Drag left or right to take an offer. Pull up for the extra option, when your attribute allows it." },
+  tutorial: { pt: "Role para ler as duas ofertas. Arraste o card para a esquerda ou para a direita para aceitar uma delas, ou use os botões. A opção extra (▲) aparece quando seu atributo permite.", en: "Scroll to read both offers. Drag the card left or right to take one, or use the buttons. The extra option (▲) appears when your attribute allows it." },
   gotIt: { pt: "Entendi", en: "Got it" },
   attribution: { pt: "Fan-made. Sátira. Não afiliado a nenhum estúdio, pessoa ou premiação. Dados: TMDB (não endossado nem certificado pelo TMDB).", en: "Fan-made. Satire. Not affiliated with any studio, person or award. Data: TMDB (not endorsed or certified by TMDB)." },
   help: { pt: "Linha de apoio: CVV 188 (Brasil) · 988 (EUA)", en: "If you need to talk: 988 (US) · CVV 188 (Brazil)" },

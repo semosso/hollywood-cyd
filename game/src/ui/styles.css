@@ -39,7 +39,7 @@ input, select { font: inherit; color: var(--fg); background: var(--card); border
 .origin .d { color: var(--muted); font-size: 15px; }
 .toggle { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; padding: 10px 0; border-top: 1px solid var(--line); }
 .toggle .d { color: var(--muted); font-size: 15px; }
-.stage { position: relative; min-height: 520px; touch-action: none; user-select: none; -webkit-user-select: none; }
+.stage { position: relative; min-height: 520px; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .swipe { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 22px; box-shadow: 0 10px 30px rgba(0,0,0,.08); will-change: transform; }
 .swipe.animate { transition: transform .22s ease; }
 .offers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
