@@ -108,6 +108,17 @@ export const METER_LABEL: Record<string, { pt: string; en: string }> = {
   heat: { pt: "Heat", en: "Heat" }, estabilidade: { pt: "Estabilidade", en: "Stability" }, vicio: { pt: "Vício", en: "Addiction" }, reputacao: { pt: "Reputação", en: "Reputation" },
 };
 
+/** O que cada medidor faz, em uma linha (legenda do HUD e da tela de status). */
+export const METER_HELP: Record<string, { pt: string; en: string }> = {
+  fama: { pt: "Quanto o público te conhece. Abre filmes maiores e cachês maiores; cai se você some.", en: "How well the public knows you. Unlocks bigger films and bigger fees; fades if you vanish." },
+  prestigio: { pt: "Respeito da crítica e da Academia. Pesa no Oscar e nas ofertas de autor; negativo fecha portas.", en: "Respect from critics and the Academy. Counts for the Oscar and auteur offers; negative closes doors." },
+  heat: { pt: "O quanto Hollywood fala de você agora. Sobe com escândalo e sucesso, esfria rápido.", en: "How much Hollywood is talking about you right now. Rises with scandal and success, cools fast." },
+  dinheiro: { pt: "Patrimônio. Cachês entram, vida e vícios saem.", en: "Net worth. Fees come in, lifestyle and vices go out." },
+  estabilidade: { pt: "Sua cabeça. Baixa, você chega ao set destruído(a) e atua pior.", en: "Your head. Low, you arrive on set in pieces and act worse." },
+  vicio: { pt: "Espiral. Alto demais, derruba a estabilidade e pode matar.", en: "The spiral. Too high, it drags stability down and can kill." },
+  reputacao: { pt: "Como a indústria te vê. Abaixo de zero, ninguém quer o seu problema.", en: "How the industry sees you. Below zero, nobody wants your trouble." },
+};
+
 /** Texto com `crases` vira <code class="attr"> (nomes de atributo nas explicações). */
 export function inline(text: string): ReactNode[] {
   return text.split("`").map((piece, i) => (i % 2 ? createElement("code", { className: "attr", key: i }, piece) : piece));

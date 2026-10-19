@@ -17,7 +17,7 @@ import { ResolutionView } from "./ResolutionView";
 import { About } from "./About";
 import { StatusView } from "./StatusView";
 import { track } from "./track";
-import { METER_LABEL } from "./format";
+import { METER_HELP, METER_LABEL } from "./format";
 
 function readLS(k: string): string | null { try { return localStorage.getItem(k); } catch { return null; } }
 function writeLS(k: string, v: string) { try { localStorage.setItem(k, v); } catch { /* ignore */ } }
@@ -63,22 +63,22 @@ export function App() {
       {scr !== "final" && (
         <div className="hud">
           <div><button type="button" className="name" onClick={() => setStatus(true)} title={t("status", lang)}>{state.nome}</button> <span className="muted">· {state.ano} · {state.idade} {t("age", lang)} · {lang === "en" ? "act" : "ato"} {["I", "II", "III"][Math.min(2, atoFor(state) - 1)]} · {Math.min(state.cardsJogados + 1, state.totalCards)}/{state.totalCards}</span></div>
-          <div className="mono">
-            <span title={METER_LABEL.fama[lang]}>★ {Math.round(m.fama)}</span>
-            <span title={METER_LABEL.prestigio[lang]}>♛ {Math.round(m.prestigio)}</span>
-            <span title={METER_LABEL.heat[lang]}>🔥 {m.heat}</span>
+          <button type="button" className="mono meters" onClick={() => setStatus(true)} title={t("status", lang)}>
+            <span title={METER_HELP.fama[lang]}>★ {Math.round(m.fama)}<small>{METER_LABEL.fama[lang]}</small></span>
+            <span title={METER_HELP.prestigio[lang]}>♛ {Math.round(m.prestigio)}<small>{METER_LABEL.prestigio[lang]}</small></span>
+            <span title={METER_HELP.heat[lang]}>🔥 {m.heat}<small>{METER_LABEL.heat[lang]}</small></span>
             {activeMods(state).map((mod) => (
               <span key={mod.id} style={{ color: mod.tipo === "boost" ? "var(--ok)" : "var(--warn)" }}>{mod.tipo === "boost" ? "★" : "▼"} {mod.atributo ? ATTR_HELP[mod.atributo].name[lang] : ""} {mod.delta > 0 ? "+" : ""}{mod.delta}</span>
             ))}
-          </div>
-          <div className="attrs" style={{ flexBasis: "100%" }}>
+          </button>
+          <button type="button" className="attrs" style={{ flexBasis: "100%" }} onClick={() => setStatus(true)} title={t("status", lang)}>
             {ATTRS.map((k) => {
               const eff = k === "beleza" ? belezaEfetiva(state) : effAttrs(state)[k];
               const base = state.atributos[k];
               const cls = eff > base ? "up" : eff < base ? "down" : "";
               return <span key={k} className={cls} title={ATTR_HELP[k].name[lang]}>{ATTR_HELP[k].name[lang].slice(0, 3)} {eff}</span>;
             })}
-          </div>
+          </button>
         </div>
       )}
       {scr === "resolucao" && <ResolutionView r={state.pendentes[0]} state={state} lang={lang} content={content} onContinue={() => act({ type: "continuar" })} />}

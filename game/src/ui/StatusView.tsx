@@ -4,7 +4,9 @@ import { filmById, type Content } from "../engine/run";
 import { belezaEfetiva } from "../engine/timeline";
 import type { Lang, MeterKey, State } from "../engine/types";
 import { ATTR_HELP, t } from "../i18n/strings";
-import { METER_LABEL, RESULT_SHORT, money } from "./format";
+import { METER_HELP, METER_LABEL, RESULT_SHORT, money } from "./format";
+
+const METER_ICON: Record<string, string> = { fama: "★", prestigio: "♛", heat: "🔥", dinheiro: "$" };
 
 const BARS: { k: MeterKey; lo: number; hi: number }[] = [
   { k: "fama", lo: 0, hi: 100 }, { k: "prestigio", lo: -20, hi: 100 }, { k: "heat", lo: 0, hi: 10 },
@@ -49,13 +51,14 @@ export function StatusView({ state, lang, content, onClose }: { state: State; la
             const pctv = Math.round((100 * (v - lo)) / (hi - lo));
             return (
               <div key={k} className="statrow">
-                <span>{METER_LABEL[k][lang]}</span>
+                <span>{METER_ICON[k] ? METER_ICON[k] + " " : ""}{METER_LABEL[k][lang]}</span>
                 <span className="bar"><i style={{ width: `${pctv}%` }} /></span>
                 <span className="mono">{Math.round(v)}</span>
+                {METER_HELP[k] && <span className="help">{METER_HELP[k][lang]}</span>}
               </div>
             );
           })}
-          <div className="statrow"><span>{METER_LABEL.dinheiro[lang]}</span><span /><span className="mono">{money(state.meters.dinheiro, lang)}</span></div>
+          <div className="statrow"><span>$ {METER_LABEL.dinheiro[lang]}</span><span /><span className="mono">{money(state.meters.dinheiro, lang)}</span><span className="help">{METER_HELP.dinheiro[lang]}</span></div>
         </div>
       </section>
 
