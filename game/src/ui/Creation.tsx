@@ -5,6 +5,16 @@ import { randomSeed } from "../engine/rng";
 import type { Attributes, CreationInput, Gender, Lang, OriginId } from "../engine/types";
 import { ATTR_HELP, ORIGIN_HELP, t } from "../i18n/strings";
 
+/** Distribuição padrão que fecha a conta de cada origem: 3,3,2,2,2 (12) e o ponto extra do Garçom em Contatos. */
+function defaultAttrs(origem: OriginId): Attributes {
+  const a: Attributes = { beleza: 3, talento: 3, contatos: 2, carisma: 2, juizo: 2 };
+  const o = originById(origem);
+  let extra = pointBudget(origem) - 12;
+  if (extra > 0) a.contatos += extra;
+  if (o.talentoMax && a.talento > o.talentoMax) { extra = a.talento - o.talentoMax; a.talento = o.talentoMax; a.juizo += extra; }
+  return a;
+}
+
 const NAMES_F = ["Dakota Vance", "Marisol Reyes", "June Calloway", "Priya Sandoval", "Nova Lindqvist", "Camila Duarte"];
 const NAMES_M = ["Rhett Calloway", "Theo Marchetti", "Dev Anand Price", "Lucas Ferreira", "Jalen Brooks", "Mateo Salinas"];
 
@@ -13,7 +23,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   const [nome, setNome] = useState((prefill?.genero ?? "f") === "f" ? NAMES_F[0] : NAMES_M[0]);
   const [ano, setAno] = useState(prefill?.anoEstreia ?? 1995);
   const [origem, setOrigem] = useState<OriginId>(prefill?.origem ?? "garcom");
-  const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? { beleza: 3, talento: 3, contatos: 2, carisma: 2, juizo: 2 });
+  const [attrs, setAttrs] = useState<Attributes>(prefill?.atributos ?? defaultAttrs(prefill?.origem ?? "garcom"));
   const [hollywoodRealista, setHollywoodRealista] = useState(prefill?.opcoes.hollywoodRealista ?? false);
   const [longa, setLonga] = useState(prefill?.opcoes.longa ?? false);
   const [seed, setSeed] = useState(initialSeed ?? randomSeed());
@@ -69,7 +79,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
         <div className="origins">
           {ORIGINS.filter((o) => !o.minAno || ano >= o.minAno).map((o) => (
             <label key={o.id} className="origin">
-              <input type="radio" name="origem" value={o.id} checked={origem === o.id} onChange={() => { setOrigem(o.id); if (o.talentoMax) setAttrs((a) => ({ ...a, talento: Math.min(a.talento, o.talentoMax!) })); }} />
+              <input type="radio" name="origem" value={o.id} checked={origem === o.id} onChange={() => { setOrigem(o.id); setAttrs(defaultAttrs(o.id)); }} />
               <span><b>{ORIGIN_HELP[o.id].name[lang]}</b><div className="d">{ORIGIN_HELP[o.id][lang]}</div></span>
             </label>
           ))}
