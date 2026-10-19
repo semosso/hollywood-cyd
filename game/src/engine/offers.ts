@@ -1,4 +1,4 @@
-import { HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN } from "./constants";
+import { HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN, TRAP_RATE } from "./constants";
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
@@ -132,7 +132,11 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   }
   if (!A) A = rng.weighted(candidates, (c) => weight(c, tier));
   if (A) candidates = candidates.filter((c) => c.film.tmdb_id !== A!.film.tmdb_id);
-  let B = rng.weighted(candidates, (c) => {
+  // Armadilha (RULES 4.3): em metade dos cards normais, a segunda oferta é um filme que deu errado,
+  // quando houver um no pool. Os ícones com ruído disfarçam; Juízo ≥ 3 vê a bandeira em bombas e sets problemáticos.
+  const wantTrap = modo === "normal" && rng.next() < TRAP_RATE;
+  let B = wantTrap ? rng.weighted(candidates.filter((c) => isTrap(c.film) && !(A && isTrap(A.film))), (c) => weight(c, tier) + 0.5) : undefined;
+  if (!B) B = rng.weighted(candidates, (c) => {
     let w = weight(c, Math.min(3, tier + 1));
     if (filmTier(c.film) > tier) w *= reachFactor(state);
     if (A) {
@@ -151,7 +155,10 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   if (!A && fb.length) A = { film: fb.shift()!, roleIndex: 0 };
   if (!B && fb.length) B = { film: fb.shift()!, roleIndex: 0 };
   if (!A || !B) return null;
-  const offers: [Offer, Offer] = [makeOffer(A.film, A.roleIndex, state, false, modo === "dourado"), makeOffer(B.film, B.roleIndex, state, filmTier(B.film) > tier, modo === "dourado" && isGolden(B.film))];
+  let pair: [typeof A, typeof B] = [A, B];
+  if (modo === "normal" && rng.next() < 0.5) pair = [B, A];
+  const [P, Q] = pair;
+  const offers: [Offer, Offer] = [makeOffer(P.film, P.roleIndex, state, filmTier(P.film) > tier, modo === "dourado" && isGolden(P.film)), makeOffer(Q.film, Q.roleIndex, state, filmTier(Q.film) > tier, modo === "dourado" && isGolden(Q.film))];
   const third = thirdOption(state, offers);
   const lang = state.opcoes.idioma;
   let hint: string | null = null;
@@ -168,6 +175,11 @@ function eligibleYear(f: Film, state: State): boolean {
   if (era && (state.ano < era[0] || state.ano > era[1])) return false;
   if (f.requer_beleza && belezaEfetiva(state) < f.requer_beleza) return false;
   return true;
+}
+
+/** Uma armadilha: filme que deu errado (flop/bomb) ou que só faz dinheiro sem crítica, sem chance real de prêmio. */
+export function isTrap(f: Film): boolean {
+  return ["flop", "bomb"].includes(f.derived.outcome) || (f.derived.outcome === "popcorn" && (f.rt ?? 100) < 50 && f.derived.p_prize < 0.2);
 }
 
 /** Beleza efetiva pesa nas ofertas acima do seu tamanho (reach): 0.5× com Beleza 0, 1.25× com Beleza 5. */

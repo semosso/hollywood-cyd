@@ -1,4 +1,4 @@
-import { BILLING_FACTOR, CACHE_BASE_2020, CHAOS, FILM_DELTAS, PERSONAL_DELTAS } from "./constants";
+import { BAD_FILM_PENALTY, BILLING_FACTOR, CACHE_BASE_2020, CHAOS, FILM_DELTAS, PERSONAL_DELTAS } from "./constants";
 import { tierFor } from "./offers";
 import { rngFor } from "./rng";
 import { effAttrs } from "./attrs";
@@ -20,7 +20,9 @@ export function toToday(usd: number, fromYear: number, cpi: Cpi): number {
 
 export function personalResult(film: Film, roleIndex: number, talentoEfetivo: number, state: State, roll: number, chaosRoll: number, chaosPick: number): PersonalResult {
   const r = film.roles[roleIndex];
-  const score = talentoEfetivo - r.demand + 0.3 * state.sorte + 0.1 * (state.meters.estabilidade - 5) + (2 * roll - 1);
+  // num filme que deu errado, a crítica procura culpados: penalidade no score pessoal
+  const penalty = BAD_FILM_PENALTY[film.derived.outcome] ?? 0;
+  const score = talentoEfetivo - r.demand + 0.3 * state.sorte + 0.1 * (state.meters.estabilidade - 5) + (2 * roll - 1) + penalty;
   let res: PersonalResult;
   if (r.oscar === "won" && score >= 0) res = "ganhou";
   else if ((r.oscar === "won" || r.oscar === "nominated") && score >= -0.5) res = "indicado";
