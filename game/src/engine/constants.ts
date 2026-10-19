@@ -1,6 +1,9 @@
 import type { AttrKey, MeterKey, Outcome, PersonalResult } from "./types";
 
-export const MAX_CARDS = 25;
+export const CARDS_PER_ATO = 5;
+export const YEARS_PER_ATO = 10;
+export const MAX_ATOS = 3;          // 15 decisões; a época de estreia pode reduzir (menos décadas até 2025)
+export const MIN_ATOS = 1;
 export const POINT_BUY_TOTAL = 12;
 export const ATTR_MIN = 1;
 export const ATTR_MAX = 5;
@@ -25,7 +28,6 @@ export const METER_LIMITS: Record<MeterKey, [number, number]> = {
   reputacao: [-5, 5],
 };
 
-export const YEARS_PER_CARD = [1, 1, 1, 2, 3]; // por ato (índice 0 = ato I)
 
 export const TIER_BUDGET_MAX = [15e6, 50e6, 120e6, Infinity];
 export const TIER_FAMA_MIN = [0, 20, 45, 70];

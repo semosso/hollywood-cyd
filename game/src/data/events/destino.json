@@ -3,9 +3,9 @@
   "id": "ventura_blvd",
   "tipo": "destino",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 5,
   "requer": {
@@ -61,8 +61,8 @@
   "id": "fita_cofre",
   "tipo": "destino",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 5,
   "requer": {
@@ -139,8 +139,8 @@
   "id": "universidade_remo",
   "tipo": "destino",
   "atos": [
-   3,
-   4
+   2,
+   3
   ],
   "peso": 4,
   "requer": {
@@ -213,8 +213,8 @@
   "id": "agenda_madame",
   "tipo": "destino",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 5,
   "requer": {
@@ -299,9 +299,9 @@
   "id": "fresno",
   "tipo": "destino",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 5,
   "requer": {
@@ -360,9 +360,8 @@
   "id": "star_whackers",
   "tipo": "destino",
   "atos": [
-   3,
-   4,
-   5
+   2,
+   3
   ],
   "peso": 4,
   "requer": {
@@ -420,9 +419,9 @@
   "id": "marca_a_ferro",
   "tipo": "destino",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 8,
   "requer": {

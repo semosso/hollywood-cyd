@@ -49,27 +49,22 @@
 
 ## 3. Linha do tempo
 
-### 3.1 Atos por idade
-| Ato | Idade | Anos por card |
-|---|---|---|
-| I | até 26 | 1 |
-| II | 27–32 | 1 |
-| III | 33–38 | 1 |
-| IV | 39–45 | 2 |
-| V | 46+ | 3 |
-
-Cada card avança `anosPorCard(ato)` anos e `idade` junto. A run tem no máximo **25 cards** (constante `MAX_CARDS`).
+### 3.1 Atos de dez anos, cinco decisões cada
+- Cada ato tem **10 anos** e **5 decisões**; cada card avança **2 anos** (e a idade junto).
+- O número de atos é ditado pela época de estreia: `clamp(floor((2026 − anoEstreia) / 10), 1, 3)`. Estreia até 1996 → 3 atos (15 decisões, 30 anos); 1997–2006 → 2 atos; 2007 em diante → 1 ato. Quando o jogo cobrir outras eras, a mesma conta vale para elas.
+- Nomes dos atos: I (chegada e ascensão), II (auge), III (virada e legado). Eventos declaram `atos` nessa escala de 1 a 3.
+- `totalCards = atos × 5` fica no estado e aparece no HUD ("7/15").
 
 ### 3.2 Fim da run
 A run termina quando acontecer o primeiro:
-1. `cardsJogados == MAX_CARDS` → card final.
+1. `cardsJogados == totalCards` → card final.
 2. Morte → card final imediato.
 3. Saída voluntária (evento `largar_tudo` aceito) → card final imediato.
 4. `ano > 2025` e nenhuma oferta de projeto disponível → card final "carreira até aqui".
 
 ### 3.3 Deck: que card vem agora
 Padrão por ato, repetido: `projeto, vida, projeto, X, projeto`, onde `X` é escolhido pelo estado, nesta ordem de prioridade:
-1. `contexto` se existe evento histórico para o `ano` atual ainda não mostrado (greve 1988/2007/2023, #MeToo 2017, pandemia 2020, IA 2023).
+1. `contexto` se existe evento histórico para o `ano` atual ainda não mostrado (greve 1988/2007/2023, #MeToo 2017, pandemia 2020, IA 2023). Anos anteriores à estreia já nascem marcados como vistos.
 2. `premiacao` se há filme no `pipeline` resolvido no último ano com `derived.p_prize ≥ 0.25` ou resultado pessoal `indicado`/`ganhou`.
 3. `destino` com probabilidade 0,08 por ato se ainda não houve um na run.
 4. `pessoa` ou `midia`, alternando.
@@ -292,7 +287,7 @@ Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` r
 ## 9. Interface (contrato com o React)
 
 - O motor é uma função pura: `step(state, action) → { state, efeitos, proximaTela }`. Nenhum `Math.random` fora de `rng.ts`.
-- Telas: `criacao` → (`resolucao`)? → `card` → … → `final`.
+- Telas: `criacao` → (`resolucao`)? → `card` → … → `final`. Em qualquer momento da run, tocar no nome no HUD abre **Status e histórico**: atributos efetivos (com base, bônus e guinadas), medidores com barras, filmes em produção, filmografia até aqui, rede de diretores e o histórico de todas as decisões com seus efeitos (`state.historico`).
 - Gestos no card: arrastar para a esquerda/direita aceita A/B. A direção é decidida nos primeiros 12 px: horizontal vira swipe, vertical vira rolagem nativa (`touch-action: pan-y`), porque o card é mais alto que a tela do celular e precisa rolar antes da decisão. A terceira opção é um botão (▲); o gesto "puxar para cima" foi removido por conflitar com a rolagem. **Preview durante o arrasto**: o lado de destino ganha destaque e um rótulo ("Aceitar: ◀") antes de soltar. Soltar antes de 40% da largura cancela.
 - Tutorial: no primeiro card da primeira run do dispositivo, overlay com as três setas e os rótulos; some no primeiro gesto.
 - Idioma: seletor na criação e no rodapé; persistido em `localStorage`.

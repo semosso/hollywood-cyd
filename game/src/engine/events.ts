@@ -38,7 +38,7 @@ export function meets(req: Requirements | undefined, state: State): boolean {
 const REPEAT_AFTER = 5;
 
 export function pickEvent(events: GameEvent[], tipo: GameEvent["tipo"], state: State): GameEvent | null {
-  const ato = atoFor(state.idade);
+  const ato = atoFor(state);
   const basic = (e: GameEvent) => e.tipo === tipo && (!e.atos || e.atos.includes(ato)) && (!e.anos || e.anos.includes(state.ano)) && meets(e.requer, state);
   const fresh = events.filter((e) => basic(e) && (!state.eventosVistos.includes(e.id) || e.unico === false));
   const rng = rngFor(state.seed, "event", tipo, state.cardsJogados);
@@ -81,6 +81,7 @@ export function applyEffects(state: State, ef: Effects): void {
   if (ef.demissao && state.pipeline.length) {
     const fired = state.pipeline.pop()!;
     state.flags.push(`demitido:${fired.tmdb_id}`);
+    state.historico.push({ card: state.cardsJogados, ano: state.ano, idade: state.idade, tipo: "demissao", titulo: { pt: "Demitido(a) do filme que ia começar", en: "Fired from the film about to start" }, deltas: { fama: -3, heat: 2, reputacao: -1 } });
     state.meters.fama -= 3;
     state.meters.heat += 2;
     state.meters.reputacao -= 1;

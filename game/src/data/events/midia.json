@@ -3,8 +3,7 @@
   "id": "entrevista_sobrenome",
   "tipo": "midia",
   "atos": [
-   1,
-   2
+   1
   ],
   "peso": 10,
   "requer": {
@@ -62,8 +61,7 @@
   "tipo": "midia",
   "atos": [
    1,
-   2,
-   3
+   2
   ],
   "peso": 6,
   "requer": {
@@ -112,9 +110,9 @@
   "id": "audio_vazado",
   "tipo": "midia",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 4,
   "requer": {
@@ -175,8 +173,8 @@
   "id": "saco_de_papel",
   "tipo": "midia",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 2,
   "requer": {
@@ -226,9 +224,9 @@
   "id": "foto_prisao",
   "tipo": "midia",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 7,
   "requer": {
@@ -289,8 +287,8 @@
   "id": "telefone_hotel",
   "tipo": "midia",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 5,
   "requer": {
@@ -350,9 +348,9 @@
   "id": "sabe_quem_eu_sou",
   "tipo": "midia",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 5,
   "requer": {
@@ -408,9 +406,8 @@
   "id": "tabloide_corpo",
   "tipo": "midia",
   "atos": [
-   3,
-   4,
-   5
+   2,
+   3
   ],
   "peso": 7,
   "unico": false,

@@ -55,7 +55,7 @@ describe("ofertas", () => {
     const p = pool(content.films, s);
     expect(p.length).toBeGreaterThan(0);
     for (const c of p) {
-      expect(c.film.year).toBe(1996);
+      expect([1996, 1997]).toContain(c.film.year); // janela de 2 anos por decisão
       expect(c.film.roles[c.roleIndex].gender === "f" || c.film.roles[c.roleIndex].gender == null).toBe(true);
     }
     s.usados.push(p[0].film.tmdb_id);
@@ -114,6 +114,7 @@ describe("run", () => {
     expect(a.fim).toBeTruthy();
     expect(a.endingId).toBeTruthy();
     expect(a.filmografia.length).toBeGreaterThan(3);
+    expect(a.cardsJogados).toBeLessThanOrEqual(15);
     expect(JSON.stringify(a.meters)).toBe(JSON.stringify(b.meters));
     expect(a.escolhas).toEqual(b.escolhas);
   });
@@ -125,10 +126,21 @@ describe("run", () => {
     expect(r.filmografia.map((f) => f.tmdb_id)).toEqual(a.filmografia.map((f) => f.tmdb_id));
     expect(r.endingId).toBe(a.endingId);
   });
-  it("uma run de 1995 passa por décadas e usa contexto histórico", () => {
+  it("uma run de 1995 tem 3 atos, passa por décadas e usa contexto histórico", () => {
     const a = autoplay(base, firstOption);
+    expect(createState(base).totalCards).toBe(15);
     expect(a.ano).toBeGreaterThan(2010);
-    expect(a.contextosVistos.length).toBeGreaterThan(0);
+    expect(a.contextosVistos).toContain(2007);
+    expect(a.contextosVistos).toContain(1988); // anterior à estreia: marcado como visto, nunca mostrado
+    expect(a.historico.length).toBeGreaterThan(10);
+  });
+  it("a época de estreia dita o número de atos", async () => {
+    const { numAtosFor } = await import("../timeline");
+    expect(numAtosFor(1975)).toBe(3);
+    expect(numAtosFor(1996)).toBe(3);
+    expect(numAtosFor(2000)).toBe(2);
+    expect(numAtosFor(2010)).toBe(1);
+    expect(numAtosFor(2020)).toBe(1);
   });
 });
 

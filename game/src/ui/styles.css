@@ -87,5 +87,13 @@ input, select { font: inherit; color: var(--fg); background: var(--card); border
 .tut { position: absolute; inset: 0; background: color-mix(in srgb, var(--bg) 88%, transparent); display: grid; place-items: center; text-align: center; padding: 24px; border-radius: 12px; z-index: 2; }
 .tut div { max-width: 36ch; display: grid; gap: 14px; }
 .tut .arrows { font-size: 34px; letter-spacing: 16px; }
+.hud .name { background: none; border: none; padding: 0; font: inherit; font-weight: 700; color: var(--accent); text-decoration: underline dotted; cursor: pointer; }
+.statgrid { display: grid; gap: 6px; margin-top: 6px; }
+.statrow { display: grid; grid-template-columns: 110px 1fr auto; gap: 10px; align-items: center; font-size: 15px; }
+.statrow .bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.statrow .bar i { display: block; height: 100%; background: var(--accent); }
+.statrow .up { color: var(--ok); } .statrow .down { color: var(--warn); }
+.hist { display: grid; gap: 10px; margin-top: 6px; }
+.histrow { display: grid; grid-template-columns: 3.2em 1fr; gap: 10px; font-size: 15px; }
 .footer { color: var(--muted); font-size: 13px; margin-top: 28px; border-top: 1px solid var(--line); padding-top: 12px; }
 @media (prefers-reduced-motion: reduce) { .swipe.animate, .offer, .preview span { transition: none; } }

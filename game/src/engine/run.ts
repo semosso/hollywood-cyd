@@ -1,4 +1,4 @@
-import { CHAOS, MAX_CARDS, DATA_YEAR_MAX } from "./constants";
+import { CHAOS, DATA_YEAR_MAX } from "./constants";
 import { applyDecay, checkDeath, clampMeters } from "./decay";
 import { chooseEnding } from "./endings";
 import { availableOptions, contextEvent, pickEvent, resolveEvent } from "./events";
@@ -8,7 +8,7 @@ import { rngFor } from "./rng";
 import { effAttrs } from "./attrs";
 import { maybeGuinada } from "./guinada";
 import { atoFor, yearsPerCard } from "./timeline";
-import type { Action, Card, Ending, Film, GameEvent, Screen, State } from "./types";
+import type { Action, Card, Ending, Film, GameEvent, HistoryEntry, Screen, State } from "./types";
 void CHAOS;
 
 export type Content = { films: Film[]; fallbacks: Film[]; events: GameEvent[]; endings: Ending[]; cpi: Cpi };
@@ -53,7 +53,7 @@ function nextCard(state: State, content: Content): Card | null {
       if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
     }
   }
-  if (!state.destinoVisto && rngFor(state.seed, "destino", atoFor(state.idade)).next() < 0.08) {
+  if (!state.destinoVisto && rngFor(state.seed, "destino", atoFor(state)).next() < 0.08) {
     const ev = pickEvent(content.events, "destino", state);
     if (ev) return { kind: "evento", event: ev, showProbabilities: effAttrs(state).juizo >= 3 };
   }
@@ -78,7 +78,9 @@ function advance(state: State, content: Content): void {
     const film = filmById(content, p.tmdb_id);
     if (!film) continue;
     const recusado = p.recusado ? filmById(content, p.recusado) ?? null : null;
-    state.pendentes.push(resolveRelease(state, p, film, recusado, content.cpi));
+    const r = resolveRelease(state, p, film, recusado, content.cpi);
+    state.pendentes.push(r);
+    if (r.kind === "estreia") state.historico.push({ card: state.cardsJogados, ano: state.ano, idade: state.idade, tipo: "estreia", titulo: { pt: `${film.title.pt ?? film.title.en} (${film.year || state.ano})`, en: `${film.title.en ?? film.title.pt} (${film.year || state.ano})` }, detalhe: { pt: r.resultado.replace(/_/g, " "), en: r.resultado.replace(/_/g, " ") }, deltas: r.deltas });
   }
   // revisão histórica
   for (const fe of state.filmografia) {
@@ -87,6 +89,7 @@ function advance(state: State, content: Content): void {
       state.revisoesFeitas.push(f.tmdb_id);
       state.meters.prestigio += f.revision.prestige_delta;
       state.pendentes.push({ kind: "revisao", film: f, delta: f.revision.prestige_delta });
+      state.historico.push({ card: state.cardsJogados, ano: state.ano, idade: state.idade, tipo: "revisao", titulo: { pt: `Revisão histórica: ${f.title.pt ?? f.title.en}`, en: `Historical revision: ${f.title.en ?? f.title.pt}` }, deltas: { prestigio: f.revision.prestige_delta } });
     }
   }
   state.modificadores = state.modificadores.filter((m) => m.ateCard >= state.cardsJogados);
@@ -100,7 +103,7 @@ function advance(state: State, content: Content): void {
     state.card = null;
     return;
   }
-  if (state.cardsJogados >= MAX_CARDS) {
+  if (state.cardsJogados >= state.totalCards) {
     state.fim = { tipo: "cards" };
     state.card = null;
     return;
@@ -146,6 +149,8 @@ export function step(state: State, action: Action, content: Content): State {
       else { refuse(A); refuse(B); s.meters.fama -= 3; s.meters.prestigio += 1; }
     }
     s.escolhas.push(`p:${action.opcao}`);
+    const chosen = action.opcao === "A" ? A : action.opcao === "B" ? B : null;
+    s.historico.push({ card: s.cardsJogados, ano: s.ano, idade: s.idade, tipo: "projeto", titulo: chosen ? { pt: `Aceitou a oferta ${action.opcao}`, en: `Took offer ${action.opcao}` } : { pt: s.card.third?.id === "ambos" ? "Aceitou as duas ofertas" : "Recusou as duas ofertas", en: s.card.third?.id === "ambos" ? "Took both offers" : "Turned both down" }, detalhe: chosen ? { pt: chosen.visible.blind, en: chosen.visible.blind } : undefined });
     advance(s, content);
     return s;
   }
@@ -158,6 +163,10 @@ export function step(state: State, action: Action, content: Content): State {
     const g = maybeGuinada(s, ev);
     if (g) { s.modificadores.push(g); s.pendentes.unshift({ kind: "guinada", mod: g }); }
     if (r.texto || Object.keys(r.efeitos).length || ev.baseado_em?.length) s.pendentes.unshift(r);
+    const dEf: Record<string, number> = {};
+    for (const [k, v] of Object.entries(r.efeitos)) if (typeof v === "number") dEf[k] = v;
+    s.historico.push({ card: s.cardsJogados, ano: s.ano, idade: s.idade, tipo: "evento", titulo: { pt: ev.texto.pt.slice(0, 90) + (ev.texto.pt.length > 90 ? "…" : ""), en: (ev.texto.en ?? ev.texto.pt).slice(0, 90) + "…" }, detalhe: { pt: `${opt.rotulo.pt}${r.texto ? ". " + r.texto.pt : ""}`, en: `${opt.rotulo.en ?? opt.rotulo.pt}${r.texto ? ". " + (r.texto.en ?? r.texto.pt) : ""}` }, deltas: dEf } as HistoryEntry);
+    if (g) s.historico.push({ card: s.cardsJogados, ano: s.ano, idade: s.idade, tipo: "guinada", titulo: { pt: g.tipo === "boost" ? "Guinada para cima" : "Maré baixa", en: g.tipo === "boost" ? "Swing up" : "Low tide" }, detalhe: g.texto });
     advance(s, content);
     return s;
   }

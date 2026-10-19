@@ -207,6 +207,7 @@ export type State = {
   anoEstreia: number;
   idade: number;
   cardsJogados: number;
+  totalCards: number;
   meters: Meters;
   flags: string[];
   rede: NetworkEntry[];
@@ -226,6 +227,17 @@ export type State = {
   fim: { tipo: "cards" | "morte" | "saida" | "ate_aqui"; causa?: DeathCause } | null;
   endingId: string | null;
   escolhas: string[];
+  historico: HistoryEntry[];
+};
+
+export type HistoryEntry = {
+  card: number;
+  ano: number;
+  idade: number;
+  tipo: "projeto" | "estreia" | "evento" | "guinada" | "revisao" | "demissao";
+  titulo: I18n;
+  detalhe?: I18n;
+  deltas?: Partial<Record<MeterKey, number>>;
 };
 
 export type Action =

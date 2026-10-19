@@ -4,8 +4,7 @@
   "tipo": "vida",
   "atos": [
    1,
-   2,
-   3
+   2
   ],
   "peso": 8,
   "requer": {
@@ -150,8 +149,8 @@
   "id": "loja_beverly_hills",
   "tipo": "vida",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 4,
   "requer": {
@@ -221,8 +220,7 @@
   "id": "vegas_55_horas",
   "tipo": "vida",
   "atos": [
-   1,
-   2
+   1
   ],
   "peso": 5,
   "requer": {
@@ -294,9 +292,9 @@
   "id": "filhos",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 5,
   "requer": {
@@ -342,8 +340,8 @@
   "id": "guru_fiscal",
   "tipo": "vida",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 4,
   "requer": {
@@ -426,8 +424,8 @@
   "id": "cirurgia",
   "tipo": "vida",
   "atos": [
-   3,
-   4
+   2,
+   3
   ],
   "peso": 6,
   "requer": {
@@ -471,8 +469,8 @@
   "id": "largar_tudo",
   "tipo": "vida",
   "atos": [
-   3,
-   4
+   2,
+   3
   ],
   "peso": 3,
   "requer": {
@@ -512,9 +510,9 @@
   "id": "intervencao",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 10,
   "requer": {
@@ -579,8 +577,7 @@
   "tipo": "vida",
   "atos": [
    1,
-   2,
-   3
+   2
   ],
   "peso": 9,
   "unico": false,
@@ -674,8 +671,8 @@
   "id": "cama_do_vizinho",
   "tipo": "vida",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 8,
   "unico": false,
@@ -757,8 +754,7 @@
   "tipo": "vida",
   "atos": [
    1,
-   2,
-   3
+   2
   ],
   "peso": 6,
   "requer": {
@@ -818,9 +814,9 @@
   "id": "tiger_blood",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 7,
   "requer": {
@@ -878,9 +874,9 @@
   "id": "dui_malibu",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 6,
   "requer": {
@@ -940,9 +936,9 @@
   "id": "cranio_dinossauro",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 6,
   "requer": {
@@ -996,8 +992,8 @@
   "id": "cidade_georgia",
   "tipo": "vida",
   "atos": [
-   2,
-   3
+   1,
+   2
   ],
   "peso": 4,
   "requer": {
@@ -1053,8 +1049,7 @@
   "atos": [
    1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 10,
   "unico": false,
@@ -1130,10 +1125,9 @@
   "id": "recaida",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4,
-   5
+   3
   ],
   "peso": 8,
   "unico": false,
@@ -1205,9 +1199,9 @@
   "id": "ex_vingativo",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 6,
   "requer": {
@@ -1303,9 +1297,9 @@
   "id": "paparazzi_tunel",
   "tipo": "vida",
   "atos": [
+   1,
    2,
-   3,
-   4
+   3
   ],
   "peso": 5,
   "requer": {

@@ -1,4 +1,5 @@
-import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN } from "./constants";
+import { ATTRS, ATTR_CAP, ATTR_MAX, ATTR_MIN, CARDS_PER_ATO, CONTEXT_YEARS, POINT_BUY_TOTAL, YEAR_MAX_DEBUT, YEAR_MIN } from "./constants";
+import { numAtosFor } from "./timeline";
 import { rngFor } from "./rng";
 import type { Attributes, CreationInput, Meters, OriginId, State } from "./types";
 
@@ -72,6 +73,7 @@ export function createState(input: CreationInput): State {
     anoEstreia: input.anoEstreia,
     idade: o.idade,
     cardsJogados: 0,
+    totalCards: numAtosFor(input.anoEstreia) * CARDS_PER_ATO,
     meters,
     flags: [...(o.flags ?? [])],
     rede: [],
@@ -80,7 +82,7 @@ export function createState(input: CreationInput): State {
     usados: [],
     eventosVistos: [],
     vistosEm: {},
-    contextosVistos: [],
+    contextosVistos: CONTEXT_YEARS.filter((y) => y < input.anoEstreia), // o que aconteceu antes da estreia não é notícia
     revisoesFeitas: [],
     destinoVisto: false,
     ultimaEstreiaEm: -99,
@@ -91,5 +93,6 @@ export function createState(input: CreationInput): State {
     fim: null,
     endingId: null,
     escolhas: [],
+    historico: [],
   };
 }

@@ -1,34 +1,227 @@
 [
- {"id":"greve_1988","tipo":"contexto","anos":[1988],"peso":10,
-  "texto":{"pt":"1988. Os roteiristas entram em greve por 22 semanas. Nada é escrito. Nada é filmado. Seu agente sugere 'aproveitar para viajar'.","en":"1988. The writers strike for 22 weeks. Nothing is written. Nothing is shot. Your agent suggests 'taking a trip'."},
-  "opcoes":[
-   {"id":"piquete","rotulo":{"pt":"Ir ao piquete","en":"Join the picket"},"efeitos":{"reputacao":1,"prestigio":2,"dinheiro":-100000}},
-   {"id":"viajar","rotulo":{"pt":"Viajar","en":"Take the trip"},"efeitos":{"estabilidade":1,"dinheiro":-150000}}
-  ]},
- {"id":"greve_2007","tipo":"contexto","anos":[2007,2008],"peso":10,
-  "texto":{"pt":"Novembro de 2007. Greve dos roteiristas. Talk shows param, séries encurtam, seu projeto some. Cem dias.","en":"November 2007. Writers' strike. Talk shows stop, series shrink, your project vanishes. A hundred days."},
-  "opcoes":[
-   {"id":"piquete","rotulo":{"pt":"Piquete com café para os roteiristas","en":"Picket with coffee for the writers"},"efeitos":{"reputacao":1,"prestigio":2}},
-   {"id":"reality","rotulo":{"pt":"Aceitar um reality enquanto isso","en":"Take a reality show meanwhile"},"efeitos":{"fama":5,"prestigio":-6,"dinheiro":500000}}
-  ]},
- {"id":"metoo_2017","tipo":"contexto","anos":[2017,2018],"peso":10,
-  "texto":{"pt":"Outubro de 2017. A reportagem sobre o produtor sai. Jornalistas ligam para todo mundo que trabalhou com ele. Para você também.","en":"October 2017. The story about the producer breaks. Journalists call everyone who ever worked with him. You too."},
-  "opcoes":[
-   {"id":"falar","rotulo":{"pt":"Contar o que você sabia","en":"Tell what you knew"},"efeitos":{"prestigio":6,"heat":4,"estabilidade":-1}},
-   {"id":"nota","rotulo":{"pt":"Nota do assessor: 'chocada(o)'","en":"Publicist's note: 'shocked'"},"efeitos":{"heat":1,"prestigio":-2}},
-   {"id":"silencio","rotulo":{"pt":"Silêncio","en":"Silence"},"requer":{"flags":["cafe"]},"efeitos":{"estabilidade":-2,"prestigio":-4}}
-  ]},
- {"id":"pandemia_2020","tipo":"contexto","anos":[2020,2021],"peso":10,
-  "texto":{"pt":"Março de 2020. Os sets fecham. Seu filme vai direto para o streaming. Uma atriz famosa organiza um vídeo de celebridades cantando 'Imagine' em suas mansões.","en":"March 2020. Sets close. Your film goes straight to streaming. A famous actress organizes a video of celebrities singing 'Imagine' from their mansions."},
-  "opcoes":[
-   {"id":"imagine","rotulo":{"pt":"Participar do vídeo","en":"Join the video"},"efeitos":{"heat":2,"prestigio":-5,"fama":1,"flag_add":["imagine"]}},
-   {"id":"sumir","rotulo":{"pt":"Sumir por um ano","en":"Disappear for a year"},"efeitos":{"estabilidade":2,"fama":-5}},
-   {"id":"podcast","rotulo":{"pt":"Começar um podcast","en":"Start a podcast"},"efeitos":{"fama":3,"heat":1,"flag_add":["podcast"]}}
-  ]},
- {"id":"ia_2023","tipo":"contexto","anos":[2023,2024],"peso":10,
-  "texto":{"pt":"2023. Greve dupla. O estúdio quer escanear seu rosto 'para figuração digital, para sempre, por um dia de cachê'.","en":"2023. Double strike. The studio wants to scan your face 'for digital background work, forever, for one day's pay'."},
-  "opcoes":[
-   {"id":"recusar","rotulo":{"pt":"Recusar e ir ao piquete","en":"Refuse and picket"},"efeitos":{"reputacao":1,"prestigio":3,"dinheiro":-200000}},
-   {"id":"vender","rotulo":{"pt":"Vender o rosto","en":"Sell your face"},"efeitos":{"dinheiro":2000000,"prestigio":-8,"flag_add":["rosto_vendido"]}}
-  ]}
+ {
+  "id": "greve_1988",
+  "tipo": "contexto",
+  "anos": [
+   1988
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "1988. Os roteiristas entram em greve por 22 semanas. Nada é escrito. Nada é filmado. Seu agente sugere 'aproveitar para viajar'.",
+   "en": "1988. The writers strike for 22 weeks. Nothing is written. Nothing is shot. Your agent suggests 'taking a trip'."
+  },
+  "opcoes": [
+   {
+    "id": "piquete",
+    "rotulo": {
+     "pt": "Ir ao piquete",
+     "en": "Join the picket"
+    },
+    "efeitos": {
+     "reputacao": 1,
+     "prestigio": 2,
+     "dinheiro": -100000
+    }
+   },
+   {
+    "id": "viajar",
+    "rotulo": {
+     "pt": "Viajar",
+     "en": "Take the trip"
+    },
+    "efeitos": {
+     "estabilidade": 1,
+     "dinheiro": -150000
+    }
+   }
+  ]
+ },
+ {
+  "id": "greve_2007",
+  "tipo": "contexto",
+  "anos": [
+   2007,
+   2008
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Novembro de 2007. Greve dos roteiristas. Talk shows param, séries encurtam, seu projeto some. Cem dias.",
+   "en": "November 2007. Writers' strike. Talk shows stop, series shrink, your project vanishes. A hundred days."
+  },
+  "opcoes": [
+   {
+    "id": "piquete",
+    "rotulo": {
+     "pt": "Piquete com café para os roteiristas",
+     "en": "Picket with coffee for the writers"
+    },
+    "efeitos": {
+     "reputacao": 1,
+     "prestigio": 2
+    }
+   },
+   {
+    "id": "reality",
+    "rotulo": {
+     "pt": "Aceitar um reality enquanto isso",
+     "en": "Take a reality show meanwhile"
+    },
+    "efeitos": {
+     "fama": 5,
+     "prestigio": -6,
+     "dinheiro": 500000
+    }
+   }
+  ]
+ },
+ {
+  "id": "metoo_2017",
+  "tipo": "contexto",
+  "anos": [
+   2017,
+   2018
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Outubro de 2017. A reportagem sobre o produtor sai. Jornalistas ligam para todo mundo que trabalhou com ele. Para você também.",
+   "en": "October 2017. The story about the producer breaks. Journalists call everyone who ever worked with him. You too."
+  },
+  "opcoes": [
+   {
+    "id": "falar",
+    "rotulo": {
+     "pt": "Contar o que você sabia",
+     "en": "Tell what you knew"
+    },
+    "efeitos": {
+     "prestigio": 6,
+     "heat": 4,
+     "estabilidade": -1
+    }
+   },
+   {
+    "id": "nota",
+    "rotulo": {
+     "pt": "Nota do assessor: 'chocada(o)'",
+     "en": "Publicist's note: 'shocked'"
+    },
+    "efeitos": {
+     "heat": 1,
+     "prestigio": -2
+    }
+   },
+   {
+    "id": "silencio",
+    "rotulo": {
+     "pt": "Silêncio",
+     "en": "Silence"
+    },
+    "requer": {
+     "flags": [
+      "cafe"
+     ]
+    },
+    "efeitos": {
+     "estabilidade": -2,
+     "prestigio": -4
+    }
+   }
+  ]
+ },
+ {
+  "id": "pandemia_2020",
+  "tipo": "contexto",
+  "anos": [
+   2020,
+   2021
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Março de 2020. Os sets fecham. Seu filme vai direto para o streaming. Uma atriz famosa organiza um vídeo de celebridades cantando 'Imagine' em suas mansões.",
+   "en": "March 2020. Sets close. Your film goes straight to streaming. A famous actress organizes a video of celebrities singing 'Imagine' from their mansions."
+  },
+  "opcoes": [
+   {
+    "id": "imagine",
+    "rotulo": {
+     "pt": "Participar do vídeo",
+     "en": "Join the video"
+    },
+    "efeitos": {
+     "heat": 2,
+     "prestigio": -5,
+     "fama": 1,
+     "flag_add": [
+      "imagine"
+     ]
+    }
+   },
+   {
+    "id": "sumir",
+    "rotulo": {
+     "pt": "Sumir por um ano",
+     "en": "Disappear for a year"
+    },
+    "efeitos": {
+     "estabilidade": 2,
+     "fama": -5
+    }
+   },
+   {
+    "id": "podcast",
+    "rotulo": {
+     "pt": "Começar um podcast",
+     "en": "Start a podcast"
+    },
+    "efeitos": {
+     "fama": 3,
+     "heat": 1,
+     "flag_add": [
+      "podcast"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "ia_2023",
+  "tipo": "contexto",
+  "anos": [
+   2023,
+   2024
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "2023. Greve dupla. O estúdio quer escanear seu rosto 'para figuração digital, para sempre, por um dia de cachê'.",
+   "en": "2023. Double strike. The studio wants to scan your face 'for digital background work, forever, for one day's pay'."
+  },
+  "opcoes": [
+   {
+    "id": "recusar",
+    "rotulo": {
+     "pt": "Recusar e ir ao piquete",
+     "en": "Refuse and picket"
+    },
+    "efeitos": {
+     "reputacao": 1,
+     "prestigio": 3,
+     "dinheiro": -200000
+    }
+   },
+   {
+    "id": "vender",
+    "rotulo": {
+     "pt": "Vender o rosto",
+     "en": "Sell your face"
+    },
+    "efeitos": {
+     "dinheiro": 2000000,
+     "prestigio": -8,
+     "flag_add": [
+      "rosto_vendido"
+     ]
+    }
+   }
+  ]
+ }
 ]

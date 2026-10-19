@@ -15,6 +15,7 @@ import { Creation } from "./Creation";
 import { FinalView } from "./FinalView";
 import { ResolutionView } from "./ResolutionView";
 import { About } from "./About";
+import { StatusView } from "./StatusView";
 import { track } from "./track";
 import { METER_LABEL } from "./format";
 
@@ -28,6 +29,7 @@ export function App() {
   const [state, setState] = useState<State | null>(null);
   const [tutorial, setTutorial] = useState(readLS("tutorial") !== "done");
   const [about, setAbout] = useState(false);
+  const [status, setStatus] = useState(false);
   const seedParam = params.get("seed");
   const choicesParam = params.get("c");
 
@@ -52,6 +54,7 @@ export function App() {
   });
 
   if (about) return <div className="wrap"><About lang={lang} onClose={() => setAbout(false)} /></div>;
+  if (status && state) return <div className="wrap"><StatusView state={state} lang={lang} content={content} onClose={() => setStatus(false)} /></div>;
   if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;
   const scr = screen(state);
   const m = state.meters;
@@ -59,7 +62,7 @@ export function App() {
     <div className="wrap">
       {scr !== "final" && (
         <div className="hud">
-          <div><b>{state.nome}</b> <span className="muted">· {state.ano} · {state.idade} {t("age", lang)} · {lang === "en" ? "act" : "ato"} {["I", "II", "III", "IV", "V"][atoFor(state.idade) - 1]} · {state.cardsJogados + 1}/25</span></div>
+          <div><button type="button" className="name" onClick={() => setStatus(true)} title={t("status", lang)}>{state.nome}</button> <span className="muted">· {state.ano} · {state.idade} {t("age", lang)} · {lang === "en" ? "act" : "ato"} {["I", "II", "III"][Math.min(2, atoFor(state) - 1)]} · {Math.min(state.cardsJogados + 1, state.totalCards)}/{state.totalCards}</span></div>
           <div className="mono">
             <span title={METER_LABEL.fama[lang]}>★ {Math.round(m.fama)}</span>
             <span title={METER_LABEL.prestigio[lang]}>♛ {Math.round(m.prestigio)}</span>

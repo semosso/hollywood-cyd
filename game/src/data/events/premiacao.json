@@ -1,25 +1,187 @@
 [
- {"id":"temporada_campanha","tipo":"premiacao","atos":[2,3,4,5],"peso":10,"unico":false,
-  "texto":{"pt":"Temporada de prêmios. Seu filme está na conversa. Seu agente quer gastar US$ 400 mil em anúncios 'para sua consideração' e jantares com votantes.","en":"Awards season. Your film is in the conversation. Your agent wants to spend $400,000 on 'for your consideration' ads and dinners with voters."},
-  "opcoes":[
-   {"id":"campanha","rotulo":{"pt":"Fazer campanha","en":"Campaign"},"resultados":[
-     {"p":0.45,"efeitos":{"dinheiro":-400000,"prestigio":6,"fama":6,"heat":3,"flag_add":["campanha_oscar"]},"texto":{"pt":"Funciona. Você aparece em todos os painéis, todos os podcasts, todos os jantares. Você é indicado(a).","en":"It works. You're on every panel, every podcast, every dinner. You're nominated."}},
-     {"p":0.55,"efeitos":{"dinheiro":-400000,"heat":2,"prestigio":1},"texto":{"pt":"Não funciona. Você jantou com 200 votantes e perdeu para alguém que não jantou com ninguém.","en":"It doesn't work. You dined with 200 voters and lost to someone who dined with nobody."}}
-   ]},
-   {"id":"dignidade","rotulo":{"pt":"Ficar acima disso","en":"Stay above it"},"resultados":[
-     {"p":0.2,"efeitos":{"prestigio":8,"fama":4,"flag_add":["campanha_oscar"]},"texto":{"pt":"Você é indicado(a) sem jantar com ninguém. Isso vai irritar muita gente.","en":"You're nominated without dining with anyone. That will annoy a lot of people."}},
-     {"p":0.8,"efeitos":{"prestigio":2},"texto":{"pt":"Você fica acima disso. Em casa. Vendo a cerimônia.","en":"You stay above it. At home. Watching the ceremony."}}
-   ]}
-  ]},
- {"id":"discurso","tipo":"premiacao","atos":[2,3,4,5],"peso":8,"requer":{"flags":["oscar_won"]},
-  "texto":{"pt":"Você ganhou. Está no palco. A orquestra começa em 45 segundos. O que você faz com eles?","en":"You won. You're on stage. The orchestra starts in 45 seconds. What do you do with them?"},
-  "opcoes":[
-   {"id":"familia","rotulo":{"pt":"Agradecer a família e sair","en":"Thank your family and leave"},"efeitos":{"prestigio":2}},
-   {"id":"politico","rotulo":{"pt":"Discurso político","en":"Political speech"},"resultados":[
-     {"p":0.5,"efeitos":{"prestigio":5,"heat":4,"fama":3},"texto":{"pt":"Vira manchete. Metade do país te ama.","en":"It makes headlines. Half the country loves you."}},
-     {"p":0.5,"efeitos":{"prestigio":-3,"heat":5,"fama":5,"flag_add":["polemico"]},"texto":{"pt":"Vira manchete. A outra metade.","en":"It makes headlines. The other half."}}
-   ]},
-   {"id":"chorar","rotulo":{"pt":"Chorar por 11 minutos","en":"Cry for 11 minutes"},"efeitos":{"fama":8,"prestigio":-4,"heat":5,"flag_add":["meme_discurso"]}},
-   {"id":"esquecer","rotulo":{"pt":"Esquecer o cônjuge","en":"Forget your spouse"},"requer":{"flags":["amor_da_vida"]},"efeitos":{"estabilidade":-3,"heat":3}}
-  ]}
+ {
+  "id": "temporada_campanha",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 10,
+  "unico": false,
+  "texto": {
+   "pt": "Temporada de prêmios. Seu filme está na conversa. Seu agente quer gastar US$ 400 mil em anúncios 'para sua consideração' e jantares com votantes.",
+   "en": "Awards season. Your film is in the conversation. Your agent wants to spend $400,000 on 'for your consideration' ads and dinners with voters."
+  },
+  "opcoes": [
+   {
+    "id": "campanha",
+    "rotulo": {
+     "pt": "Fazer campanha",
+     "en": "Campaign"
+    },
+    "resultados": [
+     {
+      "p": 0.45,
+      "efeitos": {
+       "dinheiro": -400000,
+       "prestigio": 6,
+       "fama": 6,
+       "heat": 3,
+       "flag_add": [
+        "campanha_oscar"
+       ]
+      },
+      "texto": {
+       "pt": "Funciona. Você aparece em todos os painéis, todos os podcasts, todos os jantares. Você é indicado(a).",
+       "en": "It works. You're on every panel, every podcast, every dinner. You're nominated."
+      }
+     },
+     {
+      "p": 0.55,
+      "efeitos": {
+       "dinheiro": -400000,
+       "heat": 2,
+       "prestigio": 1
+      },
+      "texto": {
+       "pt": "Não funciona. Você jantou com 200 votantes e perdeu para alguém que não jantou com ninguém.",
+       "en": "It doesn't work. You dined with 200 voters and lost to someone who dined with nobody."
+      }
+     }
+    ]
+   },
+   {
+    "id": "dignidade",
+    "rotulo": {
+     "pt": "Ficar acima disso",
+     "en": "Stay above it"
+    },
+    "resultados": [
+     {
+      "p": 0.2,
+      "efeitos": {
+       "prestigio": 8,
+       "fama": 4,
+       "flag_add": [
+        "campanha_oscar"
+       ]
+      },
+      "texto": {
+       "pt": "Você é indicado(a) sem jantar com ninguém. Isso vai irritar muita gente.",
+       "en": "You're nominated without dining with anyone. That will annoy a lot of people."
+      }
+     },
+     {
+      "p": 0.8,
+      "efeitos": {
+       "prestigio": 2
+      },
+      "texto": {
+       "pt": "Você fica acima disso. Em casa. Vendo a cerimônia.",
+       "en": "You stay above it. At home. Watching the ceremony."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "discurso",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 8,
+  "requer": {
+   "flags": [
+    "oscar_won"
+   ]
+  },
+  "texto": {
+   "pt": "Você ganhou. Está no palco. A orquestra começa em 45 segundos. O que você faz com eles?",
+   "en": "You won. You're on stage. The orchestra starts in 45 seconds. What do you do with them?"
+  },
+  "opcoes": [
+   {
+    "id": "familia",
+    "rotulo": {
+     "pt": "Agradecer a família e sair",
+     "en": "Thank your family and leave"
+    },
+    "efeitos": {
+     "prestigio": 2
+    }
+   },
+   {
+    "id": "politico",
+    "rotulo": {
+     "pt": "Discurso político",
+     "en": "Political speech"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 5,
+       "heat": 4,
+       "fama": 3
+      },
+      "texto": {
+       "pt": "Vira manchete. Metade do país te ama.",
+       "en": "It makes headlines. Half the country loves you."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": -3,
+       "heat": 5,
+       "fama": 5,
+       "flag_add": [
+        "polemico"
+       ]
+      },
+      "texto": {
+       "pt": "Vira manchete. A outra metade.",
+       "en": "It makes headlines. The other half."
+      }
+     }
+    ]
+   },
+   {
+    "id": "chorar",
+    "rotulo": {
+     "pt": "Chorar por 11 minutos",
+     "en": "Cry for 11 minutes"
+    },
+    "efeitos": {
+     "fama": 8,
+     "prestigio": -4,
+     "heat": 5,
+     "flag_add": [
+      "meme_discurso"
+     ]
+    }
+   },
+   {
+    "id": "esquecer",
+    "rotulo": {
+     "pt": "Esquecer o cônjuge",
+     "en": "Forget your spouse"
+    },
+    "requer": {
+     "flags": [
+      "amor_da_vida"
+     ]
+    },
+    "efeitos": {
+     "estabilidade": -3,
+     "heat": 3
+    }
+   }
+  ]
+ }
 ]
