@@ -146,6 +146,24 @@ describe("share", () => {
 });
 
 
+describe("armadilhas", () => {
+  it("cerca de metade dos cards traz um filme que deu errado quando o pool tem um", async () => {
+    const { buildProjectCard, isTrap } = await import("../offers");
+    let traps = 0, cards = 0;
+    for (let i = 0; i < 200; i++) {
+      const s = createState({ ...base, seed: `trap-${i}`, anoEstreia: 1990 + (i % 25) });
+      s.cardsJogados = i % 7;
+      const card = buildProjectCard(content.films, content.fallbacks, s);
+      if (!card) continue;
+      const poolHasTrap = content.films.some((f) => f.year === s.ano + 1 && isTrap(f) && !f.fallback);
+      if (!poolHasTrap) continue;
+      cards++; if (card.offers.some((o) => isTrap(o.film))) traps++;
+    }
+    expect(cards).toBeGreaterThan(20);
+    expect(traps / cards).toBeGreaterThan(0.35);
+  });
+});
+
 describe("beleza", () => {
   it("multiplica a fama ganha por filme e abre fallbacks de comercial e campanha", async () => {
     const { resolveRelease } = await import("../resolve");

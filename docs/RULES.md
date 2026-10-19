@@ -99,7 +99,10 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 ### 4.3 Montagem das ofertas (determinística pela seed)
 1. Oferta **A**: filme do tier do jogador.
 2. Oferta **B**: filme do tier+1 (reach) se existir; senão do mesmo tier com `derived.outcome` diferente de A.
-3. Preferências ao sortear (aplicadas como pesos, não filtros): gêneros diferentes entre A e B; diretores diferentes; se possível, uma com `p_prize ≥ 0.3` e outra com `p_box ≥ 0.5`.
+3. **Armadilha garantida**: em **50%** dos cards normais (`TRAP_RATE`), uma das duas ofertas é um filme que deu
+   errado (`flop`/`bomb`, ou `popcorn` com crítica < 50 e sem chance de prêmio), quando houver um no pool. A
+   posição (A ou B) é sorteada. Os ícones com ruído disfarçam; Juízo ≥ 3 vê a 🚩 só em bombas e sets problemáticos.
+   Fora isso, preferências como pesos: gêneros diferentes, diretores diferentes, classificações diferentes.
 4. Se o jogador tem `rede` com o diretor de um candidato, ele ganha peso ×3 (o diretor "te quer de novo").
    Candidatos de tier acima do jogador (reach) têm peso × `(0.5 + 0.15 × beleza_efetiva)`: Beleza abre portas acima do seu tamanho.
 5. Se flag `contrato_franquia` e existe sequência (`flags` do filme contém `franquia` e mesmo `franchise_id`), ela entra como A obrigatória.
@@ -170,7 +173,8 @@ Entradas: filme `f`, papel `r`, atributos efetivos, medidores, sorte, PRNG.
 t  = talento_efetivo (talento + bônus permanentes − 1 se "fazer os dois")
 d  = r.demand (1–5)
 roll = U(0,1)
-score = (t − d) + 0.3*sorte + 0.1*(estabilidade − 5) + (2*roll − 1)
+score = (t − d) + 0.3*sorte + 0.1*(estabilidade − 5) + (2*roll − 1) + penalidade_do_filme
+penalidade_do_filme: bomb −1.0 · flop −0.6 · popcorn −0.2 · demais 0   (num filme ruim, a crítica procura culpados)
 
 resultado_pessoal:
   se r.oscar == "won"        e score ≥ 0     → "ganhou"
