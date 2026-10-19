@@ -58,11 +58,13 @@ jobs:
       - name: Testes do pipeline
         working-directory: pipeline
         run: pytest -q
+      - name: Copiar para o jogo
+        run: cp data/films.json game/src/data/films.json
       - name: Commit dos dados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/films.json data/people.json pipeline/curation/films.resolved.csv || true
+          git add data/films.json data/people.json game/src/data/films.json pipeline/curation/films.resolved.csv || true
           if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
           git commit -m "data: atualiza films.json e people.json via pipeline"
           git push

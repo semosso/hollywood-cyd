@@ -43,6 +43,7 @@ export function pool(films: Film[], state: State): { film: Film; roleIndex: numb
   const out: { film: Film; roleIndex: number }[] = [];
   for (const f of films) {
     if (f.fallback) continue;
+    if (!f.blind?.hard && !f.blind?.medium) continue; // sem descrição às cegas não entra no jogo
     if (f.year < state.ano + 1 || f.year > state.ano + step) continue;
     if (state.usados.includes(f.tmdb_id)) continue;
     const ri = eligibleRole(f, state);
