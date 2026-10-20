@@ -47,7 +47,7 @@ def character_words(m: dict) -> set[str]:
             if len(w) >= 3 and w not in GENERIC_CHARS and not w.isdigit():
                 out.add(w)
     return out
-BUDGET_PT = ["Orçamento de um sofá.", "Orçamento modesto.", "Orçamento de estúdio.", "Orçamento de blockbuster."]
+BUDGET_PT = ["Uma merreca de orçamento.", "Orçamento modesto.", "Orçamento de estúdio.", "Orçamento de blockbuster."]
 BUDGET_EN = ["Couch-cushion budget.", "Modest budget.", "Studio budget.", "Blockbuster budget."]
 
 
