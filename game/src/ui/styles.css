@@ -25,6 +25,9 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 input, select { font: inherit; color: var(--fg); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
 .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .stack { display: grid; gap: 14px; }
+.topbar { margin-bottom: 10px; }
+.topbar .home { background: none; border: none; padding: 0; cursor: pointer; font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--muted); letter-spacing: .01em; }
+.topbar .home:hover { color: var(--accent); }
 .hud { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-block: 8px 10px; margin-bottom: 18px; }
 .hud .mono span { margin-right: 12px; }
 .hud button.meters, .hud button.attrs { background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer; text-align: left; }

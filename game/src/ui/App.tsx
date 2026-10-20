@@ -59,13 +59,21 @@ export function App() {
     return n;
   });
 
-  if (about) return <div className="wrap"><About lang={lang} onClose={() => setAbout(false)} /></div>;
-  if (status && state) return <div className="wrap"><StatusView state={state} lang={lang} content={content} onClose={() => setStatus(false)} /></div>;
+  const goHome = () => {
+    if (state && !state.endingId && !window.confirm(t("leaveRun", lang))) return;
+    setAbout(false); setStatus(false); setState(null);
+    try { history.replaceState(null, "", location.pathname); window.scrollTo(0, 0); } catch { /* ignore */ }
+  };
+  const topbar = <div className="topbar"><button type="button" className="home" onClick={goHome} title={t("home", lang)}>🎬 {t("title", lang)}</button></div>;
+
+  if (about) return <div className="wrap">{topbar}<About lang={lang} onClose={() => setAbout(false)} /></div>;
+  if (status && state) return <div className="wrap">{topbar}<StatusView state={state} lang={lang} content={content} onClose={() => setStatus(false)} /></div>;
   if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;
   const scr = screen(state);
   const m = state.meters;
   return (
     <div className="wrap">
+      {topbar}
       {scr !== "final" && (
         <div className="hud">
           <div><button type="button" className="name" onClick={() => setStatus(true)} title={t("status", lang)}>{state.nome}</button> <span className="muted">· {state.ano} · {state.idade} {t("age", lang)} · {lang === "en" ? "act" : "ato"} {["I", "II", "III"][Math.min(2, atoFor(state) - 1)]} · {Math.min(state.cardsJogados + 1, state.totalCards)}/{state.totalCards}</span></div>

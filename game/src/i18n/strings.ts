@@ -2,6 +2,8 @@ import type { Lang } from "../engine/types";
 
 const S = {
   title: { pt: "Agradeço à Academia", en: "I'd Like to Thank the Academy" },
+  home: { pt: "Início", en: "Home" },
+  leaveRun: { pt: "Sair da carreira atual? Ela fica salva no endereço desta página: copie a URL antes se quiser voltar.", en: "Leave the current career? It stays saved in this page's address: copy the URL first if you want to come back." },
   tagline: { pt: "Decida no escuro. Reconheça depois.", en: "Decide in the dark. Recognize afterwards." },
   start: { pt: "Começar a carreira", en: "Start the career" },
   name: { pt: "Nome artístico", en: "Stage name" },
