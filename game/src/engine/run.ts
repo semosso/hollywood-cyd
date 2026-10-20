@@ -173,7 +173,11 @@ export function step(state: State, action: Action, content: Content): State {
   return s;
 }
 
-/** Reproduz uma run a partir da seed e das escolhas (link de compartilhamento). */
+/**
+ * Reproduz uma run a partir da seed e das escolhas. Serve ao link de compartilhamento e ao reload:
+ * uma carreira terminada vai direto ao card final; uma carreira em andamento para onde o jogador estava
+ * (a resolução da última escolha, ainda não dispensada, ou o próximo card).
+ */
 export function replay(initial: State, choices: string[], content: Content): State {
   let s = startRun(initial, content);
   for (const c of choices) {
@@ -182,7 +186,9 @@ export function replay(initial: State, choices: string[], content: Content): Sta
     const [k, v] = c.split(":");
     s = k === "p" ? step(s, { type: "escolher", opcao: v as "A" | "B" | "terceira" }, content) : step(s, { type: "evento", optionId: v }, content);
   }
-  while (screen(s) === "resolucao") s = step(s, { type: "continuar" }, content);
-  if (s.fim && !s.endingId) s = step(s, { type: "continuar" }, content);
+  if (s.fim) {
+    while (screen(s) === "resolucao") s = step(s, { type: "continuar" }, content);
+    if (!s.endingId) s = step(s, { type: "continuar" }, content);
+  }
   return s;
 }

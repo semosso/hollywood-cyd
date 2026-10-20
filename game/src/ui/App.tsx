@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { content } from "../engine/content";
 import { createState } from "../engine/creation";
 import { replay, screen, startRun, step } from "../engine/run";
-import { creationFromParams, decodeChoices } from "../engine/share";
+import { creationFromParams, decodeChoices, shareUrl } from "../engine/share";
 import type { Action, CreationInput, Lang, State } from "../engine/types";
 import { atoFor } from "../engine/timeline";
 import { activeMods, effAttrs } from "../engine/attrs";
@@ -34,7 +34,7 @@ export function App() {
   const choicesParam = params.get("c");
 
   useEffect(() => {
-    // link completo: reproduz a vida e vai direto para o card final
+    // link completo: reproduz a vida (carreira terminada vai ao card final; em andamento, volta ao card atual)
     if (seedParam && choicesParam) {
       try {
         const input = creationFromParams(params, lang);
@@ -43,6 +43,12 @@ export function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // o endereço acompanha a carreira: dar reload volta ao card atual, e copiar a URL compartilha o estado atual
+  useEffect(() => {
+    if (!state) return;
+    try { history.replaceState(null, "", shareUrl(location.href, state, true)); } catch { /* ignore */ }
+  }, [state]);
 
   const onStart = (input: CreationInput) => { track("run/start", `start ${input.anoEstreia} ${input.genero} ${input.origem}`); setState(startRun(createState(input), content)); };
   const act = (a: Action) => setState((s) => {

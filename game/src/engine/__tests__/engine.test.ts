@@ -127,6 +127,18 @@ describe("run", () => {
     expect(r.filmografia.map((f) => f.tmdb_id)).toEqual(a.filmografia.map((f) => f.tmdb_id));
     expect(r.endingId).toBe(a.endingId);
   });
+  it("replay de uma carreira em andamento para onde o jogador estava, não no final", () => {
+    let s = startRun(createState(base), content);
+    for (let i = 0; i < 4; i++) {
+      while (screen(s) === "resolucao") s = step(s, { type: "continuar" }, content);
+      s = s.card!.kind === "projeto" ? step(s, { type: "escolher", opcao: "A" }, content) : step(s, { type: "evento", optionId: firstOption(s) }, content);
+    }
+    const r = replay(createState(base), decodeChoices(encodeChoices(s.escolhas)), content);
+    expect(r.endingId).toBeNull();
+    expect(r.cardsJogados).toBe(s.cardsJogados);
+    expect(r.escolhas).toEqual(s.escolhas);
+    expect(["card", "resolucao"]).toContain(screen(r));
+  });
   it("uma run de 1995 tem 15 decisões, passa por décadas e usa contexto histórico", () => {
     const a = autoplay(base, firstOption);
     expect(createState(base).totalCards).toBe(15);

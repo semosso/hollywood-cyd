@@ -297,7 +297,7 @@ MVP: 20 finais (lista no BRAINSTORM, seção 9). Finais secretos têm `requer` r
 
 Campos: nome, gênero, origem, atributos iniciais + **Sorte revelada**, anos (estreia → fim), idade, final (título + manchete + texto), **filmografia** (ano · título · "no papel de" · resultado pessoal), **3 "recusei X para fazer Y"** com maior `|Δ(p_prize + p_box)|`, prêmios, patrimônio final (dólares de hoje), causa do fim (se morte), conquistas (v2), raridade do final, **seed**, e rodapé de atribuição ao TMDB + "fan-made, sátira, não afiliado". Pôsteres do TMDB entram no card (decisão do questionário), com o logo do TMDB no rodapé.
 
-Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` reproduz a run inteira; `?seed=<seed>` sozinho abre uma run nova com as mesmas ofertas ("jogue a mesma vida").
+Link de compartilhamento: `?seed=<seed>&c=<escolhas codificadas em base64url>` reproduz a run inteira; `?seed=<seed>` sozinho abre uma run nova com as mesmas ofertas ("jogue a mesma vida"). O endereço da página é atualizado a cada decisão (`history.replaceState`) com esses mesmos parâmetros: dar reload reproduz a carreira até o card atual; uma carreira terminada vai direto ao card final.
 
 ## 9. Interface (contrato com o React)
 
