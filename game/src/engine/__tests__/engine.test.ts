@@ -306,3 +306,47 @@ describe("guinadas", () => {
     expect(hits / n).toBeLessThan(0.12);
   });
 });
+
+describe("contexto e explicações", () => {
+  it("evento de contexto que já terminou antes da estreia não aparece (greve de 2007 com estreia em 2010)", async () => {
+    const { contextEvent } = await import("../events");
+    const s = createState({ ...base, anoEstreia: 2010 });
+    for (const ano of [2010, 2015, 2020]) {
+      s.ano = ano;
+      const e = contextEvent(content.events, s);
+      expect(e?.id).not.toBe("greve_2007");
+    }
+    const s2 = createState({ ...base, anoEstreia: 2005 });
+    s2.ano = 2007;
+    expect(contextEvent(content.events, s2)?.id).toBe("greve_2007");
+  });
+  it("whyLine explica o -1 de Talento por fazer dois filmes", async () => {
+    const { whyLine } = await import("../resolve");
+    const f = { talento: 2, talentoMod: 0, ambos: true, demand: 3, sorte: 2, estabilidade: 6, penalidade: 0, belezaFator: 1, prestigioBonus: 0, bisPenalty: 0, caos: false };
+    expect(whyLine({ resultado: "fez_o_trabalho", fatores: f }, "pt")).toContain("dois filmes");
+  });
+});
+
+describe("repetição de eventos", () => {
+  it("evento repetível não volta antes do cooldown, e o bangalô 3 é único", async () => {
+    const { pickEvent } = await import("../events");
+    const ev = { id: "r", tipo: "vida", unico: false, peso: 1, texto: { pt: "" }, opcoes: [] } as unknown as import("../types").GameEvent;
+    const s = createState(base);
+    s.eventosVistos = ["r"];
+    s.cardsJogados = 10;
+    s.vistosEm = { r: 8 };
+    expect(pickEvent([ev], "vida", s)).toBeNull(); // visto há 2 cards: nem fresco (cooldown) nem velho (REPEAT_AFTER)
+    s.vistosEm = { r: 1 };
+    expect(pickEvent([ev], "vida", s)?.id).toBe("r");
+    expect(content.events.find((e) => e.id === "balada_bangalo_3")!.unico).not.toBe(false);
+  });
+  it("todo evento tem texto bilíngue e opções com resultados que somam probabilidade", () => {
+    for (const e of content.events) {
+      expect(e.texto.pt && e.texto.en, e.id).toBeTruthy();
+      for (const o of e.opcoes) {
+        expect(o.rotulo.pt && o.rotulo.en, `${e.id}/${o.id}`).toBeTruthy();
+        for (const r of o.resultados ?? []) expect(r.texto?.pt && r.texto?.en, `${e.id}/${o.id}`).toBeTruthy();
+      }
+    }
+  });
+});

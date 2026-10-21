@@ -300,5 +300,1038 @@
         "efeitos": {}
       }
     ]
+  },
+  {
+    "id": "roteiro_sem_voce",
+    "tipo": "pessoa",
+    "atos": [
+      1
+    ],
+    "peso": 8,
+    "texto": {
+      "pt": "Um estúdio oferece US$ 350 mil pelo seu roteiro, com a condição de escalar um astro famoso no papel principal. Você tem US$ 106 na conta.",
+      "en": "A studio offers $350,000 for your screenplay, on condition that a famous star plays the lead. You have $106 in your bank account."
+    },
+    "baseado_em": [
+      {
+        "quem": "Sylvester Stallone",
+        "ano": 1975,
+        "o_que": "Recusou mais de US$ 300 mil por Rocky se não pudesse estrelar; vendeu por muito menos e virou o Rocky",
+        "link": "https://en.wikipedia.org/wiki/Sylvester_Stallone",
+        "o_que_en": "Turned down more than $300,000 for Rocky unless he could star; sold for much less and became Rocky"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "vender",
+        "rotulo": {
+          "pt": "Vender o roteiro",
+          "en": "Sell the script"
+        },
+        "efeitos": {
+          "dinheiro": 350000,
+          "prestigio": -3,
+          "estabilidade": 1
+        }
+      },
+      {
+        "id": "insistir",
+        "rotulo": {
+          "pt": "Insistir em estrelar",
+          "en": "Insist on starring"
+        },
+        "resultados": [
+          {
+            "p": 0.45,
+            "efeitos": {
+              "prestigio": 8,
+              "fama": 10,
+              "dinheiro": 25000
+            },
+            "texto": {
+              "pt": "Você corre por uma escadaria de museu na tela, e a cidade corre atrás de você.",
+              "en": "You run up a museum staircase on screen, and the city runs after you."
+            }
+          },
+          {
+            "p": 0.55,
+            "efeitos": {
+              "estabilidade": -2,
+              "dinheiro": -2000
+            },
+            "texto": {
+              "pt": "Ninguém compra. Você volta a dormir no carro, com o roteiro no banco de trás.",
+              "en": "Nobody buys. You go back to sleeping in the car, the script on the back seat."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teste_algodao",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "prestigio": ">=10"
+    },
+    "texto": {
+      "pt": "O estúdio não te quer para o papel. O diretor pede um vídeo de teste, em casa: 'o que você tiver'.",
+      "en": "The studio doesn't want you for the part. The director asks for a screen test at home: 'whatever you've got'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Marlon Brando",
+        "ano": 1971,
+        "o_que": "Fez o teste de O Poderoso Chefão com algodão nas bochechas e graxa de sapato no cabelo",
+        "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
+        "o_que_en": "Did The Godfather screen test with cotton in his cheeks and shoe polish in his hair"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "maquiar",
+        "rotulo": {
+          "pt": "Maquiar-se sozinho(a)",
+          "en": "Do your own makeup"
+        },
+        "requer": {
+          "talento": ">=3"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "prestigio": 6,
+              "fama": 4
+            },
+            "texto": {
+              "pt": "O executivo passa a fita três vezes. Na quarta, assina.",
+              "en": "The executive plays the tape three times. On the fourth, he signs."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "prestigio": -1,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Você parece uma pessoa assustada que tentou imitar outra. Ninguém liga de volta.",
+              "en": "You look like a frightened person trying to imitate another. Nobody calls back."
+            }
+          }
+        ]
+      },
+      {
+        "id": "fotos",
+        "rotulo": {
+          "pt": "Mandar fotos e currículo",
+          "en": "Send photos and a résumé"
+        },
+        "efeitos": {
+          "prestigio": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "colega_sem_roteiro",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Seu colega de cena, uma lenda, chega ao set com quarenta quilos a mais, sem ter lido o roteiro nem o livro. O diretor decide 'fotografar só a metade dele'.",
+      "en": "Your scene partner, a legend, arrives on set forty kilos heavier, having read neither the script nor the book. The director decides to 'shoot only half of him'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Marlon Brando",
+        "ano": 1976,
+        "o_que": "Chegou acima do peso e sem ter lido o roteiro em Apocalypse Now, e Coppola improvisou o personagem",
+        "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
+        "o_que_en": "Arrived overweight and unprepared on Apocalypse Now, and Coppola improvised the character"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "improvisar",
+        "rotulo": {
+          "pt": "Improvisar com ele",
+          "en": "Improvise with him"
+        },
+        "requer": {
+          "carisma": ">=3"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 5,
+              "fama": 3
+            },
+            "texto": {
+              "pt": "A cena vira uma das mais citadas do filme. Você nunca saberá quanto é seu.",
+              "en": "The scene becomes one of the film's most quoted. You'll never know how much is yours."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "estabilidade": -1,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Dois dias de take para uma cena que ninguém entende. Mas ele te elogia.",
+              "en": "Two days of takes for a scene nobody understands. But he compliments you."
+            }
+          }
+        ]
+      },
+      {
+        "id": "reclamar",
+        "rotulo": {
+          "pt": "Reclamar com a produção",
+          "en": "Complain to production"
+        },
+        "efeitos": {
+          "reputacao": -1,
+          "heat": 1
+        }
+      },
+      {
+        "id": "descansar",
+        "rotulo": {
+          "pt": "Aproveitar o descanso",
+          "en": "Enjoy the downtime"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "maquina_de_refrigerante",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "A estrela veterana com quem você contracena odeia a outra estrela veterana. Ela instala uma máquina de refrigerante no set 'só para irritar'. Você é pego(a) no meio.",
+      "en": "The veteran star you share scenes with hates the other veteran star. She installs a soda machine on set 'just to annoy her'. You're caught in the middle."
+    },
+    "baseado_em": [
+      {
+        "quem": "Bette Davis",
+        "ano": 1962,
+        "o_que": "Teria instalado uma máquina de Coca-Cola no set de Baby Jane porque Joan Crawford era viúva de um executivo da Pepsi",
+        "link": "https://en.wikipedia.org/wiki/Bette_Davis",
+        "o_que_en": "Reportedly installed a Coca-Cola machine on the Baby Jane set because Joan Crawford was the widow of a Pepsi executive"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "lado",
+        "rotulo": {
+          "pt": "Tomar partido",
+          "en": "Pick a side"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "contatos_evento": 1,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "A veterana te adota. Você ganha uma mentora, e uma inimiga.",
+              "en": "The veteran adopts you. You gain a mentor, and an enemy."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 2,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "Você acaba na coluna de fofocas como 'o terceiro lado do triângulo'.",
+              "en": "You end up in the gossip column as 'the third side of the triangle'."
+            }
+          }
+        ]
+      },
+      {
+        "id": "neutro",
+        "rotulo": {
+          "pt": "Ficar neutro(a)",
+          "en": "Stay neutral"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      },
+      {
+        "id": "fofoca",
+        "rotulo": {
+          "pt": "Vender a história para a imprensa",
+          "en": "Sell the story to the press"
+        },
+        "efeitos": {
+          "fama": 3,
+          "heat": 2,
+          "reputacao": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "executivos_preocupados",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "Os executivos assistem às suas primeiras cenas e perguntam: 'Ele está bêbado? É de propósito?' Seu personagem tem um jeito de andar e falar que ninguém aprovou.",
+      "en": "The executives watch your first scenes and ask: 'Is he drunk? Is that on purpose?' Your character has a way of walking and talking nobody approved."
+    },
+    "baseado_em": [
+      {
+        "quem": "Johnny Depp",
+        "ano": 2003,
+        "o_que": "A Disney estranhou a atuação de Depp como Jack Sparrow; o filme foi sucesso e rendeu indicação ao Oscar",
+        "link": "https://en.wikipedia.org/wiki/Johnny_Depp",
+        "o_que_en": "Disney was uneasy about Depp's performance as Jack Sparrow; the film was a hit and earned him an Oscar nomination"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "manter",
+        "rotulo": {
+          "pt": "Manter o personagem",
+          "en": "Keep the character"
+        },
+        "resultados": [
+          {
+            "p": 0.55,
+            "efeitos": {
+              "prestigio": 6,
+              "fama": 8
+            },
+            "texto": {
+              "pt": "O personagem vira marca registrada e você vira o motivo de ir ao cinema.",
+              "en": "The character becomes a trademark and you become the reason to go to the movies."
+            }
+          },
+          {
+            "p": 0.45,
+            "efeitos": {
+              "fama": -3,
+              "heat": 2,
+              "prestigio": -2
+            },
+            "texto": {
+              "pt": "Os testes de plateia não entendem nada, e você ganha um novo preparador de dicção.",
+              "en": "Test audiences understand nothing, and you gain a new dialect coach."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ajustar",
+        "rotulo": {
+          "pt": "Ajustar um pouco",
+          "en": "Tone it down"
+        },
+        "efeitos": {
+          "estabilidade": -1,
+          "fama": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cheque_do_futuro",
+    "tipo": "pessoa",
+    "atos": [
+      1
+    ],
+    "peso": 6,
+    "texto": {
+      "pt": "Sem dinheiro, no alto de uma colina, você escreve um cheque de US$ 10 milhões para si mesmo 'por serviços de atuação', com data para dali a cinco anos.",
+      "en": "Broke, on top of a hill, you write yourself a $10 million check 'for acting services', dated five years from now."
+    },
+    "baseado_em": [
+      {
+        "quem": "Jim Carrey",
+        "ano": 1987,
+        "o_que": "Escreveu um cheque de US$ 10 milhões para si mesmo e o guardou na carteira até conseguir esse valor",
+        "link": "https://en.wikipedia.org/wiki/Jim_Carrey",
+        "o_que_en": "Wrote himself a $10 million check and kept it in his wallet until he earned that amount"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "carteira",
+        "rotulo": {
+          "pt": "Guardar na carteira",
+          "en": "Keep it in your wallet"
+        },
+        "resultados": [
+          {
+            "p": 0.35,
+            "efeitos": {
+              "estabilidade": 2,
+              "fama": 3
+            },
+            "texto": {
+              "pt": "Você leva o cheque a cada teste. Quando ele vence, você é outra pessoa.",
+              "en": "You carry the check to every audition. When it expires, you are someone else."
+            }
+          },
+          {
+            "p": 0.65,
+            "efeitos": {
+              "estabilidade": 2
+            },
+            "texto": {
+              "pt": "O cheque amarela. Você também, mas por outros motivos.",
+              "en": "The check yellows. So do you, for other reasons."
+            }
+          }
+        ]
+      },
+      {
+        "id": "testes",
+        "rotulo": {
+          "pt": "Gastar a energia em testes",
+          "en": "Spend the energy on auditions"
+        },
+        "efeitos": {
+          "fama": 1,
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "linha_0800",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "flags": [
+        "agente"
+      ]
+    },
+    "texto": {
+      "pt": "Seu agente manda uma carta de despedida de oito páginas. Você decide receber ofertas só por uma linha 0800 com caixa postal. Talvez você nunca ouça os recados.",
+      "en": "Your agent sends an eight-page farewell letter. You decide to take offers only through a toll-free line with voicemail. You might never hear the messages."
+    },
+    "baseado_em": [
+      {
+        "quem": "Bill Murray",
+        "ano": 1990,
+        "o_que": "Notoriamente não tem agente; recebe propostas por uma linha 0800 e as ouve quando quer",
+        "link": "https://en.wikipedia.org/wiki/Bill_Murray",
+        "o_que_en": "Famously has no agent; takes offers on a toll-free number and listens when he feels like it"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "sem_agente",
+        "rotulo": {
+          "pt": "Ficar sem agente",
+          "en": "Go without an agent"
+        },
+        "resultados": [
+          {
+            "p": 0.4,
+            "efeitos": {
+              "prestigio": 5,
+              "fama": 3
+            },
+            "texto": {
+              "pt": "Um roteiro estranho e bonito chega à caixa postal sem filtro. Você aceita.",
+              "en": "A strange, beautiful script arrives in voicemail, unfiltered. You say yes."
+            }
+          },
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": -3,
+              "flag_remove": [
+                "agente"
+              ]
+            },
+            "texto": {
+              "pt": "Um mês de recados de telemarketing. A única proposta de trabalho é de um shopping.",
+              "en": "A month of telemarketing messages. The only work offer is from a mall."
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter",
+        "rotulo": {
+          "pt": "Manter o agente",
+          "en": "Keep the agent"
+        },
+        "efeitos": {
+          "dinheiro": -20000,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "bonus_da_equipe",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "dinheiro": ">=1000000"
+    },
+    "texto": {
+      "pt": "O filme foi um sucesso absoluto e o seu cheque de bônus chega. Você olha a equipe, que trabalhou um ano sem folga, e depois a conta bancária.",
+      "en": "The film was a smash hit and your bonus check arrives. You look at the crew, who worked a year without a day off, and then at your bank account."
+    },
+    "baseado_em": [
+      {
+        "quem": "Keanu Reeves",
+        "ano": 1999,
+        "o_que": "Segundo relatos, dividiu parte de seu bônus de Matrix com equipes de figurino e efeitos",
+        "link": "https://en.wikipedia.org/wiki/Keanu_Reeves",
+        "o_que_en": "Reportedly shared part of his Matrix bonus with the costume and effects crews"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "dividir",
+        "rotulo": {
+          "pt": "Dividir com a equipe",
+          "en": "Share with the crew"
+        },
+        "efeitos": {
+          "dinheiro": -1000000,
+          "reputacao": 2,
+          "prestigio": 3,
+          "contatos_evento": 2
+        }
+      },
+      {
+        "id": "guardar",
+        "rotulo": {
+          "pt": "Guardar tudo",
+          "en": "Keep it all"
+        },
+        "efeitos": {
+          "estabilidade": 0
+        }
+      },
+      {
+        "id": "moto",
+        "rotulo": {
+          "pt": "Comprar uma moto",
+          "en": "Buy a motorcycle"
+        },
+        "efeitos": {
+          "dinheiro": -200000,
+          "estabilidade": 1,
+          "fama": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "papel_dado_a_outra",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O papel principal, de uma personagem do seu país, vai ser dado a alguém de fora 'por razões comerciais'. Seu agente propõe uma cena a mais, como consolo.",
+      "en": "The lead role, a character from your own country, is being given to an outsider 'for commercial reasons'. Your agent suggests an extra scene as a consolation."
+    },
+    "baseado_em": [
+      {
+        "quem": "Anna May Wong",
+        "ano": 1937,
+        "o_que": "Foi preterida num filme sobre a China em favor de uma atriz branca, por regras racistas do estúdio",
+        "link": "https://en.wikipedia.org/wiki/Anna_May_Wong",
+        "o_que_en": "Was passed over in a film about China in favor of a white actress, under the studio's racist rules"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "consolo",
+        "rotulo": {
+          "pt": "Aceitar o consolo",
+          "en": "Accept the consolation"
+        },
+        "efeitos": {
+          "fama": 1,
+          "prestigio": -3,
+          "estabilidade": -1
+        }
+      },
+      {
+        "id": "denunciar",
+        "rotulo": {
+          "pt": "Denunciar publicamente",
+          "en": "Speak out publicly"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 4,
+              "reputacao": 2,
+              "heat": 3
+            },
+            "texto": {
+              "pt": "Sua entrevista é citada em todos os jornais. Os estúdios fingem não ouvir, mas ouvem.",
+              "en": "Your interview is quoted in every paper. The studios pretend not to hear, but they do."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 3,
+              "reputacao": -1,
+              "fama": -3
+            },
+            "texto": {
+              "pt": "Você vira 'difícil'. Ninguém explica o que isso quer dizer.",
+              "en": "You become 'difficult'. Nobody explains what that means."
+            }
+          }
+        ]
+      },
+      {
+        "id": "fora",
+        "rotulo": {
+          "pt": "Procurar trabalho em outro país",
+          "en": "Look for work abroad"
+        },
+        "efeitos": {
+          "fama": -4,
+          "prestigio": 3,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ideia_roubada",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O estúdio gosta da sua ideia de série e rejeita o seu rosto. 'Para a TV americana, preferimos outro tipo de protagonista.'",
+      "en": "The studio likes your series idea and rejects your face. 'For American TV, we prefer another kind of lead.'"
+    },
+    "baseado_em": [
+      {
+        "quem": "Bruce Lee",
+        "ano": 1971,
+        "o_que": "Segundo relatos, teve a ideia da série Kung Fu aproveitada, mas o papel foi para outro ator",
+        "link": "https://en.wikipedia.org/wiki/Bruce_Lee",
+        "o_que_en": "Reportedly had his idea for the Kung Fu series used, but the role went to another actor"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "consultor",
+        "rotulo": {
+          "pt": "Aceitar o crédito de consultor(a)",
+          "en": "Take the consultant credit"
+        },
+        "efeitos": {
+          "dinheiro": 20000,
+          "prestigio": -2
+        }
+      },
+      {
+        "id": "proprio",
+        "rotulo": {
+          "pt": "Fazer filmes por conta própria",
+          "en": "Make your own films"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": 4
+            },
+            "texto": {
+              "pt": "Os filmes viram fenômeno fora dos Estados Unidos. Hollywood volta a ligar, com outro tom.",
+              "en": "Your films become a phenomenon abroad. Hollywood calls back, in a different tone."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "dinheiro": -100000,
+              "estabilidade": -2
+            },
+            "texto": {
+              "pt": "Meses de dívida e de uma academia emprestada para treinar.",
+              "en": "Months of debt and a borrowed gym to train in."
+            }
+          }
+        ]
+      },
+      {
+        "id": "brigar",
+        "rotulo": {
+          "pt": "Brigar com o estúdio",
+          "en": "Fight the studio"
+        },
+        "efeitos": {
+          "heat": 2,
+          "reputacao": -1,
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cache_minimo",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": "<=40"
+    },
+    "texto": {
+      "pt": "Seu último filme fracassou, sua gravadora te dispensou. Um diretor oferece um papel dramático por quase nada, 'se você aceitar fazer o teste'.",
+      "en": "Your last film flopped, your record label dropped you. A director offers a dramatic role for almost nothing, 'if you agree to audition'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Frank Sinatra",
+        "ano": 1953,
+        "o_que": "Aceitou US$ 8 mil por A Um Passo da Eternidade e ganhou o Oscar de ator coadjuvante",
+        "link": "https://en.wikipedia.org/wiki/Frank_Sinatra",
+        "o_que_en": "Accepted $8,000 for From Here to Eternity and won the Oscar for best supporting actor"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar e implorar pelo teste",
+          "en": "Accept and beg for the audition"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 9,
+              "fama": 6,
+              "dinheiro": 8000
+            },
+            "texto": {
+              "pt": "Você ganha o papel, o prêmio e a certeza de que a carreira não acabou.",
+              "en": "You win the part, the prize and the certainty that your career isn't over."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 3,
+              "dinheiro": 8000,
+              "fama": 2
+            },
+            "texto": {
+              "pt": "O papel é bom e pouco notado. Você é elogiado(a) por quem importa.",
+              "en": "The role is good and barely noticed. You are praised by the people who matter."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "fama": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "frase_improvisada",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O tubarão mecânico quebrou de novo. No meio da cena você vê pela primeira vez a coisa inteira e inventa uma frase que não está no roteiro.",
+      "en": "The mechanical shark broke down again. Mid-scene you see the whole thing for the first time and invent a line that isn't in the script."
+    },
+    "baseado_em": [
+      {
+        "quem": "Roy Scheider",
+        "ano": 1975,
+        "o_que": "Improvisou 'Você vai precisar de um barco maior' em Tubarão",
+        "link": "https://en.wikipedia.org/wiki/Roy_Scheider",
+        "o_que_en": "Ad-libbed 'You're gonna need a bigger boat' in Jaws"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "dizer",
+        "rotulo": {
+          "pt": "Dizer a frase",
+          "en": "Say the line"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": 5,
+              "prestigio": 2
+            },
+            "texto": {
+              "pt": "A frase vira citação eterna. O diretor finge que estava no roteiro.",
+              "en": "The line becomes an eternal quote. The director pretends it was in the script."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "fama": 0
+            },
+            "texto": {
+              "pt": "A frase é cortada na edição. Anos depois alguém a encontra num extra de DVD.",
+              "en": "The line is cut in editing. Years later someone finds it in a DVD extra."
+            }
+          }
+        ]
+      },
+      {
+        "id": "roteiro",
+        "rotulo": {
+          "pt": "Seguir o roteiro",
+          "en": "Stick to the script"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cache_desigual",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Para regravar uma cena em nove dias, o estúdio paga US$ 1,5 milhão a um colega e uma diária a você, que nem sabe se tem direito a hospedagem.",
+      "en": "To reshoot a scene in nine days, the studio pays a colleague $1.5 million and a per diem to you, who doesn't even know if you get a hotel."
+    },
+    "baseado_em": [
+      {
+        "quem": "Mark Wahlberg",
+        "ano": 2017,
+        "o_que": "No refilme de Todo o Dinheiro do Mundo, Wahlberg recebeu cerca de US$ 1,5 mi e Michelle Williams menos de US$ 1 mil",
+        "link": "https://en.wikipedia.org/wiki/All_the_Money_in_the_World",
+        "o_que_en": "On the All the Money in the World reshoots, Wahlberg got about $1.5M and Michelle Williams less than $1,000"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "calar",
+        "rotulo": {
+          "pt": "Aceitar sem falar",
+          "en": "Accept without a word"
+        },
+        "efeitos": {
+          "dinheiro": 1000,
+          "estabilidade": -1
+        }
+      },
+      {
+        "id": "negociar",
+        "rotulo": {
+          "pt": "Negociar",
+          "en": "Negotiate"
+        },
+        "requer": {
+          "contatos": ">=3"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "dinheiro": 200000,
+              "prestigio": 2,
+              "reputacao": 1
+            },
+            "texto": {
+              "pt": "O estúdio paga e aprende a pagar mais cedo na próxima.",
+              "en": "The studio pays up and learns to pay sooner next time."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "heat": 1,
+              "dinheiro": 5000
+            },
+            "texto": {
+              "pt": "Prometem 'revisar depois da estreia'. Nunca revisam.",
+              "en": "They promise to 'review after the premiere'. They never do."
+            }
+          }
+        ]
+      },
+      {
+        "id": "publico",
+        "rotulo": {
+          "pt": "Tornar público",
+          "en": "Go public"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "reputacao": 2,
+              "prestigio": 4,
+              "heat": 3
+            },
+            "texto": {
+              "pt": "A diferença vira manchete, e o colega doa o valor. Os dois saem melhor do que entraram.",
+              "en": "The gap becomes a headline, and your colleague donates the fee. Both of you come out better than you went in."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "heat": 2,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "A notícia dura um dia. O rótulo 'difícil' dura uma década.",
+              "en": "The news lasts a day. The 'difficult' label lasts a decade."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "piloto_sem_piloto",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "anos": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "peso": 6,
+    "texto": {
+      "pt": "Uma empresa de streaming que você só conhece de ver por correio quer produzir duas temporadas direto, sem episódio piloto, com dinheiro de filme. Seu agente diz que 'isso nunca vai funcionar'.",
+      "en": "A streaming company you only know from mailing DVDs wants to produce two seasons straight, with no pilot, with movie money. Your agent says 'this will never work'."
+    },
+    "baseado_em": [
+      {
+        "quem": "House of Cards",
+        "ano": 2013,
+        "o_que": "A Netflix encomendou duas temporadas sem piloto, por cerca de US$ 100 mi, mudando a TV",
+        "link": "https://en.wikipedia.org/wiki/House_of_Cards_(American_TV_series)",
+        "o_que_en": "Netflix ordered two seasons without a pilot, for about $100M, changing TV"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar",
+          "en": "Accept"
+        },
+        "resultados": [
+          {
+            "p": 0.55,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": 4,
+              "dinheiro": 300000
+            },
+            "texto": {
+              "pt": "Todo mundo assiste num fim de semana, de pijama, e quer saber quem morre.",
+              "en": "Everybody binges it over a weekend, in pajamas, wanting to know who dies."
+            }
+          },
+          {
+            "p": 0.45,
+            "efeitos": {
+              "fama": 2,
+              "prestigio": 1,
+              "dinheiro": 300000
+            },
+            "texto": {
+              "pt": "O serviço é novo, o público é pequeno, o cheque é grande. Você aceita.",
+              "en": "The service is new, the audience small, the check big. You accept."
+            }
+          }
+        ]
+      },
+      {
+        "id": "tv",
+        "rotulo": {
+          "pt": "Ficar na TV tradicional",
+          "en": "Stay in traditional TV"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
   }
 ]

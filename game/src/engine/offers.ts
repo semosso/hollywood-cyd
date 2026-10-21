@@ -256,5 +256,5 @@ export function thirdOption(state: State, offers: [Offer, Offer]): ThirdOption |
   if (anyFlag) {
     return { id: "recusar_ambos", requisito: lang === "en" ? "Judgment 4: turn both down" : "Juízo 4: recusar os dois", disponivel: a.juizo >= 4 };
   }
-  return { id: "ambos", requisito: lang === "en" ? "Connections 4: do both" : "Contatos 4: fazer os dois", disponivel: a.contatos >= 4 };
+  return { id: "ambos", requisito: lang === "en" ? "Connections 4: do both (−1 Talent in each)" : "Contatos 4: fazer os dois (−1 Talento nos dois)", disponivel: a.contatos >= 4 };
 }

@@ -129,6 +129,12 @@ def describe_prior(c: dict, lang: str) -> str:
     return f"the director of a {yr} {gname}"
 
 
+def same_genre_prior(credits: dict | None, year: int, director_id: int | None, g: str) -> bool:
+    """True se o filme anterior citado na descrição média é do mesmo gênero do filme da oferta."""
+    prior = director_prior(credits, year, director_id)
+    return bool(prior) and GENRE_IDS.get((prior[0].get("genre_ids") or [0])[0], "Drama") == g
+
+
 def director_line(credits: dict | None, year: int, director_id: int | None, lang: str, level: str) -> str:
     prior = director_prior(credits, year, director_id)
     n = len(prior)
@@ -198,11 +204,13 @@ def generate(rec: dict, m: dict, credits: dict | None, oscar_wins: dict[str, int
         if lang == "pt":
             cr = credits_pt or credits
             hard = f"{director_line(cr, year, did, 'pt', 'hard')} quer você {pt_num(g)}. {budget[tier]} {s1}".strip()
-            medium = f"{director_line(cr, year, did, 'pt', 'medium')} quer você {pt_num(g)}. {s1} {fact}".strip()
+            ask_pt = "quer você no próximo filme dele" if same_genre_prior(cr, year, did, g) else f"quer você {pt_num(g)}"
+            medium = f"{director_line(cr, year, did, 'pt', 'medium')} {ask_pt}. {s1} {fact}".strip()
             easy = f"{dname or 'O diretor'} quer você {pt_num(g)}. {first_sentence(ov, 220) if ov else fact}".strip()
         else:
             hard = f"{director_line(credits, year, did, 'en', 'hard')} wants you in a {gname}. {budget[tier]} {s1}".strip()
-            medium = f"{director_line(credits, year, did, 'en', 'medium')} wants you in a {gname}. {s1} {fact}".strip()
+            ask_en = "wants you in his next one" if same_genre_prior(credits, year, did, g) else f"wants you in a {gname}"
+            medium = f"{director_line(credits, year, did, 'en', 'medium')} {ask_en}. {s1} {fact}".strip()
             easy = f"{dname or 'The director'} wants you in a {gname}. {first_sentence(ov, 220)}".strip()
         out[lang] = {"hard": re.sub(r"\s+", " ", hard), "medium": re.sub(r"\s+", " ", medium), "easy": re.sub(r"\s+", " ", easy)}
     rec.pop("_title_words", None)

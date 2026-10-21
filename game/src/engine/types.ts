@@ -169,7 +169,7 @@ export type Resolution =
       recusado: Film | null;
       rumorFalso: string | null;
       /** o que pesou no resultado pessoal, para a interface explicar */
-      fatores: { talento: number; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean };
+      fatores: { talento: number; talentoMod: number; ambos: boolean; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean };
     }
   | { kind: "evento"; event: GameEvent; optionId: string; texto: I18n | null; efeitos: Effects }
   | { kind: "revisao"; film: Film; delta: number }

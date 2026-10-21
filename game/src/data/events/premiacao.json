@@ -183,5 +183,290 @@
     }
    }
   ]
+ },
+ {
+  "id": "discurso_representante",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 6,
+  "texto": {
+   "pt": "Seu filme está na disputa e, se você ganhar, terá sessenta segundos de microfone. Você já pensa no que dizer. Um assessor sugere 'só agradecer'.",
+   "en": "Your film is in the running and, if you win, you'll get sixty seconds at the microphone. You're already thinking about what to say. An aide suggests 'just say thanks'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Marlon Brando",
+    "ano": 1973,
+    "o_que": "Recusou o Oscar de melhor ator, enviando Sacheen Littlefeather para falar sobre a representação dos povos indígenas no cinema",
+    "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
+    "o_que_en": "Declined the Best Actor Oscar, sending Sacheen Littlefeather to speak about the representation of Native Americans in film"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "politico",
+    "rotulo": {
+     "pt": "Preparar um discurso político",
+     "en": "Prepare a political speech"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 5,
+       "reputacao": 1,
+       "heat": 2
+      },
+      "texto": {
+       "pt": "O salão fica em silêncio. Por um minuto, você é a pessoa mais importante da noite.",
+       "en": "The room goes quiet. For a minute, you're the most important person of the night."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 3,
+       "prestigio": -2
+      },
+      "texto": {
+       "pt": "A plateia vaia. Você sai do palco olhando para o chão.",
+       "en": "The audience boos. You leave the stage looking at the floor."
+      }
+     }
+    ]
+   },
+   {
+    "id": "agradecer",
+    "rotulo": {
+     "pt": "Só agradecer",
+     "en": "Just say thanks"
+    },
+    "efeitos": {
+     "prestigio": 1
+    }
+   },
+   {
+    "id": "representante",
+    "rotulo": {
+     "pt": "Mandar um(a) representante com uma carta",
+     "en": "Send a representative with a letter"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "reputacao": 2,
+       "heat": 3,
+       "prestigio": 2
+      },
+      "texto": {
+       "pt": "A carta é lida em silêncio e debatida por décadas.",
+       "en": "The letter is read in silence and debated for decades."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "heat": 4,
+       "reputacao": -1
+      },
+      "texto": {
+       "pt": "A Academia chama de 'insulto', e você chama de 'comunicado'.",
+       "en": "The Academy calls it 'an insult' and you call it 'a statement'."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mesa_dos_fundos",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 5,
+  "texto": {
+   "pt": "A cerimônia chama o seu nome, e a mesa que te deram fica no fundo do salão, separada do elenco, perto da cozinha. 'Questão de espaço', explicam.",
+   "en": "The ceremony calls your name, and the table you were given is at the back of the room, separate from the cast, near the kitchen. 'Space issues', they explain."
+  },
+  "baseado_em": [
+   {
+    "quem": "Hattie McDaniel",
+    "ano": 1940,
+    "o_que": "Foi a primeira pessoa negra a ganhar um Oscar e sua mesa ficou separada, ao fundo do salão, por segregação",
+    "link": "https://en.wikipedia.org/wiki/Hattie_McDaniel",
+    "o_que_en": "Became the first Black person to win an Oscar and her table was kept separate, at the back of the room, due to segregation"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "sorrir",
+    "rotulo": {
+     "pt": "Subir, agradecer e sorrir",
+     "en": "Go up, thank them and smile"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 6,
+       "fama": 4,
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Você recebe o prêmio e ninguém esquece onde você teve que se sentar.",
+       "en": "You accept the prize and nobody forgets where you had to sit."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 4,
+       "estabilidade": -2
+      },
+      "texto": {
+       "pt": "Você ganha uma estatueta e uma lembrança que a estatueta não consegue pagar.",
+       "en": "You get a statuette and a memory the statuette can't pay for."
+      }
+     }
+    ]
+   },
+   {
+    "id": "recusar",
+    "rotulo": {
+     "pt": "Recusar a mesa",
+     "en": "Refuse the table"
+    },
+    "efeitos": {
+     "heat": 3,
+     "reputacao": 2,
+     "prestigio": 2,
+     "fama": -2
+    }
+   },
+   {
+    "id": "discurso",
+    "rotulo": {
+     "pt": "Falar sobre o silêncio no salão",
+     "en": "Speak about the silence in the room"
+    },
+    "requer": {
+     "carisma": ">=4"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "reputacao": 2,
+       "prestigio": 4
+      },
+      "texto": {
+       "pt": "O salão fica quieto. Mais tarde, uma ou duas mesas se levantam.",
+       "en": "The room goes quiet. Later, a table or two stand up."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "heat": 3,
+       "reputacao": 1
+      },
+      "texto": {
+       "pt": "Seu discurso é cortado do programa de televisão.",
+       "en": "Your speech is cut from the TV broadcast."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "envelope_errado",
+  "tipo": "premiacao",
+  "atos": [
+   2,
+   3
+  ],
+  "peso": 5,
+  "texto": {
+   "pt": "No palco, o apresentador abre o envelope, hesita e lê o nome errado. Você está no meio de um discurso de agradecimento quando percebe o erro.",
+   "en": "On stage, the presenter opens the envelope, hesitates and reads the wrong name. You're in the middle of a thank-you speech when you notice the mistake."
+  },
+  "baseado_em": [
+   {
+    "quem": "La La Land / Moonlight",
+    "ano": 2017,
+    "o_que": "O Oscar de melhor filme foi anunciado por engano para La La Land; o vencedor era Moonlight",
+    "link": "https://en.wikipedia.org/wiki/89th_Academy_Awards",
+    "o_que_en": "Best Picture was mistakenly announced as La La Land; the winner was Moonlight"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "avisar",
+    "rotulo": {
+     "pt": "Interromper e avisar",
+     "en": "Interrupt and say something"
+    },
+    "requer": {
+     "carisma": ">=3"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "reputacao": 2,
+       "prestigio": 3,
+       "fama": 4
+      },
+      "texto": {
+       "pt": "Seu gesto é o mais lembrado da noite. Os verdadeiros vencedores te agradecem.",
+       "en": "Your gesture is the most remembered of the night. The real winners thank you."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "heat": 2,
+       "estabilidade": -1
+      },
+      "texto": {
+       "pt": "Ninguém ouve, e o caos continua durante dois minutos longos.",
+       "en": "Nobody hears, and the chaos continues for two long minutes."
+      }
+     }
+    ]
+   },
+   {
+    "id": "continuar",
+    "rotulo": {
+     "pt": "Continuar o discurso",
+     "en": "Keep your speech going"
+    },
+    "efeitos": {
+     "heat": 2,
+     "prestigio": -2,
+     "fama": 1
+    }
+   },
+   {
+    "id": "sair",
+    "rotulo": {
+     "pt": "Sair discretamente do palco",
+     "en": "Quietly leave the stage"
+    },
+    "efeitos": {
+     "estabilidade": 1,
+     "reputacao": -1
+    }
+   }
+  ]
  }
 ]

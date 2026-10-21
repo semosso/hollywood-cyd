@@ -54,6 +54,7 @@ export function cacheFor(film: Film, roleIndex: number, state: State, cpi: Cpi):
 /** Resolve uma estreia: devolve a Resolution e muta o state (medidores, flags, rede, filmografia). */
 export function resolveRelease(state: State, entry: PipelineEntry, film: Film, recusado: Film | null, cpi: Cpi): Resolution {
   const rng = rngFor(state.seed, "release", film.tmdb_id, entry.assinadoNoCard);
+  const talentoBase = state.atributos.talento;
   const talento = effAttrs(state).talento - (entry.ambos ? 1 : 0);
   const info: { caos?: boolean; prestigioBonus?: number; bisPenalty?: number; penalidade?: number } = {};
   const resultado = personalResult(film, entry.roleIndex, talento, state, rng.next(), rng.next(), rng.next(), info);
@@ -103,7 +104,7 @@ export function resolveRelease(state: State, entry: PipelineEntry, film: Film, r
     const f = (film.rumors ?? []).find((r) => r.false);
     if (f) rumorFalso = f.text[state.opcoes.idioma] ?? f.text.pt;
   }
-  const fatores = { talento, demand: role.demand, sorte: state.sorte, estabilidade: state.meters.estabilidade, penalidade: info.penalidade ?? 0, belezaFator: fd.fama > 0 ? 0.8 + 0.1 * belezaEfetiva(state) : 1, prestigioBonus: info.prestigioBonus ?? 0, bisPenalty: info.bisPenalty ?? 0, caos: !!info.caos };
+  const fatores = { talento, talentoMod: talento - talentoBase + (entry.ambos ? 1 : 0), ambos: !!entry.ambos, demand: role.demand, sorte: state.sorte, estabilidade: state.meters.estabilidade, penalidade: info.penalidade ?? 0, belezaFator: fd.fama > 0 ? 0.8 + 0.1 * belezaEfetiva(state) : 1, prestigioBonus: info.prestigioBonus ?? 0, bisPenalty: info.bisPenalty ?? 0, caos: !!info.caos };
   return { kind: "estreia", film, roleIndex: entry.roleIndex, resultado, cache, deltas, recusado, rumorFalso, fatores };
 }
 
@@ -153,7 +154,7 @@ export function regretLine(film: Film, recusado: Film | null, lang: Lang, genero
 
 /** Uma frase explicando o resultado pelos atributos (RULES 6.2), para o jogador sentir o que pesou. */
 /** Nomes de atributo vêm entre crases; a UI os destaca. */
-export function whyLine(r: { resultado: PersonalResult; fatores: { talento: number; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean } }, lang: Lang): string {
+export function whyLine(r: { resultado: PersonalResult; fatores: { talento: number; talentoMod?: number; ambos?: boolean; demand: number; sorte: number; estabilidade: number; penalidade: number; belezaFator: number; prestigioBonus: number; bisPenalty: number; caos: boolean } }, lang: Lang): string {
   const f = r.fatores;
   const parts: string[] = [];
   const pt = lang === "pt";
@@ -163,6 +164,8 @@ export function whyLine(r: { resultado: PersonalResult; fatores: { talento: numb
     if (gap >= 1) parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": sobrou" : "`Talent " + f.talento + "` for a level " + f.demand + " role: plenty");
     else if (gap === 0) parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": no limite" : "`Talent " + f.talento + "` for a level " + f.demand + " role: just enough");
     else parts.push(pt ? "`Talento " + f.talento + "` para um papel nível " + f.demand + ": faltou" : "`Talent " + f.talento + "` for a level " + f.demand + " role: not enough");
+    if (f.ambos) parts.push(pt ? "dois filmes ao mesmo tempo custaram 1 de `Talento`" : "two films at once cost 1 `Talent`");
+    if (f.talentoMod) parts.push(pt ? "a guinada recente mexeu no `Talento` (" + (f.talentoMod > 0 ? "+" : "") + f.talentoMod + ")" : "your recent swing moved `Talent` (" + (f.talentoMod > 0 ? "+" : "") + f.talentoMod + ")");
     if (f.penalidade < 0) parts.push(pt ? "o filme afundou e levou gente junto" : "the film sank and took people with it");
     if (f.estabilidade <= 3) parts.push(pt ? "a `Estabilidade` lá embaixo: você chegou ao set destruído(a)" : "`Stability` at rock bottom: you arrived on set in pieces");
     if (f.sorte === 3) parts.push(pt ? "e a `Sorte` estava do seu lado" : "and `Luck` was on your side");
