@@ -53,7 +53,7 @@ export function pickEvent(events: GameEvent[], tipo: GameEvent["tipo"], state: S
 export function contextEvent(events: GameEvent[], state: State): GameEvent | null {
   const step = Math.max(1, state.ano - (state.ano - 1));
   void step;
-  const e = events.find((ev) => ev.tipo === "contexto" && ev.anos?.some((y) => y <= state.ano && !state.contextosVistos.includes(y)) && meets(ev.requer, state));
+  const e = events.find((ev) => ev.tipo === "contexto" && ev.anos?.length && ev.anos[0] >= state.anoEstreia && ev.anos.some((y) => y <= state.ano && !state.contextosVistos.includes(y)) && meets(ev.requer, state));
   return e ?? null;
 }
 

@@ -306,3 +306,23 @@ describe("guinadas", () => {
     expect(hits / n).toBeLessThan(0.12);
   });
 });
+
+describe("contexto e explicações", () => {
+  it("evento de contexto que já terminou antes da estreia não aparece (greve de 2007 com estreia em 2010)", async () => {
+    const { contextEvent } = await import("../events");
+    const s = createState({ ...base, anoEstreia: 2010 });
+    for (const ano of [2010, 2015, 2020]) {
+      s.ano = ano;
+      const e = contextEvent(content.events, s);
+      expect(e?.id).not.toBe("greve_2007");
+    }
+    const s2 = createState({ ...base, anoEstreia: 2005 });
+    s2.ano = 2007;
+    expect(contextEvent(content.events, s2)?.id).toBe("greve_2007");
+  });
+  it("whyLine explica o -1 de Talento por fazer dois filmes", async () => {
+    const { whyLine } = await import("../resolve");
+    const f = { talento: 2, talentoMod: 0, ambos: true, demand: 3, sorte: 2, estabilidade: 6, penalidade: 0, belezaFator: 1, prestigioBonus: 0, bisPenalty: 0, caos: false };
+    expect(whyLine({ resultado: "fez_o_trabalho", fatores: f }, "pt")).toContain("dois filmes");
+  });
+});
