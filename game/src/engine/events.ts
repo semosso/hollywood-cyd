@@ -36,11 +36,12 @@ export function meets(req: Requirements | undefined, state: State): boolean {
 }
 
 const REPEAT_AFTER = 5;
+const REPEAT_COOLDOWN = 8; // eventos repetíveis (unico: false) só voltam depois de tantos cards
 
 export function pickEvent(events: GameEvent[], tipo: GameEvent["tipo"], state: State): GameEvent | null {
   const ato = atoFor(state);
   const basic = (e: GameEvent) => e.tipo === tipo && (!e.atos || e.atos.includes(ato)) && (!e.anos || e.anos.includes(state.ano)) && meets(e.requer, state);
-  const fresh = events.filter((e) => basic(e) && (!state.eventosVistos.includes(e.id) || e.unico === false));
+  const fresh = events.filter((e) => basic(e) && (!state.eventosVistos.includes(e.id) || (e.unico === false && (state.vistosEm[e.id] ?? -99) <= state.cardsJogados - REPEAT_COOLDOWN)));
   const rng = rngFor(state.seed, "event", tipo, state.cardsJogados);
   const pick = rng.weighted(fresh, (e) => e.peso ?? 1);
   if (pick) return pick;

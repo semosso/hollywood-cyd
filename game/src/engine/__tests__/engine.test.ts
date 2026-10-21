@@ -326,3 +326,27 @@ describe("contexto e explicações", () => {
     expect(whyLine({ resultado: "fez_o_trabalho", fatores: f }, "pt")).toContain("dois filmes");
   });
 });
+
+describe("repetição de eventos", () => {
+  it("evento repetível não volta antes do cooldown, e o bangalô 3 é único", async () => {
+    const { pickEvent } = await import("../events");
+    const ev = { id: "r", tipo: "vida", unico: false, peso: 1, texto: { pt: "" }, opcoes: [] } as unknown as import("../types").GameEvent;
+    const s = createState(base);
+    s.eventosVistos = ["r"];
+    s.cardsJogados = 10;
+    s.vistosEm = { r: 8 };
+    expect(pickEvent([ev], "vida", s)).toBeNull(); // visto há 2 cards: nem fresco (cooldown) nem velho (REPEAT_AFTER)
+    s.vistosEm = { r: 1 };
+    expect(pickEvent([ev], "vida", s)?.id).toBe("r");
+    expect(content.events.find((e) => e.id === "balada_bangalo_3")!.unico).not.toBe(false);
+  });
+  it("todo evento tem texto bilíngue e opções com resultados que somam probabilidade", () => {
+    for (const e of content.events) {
+      expect(e.texto.pt && e.texto.en, e.id).toBeTruthy();
+      for (const o of e.opcoes) {
+        expect(o.rotulo.pt && o.rotulo.en, `${e.id}/${o.id}`).toBeTruthy();
+        for (const r of o.resultados ?? []) expect(r.texto?.pt && r.texto?.en, `${e.id}/${o.id}`).toBeTruthy();
+      }
+    }
+  });
+});

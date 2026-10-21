@@ -143,8 +143,7 @@
           "contatos_evento": 1
         }
       }
-    ],
-    "unico": false
+    ]
   },
   {
     "id": "loja_beverly_hills",
@@ -1389,6 +1388,1774 @@
         "efeitos": {
           "heat": 3,
           "fama": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "apocalypse_tufao",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=10"
+    },
+    "texto": {
+      "pt": "Quatro meses de filmagem na selva, um tufão destruiu os cenários, o ator principal acabou de ter um infarto e o diretor diz que o filme está 'dando errado de um jeito bonito'. Seu agente liga: 'Fica ou volta?'",
+      "en": "Four months of shooting in the jungle, a typhoon wrecked the sets, the lead actor just had a heart attack and the director says the film is 'going wrong in a beautiful way'. Your agent calls: 'Stay or come home?'"
+    },
+    "baseado_em": [
+      {
+        "quem": "Martin Sheen",
+        "ano": 1977,
+        "o_que": "Teve um infarto durante as filmagens de Apocalypse Now nas Filipinas e voltou ao set",
+        "link": "https://en.wikipedia.org/wiki/Martin_Sheen",
+        "o_que_en": "Had a heart attack during the Apocalypse Now shoot in the Philippines and returned to set"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "ficar",
+        "rotulo": {
+          "pt": "Ficar até o fim",
+          "en": "Stay until the end"
+        },
+        "resultados": [
+          {
+            "p": 0.35,
+            "efeitos": {
+              "prestigio": 8,
+              "fama": 5,
+              "estabilidade": -2
+            },
+            "texto": {
+              "pt": "Dois anos depois, o filme é chamado de obra-prima. Você nunca mais dorme direito, mas está nos créditos.",
+              "en": "Two years later, the film is called a masterpiece. You never sleep properly again, but you're in the credits."
+            }
+          },
+          {
+            "p": 0.65,
+            "efeitos": {
+              "prestigio": 3,
+              "estabilidade": -3,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "O filme sai, divide a crítica e deixa você com malária e um bronzeado impressionante.",
+              "en": "The film comes out, splits the critics and leaves you with malaria and an impressive tan."
+            }
+          }
+        ]
+      },
+      {
+        "id": "voltar",
+        "rotulo": {
+          "pt": "Voltar para casa",
+          "en": "Go home"
+        },
+        "efeitos": {
+          "fama": -2,
+          "reputacao": -1,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "helicoptero_noite",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 3,
+    "texto": {
+      "pt": "Cena noturna: helicóptero baixo, explosões e dois figurantes crianças sem autorização para trabalhar à noite. O coordenador diz que 'está tudo sob controle'. Ninguém ensaiou.",
+      "en": "Night scene: a low helicopter, explosions and two child extras with no permit to work at night. The coordinator says 'everything's under control'. Nobody rehearsed."
+    },
+    "baseado_em": [
+      {
+        "quem": "Vic Morrow",
+        "ano": 1982,
+        "o_que": "Morreu num acidente de helicóptero durante as filmagens de No Limite da Realidade: O Filme",
+        "link": "https://en.wikipedia.org/wiki/Vic_Morrow",
+        "o_que_en": "Died in a helicopter accident during the shooting of Twilight Zone: The Movie"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "gravar",
+        "rotulo": {
+          "pt": "Gravar assim mesmo",
+          "en": "Shoot it anyway"
+        },
+        "resultados": [
+          {
+            "p": 0.75,
+            "efeitos": {
+              "fama": 1
+            },
+            "texto": {
+              "pt": "A cena sai sem incidentes e você não consegue olhar o coordenador nos olhos.",
+              "en": "The scene goes off without incident and you can't look the coordinator in the eye."
+            }
+          },
+          {
+            "p": 0.25,
+            "efeitos": {
+              "estabilidade": -4,
+              "heat": 3,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "Algo sai errado. Sirenes, silêncio, uma investigação que dura anos. Você sai ferido(a), por dentro e por fora.",
+              "en": "Something goes wrong. Sirens, silence, an investigation lasting years. You walk away hurt, inside and out."
+            }
+          }
+        ]
+      },
+      {
+        "id": "exigir",
+        "rotulo": {
+          "pt": "Exigir segurança e licença antes",
+          "en": "Demand safety and permits first"
+        },
+        "efeitos": {
+          "reputacao": 1,
+          "prestigio": 2,
+          "heat": 1,
+          "estabilidade": 1
+        }
+      },
+      {
+        "id": "sair",
+        "rotulo": {
+          "pt": "Sair do set",
+          "en": "Walk off the set"
+        },
+        "efeitos": {
+          "fama": -2,
+          "reputacao": 1,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "arma_de_cena",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 3,
+    "texto": {
+      "pt": "A cena pede um tiro à queima-roupa com a arma de cena. O armeiro está com pressa, o dia já estourou e ninguém conferiu o cano desde a última sequência.",
+      "en": "The scene calls for a point-blank shot with the prop gun. The armorer is in a hurry, the day is already over schedule, and nobody checked the barrel since the last sequence."
+    },
+    "baseado_em": [
+      {
+        "quem": "Brandon Lee",
+        "ano": 1993,
+        "o_que": "Morreu nas filmagens de O Corvo, atingido por um fragmento deixado no cano de uma arma de cena",
+        "link": "https://en.wikipedia.org/wiki/Brandon_Lee",
+        "o_que_en": "Died during The Crow shoot, hit by a fragment left in the barrel of a prop gun"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "conferir",
+        "rotulo": {
+          "pt": "Pedir que confiram cano e munição",
+          "en": "Ask them to check barrel and rounds"
+        },
+        "efeitos": {
+          "reputacao": 1,
+          "prestigio": 1,
+          "heat": 0
+        }
+      },
+      {
+        "id": "gravar",
+        "rotulo": {
+          "pt": "Gravar logo e acabar o dia",
+          "en": "Shoot now and wrap the day"
+        },
+        "resultados": [
+          {
+            "p": 0.85,
+            "efeitos": {
+              "fama": 0
+            },
+            "texto": {
+              "pt": "Nada acontece. O dia termina. Você nunca mais esquece a sensação.",
+              "en": "Nothing happens. The day wraps. You never forget the feeling."
+            }
+          },
+          {
+            "p": 0.15,
+            "efeitos": {
+              "estabilidade": -4,
+              "heat": 4,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "Um fragmento sai do cano. Hospital, set parado por semanas, reportagens com a palavra 'negligência'.",
+              "en": "A fragment leaves the barrel. Hospital, the set shut for weeks, headlines with the word 'negligence'."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "portao_do_paraiso",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Quarto dia seguido no mesmo plano. O diretor espera 'a nuvem certa'. Uma cena de cinco minutos já consumiu um mês, e o estúdio manda um executivo para 'dar uma olhada'.",
+      "en": "Fourth day in a row on the same shot. The director waits for 'the right cloud'. A five-minute scene has already eaten a month, and the studio sends an executive 'to take a look'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Michael Cimino",
+        "ano": 1980,
+        "o_que": "O Portal do Paraíso estourou o orçamento (de cerca de US$ 11 mi para uns US$ 44 mi) e levou a United Artists à crise",
+        "link": "https://en.wikipedia.org/wiki/Michael_Cimino",
+        "o_que_en": "Heaven's Gate blew its budget (from about $11M to some $44M) and sent United Artists into crisis"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "esperar",
+        "rotulo": {
+          "pt": "Esperar a nuvem com paciência",
+          "en": "Wait for the cloud patiently"
+        },
+        "resultados": [
+          {
+            "p": 0.4,
+            "efeitos": {
+              "prestigio": 5,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "A nuvem chega. A cena é linda. Ninguém sabe ainda que o filme vai afundar o estúdio.",
+              "en": "The cloud arrives. The scene is beautiful. Nobody knows yet the film will sink the studio."
+            }
+          },
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": -4,
+              "prestigio": -2,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "O filme estreia quatro horas depois do que devia, e a crítica compara a duração à de um inverno.",
+              "en": "The film opens hours longer than it should, and critics compare its length to a winter."
+            }
+          }
+        ]
+      },
+      {
+        "id": "questionar",
+        "rotulo": {
+          "pt": "Perguntar do orçamento ao diretor",
+          "en": "Ask the director about the budget"
+        },
+        "efeitos": {
+          "reputacao": -1,
+          "heat": 1,
+          "prestigio": 1
+        }
+      },
+      {
+        "id": "ligar",
+        "rotulo": {
+          "pt": "Ligar para o estúdio e avisar",
+          "en": "Call the studio and warn them"
+        },
+        "efeitos": {
+          "reputacao": -1,
+          "contatos_evento": 1,
+          "heat": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "costelas_cadeira",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "O diretor diz que você pode sair do personagem entre os takes. Você não sai há dois meses. A equipe te alimenta com colher e você está curvado(a) na mesma posição há semanas.",
+      "en": "The director says you can step out of character between takes. You haven't in two months. The crew spoon-feeds you and you've been hunched in the same position for weeks."
+    },
+    "baseado_em": [
+      {
+        "quem": "Daniel Day-Lewis",
+        "ano": 1989,
+        "o_que": "Quebrou duas costelas ao ficar curvado na cadeira de rodas em Meu Pé Esquerdo e recusou sair do personagem no set",
+        "link": "https://en.wikipedia.org/wiki/Daniel_Day-Lewis",
+        "o_que_en": "Cracked two ribs hunching in the wheelchair on My Left Foot and refused to leave character on set"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "continuar",
+        "rotulo": {
+          "pt": "Continuar no personagem",
+          "en": "Stay in character"
+        },
+        "resultados": [
+          {
+            "p": 0.45,
+            "efeitos": {
+              "prestigio": 7,
+              "fama": 3
+            },
+            "texto": {
+              "pt": "A crítica usa a palavra 'transcendente' vinte vezes. Seu fisioterapeuta usa outras.",
+              "en": "Critics use the word 'transcendent' twenty times. Your physiotherapist uses others."
+            }
+          },
+          {
+            "p": 0.55,
+            "efeitos": {
+              "prestigio": 2,
+              "estabilidade": -2,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "Você quebra duas costelas e ninguém pode te abraçar durante meses. A cena, pelo menos, é ótima.",
+              "en": "You crack two ribs and nobody can hug you for months. The scene, at least, is great."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sair",
+        "rotulo": {
+          "pt": "Sair do personagem entre as cenas",
+          "en": "Step out between scenes"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "prestigio": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "coringa_diario",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "Para o vilão, você se tranca num quarto de hotel por semanas, com um caderno, uma voz que ainda não existe e uma risada que ninguém sabe se é humana.",
+      "en": "For the villain, you lock yourself in a hotel room for weeks with a notebook, a voice that doesn't exist yet and a laugh nobody can tell is human."
+    },
+    "baseado_em": [
+      {
+        "quem": "Heath Ledger",
+        "ano": 2007,
+        "o_que": "Isolou-se num quarto de hotel por semanas e escreveu um diário do personagem para criar o Coringa",
+        "link": "https://en.wikipedia.org/wiki/Heath_Ledger",
+        "o_que_en": "Isolated himself in a hotel room for weeks and kept a character diary to build the Joker"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "mergulhar",
+        "rotulo": {
+          "pt": "Mergulhar fundo",
+          "en": "Dive deep"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 8,
+              "fama": 4
+            },
+            "texto": {
+              "pt": "O vilão que você construiu é o único que as pessoas citam depois. A crítica fala em prêmio.",
+              "en": "The villain you built is the only one people quote afterward. Critics start saying 'award'."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 3,
+              "estabilidade": -3,
+              "vicio": 1
+            },
+            "texto": {
+              "pt": "Você mal dorme, a risada demora a ir embora e seus amigos perguntam se está tudo bem.",
+              "en": "You barely sleep, the laugh takes too long to leave and your friends ask if you're OK."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ensaiar",
+        "rotulo": {
+          "pt": "Ensaiar como todo mundo",
+          "en": "Rehearse like everybody else"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "segunda_chance",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 8,
+    "requer": {
+      "vicio": ">=3"
+    },
+    "texto": {
+      "pt": "Você passou por tribunal, reabilitação e quatro anos de telefonemas não atendidos. Um amigo famoso oferece pagar do próprio bolso o seguro de produção que nenhuma seguradora quer te dar.",
+      "en": "You've been through court, rehab and four years of unanswered calls. A famous friend offers to pay out of pocket the production insurance no insurer will give you."
+    },
+    "baseado_em": [
+      {
+        "quem": "Robert Downey Jr.",
+        "ano": 2003,
+        "o_que": "Mel Gibson pagou o seguro de produção para escalá-lo após prisão e reabilitação, e a carreira dele voltou",
+        "link": "https://en.wikipedia.org/wiki/Robert_Downey_Jr.",
+        "o_que_en": "Mel Gibson paid the production insurance to cast him after arrests and rehab, and his career came back"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar a ajuda",
+          "en": "Accept the help"
+        },
+        "resultados": [
+          {
+            "p": 0.75,
+            "efeitos": {
+              "vicio": -3,
+              "estabilidade": 2,
+              "prestigio": 3,
+              "reputacao": 1,
+              "flag_add": [
+                "sobrio"
+              ]
+            },
+            "texto": {
+              "pt": "Você chega cedo todos os dias durante meses. Quando o filme sai, as pessoas falam de você de novo, no passado e no futuro.",
+              "en": "You arrive early every day for months. When the film comes out, people talk about you again, in both past and future tense."
+            }
+          },
+          {
+            "p": 0.25,
+            "efeitos": {
+              "vicio": -1,
+              "estabilidade": 1,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "Você tenta. O set ajuda. A recaída vem depois, mais discreta, e você sabe o nome de quem te ajuda a voltar.",
+              "en": "You try. The set helps. The relapse comes later, quieter, and you know the name of who helps you back."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar por orgulho",
+          "en": "Decline out of pride"
+        },
+        "efeitos": {
+          "estabilidade": -1,
+          "vicio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cidade_flutuante",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "Seis meses de filmagem no mar. A cidade flutuante do cenário afundou na última tempestade, o orçamento dobrou e a produção pede 'só mais um mês de molhado'.",
+      "en": "Six months shooting at sea. The floating city set sank in the last storm, the budget doubled and production asks for 'just one more wet month'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Waterworld",
+        "ano": 1995,
+        "o_que": "O cenário flutuante afundou numa tempestade e o orçamento passou de ~US$ 100 mi para ~US$ 175 mi",
+        "link": "https://en.wikipedia.org/wiki/Waterworld",
+        "o_que_en": "The floating set sank in a storm and the budget rose from ~$100M to ~$175M"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "ficar",
+        "rotulo": {
+          "pt": "Ficar mais um mês",
+          "en": "Stay one more month"
+        },
+        "efeitos": {
+          "estabilidade": -2,
+          "dinheiro": 400000,
+          "heat": 1
+        }
+      },
+      {
+        "id": "renegociar",
+        "rotulo": {
+          "pt": "Renegociar o cachê",
+          "en": "Renegotiate your fee"
+        },
+        "efeitos": {
+          "dinheiro": 150000,
+          "reputacao": -1,
+          "estabilidade": -1
+        }
+      },
+      {
+        "id": "sair",
+        "rotulo": {
+          "pt": "Pedir para ser substituído(a)",
+          "en": "Ask to be replaced"
+        },
+        "efeitos": {
+          "fama": -3,
+          "estabilidade": 1,
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sopa_misteriosa",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "texto": {
+      "pt": "A sopa de frutos do mar do catering está estranhamente boa. Cinquenta pessoas da equipe já riem do mesmo nada e o diretor acaba de apontar para uma parede e dizer: 'iceberg'.",
+      "en": "The catering seafood chowder is strangely good. Fifty crew members are laughing at the same nothing and the director just pointed at a wall and said: 'iceberg'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Titanic",
+        "ano": 1996,
+        "o_que": "Dezenas de pessoas da equipe de Titanic foram intoxicadas por uma sopa com PCP durante as filmagens",
+        "link": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+        "o_que_en": "Dozens of Titanic crew members were dosed with PCP in a chowder during the shoot"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "comer",
+        "rotulo": {
+          "pt": "Terminar a tigela",
+          "en": "Finish the bowl"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "estabilidade": -1,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Você passa a noite filosofando com um cabo de microfone. Perde três takes e ganha um amigo.",
+              "en": "You spend the night philosophizing with a boom pole. You lose three takes and gain a friend."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "vicio": 1,
+              "estabilidade": -2,
+              "heat": 2
+            },
+            "texto": {
+              "pt": "Você acorda no trailer de figurino e ninguém lembra como. O boletim médico é uma obra literária.",
+              "en": "You wake up in the wardrobe trailer and nobody remembers how. The medical report is a work of literature."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sanduiche",
+        "rotulo": {
+          "pt": "Pedir um sanduíche",
+          "en": "Ask for a sandwich"
+        },
+        "requer": {
+          "juizo": ">=3"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "reputacao": 1
+        }
+      },
+      {
+        "id": "sair",
+        "rotulo": {
+          "pt": "Ir embora do jantar",
+          "en": "Skip the dinner"
+        },
+        "efeitos": {
+          "estabilidade": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "demissao_de_set",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 6,
+    "requer": {
+      "estabilidade": "<=4",
+      "fama": ">=30"
+    },
+    "texto": {
+      "pt": "Você faltou ao set em 12 dos últimos 30 dias. O estúdio manda um comunicado dizendo que o seu contrato está rescindido. Você ainda não leu.",
+      "en": "You missed 12 of the last 30 days on set. The studio sends a notice saying your contract is terminated. You haven't read it yet."
+    },
+    "baseado_em": [
+      {
+        "quem": "Marilyn Monroe",
+        "ano": 1962,
+        "o_que": "Foi demitida de Something's Got to Give após faltar a dezenas de dias de set",
+        "link": "https://en.wikipedia.org/wiki/Marilyn_Monroe",
+        "o_que_en": "Was fired from Something's Got to Give after missing dozens of days on set"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "desculpas",
+        "rotulo": {
+          "pt": "Pedir desculpas publicamente",
+          "en": "Apologize publicly"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "reputacao": 1,
+              "estabilidade": 1,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "O estúdio negocia. Você volta, de olhos baixos, para dizer duas falas e bater o ponto.",
+              "en": "The studio negotiates. You return, eyes lowered, to say two lines and clock in."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "demissao": true,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "O estúdio aceita as desculpas e o seu substituto também.",
+              "en": "The studio accepts the apology, and so does your replacement."
+            }
+          }
+        ]
+      },
+      {
+        "id": "brigar",
+        "rotulo": {
+          "pt": "Brigar na imprensa",
+          "en": "Fight in the press"
+        },
+        "efeitos": {
+          "fama": 3,
+          "heat": 3,
+          "prestigio": -2
+        }
+      },
+      {
+        "id": "agente",
+        "rotulo": {
+          "pt": "Deixar o agente resolver",
+          "en": "Let your agent handle it"
+        },
+        "efeitos": {
+          "dinheiro": -50000,
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "curva_de_volta",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 4,
+    "requer": {
+      "vicio": ">=1"
+    },
+    "texto": {
+      "pt": "Jantar na casa de uma amiga famosa. Você bebeu. A estrada de volta tem curvas, e o motorista sumiu.",
+      "en": "Dinner at a famous friend's house. You had a few. The road back has curves, and the driver vanished."
+    },
+    "baseado_em": [
+      {
+        "quem": "Montgomery Clift",
+        "ano": 1956,
+        "o_que": "Sofreu um acidente de carro ao deixar um jantar na casa de Elizabeth Taylor; ela o socorreu",
+        "link": "https://en.wikipedia.org/wiki/Montgomery_Clift",
+        "o_que_en": "Crashed his car leaving a dinner at Elizabeth Taylor's; she helped him until rescuers arrived"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "dirigir",
+        "rotulo": {
+          "pt": "Dirigir você mesmo(a)",
+          "en": "Drive yourself"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 0
+            },
+            "texto": {
+              "pt": "Você chega em casa viva(o) e com um pouco menos de dignidade.",
+              "en": "You make it home alive and with a little less dignity."
+            }
+          },
+          {
+            "p": 0.35,
+            "efeitos": {
+              "estabilidade": -3,
+              "heat": 3,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "O carro bate. O rosto sara diferente, e Hollywood aprende a te filmar de lado.",
+              "en": "The car crashes. Your face heals differently, and Hollywood learns to film you from the side."
+            }
+          },
+          {
+            "p": 0.15,
+            "efeitos": {
+              "fama": -3,
+              "prestigio": -3,
+              "estabilidade": -3
+            },
+            "texto": {
+              "pt": "Meses em recuperação. O estúdio coloca outro nome no cartaz.",
+              "en": "Months in recovery. The studio puts another name on the poster."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ficar",
+        "rotulo": {
+          "pt": "Dormir no sofá da anfitriã",
+          "en": "Sleep on the host's couch"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "contatos_evento": 1
+        }
+      },
+      {
+        "id": "carro",
+        "rotulo": {
+          "pt": "Chamar um carro",
+          "en": "Call a car"
+        },
+        "efeitos": {
+          "dinheiro": -200,
+          "reputacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversivel_prata",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 3,
+    "requer": {
+      "fama": ">=20",
+      "dinheiro": ">=50000"
+    },
+    "texto": {
+      "pt": "Você acaba de comprar um conversível prateado e quer testá-lo na estrada. O mecânico avisa: 'Esse carro é rápido demais para você.'",
+      "en": "You just bought a silver convertible and want to test it on the highway. The mechanic warns: 'This car is too fast for you.'"
+    },
+    "baseado_em": [
+      {
+        "quem": "James Dean",
+        "ano": 1955,
+        "o_que": "Morreu aos 24 anos dirigindo seu Porsche 550 Spyder em alta velocidade",
+        "link": "https://en.wikipedia.org/wiki/James_Dean",
+        "o_que_en": "Died at 24 driving his Porsche 550 Spyder at high speed"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "correr",
+        "rotulo": {
+          "pt": "Pisar fundo",
+          "en": "Floor it"
+        },
+        "resultados": [
+          {
+            "p": 0.8,
+            "efeitos": {
+              "fama": 4,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Você sente o vento, o estúdio sente a fama e a multa chega na semana seguinte.",
+              "en": "You feel the wind, the studio feels the fame and the ticket arrives the next week."
+            }
+          },
+          {
+            "p": 0.12,
+            "efeitos": {
+              "estabilidade": -3,
+              "heat": 3,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "Um cruzamento, um susto e meses de ortopedista.",
+              "en": "An intersection, a scare and months of orthopedics."
+            }
+          },
+          {
+            "p": 0.08,
+            "efeitos": {
+              "morte": "acidente"
+            },
+            "texto": {
+              "pt": "A curva de uma estrada vazia, ao entardecer.",
+              "en": "A bend on an empty road, at dusk."
+            }
+          }
+        ]
+      },
+      {
+        "id": "limite",
+        "rotulo": {
+          "pt": "Respeitar o limite",
+          "en": "Obey the speed limit"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "reputacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "comprimidos_do_estudio",
+    "tipo": "vida",
+    "atos": [
+      1
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O médico do estúdio traz um frasco: 'Para manter o ritmo das filmagens. Todo mundo usa. É só até o fim do filme.'",
+      "en": "The studio doctor brings a bottle: 'To keep up with the shooting pace. Everybody uses it. It's just until the end of the film.'"
+    },
+    "baseado_em": [
+      {
+        "quem": "Judy Garland",
+        "ano": 1939,
+        "o_que": "O estúdio MGM dava anfetaminas e barbitúricos a ela desde a adolescência para manter o ritmo",
+        "link": "https://en.wikipedia.org/wiki/Judy_Garland",
+        "o_que_en": "MGM gave her amphetamines and barbiturates from her teens to keep up with the pace"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar",
+          "en": "Take it"
+        },
+        "efeitos": {
+          "vicio": 2,
+          "estabilidade": -1,
+          "fama": 2
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar e arriscar o contrato",
+          "en": "Refuse and risk the contract"
+        },
+        "requer": {
+          "juizo": ">=3"
+        },
+        "efeitos": {
+          "heat": 1,
+          "prestigio": 1,
+          "estabilidade": 1
+        }
+      },
+      {
+        "id": "fingir",
+        "rotulo": {
+          "pt": "Fingir que toma",
+          "en": "Pretend to take it"
+        },
+        "efeitos": {
+          "estabilidade": 0,
+          "reputacao": 0,
+          "heat": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "turne_aviao",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 3,
+    "requer": {
+      "fama": ">=30"
+    },
+    "texto": {
+      "pt": "Turnê de arrecadação para uma causa. A produção te dá passagem de avião; o trem leva dois dias a mais. O estúdio quer você de volta logo.",
+      "en": "Fundraising tour for a cause. The studio gives you a plane ticket; the train takes two days longer. They want you back quickly."
+    },
+    "baseado_em": [
+      {
+        "quem": "Carole Lombard",
+        "ano": 1942,
+        "o_que": "Morreu num acidente aéreo voltando de turnê de venda de bônus de guerra",
+        "link": "https://en.wikipedia.org/wiki/Carole_Lombard",
+        "o_que_en": "Died in a plane crash returning from a war bonds tour"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "voar",
+        "rotulo": {
+          "pt": "Voar",
+          "en": "Fly"
+        },
+        "resultados": [
+          {
+            "p": 0.94,
+            "efeitos": {
+              "fama": 5,
+              "prestigio": 3,
+              "dinheiro": 25000
+            },
+            "texto": {
+              "pt": "Você chega a tempo, arrecada uma fortuna e ainda dorme na própria cama.",
+              "en": "You arrive on time, raise a fortune and still sleep in your own bed."
+            }
+          },
+          {
+            "p": 0.06,
+            "efeitos": {
+              "morte": "voo"
+            },
+            "texto": {
+              "pt": "O avião não chega à segunda escala.",
+              "en": "The plane never reaches the second stop."
+            }
+          }
+        ]
+      },
+      {
+        "id": "trem",
+        "rotulo": {
+          "pt": "Ir de trem",
+          "en": "Take the train"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "fama": 2,
+          "reputacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "lei_coogan",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 8,
+    "requer": {
+      "flags": [
+        "pais_gastaram"
+      ]
+    },
+    "texto": {
+      "pt": "Seu advogado traz uma pasta: o dinheiro que você ganhou na infância foi gasto. Ele pergunta se você quer processar a própria família.",
+      "en": "Your lawyer brings a folder: the money you earned as a child is gone. He asks whether you want to sue your own family."
+    },
+    "baseado_em": [
+      {
+        "quem": "Jackie Coogan",
+        "ano": 1938,
+        "o_que": "Processou a mãe e o padrasto por gastarem cerca de US$ 4 mi que ganhou como ator mirim; a Lei Coogan nasceu daí",
+        "link": "https://en.wikipedia.org/wiki/Jackie_Coogan",
+        "o_que_en": "Sued his mother and stepfather for spending about $4M he earned as a child actor; the Coogan Law came from it"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "processar",
+        "rotulo": {
+          "pt": "Processar",
+          "en": "Sue them"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "dinheiro": 400000,
+              "prestigio": 2,
+              "estabilidade": -2,
+              "flag_remove": [
+                "pais_gastaram"
+              ]
+            },
+            "texto": {
+              "pt": "Você ganha uma parte, perde uma família e passa a fazer parte de uma lei.",
+              "en": "You win a share, lose a family and become part of a law."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "dinheiro": 40000,
+              "estabilidade": -3
+            },
+            "texto": {
+              "pt": "Quase tudo já foi gasto. Sobra a manchete e o advogado.",
+              "en": "Almost everything has been spent. What's left is the headline and the lawyer."
+            }
+          }
+        ]
+      },
+      {
+        "id": "perdoar",
+        "rotulo": {
+          "pt": "Perdoar e seguir em frente",
+          "en": "Forgive and move on"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "dinheiro": -10000
+        }
+      }
+    ]
+  },
+  {
+    "id": "emancipacao",
+    "tipo": "vida",
+    "atos": [
+      1
+    ],
+    "peso": 6,
+    "requer": {
+      "vicio": ">=2",
+      "idade": "<=24"
+    },
+    "texto": {
+      "pt": "Você tem muitos anos de fama e nenhum de adolescência. Seu advogado propõe a emancipação: casa própria, regras próprias, uma geladeira só sua.",
+      "en": "You have many years of fame and none of adolescence. Your lawyer proposes emancipation: your own house, your own rules, a fridge that's only yours."
+    },
+    "baseado_em": [
+      {
+        "quem": "Drew Barrymore",
+        "ano": 1989,
+        "o_que": "Pediu a emancipação aos 14 anos depois de internações por dependência",
+        "link": "https://en.wikipedia.org/wiki/Drew_Barrymore",
+        "o_que_en": "Filed for emancipation at 14 after stays in rehab"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "emancipar",
+        "rotulo": {
+          "pt": "Pedir a emancipação",
+          "en": "File for emancipation"
+        },
+        "resultados": [
+          {
+            "p": 0.65,
+            "efeitos": {
+              "estabilidade": 2,
+              "vicio": -2,
+              "reputacao": 1
+            },
+            "texto": {
+              "pt": "O juiz concede. Você aprende a fazer a própria comida e a escolher os próprios roteiros.",
+              "en": "The judge grants it. You learn to cook your own food and pick your own scripts."
+            }
+          },
+          {
+            "p": 0.35,
+            "efeitos": {
+              "estabilidade": 0,
+              "vicio": -1,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "O juiz concede. A liberdade chega com uma solidão do tamanho de uma mansão.",
+              "en": "The judge grants it. Freedom arrives with a loneliness the size of a mansion."
+            }
+          }
+        ]
+      },
+      {
+        "id": "continuar",
+        "rotulo": {
+          "pt": "Continuar em casa",
+          "en": "Stay at home"
+        },
+        "efeitos": {
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "lutador_acabado",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 6,
+    "requer": {
+      "fama": "<=25"
+    },
+    "texto": {
+      "pt": "Quinze anos sem boas ofertas. Um diretor independente quer você no papel de um lutador acabado, por US$ 100 mil e um carro velho que nunca pega de primeira.",
+      "en": "Fifteen years without good offers. An independent director wants you as a washed-up wrestler, for $100,000 and an old car that never starts the first time."
+    },
+    "baseado_em": [
+      {
+        "quem": "Mickey Rourke",
+        "ano": 2008,
+        "o_que": "Voltou do ostracismo com O Lutador e foi indicado ao Oscar",
+        "link": "https://en.wikipedia.org/wiki/Mickey_Rourke",
+        "o_que_en": "Came back from the wilderness with The Wrestler and was Oscar-nominated"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar",
+          "en": "Accept"
+        },
+        "resultados": [
+          {
+            "p": 0.45,
+            "efeitos": {
+              "prestigio": 8,
+              "fama": 8,
+              "dinheiro": 100000
+            },
+            "texto": {
+              "pt": "Você sobe ao palco e ganha um prêmio de crítica. Perguntam por onde você andou.",
+              "en": "You step on stage and win a critics' prize. They ask where you've been."
+            }
+          },
+          {
+            "p": 0.55,
+            "efeitos": {
+              "prestigio": 3,
+              "fama": 2,
+              "dinheiro": 100000
+            },
+            "texto": {
+              "pt": "Pouca gente vê, mas quem vê não esquece. Você ganha de volta o respeito de uma plateia pequena.",
+              "en": "Few people see it, but those who do don't forget. You win back the respect of a small audience."
+            }
+          }
+        ]
+      },
+      {
+        "id": "esperar",
+        "rotulo": {
+          "pt": "Esperar uma oferta maior",
+          "en": "Hold out for a bigger offer"
+        },
+        "efeitos": {
+          "fama": -3,
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "diretor_jovem",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 6,
+    "requer": {
+      "fama": "<=30"
+    },
+    "texto": {
+      "pt": "Um diretor jovem, barulhento e irritantemente bem informado quer te escalar. O estúdio prefere outro nome. Ele diz: 'Eu escrevi o papel para você.'",
+      "en": "A young, loud and annoyingly well-informed director wants to cast you. The studio prefers someone else. He says: 'I wrote the part for you.'"
+    },
+    "baseado_em": [
+      {
+        "quem": "John Travolta",
+        "ano": 1994,
+        "o_que": "Foi escalado em Pulp Fiction por insistência de Tarantino e ganhou indicação ao Oscar",
+        "link": "https://en.wikipedia.org/wiki/John_Travolta",
+        "o_que_en": "Was cast in Pulp Fiction at Tarantino's insistence and earned an Oscar nomination"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o papel",
+          "en": "Take the part"
+        },
+        "resultados": [
+          {
+            "p": 0.4,
+            "efeitos": {
+              "prestigio": 7,
+              "fama": 10
+            },
+            "texto": {
+              "pt": "Sua cena de dança vira um meme décadas antes de existirem memes.",
+              "en": "Your dance scene becomes a meme decades before memes exist."
+            }
+          },
+          {
+            "p": 0.6,
+            "efeitos": {
+              "prestigio": 3,
+              "fama": 4
+            },
+            "texto": {
+              "pt": "O filme é um sucesso de crítica e você é o(a) comeback do ano.",
+              "en": "The film is a critical hit and you are the comeback of the year."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ler",
+        "rotulo": {
+          "pt": "Pedir para ler o roteiro primeiro",
+          "en": "Ask to read the script first"
+        },
+        "requer": {
+          "contatos": ">=3"
+        },
+        "efeitos": {
+          "prestigio": 2,
+          "contatos_evento": 1
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "fama": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "filme_do_misterioso",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Um homem de sotaque indefinido, óculos escuros e dinheiro de origem imprecisa quer te escalar no filme que ele escreveu, dirige, produz e estrela.",
+      "en": "A man with an unplaceable accent, sunglasses and money of uncertain origin wants to cast you in the film he wrote, directs, produces and stars in."
+    },
+    "baseado_em": [
+      {
+        "quem": "Tommy Wiseau",
+        "ano": 2003,
+        "o_que": "Escreveu, dirigiu, produziu e estrelou The Room com cerca de US$ 6 mi do próprio bolso; virou fenômeno cult",
+        "link": "https://en.wikipedia.org/wiki/Tommy_Wiseau",
+        "o_que_en": "Wrote, directed, produced and starred in The Room with about $6M of his own money; it became a cult phenomenon"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar",
+          "en": "Accept"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": -4,
+              "fama": 1
+            },
+            "texto": {
+              "pt": "O filme estreia numa sala vazia. Dez anos depois, a sala está cheia.",
+              "en": "The film opens in an empty theater. Ten years later, the theater is full."
+            }
+          },
+          {
+            "p": 0.3,
+            "efeitos": {
+              "fama": 6,
+              "prestigio": -2,
+              "flag_add": [
+                "cult_involuntario"
+              ]
+            },
+            "texto": {
+              "pt": "Uma sessão da meia-noite lota todas as semanas. O público atira colheres. Você aceita.",
+              "en": "A midnight screening sells out every week. The audience throws spoons. You accept it."
+            }
+          },
+          {
+            "p": 0.2,
+            "efeitos": {
+              "estabilidade": -2,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "O set é exatamente tão estranho quanto você imaginava, e a conta do almoço é toda sua.",
+              "en": "The set is exactly as strange as you imagined, and the lunch tab is all yours."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar com educação",
+          "en": "Politely decline"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "convite_politica",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "Um grupo de empresários quer te lançar candidato(a) a governador. Seu agente avisa que você não tem experiência. Eles dizem que isso é uma vantagem.",
+      "en": "A group of businessmen wants to run you for governor. Your agent warns you have no experience. They say that's an advantage."
+    },
+    "baseado_em": [
+      {
+        "quem": "Ronald Reagan",
+        "ano": 1966,
+        "o_que": "Ator, elegeu-se governador da Califórnia em 1966",
+        "link": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+        "o_que_en": "An actor, he was elected governor of California in 1966"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o convite",
+          "en": "Accept"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": -3,
+              "heat": 2,
+              "dinheiro": -100000
+            },
+            "texto": {
+              "pt": "Você vence. O primeiro decreto é sobre o horário do cafezinho.",
+              "en": "You win. The first decree is about coffee-break hours."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": -4,
+              "prestigio": -2,
+              "dinheiro": -200000
+            },
+            "texto": {
+              "pt": "Você perde para um professor de ciência política e passa três meses lendo sobre impostos.",
+              "en": "You lose to a political science professor and spend three months reading about taxes."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "licenca_de_obra",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=30",
+      "dinheiro": ">=500000"
+    },
+    "texto": {
+      "pt": "A prefeitura da cidade onde você mora negou a licença da sua obra. A eleição é em três meses. O prefeito atual tem um bigode ofensivo.",
+      "en": "The town hall of the city where you live denied your building permit. The election is in three months. The current mayor has an offensive mustache."
+    },
+    "baseado_em": [
+      {
+        "quem": "Clint Eastwood",
+        "ano": 1986,
+        "o_que": "Elegeu-se prefeito de Carmel-by-the-Sea após uma disputa com a prefeitura por uma licença de obra",
+        "link": "https://en.wikipedia.org/wiki/Clint_Eastwood",
+        "o_que_en": "Was elected mayor of Carmel-by-the-Sea after a dispute with city hall over a building permit"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "concorrer",
+        "rotulo": {
+          "pt": "Concorrer a prefeito(a)",
+          "en": "Run for mayor"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": 3,
+              "prestigio": 2,
+              "contatos_evento": 1
+            },
+            "texto": {
+              "pt": "Você vence com 72% e inaugura a licença da sua própria obra.",
+              "en": "You win with 72% and inaugurate the permit for your own project."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "prestigio": -1,
+              "dinheiro": -80000,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "Você perde por doze votos para o dono da padaria.",
+              "en": "You lose by twelve votes to the bakery owner."
+            }
+          }
+        ]
+      },
+      {
+        "id": "multa",
+        "rotulo": {
+          "pt": "Pagar a multa e seguir",
+          "en": "Pay the fine and move on"
+        },
+        "efeitos": {
+          "dinheiro": -50000,
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "casar_de_novo",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=40",
+      "heat": ">=2"
+    },
+    "texto": {
+      "pt": "Seu ex-cônjuge liga de um safári na África. Diz que 'dessa vez é diferente'. Já disse isso antes, uma vez num altar.",
+      "en": "Your ex calls from an African safari. Says 'this time is different'. They've said that before, once at an altar."
+    },
+    "baseado_em": [
+      {
+        "quem": "Elizabeth Taylor",
+        "ano": 1975,
+        "o_que": "Casou, divorciou e casou de novo com Richard Burton em Botsuana, em 1975; separaram-se meses depois",
+        "link": "https://en.wikipedia.org/wiki/Elizabeth_Taylor",
+        "o_que_en": "Married, divorced and remarried Richard Burton in Botswana in 1975; they split months later"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "casar",
+        "rotulo": {
+          "pt": "Casar de novo",
+          "en": "Marry again"
+        },
+        "resultados": [
+          {
+            "p": 0.3,
+            "efeitos": {
+              "estabilidade": 2,
+              "fama": 2
+            },
+            "texto": {
+              "pt": "Por quatro meses é o melhor casamento da sua vida. Depois, ainda é bom como lembrança.",
+              "en": "For four months it's the best marriage of your life. After that, it's still a good memory."
+            }
+          },
+          {
+            "p": 0.7,
+            "efeitos": {
+              "estabilidade": -3,
+              "heat": 3,
+              "fama": 2,
+              "dinheiro": -300000
+            },
+            "texto": {
+              "pt": "O segundo divórcio dura menos que a lua de mel, e os advogados já conhecem as senhas.",
+              "en": "The second divorce lasts less than the honeymoon, and the lawyers already know the passwords."
+            }
+          }
+        ]
+      },
+      {
+        "id": "nao",
+        "rotulo": {
+          "pt": "Dizer não",
+          "en": "Say no"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "ervilhas_congeladas",
+    "tipo": "vida",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "prestigio": ">=15"
+    },
+    "texto": {
+      "pt": "Um anunciante oferece US$ 200 mil por um comercial de ervilhas congeladas. O texto é terrível e o diretor sabe que você sabe.",
+      "en": "An advertiser offers $200,000 for a frozen-peas commercial. The script is terrible and the director knows you know it."
+    },
+    "baseado_em": [
+      {
+        "quem": "Orson Welles",
+        "ano": 1970,
+        "o_que": "Gravações dos bastidores em que reclama de comerciais de ervilhas congeladas viraram lendárias",
+        "link": "https://en.wikipedia.org/wiki/Orson_Welles",
+        "o_que_en": "Behind-the-scenes recordings of him complaining during frozen-peas commercials became legendary"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o cachê",
+          "en": "Take the fee"
+        },
+        "resultados": [
+          {
+            "p": 0.7,
+            "efeitos": {
+              "dinheiro": 200000,
+              "prestigio": -3
+            },
+            "texto": {
+              "pt": "Você grava quarenta takes. O comercial vai ao ar, as ervilhas vendem e você nunca fala disso.",
+              "en": "You do forty takes. The ad airs, peas sell and you never speak of it."
+            }
+          },
+          {
+            "p": 0.3,
+            "efeitos": {
+              "dinheiro": 200000,
+              "prestigio": 2,
+              "fama": 3
+            },
+            "texto": {
+              "pt": "O áudio dos bastidores, em que você reclama da ervilha, vaza e vira clássico.",
+              "en": "The behind-the-scenes audio, where you complain about the peas, leaks and becomes a classic."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "prestigio": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "patente_no_caderno",
+    "tipo": "vida",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "Entre um set e outro, você desenha numa mesa de cozinha um sistema para guiar torpedos sem que o inimigo consiga interferir. O estúdio só quer saber do seu rosto.",
+      "en": "Between sets, you draw on a kitchen table a system to guide torpedoes without the enemy jamming them. The studio only cares about your face."
+    },
+    "baseado_em": [
+      {
+        "quem": "Hedy Lamarr",
+        "ano": 1941,
+        "o_que": "Atriz e inventora, patenteou com George Antheil um sistema de salto de frequência, ancestral de tecnologias como Wi-Fi e Bluetooth",
+        "link": "https://en.wikipedia.org/wiki/Hedy_Lamarr",
+        "o_que_en": "Actress and inventor, patented with George Antheil a frequency-hopping system, an ancestor of technologies such as Wi-Fi and Bluetooth"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "patentear",
+        "rotulo": {
+          "pt": "Patentear",
+          "en": "File the patent"
+        },
+        "efeitos": {
+          "prestigio": 4,
+          "reputacao": 1,
+          "dinheiro": -5000
+        }
+      },
+      {
+        "id": "guardar",
+        "rotulo": {
+          "pt": "Guardar no caderno",
+          "en": "Keep it in the notebook"
+        },
+        "efeitos": {
+          "estabilidade": 1
         }
       }
     ]

@@ -468,5 +468,750 @@
         }
       }
     ]
+  },
+  {
+    "id": "radio_invasao",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Você participa de uma peça de rádio sobre uma invasão alienígena. Alguns ouvintes ligaram para a polícia achando que é real. O jornal pergunta se foi proposital.",
+      "en": "You take part in a radio play about an alien invasion. Some listeners called the police thinking it was real. The newspaper asks if it was on purpose."
+    },
+    "baseado_em": [
+      {
+        "quem": "Orson Welles",
+        "ano": 1938,
+        "o_que": "A transmissão de A Guerra dos Mundos causou alarme em parte do público, embora o pânico tenha sido exagerado pela imprensa",
+        "link": "https://en.wikipedia.org/wiki/Orson_Welles",
+        "o_que_en": "The War of the Worlds broadcast alarmed part of the audience, though the panic was exaggerated by the press"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "surpresa",
+        "rotulo": {
+          "pt": "Dizer que não esperava",
+          "en": "Say you didn't expect it"
+        },
+        "efeitos": {
+          "fama": 4,
+          "heat": 1
+        }
+      },
+      {
+        "id": "planejado",
+        "rotulo": {
+          "pt": "Dizer que foi planejado",
+          "en": "Say it was planned"
+        },
+        "efeitos": {
+          "fama": 6,
+          "heat": 3,
+          "prestigio": -1
+        }
+      },
+      {
+        "id": "desculpas",
+        "rotulo": {
+          "pt": "Pedir desculpas",
+          "en": "Apologize"
+        },
+        "efeitos": {
+          "reputacao": 1,
+          "fama": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ensaio_de_capa",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=15",
+      "beleza": ">=3"
+    },
+    "texto": {
+      "pt": "Uma revista de moda quer um ensaio com você nu(a) sobre um tapete de urso. 'Artístico', diz o editor. 'Muito, muito artístico.'",
+      "en": "A fashion magazine wants a shoot with you naked on a bearskin rug. 'Artistic', says the editor. 'Very, very artistic.'"
+    },
+    "baseado_em": [
+      {
+        "quem": "Burt Reynolds",
+        "ano": 1972,
+        "o_que": "Posou nu na revista Cosmopolitan, o que impulsionou sua fama",
+        "link": "https://en.wikipedia.org/wiki/Burt_Reynolds",
+        "o_que_en": "Posed nude for Cosmopolitan magazine, which boosted his fame"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "posar",
+        "rotulo": {
+          "pt": "Posar",
+          "en": "Pose"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": -3,
+              "heat": 2
+            },
+            "texto": {
+              "pt": "A revista esgota em dois dias e sua mãe liga pedindo para você 'não olhar a capa'.",
+              "en": "The magazine sells out in two days and your mother calls asking you not to 'look at the cover'."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "fama": 3,
+              "prestigio": -5,
+              "heat": 3
+            },
+            "texto": {
+              "pt": "A foto vira piada em programas de TV pelos próximos dez anos.",
+              "en": "The photo becomes a joke on TV shows for the next ten years."
+            }
+          }
+        ]
+      },
+      {
+        "id": "urso",
+        "rotulo": {
+          "pt": "Posar vestido(a) de urso",
+          "en": "Pose dressed as a bear"
+        },
+        "efeitos": {
+          "fama": 2,
+          "prestigio": 0
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "hino_nacional",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Um time de beisebol te convida para cantar o hino nacional antes do jogo, com o estádio lotado e a transmissão ao vivo. Você acha que sabe cantar.",
+      "en": "A baseball team invites you to sing the national anthem before the game, with a full stadium and live broadcast. You think you can sing."
+    },
+    "baseado_em": [
+      {
+        "quem": "Roseanne Barr",
+        "ano": 1990,
+        "o_que": "Cantou o hino nacional desafinada e fez gestos obscenos num jogo de beisebol",
+        "link": "https://en.wikipedia.org/wiki/Roseanne_Barr",
+        "o_que_en": "Sang the national anthem off-key and made crude gestures at a baseball game"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "cantar",
+        "rotulo": {
+          "pt": "Cantar",
+          "en": "Sing"
+        },
+        "resultados": [
+          {
+            "p": 0.35,
+            "efeitos": {
+              "fama": 4,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "Você acerta todas as notas. O estádio chora, e você também.",
+              "en": "You hit every note. The stadium cries, and so do you."
+            }
+          },
+          {
+            "p": 0.65,
+            "efeitos": {
+              "fama": 2,
+              "heat": 4,
+              "prestigio": -3
+            },
+            "texto": {
+              "pt": "Milhões sabem quem você é agora, mas não pelo motivo certo. O presidente comenta.",
+              "en": "Millions know who you are now, but not for the right reason. The president comments."
+            }
+          }
+        ]
+      },
+      {
+        "id": "declinar",
+        "rotulo": {
+          "pt": "Declinar com elegância",
+          "en": "Gracefully decline"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pular_no_sofa",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=30"
+    },
+    "texto": {
+      "pt": "Num talk show, você diz que está apaixonado(a) e a plateia grita. Você sente algo subir pelas pernas.",
+      "en": "On a talk show, you say you're in love and the audience screams. You feel something rising up your legs."
+    },
+    "baseado_em": [
+      {
+        "quem": "Tom Cruise",
+        "ano": 2005,
+        "o_que": "Pulou no sofá do programa da Oprah declarando amor à namorada",
+        "link": "https://en.wikipedia.org/wiki/Tom_Cruise",
+        "o_que_en": "Jumped on Oprah's couch declaring his love for his girlfriend"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "pular",
+        "rotulo": {
+          "pt": "Pular no sofá",
+          "en": "Jump on the couch"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 6,
+              "heat": 3,
+              "prestigio": -3
+            },
+            "texto": {
+              "pt": "O vídeo roda o mundo. O sofá nunca mais se recupera.",
+              "en": "The clip goes around the world. The couch never recovers."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 3,
+              "heat": 2,
+              "prestigio": -2
+            },
+            "texto": {
+              "pt": "Vira meme para sempre, e o seu agente começa a evitar o telefone.",
+              "en": "It becomes a meme forever, and your agent starts avoiding the phone."
+            }
+          }
+        ]
+      },
+      {
+        "id": "segurar",
+        "rotulo": {
+          "pt": "Segurar a emoção",
+          "en": "Hold it in"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "intervalo_do_super_bowl",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "No intervalo mais visto do ano, um figurino se abre um segundo antes do planejado. Quarenta milhões viram. Na manhã seguinte, só uma pessoa foi cancelada: você.",
+      "en": "In the most watched halftime of the year, a costume opens one second earlier than planned. Forty million saw it. By the next morning, only one person was canceled: you."
+    },
+    "baseado_em": [
+      {
+        "quem": "Janet Jackson",
+        "ano": 2004,
+        "o_que": "O incidente do intervalo do Super Bowl gerou uma punição muito mais dura para ela do que para o colega de palco",
+        "link": "https://en.wikipedia.org/wiki/Janet_Jackson",
+        "o_que_en": "The Super Bowl halftime incident led to far harsher punishment for her than for her stage partner"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "desculpas",
+        "rotulo": {
+          "pt": "Pedir desculpas",
+          "en": "Apologize"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "reputacao": 1,
+              "fama": -3,
+              "prestigio": -2
+            },
+            "texto": {
+              "pt": "Você pede desculpas por algo que não escolheu. Nenhum dos homens do palco pede.",
+              "en": "You apologize for something you didn't choose. None of the men on the stage do."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": -5,
+              "heat": 2
+            },
+            "texto": {
+              "pt": "As rádios param de tocar você por anos.",
+              "en": "Radio stations stop playing you for years."
+            }
+          }
+        ]
+      },
+      {
+        "id": "falar",
+        "rotulo": {
+          "pt": "Falar do duplo padrão",
+          "en": "Call out the double standard"
+        },
+        "requer": {
+          "juizo": ">=3"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "reputacao": 2,
+              "fama": -2,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "Anos depois, a história será relida a seu favor. Hoje, você espera.",
+              "en": "Years from now, the story will be reread in your favor. For today, you wait."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 3,
+              "fama": -4
+            },
+            "texto": {
+              "pt": "O assunto vira debate. Você vira o debate.",
+              "en": "The subject becomes a debate. You become the debate."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sumir",
+        "rotulo": {
+          "pt": "Sumir por seis meses",
+          "en": "Disappear for six months"
+        },
+        "efeitos": {
+          "heat": -2,
+          "fama": -4,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "aposentadoria_farsa",
+    "tipo": "midia",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=30",
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "Você anuncia que vai deixar a atuação para virar rapper. Deixa a barba crescer, o cabelo crescer e a paciência do agente diminuir. Ninguém sabe se é piada. Nem você.",
+      "en": "You announce you're leaving acting to become a rapper. You grow your beard, your hair and your agent's impatience. Nobody knows if it's a joke. Not even you."
+    },
+    "baseado_em": [
+      {
+        "quem": "Joaquin Phoenix",
+        "ano": 2008,
+        "o_que": "Anunciou aposentadoria para virar rapper num falso documentário, I'm Still Here",
+        "link": "https://en.wikipedia.org/wiki/Joaquin_Phoenix",
+        "o_que_en": "Announced his retirement to become a rapper in a fake documentary, I'm Still Here"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "farsa",
+        "rotulo": {
+          "pt": "Manter a farsa",
+          "en": "Keep the act going"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 5,
+              "fama": 4,
+              "heat": 3
+            },
+            "texto": {
+              "pt": "Era um filme. A crítica dá palmas por quem enganou quem.",
+              "en": "It was a film. Critics applaud who fooled whom."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": -5,
+              "fama": -4,
+              "heat": 4
+            },
+            "texto": {
+              "pt": "Ninguém acha graça, nem de mentira. Seu agente pede para você 'voltar a ser você'.",
+              "en": "Nobody finds it funny, not even pretend. Your agent asks you to 'go back to being you'."
+            }
+          }
+        ]
+      },
+      {
+        "id": "contar",
+        "rotulo": {
+          "pt": "Contar logo que é brincadeira",
+          "en": "Reveal it's a joke early"
+        },
+        "efeitos": {
+          "reputacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "emails_vazados",
+    "tipo": "midia",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "Milhares de e-mails de executivos vazam. Num deles, seu nome aparece numa frase que começa com 'honestamente'.",
+      "en": "Thousands of executive emails leak. In one, your name appears in a sentence that begins with 'honestly'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Sony Pictures",
+        "ano": 2014,
+        "o_que": "Hackers vazaram e-mails da Sony, expondo conversas de executivos sobre atores e salários",
+        "link": "https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack",
+        "o_que_en": "Hackers leaked Sony emails, exposing executive conversations about actors and salaries"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "ignorar",
+        "rotulo": {
+          "pt": "Fingir que nem leu",
+          "en": "Pretend you never read it"
+        },
+        "efeitos": {
+          "estabilidade": -1
+        }
+      },
+      {
+        "id": "responder",
+        "rotulo": {
+          "pt": "Responder publicamente",
+          "en": "Respond publicly"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "reputacao": 1,
+              "prestigio": 2
+            },
+            "texto": {
+              "pt": "Sua resposta é curta, elegante e compartilhada por quem mais importa.",
+              "en": "Your response is short, elegant and shared by the people who matter most."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 3,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "A resposta vira a notícia, e o e-mail vira um detalhe.",
+              "en": "Your reply becomes the news and the email becomes a detail."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ligar",
+        "rotulo": {
+          "pt": "Ligar para o executivo",
+          "en": "Call the executive"
+        },
+        "requer": {
+          "contatos": ">=4"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "contatos_evento": 1,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "Ele pede desculpas e te convida para jantar. Você escolhe o restaurante.",
+              "en": "He apologizes and invites you to dinner. You pick the restaurant."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "heat": 2,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "A ligação vaza também.",
+              "en": "The call leaks too."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oscar_branco",
+    "tipo": "midia",
+    "atos": [
+      2,
+      3
+    ],
+    "anos": [
+      2015,
+      2016,
+      2017
+    ],
+    "peso": 4,
+    "texto": {
+      "pt": "Pelo segundo ano seguido, todos os indicados à atuação são brancos. A hashtag lidera o mundo. Perguntam se você vai à cerimônia.",
+      "en": "For the second year in a row, every acting nominee is white. The hashtag leads the world. They ask if you'll go to the ceremony."
+    },
+    "baseado_em": [
+      {
+        "quem": "#OscarsSoWhite",
+        "ano": 2015,
+        "o_que": "Em 2015 e 2016, todos os indicados à atuação no Oscar eram brancos, gerando boicotes e reformas na Academia",
+        "link": "https://en.wikipedia.org/wiki/OscarsSoWhite",
+        "o_que_en": "In 2015 and 2016, every Oscar acting nominee was white, leading to boycotts and Academy reforms"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "boicotar",
+        "rotulo": {
+          "pt": "Boicotar",
+          "en": "Boycott"
+        },
+        "requer": {
+          "prestigio": ">=10"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "reputacao": 2,
+              "prestigio": 2,
+              "heat": 2
+            },
+            "texto": {
+              "pt": "Seu gesto é lido como coragem. A Academia anuncia reformas na semana seguinte.",
+              "en": "Your gesture is read as courage. The Academy announces reforms the following week."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "reputacao": 1,
+              "fama": -2,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Você some do tapete vermelho e ninguém registra.",
+              "en": "You vanish from the red carpet and nobody notes it."
+            }
+          }
+        ]
+      },
+      {
+        "id": "falar",
+        "rotulo": {
+          "pt": "Ir e falar no palco",
+          "en": "Attend and speak on stage"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "reputacao": 1,
+              "prestigio": 3,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Seu discurso vira manchete. A plateia aplaude de pé, constrangida.",
+              "en": "Your speech becomes a headline. The audience gives a standing ovation, embarrassed."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "heat": 2
+            },
+            "texto": {
+              "pt": "Cortam seu microfone no meio da frase.",
+              "en": "They cut your mic mid-sentence."
+            }
+          }
+        ]
+      },
+      {
+        "id": "calado",
+        "rotulo": {
+          "pt": "Ir em silêncio",
+          "en": "Attend in silence"
+        },
+        "efeitos": {
+          "fama": 1,
+          "reputacao": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "tapa_no_palco",
+    "tipo": "midia",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "No palco, um apresentador faz uma piada sobre uma pessoa que você ama. A câmera te mostra rindo. Depois, não rindo.",
+      "en": "On stage, a host makes a joke about someone you love. The camera shows you laughing. Then not laughing."
+    },
+    "baseado_em": [
+      {
+        "quem": "Will Smith",
+        "ano": 2022,
+        "o_que": "No Oscar 2022, subiu ao palco e deu um tapa em Chris Rock após uma piada sobre sua esposa",
+        "link": "https://en.wikipedia.org/wiki/94th_Academy_Awards",
+        "o_que_en": "At the 2022 Oscars, walked onstage and slapped Chris Rock after a joke about his wife"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "palco",
+        "rotulo": {
+          "pt": "Subir ao palco",
+          "en": "Walk on stage"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 6,
+              "prestigio": -8,
+              "fama": 4
+            },
+            "texto": {
+              "pt": "O mundo para para olhar. A Academia te veta por dez anos.",
+              "en": "The world stops to look. The Academy bans you for ten years."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "heat": 4,
+              "prestigio": -5,
+              "reputacao": -2
+            },
+            "texto": {
+              "pt": "Você sobe, fala, desce e tenta fingir que foi um sonho. Foi ao vivo.",
+              "en": "You go up, speak, come down and try to pretend it was a dream. It was live."
+            }
+          }
+        ]
+      },
+      {
+        "id": "rir",
+        "rotulo": {
+          "pt": "Rir e conversar depois",
+          "en": "Laugh it off and talk later"
+        },
+        "efeitos": {
+          "estabilidade": -1,
+          "prestigio": 1
+        }
+      },
+      {
+        "id": "discurso",
+        "rotulo": {
+          "pt": "Vingar-se no discurso",
+          "en": "Get even in your speech"
+        },
+        "efeitos": {
+          "heat": 2,
+          "prestigio": -1
+        }
+      }
+    ]
   }
 ]
