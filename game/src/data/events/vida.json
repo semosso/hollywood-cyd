@@ -1925,16 +1925,16 @@
       "fama": ">=40"
     },
     "texto": {
-      "pt": "Seis meses de filmagem no mar. A cidade flutuante do cenário afundou na última tempestade, o orçamento dobrou e a produção pede 'só mais um mês de molhado'.",
-      "en": "Six months shooting at sea. The floating city set sank in the last storm, the budget doubled and production asks for 'just one more wet month'."
+      "pt": "Seis meses de filmagem no mar. A cidade flutuante do cenário foi destruída na última tempestade, o orçamento estourou e a produção pede 'só mais um mês de molhado'.",
+      "en": "Six months shooting at sea. The floating city set was wrecked in the last storm, the budget blew up and production asks for 'just one more wet month'."
     },
     "baseado_em": [
       {
         "quem": "Waterworld",
         "ano": 1995,
-        "o_que": "O cenário flutuante afundou numa tempestade e o orçamento passou de ~US$ 100 mi para ~US$ 175 mi",
+        "o_que": "O cenário flutuante foi atingido por tempestades (há versões de que afundou) e o orçamento chegou a cerca de US$ 175 mi",
         "link": "https://en.wikipedia.org/wiki/Waterworld",
-        "o_que_en": "The floating set sank in a storm and the budget rose from ~$100M to ~$175M"
+        "o_que_en": "The floating set was hit by storms (some accounts say it sank) and the budget reached about $175M"
       }
     ],
     "opcoes": [
@@ -1993,9 +1993,9 @@
       {
         "quem": "Titanic",
         "ano": 1996,
-        "o_que": "Dezenas de pessoas da equipe de Titanic foram intoxicadas por uma sopa com PCP durante as filmagens",
+        "o_que": "Em agosto de 1996, em Halifax, dezenas de pessoas da equipe de Titanic foram intoxicadas por uma sopa com PCP; ninguém foi identificado",
         "link": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
-        "o_que_en": "Dozens of Titanic crew members were dosed with PCP in a chowder during the shoot"
+        "o_que_en": "In August 1996 in Halifax, dozens of Titanic crew members were dosed with PCP in a chowder; no one was ever identified"
       }
     ],
     "opcoes": [

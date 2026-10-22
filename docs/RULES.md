@@ -95,8 +95,8 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 ### 4.2b Status e cobiça (o que faz as ofertas dependerem de você)
 - `status = clamp(0.5·Fama/100 + 0.5·max(0, Prestígio)/100 + 0.03·Reputação + 0.04·(Contatos − 3), 0, 1)`.
 - `cobiça(filme) = min(1, 0.6·p_prize + 0.4·p_box + 0.15 se algum papel ganhou o Oscar)`.
-- Peso da oferta × `desireWeight = exp(−3.5 · max(0, cobiça − status))`, com piso 0.04: um iniciante quase nunca recebe o filme de Oscar, mas a sorte existe.
-- Se `cobiça − status > 0.25`, o jogador só entra no filme como **coadjuvante** (`order ≥ 2`); se o filme só tem protagonista para o seu gênero, ele não é oferecido.
+- Peso da oferta × `desireWeight = exp(−2.5 · max(0, cobiça − status))`, com piso 0.12: um iniciante raramente recebe o filme de Oscar, mas a sorte existe. Filmes excepcionais (papel premiado ou `p_prize ≥ 0.4`) ganham peso extra `1 + 10 · status`: quem já tem nome recebe mais os papéis de uma vida.
+- Se `cobiça − status > 0.4`, o jogador só entra no filme como **coadjuvante** (`order ≥ 2`); se o filme só tem protagonista para o seu gênero, ele não é oferecido.
 - Reach: peso × `(0.5 + 0.15·Beleza_ef) × (1 + 0.15·(Contatos − 3))`.
 
 ### 4.3 Montagem das ofertas (determinística pela seed)
@@ -187,7 +187,7 @@ penalidade_do_filme: bomb −1.0 · flop −0.6 · popcorn −0.2 · demais 0   
 oscarScore = score + min(0.6, max(0, Prestígio)/100) + 0.3 se flag campanha_oscar − 1.0 se ganhou nos últimos 3 cards
 
 resultado_pessoal:
-  se r.oscar == "won"        e oscarScore ≥ 0.5  → "ganhou"
+  se r.oscar == "won"        e oscarScore ≥ 0.2  → "ganhou"
   se r.oscar ∈ {won,nominated} e oscarScore ≥ −0.3 → "indicado"
   se r.oscar == "none" e f.derived.outcome ∈ {hit, oscar_bait, cult} e score ≥ 1.2 → "roubou_a_cena"
   se score ≥ −1.5                             → "fez_o_trabalho"
@@ -206,7 +206,7 @@ Deltas (constantes em `constants.ts`):
 
 `morno` (recuperou o orçamento sem empolgar, crítica entre 40 e 84): move de lado; em 30% das vezes rende um contato fictício na `rede`. Não é armadilha nem conta como filme ruim.
 
-Fator de billing por `order`: 0 → 1.0 · 1 → 0.8 · 2 → 0.6 · 3 → 0.5 · 4–5 → 0.4. Papéis elegíveis: `order ≤ 5`.
+Fator de billing por `order`: 0 → 1.0 · 1 → 0.85 · 2 → 0.7 · 3 → 0.6 · 4–5 → 0.5. Papéis elegíveis: `order ≤ 5`.
 
 **Beleza** (efetiva, com decaimento por idade) multiplica o ganho de Fama do filme quando positivo: `0.8 + 0.1 × beleza_efetiva` (0.8× com 0, 1.0× com 2, 1.3× com 5). Não altera perdas nem Prestígio.
 
@@ -241,7 +241,7 @@ Filmes com `revision` geram um card `midia` especial quando `ano ≥ revision.ye
 
 ### 6.4 Decaimento (a cada card, antes de montar o próximo)
 - `heat = max(0, heat − 1)`
-- se `cardsJogados − ultimaEstreiaEm ≥ 2`: `fama −= 3`
+- se `cardsJogados − ultimaEstreiaEm ≥ 2`: `fama −= 2`
 - se `vicio ≥ 5` e `estabilidade ≤ 3`: `vicio += 1`
 - `beleza_efetiva = beleza − [idade ≥ 35] − [idade ≥ 45] − [idade ≥ 55] + [flag cirurgia e idade < 50] − [flag cirurgia e idade ≥ 50]`
 - clamp de todos os medidores aos limites.

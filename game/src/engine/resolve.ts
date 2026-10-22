@@ -29,7 +29,7 @@ export function personalResult(film: Film, roleIndex: number, talentoEfetivo: nu
   if (out) { out.prestigioBonus = prestigioBonus; out.bisPenalty = recentWin; out.penalidade = penalty; out.caos = false; }
   const oscarScore = score + prestigioBonus - recentWin;
   let res: PersonalResult;
-  if (r.oscar === "won" && oscarScore >= 0.5) res = "ganhou";
+  if (r.oscar === "won" && oscarScore >= 0.2) res = "ganhou";
   else if ((r.oscar === "won" || r.oscar === "nominated") && oscarScore >= -0.3) res = "indicado";
   else if (r.oscar === "none" && ["hit", "oscar_bait", "cult"].includes(film.derived.outcome) && score >= 1.2) res = "roubou_a_cena";
   else if (score >= -1.5) res = "fez_o_trabalho";

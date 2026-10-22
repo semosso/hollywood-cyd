@@ -223,5 +223,283 @@
     }
    }
   ]
+ },
+ {
+  "id": "greve_atores_1980",
+  "tipo": "contexto",
+  "anos": [
+   1980
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Julho de 1980. O sindicato dos atores entra em greve por mais de dois meses, por causa de quem recebe quando um filme passa em fita e na TV a cabo. Seu agente diz que 'isso ninguém vai lembrar'.",
+   "en": "July 1980. The actors' union goes on strike for over two months, over who gets paid when a film airs on tape and cable TV. Your agent says 'nobody will remember this'."
+  },
+  "baseado_em": [
+   {
+    "quem": "SAG-AFTRA",
+    "ano": 1980,
+    "o_que": "Greve de atores de 1980 (67 dias) por direitos de exibição em TV paga e vídeo",
+    "link": "https://en.wikipedia.org/wiki/1980_Screen_Actors_Guild_strike",
+    "o_que_en": "1980 actors' strike (67 days) over pay-TV and home-video residuals"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "piquete",
+    "rotulo": {
+     "pt": "Ir ao piquete",
+     "en": "Join the picket line"
+    },
+    "efeitos": {
+     "reputacao": 1,
+     "prestigio": 2,
+     "dinheiro": -30000
+    }
+   },
+   {
+    "id": "trabalho",
+    "rotulo": {
+     "pt": "Aceitar um comercial fora do país",
+     "en": "Take a commercial abroad"
+    },
+    "efeitos": {
+     "dinheiro": 60000,
+     "reputacao": -1,
+     "prestigio": -2
+    }
+   }
+  ]
+ },
+ {
+  "id": "terremoto_1994",
+  "tipo": "contexto",
+  "anos": [
+   1994
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "17 de janeiro de 1994, 4h31 da manhã. O terremoto de Northridge sacode Los Angeles, derruba uma garagem de estúdio e fecha uma autoestrada. Seu telefone toca às cinco: é o seu agente, que quer saber se você está bem e se pode filmar na segunda.",
+   "en": "January 17, 1994, 4:31 a.m. The Northridge earthquake shakes Los Angeles, topples a studio parking structure and closes a freeway. Your phone rings at five: your agent, wanting to know if you're OK and can shoot Monday."
+  },
+  "baseado_em": [
+   {
+    "quem": "Terremoto de Northridge",
+    "ano": 1994,
+    "o_que": "Terremoto de magnitude 6,7 atinge Los Angeles em janeiro de 1994",
+    "link": "https://en.wikipedia.org/wiki/1994_Northridge_earthquake",
+    "o_que_en": "A magnitude 6.7 earthquake strikes Los Angeles in January 1994"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "ajudar",
+    "rotulo": {
+     "pt": "Passar o dia ajudando vizinhos",
+     "en": "Spend the day helping neighbors"
+    },
+    "efeitos": {
+     "reputacao": 1,
+     "estabilidade": 1,
+     "prestigio": 1
+    }
+   },
+   {
+    "id": "filmar",
+    "rotulo": {
+     "pt": "Filmar na segunda, como combinado",
+     "en": "Shoot Monday, as agreed"
+    },
+    "efeitos": {
+     "estabilidade": -2,
+     "dinheiro": 30000,
+     "reputacao": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "onze_de_setembro_2001",
+  "tipo": "contexto",
+  "anos": [
+   2001
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Setembro de 2001. O mundo parou e Hollywood também: estreias adiadas, trailers retirados, cenas com as torres cortadas de filmes prontos. Seu estúdio pergunta se você 'faria uma coisa mais leve'.",
+   "en": "September 2001. The world stopped and so did Hollywood: premieres postponed, trailers pulled, scenes with the towers cut from finished films. Your studio asks if you'd 'do something lighter'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Hollywood pós-11/9",
+    "ano": 2001,
+    "o_que": "Filmes foram adiados e cenas com as Torres Gêmeas foram retiradas de produções, como Homem-Aranha e Zoolander",
+    "link": "https://en.wikipedia.org/wiki/Spider-Man_(2002_film)",
+    "o_que_en": "Films were delayed and scenes with the Twin Towers removed from productions such as Spider-Man and Zoolander"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "leve",
+    "rotulo": {
+     "pt": "Aceitar fazer algo leve",
+     "en": "Take something lighter"
+    },
+    "efeitos": {
+     "fama": 3,
+     "prestigio": -2,
+     "dinheiro": 80000
+    }
+   },
+   {
+    "id": "serio",
+    "rotulo": {
+     "pt": "Insistir no projeto sombrio",
+     "en": "Insist on the dark project"
+    },
+    "efeitos": {
+     "prestigio": 3,
+     "fama": -2,
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "avatar_2009",
+  "tipo": "contexto",
+  "anos": [
+   2009
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Dezembro de 2009. Um filme com gente azul, óculos 3D e três bilhões de dólares muda o que os estúdios querem: tudo agora precisa ser 'em três dimensões'. Seu agente entra animado na sala de reunião.",
+   "en": "December 2009. A film with blue people, 3D glasses and three billion dollars changes what studios want: everything now needs to be 'in three dimensions'. Your agent enters the meeting room excited."
+  },
+  "baseado_em": [
+   {
+    "quem": "Avatar",
+    "ano": 2009,
+    "o_que": "Avatar arrecadou cerca de US$ 2,9 bilhões e impulsionou o 3D no cinema",
+    "link": "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+    "o_que_en": "Avatar grossed about $2.9 billion and boosted 3D in cinemas"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "fazer_3d",
+    "rotulo": {
+     "pt": "Aceitar o filme em 3D",
+     "en": "Take the 3D film"
+    },
+    "efeitos": {
+     "fama": 4,
+     "prestigio": -2,
+     "dinheiro": 150000
+    }
+   },
+   {
+    "id": "recusar_3d",
+    "rotulo": {
+     "pt": "Ficar com projetos em 2D",
+     "en": "Stick to 2D projects"
+    },
+    "efeitos": {
+     "prestigio": 2,
+     "fama": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "top_gun_2022",
+  "tipo": "contexto",
+  "anos": [
+   2022
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Maio de 2022. Um filme de piloto feito para cinema, com cenas aéreas reais, faz o que ninguém esperava: lota salas pelo mundo inteiro. Os executivos mudam o discurso: 'o público quer o cinema, afinal'.",
+   "en": "May 2022. A pilot film made for the big screen, with real aerial scenes, does what nobody expected: it fills theaters worldwide. Executives change their tune: 'audiences want the cinema, after all'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Top Gun: Maverick",
+    "ano": 2022,
+    "o_que": "O filme arrecadou cerca de US$ 1,5 bilhão e foi creditado por reanimar as salas depois da pandemia",
+    "link": "https://en.wikipedia.org/wiki/Top_Gun:_Maverick",
+    "o_que_en": "The film grossed about $1.5 billion and was credited with reviving theaters after the pandemic"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "sala",
+    "rotulo": {
+     "pt": "Apostar em filmes para as salas",
+     "en": "Bet on theatrical films"
+    },
+    "efeitos": {
+     "prestigio": 2,
+     "fama": 3
+    }
+   },
+   {
+    "id": "streaming",
+    "rotulo": {
+     "pt": "Continuar nos streamings",
+     "en": "Stay with streaming"
+    },
+    "efeitos": {
+     "dinheiro": 120000,
+     "fama": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "disney_fox_2019",
+  "tipo": "contexto",
+  "anos": [
+   2019
+  ],
+  "peso": 10,
+  "texto": {
+   "pt": "Março de 2019. A Disney conclui a compra da Fox. Um estúdio histórico some do mapa, milhares de empregos são cortados e seu agente diz que 'o mercado ficou mais concentrado, mas há sempre um café'.",
+   "en": "March 2019. Disney completes its purchase of Fox. A historic studio vanishes from the map, thousands of jobs are cut and your agent says 'the market got more concentrated, but there's always coffee'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Disney e Fox",
+    "ano": 2019,
+    "o_que": "A Disney concluiu a compra da 21st Century Fox em março de 2019",
+    "link": "https://en.wikipedia.org/wiki/The_Walt_Disney_Company",
+    "o_que_en": "Disney completed its purchase of 21st Century Fox in March 2019"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "grande",
+    "rotulo": {
+     "pt": "Procurar a Disney agora",
+     "en": "Go to Disney now"
+    },
+    "efeitos": {
+     "contatos_evento": 1,
+     "dinheiro": 100000,
+     "prestigio": -1
+    }
+   },
+   {
+    "id": "indie",
+    "rotulo": {
+     "pt": "Apostar em estúdios independentes",
+     "en": "Bet on independent studios"
+    },
+    "efeitos": {
+     "prestigio": 3,
+     "dinheiro": -30000
+    }
+   }
+  ]
  }
 ]
