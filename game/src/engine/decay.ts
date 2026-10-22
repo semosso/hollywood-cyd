@@ -1,4 +1,4 @@
-import { METER_LIMITS } from "./constants";
+import { FAMA_DECAY, METER_LIMITS } from "./constants";
 import { rngFor } from "./rng";
 import type { DeathCause, MeterKey, State } from "./types";
 
@@ -12,7 +12,7 @@ export function clampMeters(state: State): void {
 /** RULES 6.4. Roda uma vez por card, antes de montar o próximo. */
 export function applyDecay(state: State): void {
   state.meters.heat = Math.max(0, state.meters.heat - 1);
-  if (state.cardsJogados - state.ultimaEstreiaEm >= 2) state.meters.fama -= 3;
+  if (state.cardsJogados - state.ultimaEstreiaEm >= 2) state.meters.fama -= FAMA_DECAY;
   if (state.meters.vicio >= 5 && state.meters.estabilidade <= 3) state.meters.vicio += 1;
   clampMeters(state);
 }

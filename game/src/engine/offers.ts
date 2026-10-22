@@ -1,4 +1,4 @@
-import { AGE_OLDER, AGE_YOUNGER, HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN, TRAP_RATE } from "./constants";
+import { AGE_OLDER, EXCEPTIONAL_BOOST, AGE_YOUNGER, HOLLYWOOD_REALISTA_IDADE, NOISE, TIER_BUDGET_MAX, TIER_FAMA_MIN, TRAP_RATE } from "./constants";
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
@@ -43,13 +43,13 @@ export function cobica(f: Film): number {
 export function desireWeight(f: Film, state: State): number {
   const gap = cobica(f) - statusFor(state);
   if (gap <= 0) return 1;
-  return Math.max(0.04, Math.exp(-3.5 * gap));
+  return Math.max(0.12, Math.exp(-2.5 * gap));
 }
 
 /** Índice do papel elegível para o jogador, ou -1. Iniciante em filme acima do seu nível entra como coadjuvante. */
 export function eligibleRole(f: Film, state: State): number {
   let minOrder = state.flags.includes("sotaque") && state.meters.fama < 40 ? 2 : 0;
-  if (cobica(f) - statusFor(state) > 0.25) minOrder = Math.max(minOrder, 2); // ninguém te dá o protagonista ainda
+  if (cobica(f) - statusFor(state) > 0.4) minOrder = Math.max(minOrder, 2); // ninguém te dá o protagonista ainda
   let best = -1;
   let fallback = -1;
   f.roles.forEach((r: Role, i) => {
@@ -183,6 +183,7 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
     let w = filmTier(c.film) === wantTier ? 1 : filmTier(c.film) === wantTier - 1 ? 0.4 : 0.1;
     w *= desireWeight(c.film, state);                                   // status acumulado abre (ou fecha) as portas
     if (c.film.director && redeDir.has(c.film.director.tmdb_id)) w *= 3; // o diretor te quer de novo
+    if (isExceptional(c.film, c.roleIndex)) w *= 1 + EXCEPTIONAL_BOOST * statusFor(state); // quem já tem nome recebe mais os papéis de uma vida
     return w;
   };
   let candidates = p.slice();

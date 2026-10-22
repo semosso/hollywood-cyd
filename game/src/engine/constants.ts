@@ -18,6 +18,8 @@ export const HOLLYWOOD_REALISTA_IDADE = 45;
 export const AGE_YOUNGER = 7;   // você pode fazer alguém até 7 anos mais novo (Hollywood faz isso o tempo todo)
 export const AGE_OLDER = 10;    // …ou até 10 anos mais velho (maquiagem, e ninguém reclama de "velho demais")
 export const CHAOS = 0.1;
+export const EXCEPTIONAL_BOOST = 10;   // peso extra (× status) para filmes com papel premiado ou p_prize ≥ 0.4
+export const FAMA_DECAY = 2;         // Fama perdida por card sem estreia recente (RULES 6.4)
 export const TRAP_RATE = 0.4;      // fração dos cards normais com uma armadilha, quando o pool permite
 export const BAD_FILM_PENALTY = { flop: -0.6, bomb: -1.0, popcorn: -0.2 } as Record<string, number>;
 export const ATTRS: AttrKey[] = ["beleza", "talento", "contatos", "carisma", "juizo"];
@@ -36,7 +38,7 @@ export const METER_LIMITS: Record<MeterKey, [number, number]> = {
 export const TIER_BUDGET_MAX = [15e6, 50e6, 120e6, Infinity];
 export const TIER_FAMA_MIN = [0, 20, 45, 70];
 export const CACHE_BASE_2020 = [30_000, 300_000, 2_000_000, 8_000_000];
-export const BILLING_FACTOR = [1.0, 0.8, 0.6, 0.5, 0.4, 0.4];
+export const BILLING_FACTOR = [1.0, 0.85, 0.7, 0.6, 0.5, 0.5];
 
 export const FILM_DELTAS: Record<Outcome, { fama: number; prestigio: number; heat: number }> = {
   hit: { fama: 10, prestigio: 3, heat: 3 },

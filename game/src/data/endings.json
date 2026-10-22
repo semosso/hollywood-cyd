@@ -239,7 +239,8 @@
   "raridade": 0.06,
   "requer": {
    "idade": ">=40",
-   "fama": "<=50"
+   "fama": "<=45",
+   "prestigio": "<=20"
   },
   "alvo": {
    "fama": 35,
@@ -733,6 +734,168 @@
   "texto": {
    "pt": "Castelos vendidos. Crânio devolvido. Você faz sete filmes por ano para pagar o fisco. Um deles, por acidente, é bom. A crítica chama de 'renascimento'. É só a quarta-feira.",
    "en": "Castles sold. Skull returned. You make seven films a year to pay the IRS. One of them, by accident, is good. Critics call it a 'renaissance'. It's just Wednesday."
+  }
+ },
+ {
+  "id": "ator_de_serie",
+  "categoria": "humano",
+  "raridade": 0.07,
+  "requer": {
+   "fama": ">=30",
+   "prestigio": ">=0",
+   "estabilidade": ">=6",
+   "dinheiro": ">=3000000"
+  },
+  "alvo": {
+   "fama": 45,
+   "prestigio": 12,
+   "estabilidade": 7,
+   "dinheiro": 15000000
+  },
+  "titulo": {
+   "pt": "Ator/Atriz de Série",
+   "en": "Series Regular"
+  },
+  "manchete": {
+   "pt": "NA RUA, DESCONHECIDOS CHAMAM ASTRO PELO NOME DO PERSONAGEM HÁ 14 ANOS",
+   "en": "STRANGERS HAVE CALLED STAR BY THE CHARACTER'S NAME FOR 14 YEARS"
+  },
+  "texto": {
+   "pt": "Você assina um contrato de sete temporadas e fica quatorze. Quando a série acaba, as pessoas ainda te chamam pelo nome dele. Você aprendeu a atender.",
+   "en": "You sign a seven-season contract and stay fourteen. When the show ends, people still call you by his name. You've learned to answer."
+  }
+ },
+ {
+  "id": "coadjuvante_de_luxo",
+  "categoria": "humano",
+  "raridade": 0.07,
+  "requer": {
+   "fama": ">=30",
+   "prestigio": ">=15"
+  },
+  "alvo": {
+   "fama": 40,
+   "prestigio": 30,
+   "estabilidade": 6
+  },
+  "titulo": {
+   "pt": "Coadjuvante de Luxo",
+   "en": "Supporting Royalty"
+  },
+  "manchete": {
+   "pt": "MELHORES FILMES DO ANO TÊM ALGO EM COMUM: VOCÊ NO TERCEIRO CARTAZ",
+   "en": "THE YEAR'S BEST FILMS HAVE ONE THING IN COMMON: YOU, THIRD ON THE POSTER"
+  },
+  "texto": {
+   "pt": "Você nunca ganhou nada, mas todo diretor que importa tem seu número. Seu nome aparece depois do 'com', e o público sorri quando você entra em cena.",
+   "en": "You never won anything, but every director who matters has your number. Your name comes after the 'with', and audiences smile when you walk on."
+  }
+ },
+ {
+  "id": "professor_de_atuacao",
+  "categoria": "reinvencao",
+  "raridade": 0.05,
+  "requer": {
+   "prestigio": ">=25",
+   "idade": ">=45"
+  },
+  "alvo": {
+   "fama": 25,
+   "prestigio": 45,
+   "estabilidade": 7
+  },
+  "titulo": {
+   "pt": "Mestre de Atuação",
+   "en": "Acting Teacher"
+  },
+  "manchete": {
+   "pt": "ESCOLA DE TEATRO ABRE TURMA COM NOME DE ESTRELA: LISTA DE ESPERA DE DOIS ANOS",
+   "en": "DRAMA SCHOOL OPENS CLASS UNDER STAR'S NAME: TWO-YEAR WAITING LIST"
+  },
+  "texto": {
+   "pt": "Você abre uma sala de ensaio num segundo andar. Dá aulas a quem ainda acha que isso é fácil. De vez em quando alguém acerta, e você sai para fumar.",
+   "en": "You open a rehearsal room on a second floor. You teach people who still think this is easy. Now and then someone gets it right, and you step out for a smoke."
+  }
+ },
+ {
+  "id": "estrela_das_convencoes",
+  "categoria": "queda",
+  "raridade": 0.06,
+  "requer": {
+   "fama": ">=15",
+   "prestigio": "<=0",
+   "idade": ">=40"
+  },
+  "alvo": {
+   "fama": 25,
+   "prestigio": -5,
+   "estabilidade": 6
+  },
+  "titulo": {
+   "pt": "Estrela das Convenções",
+   "en": "Convention Star"
+  },
+  "manchete": {
+   "pt": "ASTRO ASSINA 400 FOTOS DE UM FILME DE 1991, E NINGUÉM PERGUNTA DO RESTO",
+   "en": "STAR SIGNS 400 PHOTOS OF A 1991 FILM, AND NOBODY ASKS ABOUT THE REST"
+  },
+  "texto": {
+   "pt": "Todo mês você viaja para um salão de hotel com uma mesa e uma fila. Fãs sabem de cor falas que você esqueceu. Você descobre que ser lembrado(a) por uma coisa só é uma carreira.",
+   "en": "Every month you travel to a hotel ballroom with a table and a line. Fans know lines you forgot by heart. You discover that being remembered for one thing is a career."
+  }
+ },
+ {
+  "id": "a_voz",
+  "categoria": "reinvencao",
+  "raridade": 0.06,
+  "requer": {
+   "fama": ">=35",
+   "idade": ">=45"
+  },
+  "alvo": {
+   "fama": 50,
+   "prestigio": 20,
+   "dinheiro": 20000000,
+   "estabilidade": 8
+  },
+  "titulo": {
+   "pt": "A Voz",
+   "en": "The Voice"
+  },
+  "manchete": {
+   "pt": "O DRAGÃO MAIS FAMOSO DO CINEMA, DE PIJAMA, EM UMA CABINE DE GRAVAÇÃO",
+   "en": "CINEMA'S MOST FAMOUS DRAGON, IN PAJAMAS, IN A RECORDING BOOTH"
+  },
+  "texto": {
+   "pt": "Você grava de camiseta, sem maquiagem, na terça de manhã. O filme dá bilhões. Os netos de quem te viu no cinema pedem a sua voz na hora de dormir.",
+   "en": "You record in a T-shirt, no makeup, on a Tuesday morning. The film makes billions. The grandchildren of those who saw you in cinemas ask for your voice at bedtime."
+  }
+ },
+ {
+  "id": "conjunto_da_obra",
+  "categoria": "humano",
+  "raridade": 0.05,
+  "requer": {
+   "prestigio": ">=35",
+   "fama": ">=40",
+   "idade": ">=48"
+  },
+  "alvo": {
+   "fama": 55,
+   "prestigio": 55,
+   "estabilidade": 6
+  },
+  "titulo": {
+   "pt": "Pelo Conjunto da Obra",
+   "en": "Lifetime Achievement"
+  },
+  "manchete": {
+   "pt": "ACADEMIA HOMENAGEIA VETERANO(A) COM OSCAR HONORÁRIO: 'FOI A COISA MAIS JUSTA QUE FIZEMOS EM ANOS'",
+   "en": "ACADEMY HONORS VETERAN WITH AN HONORARY OSCAR: 'THE FAIREST THING WE'VE DONE IN YEARS'"
+  },
+  "texto": {
+   "pt": "Você sobe ao palco numa noite que não é a sua, com um prêmio que não é o de verdade. Ninguém te interrompe. A sala fica em pé por quatro minutos. Você agradece, de verdade.",
+   "en": "You walk onstage on a night that isn't yours, with a prize that isn't the real one. Nobody cuts you off. The room stands for four minutes. You thank them, genuinely."
   }
  }
 ]
