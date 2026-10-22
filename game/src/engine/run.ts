@@ -2,13 +2,13 @@ import { CHAOS, DATA_YEAR_MAX } from "./constants";
 import { applyDecay, checkDeath, clampMeters } from "./decay";
 import { chooseEnding } from "./endings";
 import { availableOptions, contextEvent, pickEvent, resolveEvent } from "./events";
-import { buildProjectCard } from "./offers";
+import { buildProjectCard, localizeCard } from "./offers";
 import { resolveRelease, type Cpi } from "./resolve";
 import { rngFor } from "./rng";
 import { effAttrs } from "./attrs";
 import { maybeGuinada } from "./guinada";
 import { atoFor, stepAt } from "./timeline";
-import type { Action, Card, Ending, Film, GameEvent, HistoryEntry, Screen, State } from "./types";
+import type { Action, Card, Ending, Film, GameEvent, HistoryEntry, Lang, Screen, State } from "./types";
 void CHAOS;
 
 export type Content = { films: Film[]; fallbacks: Film[]; events: GameEvent[]; endings: Ending[]; cpi: Cpi };
@@ -115,6 +115,15 @@ function advance(state: State, content: Content): void {
     return;
   }
   state.card = card;
+}
+
+/** Troca o idioma no meio da run: o card de projeto atual é remontado com os textos do novo idioma. */
+export function relocalize(state: State, lang: Lang): State {
+  if (state.opcoes.idioma === lang) return state;
+  const s = structuredClone(state);
+  s.opcoes.idioma = lang;
+  if (s.card?.kind === "projeto") s.card = localizeCard(s.card, s);
+  return s;
 }
 
 export function startRun(state: State, content: Content): State {

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { content } from "../engine/content";
 import { createState } from "../engine/creation";
-import { replay, screen, startRun, step } from "../engine/run";
+import { relocalize, replay, screen, startRun, step } from "../engine/run";
 import { creationFromParams, decodeChoices, shareUrl } from "../engine/share";
 import type { Action, CreationInput, Lang, State } from "../engine/types";
 import { atoFor } from "../engine/timeline";
@@ -15,6 +15,7 @@ import { Creation } from "./Creation";
 import { FinalView } from "./FinalView";
 import { ResolutionView } from "./ResolutionView";
 import { About } from "./About";
+import { LangSwitch } from "./LangSwitch";
 import { StatusView } from "./StatusView";
 import { track } from "./track";
 import { METER_HELP, METER_LABEL } from "./format";
@@ -25,7 +26,7 @@ function writeLS(k: string, v: string) { try { localStorage.setItem(k, v); } cat
 export function App() {
   const params = useMemo(() => new URLSearchParams(typeof location !== "undefined" ? location.search : ""), []);
   const [lang, setLangState] = useState<Lang>((readLS("lang") as Lang) || (navigator.language.startsWith("pt") ? "pt" : "en"));
-  const setLang = (l: Lang) => { setLangState(l); writeLS("lang", l); try { document.documentElement.lang = l === "pt" ? "pt-BR" : "en"; } catch { /* ignore */ } };
+  const setLang = (l: Lang) => { setLangState(l); writeLS("lang", l); setState((s) => (s ? relocalize(s, l) : s)); try { document.documentElement.lang = l === "pt" ? "pt-BR" : "en"; } catch { /* ignore */ } };
   const [state, setState] = useState<State | null>(null);
   const [tutorial, setTutorial] = useState(readLS("tutorial") !== "done");
   const [about, setAbout] = useState(false);
@@ -64,11 +65,12 @@ export function App() {
     setAbout(false); setStatus(false); setState(null);
     try { history.replaceState(null, "", location.pathname); window.scrollTo(0, 0); } catch { /* ignore */ }
   };
-  const topbar = <div className="topbar"><button type="button" className="home" onClick={goHome} title={t("home", lang)}>🎬 {t("title", lang)}</button></div>;
+  const langSwitch = <LangSwitch lang={lang} setLang={setLang} />;
+  const topbar = <div className="topbar"><button type="button" className="home" onClick={goHome} title={t("home", lang)}>🎬 {t("title", lang)}</button>{langSwitch}</div>;
 
   if (about) return <div className="wrap">{topbar}<About lang={lang} onClose={() => setAbout(false)} /></div>;
   if (status && state) return <div className="wrap">{topbar}<StatusView state={state} lang={lang} content={content} onClose={() => setStatus(false)} /></div>;
-  if (!state) return <div className="wrap"><Creation lang={lang} setLang={setLang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;
+  if (!state) return <div className="wrap"><div className="topbar">{langSwitch}</div><Creation lang={lang} initialSeed={seedParam} prefill={seedParam ? creationFromParams(params, lang) : null} onStart={onStart} /><Footer lang={lang} onAbout={() => setAbout(true)} /></div>;
   const scr = screen(state);
   const m = state.meters;
   return (

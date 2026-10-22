@@ -25,7 +25,11 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 input, select { font: inherit; color: var(--fg); background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
 .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .stack { display: grid; gap: 14px; }
-.topbar { margin-bottom: 10px; }
+.topbar { margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.topbar .langswitch { margin-left: auto; }
+.langswitch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.langswitch button { border: none; border-radius: 0; background: none; padding: 3px 10px; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--muted); }
+.langswitch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 .topbar .home { background: none; border: none; padding: 0; cursor: pointer; font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--muted); letter-spacing: .01em; }
 .topbar .home:hover { color: var(--accent); }
 .hud { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-block: 8px 10px; margin-bottom: 18px; }

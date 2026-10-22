@@ -222,7 +222,10 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   if (modo === "normal" && rng.next() < 0.5) pair = [B, A];
   const [P, Q] = pair;
   const offers: [Offer, Offer] = [makeOffer(P.film, P.roleIndex, state, filmTier(P.film) > tier, modo === "dourado" && isGolden(P.film)), makeOffer(Q.film, Q.roleIndex, state, filmTier(Q.film) > tier, modo === "dourado" && isGolden(Q.film))];
-  const third = thirdOption(state, offers);
+  return { kind: "projeto", offers, third: thirdOption(state, offers), hint: hintFor(modo, state), modo };
+}
+
+function hintFor(modo: ProjectCard["modo"], state: State): string | null {
   const lang = state.opcoes.idioma;
   let hint: string | null = null;
   if (modo === "dourado") hint = lang === "en" ? "He asked for you personally." : "Ele pediu você pessoalmente.";
@@ -230,7 +233,14 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
   if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= HOLLYWOOD_REALISTA_IDADE && state.meters.fama < 70) {
     hint = lang === "en" ? "Realistic Hollywood: past 45, only the exceptional reaches you." : "Hollywood realista: a partir dos 45, só o excepcional chega até você.";
   }
-  return { kind: "projeto", offers, third, hint, modo };
+  return hint;
+}
+
+/** Remonta os textos do card de projeto no idioma atual de `state.opcoes.idioma`, sem mexer em quais filmes foram oferecidos. */
+export function localizeCard(card: ProjectCard, state: State): ProjectCard {
+  const mk = (o: Offer) => makeOffer(o.film, o.roleIndex, state, o.reach, card.modo === "dourado" && isGolden(o.film));
+  const offers: [Offer, Offer] = [mk(card.offers[0]), mk(card.offers[1])];
+  return { ...card, offers, third: thirdOption(state, offers), hint: hintFor(card.modo, state) };
 }
 
 function eligibleYear(f: Film, state: State): boolean {
