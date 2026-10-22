@@ -232,16 +232,16 @@
   ],
   "peso": 10,
   "texto": {
-   "pt": "Julho de 1980. O sindicato dos atores entra em greve por noventa e cinco dias, por causa de quem recebe quando um filme passa em fita e na TV a cabo. Seu agente diz que 'isso ninguém vai lembrar'.",
-   "en": "July 1980. The actors' union goes on strike for ninety-five days, over who gets paid when a film airs on tape and cable TV. Your agent says 'nobody will remember this'."
+   "pt": "Julho de 1980. O sindicato dos atores entra em greve por mais de dois meses, por causa de quem recebe quando um filme passa em fita e na TV a cabo. Seu agente diz que 'isso ninguém vai lembrar'.",
+   "en": "July 1980. The actors' union goes on strike for over two months, over who gets paid when a film airs on tape and cable TV. Your agent says 'nobody will remember this'."
   },
   "baseado_em": [
    {
     "quem": "SAG-AFTRA",
     "ano": 1980,
-    "o_que": "Greve de atores de 1980 por direitos de exibição em TV paga e vídeo",
+    "o_que": "Greve de atores de 1980 (67 dias) por direitos de exibição em TV paga e vídeo",
     "link": "https://en.wikipedia.org/wiki/1980_Screen_Actors_Guild_strike",
-    "o_que_en": "1980 actors' strike over pay-TV and home-video residuals"
+    "o_que_en": "1980 actors' strike (67 days) over pay-TV and home-video residuals"
    }
   ],
   "opcoes": [
@@ -464,7 +464,7 @@
   ],
   "peso": 10,
   "texto": {
-   "pt": "Março de 2019. A Disney conclui a compra da Fox. Um estúdio histórico some do mapa, quatro mil empregados são demitidos e seu agente diz que 'o mercado ficou mais concentrado, mas há sempre um café'.",
+   "pt": "Março de 2019. A Disney conclui a compra da Fox. Um estúdio histórico some do mapa, milhares de empregos são cortados e seu agente diz que 'o mercado ficou mais concentrado, mas há sempre um café'.",
    "en": "March 2019. Disney completes its purchase of Fox. A historic studio vanishes from the map, thousands of jobs are cut and your agent says 'the market got more concentrated, but there's always coffee'."
   },
   "baseado_em": [

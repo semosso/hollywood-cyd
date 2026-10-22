@@ -821,10 +821,10 @@
     "baseado_em": [
       {
         "quem": "Keanu Reeves",
-        "ano": 1999,
-        "o_que": "Segundo relatos, dividiu parte de seu bônus de Matrix com equipes de figurino e efeitos",
+        "ano": 2003,
+        "o_que": "Segundo a revista Hello! (2003), dividiu cerca de £ 50 milhões dos ganhos das sequências de Matrix com equipes de figurino e efeitos; os valores nunca foram confirmados",
         "link": "https://en.wikipedia.org/wiki/Keanu_Reeves",
-        "o_que_en": "Reportedly shared part of his Matrix bonus with the costume and effects crews"
+        "o_que_en": "According to Hello! magazine (2003), shared about £50 million of his Matrix sequel earnings with costume and effects crews; the figures were never confirmed"
       }
     ],
     "opcoes": [
@@ -962,9 +962,9 @@
       {
         "quem": "Bruce Lee",
         "ano": 1971,
-        "o_que": "Segundo relatos, teve a ideia da série Kung Fu aproveitada, mas o papel foi para outro ator",
+        "o_que": "Estúdios hesitaram em dar o protagonista a um ator chinês; a versão de que a série Kung Fu aproveitou a ideia dele é contestada",
         "link": "https://en.wikipedia.org/wiki/Bruce_Lee",
-        "o_que_en": "Reportedly had his idea for the Kung Fu series used, but the role went to another actor"
+        "o_que_en": "Studios hesitated to give the lead to a Chinese actor; the claim that the Kung Fu series used his idea is disputed"
       }
     ],
     "opcoes": [
@@ -1174,9 +1174,9 @@
       {
         "quem": "Mark Wahlberg",
         "ano": 2017,
-        "o_que": "No refilme de Todo o Dinheiro do Mundo, Wahlberg recebeu cerca de US$ 1,5 mi e Michelle Williams menos de US$ 1 mil",
+        "o_que": "Segundo o USA Today (fontes anônimas), no refilme de Todo o Dinheiro do Mundo, Wahlberg recebeu cerca de US$ 1,5 mi e Michelle Williams uma diária de US$ 80",
         "link": "https://en.wikipedia.org/wiki/All_the_Money_in_the_World",
-        "o_que_en": "On the All the Money in the World reshoots, Wahlberg got about $1.5M and Michelle Williams less than $1,000"
+        "o_que_en": "According to USA Today (anonymous sources), on the All the Money in the World reshoots, Wahlberg got about $1.5M and Michelle Williams an $80 per diem"
       }
     ],
     "opcoes": [
@@ -1922,9 +1922,9 @@
       {
         "quem": "Matthew McConaughey",
         "ano": 2011,
-        "o_que": "Recusou comédias românticas por um ano e meio e se reinventou em papéis dramáticos até o Oscar de Clube de Compras Dallas",
+        "o_que": "Recusou comédias românticas e ficou cerca de 20 meses sem trabalho, até se reinventar em papéis dramáticos e ganhar o Oscar por Clube de Compras Dallas",
         "link": "https://en.wikipedia.org/wiki/Matthew_McConaughey",
-        "o_que_en": "Turned down rom-coms for a year and a half and reinvented himself in dramatic roles up to the Oscar for Dallas Buyers Club"
+        "o_que_en": "Turned down rom-coms and went about 20 months without work, until reinventing himself in dramatic roles and winning the Oscar for Dallas Buyers Club"
       }
     ],
     "opcoes": [
@@ -1943,8 +1943,8 @@
               "dinheiro": -50000
             },
             "texto": {
-              "pt": "Um ano e meio sem ofertas depois, chega um papel que ninguém queria. Você ganha prêmios por ele.",
-              "en": "A year and a half without offers later, a role nobody wanted arrives. You win awards for it."
+              "pt": "Vinte meses sem ofertas depois, chega um papel que ninguém queria. Você ganha prêmios por ele.",
+              "en": "Twenty months without offers later, a role nobody wanted arrives. You win awards for it."
             }
           },
           {
