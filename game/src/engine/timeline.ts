@@ -1,13 +1,20 @@
 import { ATOS, DATA_YEAR_MAX, MIN_CARDS, YEARS_PER_CARD_LONGA, YEARS_PER_CARD_NORMAL } from "./constants";
 import type { State } from "./types";
 
-/** Anos que cada decisão avança: 2 no ritmo normal, 1 na carreira longa. É só uma conta interna de tempo. */
+/** Anos que cada decisão avança, em média: 2,5 no ritmo normal, 1,25 na carreira longa. É só uma conta interna de tempo. */
 export function yearsPerCardFor(longa: boolean): number {
   return longa ? YEARS_PER_CARD_LONGA : YEARS_PER_CARD_NORMAL;
 }
 
-export function yearsPerCard(state: State): number {
-  return yearsPerCardFor(state.opcoes.longa);
+/** Ano em que o card de índice `card` acontece: o ano de estreia mais o ritmo médio, arredondado (os passos reais são inteiros). */
+export function yearAt(anoEstreia: number, longa: boolean, card: number): number {
+  return anoEstreia + Math.round(card * yearsPerCardFor(longa));
+}
+
+/** Anos que passam entre o card atual e o seguinte. */
+export function stepAt(state: State, card = state.cardsJogados): number {
+  const { anoEstreia, opcoes } = state;
+  return yearAt(anoEstreia, opcoes.longa, card + 1) - yearAt(anoEstreia, opcoes.longa, card);
 }
 
 /** Total de decisões: as que cabem até 2025 no ritmo escolhido, nunca menos que MIN_CARDS (RULES 3.1). */

@@ -56,7 +56,7 @@ describe("ofertas", () => {
     const p = pool(content.films, s);
     expect(p.length).toBeGreaterThan(0);
     for (const c of p) {
-      expect([1996, 1997]).toContain(c.film.year); // janela de 2 anos por decisão
+      expect([1996, 1997, 1998]).toContain(c.film.year); // janela de 2 anos por decisão
       expect(["f", "nb"]).toContain(c.film.roles[c.roleIndex].gender);
     }
     s.usados.push(p[0].film.tmdb_id);
@@ -139,23 +139,23 @@ describe("run", () => {
     expect(r.escolhas).toEqual(s.escolhas);
     expect(["card", "resolucao"]).toContain(screen(r));
   });
-  it("uma run de 1995 tem 15 decisões, passa por décadas e usa contexto histórico", () => {
+  it("uma run de 1995 tem 12 decisões, passa por décadas e usa contexto histórico", () => {
     const a = autoplay(base, firstOption);
-    expect(createState(base).totalCards).toBe(15);
-    expect(createState({ ...base, opcoes: { ...base.opcoes, longa: true } }).totalCards).toBe(30);
+    expect(createState(base).totalCards).toBe(12);
+    expect(createState({ ...base, opcoes: { ...base.opcoes, longa: true } }).totalCards).toBe(24);
     expect(a.ano).toBeGreaterThan(2010);
     expect(a.contextosVistos).toContain(2007);
     expect(a.contextosVistos).toContain(1988); // anterior à estreia: marcado como visto, nunca mostrado
     expect(a.historico.length).toBeGreaterThan(10);
   });
-  it("a época de estreia e o ritmo ditam o número de decisões, nunca menos que dez", async () => {
+  it("a época de estreia e o ritmo ditam o número de decisões, nunca menos que oito", async () => {
     const { totalCardsFor } = await import("../timeline");
-    expect(totalCardsFor(1975, false)).toBe(25);
-    expect(totalCardsFor(1975, true)).toBe(50);
-    expect(totalCardsFor(1995, false)).toBe(15);
-    expect(totalCardsFor(1995, true)).toBe(30);
-    expect(totalCardsFor(2010, false)).toBe(10); // 7 cabem, mínimo 10
-    expect(totalCardsFor(2020, true)).toBe(10);
+    expect(totalCardsFor(1975, false)).toBe(20);
+    expect(totalCardsFor(1975, true)).toBe(40);
+    expect(totalCardsFor(1995, false)).toBe(12);
+    expect(totalCardsFor(1995, true)).toBe(24);
+    expect(totalCardsFor(2010, false)).toBe(8); // 6 cabem, mínimo 8
+    expect(totalCardsFor(2020, true)).toBe(8);
   });
 });
 

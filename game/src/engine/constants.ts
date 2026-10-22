@@ -1,8 +1,8 @@
 import type { AttrKey, MeterKey, Outcome, PersonalResult } from "./types";
 
-export const MIN_CARDS = 10;        // mínimo de decisões, mesmo com pouca carreira pela frente
-export const YEARS_PER_CARD_NORMAL = 2;
-export const YEARS_PER_CARD_LONGA = 1;
+export const MIN_CARDS = 8;         // mínimo de decisões, mesmo com pouca carreira pela frente
+export const YEARS_PER_CARD_NORMAL = 2.5; // média: cada decisão avança 2 ou 3 anos (arredondado)
+export const YEARS_PER_CARD_LONGA = 1.25; // média: cada decisão avança 1 ou 2 anos
 export const ATOS = 3;              // escala dos eventos: início, meio e fim da carreira
 export const POINT_BUY_TOTAL = 12;
 export const ATTR_MIN = 1;
@@ -18,7 +18,7 @@ export const HOLLYWOOD_REALISTA_IDADE = 45;
 export const AGE_YOUNGER = 7;   // você pode fazer alguém até 7 anos mais novo (Hollywood faz isso o tempo todo)
 export const AGE_OLDER = 10;    // …ou até 10 anos mais velho (maquiagem, e ninguém reclama de "velho demais")
 export const CHAOS = 0.1;
-export const EXCEPTIONAL_BOOST = 10;   // peso extra (× status) para filmes com papel premiado ou p_prize ≥ 0.4
+export const EXCEPTIONAL_BOOST = 14;   // peso extra (× status) para filmes com papel premiado ou p_prize ≥ 0.4
 export const FAMA_DECAY = 2;         // Fama perdida por card sem estreia recente (RULES 6.4)
 export const TRAP_RATE = 0.4;      // fração dos cards normais com uma armadilha, quando o pool permite
 export const BAD_FILM_PENALTY = { flop: -0.6, bomb: -1.0, popcorn: -0.2 } as Record<string, number>;
