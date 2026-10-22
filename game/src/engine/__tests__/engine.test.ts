@@ -350,3 +350,17 @@ describe("repetição de eventos", () => {
     }
   });
 });
+
+describe("idioma no meio da run", () => {
+  it("relocalize remonta o card de projeto no novo idioma sem trocar os filmes", async () => {
+    const { relocalize } = await import("../run");
+    const s = startRun(createState({ ...base, atributos: { beleza: 2, talento: 3, contatos: 4, carisma: 3, juizo: 1 } }), content);
+    expect(s.card?.kind).toBe("projeto");
+    const en = relocalize(s, "en");
+    expect(en.opcoes.idioma).toBe("en");
+    if (en.card?.kind !== "projeto" || s.card?.kind !== "projeto") throw new Error("card");
+    expect(en.card.offers.map((o) => o.film.tmdb_id)).toEqual(s.card.offers.map((o) => o.film.tmdb_id));
+    expect(en.card.third?.requisito).toMatch(/Connections|Judgment/);
+    expect(relocalize(en, "pt").card && (relocalize(en, "pt").card as { third: { requisito: string } }).third.requisito).toMatch(/Contatos|Juízo/);
+  });
+});

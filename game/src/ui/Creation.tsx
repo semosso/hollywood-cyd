@@ -29,7 +29,7 @@ function randomName(g: Gender): string {
   return `${f} ${l}`;
 }
 
-export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lang: Lang; setLang: (l: Lang) => void; initialSeed: string | null; prefill: CreationInput | null; onStart: (i: CreationInput) => void }) {
+export function Creation({ lang, initialSeed, prefill, onStart }: { lang: Lang; initialSeed: string | null; prefill: CreationInput | null; onStart: (i: CreationInput) => void }) {
   const [genero, setGenero] = useState<Gender>(prefill?.genero ?? "f");
   const [nome, setNome] = useState(randomName(prefill?.genero ?? "f"));
   const [ano, setAno] = useState(prefill?.anoEstreia ?? 1995);
@@ -50,13 +50,7 @@ export function Creation({ lang, setLang, initialSeed, prefill, onStart }: { lan
   return (
     <div className="stack" style={{ gap: 22 }}>
       <header className="stack" style={{ gap: 8 }}>
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <span className="eyebrow">Hollywood · 1975–2025</span>
-          <select aria-label="language" value={lang} onChange={(e) => setLang(e.target.value as Lang)}>
-            <option value="pt">Português</option>
-            <option value="en">English</option>
-          </select>
-        </div>
+        <span className="eyebrow">Hollywood · 1975–2025</span>
         <h1>{t("title", lang)}</h1>
         <p className="muted" style={{ margin: 0 }}>{t("tagline", lang)}</p>
       </header>
