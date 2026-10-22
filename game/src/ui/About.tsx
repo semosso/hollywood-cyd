@@ -9,7 +9,7 @@ export function About({ lang, onClose }: { lang: Lang; onClose: () => void }) {
       <h2>{pt ? "Agradeço à Academia" : "I'd Like to Thank the Academy"}</h2>
       <p style={{ margin: 0 }}>
         {pt
-          ? "Um simulador de carreira em Hollywood. Você cria um ator ou atriz, distribui pontos entre cinco atributos e, ao longo de 25 decisões, escolhe às cegas entre filmes e pessoas reais, descritos sem nome. Só depois de escolher o jogo revela o que era. No fim, um card diz como sua carreira terminou."
+          ? "Um simulador de carreira em Hollywood. Você cria um ator ou atriz, distribui pontos entre cinco atributos e, ao longo de 20 a 40 decisões, escolhe às cegas entre filmes e pessoas reais, descritos sem nome. Só depois de escolher o jogo revela o que era. No fim, uma tela diz como sua carreira terminou."
           : "A Hollywood career simulator. You create an actor, spend points across five attributes and, over 25 decisions, choose blind between real films and real people, described without names. Only after you choose does the game reveal what it was. At the end, a card says how your career ended."}
       </p>
       <div>
@@ -19,7 +19,7 @@ export function About({ lang, onClose }: { lang: Lang; onClose: () => void }) {
           <li>{pt ? "Cada atributo revela um tipo de informação antes da escolha. Quem gasta tudo em Beleza joga no escuro." : "Each attribute reveals a kind of information before you choose. Spend everything on Looks and you play blind."}</li>
           <li>{pt ? "Fatos sobre pessoas reais entram como fatos. Rumores entram marcados como rumor, e alguns são falsos de propósito." : "Facts about real people appear as facts. Rumors appear tagged as rumors, and some are deliberately false."}</li>
           <li>{pt ? "Vício, sexo e crime acontecem com personagens inventados, em circunstâncias copiadas de casos famosos. A resolução diz com quem aconteceu de verdade." : "Addiction, sex and crime happen with invented characters, in circumstances copied from famous cases. The resolution tells you who it really happened to."}</li>
-          <li>{pt ? "Com baixa probabilidade, um evento pessoal vira uma guinada: um boost que traz um diretor de peso até você, ou uma queda em que só sobra o que ninguém quis." : "With low probability, a personal event becomes a swing: a boost that brings a major director to you, or a slump where only leftovers remain."}</li>
+          <li>{pt ? "Com baixa probabilidade, um evento pessoal vira uma guinada: um impulso que traz um diretor de peso até você, ou uma queda em que só sobra o que ninguém quis." : "With low probability, a personal event becomes a swing: a boost that brings a major director to you, or a slump where only leftovers remain."}</li>
           <li>{pt ? "Mesma seed, mesmas ofertas. Compartilhe a seed para desafiar alguém a viver a mesma vida; compartilhe o link completo para mostrar a sua." : "Same seed, same offers. Share the seed to challenge someone to live the same life; share the full link to show yours."}</li>
         </ul>
       </div>
@@ -40,7 +40,7 @@ export function About({ lang, onClose }: { lang: Lang; onClose: () => void }) {
         <div className="eyebrow">{pt ? "Aviso" : "Disclaimer"}</div>
         <p style={{ margin: "6px 0 0" }}>
           {pt
-            ? "Projeto fan-made, sem fins comerciais. Sátira sobre a indústria do cinema. Não é afiliado a nenhum estúdio, pessoa, premiação ou organização citada. Pessoas reais aparecem por fatos públicos de obra e de carreira; eventos de vício, crime e vida pessoal são ficção com personagens inventados. Se algo estiver errado, abra uma issue no repositório."
+            ? "Projeto feito por fã, sem fins comerciais. Sátira sobre a indústria do cinema. Não é afiliado a nenhum estúdio, pessoa, premiação ou organização citada. Pessoas reais aparecem por fatos públicos de obra e de carreira; eventos de vício, crime e vida pessoal são ficção com personagens inventados. Se algo estiver errado, abra uma issue no repositório."
             : "Fan-made, non-commercial project. Satire about the film industry. Not affiliated with any studio, person, award or organization mentioned. Real people appear through public facts about their work and careers; addiction, crime and personal-life events are fiction with invented characters. If something is wrong, open an issue in the repository."}
         </p>
       </div>

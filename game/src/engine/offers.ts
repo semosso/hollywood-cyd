@@ -103,9 +103,9 @@ function blindText(f: Film, state: State, lang: Lang): string {
 
 function scriptBand(f: Film, lang: Lang): string {
   if (f.rt == null) return lang === "en" ? "nobody read the script" : "ninguém leu o roteiro";
-  if (f.rt >= 75) return lang === "en" ? "the script is good" : "o texto é bom";
-  if (f.rt >= 40) return lang === "en" ? "the script is fine" : "o texto é ok";
-  return lang === "en" ? "the script is an excuse" : "o texto é um pretexto";
+  if (f.rt >= 75) return lang === "en" ? "the script is good" : "o roteiro é bom";
+  if (f.rt >= 40) return lang === "en" ? "the script is fine" : "o roteiro é irregular";
+  return lang === "en" ? "the script is an excuse" : "o roteiro é fraco";
 }
 
 function costarsLine(f: Film, roleIndex: number, carisma: number, lang: Lang): string | null {
@@ -127,7 +127,7 @@ function lockedHints(f: Film, a: ReturnType<typeof effAttrs>, directorShown: boo
   const out: string[] = [];
   if (a.contatos < 3) out.push(pt ? "Contatos 3: descrição melhor" : "Connections 3: better description");
   if (!directorShown && a.contatos < 5 && f.director) out.push(pt ? "Contatos 5: nome do diretor" : "Connections 5: director's name");
-  if (a.talento < 3) out.push(pt ? "Talento 3: como está o roteiro" : "Talent 3: how the script is");
+  if (a.talento < 3) out.push(pt ? "Talento 3: a qualidade do roteiro" : "Talent 3: how the script is");
   if (a.carisma < 4 && !f.fallback) out.push(pt ? "Carisma 4: nomes do elenco" : "Charisma 4: cast names");
   if (a.juizo < 3) out.push(pt ? "Juízo 3: sinais de alerta" : "Judgment 3: red flags");
   return out.slice(0, 2);
@@ -228,10 +228,10 @@ export function buildProjectCard(films: Film[], fallbacks: Film[], state: State)
 function hintFor(modo: ProjectCard["modo"], state: State): string | null {
   const lang = state.opcoes.idioma;
   let hint: string | null = null;
-  if (modo === "dourado") hint = lang === "en" ? "He asked for you personally." : "Ele pediu você pessoalmente.";
+  if (modo === "dourado") hint = lang === "en" ? "He asked for you personally." : "Ele pediu por você, pessoalmente.";
   if (modo === "queda") hint = lang === "en" ? "This is what's left." : "É o que sobrou.";
   if (state.opcoes.hollywoodRealista && state.genero === "f" && state.idade >= HOLLYWOOD_REALISTA_IDADE && state.meters.fama < 70) {
-    hint = lang === "en" ? "Realistic Hollywood: past 45, only the exceptional reaches you." : "Hollywood realista: a partir dos 45, só o excepcional chega até você.";
+    hint = lang === "en" ? "Realistic Hollywood: past 45, only the exceptional reaches you." : "Hollywood realista: depois dos 45, só o excepcional chega até você.";
   }
   return hint;
 }

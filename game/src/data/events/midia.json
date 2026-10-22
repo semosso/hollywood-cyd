@@ -896,7 +896,7 @@
               "heat": 3
             },
             "texto": {
-              "pt": "Era um filme. A crítica dá palmas por quem enganou quem.",
+              "pt": "Era um filme. A crítica aplaude, sem saber direito quem enganou quem.",
               "en": "It was a film. Critics applaud who fooled whom."
             }
           },
@@ -1039,7 +1039,7 @@
     ],
     "peso": 4,
     "texto": {
-      "pt": "Pelo segundo ano seguido, todos os indicados à atuação são brancos. A hashtag lidera o mundo. Perguntam se você vai à cerimônia.",
+      "pt": "Pelo segundo ano seguido, todos os indicados à atuação são brancos. A hashtag é o assunto do mundo. Perguntam se você vai à cerimônia.",
       "en": "For the second year in a row, every acting nominee is white. The hashtag leads the world. They ask if you'll go to the ceremony."
     },
     "baseado_em": [
@@ -1172,7 +1172,7 @@
               "fama": 4
             },
             "texto": {
-              "pt": "O mundo para para olhar. A Academia te veta por dez anos.",
+              "pt": "O mundo inteiro para e olha. A Academia te veta por dez anos.",
               "en": "The world stops to look. The Academy bans you for ten years."
             }
           },
@@ -1310,7 +1310,7 @@
       "fama": ">=20"
     },
     "texto": {
-      "pt": "No palco, o apresentador anuncia seu nome ao vivo para milhões de pessoas, mas pronuncia uma coisa que nem se parece com você. A plateia segura o riso. A internet não segura.",
+      "pt": "No palco, o apresentador anuncia seu nome ao vivo para milhões de pessoas, mas pronuncia algo que nem lembra o seu nome. A plateia segura o riso. A internet não segura.",
       "en": "On stage, the presenter announces your name live to millions, but pronounces something that doesn't resemble you at all. The audience holds back laughter. The internet doesn't."
     },
     "baseado_em": [
@@ -1368,7 +1368,7 @@
       {
         "id": "ignorar",
         "rotulo": {
-          "pt": "Ignorar e cantar/atuar",
+          "pt": "Ignorar e seguir em frente",
           "en": "Ignore it and perform"
         },
         "efeitos": {
@@ -1390,7 +1390,7 @@
       "fama": ">=30"
     },
     "texto": {
-      "pt": "No tapete vermelho, um humorista fantasiado de ditador entra com uma urna e despeja pó no seu colega apresentador, dizendo que são 'as cinzas' do próprio. A câmera procura a sua cara.",
+      "pt": "No tapete vermelho, um humorista fantasiado de ditador entra com uma urna e despeja pó em cima do apresentador, dizendo que são 'as cinzas' do próprio ditador. A câmera procura a sua cara.",
       "en": "On the red carpet, a comedian dressed as a dictator walks in with an urn and pours powder on your fellow host, claiming it's 'the ashes' of the real thing. The camera searches for your face."
     },
     "baseado_em": [

@@ -553,7 +553,7 @@
       "idade": ">=55"
     },
     "texto": {
-      "pt": "Uma campanha de fãs nas redes pede que você apresente um programa de televisão. Você tem idade para ser avó/avô de quem organizou, e eles trouxeram mais de 500 mil assinaturas.",
+      "pt": "Uma campanha de fãs nas redes pede que você apresente um programa de televisão. Você tem idade para ser avô ou avó de quem organizou, e eles juntaram mais de 500 mil assinaturas.",
       "en": "A fan campaign online asks that you host a TV show. You're old enough to be the grandparent of the organizers, and they've brought half a million signatures."
     },
     "baseado_em": [
@@ -603,7 +603,7 @@
       "fama": ">=70"
     },
     "texto": {
-      "pt": "O governador do estado sofre um processo de destituição. A eleição de emergência não exige experiência, só nome, e muitas pessoas te param na rua para pedir que você 'tome uma decisão'.",
+      "pt": "O governador do estado enfrenta um processo de cassação por voto popular. A eleição de emergência não exige experiência, só um nome, e muita gente te para na rua para dizer que você 'devia fazer alguma coisa'.",
       "en": "The state governor faces a recall election. The emergency vote doesn't require experience, only name recognition, and many people stop you in the street to ask you to 'make a decision'."
     },
     "baseado_em": [

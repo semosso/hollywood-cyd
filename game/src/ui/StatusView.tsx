@@ -36,7 +36,7 @@ export function StatusView({ state, lang, content, onClose }: { state: State; la
               <div key={k} className="statrow">
                 <span>{ATTR_HELP[k].name[lang]}</span>
                 <span className="pips">{"●".repeat(Math.min(6, v))}{"○".repeat(Math.max(0, 6 - v))}</span>
-                <span className={`mono ${v > base ? "up" : v < base ? "down" : "muted"}`}>{v}{v !== base ? ` (${base}${mod ? `, ${mod.delta > 0 ? "+" : ""}${mod.delta} ${pt ? "por" : "for"} ${mod.ateCard - state.cardsJogados + 1} ${pt ? "cards" : "cards"}` : pt ? ", idade" : ", age"})` : ""}</span>
+                <span className={`mono ${v > base ? "up" : v < base ? "down" : "muted"}`}>{v}{v !== base ? ` (${base}${mod ? `, ${mod.delta > 0 ? "+" : ""}${mod.delta} ${pt ? "por" : "for"} ${mod.ateCard - state.cardsJogados + 1} ${pt ? (mod.ateCard === state.cardsJogados ? "decisão" : "decisões") : "cards"}` : pt ? ", idade" : ", age"})` : ""}</span>
               </div>
             );
           })}
@@ -65,7 +65,7 @@ export function StatusView({ state, lang, content, onClose }: { state: State; la
       {state.pipeline.length > 0 && (
         <section>
           <div className="eyebrow">{t("inProduction", lang)}</div>
-          {state.pipeline.map((_p, i) => <div key={i} className="muted">· {pt ? "assinado, estreia no próximo card" : "signed, opens next card"}</div>)}
+          {state.pipeline.map((_p, i) => <div key={i} className="muted">· {pt ? "assinado; estreia na próxima decisão" : "signed, opens next card"}</div>)}
         </section>
       )}
 
