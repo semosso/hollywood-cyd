@@ -7,7 +7,7 @@ import { resolveRelease, type Cpi } from "./resolve";
 import { rngFor } from "./rng";
 import { effAttrs } from "./attrs";
 import { maybeGuinada } from "./guinada";
-import { atoFor, yearsPerCard } from "./timeline";
+import { atoFor, stepAt } from "./timeline";
 import type { Action, Card, Ending, Film, GameEvent, HistoryEntry, Screen, State } from "./types";
 void CHAOS;
 
@@ -66,8 +66,8 @@ function nextCard(state: State, content: Content): Card | null {
 
 /** Fecha o card atual: avança tempo, decai, resolve estreias/revisões pendentes, checa morte e fim, monta o próximo card. */
 function advance(state: State, content: Content): void {
+  const step = stepAt(state);
   state.cardsJogados += 1;
-  const step = yearsPerCard(state);
   state.ano += step;
   state.idade += step;
   applyDecay(state);

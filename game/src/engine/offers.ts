@@ -2,7 +2,7 @@ import { AGE_OLDER, EXCEPTIONAL_BOOST, AGE_YOUNGER, HOLLYWOOD_REALISTA_IDADE, NO
 import { rngFor } from "./rng";
 import { effAttrs, activeMods } from "./attrs";
 import { isBad, isGolden } from "./guinada";
-import { belezaEfetiva, yearsPerCard } from "./timeline";
+import { belezaEfetiva, stepAt } from "./timeline";
 import type { Film, Lang, Offer, ProjectCard, Role, State, ThirdOption } from "./types";
 
 export function tierFor(fama: number): number {
@@ -72,7 +72,7 @@ export function isExceptional(f: Film, roleIndex: number): boolean {
 }
 
 export function pool(films: Film[], state: State): { film: Film; roleIndex: number }[] {
-  const step = yearsPerCard(state);
+  const step = stepAt(state);
   const comedy = new Set(["Comedy", "Family", "Romance"]);
   const out: { film: Film; roleIndex: number }[] = [];
   for (const f of films) {

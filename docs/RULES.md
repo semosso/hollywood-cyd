@@ -50,8 +50,8 @@
 ## 3. Linha do tempo
 
 ### 3.1 Ritmo e número de decisões
-- Ritmo normal: cada decisão avança **2 anos**. Toggle **Carreira longa** (`opcoes.longa`): **1 ano** por decisão. Isso não é dito ao jogador em anos; é só a conta interna de tempo.
-- `totalCards = max(10, floor((2025 − anoEstreia) / anosPorDecisão))`. Exemplos: 1995 normal → 15; 1995 longa → 30; 1975 normal → 25; 2010 ou 2020 → 10 (o mínimo), e a carreira passa de 2025 com ofertas de fallback (o futuro não tem filmes reais).
+- Ritmo normal: cada decisão avança **2,5 anos em média** (2 ou 3, pelo arredondamento de `anoEstreia + round(card × 2.5)`). Toggle **Carreira longa** (`opcoes.longa`): **1,25 ano em média** (1 ou 2). Isso não é dito ao jogador em anos; é só a conta interna de tempo.
+- `totalCards = max(8, floor((2025 − anoEstreia) / anosPorDecisão))`. Exemplos: 1995 normal → 12; 1995 longa → 24; 1975 normal → 20; 1975 longa → 40; 2010 ou 2020 → 8 (o mínimo), e a carreira passa de 2025 com ofertas de fallback (o futuro não tem filmes reais).
 - **Atos** são uma escala de três terços da carreira (início, meio, fim), usada pelos eventos (`atos: [1..3]`) e pelo HUD ("ato II").
 - O HUD mostra "7/15".
 
@@ -95,7 +95,7 @@ Papel escolhido no filme: o `role` elegível de menor `order`.
 ### 4.2b Status e cobiça (o que faz as ofertas dependerem de você)
 - `status = clamp(0.5·Fama/100 + 0.5·max(0, Prestígio)/100 + 0.03·Reputação + 0.04·(Contatos − 3), 0, 1)`.
 - `cobiça(filme) = min(1, 0.6·p_prize + 0.4·p_box + 0.15 se algum papel ganhou o Oscar)`.
-- Peso da oferta × `desireWeight = exp(−2.5 · max(0, cobiça − status))`, com piso 0.12: um iniciante raramente recebe o filme de Oscar, mas a sorte existe. Filmes excepcionais (papel premiado ou `p_prize ≥ 0.4`) ganham peso extra `1 + 10 · status`: quem já tem nome recebe mais os papéis de uma vida.
+- Peso da oferta × `desireWeight = exp(−2.5 · max(0, cobiça − status))`, com piso 0.12: um iniciante raramente recebe o filme de Oscar, mas a sorte existe. Filmes excepcionais (papel premiado ou `p_prize ≥ 0.4`) ganham peso extra `1 + 14 · status`: quem já tem nome recebe mais os papéis de uma vida.
 - Se `cobiça − status > 0.4`, o jogador só entra no filme como **coadjuvante** (`order ≥ 2`); se o filme só tem protagonista para o seu gênero, ele não é oferecido.
 - Reach: peso × `(0.5 + 0.15·Beleza_ef) × (1 + 0.15·(Contatos − 3))`.
 
