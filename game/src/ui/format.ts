@@ -40,7 +40,7 @@ export const TIPO_LABEL: Record<string, { pt: string; en: string }> = {
 
 export const RESULT_SHORT: Record<string, { pt: string; en: string }> = {
   ganhou: { pt: "ganhou o Oscar", en: "won the Oscar" }, indicado: { pt: "indicado", en: "nominated" }, roubou_a_cena: { pt: "roubou a cena", en: "stole the scene" },
-  fez_o_trabalho: { pt: "fez o trabalho", en: "did the job" }, miscast: { pt: "miscast", en: "miscast" }, razzie: { pt: "Razzie", en: "Razzie" },
+  fez_o_trabalho: { pt: "fez o trabalho", en: "did the job" }, miscast: { pt: "mal escalado(a)", en: "miscast" }, razzie: { pt: "Razzie", en: "Razzie" },
 };
 
 /** Variações de "o que aconteceu com você", sorteadas por seed + filme (RULES 6.2). */
@@ -80,11 +80,11 @@ export const RESULT_LINES: Record<string, { pt: string; en: string }[]> = {
   ],
   miscast: [
     { pt: "A crítica te escolheu como o problema do filme.", en: "The critics singled you out as the film's problem." },
-    { pt: "Miscast. A crítica usou a palavra 'perdido(a)'. Você não estava perdido(a); estava mal dirigido(a). Ninguém quis saber.", en: "Miscast. Critics used the word 'lost'. You weren't lost; you were badly directed. Nobody cared." },
-    { pt: "Miscast. Um crítico escreveu que você 'parecia querer estar em outro filme'. Queria.", en: "Miscast. One critic wrote you 'seemed to want to be in another film'. You did." },
-    { pt: "Miscast. O sotaque. Todo mundo falou do sotaque.", en: "Miscast. The accent. Everybody talked about the accent." },
-    { pt: "Miscast. A química com o par romântico foi comparada a uma reunião de condomínio.", en: "Miscast. Your chemistry with the love interest was compared to a condo board meeting." },
-    { pt: "Miscast. Seu agente disse 'ninguém vai lembrar disso'. Ele estava mentindo e sabia.", en: "Miscast. Your agent said 'nobody will remember this'. He was lying and knew it." },
+    { pt: "Mal escalado(a). A crítica usou a palavra 'perdido(a)'. Você não estava perdido(a); estava mal dirigido(a). Ninguém quis saber.", en: "Miscast. Critics used the word 'lost'. You weren't lost; you were badly directed. Nobody cared." },
+    { pt: "Mal escalado(a). Um crítico escreveu que você 'parecia querer estar em outro filme'. Queria.", en: "Miscast. One critic wrote you 'seemed to want to be in another film'. You did." },
+    { pt: "Mal escalado(a). O sotaque. Todo mundo falou do sotaque.", en: "Miscast. The accent. Everybody talked about the accent." },
+    { pt: "Mal escalado(a). A química com o par romântico foi comparada a uma reunião de condomínio.", en: "Miscast. Your chemistry with the love interest was compared to a condo board meeting." },
+    { pt: "Mal escalado(a). Seu agente disse 'ninguém vai lembrar disso'. Ele estava mentindo e sabia.", en: "Miscast. Your agent said 'nobody will remember this'. He was lying and knew it." },
   ],
   razzie: [
     { pt: "Indicado(a) ao Razzie. Você não foi buscar. Deveria.", en: "Nominated for a Razzie. You didn't show up. You should have." },
@@ -105,7 +105,7 @@ export function resultLine(resultado: string, index: number, lang: "pt" | "en"):
 
 export const METER_LABEL: Record<string, { pt: string; en: string }> = {
   fama: { pt: "Fama", en: "Fame" }, prestigio: { pt: "Prestígio", en: "Prestige" }, dinheiro: { pt: "Dinheiro", en: "Money" },
-  heat: { pt: "Heat", en: "Heat" }, estabilidade: { pt: "Estabilidade", en: "Stability" }, vicio: { pt: "Vício", en: "Addiction" }, reputacao: { pt: "Reputação", en: "Reputation" },
+  heat: { pt: "Holofote", en: "Heat" }, estabilidade: { pt: "Estabilidade", en: "Stability" }, vicio: { pt: "Vício", en: "Addiction" }, reputacao: { pt: "Reputação", en: "Reputation" },
 };
 
 /** O que cada medidor faz, em uma linha (legenda do HUD e da tela de status). */

@@ -36,7 +36,7 @@ export function ResolutionView({ r, state, lang, content, onContinue }: { r: Res
           <div className="eyebrow" style={{ color: r.mod.tipo === "boost" ? "var(--ok)" : "var(--warn)" }}>{r.mod.tipo === "boost" ? "★ " + t("guinadaUp", lang) : "▼ " + t("guinadaDown", lang)}</div>
           <p style={{ margin: 0, fontSize: 18 }}>{r.mod.texto[lang] ?? r.mod.texto.pt}</p>
           {r.mod.atributo && (
-            <div className="deltas"><span className={r.mod.delta > 0 ? "up" : "down"}>{ATTR_HELP[r.mod.atributo].name[lang]} {r.mod.delta > 0 ? "+" : ""}{r.mod.delta} {t("forCards", lang)} {r.mod.ateCard - state.cardsJogados} {t("cards", lang)}</span></div>
+            <div className="deltas"><span className={r.mod.delta > 0 ? "up" : "down"}>{ATTR_HELP[r.mod.atributo].name[lang]} {r.mod.delta > 0 ? "+" : ""}{r.mod.delta} {t("forCards", lang)} {r.mod.ateCard - state.cardsJogados} {t(r.mod.ateCard - state.cardsJogados === 1 ? "cardOne" : "cards", lang)}</span></div>
           )}
           <p className="muted" style={{ margin: 0 }}>{r.mod.tipo === "boost" ? t("goldenNext", lang) : t("badNext", lang)}</p>
         </>

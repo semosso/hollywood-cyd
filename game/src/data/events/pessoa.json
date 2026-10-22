@@ -1276,7 +1276,7 @@
     ],
     "peso": 6,
     "texto": {
-      "pt": "Uma empresa de streaming que você só conhece de ver por correio quer produzir duas temporadas direto, sem episódio piloto, com dinheiro de filme. Seu agente diz que 'isso nunca vai funcionar'.",
+      "pt": "Uma empresa que você só conhece pelos DVDs que chegam pelo correio quer produzir duas temporadas direto, sem episódio piloto, com orçamento de cinema. Seu agente diz que 'isso nunca vai funcionar'.",
       "en": "A streaming company you only know from mailing DVDs wants to produce two seasons straight, with no pilot, with movie money. Your agent says 'this will never work'."
     },
     "baseado_em": [
@@ -1418,7 +1418,7 @@
       "talento": ">=3"
     },
     "texto": {
-      "pt": "O papel é de uma pessoa que não dorme há um ano. O diretor pergunta quanto você aguenta perder. Você responde uma coisa que o seu médico preferiria que você não tivesse dito.",
+      "pt": "O papel é de uma pessoa que não dorme há um ano. O diretor pergunta quanto você aguenta perder. Você responde algo que o seu médico preferia que você não tivesse dito.",
       "en": "The role is of a person who hasn't slept in a year. The director asks how much weight you can lose. You answer something your doctor would rather you hadn't said."
     },
     "baseado_em": [
@@ -1676,7 +1676,7 @@
               "reputacao": -1
             },
             "texto": {
-              "pt": "O diretor fecha a porta, mas deixa o papel por baixo. É o seu texto original.",
+              "pt": "O diretor fecha a porta e devolve, por baixo dela, o roteiro original.",
               "en": "The director closes the door but slides the paper back under it. It's your original text."
             }
           }
@@ -1843,7 +1843,7 @@
       "fama": ">=20"
     },
     "texto": {
-      "pt": "A aventura de que todo ator sonha chega em suas mãos: chapéu, chicote, selva. Mas a emissora de TV tem seu contrato, e exige que você esteja no estúdio dos episódios na mesma semana.",
+      "pt": "Chega às suas mãos a aventura com que todo ator sonha: chapéu, chicote, selva. Só que a emissora de TV é dona do seu contrato e exige você no estúdio dos episódios na mesma semana.",
       "en": "The adventure every actor dreams of reaches your hands: hat, whip, jungle. But the TV network owns your contract and demands you be at the studio for episodes the same week."
     },
     "baseado_em": [

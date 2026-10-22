@@ -188,7 +188,7 @@
               ]
             },
             "texto": {
-              "pt": "Os seguranças da Sacks estavam olhando. O vídeo passa no noticiário por um mês.",
+              "pt": "Os seguranças da Saks estavam olhando. O vídeo passa no noticiário por um mês.",
               "en": "The Sacks guards were watching. The tape runs on the news for a month."
             }
           },
@@ -1474,7 +1474,7 @@
     ],
     "peso": 3,
     "texto": {
-      "pt": "Cena noturna: helicóptero baixo, explosões e dois figurantes crianças sem autorização para trabalhar à noite. O coordenador diz que 'está tudo sob controle'. Ninguém ensaiou.",
+      "pt": "Cena noturna: helicóptero baixo, explosões e duas crianças figurantes sem autorização para trabalhar à noite. O coordenador diz que 'está tudo sob controle'. Ninguém ensaiou.",
       "en": "Night scene: a low helicopter, explosions and two child extras with no permit to work at night. The coordinator says 'everything's under control'. Nobody rehearsed."
     },
     "baseado_em": [
@@ -1665,7 +1665,7 @@
               "estabilidade": -1
             },
             "texto": {
-              "pt": "O filme estreia quatro horas depois do que devia, e a crítica compara a duração à de um inverno.",
+              "pt": "O filme sai com horas a mais do que devia, e a crítica compara a duração a um inverno.",
               "en": "The film opens hours longer than it should, and critics compare its length to a winter."
             }
           }
@@ -2178,7 +2178,7 @@
               "heat": 0
             },
             "texto": {
-              "pt": "Você chega em casa viva(o) e com um pouco menos de dignidade.",
+              "pt": "Você chega em casa inteiro(a) e com um pouco menos de dignidade.",
               "en": "You make it home alive and with a little less dignity."
             }
           },
@@ -2391,7 +2391,7 @@
       "fama": ">=30"
     },
     "texto": {
-      "pt": "Turnê de arrecadação para uma causa. A produção te dá passagem de avião; o trem leva dois dias a mais. O estúdio quer você de volta logo.",
+      "pt": "Uma turnê para arrecadar fundos para uma causa. A produção te dá passagem de avião; o trem leva dois dias a mais. O estúdio quer você de volta logo.",
       "en": "Fundraising tour for a cause. The studio gives you a plane ticket; the train takes two days longer. They want you back quickly."
     },
     "baseado_em": [
@@ -2715,7 +2715,7 @@
               "fama": 4
             },
             "texto": {
-              "pt": "O filme é um sucesso de crítica e você é o(a) comeback do ano.",
+              "pt": "O filme é um sucesso de crítica e você é a volta por cima do ano.",
               "en": "The film is a critical hit and you are the comeback of the year."
             }
           }
@@ -2839,7 +2839,7 @@
       "fama": ">=40"
     },
     "texto": {
-      "pt": "Um grupo de empresários quer te lançar candidato(a) a governador. Seu agente avisa que você não tem experiência. Eles dizem que isso é uma vantagem.",
+      "pt": "Um grupo de empresários quer lançar você como candidato(a) a governador(a). Seu agente avisa que você não tem experiência. Eles dizem que isso é uma vantagem.",
       "en": "A group of businessmen wants to run you for governor. Your agent warns you have no experience. They say that's an advantage."
     },
     "baseado_em": [
@@ -3053,7 +3053,7 @@
       "prestigio": ">=15"
     },
     "texto": {
-      "pt": "Um anunciante oferece US$ 200 mil por um comercial de ervilhas congeladas. O texto é terrível e o diretor sabe que você sabe.",
+      "pt": "Um anunciante oferece US$ 200 mil por um comercial de ervilhas congeladas. O roteiro é terrível e o diretor sabe que você sabe.",
       "en": "An advertiser offers $200,000 for a frozen-peas commercial. The script is terrible and the director knows you know it."
     },
     "baseado_em": [
