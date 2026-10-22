@@ -468,5 +468,272 @@
     }
    }
   ]
+ },
+ {
+  "id": "voces_gostam_de_mim",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 5,
+  "texto": {
+   "pt": "Sua indicação é a segunda em dois anos, e o seu discurso ainda não existe. Você ensaia na frente do espelho: 'Vocês gostam de mim'. Parece boa ideia.",
+   "en": "This is your second nomination in two years, and your speech doesn't exist yet. You rehearse in front of the mirror: 'You like me'. It seems like a good idea."
+  },
+  "baseado_em": [
+   {
+    "quem": "Sally Field",
+    "ano": 1985,
+    "o_que": "Ao ganhar seu segundo Oscar, disse 'agora vocês gostam de mim, de verdade', frase que virou piada e frase de ouro",
+    "link": "https://en.wikipedia.org/wiki/Sally_Field",
+    "o_que_en": "On winning her second Oscar, said 'right now, you like me', a line that became both a joke and a classic"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "emocionar",
+    "rotulo": {
+     "pt": "Fazer o discurso sincero",
+     "en": "Give the sincere speech"
+    },
+    "resultados": [
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 4,
+       "fama": 4
+      },
+      "texto": {
+       "pt": "Você chora, a plateia ri e chora com você. A frase vira meme por décadas.",
+       "en": "You cry, the audience laughs and cries with you. The line becomes a meme for decades."
+      }
+     },
+     {
+      "p": 0.5,
+      "efeitos": {
+       "prestigio": 1,
+       "fama": 2,
+       "heat": 1
+      },
+      "texto": {
+       "pt": "O discurso é comovente e as piadas começam já no jantar.",
+       "en": "The speech is moving and the jokes begin at dinner."
+      }
+     }
+    ]
+   },
+   {
+    "id": "curto",
+    "rotulo": {
+     "pt": "Só agradecer",
+     "en": "Just say thanks"
+    },
+    "efeitos": {
+     "prestigio": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pulando_nas_cadeiras",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 4,
+  "requer": {
+   "carisma": ">=3"
+  },
+  "texto": {
+   "pt": "O apresentador abre o envelope e diz o seu nome. A primeira coisa que seu corpo entende é que quer subir no palco, e a segunda é que as cadeiras estão no caminho.",
+   "en": "The presenter opens the envelope and says your name. The first thing your body understands is that it wants to go on stage, and the second is that the chairs are in the way."
+  },
+  "baseado_em": [
+   {
+    "quem": "Roberto Benigni",
+    "ano": 1999,
+    "o_que": "Subiu nas cadeiras para ir ao palco ao ganhar o Oscar por A Vida É Bela",
+    "link": "https://en.wikipedia.org/wiki/Roberto_Benigni",
+    "o_que_en": "Climbed over the chairs to go on stage after winning the Oscar for Life Is Beautiful"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "pular",
+    "rotulo": {
+     "pt": "Subir nas cadeiras",
+     "en": "Climb the chairs"
+    },
+    "resultados": [
+     {
+      "p": 0.6,
+      "efeitos": {
+       "fama": 6,
+       "prestigio": 2
+      },
+      "texto": {
+       "pt": "O salão ri e aplaude de pé. Você vira a imagem da noite.",
+       "en": "The room laughs and gives a standing ovation. You become the image of the night."
+      }
+     },
+     {
+      "p": 0.4,
+      "efeitos": {
+       "fama": 2,
+       "heat": 2,
+       "prestigio": -1
+      },
+      "texto": {
+       "pt": "Você tropeça. A plateia ri, mas não da piada.",
+       "en": "You trip. The audience laughs, but not at the joke."
+      }
+     }
+    ]
+   },
+   {
+    "id": "andar",
+    "rotulo": {
+     "pt": "Ir andando pelo corredor",
+     "en": "Walk down the aisle"
+    },
+    "efeitos": {
+     "prestigio": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "tropecar_na_escada",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 4,
+  "texto": {
+   "pt": "Seu vestido é lindo, comprido e pouco prático. A escada do palco tem treze degraus. Você já sabe, no quinto, que alguma coisa vai acontecer.",
+   "en": "Your dress is beautiful, long and impractical. The stage has thirteen steps. By the fifth one, you already know something is going to happen."
+  },
+  "baseado_em": [
+   {
+    "quem": "Jennifer Lawrence",
+    "ano": 2013,
+    "o_que": "Tropeçou na escada ao ir receber o Oscar de melhor atriz por O Lado Bom da Vida",
+    "link": "https://en.wikipedia.org/wiki/Jennifer_Lawrence",
+    "o_que_en": "Tripped on the stairs going to accept the Best Actress Oscar for Silver Linings Playbook"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "rir",
+    "rotulo": {
+     "pt": "Rir de si mesmo(a)",
+     "en": "Laugh at yourself"
+    },
+    "efeitos": {
+     "fama": 6,
+     "reputacao": 1
+    }
+   },
+   {
+    "id": "fingir",
+    "rotulo": {
+     "pt": "Fingir que foi de propósito",
+     "en": "Pretend it was on purpose"
+    },
+    "efeitos": {
+     "fama": 3,
+     "prestigio": 0
+    }
+   },
+   {
+    "id": "subir",
+    "rotulo": {
+     "pt": "Subir sem olhar para trás",
+     "en": "Climb without looking back"
+    },
+    "efeitos": {
+     "fama": 1,
+     "estabilidade": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "agradecer_ao_professor",
+  "tipo": "premiacao",
+  "atos": [
+   1,
+   2,
+   3
+  ],
+  "peso": 5,
+  "requer": {
+   "prestigio": ">=10"
+  },
+  "texto": {
+   "pt": "Se você ganhar, haverá um nome que você precisa dizer em voz alta. Alguém que te ensinou a atuar e que foi tratado mal por ser quem é. Seu assessor pede que você 'pense nas consequências'.",
+   "en": "If you win, there is a name you need to say out loud. Someone who taught you to act and who was mistreated for who they are. Your aide asks you to 'think about the consequences'."
+  },
+  "baseado_em": [
+   {
+    "quem": "Tom Hanks",
+    "ano": 1994,
+    "o_que": "Agradeceu publicamente a um professor gay ao ganhar o Oscar por Filadélfia, inspirando um filme",
+    "link": "https://en.wikipedia.org/wiki/Tom_Hanks",
+    "o_que_en": "Publicly thanked a gay teacher on winning the Oscar for Philadelphia, inspiring a film"
+   }
+  ],
+  "opcoes": [
+   {
+    "id": "dizer",
+    "rotulo": {
+     "pt": "Dizer o nome",
+     "en": "Say the name"
+    },
+    "resultados": [
+     {
+      "p": 0.7,
+      "efeitos": {
+       "reputacao": 2,
+       "prestigio": 4,
+       "fama": 2
+      },
+      "texto": {
+       "pt": "O salão fica em silêncio e depois aplaude. A pessoa chora em casa.",
+       "en": "The room goes quiet and then applauds. The person cries at home."
+      }
+     },
+     {
+      "p": 0.3,
+      "efeitos": {
+       "heat": 2,
+       "reputacao": 1,
+       "prestigio": 2
+      },
+      "texto": {
+       "pt": "Os telefones do estúdio explodem. Mas o professor liga, e só isso importa.",
+       "en": "The studio phones explode. But the teacher calls, and that's all that matters."
+      }
+     }
+    ]
+   },
+   {
+    "id": "omitir",
+    "rotulo": {
+     "pt": "Agradecer em geral",
+     "en": "Thank everyone generally"
+    },
+    "efeitos": {
+     "prestigio": 1,
+     "reputacao": -1
+    }
+   }
+  ]
  }
 ]

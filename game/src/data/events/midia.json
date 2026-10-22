@@ -1213,5 +1213,301 @@
         }
       }
     ]
+  },
+  {
+    "id": "desistiu_do_filme",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "Você assinou um contrato verbal, depois leu o roteiro, depois desistiu. O produtor, que já tinha gastado em cartazes, anuncia que vai te processar por uma quantia de oito dígitos.",
+      "en": "You gave a verbal commitment, then read the script, then backed out. The producer, who had already spent on posters, announces he will sue you for an eight-figure sum."
+    },
+    "baseado_em": [
+      {
+        "quem": "Kim Basinger",
+        "ano": 1993,
+        "o_que": "Foi condenada a pagar cerca de US$ 8 milhões após desistir do filme Boxing Helena (depois reduzida em acordo)",
+        "link": "https://en.wikipedia.org/wiki/Kim_Basinger",
+        "o_que_en": "Was ordered to pay about $8 million after backing out of Boxing Helena (later reduced in a settlement)"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "lutar",
+        "rotulo": {
+          "pt": "Lutar na Justiça",
+          "en": "Fight it in court"
+        },
+        "resultados": [
+          {
+            "p": 0.4,
+            "efeitos": {
+              "dinheiro": -100000,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "Você ganha o recurso. O advogado leva metade, e a outra metade fica como lição.",
+              "en": "You win on appeal. The lawyer takes half and the rest stays as a lesson."
+            }
+          },
+          {
+            "p": 0.6,
+            "efeitos": {
+              "dinheiro": -1500000,
+              "heat": 3,
+              "estabilidade": -2
+            },
+            "texto": {
+              "pt": "O júri decide contra você. Você vende uma casa e finge que foi plano.",
+              "en": "The jury rules against you. You sell a house and pretend it was a plan."
+            }
+          }
+        ]
+      },
+      {
+        "id": "acordo",
+        "rotulo": {
+          "pt": "Fazer um acordo",
+          "en": "Settle"
+        },
+        "efeitos": {
+          "dinheiro": -400000,
+          "estabilidade": -1
+        }
+      },
+      {
+        "id": "filmar",
+        "rotulo": {
+          "pt": "Aceitar fazer o filme",
+          "en": "Do the film after all"
+        },
+        "efeitos": {
+          "prestigio": -4,
+          "estabilidade": -1,
+          "heat": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "nome_errado",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=20"
+    },
+    "texto": {
+      "pt": "No palco, o apresentador anuncia seu nome ao vivo para milhões de pessoas, mas pronuncia uma coisa que nem se parece com você. A plateia segura o riso. A internet não segura.",
+      "en": "On stage, the presenter announces your name live to millions, but pronounces something that doesn't resemble you at all. The audience holds back laughter. The internet doesn't."
+    },
+    "baseado_em": [
+      {
+        "quem": "Idina Menzel",
+        "ano": 2014,
+        "o_que": "No Oscar 2014, John Travolta a apresentou como 'Adele Dazeem'",
+        "link": "https://en.wikipedia.org/wiki/Idina_Menzel",
+        "o_que_en": "At the 2014 Oscars, John Travolta introduced her as 'Adele Dazeem'"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "rir",
+        "rotulo": {
+          "pt": "Rir da situação",
+          "en": "Laugh it off"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "fama": 5,
+              "reputacao": 1
+            },
+            "texto": {
+              "pt": "Você faz piada com o nome falso e vira o assunto mais simpático da semana.",
+              "en": "You joke about the false name and become the friendliest topic of the week."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "fama": 2,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "Metade ri com você, metade ri de você. Você escolhe ouvir a primeira.",
+              "en": "Half laugh with you, half laugh at you. You choose to hear the first half."
+            }
+          }
+        ]
+      },
+      {
+        "id": "irritar",
+        "rotulo": {
+          "pt": "Ficar irritado(a)",
+          "en": "Look annoyed"
+        },
+        "efeitos": {
+          "heat": 2,
+          "reputacao": -1
+        }
+      },
+      {
+        "id": "ignorar",
+        "rotulo": {
+          "pt": "Ignorar e cantar/atuar",
+          "en": "Ignore it and perform"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cinzas_no_tapete",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=30"
+    },
+    "texto": {
+      "pt": "No tapete vermelho, um humorista fantasiado de ditador entra com uma urna e despeja pó no seu colega apresentador, dizendo que são 'as cinzas' do próprio. A câmera procura a sua cara.",
+      "en": "On the red carpet, a comedian dressed as a dictator walks in with an urn and pours powder on your fellow host, claiming it's 'the ashes' of the real thing. The camera searches for your face."
+    },
+    "baseado_em": [
+      {
+        "quem": "Sacha Baron Cohen",
+        "ano": 2012,
+        "o_que": "Derramou cinzas falsas sobre Ryan Seacrest no tapete vermelho do Oscar 2012",
+        "link": "https://en.wikipedia.org/wiki/Sacha_Baron_Cohen",
+        "o_que_en": "Spilled fake ashes on Ryan Seacrest on the 2012 Oscars red carpet"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "rir",
+        "rotulo": {
+          "pt": "Rir junto",
+          "en": "Laugh along"
+        },
+        "efeitos": {
+          "fama": 3,
+          "reputacao": 1
+        }
+      },
+      {
+        "id": "proteger",
+        "rotulo": {
+          "pt": "Ajudar o colega",
+          "en": "Help your colleague"
+        },
+        "efeitos": {
+          "reputacao": 1,
+          "prestigio": 1,
+          "estabilidade": 0
+        }
+      },
+      {
+        "id": "sair",
+        "rotulo": {
+          "pt": "Sair de cena",
+          "en": "Walk away"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "roupa_da_vinganca",
+    "tipo": "midia",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=40",
+      "prestigio": ">=20"
+    },
+    "texto": {
+      "pt": "Seu último filme foi ignorado pela Academia, mas você foi convidado(a) para apresentar um prêmio. Seu estilista oferece uma roupa que 'vai deixar o salão em silêncio'. É uma ótima ideia ou uma péssima.",
+      "en": "Your last film was ignored by the Academy, but you've been invited to present an award. Your stylist offers an outfit that 'will leave the room speechless'. It's either a great idea or a terrible one."
+    },
+    "baseado_em": [
+      {
+        "quem": "Cher",
+        "ano": 1986,
+        "o_que": "Foi ao Oscar de 1986 com uma roupa extravagante depois de ser ignorada nas indicações por Marcas do Destino",
+        "link": "https://en.wikipedia.org/wiki/Cher",
+        "o_que_en": "Went to the 1986 Oscars in an extravagant outfit after being snubbed for Mask"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "usar",
+        "rotulo": {
+          "pt": "Usar a roupa",
+          "en": "Wear it"
+        },
+        "resultados": [
+          {
+            "p": 0.55,
+            "efeitos": {
+              "fama": 7,
+              "heat": 2,
+              "prestigio": 1
+            },
+            "texto": {
+              "pt": "O salão fica em silêncio e depois ri. Você vira a imagem da noite.",
+              "en": "The room goes silent and then laughs. You become the image of the night."
+            }
+          },
+          {
+            "p": 0.45,
+            "efeitos": {
+              "fama": 2,
+              "heat": 3,
+              "prestigio": -3
+            },
+            "texto": {
+              "pt": "A Academia anota seu nome numa lista. A imprensa também.",
+              "en": "The Academy writes your name on a list. So does the press."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sobrio",
+        "rotulo": {
+          "pt": "Ir de smoking",
+          "en": "Wear a tuxedo"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
   }
 ]

@@ -1333,5 +1333,717 @@
         }
       }
     ]
+  },
+  {
+    "id": "pausa_de_um_ano",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "fama": ">=40"
+    },
+    "texto": {
+      "pt": "O filme precisa que você mude de corpo e cabelo. O diretor propõe parar a produção por um ano, o estúdio faz uma careta e todos os atores olham para você.",
+      "en": "The film needs you to change your body and hair. The director proposes pausing production for a year, the studio grimaces and every actor looks at you."
+    },
+    "baseado_em": [
+      {
+        "quem": "Tom Hanks",
+        "ano": 2000,
+        "o_que": "A produção de Náufrago parou por cerca de um ano para ele emagrecer e deixar o cabelo e a barba crescerem",
+        "link": "https://en.wikipedia.org/wiki/Cast_Away",
+        "o_que_en": "Cast Away production paused for about a year so he could lose weight and grow his hair and beard"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "parar",
+        "rotulo": {
+          "pt": "Parar um ano e mudar",
+          "en": "Pause a year and transform"
+        },
+        "resultados": [
+          {
+            "p": 0.55,
+            "efeitos": {
+              "prestigio": 6,
+              "fama": 6,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "O filme sai e a bola de vôlei vira personagem. Seu corpo agradece menos.",
+              "en": "The film comes out and a volleyball becomes a character. Your body thanks you less."
+            }
+          },
+          {
+            "p": 0.45,
+            "efeitos": {
+              "prestigio": 3,
+              "fama": 2,
+              "estabilidade": -2,
+              "dinheiro": -100000
+            },
+            "texto": {
+              "pt": "O ano passa devagar. O estúdio muda o diretor de projeto e você continua cuidando da barba.",
+              "en": "The year passes slowly. The studio moves the director to another project and you keep tending the beard."
+            }
+          }
+        ]
+      },
+      {
+        "id": "maquiagem",
+        "rotulo": {
+          "pt": "Usar maquiagem e peruca",
+          "en": "Use makeup and a wig"
+        },
+        "efeitos": {
+          "prestigio": -1,
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "vinte_oito_quilos",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "O papel é de uma pessoa que não dorme há um ano. O diretor pergunta quanto você aguenta perder. Você responde uma coisa que o seu médico preferiria que você não tivesse dito.",
+      "en": "The role is of a person who hasn't slept in a year. The director asks how much weight you can lose. You answer something your doctor would rather you hadn't said."
+    },
+    "baseado_em": [
+      {
+        "quem": "Christian Bale",
+        "ano": 2004,
+        "o_que": "Perdeu cerca de 28 kg para O Operário, e meses depois ganhou massa para o Batman",
+        "link": "https://en.wikipedia.org/wiki/Christian_Bale",
+        "o_que_en": "Lost about 28 kg for The Machinist and months later bulked up for Batman"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "emagrecer",
+        "rotulo": {
+          "pt": "Emagrecer pelo papel",
+          "en": "Lose the weight"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 7,
+              "fama": 3,
+              "estabilidade": -2
+            },
+            "texto": {
+              "pt": "O filme assusta e a crítica se curva. Você come um prato de macarrão, chorando.",
+              "en": "The film frightens and critics bow. You eat a plate of pasta, crying."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 2,
+              "estabilidade": -3,
+              "flag_add": [
+                "lesao"
+              ]
+            },
+            "texto": {
+              "pt": "A balança desce, o médico se preocupa, e o papel fica menor que o esforço.",
+              "en": "The scale drops, the doctor worries, and the role ends up smaller than the effort."
+            }
+          }
+        ]
+      },
+      {
+        "id": "maquiagem",
+        "rotulo": {
+          "pt": "Usar efeitos e enchimento",
+          "en": "Use effects and padding"
+        },
+        "efeitos": {
+          "prestigio": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "engordar_pelo_papel",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "A personagem é uma pessoa fora de forma, sem glamour. O diretor te manda para uma dieta de macarrão e milk-shake. A sua nutricionista abre uma garrafa de vinho.",
+      "en": "The character is an out-of-shape person with no glamour. The director sends you on a diet of pasta and milkshakes. Your nutritionist opens a bottle of wine."
+    },
+    "baseado_em": [
+      {
+        "quem": "Charlize Theron",
+        "ano": 2003,
+        "o_que": "Ganhou cerca de 13 kg e se transformou para Monster, e ganhou o Oscar de melhor atriz",
+        "link": "https://en.wikipedia.org/wiki/Charlize_Theron",
+        "o_que_en": "Gained about 13 kg and transformed for Monster, and won the Best Actress Oscar"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "transformar",
+        "rotulo": {
+          "pt": "Se transformar",
+          "en": "Transform"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 9,
+              "fama": 5
+            },
+            "texto": {
+              "pt": "Os críticos não reconhecem seu rosto, e a Academia sim.",
+              "en": "Critics don't recognize your face, and the Academy does."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 3,
+              "fama": 1,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "Você dedica meses ao papel. Metade do público não percebe que é você.",
+              "en": "You dedicate months to the role. Half the audience doesn't realize it's you."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar o papel",
+          "en": "Decline the role"
+        },
+        "efeitos": {
+          "prestigio": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "cinco_minutos",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2,
+      3
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O papel tem uma única cena, de cinco minutos, contra um dos protagonistas. Seu agente diz que 'não vale a viagem'. O diretor diz que é a melhor cena do filme.",
+      "en": "The part has a single scene, five minutes long, opposite one of the leads. Your agent says 'it's not worth the trip'. The director says it's the best scene in the film."
+    },
+    "baseado_em": [
+      {
+        "quem": "Beatrice Straight",
+        "ano": 1976,
+        "o_que": "Ganhou o Oscar de coadjuvante por Rede de Intrigas com cerca de cinco minutos e meio de tela",
+        "link": "https://en.wikipedia.org/wiki/Beatrice_Straight",
+        "o_que_en": "Won the Supporting Actress Oscar for Network with about five and a half minutes of screen time"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar a cena",
+          "en": "Take the scene"
+        },
+        "resultados": [
+          {
+            "p": 0.3,
+            "efeitos": {
+              "prestigio": 8,
+              "fama": 4
+            },
+            "texto": {
+              "pt": "Seus cinco minutos são os mais citados do filme. A estatueta pesa mais do que a cena.",
+              "en": "Your five minutes are the most quoted of the film. The statuette weighs more than the scene."
+            }
+          },
+          {
+            "p": 0.7,
+            "efeitos": {
+              "prestigio": 2,
+              "dinheiro": 20000,
+              "fama": 1
+            },
+            "texto": {
+              "pt": "Ninguém comenta, mas o cachê chega e seu nome está nos créditos.",
+              "en": "Nobody comments, but the check arrives and your name is in the credits."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "prestigio": 0
+        }
+      },
+      {
+        "id": "negociar",
+        "rotulo": {
+          "pt": "Negociar mais cenas",
+          "en": "Negotiate for more scenes"
+        },
+        "efeitos": {
+          "reputacao": -1,
+          "heat": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "reescrever_o_monologo",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "O monólogo do tribunal está escrito no estilo de quem nunca falou assim na vida. Na véspera, você reescreve tudo com as suas palavras e vai bater na porta do diretor às duas da manhã.",
+      "en": "The courtroom monologue is written in the style of someone who never talked that way in life. The night before, you rewrite everything in your own words and knock on the director's door at two a.m."
+    },
+    "baseado_em": [
+      {
+        "quem": "Meryl Streep",
+        "ano": 1979,
+        "o_que": "Reescreveu seu monólogo no tribunal em Kramer vs. Kramer, e o diretor usou a versão dela",
+        "link": "https://en.wikipedia.org/wiki/Meryl_Streep",
+        "o_que_en": "Rewrote her courtroom monologue in Kramer vs. Kramer, and the director used her version"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "bater",
+        "rotulo": {
+          "pt": "Bater na porta",
+          "en": "Knock on the door"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "prestigio": 6,
+              "fama": 3,
+              "contatos_evento": 1
+            },
+            "texto": {
+              "pt": "O diretor lê, para, lê de novo e diz: 'a gente roda amanhã'.",
+              "en": "The director reads, stops, reads again and says: 'we shoot it tomorrow'."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "heat": 1,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "O diretor fecha a porta, mas deixa o papel por baixo. É o seu texto original.",
+              "en": "The director closes the door but slides the paper back under it. It's your original text."
+            }
+          }
+        ]
+      },
+      {
+        "id": "seguir",
+        "rotulo": {
+          "pt": "Seguir o texto",
+          "en": "Follow the written text"
+        },
+        "efeitos": {
+          "prestigio": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "papel_unissex",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "requer": {
+      "genero": "f"
+    },
+    "texto": {
+      "pt": "O roteiro de ficção científica tem uma nota na primeira página: 'todos os personagens são unissex; escale quem for melhor'. O estúdio quer uma resposta antes do fim de semana.",
+      "en": "The sci-fi script has a note on page one: 'all characters are unisex; cast whoever is best'. The studio wants an answer before the weekend."
+    },
+    "baseado_em": [
+      {
+        "quem": "Alien",
+        "ano": 1979,
+        "o_que": "O roteiro previa personagens unissex, e a tenente Ripley foi interpretada por Sigourney Weaver",
+        "link": "https://en.wikipedia.org/wiki/Alien_(film)",
+        "o_que_en": "The script envisioned unisex characters, and Lieutenant Ripley was played by Sigourney Weaver"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o papel de ação",
+          "en": "Take the action role"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "prestigio": 5,
+              "fama": 8,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "O monstro é assustador, e você também, no melhor sentido. Nasce uma franquia.",
+              "en": "The monster is terrifying, and so are you, in the best way. A franchise is born."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 3,
+              "prestigio": 2,
+              "estabilidade": 1
+            },
+            "texto": {
+              "pt": "O filme é um sucesso. Você assina para a continuação antes de ler o roteiro.",
+              "en": "The film is a hit. You sign for the sequel before reading the script."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar o papel",
+          "en": "Decline"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "papel_do_outro",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 5,
+    "texto": {
+      "pt": "O astro que ia estrelar o filme saiu do projeto depois de brigar sobre o roteiro. O estúdio precisa de um novo protagonista em duas semanas e alguém lembrou do seu nome.",
+      "en": "The star who was going to headline the film left the project after fighting over the script. The studio needs a new lead in two weeks and somebody remembered your name."
+    },
+    "baseado_em": [
+      {
+        "quem": "Eddie Murphy",
+        "ano": 1984,
+        "o_que": "Entrou em Um Tira da Pesada depois que Stallone saiu do projeto, e o filme virou sucesso",
+        "link": "https://en.wikipedia.org/wiki/Beverly_Hills_Cop",
+        "o_que_en": "Joined Beverly Hills Cop after Stallone left the project, and the film became a hit"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o papel",
+          "en": "Take the role"
+        },
+        "resultados": [
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 9,
+              "prestigio": 2,
+              "dinheiro": 200000
+            },
+            "texto": {
+              "pt": "Você reescreve metade das falas no set. O filme é o maior sucesso do ano.",
+              "en": "You rewrite half the lines on set. The film is the year's biggest hit."
+            }
+          },
+          {
+            "p": 0.5,
+            "efeitos": {
+              "fama": 3,
+              "estabilidade": -2,
+              "heat": 1
+            },
+            "texto": {
+              "pt": "O set é um caos de reescritas. O filme sai, e ninguém sabe de quem é a piada.",
+              "en": "The set is a chaos of rewrites. The film comes out, and nobody knows whose joke it is."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar o papel herdado",
+          "en": "Decline the inherited role"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "contrato_da_tv",
+    "tipo": "pessoa",
+    "atos": [
+      1,
+      2
+    ],
+    "peso": 4,
+    "requer": {
+      "fama": ">=20"
+    },
+    "texto": {
+      "pt": "A aventura de que todo ator sonha chega em suas mãos: chapéu, chicote, selva. Mas a emissora de TV tem seu contrato, e exige que você esteja no estúdio dos episódios na mesma semana.",
+      "en": "The adventure every actor dreams of reaches your hands: hat, whip, jungle. But the TV network owns your contract and demands you be at the studio for episodes the same week."
+    },
+    "baseado_em": [
+      {
+        "quem": "Tom Selleck",
+        "ano": 1980,
+        "o_que": "Perdeu o papel de Indiana Jones porque a CBS não o liberou do contrato de Magnum",
+        "link": "https://en.wikipedia.org/wiki/Tom_Selleck",
+        "o_que_en": "Lost the Indiana Jones role because CBS wouldn't release him from his Magnum contract"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "brigar",
+        "rotulo": {
+          "pt": "Brigar para ser liberado(a)",
+          "en": "Fight to be released"
+        },
+        "resultados": [
+          {
+            "p": 0.35,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": 3,
+              "dinheiro": -100000
+            },
+            "texto": {
+              "pt": "A emissora cede. Você faz o filme e paga a multa com o orgulho.",
+              "en": "The network gives in. You make the film and pay the fine with pride."
+            }
+          },
+          {
+            "p": 0.65,
+            "efeitos": {
+              "estabilidade": -2,
+              "heat": 2,
+              "reputacao": -1
+            },
+            "texto": {
+              "pt": "A emissora não cede. Outro ator pega o chapéu, e você pega o episódio.",
+              "en": "The network doesn't give in. Another actor takes the hat, and you take the episode."
+            }
+          }
+        ]
+      },
+      {
+        "id": "tv",
+        "rotulo": {
+          "pt": "Ficar na TV",
+          "en": "Stay on TV"
+        },
+        "efeitos": {
+          "estabilidade": 1,
+          "dinheiro": 50000,
+          "fama": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "outra_comedia_romantica",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 6,
+    "requer": {
+      "fama": ">=50"
+    },
+    "texto": {
+      "pt": "Seu agente traz mais um roteiro de comédia romântica, com seu nome no topo e um valor que seria absurdo para qualquer outra pessoa. Você já fez isso nove vezes.",
+      "en": "Your agent brings another rom-com script, with your name on top and a number that would be absurd to anyone else. You've done this nine times."
+    },
+    "baseado_em": [
+      {
+        "quem": "Matthew McConaughey",
+        "ano": 2011,
+        "o_que": "Recusou comédias românticas por um ano e meio e se reinventou em papéis dramáticos até o Oscar de Clube de Compras Dallas",
+        "link": "https://en.wikipedia.org/wiki/Matthew_McConaughey",
+        "o_que_en": "Turned down rom-coms for a year and a half and reinvented himself in dramatic roles up to the Oscar for Dallas Buyers Club"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar e esperar",
+          "en": "Decline and wait"
+        },
+        "resultados": [
+          {
+            "p": 0.45,
+            "efeitos": {
+              "prestigio": 9,
+              "fama": 4,
+              "dinheiro": -50000
+            },
+            "texto": {
+              "pt": "Um ano e meio sem ofertas depois, chega um papel que ninguém queria. Você ganha prêmios por ele.",
+              "en": "A year and a half without offers later, a role nobody wanted arrives. You win awards for it."
+            }
+          },
+          {
+            "p": 0.55,
+            "efeitos": {
+              "fama": -6,
+              "prestigio": 1,
+              "estabilidade": -2,
+              "dinheiro": -100000
+            },
+            "texto": {
+              "pt": "O telefone não toca. O agente liga para saber se você está vivo.",
+              "en": "The phone doesn't ring. Your agent calls to check whether you're alive."
+            }
+          }
+        ]
+      },
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar mais uma",
+          "en": "Take another one"
+        },
+        "efeitos": {
+          "dinheiro": 400000,
+          "prestigio": -2,
+          "fama": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "figado_cru",
+    "tipo": "pessoa",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "talento": ">=3"
+    },
+    "texto": {
+      "pt": "O diretor quer realismo total: filmar com luz natural, no frio, e na cena do acampamento você deve comer um fígado cru. O seu personagem não é vegetariano. Você é.",
+      "en": "The director wants total realism: natural light only, in the cold, and in the camp scene you must eat raw liver. Your character isn't vegetarian. You are."
+    },
+    "baseado_em": [
+      {
+        "quem": "Leonardo DiCaprio",
+        "ano": 2015,
+        "o_que": "Comeu fígado cru de bisão em O Regresso, embora fosse vegetariano",
+        "link": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+        "o_que_en": "Ate raw bison liver in The Revenant despite being vegetarian"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "comer",
+        "rotulo": {
+          "pt": "Comer o fígado",
+          "en": "Eat the liver"
+        },
+        "resultados": [
+          {
+            "p": 0.6,
+            "efeitos": {
+              "prestigio": 5,
+              "fama": 3,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "Você faz a cena em um take. A equipe aplaude, de longe.",
+              "en": "You nail the scene in one take. The crew applauds, from a distance."
+            }
+          },
+          {
+            "p": 0.4,
+            "efeitos": {
+              "estabilidade": -2,
+              "prestigio": 2
+            },
+            "texto": {
+              "pt": "Você passa a noite no hotel olhando para o teto. A cena é ótima.",
+              "en": "You spend the night at the hotel staring at the ceiling. The scene is great."
+            }
+          }
+        ]
+      },
+      {
+        "id": "vegetariano",
+        "rotulo": {
+          "pt": "Pedir um fígado de gelatina",
+          "en": "Ask for a gelatin liver"
+        },
+        "efeitos": {
+          "prestigio": -1,
+          "estabilidade": 1
+        }
+      }
+    ]
   }
 ]

@@ -57,4 +57,4 @@ export const PERSONAL_DELTAS: Record<PersonalResult, { fama: number; prestigio: 
   razzie: { fama: 2, prestigio: -8, estabilidade: -2, flag: "razzie" },
 };
 
-export const CONTEXT_YEARS = [1988, 2007, 2017, 2020, 2023];
+export const CONTEXT_YEARS = [1980, 1988, 1994, 2001, 2007, 2009, 2017, 2019, 2020, 2022, 2023];

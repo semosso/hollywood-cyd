@@ -490,5 +490,227 @@
         }
       }
     ]
+  },
+  {
+    "id": "sapateiro_na_italia",
+    "tipo": "destino",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 4,
+    "requer": {
+      "prestigio": ">=30",
+      "idade": ">=40"
+    },
+    "texto": {
+      "pt": "Você anuncia que vai se aposentar para aprender um ofício antigo na Itália: sapateiro. Seu agente ri, até perceber que você já tem o endereço da oficina.",
+      "en": "You announce you'll retire to learn an ancient craft in Italy: shoemaking. Your agent laughs, until noticing you already have the address of the workshop."
+    },
+    "baseado_em": [
+      {
+        "quem": "Daniel Day-Lewis",
+        "ano": 2017,
+        "o_que": "Anunciou aposentadoria da atuação; já tinha treinado como sapateiro na Itália",
+        "link": "https://en.wikipedia.org/wiki/Daniel_Day-Lewis",
+        "o_que_en": "Announced his retirement from acting; he had trained as a cobbler in Italy"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "ir",
+        "rotulo": {
+          "pt": "Ir para a Itália",
+          "en": "Go to Italy"
+        },
+        "efeitos": {
+          "estabilidade": 3,
+          "prestigio": 3,
+          "fama": -4,
+          "dinheiro": -40000
+        }
+      },
+      {
+        "id": "ficar",
+        "rotulo": {
+          "pt": "Ficar e adiar a ideia",
+          "en": "Stay and postpone the idea"
+        },
+        "efeitos": {
+          "estabilidade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "campanha_dos_fas",
+    "tipo": "destino",
+    "atos": [
+      3
+    ],
+    "peso": 5,
+    "requer": {
+      "idade": ">=55"
+    },
+    "texto": {
+      "pt": "Uma campanha de fãs nas redes pede que você apresente um programa de televisão. Você tem idade para ser avó/avô de quem organizou, e eles trouxeram mais de 500 mil assinaturas.",
+      "en": "A fan campaign online asks that you host a TV show. You're old enough to be the grandparent of the organizers, and they've brought half a million signatures."
+    },
+    "baseado_em": [
+      {
+        "quem": "Betty White",
+        "ano": 2010,
+        "o_que": "Aos 88 anos, apresentou o Saturday Night Live após uma campanha de fãs no Facebook",
+        "link": "https://en.wikipedia.org/wiki/Betty_White",
+        "o_que_en": "At 88, hosted Saturday Night Live after a fan campaign on Facebook"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o convite",
+          "en": "Accept the invitation"
+        },
+        "efeitos": {
+          "fama": 10,
+          "prestigio": 3,
+          "estabilidade": 2,
+          "heat": 1
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar com carinho",
+          "en": "Gently decline"
+        },
+        "efeitos": {
+          "estabilidade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "voto_de_recall",
+    "tipo": "destino",
+    "atos": [
+      2,
+      3
+    ],
+    "peso": 3,
+    "requer": {
+      "fama": ">=70"
+    },
+    "texto": {
+      "pt": "O governador do estado sofre um processo de destituição. A eleição de emergência não exige experiência, só nome, e muitas pessoas te param na rua para pedir que você 'tome uma decisão'.",
+      "en": "The state governor faces a recall election. The emergency vote doesn't require experience, only name recognition, and many people stop you in the street to ask you to 'make a decision'."
+    },
+    "baseado_em": [
+      {
+        "quem": "Arnold Schwarzenegger",
+        "ano": 2003,
+        "o_que": "Ator, venceu a eleição de recall e virou governador da Califórnia",
+        "link": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger",
+        "o_que_en": "An actor, won the recall election and became governor of California"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "concorrer",
+        "rotulo": {
+          "pt": "Concorrer",
+          "en": "Run"
+        },
+        "resultados": [
+          {
+            "p": 0.55,
+            "efeitos": {
+              "fama": 8,
+              "prestigio": -4,
+              "heat": 3,
+              "dinheiro": -300000,
+              "estabilidade": -1
+            },
+            "texto": {
+              "pt": "Você vence. A primeira ordem do dia é a sua, e é sobre estradas.",
+              "en": "You win. The first order of the day is yours, and it's about roads."
+            }
+          },
+          {
+            "p": 0.45,
+            "efeitos": {
+              "fama": -3,
+              "prestigio": -3,
+              "dinheiro": -500000
+            },
+            "texto": {
+              "pt": "Você perde, e seu rosto continua em todos os postes por mais dois meses.",
+              "en": "You lose, and your face remains on every pole for two more months."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Ficar no cinema",
+          "en": "Stay in movies"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "convite_de_embaixador",
+    "tipo": "destino",
+    "atos": [
+      3
+    ],
+    "peso": 3,
+    "requer": {
+      "prestigio": ">=40",
+      "idade": ">=45"
+    },
+    "texto": {
+      "pt": "Um governo estrangeiro te convida para ser embaixador(a) de um país distante, dizendo que 'seu nome abre portas'. Você não fala a língua e nunca visitou o lugar.",
+      "en": "A foreign government invites you to serve as ambassador to a distant country, saying 'your name opens doors'. You don't speak the language and have never visited."
+    },
+    "baseado_em": [
+      {
+        "quem": "Sidney Poitier",
+        "ano": 1997,
+        "o_que": "Foi embaixador das Bahamas no Japão, mantendo a carreira de ator",
+        "link": "https://en.wikipedia.org/wiki/Sidney_Poitier",
+        "o_que_en": "Served as Bahamas ambassador to Japan while continuing his acting career"
+      }
+    ],
+    "opcoes": [
+      {
+        "id": "aceitar",
+        "rotulo": {
+          "pt": "Aceitar o cargo",
+          "en": "Accept the post"
+        },
+        "efeitos": {
+          "prestigio": 5,
+          "reputacao": 2,
+          "fama": -2,
+          "estabilidade": 1
+        }
+      },
+      {
+        "id": "recusar",
+        "rotulo": {
+          "pt": "Recusar com respeito",
+          "en": "Respectfully decline"
+        },
+        "efeitos": {
+          "prestigio": 1
+        }
+      }
+    ]
   }
 ]
